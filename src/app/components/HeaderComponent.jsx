@@ -6,7 +6,7 @@ import { Button } from "@material-tailwind/react";
 export default function HeaderComponent() {
   return (
     <div>
-      <header className="bg-tec-primary text-white">
+      <header className="bg-tec-blue-primary text-white border-b-4 border-[#EF3340]">
         {/* Header top section with logoHeader, tituloHeaderBlanco and logoTECBLanco */}
         <div className="flex items-center justify-between px-6 py-2">
           <div className="flex items-center gap-4">
