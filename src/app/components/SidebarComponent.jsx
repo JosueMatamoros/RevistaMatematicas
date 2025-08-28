@@ -2,9 +2,7 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-export default function SidebarComponent() {
-  const [isOpen, setIsOpen] = useState(true);
-
+export default function SidebarComponent({ isOpen, setIsOpen }) {
   return (
     <div className="relative flex h-full">
       {/* Sidebar */}
