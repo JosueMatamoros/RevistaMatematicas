@@ -1,7 +1,8 @@
 "use client";
-import HeaderComponent from "./components/HeaderComponent";
-import SidebarComponent from "./components/SidebarComponent";
-import NavsComponent from "./components/NavsComponent";
+import HeaderComponent from "./components/home/HeaderComponent";
+import SidebarComponent from "./components/home/SidebarComponent";
+import NavsComponent from "./components/home/NavsComponent";
+import RecentArticlesComponent from "./components/home/RecentArticlesComponent";
 import { useState } from "react";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         {/* Contenido principal */}
         <main className="flex-1 p-4  overflow-y-auto">
           <NavsComponent isSidebarOpen={isSidebarOpen} />
+          <RecentArticlesComponent />
         </main>
 
         {/* Sidebar a la derecha */}

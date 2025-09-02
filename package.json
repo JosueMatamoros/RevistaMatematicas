@@ -11,11 +11,14 @@
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
     "next": "14.2.32",
+    "next-fonts": "^1.5.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.12",
     "eslint": "^8",
     "eslint-config-next": "14.2.32",
     "postcss": "^8",
