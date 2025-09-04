@@ -23,7 +23,7 @@ module.exports = withMT({
           950: "#020617",
         },
         "tec-blue-primary": "#012D50",
-        "tec-blue-secondary": "#1A237E",
+        "tec-blue-secondary": "#0582E0",
         "tec-red-primary": "#EF3340",
       },
     },
