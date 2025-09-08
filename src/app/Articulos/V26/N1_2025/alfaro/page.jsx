@@ -36,7 +36,7 @@ export default function Page() {
 
       <section className="mt-6">
         <iframe
-          src="/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"
+          src="/servicios/revistamatematica/pruebas/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"
           width="100%"
           height="600px"
           style={{ border: "1px solid #ddd" }}
@@ -45,7 +45,7 @@ export default function Page() {
         </iframe>
         <p>
           <a
-            href="/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"
+            href="/servicios/revistamatematica/pruebas/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

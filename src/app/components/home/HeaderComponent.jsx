@@ -9,7 +9,7 @@ export default function HeaderComponent() {
         <div className="flex items-center justify-between px-6 py-2">
           <div className="flex items-center gap-4">
             <Image
-              src="/logoHeader.png"
+              src="/servicios/revistamatematica/pruebas/logoHeader.png"
               alt="Matemática Logo"
               width={120}
               height={135}
@@ -17,7 +17,7 @@ export default function HeaderComponent() {
               priority
             />
             <Image
-              src="/tituloHeaderBlanco.png"
+              src="/servicios/revistamatematica/pruebas/tituloHeaderBlanco.png"
               alt="Título Matemática"
               width={1720}
               height={400}
@@ -27,7 +27,7 @@ export default function HeaderComponent() {
           </div>
 
           <Image
-            src="/logoTECBLanco.png"
+            src="/servicios/revistamatematica/pruebas/logoTECBLanco.png"
             alt="TEC Logo"
             width={340}
             height={85}
