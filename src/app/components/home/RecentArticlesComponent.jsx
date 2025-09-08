@@ -19,7 +19,7 @@ const articles = [
     category: "Investigación",
     color: "blue",
     slug: "Articulos/V26/N1_2025/Alfaro", 
-    pdf: "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf", 
+    pdf: "/servicios/revistamatematica/pruebas/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf", 
   },
   {
     id: 2,
