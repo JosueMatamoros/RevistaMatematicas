@@ -166,7 +166,7 @@ export default function Page() {
               href={pdfAbs}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm font-medium"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm "
             >
               Descargar
               <FaFilePdf className="text-red-600 w-4 h-4" />
@@ -186,7 +186,7 @@ export default function Page() {
         </div>
 
         {/* Resumen (ES) → Azul */}
-        <section className="rounded-lg p-4 mt-5 border border-blue-50 border-l-4 border-l-tec-blue-secondary">
+        <section className="rounded-lg p-4 mt-5 border-l-4 border-l-tec-blue-secondary">
           <h2 className="text-lg font-bold text-tec-blue-primary mb-3">
             Resumen
           </h2>
@@ -214,8 +214,8 @@ export default function Page() {
         </section>
 
         {/* Abstract (EN) → Blanco / Gris claro */}
-        <section className="rounded-lg p-4  border border-gray-100  border-l-4 border-l-gray-400 mt-5">
-          <h2 className="text-lg font-bold text-gray-700 mb-3">Abstract</h2>
+        <section className="rounded-lg p-4   border-l-4 border-l-tec-red-primary mt-5">
+          <h2 className="text-lg font-bold text-red-800 mb-3">Abstract</h2>
           <p className="text-gray-800 leading-relaxed text-justify text-sm">
             The frequent errors and difficulties presented by Statistics I
             students at UDO Anzoátegui, when applying counting techniques, are
@@ -223,12 +223,12 @@ export default function Page() {
             problems...
           </p>
           <div className="mt-3">
-            <h3 className="text-sm font-bold text-gray-700 mb-2">Keywords</h3>
+            <h3 className="text-sm font-bold text-red-800 mb-2">Keywords</h3>
             <div className="flex flex-wrap gap-2">
               {keywordsEn.map((k) => (
                 <span
                   key={k}
-                  className="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700 border border-gray-300 text-sm"
+                  className="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 border border-red-200 text-sm"
                 >
                   {k}
                 </span>
@@ -238,8 +238,8 @@ export default function Page() {
         </section>
 
         {/* Resumo (PT) → Rojo */}
-        <section className="rounded-lg p-4 border border-red-50 border-l-4 border-l-tec-red-primary mt-5">
-          <h2 className="text-lg font-bold text-red-800 mb-3">Resumo</h2>
+        <section className="rounded-lg p-4 border-l-4 border-l-gray-400 mt-5">
+          <h2 className="text-lg font-bold text-gray-700 mb-3">Resumo</h2>
           <p className="text-gray-800 leading-relaxed text-justify text-sm">
             Neste projeto buscou-se avaliar o modelo teórico RIASEC de Holland,
             sua aplicabilidade na classificação de cursos STEM no Instituto
@@ -265,7 +265,7 @@ export default function Page() {
             tipologias realista e investigativa.
           </p>
           <div className="mt-3">
-            <h3 className="text-sm font-bold text-red-800 mb-2">
+            <h3 className="text-sm font-bold text-gray-700 mb-2">
               Palavras-chave
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -278,7 +278,7 @@ export default function Page() {
               ].map((k) => (
                 <span
                   key={k}
-                  className="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 border border-red-200 text-sm"
+                  className="inline-flex items-center px-3 py-1 rounded-full  bg-gray-100 text-gray-700 border border-gray-300 text-sm"
                 >
                   {k}
                 </span>
