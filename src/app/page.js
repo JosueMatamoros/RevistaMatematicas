@@ -1,8 +1,8 @@
 "use client";
-import HeaderComponent from "./components/home/HeaderComponent";
-import SidebarComponent from "./components/home/SidebarComponent";
-import NavsComponent from "./components/home/NavsComponent";
-import RecentArticlesComponent from "./components/home/RecentArticlesComponent";
+import HeaderComponent from "../components/home/HeaderComponent";
+import SidebarComponent from "../components/home/SidebarComponent";
+import NavsComponent from "../components/home/NavsComponent";
+import RecentArticlesComponent from "../components/home/RecentArticlesComponent";
 import { useState } from "react";
 
 export default function Home() {

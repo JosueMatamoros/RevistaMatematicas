@@ -1,10 +1,12 @@
-const isProd = process.env.NODE_ENV === 'production';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath,
+  assetPrefix: basePath ? basePath + '/' : undefined,
+
   output: 'export',
   images: { unoptimized: true },
-  basePath: isProd ? '/servicios/revistamatematica/pruebas' : '',
-  assetPrefix: isProd ? '/servicios/revistamatematica/pruebas/' : '',
 };
 
 export default nextConfig;
