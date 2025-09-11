@@ -15,16 +15,22 @@ import { withFullUrl } from "@/lib/basePath";
 const articles = [
   {
     id: 1,
-    title: "Errores y dificultades frecuentes al aplicar las técnicas de conteo",
+    title:
+      "Errores y dificultades frecuentes al aplicar las técnicas de conteo",
+    title_en:
+      "Frequent errors and difficulties in applying counting techniques",
     author: "Alejandra Alfaro-Barquero, Sonia Chinchilla-Brenes",
     category: "Investigación",
     color: "blue",
-    slug: "Articulos/V26/N1_2025/Alfaro", 
-    pdf: withFullUrl("/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"), 
+    slug: "Articulos/V26/N1_2025/Alfaro",
+    pdf: withFullUrl(
+      "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"
+    ),
   },
   {
     id: 2,
     title: "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
+    title_en: "",
     author: "Manuel Vicente Centeno Romero, Marvelis González Rodríguez",
     category: "Didáctica",
     color: "red",
@@ -49,7 +55,7 @@ export default function RecentArticlesComponent() {
         {articles.map((article) => {
           const handleCardClick = () => {
             if (article.slug) {
-              router.push(`/${article.slug}`); 
+              router.push(`/${article.slug}`);
             }
           };
 
@@ -57,7 +63,7 @@ export default function RecentArticlesComponent() {
             e.stopPropagation();
             if (article.slug && article.pdf) {
               const pdfUrl = `${article.pdf}`;
-              window.open(pdfUrl, "_blank"); 
+              window.open(pdfUrl, "_blank");
             }
           };
 
@@ -72,9 +78,17 @@ export default function RecentArticlesComponent() {
                 <Typography
                   variant="h6"
                   color="blue-gray"
-                  className="font-semibold mb-2 group-hover:text-tec-blue-secondary transition-colors duration-200"
+                  className="font-semibold group-hover:text-tec-blue-secondary transition-colors duration-200"
                 >
                   {article.title}
+                </Typography>
+
+                <Typography
+                  variant="h8"
+                  color="gray"
+                  className="font-semibold mb-2 border-l-2 pl-2 text-gray-500"
+                >
+                  {article.title_en}
                 </Typography>
 
                 {/* Autor + Chip */}
@@ -107,11 +121,11 @@ export default function RecentArticlesComponent() {
                     size="sm"
                     variant="outlined"
                     color="red"
-                    className="flex items-center gap-2"
+                    className="normal-case inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm "
                     onClick={handlePdfDownload}
                   >
-                    <FaFilePdf className="w-4 h-4" />
-                    Descargar PDF
+                    Descargar 
+                    <FaFilePdf className="text-red-600 w-4 h-4" />
                   </Button>
                 )}
               </CardBody>
