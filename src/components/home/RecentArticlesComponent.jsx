@@ -10,6 +10,7 @@ import {
   Chip,
 } from "@material-tailwind/react";
 import { FaFilePdf } from "react-icons/fa";
+import { withFullUrl } from "@/lib/basePath";
 
 const articles = [
   {
@@ -19,7 +20,7 @@ const articles = [
     category: "Investigación",
     color: "blue",
     slug: "Articulos/V26/N1_2025/Alfaro", 
-    pdf: "/servicios/revistamatematica/pruebas/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf", 
+    pdf: withFullUrl("/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf"), 
   },
   {
     id: 2,
