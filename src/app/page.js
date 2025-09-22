@@ -2,8 +2,9 @@
 import HeaderComponent from "../components/home/HeaderComponent";
 import SidebarComponent from "../components/home/SidebarComponent";
 import NavsComponent from "../components/home/NavsComponent";
-import RecentArticlesComponent from "../components/home/RecentArticlesComponent";
+import ArticlesList from "../components/articles/ArticlesList";
 import { useState } from "react";
+import issueData from "@/data/issues/N1_2025.json";
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -18,7 +19,10 @@ export default function Home() {
         {/* Contenido principal */}
         <main className="flex-1 p-4  overflow-y-auto">
           <NavsComponent isSidebarOpen={isSidebarOpen} />
-          <RecentArticlesComponent />
+          <ArticlesList
+            title={issueData.issueTitle}
+            articles={issueData.articles}
+          />
         </main>
 
         {/* Sidebar a la derecha */}

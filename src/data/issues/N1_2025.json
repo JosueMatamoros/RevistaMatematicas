@@ -1,0 +1,154 @@
+{
+  "issueTitle": "Volumen 26, Número 1, Agosto 2025 - Febrero 2026",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
+      "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
+      "authors": [
+        {
+          "name": "Alejandra Alfaro-Barquero",
+          "email": "alealfaro@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-8901-7129"
+        },
+        {
+          "name": "Sonia Chinchilla-Brenes",
+          "email": "schinchilla@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-1100-2568"
+        }
+      ],
+      "category": "Didáctica",
+      "color": "red",
+      "slug": "Articulos/V26/N1_2025/Alfaro",
+      "pdf": "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.8119",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "Este proyecto buscó evaluar el modelo de la teoría RIASEC de Holland, su aplicabilidad en la clasificación de carreras STEM del Instituto Tecnológico de Costa Rica, así como analizar diferencias en las puntuaciones de las escalas de actividades y habilidades del Self Directed-Search (versión en español) según sexo y nivel de satisfacción vocacional, en una muestra de 581 estudiantes de 18 carreras, con una media de edad de 20.29 años (DE=3.33), 40.62% mujeres y 59.38% hombres. Mediante modelos factoriales confirmatorios se evidenció la presencia de las 6 tipologías de la teoría RIASEC. En relación con la clasificación de carreras según los códigos de triadas del explorador de carreras y ocupaciones de Holland et al. (2005c), se obtuvo una coincidencia total (3 siglas) solo para el 33.33% de la muestra de carreras; una coincidencia parcial (2 siglas) para el 44.44% de las carreras y finalmente, 22.22% mostró una coincidencia mínima (1 sigla). El análisis de varianza evidenció que quienes mostraron mayores niveles de satisfacción vocacional, obtuvieron promedios más altos en las escalas de habilidades realista, emprendedora y social, pero no se evidenciaron diferencias significativas entre los puntajes de las escalas de habilidades. En relación con el sexo, las mujeres muestran promedios mayores en las tipologías artística y social y los hombres en la realista e investigativa.",
+      "abstract_en": "This project sought to evaluate Holland's RIASEC theory model, its applicability in the classification of STEM careers at the Costa Rica Institute of Technology, as well as analyze differences in the scores of the activities and skills scales of the Self Directed-Search (Spanish version) according to sex and level of vocational satisfaction, in a sample of 581 students from 18 majors, with an average age of 20.29 (SD=3.33), 40.62% women and 59.38% men. Through confirmatory factor models, the presence of the 6 typologies of the RIASEC theory was evidenced. Regarding the classification of careers according to the triad codes of the career and occupation explorer of Holland et al. (2005c), a complete match (3 acronyms) was obtained for only 33.33% of the courses; a partial match (2 acronyms) for 44.44% of the courses and finally, 22.22% showed a minimal match (1 acronym). The analysis of variance showed that those with higher levels of vocational satisfaction obtained higher averages in the realistic, entrepreneurial, and social skills scales, but no significant differences were found between the skills scores. Regarding sex, women show higher averages in the artistic and social typologies, and men in the realistic and investigative typologies.",
+      "abstract_pt": "Neste projeto buscou-se avaliar o modelo teórico RIASEC de Holland, sua aplicabilidade na classificação de cursos STEM no Instituto Tecnológico da Costa Rica, assim como analisar diferenças nas pontuações das escalas de atividades e habilidades do Self-Directed-Search (versão em espanhol) segundo o sexo e nível de satisfação profissional, em uma amostra de 581 estudantes de 18 cursos, com idade média de 20,29 anos (DP = 3,33), 40,62% mulheres e 59,38% homens. Por meio de modelos de fatores confirmatórios, evidenciou-se a presença das 6 tipologias da teoria RIASEC. Referente à classificação de cursos segundo os códigos da tríade do explorador de cursos e ocupações de Holland et al. (2005c), foi obtida uma correspondência total (3 siglas) apenas para 33,33% da amostra de cursos; uma correspondência parcial (2 siglas) para 44,44% dos cursos e, finalmente, 22,22% apresentaram uma correspondência mínima (1 sigla). A análise de variância mostrou que aqueles que apresentaram maiores níveis de satisfação profissional obtiveram médias mais altas nas escalas de habilidades realistas, empreendedoras e sociais, mas não foram evidenciadas diferenças significativas entre as pontuações nas escalas de habilidades. Em relação ao sexo, as mulheres apresentam médias mais altas nas tipologias artística e social, enquanto os homens se destacam nas tipologias realista e investigativa.",
+      "keywords_es": ["Interés", "habilidad", "orientación profesional", "enseñanza superior", "teoría RIASEC"],
+      "keywords_en": ["Interests", "ability", "career choice", "adult education", "RIASEC theory"],
+      "keywords_pt": ["interesse", "habilidade", "orientação profissional", "ensino superior", "teoria RIASEC"],
+      "citation": "Alfaro Barquero, A., & Chinchilla Brenes, S. (2025). Carreras STEM y su asociación con las tipologías RIASEC de Holland. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.8119"
+    },
+    {
+    "id": 2,
+    "title": "Paul Erdős, el mago de las matemáticas",
+    "title_en": "Paul Erdős, the math wizard",
+    "authors": [
+      {
+        "name": "Luis Andrés Badilla Céspedes",
+        "email": "luis.badilla.cespedes@una.ac.cr",
+        "university": "Universidad Nacional de Costa Rica",
+        "location": "Heredia, Costa Rica",
+        "orcid": "https://orcid.org/0009-0000-0921-5807"
+      },
+      {
+        "name": "Wágner Badilla-Céspedes",
+        "email": "wagner@matmor.unam.mx",
+        "university": "Centro de Ciencias Matemáticas, UNAM, Campus Morelia",
+        "location": "Morelia, México",
+        "orcid": "https://orcid.org/0000-0001-7839-2559"
+      }
+    ],
+    "category": "Divulgación",
+    "color": "blue",
+    "slug": "Articulos/V26/N1_2025/Badilla",
+    "pdf": "/Articulos/V26/N1_2025/Badilla/RevistaDigital_V26_n1_2025_Badilla.pdf",
+    "doi": "https://doi.org/10.18845/rdmei.v26i1.7953",
+    "received": "29 de mayo de 2024",
+    "accepted": "10 de marzo de 2025",
+    "abstract_es": "En estas notas describimos ciertos aspectos relevantes sobre la vida de Paul Erdős. Mencionamos algunas de sus distinciones y premios, así como aportaciones matemáticas. Finalmente, damos una descripción histórica del teorema de los números primos.",
+    "abstract_en": "In these notes we describe certain relevant aspects about the life of Paul Erdős. We mention some of his honors and awards, as well as his mathematical contributions. Finally, we give a historical description of the prime number theorem.",
+    "abstract_pt": "Nesta nota, descrevemos alguns aspectos relevantes da vida de Paul Erdős. Mencionamos algumas de suas distinções e prêmios, bem como as suas contribuições matemáticas. Por fim, apresentamos uma descrição histórica do teorema dos números primos.",
+    "keywords_es": ["Paul Erdős", "teorema de los números primos", "teoría de números", "variable compleja"],
+    "keywords_en": ["Paul Erdős", "prime number theorem", "number theory", "complex variable"],
+    "keywords_pt": ["Paul Erdős", "teorema dos números primos", "teoria dos números", "variável complexa"],
+    "citation": "Badilla Céspedes, L., & Badilla Céspedes, W. (2025). Paul Erdős, el mago de las matemáticas. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7953"
+  },
+  {
+    "id": 3,
+    "title": "Estudio de la “ansiedad matemática” en estudiantes del curso de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología y del curso de Matemática General del Tecnológico de Costa Rica en el I Cuatrimestre de 2023",
+    "title_en": "Study of “Mathematical Anxiety” in Students of the Precalculus Course at the Latin American University of Science and Technology and the General Mathematics Course at the Costa Rica Institute of Technology in the First Quarter of 2023",
+    "title_pt": "Estudo da “ansiedade matemática” em estudantes da disciplina de Pré-Cálculo da Universidade Latino-americana de Ciência e Tecnologia e da disciplina de Matemática Geral do Instituto Tecnológico da Costa Rica no I Trimestre do ano 2023",
+    "authors": [
+      {
+        "name": "Didier Castro Méndez",
+        "email": "dcastro@ulacit.ac.cr",
+        "university": "Universidad Latinoamericana de Ciencia y Tecnología",
+        "location": "San José, Costa Rica",
+        "orcid": "https://orcid.org/0000-0001-7494-3786"
+      },
+      {
+        "name": "Evelyn Agüero Calvo",
+        "email": "evaguero@itcr.ac.cr",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica",
+        "orcid": "https://orcid.org/0000-0002-8703-061X"
+      },
+      {
+        "name": "Jordy Alfaro Brenes",
+        "email": "jalfaro@ulacit.ac.cr",
+        "university": "Universidad Latinoamericana de Ciencia y Tecnología",
+        "location": "San José, Costa Rica",
+        "orcid": "https://orcid.org/0000-0002-9007-9322"
+      }
+    ],
+    "category": "Investigación",
+    "color": "red",
+    "slug": "Articulos/V26/N1_2025/Castro",
+    "pdf": "/Articulos/V26/N1_2025/Castro/RevistaDigital_V26_n1_2025_Castro.pdf",
+    "doi": "https://doi.org/10.18845/rdmei.v26i1.7877",
+    "received": "18 de marzo de 2024",
+    "accepted": "15 de marzo de 2025",
+    "abstract_es": "La ansiedad matemática es un fenómeno común que afecta negativamente el rendimiento académico de los estudiantes. Este estudio tuvo como objetivo principal evaluar el nivel de ansiedad matemática en estudiantes de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología (ULACIT) y Matemática General del Tecnológico de Costa Rica (TEC) durante el primer período del 2023. Además, se buscó determinar si existen diferencias en el nivel de ansiedad por sexo y centro educativo. La investigación fue de tipo cuantitativa descriptiva. La muestra estuvo compuesta por 905 estudiantes matriculados en los cursos mencionados, a quienes se les aplicó un cuestionario validado para medir la ansiedad matemática. Los resultados revelan que 19.01% exhibe altos niveles de ansiedad y las mujeres presentan un mayor nivel de ansiedad matemática en comparación con los hombres. Además, no se detectaron diferencias en el nivel de ansiedad matemática según el centro educativo.",
+    "abstract_en": "Mathematics anxiety is a common phenomenon that negatively affects students’ academic performance. The main objective of this study was to evaluate the level of mathematical anxiety in Precalculus students of the Universidad Latinoamericana de Ciencia y Tecnología (ULACIT) and General Mathematics students of the Costa Rica Institute of Technology (TEC) during the first period of 2023. In addition, we sought to determine if there are differences in the level of anxiety by sex and educational center. The research was of a descriptive quantitative type. The sample consisted of 905 students enrolled in the aforementioned courses, who were administered a validated questionnaire to measure mathematics anxiety. Student’s t-test was used to analyze differences by sex and educational center. The results reveal that 19.01% exhibit high levels of anxiety and women present a higher level of mathematical anxiety compared to men. In addition, no differences were detected in the level of mathematical anxiety according to educational center.",
+    "abstract_pt": "A ansiedade matemática é um fenômeno comum que afeta negativamente o desempenho acadêmico dos estudantes. Este estudo teve como objetivo principal avaliar o nível de ansiedade matemática em estudantes de Pré-Cálculo da Universidade Latino-americana de Ciência e Tecnologia (ULACIT) e de Matemática Geral do Instituto Tecnológico da Costa Rica (TEC) durante o primeiro trimestre do ano 2023. Além disso, buscou-se determinar se existem diferenças no nível de ansiedade por sexo e instituição de ensino. A pesquisa foi do tipo quantitativa descritiva. A amostra foi composta por 905 estudantes matriculados nas disciplinas indicadas, aos quais foi aplicado um questionário validado para medir a ansiedade matemática. Utilizou-se o teste t de Student para analisar as diferenças por sexo e instituição de ensino. Os resultados revelam que 19,01% dos estudantes apresentam altos níveis de ansiedade, e as mulheres mostram um nível maior de ansiedade matemática em comparação com os homens. Além disso, não foram detectadas diferenças no nível de ansiedade matemática de acordo com a instituição de ensino.",
+    "keywords_es": ["ansiedad matemática", "matemática educativa", "precálculo", "matemática general", "t de Student"],
+    "keywords_en": ["mathematics anxiety", "educational mathematics", "precalculus", "general mathematics", "student t-test"],
+    "keywords_pt": ["ansiedade matemática", "educação matemática", "pré-cálculo", "matemática geral", "teste t de Student"],
+    "citation": "Castro Méndez, D., Agüero Calvo, E., & Alfaro Brenes, J. (2025). Estudio de la “ansiedad matemática” en estudiantes del curso de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología y del curso de Matemática General del Tecnológico de Costa Rica en el I Cuatrimestre de 2023. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7877"
+  },
+  {
+    "id": 4,
+    "title": "Errores y dificultades frecuentes al aplicar las técnicas de conteo",
+    "title_en": "Frequent errors and difficulties in applying counting techniques",
+    "authors": [
+      {
+        "name": "Manuel Vicente Centeno-Romero",
+        "email": "manuelcenteno11@gmail.com",
+        "university": "Universidad de Oriente, Núcleo de Sucre",
+        "department": "Escuela de Ciencias, Departamento de Matemáticas",
+        "location": "Sucre, Venezuela",
+        "orcid": "https://orcid.org/0009-0006-0139-7689"
+      },
+      {
+        "name": "Marvelis González Rodríguez",
+        "email": "barbaravaleria2@gmail.com",
+        "university": "Universidad de Oriente, Núcleo de Anzoátegui",
+        "department": "Unidad de Estudios Básicos, Departamento de Ciencias",
+        "location": "Anzoátegui, Venezuela"
+      }
+    ],
+    "category": "Investigación",
+    "color": "blue",
+    "slug": "Articulos/V26/N1_2025/Centeno",
+    "pdf": "/Articulos/V26/N1_2025/Centeno/RevistaDigital_V26_n1_2025_Centeno.pdf",
+    "doi": "https://doi.org/10.18845/rdmei.v26i1.7876",
+    "received": "26 de febrero de 2024",
+    "accepted": "1 de marzo de 2025",
+    "abstract_es": "La investigación se centró en identificar los errores y dificultades más frecuentes que presentan los estudiantes de Estadística I en la Universidad de Oriente, Núcleo de Anzoátegui, al aplicar técnicas de conteo, particularmente en la resolución de problemas de combinaciones y permutaciones. Los resultados evidenciaron que la mayor dificultad surge en relación con el entorno ambiental en el que se desarrollan las clases expositivas. Con el fin de reducir dichas dificultades, se implementaron estrategias de aprendizaje basadas en el enfoque cooperativo. Se concluye que los estudiantes requieren asumir una visión cooperativa del proceso de aprendizaje, aplicando estrategias como la reflexión consciente sobre el propósito u objeto de estudio y la conexión de los conocimientos previos con los nuevos contenidos.",
+    "abstract_en": "The frequent errors and difficulties presented by Statistics I students at UDO Anzoátegui, when applying counting techniques, are found, for the most part, when solving combination and permutation problems. In this research, it was evident that the greatest difficulty is presented to the student in the environmental environment for the development of expository classes. Learning strategies were selected under cooperative learning, aimed at reducing possible errors and difficulties that students encounter in the application of counting techniques. It was concluded that students must manage a cooperative vision of the learning process and implement strategies, such as: conscious reflection on the purpose or object of study, connecting new knowledge and that already learned, organizing information and applying study techniques.",
+    "abstract_pt": "Neste projeto buscou-se avaliar o modelo teórico RIASEC de Holland, sua aplicabilidade na classificação de cursos STEM no Instituto Tecnológico da Costa Rica, assim como analisar diferenças nas pontuações das escalas de atividades e habilidades do Self-Directed-Search (versão em espanhol) segundo o sexo e nível de satisfação profissional, em uma amostra de 581 estudantes de 18 cursos, com idade média de 20,29 anos (DP = 3,33), 40,62% mulheres e 59,38% homens. Por meio de modelos de fatores confirmatórios, evidenciou-se a presença das 6 tipologias da teoria RIASEC. Referente à classificação de cursos segundo os códigos da tríade do explorador de cursos e ocupações de Holland et al. (2005c), foi obtida uma correspondência total (3 siglas) apenas para 33,33% da amostra de cursos; uma correspondência parcial (2 siglas) para 44,44% das corridas e, finalmente, 22,22% apresentaram uma correspondência mínima (1 sigla). A análise de variância mostrou que aqueles que apresentaram maiores níveis de satisfação profissional obtiveram médias mais altas nas escalas de habilidades realistas, empreendedoras e sociais, mas não foram evidenciadas diferenças significativas entre as pontuações nas escalas de habilidades. Em relação ao sexo, as mulheres apresentam médias mais altas nas tipologias artística e social, enquanto os homens se destacam nas tipologias realista e investigativa.",
+    "keywords_es": ["errores", "dificultades", "cooperativismo", "estrategias de aprendizaje"],
+    "keywords_en": ["errors", "difficulties", "cooperativism", "learning strategies"],
+    "keywords_pt": ["interesse", "habilidade", "orientação profissional", "ensino superior", "teoria RIASEC"],
+    "citation": "Centeno Romero, M. V., & González Rodríguez, M. (2025). Errores y dificultades frecuentes al aplicar las técnicas de conteo. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7876"
+  }
+  ]
+}
