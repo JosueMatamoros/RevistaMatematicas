@@ -14,7 +14,7 @@ export default function HeaderComponent() {
               alt="Matemática Logo"
               width={120}
               height={135}
-              className="h-20 w-auto"
+              className="h-14 w-auto sm:h-20"
               priority
             />
             <Image
@@ -22,7 +22,7 @@ export default function HeaderComponent() {
               alt="Título Matemática"
               width={1720}
               height={400}
-              className="h-16 w-auto"
+              className="h-10 w-auto sm:h-16"
               priority
             />
           </div>
@@ -32,7 +32,7 @@ export default function HeaderComponent() {
             alt="TEC Logo"
             width={340}
             height={85}
-            className="h-14 w-auto"
+            className="h-14 w-auto hidden sm:block"
             priority
           />
         </div>
