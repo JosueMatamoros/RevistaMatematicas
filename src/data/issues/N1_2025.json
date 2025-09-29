@@ -5,6 +5,10 @@
       "id": 1,
       "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
       "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
       "authors": [
         {
           "name": "Alejandra Alfaro-Barquero",
@@ -40,6 +44,10 @@
     "id": 2,
     "title": "Paul Erdős, el mago de las matemáticas",
     "title_en": "Paul Erdős, the math wizard",
+    "volume": 26,
+    "number": 1,
+    "language": "pt",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Luis Andrés Badilla Céspedes",
@@ -76,6 +84,10 @@
     "title": "Estudio de la “ansiedad matemática” en estudiantes del curso de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología y del curso de Matemática General del Tecnológico de Costa Rica en el I Cuatrimestre de 2023",
     "title_en": "Study of “Mathematical Anxiety” in Students of the Precalculus Course at the Latin American University of Science and Technology and the General Mathematics Course at the Costa Rica Institute of Technology in the First Quarter of 2023",
     "title_pt": "Estudo da “ansiedade matemática” em estudantes da disciplina de Pré-Cálculo da Universidade Latino-americana de Ciência e Tecnologia e da disciplina de Matemática Geral do Instituto Tecnológico da Costa Rica no I Trimestre do ano 2023",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Didier Castro Méndez",
@@ -118,6 +130,10 @@
     "id": 4,
     "title": "Errores y dificultades frecuentes al aplicar las técnicas de conteo",
     "title_en": "Frequent errors and difficulties in applying counting techniques",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Manuel Vicente Centeno-Romero",
@@ -154,7 +170,10 @@
     "id": 5,
     "title": "Competencias previas en estudiantes de cálculo diferencial. Análisis de un caso de estudio en la Universidad Técnica Nacional de Costa Rica",
     "title_en": "Background knowledge required for differential calculus. A case study at the National Technical University of Costa Rica",
-    "title_pt": "Competências prévias em estudantes de cálculo diferencial: Análise de um estudo de caso na Universidade Técnica Nacional da Costa Rica",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Tonny Andrey Garita Araya",
@@ -190,7 +209,10 @@
     "id": 6,
     "title": "Animaciones en LaTeX para la enseñanza del Movimiento Armónico Simple",
     "title_en": "Animations in LaTeX for teaching Simple Harmonic Motion",
-    "title_pt": "Animações em LaTeX para o ensino do Movimento Harmônico Simples",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Carlos A. Jiménez Carballo",
@@ -219,7 +241,10 @@
     "id": 7,
     "title": "¿Qué es GeoGebra Discovery? Una ilustración",
     "title_en": "What is GeoGebra Discovery? An illustration",
-    "title_pt": "O que é o GeoGebra Discovery? Uma ilustração",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Saulo Mosquera López",
@@ -255,6 +280,10 @@
     "id": 8,
     "title": "Explorando la simulación estadística por medio del juego Pickleball",
     "title_en": "Exploring Statistical Simulation through the Game of Pickleball",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Katalina Oviedo Rodríguez",
@@ -290,6 +319,10 @@
     "id": 9,
     "title": "Análisis de errores algebraicos que manifiestan docentes en formación de la carrera de Enseñanza de la Matemática en la Universidad Nacional de Costa Rica",
     "title_en": "Analysis of algebraic errors displayed by mathematics teacher trainees in the mathematics education program at the National University of Costa Rica",
+    "volume": 26,
+    "number": 1,
+    "language": "es",
+    "published": "2025-08-01",
     "authors": [
       {
         "name": "Emanuelle Parra Rodríguez",

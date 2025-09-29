@@ -32,14 +32,17 @@ export async function generateMetadata({ params }) {
     (i) => `V${i.volume}` === params.vol && i.id === params.issue
   );
 
-  return {
+  return {  
     title: article.title,
     description: article.abstract_es || article.title_en || article.title,
     other: {
       citation_title: article.title,
       citation_author: article.authors?.map((a) => a.name),
-      citation_publication_date: issueInfo?.date || "Sin fecha",
+      citation_publication_date: issueInfo?.published || "Sin fecha",
       citation_journal_title: "Revista Digital Matemática, Educación e Internet",
+      citation_publisher: "Instituto Tecnológico de Costa Rica",
+      citation_issn: "1659-0643",
+      citation_doi: article.doi,
       citation_volume: issueInfo?.volume.toString(),
       citation_issue: issueInfo?.number.toString(),
       citation_language: issueInfo?.language || "es",
