@@ -1,3 +1,4 @@
+// src/app/Articulos/[vol]/[issue]/page.jsx
 import { issues } from "@/data/issues";
 import ArticlesList from "@/components/articles/ArticlesList";
 import HeaderComponent from "@/components/home/HeaderComponent";
@@ -9,6 +10,19 @@ export function generateStaticParams() {
     vol: `V${issue.volume}`,
     issue: issue.id,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const current = issues.find(
+    (i) => `V${i.volume}` === params.vol && i.id === params.issue
+  );
+
+  if (!current) return { title: "Número no encontrado" };
+
+  return {
+    title: `Volumen ${current.volume}, Número ${current.number}`,
+    description: `${current.date} — Revista Digital Matemática, Educación e Internet`,
+  };
 }
 
 export default function IssuePage({ params }) {
