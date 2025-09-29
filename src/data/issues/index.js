@@ -1,6 +1,8 @@
 // src/data/issues/index.js
 import N1_2025 from "./N1_2025.json";
 import N2_2024 from "./N2_2024.json";
+import N1_2024 from "./N1_2024.json";
+import N2_2023 from "./N2_2023.json";
 
 export const issues = [
   {
@@ -19,4 +21,21 @@ export const issues = [
     label: "Reciente",
     data: N2_2024,
   },
+  {
+    id: "N1_2024",
+    volume: 24,
+    number: 1,
+    date: "Marzo 2025 - Agosto 2025",
+    label: "",
+    data: N1_2024,
+  },
+  {
+    id: "N2_2023",
+    volume: 23,
+    number: 2,
+    date: "Marzo 2024 - Agosto 2024",
+    label: "",
+    data: N2_2023,
+  },
+
 ];

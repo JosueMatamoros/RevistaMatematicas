@@ -24,7 +24,9 @@ export default function ArticulosIndexPage() {
         {/* Título principal */}
         <Typography
           variant="h2"
-          className="mb-6 font-extrabold text-4xl text-center bg-gradient-to-r from-tec-blue-secondary to-blue-400 bg-clip-text text-transparent"
+          className="mb-6 font-extrabold text-4xl text-center 
+             bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 
+             bg-clip-text text-transparent"
         >
           Todos los números
         </Typography>

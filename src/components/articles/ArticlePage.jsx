@@ -35,7 +35,7 @@ export default function ArticlePage({ article }) {
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
                 {a.orcid && (
                   <a href={a.orcid} target="_blank" rel="noopener noreferrer">
-                    <img src="/logoORCID.png" alt="ORCID" className="w-5 h-5 inline-block" />
+                    <img src={withBasePath("/logoORCID.png")} alt="ORCID" className="w-5 h-5 inline-block" />
                   </a>
                 )}
               </div>

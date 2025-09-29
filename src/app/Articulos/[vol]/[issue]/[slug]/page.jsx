@@ -1,24 +1,36 @@
 // src/app/Articulos/[vol]/[issue]/[slug]/page.jsx
 import { withFullUrl } from "@/lib/basePath";
 import ArticlePage from "@/components/articles/ArticlePage";
-import issueData from "@/data/issues/N1_2025.json";
+import { issues } from "@/data/issues";
 
-// Necesario para rutas estáticas con output: "export"
+// Generar todas las combinaciones de artículos
 export async function generateStaticParams() {
-  return issueData.articles
-    .filter((a) => a.slug)
-    .map((a) => {
-      const [_, vol, issue, slug] = a.slug.split("/"); // ["Articulos","V26","N1_2025","Alfaro"]
-      return { vol, issue, slug };
-    });
+  return issues.flatMap((issue) =>
+    issue.data.articles
+      .filter((a) => a.slug)
+      .map((a) => {
+        const [_, vol, issueId, slug] = a.slug.split("/"); 
+        return { vol, issue: issueId, slug };
+      })
+  );
 }
 
-// Metadata dinámico por artículo (Google Scholar)
+// Metadata dinámico para Google Scholar
 export async function generateMetadata({ params }) {
-  const article = issueData.articles.find(
+  const issueData = issues.find(
+    (i) => `V${i.volume}` === params.vol && i.id === params.issue
+  )?.data;
+
+  const article = issueData?.articles.find(
     (a) => a.slug === `Articulos/${params.vol}/${params.issue}/${params.slug}`
   );
+
   if (!article) return { title: "Artículo no encontrado" };
+
+  // Buscar info del número (para volumen, número y fecha)
+  const issueInfo = issues.find(
+    (i) => `V${i.volume}` === params.vol && i.id === params.issue
+  );
 
   return {
     title: article.title,
@@ -26,11 +38,11 @@ export async function generateMetadata({ params }) {
     other: {
       citation_title: article.title,
       citation_author: article.authors?.map((a) => a.name),
-      citation_publication_date: "2025/01/01",
-      citation_journal_title: "Revista Digital Matemática",
-      citation_volume: "26",
-      citation_issue: "1",
-      citation_language: "es",
+      citation_publication_date: issueInfo?.date || "Sin fecha",
+      citation_journal_title: "Revista Digital Matemática, Educación e Internet",
+      citation_volume: issueInfo?.volume.toString(),
+      citation_issue: issueInfo?.number.toString(),
+      citation_language: issueInfo?.language || "es",
       citation_pdf_url: withFullUrl(article.pdf),
     },
   };
@@ -38,11 +50,17 @@ export async function generateMetadata({ params }) {
 
 // Render del artículo
 export default function Page({ params }) {
-  const article = issueData.articles.find(
+  const issueData = issues.find(
+    (i) => `V${i.volume}` === params.vol && i.id === params.issue
+  )?.data;
+
+  const article = issueData?.articles.find(
     (a) => a.slug === `Articulos/${params.vol}/${params.issue}/${params.slug}`
   );
 
-  if (!article) return <div className="p-8 text-center">No existe el artículo</div>;
+  if (!article) {
+    return <div className="p-8 text-center text-red-500">No existe el artículo</div>;
+  }
 
   return <ArticlePage article={article} />;
 }
