@@ -85,10 +85,10 @@ export default function NavsComponent({ isSidebarOpen }) {
             </ul>
           </li>
 
-          {/* Números anteriores */}
+          {/* Todos los Números */}
           <li className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4">
             <FaArrowDown19 />
-            <span>Números anteriores</span>
+            <span>Todos los Números</span>
           </li>
 
           {/* Para autores */}
