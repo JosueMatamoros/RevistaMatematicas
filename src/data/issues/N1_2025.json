@@ -26,7 +26,6 @@
         }
       ],
       "category": "Didáctica",
-      "color": "red",
       "slug": "Articulos/V26/N1_2025/Alfaro",
       "pdf": "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v26i1.8119",
@@ -65,7 +64,6 @@
       }
     ],
     "category": "Divulgación",
-    "color": "blue",
     "slug": "Articulos/V26/N1_2025/Badilla",
     "pdf": "/Articulos/V26/N1_2025/Badilla/RevistaDigital_V26_n1_2025_Badilla.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7953",
@@ -112,7 +110,6 @@
       }
     ],
     "category": "Investigación",
-    "color": "red",
     "slug": "Articulos/V26/N1_2025/Castro",
     "pdf": "/Articulos/V26/N1_2025/Castro/RevistaDigital_V26_n1_2025_Castro.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7877",
@@ -152,7 +149,6 @@
       }
     ],
     "category": "Investigación",
-    "color": "blue",
     "slug": "Articulos/V26/N1_2025/Centeno",
     "pdf": "/Articulos/V26/N1_2025/Centeno/RevistaDigital_V26_n1_2025_Centeno.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7876",
@@ -191,7 +187,6 @@
       }
     ],
     "category": "Investigación",
-    "color": "red",
     "slug": "Articulos/V26/N1_2025/Garita",
     "pdf": "/Articulos/V26/N1_2025/Garita/RevistaDigital_V26_n1_2025_Garita.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.8121",
@@ -223,7 +218,6 @@
       }
     ],
     "category": "Didáctica",
-    "color": "blue",
     "slug": "Articulos/V26/N1_2025/Jimenez",
     "pdf": "/Articulos/V26/N1_2025/Jimenez/RevistaDigital_V26_n1_2025_Jimenez.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7952",
@@ -262,7 +256,6 @@
       }
     ],
     "category": "Divulgación",
-    "color": "red",
     "slug": "Articulos/V26/N1_2025/Mosquera",
     "pdf": "/Articulos/V26/N1_2025/Mosquera/RevistaDigital_V26_n1_2025_Mosquera.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7981",
@@ -301,7 +294,6 @@
       }
     ],
     "category": "Didáctica",
-    "color": "blue",
     "slug": "Articulos/V26/N1_2025/Oviedo",
     "pdf": "/Articulos/V26/N1_2025/Oviedo/RevistaDigital_V26_n1_2025_Oviedo.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7950",
@@ -347,7 +339,6 @@
       }
     ],
     "category": "Investigación",
-    "color": "red",
     "slug": "Articulos/V26/N1_2025/Parra",
     "pdf": "/Articulos/V26/N1_2025/Parra/RevistaDigital_V26_n1_2025_Parra.pdf",
     "doi": "https://doi.org/10.18845/rdmei.v26i1.7964",

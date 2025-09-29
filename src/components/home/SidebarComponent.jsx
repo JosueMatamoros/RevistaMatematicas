@@ -1,30 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 
-export default function SidebarComponent() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1280) {
-        // xl en adelante visible
-        setIsOpen(true);
-      } else {
-        // sm, md, lg oculto
-        setIsOpen(false);
-      }
-    };
-
-    // Estado inicial al montar
-    handleResize();
-
-    // Escucha cambios de tamaño
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+export default function SidebarComponent({ isOpen, setIsOpen }) {
   return (
     <div className="relative flex h-full">
       {/* Backdrop solo en móviles */}
@@ -53,6 +31,7 @@ export default function SidebarComponent() {
       >
         {isOpen && (
           <>
+            {/* Search */}
             <div className="w-full max-w-sm min-w-[200px] px-4 pt-3 space-x-2 ">
               <div className="relative w-full max-w-md hidden md:block">
                 <input
@@ -68,6 +47,8 @@ export default function SidebarComponent() {
                 </button>
               </div>
             </div>
+
+            {/* Contenido */}
             <div className="flex-1 p-5 text-base space-y-4">
               <h1 className="text-xl font-semibold text-tec-blue-primary mb-4 border-b pb-2">
                 Revista Digital Matemática
@@ -107,6 +88,7 @@ export default function SidebarComponent() {
         )}
       </div>
 
+      {/* Botón toggle */}
       <button
         className="absolute top-1/2 -translate-y-1/2 -left-7 text-black transform transition-transform duration-200 hover:scale-125 z-50"
         onClick={() => setIsOpen(!isOpen)}

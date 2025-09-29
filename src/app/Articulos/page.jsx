@@ -56,7 +56,7 @@ export default function ArticulosIndexPage() {
               <Card
                 key={issue.id}
                 className={
-                  "border-l-4 border-tec-blue-secondary hover:border-red-500 transition-colors duration-200 group"
+                  "border-l-4 border-red-500 hover:border-tec-blue-secondary transition-colors duration-200 group"
                 }
               >
                 <CardBody>
@@ -64,7 +64,7 @@ export default function ArticulosIndexPage() {
                   <div className="flex justify-between items-center mb-4 ">
                     <Typography
                       variant="h4"
-                      className="font-bold text-tec-blue-secondary group-hover:text-red-500 transition-colors duration-200"
+                      className="font-bold  group-hover:text-tec-blue-secondary transition-colors duration-200"
                     >
                       Volumen {issue.volume}, Número {issue.number}
                     </Typography>
