@@ -20,8 +20,7 @@ export default function ArticlesList({ title, articles }) {
       {/* Título dinámico */}
       <Typography
         variant="h4"
-        color="blue-gray"
-        className="mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
+        className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
       >
         {title}
       </Typography>
@@ -37,7 +36,7 @@ export default function ArticlesList({ title, articles }) {
             if (article.pdf) window.open(withFullUrl(article.pdf), "_blank");
           };
 
-          // --- Autores: soporta string o array ---
+          // --- Autores: ---
           const authorsText = Array.isArray(article.authors)
             ? article.authors.map((a) => a.name).join(", ")
             : article.author;
@@ -53,7 +52,7 @@ export default function ArticlesList({ title, articles }) {
                 <Typography
                   variant="h6"
                   color="blue-gray"
-                  className="font-semibold group-hover:text-tec-blue-secondary transition-colors duration-200"
+                  className="font-alt font-semibold group-hover:text-tec-blue-secondary transition-colors duration-200"
                 >
                   {article.title}
                 </Typography>
@@ -63,7 +62,7 @@ export default function ArticlesList({ title, articles }) {
                   <Typography
                     variant="h8"
                     color="gray"
-                    className="font-semibold mb-2 border-l-2 pl-2 text-gray-500"
+                    className="font-alt font-semibold mb-2 border-l-2 pl-2 text-gray-500"
                   >
                     {article.title_en}
                   </Typography>
