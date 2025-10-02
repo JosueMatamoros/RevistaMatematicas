@@ -17,7 +17,7 @@ export default function Home() {
       {/* Contenedor principal */}
       <div className="flex flex-1 overflow-hidden">
         {/* Contenido principal */}
-        <main className="flex-1 p-4  overflow-y-auto">
+        <main className="flex-1 px-4 overflow-y-auto">
           <NavsComponent isSidebarOpen={isSidebarOpen} />
           <ArticlesList
             title={issueData.issueTitle}

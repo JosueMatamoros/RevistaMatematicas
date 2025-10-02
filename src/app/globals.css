@@ -1,9 +1,18 @@
+/* Importar fuentes desde Google Fonts primero */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  /* Fuente base para todo el texto */
+  html {
+    @apply font-sans;
+  }
+
+  /* Encabezados con fuente de títulos */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
   }
 }

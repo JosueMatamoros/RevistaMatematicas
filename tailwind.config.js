@@ -1,10 +1,11 @@
+// tailwind.config.js
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -25,6 +26,11 @@ module.exports = withMT({
         "tec-blue-primary": "#012D50",
         "tec-blue-secondary": "#0582E0",
         "tec-red-primary": "#EF3340",
+      },
+       fontFamily: {
+        sans: ["Inter", "sans-serif"],          // texto base
+        alt: ["Source Sans 3", "sans-serif"],   // artículos / abstracts
+        display: ["Poppins", "sans-serif"],     // títulos
       },
     },
   },

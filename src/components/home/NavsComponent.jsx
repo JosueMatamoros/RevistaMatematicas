@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import {
   FaHome,
   FaBook,
@@ -7,12 +8,13 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import { FaPencil, FaArrowDown19 } from "react-icons/fa6";
+import { withBasePath } from "@/lib/basePath";
 
 export default function NavsComponent({ isSidebarOpen }) {
   return (
     <div
       className={`
-        w-full transition-all duration-300 ease-in-out
+        w-full transition-all duration-300 ease-in-out mt-4
         ${isSidebarOpen ? "flex justify-start" : "flex justify-center"}
       `}
     >
@@ -29,9 +31,14 @@ export default function NavsComponent({ isSidebarOpen }) {
           } items-center space-x-8 text-base transition-all duration-300`}
         >
           {/* Inicio */}
-          <li className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4">
-            <FaHome />
-            <span>Inicio</span>
+          <li>
+            <Link
+              href={withBasePath("/")}
+              className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
+            >
+              <FaHome />
+              <span>Inicio</span>
+            </Link>
           </li>
 
           {/* Secciones */}
@@ -86,9 +93,14 @@ export default function NavsComponent({ isSidebarOpen }) {
           </li>
 
           {/* Todos los Números */}
-          <li className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4">
-            <FaArrowDown19 />
-            <span>Todos los Números</span>
+          <li>
+            <Link
+              href={withBasePath("/Articulos")}
+              className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
+            >
+              <FaArrowDown19 />
+              <span>Todos los Números</span>
+            </Link>
           </li>
 
           {/* Para autores */}
@@ -106,18 +118,22 @@ export default function NavsComponent({ isSidebarOpen }) {
             </div>
             <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               {[
-                "Sobre la revista",
-                "Política Editorial",
-                "Cuerpo Editorial",
-                "Declaración de originalidad",
-                "Contacto",
-                "Estadísticas",
+                { name: "Sobre la revista", path: "/paginasgenerales/sobrelaRevista" },
+                { name: "Política Editorial" },
+                { name: "Cuerpo Editorial" },
+                { name: "Declaración de originalidad" },
+                { name: "Contacto" },
+                { name: "Estadísticas" },
               ].map((item) => (
                 <li
-                  key={item}
-                  className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white"
+                  key={item.name}
+                  className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white"
                 >
-                  {item}
+                  {item.path ? (
+                    <Link href={withBasePath(item.path)}>{item.name}</Link>
+                  ) : (
+                    item.name
+                  )}
                 </li>
               ))}
             </ul>

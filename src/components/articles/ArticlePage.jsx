@@ -85,7 +85,7 @@ export default function ArticlePage({ article }) {
 
         {/* Resumen (ES) */}
         {article.abstract_es && (
-          <section className="rounded-lg p-4 mt-5 border-l-4 border-l-tec-blue-secondary">
+          <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-tec-blue-secondary">
             <h2 className="text-lg font-bold text-tec-blue-primary mb-3">Resumen</h2>
             <p className="text-gray-800 text-sm leading-relaxed text-justify">
               {article.abstract_es}
@@ -107,7 +107,7 @@ export default function ArticlePage({ article }) {
 
         {/* Abstract (EN) */}
         {article.abstract_en && (
-          <section className="rounded-lg p-4 mt-5 border-l-4 border-l-tec-red-primary">
+          <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-tec-red-primary">
             <h2 className="text-lg font-bold text-red-800 mb-3">Abstract</h2>
             <p className="text-gray-800 text-sm leading-relaxed text-justify">
               {article.abstract_en}
@@ -129,7 +129,7 @@ export default function ArticlePage({ article }) {
 
         {/* Resumo (PT) */}
         {article.abstract_pt && (
-          <section className="rounded-lg p-4 mt-5 border-l-4 border-l-gray-400">
+          <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-gray-400">
             <h2 className="text-lg font-bold text-gray-700 mb-3">Resumo</h2>
             <p className="text-gray-800 text-sm leading-relaxed text-justify">
               {article.abstract_pt}

@@ -11,6 +11,7 @@ import {
 } from "@material-tailwind/react";
 import { LuCalendar, LuBookOpen } from "react-icons/lu";
 import HeaderComponent from "@/components/home/HeaderComponent";
+import NavsComponent from "@/components/home/NavsComponent";
 import { issues } from "@/data/issues";
 
 export default function ArticulosIndexPage() {
@@ -19,30 +20,25 @@ export default function ArticulosIndexPage() {
   return (
     <div>
       <HeaderComponent />
+      <NavsComponent />
 
-      <div className="container mx-auto px-4 py-8">
-        {/* Título principal */}
-        <Typography
-          variant="h2"
-          className="mb-6 font-extrabold text-4xl text-center 
-             bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 
-             bg-clip-text text-transparent"
-        >
-          Todos los números
-        </Typography>
-
-        <Typography
-          variant="paragraph"
-          color="gray"
-          className="text-center mb-8"
-        >
-          En esta página encontrará los números anteriores de la revista digital{" "}
-          <span className="font-semibold text-tec-blue-secondary">
-            Matemática, Educación e Internet
-          </span>
-          . Desde el año 2000 se han publicado artículos y contribuciones de
-          destacados investigadores y expertos en la materia.
-        </Typography>
+      <div className="container mx-auto px-6 py-6">
+        <div className="text-center mb-10 flex flex-col items-center">
+          <div className="flex items-center gap-3">
+            <h1 className="text-4xl font-display font-bold text-tec-blue-primary">
+              Todos los números
+            </h1>
+          </div>
+          <p className="text-gray-500 text-lg mt-3 font-light text-center">
+            En esta página encontrará los números anteriores de la revista
+            digital{" "}
+            <span className="font-semibold text-tec-blue-secondary">
+              Matemática, Educación e Internet
+            </span>
+            . Desde el año 2000 se han publicado artículos y contribuciones de
+            destacados investigadores y expertos en la materia.
+          </p>
+        </div>
 
         {/* Grid de números */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
