@@ -104,9 +104,14 @@ export default function NavsComponent({ isSidebarOpen }) {
           </li>
 
           {/* Para autores */}
-          <li className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4">
-            <FaUserEdit />
-            <span>Para autores</span>
+          <li>
+            <Link
+              href={withBasePath("/paginasgenerales/instrucciones")}
+              className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4"
+            >
+              <FaUserEdit />
+              <span>Para autores</span>
+            </Link>
           </li>
 
           {/* Acerca de */}
