@@ -49,23 +49,32 @@ export default function NavsComponent({ isSidebarOpen }) {
               <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
             </div>
             <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              {[
-                "Temas de matemática",
-                "Didáctica y software",
-                "Historia",
-                "Olimpiadas",
-                "Temas de geometría",
-                "Matemática y algoritmos",
-                "Enseñanza Inclusiva en Matemática",
-                "Curiosidades Matemáticas",
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white "
-                >
-                  {item}
-                </li>
-              ))}
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Temas de matemática</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Didáctica y software</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Historia</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Olimpiadas</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Temas de geometría</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Matemática y algoritmos</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>
+                  Enseñanza Inclusiva en Matemática
+                </Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Curiosidades Matemáticas</Link>
+              </li>
             </ul>
           </li>
 
@@ -77,18 +86,15 @@ export default function NavsComponent({ isSidebarOpen }) {
               <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
             </div>
             <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              {[
-                "Libros",
-                "Materiales revisados",
-                "Materiales sin revisión",
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white"
-                >
-                  {item}
-                </li>
-              ))}
+              <li className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Libros</Link>
+              </li>
+              <li className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Materiales revisados</Link>
+              </li>
+              <li className="cursor-pointer text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Materiales sin revisión</Link>
+              </li>
             </ul>
           </li>
 
@@ -122,25 +128,28 @@ export default function NavsComponent({ isSidebarOpen }) {
               <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
             </div>
             <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              {[
-                { name: "Sobre la revista", path: "/paginasgenerales/sobrelaRevista" },
-                { name: "Política Editorial" },
-                { name: "Cuerpo Editorial" },
-                { name: "Declaración de originalidad" },
-                { name: "Contacto" },
-                { name: "Estadísticas" },
-              ].map((item) => (
-                <li
-                  key={item.name}
-                  className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white"
-                >
-                  {item.path ? (
-                    <Link href={withBasePath(item.path)}>{item.name}</Link>
-                  ) : (
-                    item.name
-                  )}
-                </li>
-              ))}
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/paginasgenerales/sobrelarevista")}>
+                  Sobre la revista
+                </Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/paginasgenerales/politicaeditorial")}>
+                  Política Editorial
+                </Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/paginasgenerales/equipoeditorial")}>Cuerpo Editorial</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Declaración de originalidad</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Contacto</Link>
+              </li>
+              <li className="text-slate-800 w-full text-base rounded-md p-2 transition-all duration-200 hover:bg-tec-blue-primary hover:text-white">
+                <Link href={withBasePath("/")}>Estadísticas</Link>
+              </li>
             </ul>
           </li>
         </ul>
