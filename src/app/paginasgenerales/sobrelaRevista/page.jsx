@@ -31,7 +31,7 @@ export default function SobreLaRevistaPage() {
               <p className="font-medium">
                 La revista digital{" "}
                 <span className="font-bold text-tec-red-primary">
-                  'Matemática, Educación e Internet'
+                 &apos;Matemática, Educación e Internet&apos
                 </span>{" "}
                 es una publicación semestral, gratuita y de acceso abierto,
                 fundada en el año 2000 y es auspiciada por el Instituto
