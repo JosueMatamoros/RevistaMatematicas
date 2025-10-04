@@ -2,7 +2,7 @@
 
 import HeaderComponent from "@/components/home/HeaderComponent";
 import NavsComponent from "@/components/home/NavsComponent";
-import { Card } from "@material-tailwind/react";
+import PersonCard from "@/components/common/PersonCard"; 
 import { TbExternalLink } from "react-icons/tb";
 import { SiLatex } from "react-icons/si";
 import { GoFileZip } from "react-icons/go";
@@ -33,7 +33,7 @@ export default function InstruccionesPage() {
         </div>
 
         {/* Contenido principal */}
-        <div className=" text-gray-800 leading-relaxed font-alt text-justify ">
+        <div className="text-gray-800 leading-relaxed font-alt text-justify">
           {/* Introducción */}
           <h2 className="text-2xl font-bold text-tec-blue-primary mb-4">
             1. Introducción
@@ -55,16 +55,10 @@ export default function InstruccionesPage() {
             La siguiente es una lista no exhaustiva de algunos tópicos:
           </p>
           <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700">
-            <li>
-              Aportes de investigación sobre la matemática y su enseñanza en
-              secundaria y a nivel universitario
-            </li>
+            <li>Aportes de investigación sobre la matemática y su enseñanza en secundaria y a nivel universitario</li>
             <li>Matemáticas universitarias</li>
             <li>Software didáctico</li>
-            <li>
-              Métodos numéricos y algoritmos en teoría de números, matemática
-              discreta y álgebra
-            </li>
+            <li>Métodos numéricos y algoritmos en teoría de números, matemática discreta y álgebra</li>
             <li>Matemática aplicada</li>
             <li>Historia</li>
             <li>Didáctica de la Probabilidad y la Estadística</li>
@@ -77,56 +71,27 @@ export default function InstruccionesPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Nuria */}
-            <Card className="p-4 border-l-4 border-x-tec-blue-secondary rounded-xl shadow-lg text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
-                Nuria Vanessa Figueroa Flores
-              </h3>
-              <a
-                href="mailto:nfigueroa@itcr.ac.cr"
-                className="flex justify-center items-center gap-1 text-sm text-tec-blue-secondary hover:underline"
-              >
-                nfigueroa@itcr.ac.cr
-                <TbExternalLink className="text-tec-blue-secondary text-xs" />
-              </a>
-              <p className="mt-2 text-sm text-gray-600">
-                Encargada de la dirección de la revista
-              </p>
-            </Card>
-
-            {/* Greivin */}
-            <Card className="p-4 border-l-4 border-x-tec-blue-secondary rounded-xl shadow-xl text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
-                Greivin Ramírez Arce (Editor)
-              </h3>
-              <a
-                href="mailto:gramirez@itcr.ac.cr"
-                className="flex justify-center items-center gap-1 text-sm text-tec-blue-secondary hover:underline"
-              >
-                gramirez@itcr.ac.cr
-                <TbExternalLink className="text-tec-blue-secondary text-xs" />
-              </a>
-              <p className="mt-2 text-sm text-gray-600">
-                Encargado del arbitraje de la revista
-              </p>
-            </Card>
-
-            {/* Rebeca */}
-            <Card className="p-4 border-l-4 border-x-tec-blue-secondary rounded-xl shadow-xl text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
-                Rebeca Solís Ortega
-              </h3>
-              <a
-                href="mailto:rsolis@itcr.ac.cr"
-                className="flex justify-center items-center gap-1 text-sm text-tec-blue-secondary hover:underline"
-              >
-                rsolis@itcr.ac.cr
-                <TbExternalLink className="text-tec-blue-secondary text-xs" />
-              </a>
-              <p className="mt-2 text-sm text-gray-600">
-                Encargada de la edición y mantenimiento del sitio web
-              </p>
-            </Card>
+            <PersonCard
+              name="Nuria Vanessa Figueroa Flores"
+              email="nfigueroa@itcr.ac.cr"
+              role="Directora"
+              institution="Escuela de Matemática"
+              location="Instituto Tecnológico de Costa Rica, Costa Rica"
+            />
+            <PersonCard
+              name="Greivin Ramírez Arce"
+              email="gramirez@itcr.ac.cr"
+              role="Editor"
+              institution="Escuela de Matemática"
+              location="Instituto Tecnológico de Costa Rica, Costa Rica"
+            />
+            <PersonCard
+              name="Rebeca Solís Ortega"
+              email="rsolis@itcr.ac.cr"
+              role="Edición y mantenimiento "
+              institution="Escuela de Matemática"
+              location="Instituto Tecnológico de Costa Rica, Costa Rica"
+            />
           </div>
         </div>
 
@@ -170,8 +135,7 @@ export default function InstruccionesPage() {
           <p className="mt-6">
             También se reciben trabajos realizados con OpenOffice, Libreoffice o
             Microsoft Word, utilizando el editor de fórmulas (o MathType) para
-            todas las expresiones matemáticas. Puede usar la siguiente
-            plantilla:
+            todas las expresiones matemáticas. Puede usar la siguiente plantilla:
           </p>
 
           <div className="mt-2">
@@ -198,33 +162,14 @@ export default function InstruccionesPage() {
           </p>
 
           <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700">
-            <li>
-              <strong>Título:</strong> El título debe ser representativo del
-              trabajo y debe tener entre 10 y 20 palabras.
-            </li>
-            <li>
-              <strong>Título en inglés:</strong> El mismo título traducido al
-              idioma inglés.
-            </li>
-            <li>
-              <strong>Autor(es):</strong> Debe aparecer el nombre completo del
-              autor o los autores sin nombramiento o grado académico, se debe
-              agregar además la institución en la que trabaja, el correo
-              electrónico y su número de orcid.
-            </li>
-            <li>
-              <strong>Resumen:</strong> Un breve resumen del trabajo, este
-              resumen debe contener entre 100 y 120 palabras.
-            </li>
-            <li>
-              <strong>Abstract:</strong> Traducción del resumen al inglés.
-            </li>
+            <li><strong>Título:</strong> El título debe ser representativo del trabajo y debe tener entre 10 y 20 palabras.</li>
+            <li><strong>Título en inglés:</strong> El mismo título traducido al idioma inglés.</li>
+            <li><strong>Autor(es):</strong> Debe aparecer el nombre completo del autor o los autores sin nombramiento o grado académico, se debe agregar además la institución en la que trabaja, el correo electrónico y su número de orcid.</li>
+            <li><strong>Resumen:</strong> Un breve resumen del trabajo, este resumen debe contener entre 100 y 120 palabras.</li>
+            <li><strong>Abstract:</strong> Traducción del resumen al inglés.</li>
             <li>
               <strong>Palabras clave:</strong> Se deben poner al menos tres
-              palabras clave que identifiquen su trabajo, estas palabras ayudan
-              a los buscadores a encontrar su artículo cuando se hace una
-              búsqueda en Internet. Estas se pueden tomar de la lista que se
-              provee en la página web de la revista en la dirección{" "}
+              palabras clave que identifiquen su trabajo…{" "}
               <a
                 href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/paginasgenerales/palabras_claves.html"
                 target="_blank"
@@ -235,33 +180,12 @@ export default function InstruccionesPage() {
               </a>
               . También pueden agregarse palabras nuevas.
             </li>
+            <li><strong>Keywords:</strong> Traducción de las palabras clave al inglés.</li>
+            <li><strong>Introducción:</strong> Una introducción del artículo.</li>
+            <li><strong>Secciones:</strong> Es estas secciones se desarrollará el trabajo y dependen de cada artículo…</li>
+            <li><strong>Conclusiones:</strong> Donde se muestran las principales conclusiones del trabajo.</li>
             <li>
-              <strong>Keywords:</strong> Traducción de las palabras clave al
-              inglés.
-            </li>
-            <li>
-              <strong>Introducción:</strong> Una introducción del artículo.
-            </li>
-            <li>
-              <strong>Secciones:</strong> Es estas secciones se desarrollará el
-              trabajo y dependen de cada artículo, en artículos de estudios
-              científicos por lo general tiene como secciones: Justificación
-              (aunque a veces esta se funde en la introducción), Marco Teórico,
-              Metodología, Análisis de los datos.
-            </li>
-            <li>
-              <strong>Conclusiones:</strong> Donde se muestran las principales
-              conclusiones del trabajo.
-            </li>
-            <li>
-              <strong>Bibliografía:</strong> Aquí se deben poner la información
-              bibliográfica de todos los trabajos que hayan sido citados en el
-              artículo y sólo estos (es decir, no se deben poner en la
-              bibliografía trabajos que no hayan sido citados dentro del
-              artículo). La bibliografía debe estar ordenada por orden
-              alfabético y se debe escribir conforme al documento. Para la
-              realización de la bibliografía se debe utilizar{" "}
-              <strong>formato APA</strong> (Recomendación:{" "}
+              <strong>Bibliografía:</strong> Aquí se deben poner solo los trabajos citados. Debe estar ordenada alfabéticamente en <strong>formato APA</strong>. (Recomendación:{" "}
               <a
                 href="https://www.mendeley.com/"
                 target="_blank"
@@ -279,8 +203,9 @@ export default function InstruccionesPage() {
             detalle, diríjase a este{" "}
             <a
               href={withBasePath("/docs/Instrucciones_publicar.pdf")}
-              download
               className="inline-flex items-center gap-1 text-tec-blue-secondary font-medium hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               enlace <TbExternalLink className="text-xs" />
             </a>
