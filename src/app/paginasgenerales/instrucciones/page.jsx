@@ -44,7 +44,7 @@ export default function InstruccionesPage() {
             <span className="font-semibold text-tec-blue-secondary">
               Matemática, Educación e Internet
             </span>{" "}
-            (en adelante <span className="italic">"la revista"</span>). Las
+            (en adelante <span className="italic">&quot;la revista&quot;</span>). Las
             publicaciones de la revista tratan sobre temas de matemática de
             nivel universitario y secundaria, el uso de tecnologías y sobre
             didáctica y enseñanza de las matemáticas.
