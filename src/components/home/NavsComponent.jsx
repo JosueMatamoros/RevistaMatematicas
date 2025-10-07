@@ -8,7 +8,6 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import { FaPencil, FaArrowDown19 } from "react-icons/fa6";
-import { withBasePath } from "@/lib/basePath";
 
 export default function NavsComponent({ isSidebarOpen }) {
   return (
@@ -33,7 +32,7 @@ export default function NavsComponent({ isSidebarOpen }) {
           {/* Inicio */}
           <li>
             <Link
-              href={withBasePath("/")}
+              href="/"
               className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
             >
               <FaHome />
@@ -61,7 +60,7 @@ export default function NavsComponent({ isSidebarOpen }) {
               ].map((item, i) => (
                 <li key={i}>
                   <Link
-                    href={withBasePath("/")}
+                    href="/"
                     className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                   >
                     {item}
@@ -83,7 +82,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                 (item, i) => (
                   <li key={i}>
                     <Link
-                      href={withBasePath("/")}
+                      href="/"
                       className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                     >
                       {item}
@@ -97,7 +96,7 @@ export default function NavsComponent({ isSidebarOpen }) {
           {/* Todos los Números */}
           <li>
             <Link
-              href={withBasePath("/Articulos")}
+              href="/Articulos"
               className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
             >
               <FaArrowDown19 />
@@ -108,7 +107,7 @@ export default function NavsComponent({ isSidebarOpen }) {
           {/* Para autores */}
           <li>
             <Link
-              href={withBasePath("/paginasgenerales/instrucciones")}
+              href="/paginasgenerales/instrucciones"
               className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
             >
               <FaUserEdit />
@@ -126,7 +125,7 @@ export default function NavsComponent({ isSidebarOpen }) {
             <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <li>
                 <Link
-                  href={withBasePath("/paginasgenerales/sobrelarevista")}
+                  href="/paginasgenerales/sobrelarevista"
                   className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                 >
                   Sobre la revista
@@ -134,7 +133,7 @@ export default function NavsComponent({ isSidebarOpen }) {
               </li>
               <li>
                 <Link
-                  href={withBasePath("/paginasgenerales/politicaeditorial")}
+                  href="/paginasgenerales/politicaeditorial"
                   className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                 >
                   Política Editorial
@@ -142,7 +141,7 @@ export default function NavsComponent({ isSidebarOpen }) {
               </li>
               <li>
                 <Link
-                  href={withBasePath("/paginasgenerales/equipoeditorial")}
+                  href="/paginasgenerales/equipoeditorial"
                   className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                 >
                   Cuerpo Editorial
@@ -150,7 +149,7 @@ export default function NavsComponent({ isSidebarOpen }) {
               </li>
               <li>
                 <Link
-                  href={withBasePath("/paginasgenerales/declaracionoriginalidad")}
+                  href="/paginasgenerales/declaracionoriginalidad"
                   className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                 >
                   Declaración de originalidad
