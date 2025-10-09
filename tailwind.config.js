@@ -11,7 +11,7 @@ module.exports = withMT({
     extend: {
       colors: {
         slate: {
-          50:  "#f8fafc",
+          50: "#f8fafc",
           100: "#f1f5f9",
           200: "#e2e8f0",
           300: "#cbd5e1",
@@ -27,10 +27,10 @@ module.exports = withMT({
         "tec-blue-secondary": "#0582E0",
         "tec-red-primary": "#EF3340",
       },
-       fontFamily: {
-        sans: ["Inter", "sans-serif"],          // texto base
-        alt: ["Source Sans 3", "sans-serif"],   // artículos / abstracts
-        display: ["Poppins", "sans-serif"],     // títulos
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],      // texto base
+        display: ["var(--font-poppins)", "sans-serif"], // Articulos / abstract
+        alt: ["var(--font-source-sans)", "sans-serif"], // títulos
       },
     },
   },
