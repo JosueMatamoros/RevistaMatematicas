@@ -1,4 +1,5 @@
 import "./globals.css";
+import FooterComponent from "@/components/home/FooterComponent";
 
 export const metadata = {
   title: "Revista Digital Matemática",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className="antialiased">
         {children}
+        <FooterComponent/> 
       </body>
     </html>
   );

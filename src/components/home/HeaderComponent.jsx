@@ -10,7 +10,7 @@ export default function HeaderComponent() {
         <div className="flex items-center justify-between px-6 py-2">
           <div className="flex items-center gap-4">
             <Image
-              src={withBasePath("/logoHeader.png")}
+              src={withBasePath("/logoHeader.webp")}
               alt="Matemática Logo"
               width={120}
               height={135}
@@ -18,7 +18,7 @@ export default function HeaderComponent() {
               priority
             />
             <Image
-              src={withBasePath("/tituloHeaderBlanco.png")}
+              src={withBasePath("/tituloHeaderBlanco.webp")}
               alt="Título Matemática"
               width={1720}
               height={400}
@@ -28,7 +28,7 @@ export default function HeaderComponent() {
           </div>
 
           <Image
-            src={withBasePath("/logoTECBLanco.png")}
+            src={withBasePath("/logoTECBLanco.webp")}
             alt="TEC Logo"
             width={340}
             height={85}

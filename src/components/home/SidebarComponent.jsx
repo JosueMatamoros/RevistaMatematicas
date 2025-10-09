@@ -1,6 +1,6 @@
 "use client";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { IoSearchSharp } from "react-icons/io5";
+import SearchBar from "../common/SearchBar";
 
 export default function SidebarComponent({ isOpen, setIsOpen }) {
   return (
@@ -16,36 +16,19 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
       {/* Sidebar */}
       <div
         className={`
-          bg-gray-50 shadow-lg transition-all duration-300 flex flex-col
-          ${isOpen ? "w-80" : "w-0"}
-          overflow-hidden
-          xl:relative xl:h-full xl:my-4 xl:${
-            isOpen ? "w-96 border rounded-xl" : "w-0 rounded-none"
-          }
-          ${
-            isOpen
-              ? "fixed top-0 right-0 h-full z-50 xl:static"
-              : "fixed top-0 right-0 h-full z-50 xl:static"
-          }
-        `}
+        bg-gray-50 shadow-lg transition-all duration-300 flex flex-col
+        ${isOpen ? "w-80 rounded-md mb-4" : "w-0"}
+        overflow-hidden
+        xl:relative xl:my-4
+        ${isOpen ? "xl:w-96 xl:rounded-md xl:mb-4" : "xl:w-0"}
+        z-50
+      `}
       >
         {isOpen && (
           <>
             {/* Search */}
-            <div className="w-full max-w-sm min-w-[200px] px-4 pt-3 space-x-2 ">
-              <div className="relative w-full max-w-md hidden md:block">
-                <input
-                  type="text"
-                  placeholder="Buscar artículos..."
-                  className="w-full rounded-full border border-gray-300 py-2 pl-4 pr-12 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none shadow-sm"
-                />
-                <button
-                  type="button"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-tec-blue-primary hover:bg-tec-blue-primary/90 text-white p-2 rounded-full transition-all duration-200 hover:scale-105"
-                >
-                  <IoSearchSharp size={18} />
-                </button>
-              </div>
+            <div className="w-full max-w-sm min-w-[200px] px-4 pt-3 space-x-2">
+              <SearchBar/>
             </div>
 
             {/* Contenido */}
@@ -92,8 +75,10 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
       <button
         className="absolute top-1/2 -translate-y-1/2 -left-7 text-black transform transition-transform duration-200 hover:scale-125 z-50"
         onClick={() => setIsOpen(!isOpen)}
+        
       >
         {isOpen ? <FaChevronRight size={20} /> : <FaChevronLeft size={20} />}
+        <span className="sr-only">Toogle Sidebar</span>
       </button>
     </div>
   );
