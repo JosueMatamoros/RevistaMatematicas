@@ -1,17 +1,21 @@
 import "./globals.css";
 import FooterComponent from "@/components/home/FooterComponent";
+import { inter, poppins, sourceSans } from "./fonts";
 
 export const metadata = {
   title: "Revista Digital Matemática",
-  description: "Ejemplo con Tailwind y fuentes globales",
+  description: "Ejemplo optimizado con next/font/local",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html
+      lang="es"
+      className={`${inter.variable} ${poppins.variable} ${sourceSans.variable}`}
+    >
       <body className="antialiased">
         {children}
-        <FooterComponent/> 
+        <FooterComponent />
       </body>
     </html>
   );
