@@ -1,6 +1,5 @@
 "use client";
 
-import HeaderComponent from "@/components/home/HeaderComponent";
 import NavsComponent from "@/components/home/NavsComponent";
 import PersonCard from "@/components/common/PersonCard"; 
 import { TbExternalLink } from "react-icons/tb";
@@ -12,7 +11,6 @@ import { withBasePath } from "@/lib/basePath";
 export default function InstruccionesPage() {
   return (
     <div>
-      <HeaderComponent />
       <NavsComponent />
 
       <div className="container mx-auto px-6 py-8">

@@ -2,13 +2,11 @@
 
 import { Card } from "@material-tailwind/react";
 import { FaInfinity, FaCheck } from "react-icons/fa";
-import HeaderComponent from "@/components/home/HeaderComponent";
 import NavsComponent from "@/components/home/NavsComponent";
 
 export default function SobreLaRevistaPage() {
   return (
     <div>
-      <HeaderComponent />
       <NavsComponent />
       <div className="container mx-auto px-6 py-6">
         {/* Encabezado */}
