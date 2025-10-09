@@ -15,6 +15,7 @@ export default function SearchBar() {
         className="absolute right-1 top-1/2 -translate-y-1/2 bg-tec-blue-primary hover:bg-tec-blue-primary/90 text-white p-2 rounded-full transition-all duration-200"
       >
         <IoSearchSharp size={16} />
+        <span className="sr-only">Buscar</span>
       </button>
     </div>
   );
