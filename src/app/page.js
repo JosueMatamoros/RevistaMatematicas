@@ -1,5 +1,4 @@
 "use client";
-import HeaderComponent from "../components/home/HeaderComponent";
 import SidebarComponent from "../components/home/SidebarComponent";
 import NavsComponent from "../components/home/NavsComponent";
 import ArticlesList from "../components/articles/ArticlesList";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen">
       {/* Header */}
-      <HeaderComponent />
 
       {/* Contenedor principal */}
       <div className="flex flex-1 overflow-hidden">

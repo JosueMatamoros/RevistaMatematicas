@@ -1,7 +1,6 @@
 // src/app/Articulos/[vol]/[issue]/page.jsx
 import { issues } from "@/data/issues";
 import ArticlesList from "@/components/articles/ArticlesList";
-import HeaderComponent from "@/components/home/HeaderComponent";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
 // Generar todas las combinaciones de vol/issue
@@ -36,7 +35,6 @@ export default function IssuePage({ params }) {
 
   return (
     <div>
-      <HeaderComponent />
       <BreadcrumbNav />
       <ArticlesList
         title={`Volumen ${current.volume}, Número ${current.number}, ${current.date}`}

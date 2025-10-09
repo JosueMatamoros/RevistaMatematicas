@@ -1,42 +1,36 @@
-"use client";
 import Image from "next/image";
-import { withBasePath} from "@/lib/basePath";
+import { withBasePath } from "@/lib/basePath";
 
 export default function HeaderComponent() {
   return (
-    <div>
-      <header className="bg-tec-blue-primary text-white border-b-4 border-tec-red-primary">
-        {/* Header top section with logoHeader, tituloHeaderBlanco and logoTECBLanco */}
-        <div className="flex items-center justify-between px-6 py-2">
-          <div className="flex items-center gap-4">
-            <Image
-              src={withBasePath("/logoHeader.webp")}
-              alt="Matemática Logo"
-              width={120}
-              height={135}
-              className="h-14 w-auto sm:h-20"
-              priority
-            />
-            <Image
-              src={withBasePath("/tituloHeaderBlanco.webp")}
-              alt="Título Matemática"
-              width={1720}
-              height={400}
-              className="h-10 w-auto sm:h-16"
-              priority
-            />
-          </div>
-
+    <header className="bg-tec-blue-primary text-white border-b-4 border-tec-red-primary">
+      <div className="flex items-center justify-between px-6 py-2">
+        <div className="flex items-center gap-4">
           <Image
-            src={withBasePath("/logoTECBLanco.webp")}
-            alt="TEC Logo"
-            width={340}
-            height={85}
-            className="h-14 w-auto hidden sm:block"
+            src={withBasePath("/logoHeader.webp")}
+            alt="Matemática Logo"
+            width={120}
+            height={135}
+            className="h-14 w-auto sm:h-20"
             priority
           />
+          <Image
+            src={withBasePath("/tituloHeaderBlanco.webp")}
+            alt="Título Matemática"
+            width={1720}
+            height={400}
+            className="h-10 w-auto sm:h-16"
+          />
         </div>
-      </header>
-    </div>
+
+        <Image
+          src={withBasePath("/logoTECBLanco.webp")}
+          alt="TEC Logo"
+          width={340}
+          height={85}
+          className="h-14 w-auto hidden sm:block"
+        />
+      </div>
+    </header>
   );
 }

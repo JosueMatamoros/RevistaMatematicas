@@ -10,7 +10,6 @@ import {
   Chip,
 } from "@material-tailwind/react";
 import { LuCalendar, LuBookOpen } from "react-icons/lu";
-import HeaderComponent from "@/components/home/HeaderComponent";
 import NavsComponent from "@/components/home/NavsComponent";
 import { issues } from "@/data/issues";
 
@@ -19,7 +18,6 @@ export default function ArticulosIndexPage() {
 
   return (
     <div>
-      <HeaderComponent />
       <NavsComponent />
 
       <div className="container mx-auto px-6 py-6">

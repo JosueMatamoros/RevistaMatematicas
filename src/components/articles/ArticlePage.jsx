@@ -1,6 +1,5 @@
 // src/components/articles/ArticlePage.jsx
 import { withBasePath, withFullUrl } from "@/lib/basePath";
-import HeaderComponent from "@/components/home/HeaderComponent";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 import { FaFilePdf, FaShareAlt, FaCopy } from "react-icons/fa";
 
@@ -9,7 +8,6 @@ export default function ArticlePage({ article }) {
 
   return (
     <article className="min-h-screen bg-white">
-      <HeaderComponent />
       <div className="mt-2 mb-2">
         <BreadcrumbNav />
       </div>
@@ -162,6 +160,7 @@ export default function ArticlePage({ article }) {
         <section className="mt-6">
           <div className="border-2 rounded-lg overflow-hidden">
             <iframe
+              loading="lazy"
               src={withBasePath(article.pdf)}
               className="w-full h-[700px] lg:h-[900px]"
               title={`Artículo completo - ${article.title}`}

@@ -1,13 +1,11 @@
 "use client";
 
-import HeaderComponent from "@/components/home/HeaderComponent";
 import NavsComponent from "@/components/home/NavsComponent";
 import { TbExternalLink } from "react-icons/tb";
 
 export default function PoliticaEditorialPage() {
   return (
     <div>
-      <HeaderComponent />
       <NavsComponent />
 
       <div className="container mx-auto px-6 py-8">
