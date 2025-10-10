@@ -32,24 +32,24 @@ export default function FooterComponent() {
       </div>
 
       {/* Contenedor principal */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-12 border-b border-gray-600 pb-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-12 mb-6">
         {/* Contactos */}
-        <div className="flex flex-col min-w-[250px] max-w-[340px] mx-auto order-1">
-          <h2 className="text-2xl font-bold text-[#0070d1] mb-6 text-center md:text-left">
-            Contactos
-          </h2>
+        <div className="flex flex-col min-w-[250px] max-w-[340px] mx-auto order-1 text-center md:text-left">
+          <h2 className="text-2xl font-bold text-[#0070d1] mb-6">Contactos</h2>
           <div className="space-y-5 text-gray-300">
             <div>
-              <p className="text-white font-semibold">Directora</p>
-              <p>Nuria Figueroa Flores</p>
+              <p className="text-white font-semibold text-lg">Directora</p>
+              <p className="sm:text-start">Nuria Figueroa Flores</p>
             </div>
             <div>
-              <p className="text-white font-semibold">Editor</p>
-              <p>Greivin Ramírez Arce</p>
+              <p className="text-white font-semibold text-lg">Editor</p>
+              <p className="sm:text-start">Greivin Ramírez Arce</p>
             </div>
             <div>
-              <p className="text-white font-semibold">Edición de materiales</p>
-              <p>Rebeca Solís Ortega</p>
+              <p className="text-white font-semibold text-lg">
+                Edición de materiales
+              </p>
+              <p className="sm:text-start">Rebeca Solís Ortega</p>
             </div>
           </div>
           <div className="flex gap-4 text-xl my-5 justify-center md:justify-start">
@@ -64,25 +64,38 @@ export default function FooterComponent() {
           <h2 className="text-2xl font-bold text-[#0070d1] mb-6 text-center sm:text-start">
             Información general
           </h2>
-          <div className="text-gray-300 space-y-4 text-justify">
-            <p className="font-semibold text-white text-center md:text-justify">
+          <div className="text-gray-300 space-y-4 text-center sm:text-justify">
+            <p className="font-semibold text-white">
               Escuela de Matemática, Tecnológico de Costa Rica, Cartago, Costa
               Rica.
             </p>
-            <p className="flex items-start gap-3">
-              <FaEnvelope className="text-[#0070d1] flex-shrink-0 w-5 h-5 mt-[2px]" />
-              <span>Apartado postal: 159-7050. Cartago, Costa Rica.</span>
+
+            {/* Apartado postal */}
+            <p className="flex flex-col items-center sm:flex-row sm:items-start gap-2 sm:gap-3">
+              <FaEnvelope className="text-[#0070d1] flex-shrink-0 w-5 h-5 mb-1 sm:mb-0" />
+              <span className="text-center sm:text-left">
+                Apartado postal: 159-7050.
+                <br className="block sm:hidden" />
+                Cartago, Costa Rica.
+              </span>
             </p>
-            <p className="flex items-start gap-3">
-              <FaMapMarkerAlt className="text-[#0070d1] flex-shrink-0 w-5 h-5 mt-[2px]" />
-              <span>
-                Dirección: Calle 15, Avenida 14. 1 km Sur de la Basílica de los
+
+            {/* Dirección */}
+            <p className="flex flex-col items-center sm:flex-row sm:items-start gap-2 sm:gap-3">
+              <FaMapMarkerAlt className="text-[#0070d1] flex-shrink-0 w-5 h-5 mb-1 sm:mb-0" />
+              <span className="text-center sm:text-left">
+                Dirección: Calle 15, Avenida 14.
+                <br className="block sm:hidden" />1 km Sur de la Basílica de los
                 Ángeles.
               </span>
             </p>
-            <p className="flex items-start gap-3">
-              <FaPhoneAlt className="text-[#0070d1] flex-shrink-0 w-5 h-5 mt-[2px]" />
-              <span>Teléfono (506) 2550-2225</span>
+
+            {/* Teléfono */}
+            <p className="flex flex-col items-center sm:flex-row sm:items-start gap-2 sm:gap-3">
+              <FaPhoneAlt className="text-[#0070d1] flex-shrink-0 w-5 h-5 mb-1 sm:mb-0" />
+              <span className="text-center sm:text-left">
+                Teléfono (506) 2550-2225
+              </span>
             </p>
           </div>
         </div>
@@ -109,7 +122,7 @@ export default function FooterComponent() {
       </div>
 
       {/* Footer inferior con licencia */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-gray-400 text-sm mt-6 text-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-gray-400 text-sm mt-6 text-center border-t border-color-gray-400 pt-4">
         <Image
           src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png"
           alt="Creative Commons BY-NC-ND"
