@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import {
   Card,
   CardBody,
@@ -14,8 +14,6 @@ import NavsComponent from "@/components/home/NavsComponent";
 import { issues } from "@/data/issues";
 
 export default function ArticulosIndexPage() {
-  const router = useRouter();
-
   return (
     <div>
       <NavsComponent />
@@ -41,7 +39,6 @@ export default function ArticulosIndexPage() {
         {/* Grid de números */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {issues.map((issue, index) => {
-            // Forzar el chip en el 1º y 2º elemento
             let chipLabel = "";
             if (index === 0) chipLabel = "Actual";
             if (index === 1) chipLabel = "Reciente";
@@ -49,20 +46,17 @@ export default function ArticulosIndexPage() {
             return (
               <Card
                 key={issue.id}
-                className={
-                  "border-l-4 border-red-500 hover:border-tec-blue-secondary transition-colors duration-200 group"
-                }
+                className="border-l-4 border-red-500 hover:border-tec-blue-secondary transition-colors duration-200 group"
               >
                 <CardBody>
                   {/* Título del número */}
                   <div className="flex justify-between items-center mb-4 ">
                     <Typography
                       variant="h4"
-                      className="font-bold  group-hover:text-tec-blue-secondary transition-colors duration-200"
+                      className="font-bold group-hover:text-tec-blue-secondary transition-colors duration-200"
                     >
                       Volumen {issue.volume}, Número {issue.number}
                     </Typography>
-                    {/* Chip de estado */}
                     {chipLabel && (
                       <Chip
                         value={chipLabel}
@@ -82,19 +76,21 @@ export default function ArticulosIndexPage() {
                     <Typography color="gray">{issue.date}</Typography>
                   </div>
 
-                  {/* Botón Ver artículos con ícono */}
-                  <Button
-                    className="normal-case flex items-center gap-2 px-5 py-2 rounded-md 
-                    bg-gray-100 text-gray-800 font-medium shadow-sm
-                    hover:bg-gray-200 hover:shadow-md
-                    transition-all duration-200 border border-gray-300 hover:scale-105"
-                    onClick={() =>
-                      router.push(`/Articulos/V${issue.volume}/${issue.id}`)
-                    }
+                  {/* Link que se ve igual que el botón */}
+                  <Link
+                    href={`/Articulos/V${issue.volume}/${issue.id}`}
+                    passHref
                   >
-                    <LuBookOpen className="w-4 h-4" />
-                    Ver artículos
-                  </Button>
+                    <Button
+                      className="normal-case flex items-center gap-2 px-5 py-2 rounded-md
+                      bg-gray-100 text-gray-800 font-medium shadow-sm
+                      hover:bg-gray-200 hover:shadow-md
+                      transition-all duration-200 border border-gray-300 hover:scale-105"
+                    >
+                      <LuBookOpen className="w-4 h-4" />
+                      Ver artículos
+                    </Button>
+                  </Link>
                 </CardBody>
               </Card>
             );

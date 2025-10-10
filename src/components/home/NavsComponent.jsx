@@ -27,13 +27,13 @@ export default function NavsComponent({ isSidebarOpen }) {
       {/* ---------- NAV PRINCIPAL (pantallas grandes) ---------- */}
       <div
         className={`
-          hidden md:flex w-full transition-all duration-300 ease-in-out mt-4
+          hidden md:flex w-full transition-all duration-300 ease-in-out mt-4 
           ${isSidebarOpen ? "justify-start" : "justify-center"}
         `}
       >
         <nav
           className={`
-            rounded-md border bg-white shadow-md px-6 py-3 relative
+            rounded-md border shadow-md px-6 py-3 relative
             transition-all duration-300 ease-in-out
             ${isSidebarOpen ? "w-full" : "inline-block"}
           `}

@@ -78,7 +78,7 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
         
       >
         {isOpen ? <FaChevronRight size={20} /> : <FaChevronLeft size={20} />}
-        <span className="sr-only">Toogle Sidebar</span>
+        <span className="sr-only">Toogle side</span>
       </button>
     </div>
   );
