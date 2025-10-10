@@ -1,6 +1,7 @@
 "use client";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SearchBar from "../common/SearchBar";
+import IndexingCards from "./IndexingCards";
 
 export default function SidebarComponent({ isOpen, setIsOpen }) {
   return (
@@ -66,6 +67,7 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
                   Suscribirse
                 </button>
               </div>
+              <IndexingCards/>
             </div>
           </>
         )}
