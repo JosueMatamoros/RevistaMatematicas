@@ -19,7 +19,7 @@ export const poppins = localFont({
   ],
   variable: "--font-poppins",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const sourceSans = localFont({

@@ -16,7 +16,7 @@ export default function ArticlesList({ title, articles }) {
   const router = useRouter();
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       {/* Título dinámico */}
       <Typography
         variant="h4"
@@ -45,7 +45,7 @@ export default function ArticlesList({ title, articles }) {
             <Card
               key={article.id}
               onClick={handleCardClick}
-              className="group border-l-4 hover:shadow-lg transition-all duration-300 hover:border-l-tec-blue-secondary cursor-pointer"
+              className="group border-l-4 hover:shadow-lg bg-gray-50 transition-all duration-300 hover:border-l-tec-blue-secondary cursor-pointer"
             >
               <CardBody>
                 {/* Título principal */}
@@ -97,7 +97,7 @@ export default function ArticlesList({ title, articles }) {
                     size="sm"
                     variant="outlined"
                     color="red"
-                    className="normal-case inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm hidden md:inline-flex"
+                    className="normal-case items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm hidden md:inline-flex"
                     onClick={handlePdfDownload}
                   >
                     Descargar

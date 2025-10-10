@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${poppins.variable} ${sourceSans.variable}`}
     >
       <body className="antialiased">
-        <HeaderComponent />
-        {children}
+        <div className="min-h-svh">
+          <HeaderComponent />
+          {children}
+        </div>
         <FooterComponent />
       </body>
     </html>
