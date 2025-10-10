@@ -112,13 +112,7 @@ export default function ArticlesList({ title, articles }) {
                       size="sm"
                       variant="outlined"
                       value={article.category}
-                      className={`${
-                        article.color === "blue"
-                          ? "border-blue-300 text-blue-700 bg-blue-50"
-                          : article.color === "red"
-                          ? "border-red-300 text-red-700 bg-red-50"
-                          : "border-gray-300 text-gray-700 bg-gray-50"
-                      }`}
+                      className="border-blue-300 text-blue-700 bg-blue-50"
                     />
                   </div>
                 )}
