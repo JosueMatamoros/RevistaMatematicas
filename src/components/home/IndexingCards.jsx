@@ -1,15 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/basePath";
 
 const indexers = [
-  { name: "SciELO", src: "/indexadoras/scileoCambiar.webp", url: "https://www.redalyc.org/revista.oa?id=6079" },
-  { name: "Redalyc", src: "/indexadoras/redalycLogo.webp", url: "https://www.redalyc.org/revista.oa?id=6079&tipo=coleccion" },
-  { name: "Latindex", src: "/indexadoras/latindexLogo.webp", url: "https://www.latindex.org/latindex/ficha/15341" },
-  { name: "DOAJ", src: "/indexadoras/DOAJlogo.webp", url: "https://doaj.org/toc/1659-0643" },
-  { name: "REDIB", src: "/indexadoras/redibLogo.webp", url: "https://www.redib.org/Serials/Record/oai_revista1119-revista-digital-matem%C3%A1tica-educaci%C3%B3n-e-internet" },
-  { name: "Kimuk", src: "/indexadoras/kimukLogo.webp", url: "https://kimuk.conare.ac.cr/Search/Results?lookfor=1659-0643" },
-  { name: "Portal Revistas TEC", src: "/indexadoras/portalRevistasTEC.webp", url: "https://revistas.tec.ac.cr/index.php/matematica/", fullWidth: true },
+  { name: "SciELO", src: withBasePath("/indexadoras/scileoCambiar.webp"), url: "https://www.redalyc.org/revista.oa?id=6079" },
+  { name: "Redalyc", src: withBasePath("/indexadoras/redalycLogo.webp"), url: "https://www.redalyc.org/revista.oa?id=6079&tipo=coleccion" },
+  { name: "Latindex", src: withBasePath("/indexadoras/latindexLogo.webp"), url: "https://www.latindex.org/latindex/ficha/15341" },
+  { name: "DOAJ", src: withBasePath("/indexadoras/DOAJlogo.webp"), url: "https://doaj.org/toc/1659-0643" },
+  { name: "REDIB", src: withBasePath("/indexadoras/redibLogo.webp"), url: "https://www.redib.org/Serials/Record/oai_revista1119-revista-digital-matem%C3%A1tica-educaci%C3%B3n-e-internet" },
+  { name: "Kimuk", src: withBasePath("/indexadoras/kimukLogo.webp"), url: "https://kimuk.conare.ac.cr/Search/Results?lookfor=1659-0643" },
+  { name: "Portal Revistas TEC", src: withBasePath("/indexadoras/portalRevistasTEC.webp"), url: "https://revistas.tec.ac.cr/index.php/matematica/", fullWidth: true },
 ];
 
 export default function IndexingCards() {
