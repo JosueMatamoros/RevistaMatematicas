@@ -22,5 +22,29 @@
         "url": "https://www.wolfram.com/player/"
       }
     ]
+  },
+   "calculo-varias-variables": {
+    "coverImage": "/libros/universitaria/analisis/calculo-en-varias-variables/portada.png",
+    "title": "Cálculo en Varias Variables. Visualización interactiva. 2da Ed.",
+    "englishTitle": "",
+    "authors": ["Walter A. Mora Flores"],
+    "lastRevision": "Febrero 2022",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/calculo-en-varias-variables/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/calculo-en-varias-variablesCDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
   }
 }

@@ -16,7 +16,11 @@ export default function BooksCard({
 }) {
   const getValidUrl = (url, type) => {
     // Si es un link externo o el tipo es "link", no usar withFullUrl
-    if (type === "link" || url.startsWith("http://") || url.startsWith("https://")) {
+    if (
+      type === "link" ||
+      url.startsWith("http://") ||
+      url.startsWith("https://")
+    ) {
       return url;
     }
     return withFullUrl(url);
@@ -29,7 +33,7 @@ export default function BooksCard({
         <img
           src={coverImage}
           alt={title}
-          className="rounded-lg shadow-md max-h-64 object-contain"
+          className="object-contain w-full max-h-64 aspect-[3/4]"
         />
       </div>
 
@@ -113,7 +117,9 @@ export default function BooksCard({
                   variant="outlined"
                   color="gray"
                   className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
-                  onClick={() => window.open(getValidUrl(res.url, res.type), "_blank")}
+                  onClick={() =>
+                    window.open(getValidUrl(res.url, res.type), "_blank")
+                  }
                 >
                   <span>{res.label}</span>
                   {res.type === "pdf" && (
