@@ -1,8 +1,10 @@
 "use client";
 
 import BooksCard from "@/components/books/BooksCard";
-import primariaData from "@/data/libros/primaria.json";
+import primariaData from "@/data/libros-interactivos/primaria.json";
+import universitariaData from "@/data/libros-interactivos/universitaria.json";
 import { withBasePath } from "@/lib/basePath";
+import NavsComponent from "@/components/home/NavsComponent";
 
 export default function Page() {
   // Normaliza URLs para cada libro
@@ -16,14 +18,34 @@ export default function Page() {
     })),
   });
 
-  // Convierte el objeto en array y normaliza cada libro
-  const booksArray = Object.values(primariaData).map(normalizeBook);
+  // Convierte objetos a arrays y normaliza
+  const primariaBooks = Object.values(primariaData).map(normalizeBook);
+  const universitariaBooks = Object.values(universitariaData).map(normalizeBook);
+
+  // Junta ambos arreglos
+  const allBooks = [...primariaBooks, ...universitariaBooks];
 
   return (
-    <div className="container mx-auto px-4 py-10 space-y-8">
-      {booksArray.map((book, index) => (
-        <BooksCard key={index} {...book} />
-      ))}
+    <div>
+      <NavsComponent />
+      {/* Encabezado */}
+      <div className="text-center py-6 flex flex-col items-center">
+        <div className="flex items-center gap-3">
+          <h1 className="text-4xl font-display font-bold text-tec-blue-primary">
+            Libros Interactivos
+          </h1>
+        </div>
+        <p className="text-gray-500 text-lg mt-3 font-light text-center">
+          Libros con ejercicios y videos interactivos para aprender de forma práctica.
+        </p>
+      </div>
+
+      {/* Lista de libros */}
+      <div className="container mx-auto px-6 mb-8 space-y-8">
+        {allBooks.map((book, index) => (
+          <BooksCard key={index} {...book} />
+        ))}
+      </div>
     </div>
   );
 }

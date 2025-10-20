@@ -27,7 +27,7 @@ export default function NavsComponent({ isSidebarOpen }) {
       {/* ---------- NAV PRINCIPAL (pantallas grandes) ---------- */}
       <div
         className={`
-          hidden md:flex w-full transition-all duration-300 ease-in-out mt-4 
+          hidden md:flex w-full transition-all duration-300 ease-in-out mt-4
           ${isSidebarOpen ? "justify-start" : "justify-center"}
         `}
       >
@@ -92,18 +92,26 @@ export default function NavsComponent({ isSidebarOpen }) {
                 <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
               </div>
               <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                {["Libros", "Materiales revisados", "Materiales sin revisión"].map(
-                  (item, i) => (
-                    <li key={i}>
-                      <Link
-                        href="/"
-                        className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  )
-                )}
+                {[
+                  { text: "Libros", href: "/materialdidactico/libros" },
+                  {
+                    text: "Materiales revisados",
+                    href: "/materialdidactico/revisados",
+                  },
+                  {
+                    text: "Materiales sin revisión",
+                    href: "/materialdidactico/sinrevision",
+                  },
+                ].map((item, i) => (
+                  <li key={i}>
+                    <Link
+                      href={item.href}
+                      className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </li>
 
@@ -229,8 +237,16 @@ export default function NavsComponent({ isSidebarOpen }) {
             <ul className="p-5 space-y-2 overflow-y-auto h-[calc(100%-4rem)]">
               {[
                 { icon: <FaHome />, text: "Inicio", href: "/" },
-                { icon: <FaArrowDown19 />, text: "Todos los Números", href: "/Articulos" },
-                { icon: <FaUserEdit />, text: "Para autores", href: "/paginasgenerales/instrucciones" },
+                {
+                  icon: <FaArrowDown19 />,
+                  text: "Todos los Números",
+                  href: "/Articulos",
+                },
+                {
+                  icon: <FaUserEdit />,
+                  text: "Para autores",
+                  href: "/paginasgenerales/instrucciones",
+                },
               ].map((item, i) => (
                 <li key={i}>
                   <Link
@@ -246,7 +262,11 @@ export default function NavsComponent({ isSidebarOpen }) {
 
               {/* Submenús con animación */}
               {[
-                { id: "secciones", icon: <FaBook />, title: "Secciones", items: [
+                {
+                  id: "secciones",
+                  icon: <FaBook />,
+                  title: "Secciones",
+                  items: [
                     "Temas de matemática",
                     "Didáctica y software",
                     "Historia",
@@ -255,18 +275,29 @@ export default function NavsComponent({ isSidebarOpen }) {
                     "Matemática y algoritmos",
                     "Enseñanza Inclusiva en Matemática",
                     "Curiosidades Matemáticas",
-                  ] },
-                { id: "material", icon: <FaPencil />, title: "Material didáctico", items: [
+                  ],
+                },
+                {
+                  id: "material",
+                  icon: <FaPencil />,
+                  title: "Material didáctico",
+                  items: [
                     "Libros",
                     "Materiales revisados",
                     "Materiales sin revisión",
-                  ] },
-                { id: "acerca", icon: <FaInfoCircle />, title: "Acerca de", items: [
+                  ],
+                },
+                {
+                  id: "acerca",
+                  icon: <FaInfoCircle />,
+                  title: "Acerca de",
+                  items: [
                     "Sobre la revista",
                     "Política Editorial",
                     "Cuerpo Editorial",
                     "Declaración de originalidad",
-                  ] },
+                  ],
+                },
               ].map((menu) => (
                 <li key={menu.id}>
                   <button
@@ -284,7 +315,9 @@ export default function NavsComponent({ isSidebarOpen }) {
                   </button>
                   <ul
                     className={`overflow-hidden transition-all duration-300 ${
-                      openSubmenu === menu.id ? "max-h-96 mt-2" : "max-h-0 opacity-0"
+                      openSubmenu === menu.id
+                        ? "max-h-96 mt-2"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
                     {menu.items.map((sub, i) => (

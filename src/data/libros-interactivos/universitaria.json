@@ -1,0 +1,26 @@
+{
+  "ecuaciones-diferenciales-orden-superior": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/portada.png",
+    "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
+    "englishTitle": "Higher Order Differential Equations with Interactive Applications and Illustrative Video",
+    "authors": ["Norberto Gerardo Oviedo Ugalde"],
+    "lastRevision": "Agosto 2022",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  }
+}

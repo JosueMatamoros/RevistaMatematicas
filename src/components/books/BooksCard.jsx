@@ -14,6 +14,14 @@ export default function BooksCard({
   mainPDF,
   resources,
 }) {
+  const getValidUrl = (url, type) => {
+    // Si es un link externo o el tipo es "link", no usar withFullUrl
+    if (type === "link" || url.startsWith("http://") || url.startsWith("https://")) {
+      return url;
+    }
+    return withFullUrl(url);
+  };
+
   return (
     <div className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary">
       {/* Portada */}
@@ -77,7 +85,9 @@ export default function BooksCard({
               variant="outlined"
               color="red"
               className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50 text-sm font-bold normal-case"
-              onClick={() => window.open(withFullUrl(mainPDF.url), "_blank")}
+              onClick={() =>
+                window.open(getValidUrl(mainPDF.url, mainPDF.type), "_blank")
+              }
             >
               <span>Descargar</span>
               <FaFilePdf className="text-red-500 w-5 h-5 align-middle" />
@@ -103,7 +113,7 @@ export default function BooksCard({
                   variant="outlined"
                   color="gray"
                   className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
-                  onClick={() => window.open(withFullUrl(res.url), "_blank")}
+                  onClick={() => window.open(getValidUrl(res.url, res.type), "_blank")}
                 >
                   <span>{res.label}</span>
                   {res.type === "pdf" && (
