@@ -115,7 +115,32 @@
     "label": "Descargar",
     "url": "/libros/universitaria/analisis/fractales-2010/libro.pdf"
   }
+},
+"xxx-ocm-2018": {
+  "coverImage": "/libros/universitaria/olimpiadas/xxx-ocm-2018/portada.png",
+  "title": "Problemas de exámenes y soluciones XXX Olimpiada Costarricense de Matemáticas",
+  "englishTitle": "Problems and Solutions of the 30th Costa Rican Mathematics Olympiad",
+  "authors": ["C. Páez", "M. Abarca", "L. Chaves", "A. Hernández", "G. Calderón", "F. Mora", "J. Ramírez", "D. Jiménez", "G. Mora", "E. Chaves", "S. Hernández"],
+  "lastRevision": "2018",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/olimpiadas/xxx-ocm-2018/libro.pdf"
+  }
+},
+"xxix-ocm-2017": {
+  "coverImage": "/libros/universitaria/olimpiadas/xxix-ocm-2017/portada.png",
+  "title": "Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas",
+  "englishTitle": "Problems and Solutions of the 29th Costa Rican Mathematics Olympiad",
+  "authors": ["C. Páez", "M. Abarca", "L. Chaves", "A. Hernández", "G. Calderón", "F. Mora", "J. Ramírez", "D. Jiménez", "G. Mora", "E. Chaves", "S. Hernández"],
+  "lastRevision": "2017",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/olimpiadas/xxix-ocm-2017/libro.pdf"
+  }
 }
+
 
 
 
