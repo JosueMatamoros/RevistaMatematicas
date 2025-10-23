@@ -282,9 +282,15 @@ export default function NavsComponent({ isSidebarOpen }) {
                   icon: <FaPencil />,
                   title: "Material didáctico",
                   items: [
-                    "Libros",
-                    "Materiales revisados",
-                    "Materiales sin revisión",
+                    { text: "Libros", href: "/materialdidactico/libros" },
+                    {
+                      text: "Materiales revisados",
+                      href: "/materialdidactico/revisados",
+                    },
+                    {
+                      text: "Materiales sin revisión",
+                      href: "/materialdidactico/sinrevision",
+                    },
                   ],
                 },
                 {
@@ -292,10 +298,27 @@ export default function NavsComponent({ isSidebarOpen }) {
                   icon: <FaInfoCircle />,
                   title: "Acerca de",
                   items: [
-                    "Sobre la revista",
-                    "Política Editorial",
-                    "Cuerpo Editorial",
-                    "Declaración de originalidad",
+                    {
+                      text: "Sobre la revista",
+                      href: "/paginasgenerales/sobrelarevista",
+                    },
+                    {
+                      text: "Política Editorial",
+                      href: "/paginasgenerales/politicaeditorial",
+                    },
+                    {
+                      text: "Cuerpo Editorial",
+                      href: "/paginasgenerales/equipoeditorial",
+                    },
+                    {
+                      text: "Declaración de originalidad",
+                      href: "/paginasgenerales/declaracionoriginalidad",
+                    },
+                    {
+                      text: "Estadísticas",
+                      href: "https://revistas.tec.ac.cr/index.php/matematica/estadisticas",
+                      external: true,
+                    },
                   ],
                 },
               ].map((menu) => (
@@ -322,13 +345,33 @@ export default function NavsComponent({ isSidebarOpen }) {
                   >
                     {menu.items.map((sub, i) => (
                       <li key={i}>
-                        <Link
-                          href="/"
-                          onClick={() => setMenuOpen(false)}
-                          className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
-                        >
-                          {sub}
-                        </Link>
+                        {typeof sub === "string" ? (
+                          <Link
+                            href="/"
+                            onClick={() => setMenuOpen(false)}
+                            className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                          >
+                            {sub}
+                          </Link>
+                        ) : sub.external ? (
+                          <a
+                            href={sub.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMenuOpen(false)}
+                            className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                          >
+                            {sub.text}
+                          </a>
+                        ) : (
+                          <Link
+                            href={sub.href}
+                            onClick={() => setMenuOpen(false)}
+                            className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                          >
+                            {sub.text}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
