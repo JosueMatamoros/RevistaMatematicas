@@ -1,6 +1,6 @@
 {
-  "ecuaciones-diferenciales-orden-superior": {
-    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/portada.png",
+  "ecuaciones-diferenciales-orden-superior-2022": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.png",
     "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
     "englishTitle": "Higher Order Differential Equations with Interactive Applications and Illustrative Video",
     "authors": ["Norberto Gerardo Oviedo Ugalde"],
@@ -8,13 +8,13 @@
     "mainPDF": {
       "type": "pdf",
       "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/libro.pdf"
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf"
     },
     "resources": [
       {
         "type": "zip",
         "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior/CDF.zip"
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/CDF.zip"
       },
       {
         "type": "link",
@@ -23,22 +23,143 @@
       }
     ]
   },
-   "calculo-varias-variables": {
-    "coverImage": "/libros/universitaria/analisis/calculo-en-varias-variables/portada.png",
+  "calculo-varias-variables-2022": {
+    "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.png",
     "title": "Cálculo en Varias Variables. Visualización interactiva. 2da Ed.",
-    "englishTitle": "",
+    "englishTitle": "Calculus in Several Variables. Interactive Visualization. 2nd Ed.",
     "authors": ["Walter A. Mora Flores"],
     "lastRevision": "Febrero 2022",
     "mainPDF": {
       "type": "pdf",
       "label": "Descargar",
-      "url": "/libros/universitaria/analisis/calculo-en-varias-variables/libro.pdf"
+      "url": "/libros/universitaria/analisis/calculo-varias-variables-2022/libro.pdf"
     },
     "resources": [
       {
         "type": "zip",
         "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/libros/universitaria/analisis/calculo-en-varias-variablesCDF.zip"
+        "url": "/libros/universitaria/analisis/calculo-varias-variables-2022/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  },
+  "ecuaciones-diferenciales-primer-orden-2022": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/portada.svg",
+    "title": "Ecuaciones diferenciales de primer orden",
+    "englishTitle": "First Order Differential Equations",
+    "authors": ["Norberto Oviedo U."],
+    "lastRevision": "Febrero 2022",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  },
+  "ecuaciones-diferenciales-transformada-laplace-2021": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/portada.png",
+    "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
+    "englishTitle": "Differential Equations using Laplace Transform",
+    "authors": ["Norberto Oviedo U."],
+    "lastRevision": "Marzo 2021",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  },
+  "ecuaciones-diferenciales-orden-superior-2020": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/portada.png",
+    "title": "Ecuaciones diferenciales de orden superior",
+    "englishTitle": "Higher Order Differential Equations",
+    "authors": ["Norberto Oviedo U."],
+    "lastRevision": "Marzo 2020",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  },
+  "ecuaciones-diferenciales-primer-orden-2018": {
+    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/portada.png",
+    "title": "Ecuaciones diferenciales ordinarias de 1er orden",
+    "englishTitle": "First Order Ordinary Differential Equations",
+    "authors": ["Norberto Oviedo U."],
+    "lastRevision": "2018",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ]
+  },
+
+  "vectores-rectas-y-planos-2018": {
+    "coverImage": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/portada.jpg",
+    "title": "Vectores Rectas y Planos. Visualización interactiva",
+    "englishTitle": "Vectors, Lines and Planes. Interactive Visualization",
+    "authors": ["Marco Gutiérrez M.", "Walter A. Mora F."],
+    "lastRevision": "Abril 2018",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf"
+    },
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/analisis/geometria/vectores-rectas-y-planos-2018/CDF.zip"
       },
       {
         "type": "link",
