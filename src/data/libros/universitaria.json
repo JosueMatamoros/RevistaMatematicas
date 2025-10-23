@@ -1,0 +1,126 @@
+{
+  "fundamentos-de-matematica-2025": {
+    "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.png",
+    "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
+    "englishTitle": "Foundations of Mathematics I: Compilation of Theory and Exercises",
+    "authors": [
+      "Reiman Acuña Chacón",
+      "Alcides Astorga Morales",
+      "Jeffrey Chavarría Molina",
+      "Marco Gutiérrez Montenegro",
+      "Edwin Quesada Solano",
+      "Greivin Ramírez Arce",
+      "Bryan Ramírez Obando",
+      "Natalia Rodríguez Granados",
+      "Giovanni Sanabria Brenes"
+    ],
+    "lastRevision": "Agosto 2025",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf"
+    }
+  },
+  "latex-2021": {
+  "coverImage": "/libros/universitaria/otros/latex-2021/portada.jpg",
+  "title": "Edición de textos científicos con LaTeX. Composición, gráficos, diseño editorial y presentaciones beamer",
+   "englishTitle": "Scientific Text Editing with LaTeX: Composition, Graphics, Editorial Design and Beamer Presentations",
+  "authors": ["Walter Mora F.", "Alexander Borbón A."],
+  "lastRevision": "Enero 2021",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/otros/latex-2021/libro.pdf"
+  }
+},
+"matematica-discreta-2018": {
+  "coverImage": "/libros/universitaria/algebra/matematica-discreta-2018/portada.png",
+  "title": "Matemática discreta a través del uso del Paquete Vilcretas",
+  "englishTitle": "Discrete Mathematics through the Use of the Vilcretas Package",
+  "authors": ["Enrique Vílchez Q."],
+  "lastRevision": "Mayo 2018",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/algebra/matematica-discreta-2018/libro.pdf"
+  }
+},
+"calculo-diferencial-e-integral-2017": {
+  "coverImage": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/portada.png",
+  "title": "Cálculo Diferencial e Integral con Aplicaciones",
+  "englishTitle": "Differential and Integral Calculus with Applications",
+  "authors": ["Elsie Hernández S."],
+  "lastRevision": "2017",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/libro.pdf"
+  }
+},
+"metodos-numericos-2015": {
+  "coverImage": "/libros/universitaria/analisis/metodos-numericos-2015/portada.png",
+  "title": "Métodos Numéricos con Basic Calc de LibreOffice y WxMaxima",
+  "englishTitle": "Numerical Methods with LibreOffice Basic Calc and WxMaxima",
+  "authors": ["Walter A. Mora F."],
+  "lastRevision": "2015",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/analisis/metodos-numericos-2015/libro.pdf"
+  }
+}, "matrices_sistemas_lineales-2013": {
+  "coverImage": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/portada.png",
+  "title": "Matrices y Sistemas Lineales",
+  "englishTitle": "Matrices and Linear Systems",
+  "authors": ["Christian Páez P."],
+  "lastRevision": "2013",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/libro.pdf"
+  }
+},
+"teoria-de-numeros-2014": {
+  "coverImage": "/libros/universitaria/algebra/teoria-de-numeros-2014/portada.png",
+  "title": "Introducción a la teoría de números. Ejemplos y Algoritmos",
+  "englishTitle": "Introduction to Number Theory: Examples and Algorithms",
+  "authors": ["Walter A. Mora F."],
+  "lastRevision": "2014",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/algebra/teoria-de-numeros-2014/libro.pdf"
+  }
+},
+"edepa-2013": {
+  "coverImage": "/libros/universitaria/estadistica/edepa-2013/portada.png",
+  "title": "Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA)",
+  "englishTitle": "Meeting on the Didactics of Statistics, Probability and Data Analysis (EDEPA)",
+  "authors": ["Walter Mora F.", "Greivin Ramírez A. (Editores)"],
+  "lastRevision": "2013",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/estadistica/edepa-2013/libro.pdf"
+  }
+},
+"fractales-2010": {
+  "coverImage": "/libros/universitaria/analisis/fractales-2010/portada.png",
+  "title": "Fractales",
+  "englishTitle": "Fractals",
+  "authors": ["Manuel Alfaro", "Manuel Murillo", "Alberto Soto"],
+  "lastRevision": "2010",
+  "mainPDF": {
+    "type": "pdf",
+    "label": "Descargar",
+    "url": "/libros/universitaria/analisis/fractales-2010/libro.pdf"
+  }
+}
+
+
+
+
+
+
+
+}

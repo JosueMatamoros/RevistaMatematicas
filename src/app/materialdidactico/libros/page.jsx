@@ -2,7 +2,8 @@
 
 import BooksCard from "@/components/books/BooksCard";
 import primariaData from "@/data/libros-interactivos/primaria.json";
-import universitariaData from "@/data/libros-interactivos/universitaria.json";
+import universitariaDataInteractivos from "@/data/libros-interactivos/universitaria.json";
+import universitariaData from "@/data/libros/universitaria.json";
 import { withBasePath } from "@/lib/basePath";
 import NavsComponent from "@/components/home/NavsComponent";
 
@@ -12,18 +13,27 @@ export default function Page() {
     ...book,
     coverImage: withBasePath(book.coverImage),
     mainPDF: { ...book.mainPDF, url: withBasePath(book.mainPDF.url) },
-    resources: book.resources.map((r) => ({
-      ...r,
-      url: withBasePath(r.url),
-    })),
+    resources: book.resources
+      ? book.resources.map((r) => ({
+          ...r,
+          url: withBasePath(r.url),
+        }))
+      : [],
   });
 
   // Convierte objetos a arrays y normaliza
   const primariaBooks = Object.values(primariaData).map(normalizeBook);
-  const universitariaBooks = Object.values(universitariaData).map(normalizeBook);
+  const universitariaBooksInteractive = Object.values(
+    universitariaDataInteractivos
+  ).map(normalizeBook);
+  const universitariaBoks = Object.values(universitariaData).map(normalizeBook);
 
   // Junta ambos arreglos
-  const allBooks = [...primariaBooks, ...universitariaBooks];
+  const allBooks = [
+    ...primariaBooks,
+    ...universitariaBooksInteractive,
+    ...universitariaBoks,
+  ];
 
   return (
     <div>
@@ -36,7 +46,8 @@ export default function Page() {
           </h1>
         </div>
         <p className="text-gray-500 text-lg mt-3 font-light text-center">
-          Libros con ejercicios y videos interactivos para aprender de forma práctica.
+          Libros con ejercicios y videos interactivos para aprender de forma
+          práctica.
         </p>
       </div>
 
