@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography, Button, Chip } from "@material-tailwind/react";
 import { FaFilePdf, FaFileArchive, FaLink } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
 
@@ -13,6 +13,7 @@ export default function BooksCard({
   lastRevision,
   mainPDF,
   resources,
+  category,
 }) {
   const getValidUrl = (url, type) => {
     // Si es un link externo o el tipo es "link", no usar withFullUrl
@@ -71,16 +72,30 @@ export default function BooksCard({
             </Typography>
           )}
 
-          {/* Última revisión */}
-          {lastRevision && (
-            <Typography
-              variant="small"
-              color="gray"
-              className="mb-3 text-gray-500"
-            >
-              Última revisión: {lastRevision}
-            </Typography>
-          )}
+          <div className="flex gap-x-4">
+            {/* Última revisión */}
+            {lastRevision && (
+              <Typography
+                variant="small"
+                color="gray"
+                className="mb-3 text-gray-500"
+              >
+                Última revisión: {lastRevision}
+              </Typography>
+            )}
+
+            {/* Categoría */}
+            {category && (
+              <div>
+                <Chip
+                  size="sm"
+                  variant="outlined"
+                  value={category}
+                  className="border-blue-300 text-blue-700 bg-blue-50"
+                />
+              </div>
+            )}
+          </div>
 
           {/* Botón principal: Descargar PDF */}
           {mainPDF && (

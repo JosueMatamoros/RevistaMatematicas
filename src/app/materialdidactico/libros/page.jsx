@@ -22,18 +22,20 @@ export default function Page() {
   });
 
   // Convierte objetos a arrays y normaliza
-  const primariaBooks = Object.values(primariaData).map(normalizeBook);
+  const primariaBooksInteractive =
+    Object.values(primariaData).map(normalizeBook);
   const universitariaBooksInteractive = Object.values(
     universitariaDataInteractivos
   ).map(normalizeBook);
-  const universitariaBoks = Object.values(universitariaData).map(normalizeBook);
+  const universitariaBooks =
+    Object.values(universitariaData).map(normalizeBook);
 
-  // Junta ambos arreglos
-  const allBooks = [
-    ...primariaBooks,
+  const allInteractiveBooks = [
+    ...primariaBooksInteractive,
     ...universitariaBooksInteractive,
-    ...universitariaBoks,
   ];
+
+  const allBooks = [...universitariaBooks];
 
   return (
     <div>
@@ -53,10 +55,30 @@ export default function Page() {
 
       {/* Lista de libros */}
       <div className="container mx-auto px-6 mb-8 space-y-8">
+        {allInteractiveBooks.map((book, index) => (
+          <BooksCard key={index} {...book} />
+        ))}
+      </div>
+
+      <div className="text-center py-6 flex flex-col items-center">
+        <div className="flex items-center gap-3">
+          <h1 className="text-4xl font-display font-bold text-tec-blue-primary">
+            Libros
+          </h1>
+        </div>
+        <p className="text-gray-500 text-lg mt-3 font-light text-center">
+         Libros en formato PDF para consultar y reforzar conocimientos teóricos.
+        </p>
+      </div>
+
+      {/* Lista de libros */}
+      <div className="container mx-auto px-6 mb-8 space-y-8">
         {allBooks.map((book, index) => (
           <BooksCard key={index} {...book} />
         ))}
       </div>
+
+
     </div>
   );
 }
