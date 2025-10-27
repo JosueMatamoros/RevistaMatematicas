@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Typography, Button, Chip } from "@material-tailwind/react";
 import { FaFilePdf, FaFileArchive, FaLink } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
 
 export default function BooksCard({
+  id,
   coverImage,
   title,
   title_en,
@@ -15,8 +17,8 @@ export default function BooksCard({
   resources,
   category,
 }) {
+  // función para construir urls seguras
   const getValidUrl = (url, type) => {
-    // Si es un link externo o el tipo es "link", no usar withFullUrl
     if (
       type === "link" ||
       url.startsWith("http://") ||
@@ -27,8 +29,17 @@ export default function BooksCard({
     return withFullUrl(url);
   };
 
+  // formatea autores si vienen como objetos
+  const formattedAuthors =
+    authors && authors.length > 0
+      ? authors.map((a) => (typeof a === "string" ? a : a.name)).join(", ")
+      : "";
+
   return (
-    <div className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary">
+    <Link
+      href={`/libros/${id}`}
+      className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary"
+    >
       {/* Portada */}
       <div className="md:w-1/4 p-4 flex justify-center items-center ">
         <img
@@ -62,17 +73,17 @@ export default function BooksCard({
           )}
 
           {/* Autores */}
-          {authors && authors.length > 0 && (
+          {formattedAuthors && (
             <Typography
               variant="small"
               color="gray"
               className="font-medium mb-2"
             >
-              {authors.join(", ")}
+              {formattedAuthors}
             </Typography>
           )}
 
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-4 items-center">
             {/* Última revisión */}
             {lastRevision && (
               <Typography
@@ -86,37 +97,43 @@ export default function BooksCard({
 
             {/* Categoría */}
             {category && (
-              <div>
-                <Chip
-                  size="sm"
-                  variant="outlined"
-                  value={category}
-                  className="border-blue-300 text-blue-700 bg-blue-50"
-                />
-              </div>
+              <Chip
+                size="sm"
+                variant="outlined"
+                value={category}
+                className="border-blue-300 text-blue-700 bg-blue-50"
+              />
             )}
           </div>
 
           {/* Botón principal: Descargar PDF */}
-          {pdf&& (
-            <Button
-              size="sm"
-              variant="outlined"
-              color="red"
-              className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50 text-sm font-bold normal-case"
-              onClick={() =>
-                window.open(getValidUrl(pdf, "pdf"), "_blank")
-              }
+          {pdf && (
+            <div
+              className="mt-3"
+              onClick={(e) => e.stopPropagation()}
+              onMouseDown={(e) => e.stopPropagation()}
             >
-              <span>Descargar</span>
-              <FaFilePdf className="text-red-500 w-5 h-5 align-middle" />
-            </Button>
+              <Button
+                size="sm"
+                variant="outlined"
+                color="red"
+                className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50 text-sm font-bold normal-case"
+                onClick={() => window.open(getValidUrl(pdf, "pdf"), "_blank")}
+              >
+                <span>Descargar</span>
+                <FaFilePdf className="text-red-500 w-5 h-5 align-middle" />
+              </Button>
+            </div>
           )}
         </div>
 
         {/* Recursos secundarios */}
         {resources && resources.length > 0 && (
-          <div className="mt-3">
+          <div
+            className="mt-3"
+            onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
+          >
             <Typography
               variant="small"
               color="gray"
@@ -152,6 +169,6 @@ export default function BooksCard({
           </div>
         )}
       </div>
-    </div>
+    </Link>
   );
 }

@@ -6,7 +6,7 @@ export default function bookPage({ book }) {
   const pdfAbs = withFullUrl(book.pdf);
 
   return (
-    <book className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       <div className="mt-2 mb-2">
       </div>
       <div className="max-w-6xl mx-auto px-6">
@@ -47,9 +47,9 @@ export default function bookPage({ book }) {
 
         {/* Fechas y acciones */}
         <div className="text-sm text-gray-600 mt-5 mb-3">
-          <span className="font-semibold">Última revisión:</span> {book.revised}
+          <span className="font-semibold">Recibido:</span> {book.received}
           <span className="mx-2 text-gray-400">|</span>
-          <span className="font-semibold">Categoría:</span> {book.category}
+          <span className="font-semibold">Aceptado:</span> {book.accepted}
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-5 p-4 bg-gray-50 rounded-lg border">
@@ -161,6 +161,6 @@ export default function bookPage({ book }) {
           </div>
         </section>
       </div>
-    </book>
+    </div>
   );
 }

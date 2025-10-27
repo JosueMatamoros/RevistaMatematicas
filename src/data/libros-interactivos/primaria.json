@@ -4,16 +4,16 @@
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria",
     "title_en": "Relations and Algebra. Virtual education for third grade elementary students",
     "authors": [
-      "Rebeca Solís Ortega",
-      "Zuleyka Suárez Valdés-Ayala",
-      "Ivonne Sánchez Fernández",
-      "Carlos Monge Madriz",
-      "Luis Gerardo Meza Cascante",
-      "Evelyn Agüero Calvo"
+      { "name": "Rebeca Solís Ortega" },
+      { "name": "Zuleyka Suárez Valdés-Ayala" },
+      { "name": "Ivonne Sánchez Fernández" },
+      { "name": "Carlos Monge Madriz" },
+      { "name": "Luis Gerardo Meza Cascante" },
+      { "name": "Evelyn Agüero Calvo" }
     ],
     "lastRevision": "Agosto 2024",
     "category": "primaria",
-    "pdf":  "/libros/primaria/relaciones-algebra-3/libro.pdf",
+    "pdf": "/libros/primaria/relaciones-algebra-3/libro.pdf",
     "resources": [
       {
         "type": "pdf",
@@ -32,14 +32,14 @@
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria",
     "title_en": "Relations and Algebra. Virtual education for sixth grade elementary students",
     "authors": [
-      "Rebeca Solís Ortega",
-      "Zuleyka Suárez Valdés-Ayala",
-      "Ivonne Sánchez Fernández",
-      "Carlos Monge Madriz"
+      { "name": "Rebeca Solís Ortega" },
+      { "name": "Zuleyka Suárez Valdés-Ayala" },
+      { "name": "Ivonne Sánchez Fernández" },
+      { "name": "Carlos Monge Madriz" }
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
-    "pdf":  "/libros/primaria/relaciones-algebra-6/libro.pdf",
+    "pdf": "/libros/primaria/relaciones-algebra-6/libro.pdf",
     "mainPDF": {
       "type": "pdf",
       "label": "Descargar",
@@ -63,14 +63,14 @@
     "title": "Números. Educación virtual para estudiantes de sexto año de primaria",
     "title_en": "Numbers. Virtual education for sixth grade elementary students",
     "authors": [
-      "Ivonne Sánchez Fernández",
-      "Carlos Monge Madriz",
-      "Rebeca Solís Ortega",
-      "Zuleyka Suárez Valdés-Ayala"
+      { "name": "Ivonne Sánchez Fernández" },
+      { "name": "Carlos Monge Madriz" },
+      { "name": "Rebeca Solís Ortega" },
+      { "name": "Zuleyka Suárez Valdés-Ayala" }
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
-    "pdf":  "/libros/primaria/numeros-6/libro.pdf",
+    "pdf": "/libros/primaria/numeros-6/libro.pdf",
     "resources": [
       {
         "type": "pdf",

@@ -1,7 +1,7 @@
 "use client";
 
 import BooksCard from "@/components/books/BooksCard";
-import primariaData from "@/data/libros-interactivos/primaria.json";
+import primariaDataInteractive from "@/data/libros-interactivos/primaria.json";
 import universitariaDataInteractivos from "@/data/libros-interactivos/universitaria.json";
 import universitariaData from "@/data/libros/universitaria.json";
 import { withBasePath } from "@/lib/basePath";
@@ -22,8 +22,12 @@ export default function Page() {
   });
 
   // Convierte objetos a arrays y normaliza
-  const primariaBooksInteractive =
-    Object.values(primariaData).map(normalizeBook);
+  const primariaBooksInteractive = Object.entries(primariaDataInteractive).map(
+    ([id, book]) => ({
+      id,
+      ...normalizeBook(book),
+    })
+  );
   const universitariaBooksInteractive = Object.values(
     universitariaDataInteractivos
   ).map(normalizeBook);
@@ -55,8 +59,8 @@ export default function Page() {
 
       {/* Lista de libros */}
       <div className="container mx-auto px-6 mb-8 space-y-8">
-        {allInteractiveBooks.map((book, index) => (
-          <BooksCard key={index} {...book} />
+        {allInteractiveBooks.map((book) => (
+          <BooksCard key={book.id} {...book} />
         ))}
       </div>
 
@@ -67,7 +71,8 @@ export default function Page() {
           </h1>
         </div>
         <p className="text-gray-500 text-lg mt-3 font-light text-center">
-         Libros en formato PDF para consultar y reforzar conocimientos teóricos.
+          Libros en formato PDF para consultar y reforzar conocimientos
+          teóricos.
         </p>
       </div>
 
@@ -77,8 +82,6 @@ export default function Page() {
           <BooksCard key={index} {...book} />
         ))}
       </div>
-
-
     </div>
   );
 }
