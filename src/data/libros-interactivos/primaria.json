@@ -1,6 +1,6 @@
 {
   "relaciones-algebra-3": {
-    "coverImage": "/libros/primaria/relaciones-algebra-3/portada.png",
+    "coverImage": "/libros/primaria/relaciones-algebra-3/portada.webp",
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria",
     "englishTitle": "Relations and Algebra. Virtual education for third grade elementary students",
     "authors": [
@@ -31,7 +31,7 @@
     ]
   },
   "relaciones-algebra-6": {
-    "coverImage": "/libros/primaria/relaciones-algebra-6/portada.png",
+    "coverImage": "/libros/primaria/relaciones-algebra-6/portada.webp",
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria",
     "englishTitle": "Relations and Algebra. Virtual education for sixth grade elementary students",
     "authors": [
@@ -60,7 +60,7 @@
     ]
   },
   "numeros-6": {
-    "coverImage": "/libros/primaria/numeros-6/portada.png",
+    "coverImage": "/libros/primaria/numeros-6/portada.webp",
     "title": "Números. Educación virtual para estudiantes de sexto año de primaria",
     "englishTitle": "Numbers. Virtual education for sixth grade elementary students",
     "authors": [
