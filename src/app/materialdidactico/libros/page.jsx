@@ -12,7 +12,7 @@ export default function Page() {
   const normalizeBook = (book) => ({
     ...book,
     coverImage: withBasePath(book.coverImage),
-    mainPDF: { ...book.mainPDF, url: withBasePath(book.mainPDF.url) },
+    pdf: withBasePath(book.pdf),
     resources: book.resources
       ? book.resources.map((r) => ({
           ...r,

@@ -2,7 +2,7 @@
   "relaciones-algebra-3": {
     "coverImage": "/libros/primaria/relaciones-algebra-3/portada.webp",
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria",
-    "englishTitle": "Relations and Algebra. Virtual education for third grade elementary students",
+    "title_en": "Relations and Algebra. Virtual education for third grade elementary students",
     "authors": [
       "Rebeca Solís Ortega",
       "Zuleyka Suárez Valdés-Ayala",
@@ -13,11 +13,7 @@
     ],
     "lastRevision": "Agosto 2024",
     "category": "primaria",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/primaria/relaciones-algebra-3/libro.pdf"
-    },
+    "pdf":  "/libros/primaria/relaciones-algebra-3/libro.pdf",
     "resources": [
       {
         "type": "pdf",
@@ -34,7 +30,7 @@
   "relaciones-algebra-6": {
     "coverImage": "/libros/primaria/relaciones-algebra-6/portada.webp",
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria",
-    "englishTitle": "Relations and Algebra. Virtual education for sixth grade elementary students",
+    "title_en": "Relations and Algebra. Virtual education for sixth grade elementary students",
     "authors": [
       "Rebeca Solís Ortega",
       "Zuleyka Suárez Valdés-Ayala",
@@ -43,6 +39,7 @@
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
+    "pdf":  "/libros/primaria/relaciones-algebra-6/libro.pdf",
     "mainPDF": {
       "type": "pdf",
       "label": "Descargar",
@@ -64,7 +61,7 @@
   "numeros-6": {
     "coverImage": "/libros/primaria/numeros-6/portada.webp",
     "title": "Números. Educación virtual para estudiantes de sexto año de primaria",
-    "englishTitle": "Numbers. Virtual education for sixth grade elementary students",
+    "title_en": "Numbers. Virtual education for sixth grade elementary students",
     "authors": [
       "Ivonne Sánchez Fernández",
       "Carlos Monge Madriz",
@@ -73,11 +70,7 @@
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/primaria/numeros-6/libro.pdf"
-    },
+    "pdf":  "/libros/primaria/numeros-6/libro.pdf",
     "resources": [
       {
         "type": "pdf",

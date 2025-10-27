@@ -8,10 +8,10 @@ import { withFullUrl } from "@/lib/basePath";
 export default function BooksCard({
   coverImage,
   title,
-  englishTitle,
+  title_en,
   authors,
   lastRevision,
-  mainPDF,
+  pdf,
   resources,
   category,
 }) {
@@ -51,13 +51,13 @@ export default function BooksCard({
           </Typography>
 
           {/* Título en inglés */}
-          {englishTitle && (
+          {title_en && (
             <Typography
               variant="h8"
               color="gray"
               className="font-alt font-semibold mb-2 border-l-2 pl-2 text-gray-500"
             >
-              {englishTitle}
+              {title_en}
             </Typography>
           )}
 
@@ -98,14 +98,14 @@ export default function BooksCard({
           </div>
 
           {/* Botón principal: Descargar PDF */}
-          {mainPDF && (
+          {pdf&& (
             <Button
               size="sm"
               variant="outlined"
               color="red"
               className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50 text-sm font-bold normal-case"
               onClick={() =>
-                window.open(getValidUrl(mainPDF.url, mainPDF.type), "_blank")
+                window.open(getValidUrl(pdf, "pdf"), "_blank")
               }
             >
               <span>Descargar</span>

@@ -2,15 +2,11 @@
   "ecuaciones-diferenciales-orden-superior-2022": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.webp",
     "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
-    "englishTitle": "Higher Order Differential Equations with Interactive Applications and Illustrative Video",
+    "title_en": "Higher Order Differential Equations with Interactive Applications and Illustrative Video",
     "authors": ["Norberto Gerardo Oviedo Ugalde"],
     "lastRevision": "Agosto 2022",
     "category": "universitaria ",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -27,14 +23,10 @@
   "calculo-varias-variables-2022": {
     "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.webp",
     "title": "Cálculo en Varias Variables. Visualización interactiva. 2da Ed.",
-    "englishTitle": "Calculus in Several Variables. Interactive Visualization. 2nd Ed.",
+    "title_en": "Calculus in Several Variables. Interactive Visualization. 2nd Ed.",
     "authors": ["Walter A. Mora Flores"],
     "lastRevision": "Febrero 2022",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/calculo-varias-variables-2022/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/calculo-varias-variables-2022/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -51,14 +43,10 @@
   "ecuaciones-diferenciales-primer-orden-2022": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/portada.svg",
     "title": "Ecuaciones diferenciales de primer orden",
-    "englishTitle": "First Order Differential Equations",
+    "title_en": "First Order Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Febrero 2022",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -75,14 +63,10 @@
   "ecuaciones-diferenciales-transformada-laplace-2021": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/portada.webp",
     "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
-    "englishTitle": "Differential Equations using Laplace Transform",
+    "title_en": "Differential Equations using Laplace Transform",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Marzo 2021",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -99,14 +83,10 @@
   "ecuaciones-diferenciales-orden-superior-2020": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/portada.webp",
     "title": "Ecuaciones diferenciales de orden superior",
-    "englishTitle": "Higher Order Differential Equations",
+    "title_en": "Higher Order Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Marzo 2020",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -123,14 +103,10 @@
   "ecuaciones-diferenciales-primer-orden-2018": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/portada.webp",
     "title": "Ecuaciones diferenciales ordinarias de 1er orden",
-    "englishTitle": "First Order Ordinary Differential Equations",
+    "title_en": "First Order Ordinary Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "2018",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/libro.pdf",
     "resources": [
       {
         "type": "zip",
@@ -148,14 +124,12 @@
   "vectores-rectas-y-planos-2018": {
     "coverImage": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/portada.webp",
     "title": "Vectores Rectas y Planos. Visualización interactiva",
-    "englishTitle": "Vectors, Lines and Planes. Interactive Visualization",
+    "title_en": "Vectors, Lines and Planes. Interactive Visualization",
     "authors": ["Marco Gutiérrez M.", "Walter A. Mora F."],
     "lastRevision": "Abril 2018",
-    "mainPDF": {
-      "type": "pdf",
-      "label": "Descargar",
-      "url": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf"
-    },
+    "pdf": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf",
+
+
     "resources": [
       {
         "type": "zip",
