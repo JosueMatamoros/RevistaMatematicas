@@ -1,8 +1,7 @@
 import { withFullUrl } from "@/lib/basePath";
-import BookPage from "@/components/books/bookPage";
+import BookPage from "@/components/books/BookPage";
 import primariaDataInteractive from "@/data/libros-interactivos/primaria.json";
 
-// ✅ Generar rutas estáticas a partir de las keys del JSON
 export async function generateStaticParams() {
   const ids = Object.entries(primariaDataInteractive)
     .filter(([id, book]) => id && book && book.pdf && book.title)
@@ -11,7 +10,6 @@ export async function generateStaticParams() {
   return ids;
 }
 
-// ✅ Metadata dinámica para SEO / Google Scholar
 export async function generateMetadata({ params }) {
   const book = primariaDataInteractive[params.id];
 
@@ -37,7 +35,6 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// ✅ Normaliza autores y recursos antes de pasar al componente
 function normalizeBook(book) {
   return {
     ...book,
@@ -56,7 +53,6 @@ function normalizeBook(book) {
   };
 }
 
-// ✅ Página dinámica
 export default function Page({ params }) {
   const book = primariaDataInteractive[params.id];
 
@@ -72,5 +68,4 @@ export default function Page({ params }) {
   return <BookPage book={normalizedBook} />;
 }
 
-// 👇 Esto evita que explote con output: export
 export const dynamicParams = true;

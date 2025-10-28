@@ -4,12 +4,48 @@
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria",
     "title_en": "Relations and Algebra. Virtual education for third grade elementary students",
     "authors": [
-      { "name": "Rebeca Solís Ortega" },
-      { "name": "Zuleyka Suárez Valdés-Ayala" },
-      { "name": "Ivonne Sánchez Fernández" },
-      { "name": "Carlos Monge Madriz" },
-      { "name": "Luis Gerardo Meza Cascante" },
-      { "name": "Evelyn Agüero Calvo" }
+      {
+        "name": "Rebeca Solís Ortega",
+        "email": "rsolis@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-3065-8386",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Zuleyka Suárez Valdés-Ayala",
+        "email": "zsuarez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-1822-4825",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Ivonne Sánchez Fernández",
+        "email": "ivsanchez@itcr.ac.cr",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "orcid": "https://orcid.org/0000-0002-7346-766X",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Carlos Monge Madriz",
+        "email": "camonge@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-5148-2797",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Luis Gerardo Meza Cascante",
+        "email": "gemeza@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-5413-0172",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Evelyn Agüero Calvo",
+        "email": "evaguero@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-2294-0357",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      }
     ],
     "lastRevision": "Agosto 2024",
     "category": "primaria",
@@ -25,7 +61,14 @@
         "label": "Carpeta comprimida con videos",
         "url": "/libros/primaria/relaciones-algebra-3/videos.zip"
       }
-    ]
+    ],
+    "abstract_es": "La Escuela de Matemática del Instituto Tecnológico de Costa Rica, por medio de su proyecto Educación virtual para estudiantes de tercer año de primaria (Eveprim3), pretende contribuir a la formación académica de los estudiantes de tercer año de primaria y a la vez ofrecer un recurso para padres y maestros de esta población. Para ello, se han considerado las habilidades contempladas en el programa de estudios vigente, en la asignatura de Matemática, según el Ministerio de Educación Pública de Costa Rica. El equipo de Eveprim3, les insta a revisar con atención todo el material a su disposición, ya que el mismo ha sido elaborado con el fin de colaborar en el proceso de enseñanza y aprendizaje de las Matemáticas. Este libro contiene cinco capítulos, en cada uno de ellos encontrará aspectos teóricos, ejemplos, ejercicios con solución, problemas introductorios, videos explicativos y actividades interactivas de la web. Se le recomienda hacer una lectura a profundidad, reflexionando y analizando cada uno de los ejemplos, ejercicios y problemas propuestos. Procure no avanzar en los temas hasta que considere que ya asimiló la información. Para su autoevaluación puede apoyarse en las prácticas que aparecen al final de cada capítulo y su respectiva solución. Con el fin de que la lectura de este libro le permita detenerse en contenidos particulares, se ofrecen algunas secciones con información adicional.",
+    "keywords_es": ["Relaciones", "álgebra", "educación primaria", "tercer año"],
+    "abstract_en": "The School of Mathematics at the Costa Rica Institute of Technology, through its Virtual Education for Third-Grade Students project (Eveprim3), aims to contribute to the academic development of third-grade students while providing a resource for parents and teachers of this population. To achieve this, the skills outlined in the current curriculum for the subject of Mathematics, according to the Ministry of Public Education of Costa Rica, have been considered. The Eveprim3 team encourages you to carefully review all the material at your disposal, as it has been created to assist in the teaching and learning process of Mathematics. This book contains five chapters, each of which includes theoretical aspects, examples, exercises with solutions, introductory problems, explanatory videos, and interactive web activities. It is recommended to read thoroughly, reflecting and analyzing each of the examples, exercises, and problems presented. Please refrain from advancing to new topics until you feel you have absorbed the information. For self-assessment, you can refer to the practices at the end of each chapter and their respective solutions. In order for the reading of this book to allow you to focus on specific content, there are sections with additional information.",
+    "keywords_en": ["Relations", "algebra", "primary education", "third grade"],
+    "abstract_pt": "A Escola de Matemática do Instituto de Tecnologia da Costa Rica, por meio de seu projeto Educação Virtual para Alunos da Terceira Série (Eveprim3), tem como objetivo contribuir para o desenvolvimento acadêmico dos alunos da terceira série, ao mesmo tempo em que fornece um recurso para pais e professores dessa população. Para alcançar isso, foram consideradas as habilidades descritas no currículo atual para a disciplina de Matemática, de acordo com o Ministério da Educação Pública da Costa Rica. A equipe Eveprim3 incentiva você a revisar cuidadosamente todo o material à sua disposição, pois ele foi criado para auxiliar no processo de ensino e aprendizagem de Matemática. Este livro contém cinco capítulos, cada um dos quais inclui aspectos teóricos, exemplos, exercícios com soluções, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se ler atentamente, refletindo e analisando cada um dos exemplos, exercícios e problemas apresentados. Por favor, evite avançar para novos tópicos até sentir que absorveu as informações. Para autoavaliação, você pode consultar as práticas no final de cada capítulo e suas respectivas soluções. Para que a leitura deste livro permita que você se concentre em conteúdos específicos, há seções com informações adicionais.",
+    "keywords_pt": ["Relações", "álgebra", "educação primária", "terceira série"],
+    "citation": "Suárez Valdés-Ayala, Z., Solís Ortega, R., Monge Madriz, C., Sánchez Fernández, I., Meza Cascante, L.G., Agüero Calvo, E. (2024). Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria. Revista digital Matemática, Educación e Internet, 25(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/Primaria/EVeprim/03_RelacionesAlgebra/"
   },
   "relaciones-algebra-6": {
     "coverImage": "/libros/primaria/relaciones-algebra-6/portada.webp",

@@ -25,7 +25,7 @@ export default function bookPage({ book }) {
           {book.authors?.map((a, i) => (
             <div
               key={i}
-              className="flex-1 min-w-[250px] max-w-sm bg-white border border-gray-200 rounded-lg p-4 shadow-sm text-center"
+              className="flex-1 min-w-[320px] max-w-sm bg-white border border-gray-200 rounded-lg p-4 shadow-sm text-center"
             >
               <div className="flex items-center justify-center gap-2 mb-2">
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
@@ -46,15 +46,14 @@ export default function bookPage({ book }) {
         </div>
 
         {/* Fechas y acciones */}
-        <div className="text-sm text-gray-600 mt-5 mb-3">
+        <div className="flex justify-between">
+          <div className="text-sm text-gray-600 mt-5 mb-3">
           <span className="font-semibold">Recibido:</span> {book.received}
           <span className="mx-2 text-gray-400">|</span>
           <span className="font-semibold">Aceptado:</span> {book.accepted}
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-5 p-4 bg-gray-50 rounded-lg border">
-
-          <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3">
             <a
               href={pdfAbs}
               target="_blank"

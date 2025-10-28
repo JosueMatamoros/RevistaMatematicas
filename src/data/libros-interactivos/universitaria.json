@@ -26,6 +26,7 @@
     "title_en": "Calculus in Several Variables. Interactive Visualization. 2nd Ed.",
     "authors": ["Walter A. Mora Flores"],
     "lastRevision": "Febrero 2022",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/calculo-varias-variables-2022/libro.pdf",
     "resources": [
       {
@@ -46,6 +47,7 @@
     "title_en": "First Order Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Febrero 2022",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/libro.pdf",
     "resources": [
       {
@@ -66,6 +68,7 @@
     "title_en": "Differential Equations using Laplace Transform",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Marzo 2021",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
     "resources": [
       {
@@ -86,6 +89,7 @@
     "title_en": "Higher Order Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "Marzo 2020",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/libro.pdf",
     "resources": [
       {
@@ -106,6 +110,7 @@
     "title_en": "First Order Ordinary Differential Equations",
     "authors": ["Norberto Oviedo U."],
     "lastRevision": "2018",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/libro.pdf",
     "resources": [
       {
@@ -127,9 +132,8 @@
     "title_en": "Vectors, Lines and Planes. Interactive Visualization",
     "authors": ["Marco Gutiérrez M.", "Walter A. Mora F."],
     "lastRevision": "Abril 2018",
+    "category": "universitaria ",
     "pdf": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf",
-
-
     "resources": [
       {
         "type": "zip",
