@@ -89,7 +89,7 @@ export default function BooksList({
               <Typography
                 variant="small"
                 color="gray"
-                className="mb-3 text-gray-500"
+                className=" text-gray-500"
               >
                 Última revisión: {lastRevision}
               </Typography>
@@ -141,19 +141,28 @@ export default function BooksList({
             >
               Otros recursos
             </Typography>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 ">
               {resources.map((res) => (
                 <Button
                   key={res.url}
                   size="sm"
                   variant="outlined"
                   color="gray"
-                  className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
+                  className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
                   onClick={() =>
                     window.open(getValidUrl(res.url, res.type), "_blank")
                   }
                 >
-                  <span>{res.label}</span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: res.label.includes("CDF")
+                        ? res.label.replace(
+                            "CDF",
+                            `CDF <br class='block sm:hidden' />`
+                          )
+                        : res.label,
+                    }}
+                  />
                   {res.type === "pdf" && (
                     <FaFilePdf className="text-red-500 w-4 h-4 align-middle" />
                   )}
