@@ -93,7 +93,7 @@ export default function NavsComponent({ isSidebarOpen }) {
               </div>
               <ul className="absolute left-0 mt-2 z-10 min-w-[220px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {[
-                  { text: "Libros", href: "/materialdidactico/libros" },
+                  { text: "Libros", href: "/libros" },
                   {
                     text: "Materiales revisados",
                     href: "/materialdidactico/revisados",

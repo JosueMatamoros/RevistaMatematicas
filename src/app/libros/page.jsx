@@ -1,6 +1,6 @@
 "use client";
 
-import BooksCard from "@/components/books/BooksCard";
+import BooksList from "@/components/books/BooksList";
 import primariaDataInteractive from "@/data/libros-interactivos/primaria.json";
 import universitariaDataInteractivos from "@/data/libros-interactivos/universitaria.json";
 import universitariaData from "@/data/libros/universitaria.json";
@@ -60,7 +60,7 @@ export default function Page() {
       {/* Lista de libros */}
       <div className="container mx-auto px-6 mb-8 space-y-8">
         {allInteractiveBooks.map((book) => (
-          <BooksCard key={book.id} {...book} />
+          <BooksList key={book.id} {...book} />
         ))}
       </div>
 
@@ -79,7 +79,7 @@ export default function Page() {
       {/* Lista de libros */}
       <div className="container mx-auto px-6 mb-8 space-y-8">
         {allBooks.map((book, index) => (
-          <BooksCard key={index} {...book} />
+          <BooksList key={index} {...book} />
         ))}
       </div>
     </div>

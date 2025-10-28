@@ -1,6 +1,7 @@
 // src/components/books/bookPage.jsx
 import { withBasePath, withFullUrl } from "@/lib/basePath";
 import { FaFilePdf, FaShareAlt, FaCopy } from "react-icons/fa";
+import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
 export default function bookPage({ book }) {
   const pdfAbs = withFullUrl(book.pdf);
@@ -8,7 +9,9 @@ export default function bookPage({ book }) {
   return (
     <div className="min-h-screen bg-white">
       <div className="mt-2 mb-2">
+        <BreadcrumbNav />
       </div>
+      <div className="mt-2 mb-2"></div>
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-4">
@@ -31,11 +34,19 @@ export default function bookPage({ book }) {
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
                 {a.orcid && (
                   <a href={a.orcid} target="_blank" rel="noopener noreferrer">
-                    <img src={withBasePath("/logoORCID.png")} alt="ORCID" className="w-5 h-5 inline-block" />
+                    <img
+                      src={withBasePath("/logoORCID.png")}
+                      alt="ORCID"
+                      className="w-5 h-5 inline-block"
+                    />
                   </a>
                 )}
               </div>
-              {a.email && <p className="text-tec-blue-secondary text-sm mb-2">{a.email}</p>}
+              {a.email && (
+                <p className="text-tec-blue-secondary text-sm mb-2">
+                  {a.email}
+                </p>
+              )}
               <div className="text-sm text-gray-600 space-y-0.5">
                 {a.university && <p className="font-medium">{a.university}</p>}
                 {a.department && <p>{a.department}</p>}
@@ -46,14 +57,14 @@ export default function bookPage({ book }) {
         </div>
 
         {/* Fechas y acciones */}
-        <div className="flex justify-between">
-          <div className="text-sm text-gray-600 mt-5 mb-3">
-          <span className="font-semibold">Recibido:</span> {book.received}
-          <span className="mx-2 text-gray-400">|</span>
-          <span className="font-semibold">Aceptado:</span> {book.accepted}
-        </div>
+        <div className="flex justify-between items-center">
+          <div className="text-sm text-gray-600">
+            <span className="font-semibold">Recibido:</span> {book.received}
+            <span className="mx-2 text-gray-400">|</span>
+            <span className="font-semibold">Aceptado:</span> {book.accepted}
+          </div>
 
-        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <a
               href={pdfAbs}
               target="_blank"
@@ -76,7 +87,9 @@ export default function bookPage({ book }) {
         {/* Resumen (ES) */}
         {book.abstract_es && (
           <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-tec-blue-secondary">
-            <h2 className="text-lg font-bold text-tec-blue-primary mb-3">Resumen</h2>
+            <h2 className="text-lg font-bold text-tec-blue-primary mb-3">
+              Resumen
+            </h2>
             <p className="text-gray-800 text-sm leading-relaxed text-justify">
               {book.abstract_es}
             </p>

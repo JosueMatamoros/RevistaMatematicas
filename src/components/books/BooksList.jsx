@@ -6,7 +6,7 @@ import { Typography, Button, Chip } from "@material-tailwind/react";
 import { FaFilePdf, FaFileArchive, FaLink } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
 
-export default function BooksCard({
+export default function BooksList({
   id,
   coverImage,
   title,
