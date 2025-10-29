@@ -63,22 +63,57 @@
       }
     ],
     "abstract_es": "La Escuela de Matemática del Instituto Tecnológico de Costa Rica, por medio de su proyecto Educación virtual para estudiantes de tercer año de primaria (Eveprim3), pretende contribuir a la formación académica de los estudiantes de tercer año de primaria y a la vez ofrecer un recurso para padres y maestros de esta población. Para ello, se han considerado las habilidades contempladas en el programa de estudios vigente, en la asignatura de Matemática, según el Ministerio de Educación Pública de Costa Rica. El equipo de Eveprim3, les insta a revisar con atención todo el material a su disposición, ya que el mismo ha sido elaborado con el fin de colaborar en el proceso de enseñanza y aprendizaje de las Matemáticas. Este libro contiene cinco capítulos, en cada uno de ellos encontrará aspectos teóricos, ejemplos, ejercicios con solución, problemas introductorios, videos explicativos y actividades interactivas de la web. Se le recomienda hacer una lectura a profundidad, reflexionando y analizando cada uno de los ejemplos, ejercicios y problemas propuestos. Procure no avanzar en los temas hasta que considere que ya asimiló la información. Para su autoevaluación puede apoyarse en las prácticas que aparecen al final de cada capítulo y su respectiva solución. Con el fin de que la lectura de este libro le permita detenerse en contenidos particulares, se ofrecen algunas secciones con información adicional.",
-    "keywords_es": ["Relaciones", "álgebra", "educación primaria", "tercer año"],
+    "keywords_es": [
+      "Relaciones",
+      "álgebra",
+      "educación primaria",
+      "tercer año"
+    ],
     "abstract_en": "The School of Mathematics at the Costa Rica Institute of Technology, through its Virtual Education for Third-Grade Students project (Eveprim3), aims to contribute to the academic development of third-grade students while providing a resource for parents and teachers of this population. To achieve this, the skills outlined in the current curriculum for the subject of Mathematics, according to the Ministry of Public Education of Costa Rica, have been considered. The Eveprim3 team encourages you to carefully review all the material at your disposal, as it has been created to assist in the teaching and learning process of Mathematics. This book contains five chapters, each of which includes theoretical aspects, examples, exercises with solutions, introductory problems, explanatory videos, and interactive web activities. It is recommended to read thoroughly, reflecting and analyzing each of the examples, exercises, and problems presented. Please refrain from advancing to new topics until you feel you have absorbed the information. For self-assessment, you can refer to the practices at the end of each chapter and their respective solutions. In order for the reading of this book to allow you to focus on specific content, there are sections with additional information.",
     "keywords_en": ["Relations", "algebra", "primary education", "third grade"],
     "abstract_pt": "A Escola de Matemática do Instituto de Tecnologia da Costa Rica, por meio de seu projeto Educação Virtual para Alunos da Terceira Série (Eveprim3), tem como objetivo contribuir para o desenvolvimento acadêmico dos alunos da terceira série, ao mesmo tempo em que fornece um recurso para pais e professores dessa população. Para alcançar isso, foram consideradas as habilidades descritas no currículo atual para a disciplina de Matemática, de acordo com o Ministério da Educação Pública da Costa Rica. A equipe Eveprim3 incentiva você a revisar cuidadosamente todo o material à sua disposição, pois ele foi criado para auxiliar no processo de ensino e aprendizagem de Matemática. Este livro contém cinco capítulos, cada um dos quais inclui aspectos teóricos, exemplos, exercícios com soluções, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se ler atentamente, refletindo e analisando cada um dos exemplos, exercícios e problemas apresentados. Por favor, evite avançar para novos tópicos até sentir que absorveu as informações. Para autoavaliação, você pode consultar as práticas no final de cada capítulo e suas respectivas soluções. Para que a leitura deste livro permita que você se concentre em conteúdos específicos, há seções com informações adicionais.",
-    "keywords_pt": ["Relações", "álgebra", "educação primária", "terceira série"],
+    "keywords_pt": [
+      "Relações",
+      "álgebra",
+      "educação primária",
+      "terceira série"
+    ],
     "citation": "Suárez Valdés-Ayala, Z., Solís Ortega, R., Monge Madriz, C., Sánchez Fernández, I., Meza Cascante, L.G., Agüero Calvo, E. (2024). Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria. Revista digital Matemática, Educación e Internet, 25(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/Primaria/EVeprim/03_RelacionesAlgebra/"
   },
   "relaciones-algebra-6": {
     "coverImage": "/libros/primaria/relaciones-algebra-6/portada.webp",
     "title": "Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria",
     "title_en": "Relations and Algebra. Virtual education for sixth grade elementary students",
+    "title_pt": "Relações e Álgebra. Educação virtual para estudantes do sexto ano do ensino fundamental",
     "authors": [
-      { "name": "Rebeca Solís Ortega" },
-      { "name": "Zuleyka Suárez Valdés-Ayala" },
-      { "name": "Ivonne Sánchez Fernández" },
-      { "name": "Carlos Monge Madriz" }
+      {
+        "name": "Rebeca Solís Ortega",
+        "email": "rsolis@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-3065-8386",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Zuleyka Suárez Valdés-Ayala",
+        "email": "zsuarez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-1822-4825",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Ivonne Sánchez Fernández",
+        "email": "ivsanchez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-7346-766X",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Carlos Monge Madriz",
+        "email": "camonge@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-5148-2797",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      }
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
@@ -99,21 +134,57 @@
         "label": "Carpeta comprimida con videos",
         "url": "/libros/primaria/relaciones-algebra-6/videos.zip"
       }
-    ]
+    ],
+    "abstract_es": "La Escuela de Matemática del Instituto Tecnológico de Costa Rica, por medio de su proyecto Eveprim6, pretende contribuir a la formación académica de los estudiantes de sexto año de primaria y a la vez ofrecer un recurso para padres y maestros de esta población. Para ello, se han considerado las habilidades contempladas en el programa de estudios vigente, en el área de matemática, según el Ministerio de Educación Pública de Costa Rica. El equipo de Eveprim6 les insta a revisar con atención todo el material a su disposición, ya que el mismo ha sido elaborado con el fin de promover el autoaprendizaje a distancia. Este libro contiene 6 capítulos, en cada uno de ellos encontrará aspectos teóricos, ejemplos, ejercicios con solución, problemas introductorios, videos explicativos y actividades interactivas de la web. Se le recomienda hacer una lectura a profundidad, reflexionando y analizando cada uno de los ejemplos, ejercicios y problemas propuestos. Procure no avanzar en los temas hasta que considere que ya asimiló la información. Para su autoevaluación puede apoyarse en las prácticas que aparecen al final de cada capítulo y su respectiva solución. Con el fin de que la lectura de este libro le permita detenerse en contenidos particulares, se ofrecen algunas secciones con información adicional.",
+    "keywords_es": ["Relaciones", "álgebra", "educación primaria", "sexto año"],
+    "abstract_en": "The Mathematics School of the Costa Rica Institute of Technology’s Eveprim6 project is designed to enhance the academic training of sixth-grade primary school students and provide a valuable resource for parents and teachers working with this age group. The project’s developers have carefully considered the skills covered in the current mathematics curriculum as outlined by the Ministry of Public Education of Costa Rica. The Eveprim6 team encourages readers to take time to review all the available materials carefully. The book consists of 6 chapters, each of which includes theoretical aspects, examples, exercises with solutions, introductory problems, explanatory videos, and interactive web activities. Readers are advised to read deeply, reflect, and analyze each example, exercise, and proposed problem before moving on to the next topic. For self-assessment, practice exercises and their solutions are provided at the end of each chapter. Some sections of the book also offer additional information to allow for deeper study of specific content.",
+    "keywords_en": ["Relations", "algebra", "primary education", "sixth grade"],
+    "abstract_pt": "A Escola de Matemática do Instituto Tecnológico da Costa Rica, por meio de seu projeto Eveprim6, busca contribuir para a formação acadêmica dos estudantes do sexto ano do ensino fundamental e, ao mesmo tempo, oferecer um recurso para pais e professores dessa população. Para isso, foram consideradas as habilidades previstas no currículo atual da disciplina de matemática, conforme o Ministério da Educação Pública da Costa Rica. A equipe do Eveprim6 incentiva a revisão cuidadosa de todo o material disponível, elaborado com o objetivo de promover a aprendizagem autodirigida a distância. Este livro contém 6 capítulos, em cada um dos quais se encontram aspectos teóricos, exemplos, exercícios com solução, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se uma leitura aprofundada, refletindo e analisando cada um dos exemplos, exercícios e problemas propostos. Evite avançar para novos tópicos até sentir que assimilou o conteúdo. Para autoavaliação, pode apoiar-se nas práticas apresentadas ao final de cada capítulo, juntamente com as respectivas soluções. Algumas seções oferecem informações adicionais que permitem aprofundar-se em conteúdos específicos.",
+    "keywords_pt": ["Relações", "álgebra", "educação primária", "sexto ano"],
+    "citation": "Solís Ortega, R., Suárez Valdés-Ayala, Z., Sánchez Fernández, I., Monge Madriz, C. (2023). Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/Primaria/EVeprim/06_RelacionesAlgebra/"
   },
   "numeros-6": {
     "coverImage": "/libros/primaria/numeros-6/portada.webp",
     "title": "Números. Educación virtual para estudiantes de sexto año de primaria",
     "title_en": "Numbers. Virtual education for sixth grade elementary students",
     "authors": [
-      { "name": "Ivonne Sánchez Fernández" },
-      { "name": "Carlos Monge Madriz" },
-      { "name": "Rebeca Solís Ortega" },
-      { "name": "Zuleyka Suárez Valdés-Ayala" }
+      {
+        "name": "Ivonne Sánchez Fernández",
+        "email": "ivsanchez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-7346-766X",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Carlos Monge Madriz",
+        "email": "camonge@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-5148-2797",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Rebeca Solís Ortega",
+        "email": "rsolis@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-3065-8386",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Zuleyka Suárez Valdés-Ayala",
+        "email": "zsuarez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-1822-4825",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      }
     ],
     "lastRevision": "Marzo 2023",
     "category": "primaria",
     "pdf": "/libros/primaria/numeros-6/libro.pdf",
+    "mainPDF": {
+      "type": "pdf",
+      "label": "Descargar",
+      "url": "/libros/primaria/numeros-6/libro.pdf"
+    },
     "resources": [
       {
         "type": "pdf",
@@ -125,6 +196,13 @@
         "label": "Carpeta comprimida con videos",
         "url": "/libros/primaria/numeros-6/videos.zip"
       }
-    ]
+    ],
+    "abstract_es": "La Escuela de Matemática del Instituto Tecnológico de Costa Rica, por medio de su proyecto Eveprim6, pretende contribuir a la formación académica de los estudiantes de sexto año de primaria y ofrecer un recurso para padres y maestros de esta población. Para ello, se han considerado las habilidades contempladas en el programa de estudios vigente en el área de matemática, según el Ministerio de Educación Pública de Costa Rica. El equipo de Eveprim6 invita a revisar con atención el material, elaborado para promover el autoaprendizaje a distancia. Este libro contiene 7 capítulos, en cada uno de los cuales se incluyen aspectos teóricos, ejemplos, ejercicios con solución, problemas introductorios, videos explicativos y actividades interactivas en la web. Se recomienda hacer una lectura profunda, reflexionando y analizando cada uno de los ejemplos, ejercicios y problemas propuestos. Para su autoevaluación puede apoyarse en las prácticas que aparecen al final de cada capítulo junto con su respectiva solución. Algunas secciones ofrecen información adicional que permite profundizar en contenidos específicos.",
+    "keywords_es": ["Números", "educación primaria", "sexto año"],
+    "abstract_en": "The Mathematics School of the Costa Rica Institute of Technology, through its Eveprim6 project, aims to enhance the academic training of sixth-grade primary school students and provide a valuable resource for parents and teachers. The project's team has considered the skills included in the current mathematics curriculum as established by the Ministry of Public Education of Costa Rica. The Eveprim6 team encourages careful review of the material designed to promote self-directed learning at a distance. This book consists of 7 chapters, each including theoretical aspects, examples, exercises with solutions, introductory problems, explanatory videos, and interactive web activities. Readers are encouraged to take their time to read deeply and reflect on the examples, exercises, and proposed problems. For self-assessment, the book provides practice exercises and solutions at the end of each chapter. Some sections include additional information to help explore specific topics in more depth.",
+    "keywords_en": ["Numbers", "primary education", "sixth grade"],
+    "abstract_pt": "A Escola de Matemática do Instituto Tecnológico da Costa Rica, por meio de seu projeto Eveprim6, busca contribuir para a formação acadêmica dos estudantes do sexto ano do ensino fundamental e oferecer um recurso valioso para pais e professores dessa faixa etária. Para isso, foram consideradas as habilidades incluídas no currículo atual de matemática, conforme estabelecido pelo Ministério da Educação Pública da Costa Rica. A equipe do Eveprim6 incentiva a revisão cuidadosa de todo o material, elaborado para promover a aprendizagem autodirigida a distância. Este livro é composto por 7 capítulos, cada um contendo aspectos teóricos, exemplos, exercícios com solução, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se uma leitura atenta, refletindo e analisando cada exemplo, exercício e problema proposto. Para autoavaliação, o livro oferece práticas e suas respectivas soluções ao final de cada capítulo. Algumas seções incluem informações adicionais que permitem aprofundar-se em conteúdos específicos.",
+    "keywords_pt": ["Números", "educação primária", "sexto ano"],
+    "citation": "Sánchez Fernández, I., Monge Madriz, C., Solís Ortega, R., Suárez Valdés-Ayala, Z. (2023). EVEPRIM6: Números. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/Primaria/EVeprim/06_Numeros/"
   }
 }

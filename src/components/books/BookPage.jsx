@@ -7,7 +7,7 @@ export default function bookPage({ book }) {
   const pdfAbs = withFullUrl(book.pdf);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mb-16">
       <div className="mt-2 mb-2">
         <BreadcrumbNav />
       </div>
@@ -59,9 +59,18 @@ export default function bookPage({ book }) {
         {/* Fechas y acciones */}
         <div className="flex justify-between items-center">
           <div className="text-sm text-gray-600">
-            <span className="font-semibold">Recibido:</span> {book.received}
-            <span className="mx-2 text-gray-400">|</span>
-            <span className="font-semibold">Aceptado:</span> {book.accepted}
+            {book.received && book.accepted ? (
+              <>
+                <span className="font-semibold">Recibido:</span> {book.received}
+                <span className="mx-2 text-gray-400">|</span>
+                <span className="font-semibold">Aceptado:</span> {book.accepted}
+              </>
+            ) : (
+              <>
+                <span className="font-semibold">Última revisión:</span>{" "}
+                {book.lastRevision || "Marzo 2023"}
+              </>
+            )}
           </div>
 
           <div className="flex items-center gap-3">
@@ -167,7 +176,7 @@ export default function bookPage({ book }) {
             <iframe
               loading="lazy"
               src={withBasePath(book.pdf)}
-              className="w-full h-[700px] lg:h-[900px]"
+              className="w-full h-dvh"
               title={`Artículo completo - ${book.title}`}
             />
           </div>

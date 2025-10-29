@@ -7,7 +7,7 @@ export default function ArticlePage({ article }) {
   const pdfAbs = withFullUrl(article.pdf);
 
   return (
-    <article className="min-h-screen bg-white">
+    <article className="min-h-screen bg-white mb-16">
       <div className="mt-2 mb-2">
         <BreadcrumbNav />
       </div>
@@ -162,7 +162,7 @@ export default function ArticlePage({ article }) {
             <iframe
               loading="lazy"
               src={withBasePath(article.pdf)}
-              className="w-full h-[700px] lg:h-[900px]"
+              className="w-full h-dvh"
               title={`Artículo completo - ${article.title}`}
             />
           </div>
