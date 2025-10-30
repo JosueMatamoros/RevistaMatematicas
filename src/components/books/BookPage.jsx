@@ -3,7 +3,13 @@
 
 import { useState } from "react";
 import { withBasePath, withFullUrl } from "@/lib/basePath";
-import { FaFilePdf, FaShareAlt, FaCopy, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import {
+  FaFilePdf,
+  FaShareAlt,
+  FaCopy,
+  FaChevronDown,
+  FaChevronUp,
+} from "react-icons/fa";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
 export default function bookPage({ book }) {
@@ -73,10 +79,10 @@ export default function bookPage({ book }) {
                 <span className="font-semibold">Aceptado:</span> {book.accepted}
               </>
             ) : (
-              <>
+              <div className="text-center">
                 <span className="font-semibold">Última revisión:</span>{" "}
-                {book.lastRevision || "Marzo 2023"}
-              </>
+                {book.lastRevision}
+              </div>
             )}
           </div>
 
@@ -238,16 +244,18 @@ export default function bookPage({ book }) {
             <h2 className="text-base font-bold text-gray-900">Cómo citar</h2>
             <FaCopy className="w-4 h-4 text-gray-800" />
           </div>
-          <p className="text-sm text-gray-800">{book.citation}</p>
+          <p className="text-sm text-gray-800 break-words break-all whitespace-pre-line">
+            {book.citation}
+          </p>
         </section>
 
         {/* PDF */}
-        <section className="mt-6">
-          <div className="border-2 rounded-lg overflow-hidden">
+        <section className="mt-6 flex justify-center">
+          <div className="w-full md:w-4/5 lg:w-3/4 border rounded-xl overflow-hidden shadow-lg bg-gray-100">
             <iframe
               loading="lazy"
               src={withBasePath(book.pdf)}
-              className="w-full h-dvh"
+              className="w-full h-[65vh] md:h-[100vh] border-0"
               title={`Artículo completo - ${book.title}`}
             />
           </div>
