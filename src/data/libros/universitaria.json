@@ -1,23 +1,86 @@
 {
   "fundamentos-de-matematica-2025": {
-    "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
-    "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
-    "title_en": "Foundations of Mathematics I: Compilation of Theory and Exercises",
-    "authors": [
-      "Reiman Acuña Chacón",
-      "Alcides Astorga Morales",
-      "Jeffrey Chavarría Molina",
-      "Marco Gutiérrez Montenegro",
-      "Edwin Quesada Solano",
-      "Greivin Ramírez Arce",
-      "Bryan Ramírez Obando",
-      "Natalia Rodríguez Granados",
-      "Giovanni Sanabria Brenes"
-    ],
-    "lastRevision": "Agosto 2025",
-    "category": "universitaria ",
-    "pdf": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf"
-  },
+  "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
+  "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
+  "title_en": "Foundations of Mathematics I: Compilation of Theory and Exercises",
+  "title_pt": "Fundamentos de Matemática I: Compilação de Teoria e Exercícios",
+  "authors": [
+    {
+      "name": "Reiman Acuña Chacón",
+      "email": "reiacuna@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0002-0094-3282",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Alcides Astorga Morales",
+      "email": "",
+      "orcid": "",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Jeffrey Chavarría Molina",
+      "email": "jchavarria@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0002-8943-4475",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Marco Gutiérrez Montenegro",
+      "email": "vgutierrez@itcr.ac.cr",
+      "orcid": "https://orcid.org/0009-0004-0293-1578",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Edwin Quesada Solano",
+      "email": "edquesada1993@gmail.com",
+      "orcid": "https://orcid.org/0009-0005-3801-2079",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Greivin Ramírez Arce",
+      "email": "gramirez@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0002-3731-5415",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Bryan Ramírez Obando",
+      "email": "bramirez9122@gmail.com",
+      "orcid": "https://orcid.org/0009-0008-0340-6096",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Natalia Rodríguez Granados",
+      "email": "nrodriguez@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0002-5566-0861",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    },
+    {
+      "name": "Giovanni Sanabria Brenes",
+      "email": "gsanabria@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0002-7045-0600",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Cartago, Costa Rica"
+    }
+  ],
+  "lastRevision": "Agosto 2025",
+  "category": "universitaria",
+  "pdf": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf",
+  "abstract_es": "Este libro está dedicado a los fundamentos de la matemática, una disciplina que no solo subyace en el corazón de todas las ciencias naturales, sino que también constituye la base de nuestro razonamiento lógico cotidiano. A lo largo de estas páginas, se realiza una exploración rigurosa de conceptos esenciales como las demostraciones de implicaciones, el conjunto de los números reales, el conjunto de los números complejos y el tratamiento de expresiones y ecuaciones algebraicas. Nuestro objetivo es proporcionar una introducción accesible a estos temas, garantizando que el lector desarrolle una comprensión profunda y un aprecio por la estructura lógica de la matemática. Cada capítulo ha sido cuidadosamente estructurado para ofrecer una exposición progresiva de los temas, acompañada de ejemplos que ilustran tanto las aplicaciones prácticas como las teóricas de los conceptos tratados. Este texto está diseñado tanto para estudiantes que se inician en los estudios matemáticos como para aquellos que desean consolidar y profundizar sus conocimientos. Se han incluido ejercicios diseñados para que el lector aplique lo aprendido, promoviendo así un aprendizaje activo y reflexivo. Confiamos en que este libro se convertirá en un recurso valioso para entender los principios fundamentales del pensamiento matemático y en una herramienta esencial para quienes se dedican al estudio serio de esta disciplina.",
+  "keywords_es": ["Fundamentos de Matemática"],
+  "abstract_en": "This book is devoted to the fundamentals of mathematics—a discipline that not only underpins all the natural sciences but also forms the foundation of everyday logical reasoning. Within these pages, we explore essential concepts with rigor, including the demonstration of implications, the structure of the real and complex number systems, and the manipulation of algebraic expressions and equations. Our goal is to offer an accessible introduction to these topics, helping readers develop a solid understanding and appreciation of the logical framework that defines mathematics. Each chapter is carefully organized to present topics progressively, supported by examples that highlight both practical and theoretical aspects of the material. This text is intended for students beginning their mathematical journey, as well as for those seeking to strengthen and expand their foundational knowledge. A variety of exercises are included to encourage active engagement with the material and foster reflective learning. We are confident that this book will serve as a valuable resource for anyone looking to understand the core principles of mathematical thought—and as an essential companion for the serious study of the subject.",
+  "keywords_en": ["Foundations of Mathematics"],
+  "abstract_pt": "Este livro é dedicado aos fundamentos da matemática, uma disciplina que não apenas sustenta todas as ciências naturais, mas também constitui a base do nosso raciocínio lógico cotidiano. Ao longo destas páginas, realiza-se uma exploração rigorosa de conceitos essenciais, como as demonstrações de implicações, o conjunto dos números reais, o conjunto dos números complexos e o tratamento de expressões e equações algébricas. Nosso objetivo é oferecer uma introdução acessível a esses temas, garantindo que o leitor desenvolva uma compreensão profunda e uma apreciação pela estrutura lógica da matemática. Cada capítulo foi cuidadosamente estruturado para oferecer uma exposição progressiva dos temas, acompanhada de exemplos que ilustram tanto as aplicações práticas quanto os aspectos teóricos dos conceitos tratados. Este texto foi projetado tanto para estudantes que estão iniciando seus estudos matemáticos quanto para aqueles que desejam consolidar e aprofundar seus conhecimentos. Foram incluídos exercícios projetados para que o leitor aplique o que aprendeu, promovendo assim uma aprendizagem ativa e reflexiva. Estamos confiantes de que este livro se tornará um recurso valioso para compreender os princípios fundamentais do pensamento matemático e uma ferramenta essencial para quem se dedica ao estudo sério desta disciplina.",
+  "keywords_pt": ["Fundamentos de Matemática"],
+  "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. Revista Digital: Matemática, Educación e Internet, 26(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros"
+}
+,
   "latex-2021": {
     "coverImage": "/libros/universitaria/otros/latex-2021/portada.webp",
     "title": "Edición de textos científicos con LaTeX. Composición, gráficos, diseño editorial y presentaciones beamer",
@@ -184,22 +247,91 @@
   "xxix-ocm-2017": {
     "coverImage": "/libros/universitaria/olimpiadas/xxix-ocm-2017/portada.webp",
     "title": "Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas",
-    "title_en": "Problems and Solutions of the 29th Costa Rican Mathematics Olympiad",
+    "title_en": "Exam problems and solutions XXIX Costa Rican Mathematics Olympiad. 2017",
+    "title_pt": "Problemas de exames e soluções XXIX Olimpíada Costarriquenha de Matemática. 2017",
     "authors": [
-      "C. Páez",
-      "M. Abarca",
-      "L. Chaves",
-      "A. Hernández",
-      "G. Calderón",
-      "F. Mora",
-      "J. Ramírez",
-      "D. Jiménez",
-      "G. Mora",
-      "E. Chaves",
-      "S. Hernández"
+      {
+        "name": "Christian Páez",
+        "email": "cpaez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-5651-4699",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Marvin Abarca",
+        "email": "mabarca@itcr.ac.cr",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Leonel Chaves",
+        "email": "leonel.chaves.salas@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Alexander Hernández",
+        "email": "alexander.hernandez.quiros@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Gabriela Calderón",
+        "email": "maria.calderon.torres@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Federico Mora",
+        "email": "federico.mora.mora@una.cr",
+        "orcid": "https://orcid.org/0000-0002-4244-3737",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Jeremías Ramírez",
+        "email": "jeremias.ramirez.jimenez@una.cr",
+         "orcid": "https://orcid.org/0000-0001-6608-791X",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "David Jiménez",
+        "email": "david.jimenezlopez@ucr.ac.cr",
+        "university": "Universidad de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "German Mora",
+        "email": "germorasaenz@gmail.com",
+        "university": "Universidad de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Emmanuel Chaves",
+        "email": "echaves@uned.ac.cr",
+        "orcid": "https://orcid.org/0000-0001-8925-1532",
+        "university": "Universidad Estatal a Distancia, Escuela de Ciencias Exactas y Naturales",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Salomón Hernández",
+        "email": "shernandezch@hotmail.com",
+        "orcid": "https://orcid.org/0009-0004-4939-0342",
+        "university": "Universidad Estatal a Distancia, Escuela de Ciencias Exactas y Naturales",
+        "location": "Costa Rica"
+      }
     ],
-    "lastRevision": "2017",
-    "category": "olimpiadas",
-    "pdf": "/libros/universitaria/olimpiadas/xxix-ocm-2017/libro.pdf"
+    "received": "12 de febrero de 2019",
+    "accepted": "28 de febrero de 2019",
+    "category": "universitaria",
+    "pdf": "/libros/universitaria/olimpiadas/xxix-ocm-2017/libro.pdf",
+    "abstract_es": "OLCOMA es la Comisión de Olimpiadas Costarricenses de Matemáticas. Esta comisión está conformada por académicos en el área de Matemática de la Universidad Nacional, del Instituto Tecnológico de Costa Rica, de la Universidad de Costa Rica, de la Universidad Estatal a Distancia y por representantes del Ministerio de Educación Pública y del Ministerio de Ciencia, Tecnología y Telecomunicaciones. Dentro de la estructura de las Olimpiadas Costarricenses de Matemáticas se tienen tres niveles de competencia. En el Nivel I participan estudiantes de sétimo año, entre 10 y 13 años aproximadamente (también pueden optar por participar en este nivel los estudiantes de primaria que cursan sexto grado). En el Nivel II participan estudiantes de octavo y noveno años, entre 14 y 15 años aproximadamente. En el Nivel III participan estudiantes de décimo, undécimo y duodécimo años, mayores de 15 años. Durante el año 2017 se trabajó con tres etapas. En la I Eliminatoria los estudiantes resolvieron un examen de selección única con 25 ítems. En la II Eliminatoria los clasificados realizaron un examen con 12 preguntas de selección única y tres problemas de desarrollo. En la Etapa Final los estudiantes clasificados realizaron dos pruebas en días consecutivos, cada una con tres problemas de desarrollo. El objetivo de este libro es que los futuros participantes en las Olimpiadas Costarricenses de Matemáticas posean material de consulta. Los problemas que en este libro se enuncian representan un reto para quienes gustan resolver ejercicios matemáticos. Cada uno de los problemas tiene la solución respectiva, de modo que, una vez que intenten resolver cada problema, puedan comparar el procedimiento realizado con la solución propuesta. Se han incorporado todos los problemas de la I Eliminatoria, la II Eliminatoria y la Etapa Final para cada uno de los tres niveles de competencia.",
+    "keywords_es": ["Problemas", "Olimpiadas matemáticas costarricenses"],
+    "abstract_en": "OLCOMA is the Costa Rican Mathematics Olympiads Commission. This commission is made up of academics in the field of Mathematics from the Universidad Nacional, the Costa Rica Institute of Technology, the Universidad de Costa Rica, the Universidad Estatal a Distancia, and representatives of the Ministry of Public Education and the Ministry of Science, Technology, and Telecommunications. Within the structure of the Costa Rican Mathematics Olympiads, there are three levels of competition. Level I includes students from seventh grade, between 10 and 13 years old (primary school students in sixth grade may also participate). Level II includes students from eighth and ninth grades, approximately between 14 and 15 years old. Level III includes students from tenth, eleventh, and twelfth grades, over 15 years old. During 2017, the competition included three stages. In the First Elimination, students solved a single-selection test with 25 items. In the Second Elimination, the qualified students completed a test with 12 single-choice questions and three development problems. In the Final Stage, the classified students took two tests on consecutive days, each with three development problems. The objective of this book is to provide future participants of the Costa Rican Mathematics Olympiads with reference material. The problems presented here are a challenge for those who enjoy solving mathematical exercises. Each problem includes its respective solution so that, after attempting to solve it, readers can compare their approach with the proposed one. All problems from the First, Second, and Final Stages have been incorporated for each of the three competition levels.",
+    "keywords_en": ["Problems", "Costa Rican mathematical olympiads"],
+    "abstract_pt": "OLCOMA é a Comissão Costarriquenha de Olimpíadas de Matemática. Esta comissão é composta por acadêmicos da área de Matemática da Universidade Nacional, do Instituto Tecnológico da Costa Rica, da Universidade da Costa Rica, da Universidade Estatal a Distância e por representantes do Ministério da Educação Pública e do Ministério da Ciência, Tecnologia e Telecomunicações. Dentro da estrutura das Olimpíadas Costarriquenhas de Matemática, existem três níveis de competição. No Nível I participam estudantes do sétimo ano, entre 10 e 13 anos (também podem participar alunos do sexto ano do ensino fundamental). No Nível II participam estudantes do oitavo e nono anos, entre 14 e 15 anos, aproximadamente. No Nível III participam estudantes do décimo, décimo primeiro e décimo segundo anos, com mais de 15 anos. Durante o ano de 2017, o trabalho foi desenvolvido em três etapas. Na Primeira Eliminatória, os estudantes resolveram uma prova de seleção única com 25 itens. Na Segunda Eliminatória, os classificados realizaram uma prova com 12 questões de seleção única e três problemas de desenvolvimento. Na Etapa Final, os classificados realizaram duas provas em dias consecutivos, cada uma com três problemas de desenvolvimento. O objetivo deste livro é que os futuros participantes das Olimpíadas Costarriquenhas de Matemática tenham material de consulta. Os problemas apresentados neste livro representam um desafio para quem gosta de resolver exercícios matemáticos. Cada problema tem sua respectiva solução, para que, após tentar resolvê-lo, o leitor possa comparar o procedimento adotado com a solução proposta. Foram incorporados todos os problemas da Primeira, Segunda e Etapa Final para cada um dos três níveis de competição.",
+    "keywords_pt": ["Problemas", "Olimpíadas matemáticas costarriquenhas"],
+    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2019). Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas. Revista digital Matemática, Educación e Internet, 21(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxix-ocm-2017/"
   }
 }
