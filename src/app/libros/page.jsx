@@ -28,11 +28,18 @@ export default function Page() {
       ...normalizeBook(book),
     })
   );
-  const universitariaBooksInteractive = Object.values(
+  const universitariaBooksInteractive = Object.entries(
     universitariaDataInteractivos
-  ).map(normalizeBook);
-  const universitariaBooks =
-    Object.values(universitariaData).map(normalizeBook);
+  ).map(([id, book]) => ({
+    id,
+    ...normalizeBook(book),
+  }));
+
+  const universitariaBooks = Object.entries(universitariaData).map(([id, book]) => ({
+    id,
+    ...normalizeBook(book),
+  }));
+
 
   const allInteractiveBooks = [
     ...primariaBooksInteractive,

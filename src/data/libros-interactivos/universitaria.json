@@ -1,25 +1,55 @@
 {
   "ecuaciones-diferenciales-orden-superior-2022": {
-    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.webp",
-    "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
-    "title_en": "Higher Order Differential Equations with Interactive Applications and Illustrative Video",
-    "authors": ["Norberto Gerardo Oviedo Ugalde"],
-    "lastRevision": "Agosto 2022",
-    "category": "universitaria ",
-    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf",
-    "resources": [
-      {
-        "type": "zip",
-        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/CDF.zip"
-      },
-      {
-        "type": "link",
-        "label": "Descargar Wolfram Player (gratuito)",
-        "url": "https://www.wolfram.com/player/"
-      }
-    ]
-  },
+  "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.webp",
+  "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
+  "title_en": "Higher Order Differential Equations with Interactive Applications and Illustrative Videos",
+  "title_pt": "Equações diferenciais de ordem superior com apoio interativo e vídeos ilustrativos",
+  "authors": [
+    {
+      "name": "Norberto Gerardo Oviedo Ugalde",
+      "email": "noviedo@itcr.ac.cr",
+      "orcid": "https://orcid.org/0000-0003-2167-0196",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "location": "Costa Rica"
+    }
+  ],
+  "received": "30 de setiembre de 2021",
+  "accepted": "25 de enero de 2022",
+  "category": "universitaria",
+  "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf",
+  "resources": [
+    {
+      "type": "zip",
+      "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+      "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/CDF.zip"
+    },
+    {
+      "type": "link",
+      "label": "Descargar Wolfram Player (gratuito)",
+      "url": "https://www.wolfram.com/player/"
+    }
+  ],
+  "abstract_es": "El presente libro comprende el estudio de las ecuaciones diferenciales ordinarias de orden superior mediante aspectos teóricos, ejemplos ilustrativos, ejercicios propuestos e incluye enlaces hacia aplicaciones interactivas elaboradas en el software Mathematica y guardadas bajo la versión gratuita Wolfram CDF Player. Estas aplicaciones interactivas son archivos .cdf que se ejecutan con Wolfram CDF Player y requieren estar instaladas en la computadora. Además, se incluyen enlaces directos a videos ilustrativos de ejercicios y ejemplos resueltos relacionados con los temas estudiados en cada sección. El objetivo principal del libro es servir como material teórico-práctico en el estudio de los distintos temas de las ecuaciones diferenciales ordinarias lineales de orden superior (EDOLn), donde las aplicaciones y videos se utilizan como herramienta de apoyo para complementar dicho estudio y comprensión de una manera más dinámica e interactiva.",
+  "keywords_es": [
+    "ecuaciones diferenciales de orden superior",
+    "aplicaciones interactivas",
+    "Wolfram CDF"
+  ],
+  "abstract_en": "This book includes the study of higher-order ordinary differential equations through theoretical aspects, illustrative examples, proposed exercises, and also includes links to interactive applications developed in Mathematica software and saved under the free version of Wolfram CDF Player. These 'interactive applications' are .cdf files that run with Wolfram CDF Player and must be installed on your computer. In addition, the book provides direct links to illustrative videos of exercises and solved examples related to the topics covered in each section. The main objective of the book is to serve as theoretical-practical material for studying the different topics of higher-order linear ordinary differential equations (HODE), where software applications and videos are used as a support tool to complement the study and understanding in a more dynamic and interactive way.",
+  "keywords_en": [
+    "higher order differential equations",
+    "interactive applications",
+    "Wolfram CDF"
+  ],
+  "abstract_pt": "Este livro inclui o estudo das equações diferenciais ordinárias de ordem superior por meio de aspectos teóricos, exemplos ilustrativos, exercícios propostos e também inclui links para aplicações interativas desenvolvidas no software Mathematica e salvas na versão gratuita do Wolfram CDF Player. Essas 'aplicações interativas' são arquivos .cdf que são executados com o Wolfram CDF Player e precisam estar instalados no computador. Além disso, o livro fornece links diretos para vídeos ilustrativos de exercícios e exemplos resolvidos relacionados aos tópicos abordados em cada seção. O principal objetivo do livro é servir como material teórico-prático para o estudo dos diferentes tópicos das equações diferenciais ordinárias lineares de ordem superior (EDOLn), onde as aplicações e vídeos são utilizados como ferramenta de apoio para complementar o estudo e a compreensão de uma forma mais dinâmica e interativa.",
+  "keywords_pt": [
+    "equações diferenciais de ordem superior",
+    "aplicações interativas",
+    "Wolfram CDF"
+  ],
+  "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2022/"
+}
+,
   "calculo-varias-variables-2022": {
     "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.webp",
     "title": "Cálculo en Varias Variables. Visualización interactiva. 2da Ed.",

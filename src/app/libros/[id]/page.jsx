@@ -1,9 +1,17 @@
 import { withFullUrl } from "@/lib/basePath";
 import BookPage from "@/components/books/BookPage";
 import primariaDataInteractive from "@/data/libros-interactivos/primaria.json";
+import universitariaDataInteractive from "@/data/libros-interactivos/universitaria.json";
+import universitariaData from "@/data/libros/universitaria.json";
+
+const allBooks = {
+  ...primariaDataInteractive,
+  ...universitariaDataInteractive,
+  ...universitariaData,
+};
 
 export async function generateStaticParams() {
-  const ids = Object.entries(primariaDataInteractive)
+  const ids = Object.entries(allBooks)
     .filter(([id, book]) => id && book && book.pdf && book.title)
     .map(([id]) => ({ id }));
 
@@ -11,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const book = primariaDataInteractive[params.id];
+  const book = allBooks[params.id];
 
   if (!book) {
     return { title: "Libro no encontrado" };
@@ -25,7 +33,7 @@ export async function generateMetadata({ params }) {
       citation_author: Array.isArray(book.authors)
         ? book.authors.map((a) => (typeof a === "string" ? a : a.name))
         : [],
-      citation_publication_date: book.revised || "Sin fecha",
+      citation_publication_date: book.revised || book.lastRevision || "Sin fecha",
       citation_journal_title: "Revista Digital Matemática, Educación e Internet",
       citation_publisher: "Instituto Tecnológico de Costa Rica",
       citation_issn: "1659-0643",
@@ -54,7 +62,7 @@ function normalizeBook(book) {
 }
 
 export default function Page({ params }) {
-  const book = primariaDataInteractive[params.id];
+  const book = allBooks[params.id];
 
   if (!book) {
     return (

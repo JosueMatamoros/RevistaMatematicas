@@ -93,24 +93,94 @@
   "xxx-ocm-2018": {
     "coverImage": "/libros/universitaria/olimpiadas/xxx-ocm-2018/portada.webp",
     "title": "Problemas de exámenes y soluciones XXX Olimpiada Costarricense de Matemáticas",
-    "title_en": "Problems and Solutions of the 30th Costa Rican Mathematics Olympiad",
+    "title_en": "Exam problems and solutions XXX Costa Rican Mathematics Olympiad. 2018",
+    "title_pt": "Problemas de exames e soluções XXX Olimpíada Costarriquenha de Matemática. 2018",
     "authors": [
-      "C. Páez",
-      "M. Abarca",
-      "L. Chaves",
-      "A. Hernández",
-      "G. Calderón",
-      "F. Mora",
-      "J. Ramírez",
-      "D. Jiménez",
-      "G. Mora",
-      "E. Chaves",
-      "S. Hernández"
+      {
+        "name": "Christian Páez",
+        "email": "cpaez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-5651-4699",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Marvin Abarca",
+        "email": "mabarca@itcr.ac.cr",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Leonel Chaves",
+        "email": "leonel.chaves.salas@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Alexander Hernández",
+        "email": "alexander.hernandez.quiros@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Gabriela Calderón",
+        "email": "maria.calderon.torres@una.cr",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Federico Mora",
+        "email": "federico.mora.mora@una.cr",
+        "orcid": "https://orcid.org/0000-0002-4244-3737",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Jeremías Ramírez",
+        "email": "jeremias.ramirez.jimenez@una.cr",
+        "orcid": "https://orcid.org/0000-0001-6608-791X",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "David Jiménez",
+        "email": "david.jimenezlopez@ucr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-1087-8269",
+        "university": "Universidad de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "German Mora",
+        "email": "germorasaenz@gmail.com",
+        "university": "Universidad Nacional, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Emmanuel Chaves",
+        "email": "echaves@uned.ac.cr",
+        "orcid": "https://orcid.org/0000-0001-8925-1532",
+        "university": "Universidad Estatal a Distancia, Escuela de Ciencias Exactas y Naturales",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Salomón Hernández",
+        "email": "shernandezch@hotmail.com",
+        "orcid": "https://orcid.org/0009-0004-4939-0342",
+        "university": "Universidad Estatal a Distancia, Escuela de Ciencias Exactas y Naturales",
+        "location": "Costa Rica"
+      }
     ],
-    "lastRevision": "2018",
-    "category": "olimpiadas",
-    "pdf": "/libros/universitaria/olimpiadas/xxx-ocm-2018/libro.pdf"
+    "lastRevision": "Febrero 2020",
+    "category": "universitaria",
+    "pdf": "/libros/universitaria/olimpiadas/xxx-ocm-2018/libro.pdf",
+    "abstract_es": "OLCOMA es la Comisión de Olimpiadas Costarricenses de Matemáticas. Esta comisión está conformada por académicos en el área de Matemática de la Universidad Nacional, del Instituto Tecnológico de Costa Rica, de la Universidad de Costa Rica, de la Universidad Estatal a Distancia, y por representantes del Ministerio de Educación Pública y del Ministerio de Ciencia, Tecnología y Telecomunicaciones. Dentro de la estructura de las Olimpiadas Costarricenses de Matemáticas se tienen tres niveles de competencia. En el Nivel I participan estudiantes de sétimo año, entre 10 y 13 años, aproximadamente (también pueden participar estudiantes de primaria que cursan sexto grado). En el Nivel II participan estudiantes de octavo y noveno años, entre 14 y 15 años, aproximadamente. En el Nivel III participan estudiantes de décimo, undécimo y duodécimo años, mayores de 15 años. Durante el año 2017 se trabajó con tres etapas. En la I Eliminatoria, los estudiantes resolvieron un examen de selección única con 25 ítems. En la II Eliminatoria, los clasificados realizaron un examen con 12 preguntas de selección única y tres problemas de desarrollo. En la Etapa Final, los estudiantes clasificados realizaron dos pruebas en días consecutivos, cada una con tres problemas de desarrollo. El objetivo de este libro es que los futuros participantes en Olimpiadas Costarricenses de Matemáticas posean material de consulta. Los problemas que en este libro se enuncian representan un reto para quienes gustan resolver ejercicios matemáticos. Cada uno de los problemas tiene la solución respectiva, de modo que, una vez que intenten resolver cada problema, puedan comparar el procedimiento realizado con la solución propuesta. Se han incorporado todos los problemas de la I Eliminatoria, II Eliminatoria y Etapa Final para cada uno de los tres niveles de competencia.",
+    "keywords_es": ["Problemas", "Olimpiadas matemáticas costarricenses"],
+    "abstract_en": "OLCOMA is the Costa Rican Mathematics Olympiads Commission. This commission is made up of academics in the field of Mathematics from the Universidad Nacional, the Costa Rica Institute of Technology, the Universidad de Costa Rica, the Universidad Estatal a Distancia, and representatives of the Ministry of Public Education and the Ministry of Science, Technology, and Telecommunications. Within the structure of the Costa Rican Mathematics Olympiads, there are three levels of competition. Level I includes students from seventh grade, between 10 and 13 years old (primary school students in sixth grade may also participate). Level II includes students from eighth and ninth grades, approximately between 14 and 15 years old. Level III includes students from tenth, eleventh, and twelfth grades, over 15 years old. During 2017, the competition included three stages. In the First Elimination, students solved a single-selection test with 25 items. In the Second Elimination, the qualified students completed a test with 12 single-choice questions and three development problems. In the Final Stage, the classified students took two tests on consecutive days, each with three development problems. The objective of this book is to provide future participants of the Costa Rican Mathematics Olympiads with reference material. The problems presented here are a challenge for those who enjoy solving mathematical exercises. Each problem includes its respective solution so that, after attempting to solve it, readers can compare their approach with the proposed one. All problems from the First, Second, and Final Stages have been incorporated for each of the three competition levels.",
+    "keywords_en": ["Problems", "Costa Rican mathematical olympiads"],
+    "abstract_pt": "OLCOMA é a Comissão Costarriquenha de Olimpíadas de Matemática. Esta comissão é composta por acadêmicos da área de Matemática da Universidade Nacional, do Instituto Tecnológico da Costa Rica, da Universidade da Costa Rica, da Universidade Estatal a Distância e por representantes do Ministério da Educação Pública e do Ministério da Ciência, Tecnologia e Telecomunicações. Dentro da estrutura das Olimpíadas Costarriquenhas de Matemática, existem três níveis de competição. No Nível I participam estudantes do sétimo ano, entre 10 e 13 anos (também podem participar alunos do sexto ano do ensino fundamental). No Nível II participam estudantes do oitavo e nono anos, entre 14 e 15 anos, aproximadamente. No Nível III participam estudantes do décimo, décimo primeiro e décimo segundo anos, com mais de 15 anos. Durante o ano de 2017, o trabalho foi desenvolvido em três etapas. Na Primeira Eliminatória, os estudantes resolveram uma prova de seleção única com 25 itens. Na Segunda Eliminatória, os classificados realizaram uma prova com 12 questões de seleção única e três problemas de desenvolvimento. Na Etapa Final, os classificados realizaram duas provas em dias consecutivos, cada uma com três problemas de desenvolvimento. O objetivo deste livro é que os futuros participantes das Olimpíadas Costarriquenhas de Matemática tenham material de consulta. Os problemas apresentados neste livro representam um desafio para quem gosta de resolver exercícios matemáticos. Cada problema tem sua respectiva solução, para que, após tentar resolvê-lo, o leitor possa comparar o procedimento adotado com a solução proposta. Foram incorporados todos os problemas da Primeira, Segunda e Etapa Final para cada um dos três níveis de competição.",
+    "keywords_pt": ["Problemas", "Olimpíadas matemáticas costarriquenhas"],
+    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2020). Problemas de exámenes y soluciones XXX Olimpiada Costarricense de Matemáticas. Revista digital Matemática, Educación e Internet, 22(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxx-ocm-2018/"
   },
+
   "xxix-ocm-2017": {
     "coverImage": "/libros/universitaria/olimpiadas/xxix-ocm-2017/portada.webp",
     "title": "Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas",
