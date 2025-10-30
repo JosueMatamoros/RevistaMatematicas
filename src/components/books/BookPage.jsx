@@ -1,17 +1,25 @@
 // src/components/books/bookPage.jsx
+"use client";
+
+import { useState } from "react";
 import { withBasePath, withFullUrl } from "@/lib/basePath";
-import { FaFilePdf, FaShareAlt, FaCopy } from "react-icons/fa";
+import { FaFilePdf, FaShareAlt, FaCopy, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
 export default function bookPage({ book }) {
   const pdfAbs = withFullUrl(book.pdf);
+
+  // Estados para los toggles
+  const [showResumen, setShowResumen] = useState(false);
+  const [showAbstract, setShowAbstract] = useState(false);
+  const [showResumo, setShowResumo] = useState(false);
 
   return (
     <div className="min-h-screen bg-white mb-16">
       <div className="mt-2 mb-2">
         <BreadcrumbNav />
       </div>
-      <div className="mt-2 mb-2"></div>
+
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-4">
@@ -49,7 +57,6 @@ export default function bookPage({ book }) {
               )}
               <div className="text-sm text-gray-600 space-y-0.5">
                 {a.university && <p className="font-medium">{a.university}</p>}
-                {a.department && <p>{a.department}</p>}
                 {a.location && <p className="text-gray-500">{a.location}</p>}
               </div>
             </div>
@@ -93,17 +100,37 @@ export default function bookPage({ book }) {
           </div>
         </div>
 
-        {/* Resumen (ES) */}
+        {/* RESUMEN */}
         {book.abstract_es && (
           <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-tec-blue-secondary">
-            <h2 className="text-lg font-bold text-tec-blue-primary mb-3">
-              Resumen
-            </h2>
-            <p className="text-gray-800 text-sm leading-relaxed text-justify">
+            <button
+              onClick={() => setShowResumen(!showResumen)}
+              className="flex w-full justify-between items-center text-lg font-bold text-tec-blue-primary mb-3 md:cursor-default"
+            >
+              <span>Resumen</span>
+              <span className="md:hidden">
+                {showResumen ? (
+                  <FaChevronUp className="w-4 h-4" />
+                ) : (
+                  <FaChevronDown className="w-4 h-4" />
+                )}
+              </span>
+            </button>
+
+            <div
+              className={`text-gray-800 text-sm leading-relaxed text-justify ${
+                showResumen ? "block" : "hidden md:block"
+              }`}
+            >
               {book.abstract_es}
-            </p>
+            </div>
+
             {book.keywords_es?.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div
+                className={`mt-3 flex flex-wrap gap-2 ${
+                  showResumen ? "flex" : "hidden md:flex"
+                }`}
+              >
                 {book.keywords_es.map((k) => (
                   <span
                     key={k}
@@ -117,15 +144,37 @@ export default function bookPage({ book }) {
           </section>
         )}
 
-        {/* Abstract (EN) */}
+        {/* ABSTRACT */}
         {book.abstract_en && (
           <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-tec-red-primary">
-            <h2 className="text-lg font-bold text-red-800 mb-3">Abstract</h2>
-            <p className="text-gray-800 text-sm leading-relaxed text-justify">
+            <button
+              onClick={() => setShowAbstract(!showAbstract)}
+              className="flex w-full justify-between items-center text-lg font-bold text-red-800 mb-3 md:cursor-default"
+            >
+              <span>Abstract</span>
+              <span className="md:hidden">
+                {showAbstract ? (
+                  <FaChevronUp className="w-4 h-4" />
+                ) : (
+                  <FaChevronDown className="w-4 h-4" />
+                )}
+              </span>
+            </button>
+
+            <div
+              className={`text-gray-800 text-sm leading-relaxed text-justify ${
+                showAbstract ? "block" : "hidden md:block"
+              }`}
+            >
               {book.abstract_en}
-            </p>
+            </div>
+
             {book.keywords_en?.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div
+                className={`mt-3 flex flex-wrap gap-2 ${
+                  showAbstract ? "flex" : "hidden md:flex"
+                }`}
+              >
                 {book.keywords_en.map((k) => (
                   <span
                     key={k}
@@ -139,15 +188,37 @@ export default function bookPage({ book }) {
           </section>
         )}
 
-        {/* Resumo (PT) */}
+        {/* RESUMO */}
         {book.abstract_pt && (
           <section className="font-alt rounded-lg p-4 mt-5 border-l-4 border-l-gray-400">
-            <h2 className="text-lg font-bold text-gray-700 mb-3">Resumo</h2>
-            <p className="text-gray-800 text-sm leading-relaxed text-justify">
+            <button
+              onClick={() => setShowResumo(!showResumo)}
+              className="flex w-full justify-between items-center text-lg font-bold text-gray-700 mb-3 md:cursor-default"
+            >
+              <span>Resumo</span>
+              <span className="md:hidden">
+                {showResumo ? (
+                  <FaChevronUp className="w-4 h-4" />
+                ) : (
+                  <FaChevronDown className="w-4 h-4" />
+                )}
+              </span>
+            </button>
+
+            <div
+              className={`text-gray-800 text-sm leading-relaxed text-justify ${
+                showResumo ? "block" : "hidden md:block"
+              }`}
+            >
               {book.abstract_pt}
-            </p>
+            </div>
+
             {book.keywords_pt?.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div
+                className={`mt-3 flex flex-wrap gap-2 ${
+                  showResumo ? "flex" : "hidden md:flex"
+                }`}
+              >
                 {book.keywords_pt.map((k) => (
                   <span
                     key={k}
