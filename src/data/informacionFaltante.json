@@ -1,0 +1,27 @@
+{
+  "primaria": {
+    "libros": {
+      "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios": {
+        "falta": "Como es reciente tal vez se encuentre la fecha de recibido y aceptado."
+      },
+      "Libros de primaria": {
+        "falta": "A los tres libros de primaria también les falta la fecha de recibido y aceptado."
+      }
+    }
+  },
+
+  "secundaria": {
+    "autores": {
+      "Alcides Astorga Morales": {
+        "orcid": "??",
+        "correo": "??"
+      },
+      "Alexander Borbón A.": {
+        "correo": "??"
+      },
+      "Enrique Vílchez Q.": {
+        "correo": "??"
+      }
+    }
+  }
+}

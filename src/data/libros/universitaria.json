@@ -1,103 +1,159 @@
 {
   "fundamentos-de-matematica-2025": {
-  "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
-  "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
-  "title_en": "Foundations of Mathematics I: Compilation of Theory and Exercises",
-  "title_pt": "Fundamentos de Matemática I: Compilação de Teoria e Exercícios",
-  "authors": [
-    {
-      "name": "Reiman Acuña Chacón",
-      "email": "reiacuna@itcr.ac.cr",
-      "orcid": "https://orcid.org/0000-0002-0094-3282",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Alcides Astorga Morales",
-      "email": "",
-      "orcid": "",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Jeffrey Chavarría Molina",
-      "email": "jchavarria@itcr.ac.cr",
-      "orcid": "https://orcid.org/0000-0002-8943-4475",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Marco Gutiérrez Montenegro",
-      "email": "vgutierrez@itcr.ac.cr",
-      "orcid": "https://orcid.org/0009-0004-0293-1578",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Edwin Quesada Solano",
-      "email": "edquesada1993@gmail.com",
-      "orcid": "https://orcid.org/0009-0005-3801-2079",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Greivin Ramírez Arce",
-      "email": "gramirez@itcr.ac.cr",
-      "orcid": "https://orcid.org/0000-0002-3731-5415",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Bryan Ramírez Obando",
-      "email": "bramirez9122@gmail.com",
-      "orcid": "https://orcid.org/0009-0008-0340-6096",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Natalia Rodríguez Granados",
-      "email": "nrodriguez@itcr.ac.cr",
-      "orcid": "https://orcid.org/0000-0002-5566-0861",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    },
-    {
-      "name": "Giovanni Sanabria Brenes",
-      "email": "gsanabria@itcr.ac.cr",
-      "orcid": "https://orcid.org/0000-0002-7045-0600",
-      "university": "Instituto Tecnológico de Costa Rica",
-      "location": "Cartago, Costa Rica"
-    }
-  ],
-  "lastRevision": "Agosto 2025",
-  "category": "universitaria",
-  "pdf": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf",
-  "abstract_es": "Este libro está dedicado a los fundamentos de la matemática, una disciplina que no solo subyace en el corazón de todas las ciencias naturales, sino que también constituye la base de nuestro razonamiento lógico cotidiano. A lo largo de estas páginas, se realiza una exploración rigurosa de conceptos esenciales como las demostraciones de implicaciones, el conjunto de los números reales, el conjunto de los números complejos y el tratamiento de expresiones y ecuaciones algebraicas. Nuestro objetivo es proporcionar una introducción accesible a estos temas, garantizando que el lector desarrolle una comprensión profunda y un aprecio por la estructura lógica de la matemática. Cada capítulo ha sido cuidadosamente estructurado para ofrecer una exposición progresiva de los temas, acompañada de ejemplos que ilustran tanto las aplicaciones prácticas como las teóricas de los conceptos tratados. Este texto está diseñado tanto para estudiantes que se inician en los estudios matemáticos como para aquellos que desean consolidar y profundizar sus conocimientos. Se han incluido ejercicios diseñados para que el lector aplique lo aprendido, promoviendo así un aprendizaje activo y reflexivo. Confiamos en que este libro se convertirá en un recurso valioso para entender los principios fundamentales del pensamiento matemático y en una herramienta esencial para quienes se dedican al estudio serio de esta disciplina.",
-  "keywords_es": ["Fundamentos de Matemática"],
-  "abstract_en": "This book is devoted to the fundamentals of mathematics—a discipline that not only underpins all the natural sciences but also forms the foundation of everyday logical reasoning. Within these pages, we explore essential concepts with rigor, including the demonstration of implications, the structure of the real and complex number systems, and the manipulation of algebraic expressions and equations. Our goal is to offer an accessible introduction to these topics, helping readers develop a solid understanding and appreciation of the logical framework that defines mathematics. Each chapter is carefully organized to present topics progressively, supported by examples that highlight both practical and theoretical aspects of the material. This text is intended for students beginning their mathematical journey, as well as for those seeking to strengthen and expand their foundational knowledge. A variety of exercises are included to encourage active engagement with the material and foster reflective learning. We are confident that this book will serve as a valuable resource for anyone looking to understand the core principles of mathematical thought—and as an essential companion for the serious study of the subject.",
-  "keywords_en": ["Foundations of Mathematics"],
-  "abstract_pt": "Este livro é dedicado aos fundamentos da matemática, uma disciplina que não apenas sustenta todas as ciências naturais, mas também constitui a base do nosso raciocínio lógico cotidiano. Ao longo destas páginas, realiza-se uma exploração rigorosa de conceitos essenciais, como as demonstrações de implicações, o conjunto dos números reais, o conjunto dos números complexos e o tratamento de expressões e equações algébricas. Nosso objetivo é oferecer uma introdução acessível a esses temas, garantindo que o leitor desenvolva uma compreensão profunda e uma apreciação pela estrutura lógica da matemática. Cada capítulo foi cuidadosamente estruturado para oferecer uma exposição progressiva dos temas, acompanhada de exemplos que ilustram tanto as aplicações práticas quanto os aspectos teóricos dos conceitos tratados. Este texto foi projetado tanto para estudantes que estão iniciando seus estudos matemáticos quanto para aqueles que desejam consolidar e aprofundar seus conhecimentos. Foram incluídos exercícios projetados para que o leitor aplique o que aprendeu, promovendo assim uma aprendizagem ativa e reflexiva. Estamos confiantes de que este livro se tornará um recurso valioso para compreender os princípios fundamentais do pensamento matemático e uma ferramenta essencial para quem se dedica ao estudo sério desta disciplina.",
-  "keywords_pt": ["Fundamentos de Matemática"],
-  "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. Revista Digital: Matemática, Educación e Internet, 26(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
-}
-,
+    "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
+    "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
+    "title_en": "Foundations of Mathematics I: Compilation of Theory and Exercises",
+    "title_pt": "Fundamentos de Matemática I: Compilação de Teoria e Exercícios",
+    "authors": [
+      {
+        "name": "Reiman Acuña Chacón",
+        "email": "reiacuna@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-0094-3282",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Alcides Astorga Morales",
+        "email": "",
+        "orcid": "",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Jeffrey Chavarría Molina",
+        "email": "jchavarria@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-8943-4475",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Marco Gutiérrez Montenegro",
+        "email": "vgutierrez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0004-0293-1578",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Edwin Quesada Solano",
+        "email": "edquesada1993@gmail.com",
+        "orcid": "https://orcid.org/0009-0005-3801-2079",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Greivin Ramírez Arce",
+        "email": "gramirez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-3731-5415",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Bryan Ramírez Obando",
+        "email": "bramirez9122@gmail.com",
+        "orcid": "https://orcid.org/0009-0008-0340-6096",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Natalia Rodríguez Granados",
+        "email": "nrodriguez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-5566-0861",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Giovanni Sanabria Brenes",
+        "email": "gsanabria@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-7045-0600",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      }
+    ],
+    "lastRevision": "Agosto 2025",
+    "category": "universitaria",
+    "pdf": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf",
+    "abstract_es": "Este libro está dedicado a los fundamentos de la matemática, una disciplina que no solo subyace en el corazón de todas las ciencias naturales, sino que también constituye la base de nuestro razonamiento lógico cotidiano. A lo largo de estas páginas, se realiza una exploración rigurosa de conceptos esenciales como las demostraciones de implicaciones, el conjunto de los números reales, el conjunto de los números complejos y el tratamiento de expresiones y ecuaciones algebraicas. Nuestro objetivo es proporcionar una introducción accesible a estos temas, garantizando que el lector desarrolle una comprensión profunda y un aprecio por la estructura lógica de la matemática. Cada capítulo ha sido cuidadosamente estructurado para ofrecer una exposición progresiva de los temas, acompañada de ejemplos que ilustran tanto las aplicaciones prácticas como las teóricas de los conceptos tratados. Este texto está diseñado tanto para estudiantes que se inician en los estudios matemáticos como para aquellos que desean consolidar y profundizar sus conocimientos. Se han incluido ejercicios diseñados para que el lector aplique lo aprendido, promoviendo así un aprendizaje activo y reflexivo. Confiamos en que este libro se convertirá en un recurso valioso para entender los principios fundamentales del pensamiento matemático y en una herramienta esencial para quienes se dedican al estudio serio de esta disciplina.",
+    "keywords_es": ["Fundamentos de Matemática"],
+    "abstract_en": "This book is devoted to the fundamentals of mathematics—a discipline that not only underpins all the natural sciences but also forms the foundation of everyday logical reasoning. Within these pages, we explore essential concepts with rigor, including the demonstration of implications, the structure of the real and complex number systems, and the manipulation of algebraic expressions and equations. Our goal is to offer an accessible introduction to these topics, helping readers develop a solid understanding and appreciation of the logical framework that defines mathematics. Each chapter is carefully organized to present topics progressively, supported by examples that highlight both practical and theoretical aspects of the material. This text is intended for students beginning their mathematical journey, as well as for those seeking to strengthen and expand their foundational knowledge. A variety of exercises are included to encourage active engagement with the material and foster reflective learning. We are confident that this book will serve as a valuable resource for anyone looking to understand the core principles of mathematical thought—and as an essential companion for the serious study of the subject.",
+    "keywords_en": ["Foundations of Mathematics"],
+    "abstract_pt": "Este livro é dedicado aos fundamentos da matemática, uma disciplina que não apenas sustenta todas as ciências naturais, mas também constitui a base do nosso raciocínio lógico cotidiano. Ao longo destas páginas, realiza-se uma exploração rigorosa de conceitos essenciais, como as demonstrações de implicações, o conjunto dos números reais, o conjunto dos números complexos e o tratamento de expressões e equações algébricas. Nosso objetivo é oferecer uma introdução acessível a esses temas, garantindo que o leitor desenvolva uma compreensão profunda e uma apreciação pela estrutura lógica da matemática. Cada capítulo foi cuidadosamente estruturado para oferecer uma exposição progressiva dos temas, acompanhada de exemplos que ilustram tanto as aplicações práticas quanto os aspectos teóricos dos conceitos tratados. Este texto foi projetado tanto para estudantes que estão iniciando seus estudos matemáticos quanto para aqueles que desejam consolidar e aprofundar seus conhecimentos. Foram incluídos exercícios projetados para que o leitor aplique o que aprendeu, promovendo assim uma aprendizagem ativa e reflexiva. Estamos confiantes de que este livro se tornará um recurso valioso para compreender os princípios fundamentais do pensamento matemático e uma ferramenta essencial para quem se dedica ao estudo sério desta disciplina.",
+    "keywords_pt": ["Fundamentos de Matemática"],
+    "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. Revista Digital: Matemática, Educación e Internet, 26(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
+  },
   "latex-2021": {
     "coverImage": "/libros/universitaria/otros/latex-2021/portada.webp",
     "title": "Edición de textos científicos con LaTeX. Composición, gráficos, diseño editorial y presentaciones beamer",
     "title_en": "Scientific Text Editing with LaTeX: Composition, Graphics, Editorial Design and Beamer Presentations",
-    "authors": ["Walter Mora F.", "Alexander Borbón A."],
+    "authors": [
+      {
+        "name": "Walter Mora Flores",
+        "email": "wmoraz@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-8770-3417",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Alexander Borbón A.",
+        "email": "",
+        "orcid": "https://orcid.org/0009-0006-4455-9414",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "Enero 2021",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/otros/latex-2021/libro.pdf"
+    "pdf": "/libros/universitaria/otros/latex-2021/libro.pdf",
+    "abstract_es": "Este texto aborda aspectos fundamentales e intermedios de la composición tipográfica con LaTeX, el diseño editorial y la creación de presentaciones con Beamer. Incluye también la edición de gráficos mediante Inkscape y TikZ, así como el uso de entornos avanzados con los paquetes xparse y tcolorbox. Se presentan ejemplos prácticos, plantillas y explicaciones que facilitan la comprensión y aplicación de los conceptos en la elaboración de documentos técnicos y académicos. El libro reúne los temas más comunes en la edición de textos científicos, especialmente en matemáticas, educación y programación, e incorpora actualizaciones sobre nuevos paquetes y técnicas de diseño editorial.",
+    "keywords_es": ["LaTeX", "diseño editorial", "Beamer", "TikZ", "tcolorbox"],
+
+    "abstract_en": "This text covers fundamental and intermediate aspects of typesetting with LaTeX, editorial design, and the creation of presentations using Beamer. It also includes the editing of graphics with Inkscape and TikZ, as well as the use of advanced environments with the xparse and tcolorbox packages. Practical examples, templates, and explanations are provided to facilitate understanding and application of concepts in the production of technical and academic documents. The book gathers the most common topics in scientific text editing, particularly in mathematics, education, and programming, and incorporates updates on new packages and editorial design techniques.",
+    "keywords_en": ["LaTeX", "editorial design", "Beamer", "TikZ", "tcolorbox"],
+
+    "abstract_pt": "Este texto aborda aspectos fundamentais e intermediários da composição tipográfica com LaTeX, do design editorial e da criação de apresentações com Beamer. Também inclui a edição de gráficos com Inkscape e TikZ, além do uso de ambientes avançados com os pacotes xparse e tcolorbox. São apresentados exemplos práticos, modelos e explicações que facilitam a compreensão e a aplicação dos conceitos na elaboração de documentos técnicos e acadêmicos. O livro reúne os temas mais comuns na edição de textos científicos, especialmente em matemática, educação e programação, e incorpora atualizações sobre novos pacotes e técnicas de design editorial.",
+    "keywords_pt": ["LaTeX", "design editorial", "Beamer", "TikZ", "tcolorbox"],
+
+    "citation": "Mora Flores, W.A., & Borbón A., A. (2021). LaTeX. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/latex-2021/"
   },
   "matematica-discreta-2018": {
     "coverImage": "/libros/universitaria/algebra/matematica-discreta-2018/portada.webp",
     "title": "Matemática discreta a través del uso del Paquete Vilcretas",
     "title_en": "Discrete Mathematics through the Use of the Vilcretas Package",
-    "authors": ["Enrique Vílchez Q."],
+    "authors": [
+      {
+        "name": "Enrique Vílchez Q.",
+        "email": "",
+        "orcid": "https://orcid.org/0000-0002-2571-5729",
+        "university": "Universidad Nacional de Costa Rica",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "Mayo 2018",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/algebra/matematica-discreta-2018/libro.pdf"
+    "pdf": "/libros/universitaria/algebra/matematica-discreta-2018/libro.pdf",
+    "abstract_es": "Este texto presenta los fundamentos de la matemática discreta, abordando temas esenciales como los conjuntos, las relaciones, las funciones y la combinatoria. Incluye además contenidos sobre teoría de grafos, inducción matemática y técnicas de conteo, con ejemplos y ejercicios diseñados para fortalecer la comprensión conceptual y el razonamiento matemático. El libro busca ofrecer una base sólida para el estudio de la matemática discreta y sus aplicaciones en la informática, la ingeniería y otras ciencias afines.",
+    "keywords_es": [
+      "matemática discreta",
+      "combinatoria",
+      "teoría de grafos",
+      "inducción matemática"
+    ],
+
+    "abstract_en": "This text presents the fundamentals of discrete mathematics, covering essential topics such as sets, relations, functions, and combinatorics. It also includes content on graph theory, mathematical induction, and counting techniques, with examples and exercises designed to strengthen conceptual understanding and mathematical reasoning. The book aims to provide a solid foundation for the study of discrete mathematics and its applications in computer science, engineering, and related fields.",
+    "keywords_en": [
+      "discrete mathematics",
+      "combinatorics",
+      "graph theory",
+      "mathematical induction"
+    ],
+
+    "abstract_pt": "Este texto apresenta os fundamentos da matemática discreta, abordando temas essenciais como conjuntos, relações, funções e combinatória. Também inclui conteúdos sobre teoria dos grafos, indução matemática e técnicas de contagem, com exemplos e exercícios elaborados para fortalecer a compreensão conceitual e o raciocínio matemático. O livro busca oferecer uma base sólida para o estudo da matemática discreta e suas aplicações na informática, engenharia e outras ciências afins.",
+    "keywords_pt": [
+      "matemática discreta",
+      "combinatória",
+      "teoria dos grafos",
+      "indução matemática"
+    ],
+    "citation": "Vílchez Q., E. (2018). Matemática Discreta. Revista digital Matemática, Educación e Internet, 20(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matematica-discreta-2018/"
   },
   "calculo-diferencial-e-integral-2017": {
     "coverImage": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/portada.webp",
@@ -139,7 +195,16 @@
     "coverImage": "/libros/universitaria/estadistica/edepa-2013/portada.webp",
     "title": "Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA)",
     "title_en": "Meeting on the Didactics of Statistics, Probability and Data Analysis (EDEPA)",
-    "authors": ["Walter Mora F.", "Greivin Ramírez A. (Editores)"],
+    "authors": [
+      {
+        "name": "Walter Mora Flores",
+        "email": "wmoraz@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-8770-3417",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      },
+      "Greivin Ramírez A. (Editores)"
+    ],
     "lastRevision": "2013",
     "category": "congreso",
     "pdf": "/libros/universitaria/estadistica/edepa-2013/libro.pdf"
@@ -291,7 +356,7 @@
       {
         "name": "Jeremías Ramírez",
         "email": "jeremias.ramirez.jimenez@una.cr",
-         "orcid": "https://orcid.org/0000-0001-6608-791X",
+        "orcid": "https://orcid.org/0000-0001-6608-791X",
         "university": "Universidad Nacional, Escuela de Matemática",
         "location": "Costa Rica"
       },
