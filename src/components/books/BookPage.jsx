@@ -240,7 +240,7 @@ export default function bookPage({ book }) {
 
         {/* Cita */}
         <section className="bg-gray-50 rounded-lg p-3 border mt-5">
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between items-center mb-2">
             <h2 className="text-base font-bold text-gray-900">Cómo citar</h2>
             <FaCopy className="w-4 h-4 text-gray-800" />
           </div>
