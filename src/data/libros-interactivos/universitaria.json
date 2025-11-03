@@ -3,7 +3,6 @@
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.webp",
     "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
     "title_en": "Higher Order Differential Equations with Interactive Applications and Illustrative Videos",
-    "title_pt": "Equações diferenciais de ordem superior com apoio interativo e vídeos ilustrativos",
     "authors": [
       {
         "name": "Norberto Gerardo Oviedo Ugalde",
@@ -53,7 +52,6 @@
     "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.webp",
     "title": "Cálculo en Varias Variables. Visualización interactiva. 2da Ed.",
     "title_en": "Calculus in Several Variables. Interactive Visualization (Wolfram CDFPlayer) 2nd Ed.",
-    "title_pt": "Cálculo em Várias Variáveis. Visualização interativa (Wolfram CDFPlayer) 2ª Ed.",
     "authors": [
       {
         "name": "Walter Mora Flores",
@@ -104,7 +102,6 @@
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/portada.svg",
     "title": "Ecuaciones diferenciales ordinarias de primer orden con apoyo interactivo y videos ilustrativos",
     "title_en": "First-order ordinary differential equations with interactive support and illustrative videos",
-    "title_pt": "Equações diferenciais ordinárias de primeira ordem com apoio interativo e vídeos ilustrativos",
     "authors": [
       {
         "name": "Norberto Gerardo Oviedo Ugalde",
@@ -156,7 +153,13 @@
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/portada.webp",
     "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
     "title_en": "Differential Equations using Laplace Transform",
-    "authors": ["Norberto Oviedo U."],
+    "authors": [{
+        "name": "Norberto Gerardo Oviedo Ugalde",
+        "email": "noviedo@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0003-2167-0196",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      }],
     "lastRevision": "Marzo 2021",
     "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
@@ -171,7 +174,32 @@
         "label": "Descargar Wolfram Player (gratuito)",
         "url": "https://www.wolfram.com/player/"
       }
-    ]
+    ],
+    "abstract_es": "Este material didáctico introduce al lector en el estudio de las ecuaciones diferenciales ordinarias mediante el uso de la Transformada de Laplace, apoyándose en recursos interactivos desarrollados en Mathematica y distribuidos en formato Wolfram CDF (Computable Document Format). Su propósito principal es servir como apoyo dinámico y visual para la enseñanza y el aprendizaje de este tema, permitiendo explorar de forma práctica los principales teoremas asociados: los teoremas de traslación, el teorema de convolución y las transformadas de derivadas, junto con sus formas inversas. El libro incluye además aplicaciones interactivas que ilustran la resolución de ecuaciones diferenciales, integrales e integro-diferenciales con coeficientes constantes, promoviendo una comprensión más profunda de los métodos analíticos y computacionales de la Transformada de Laplace.",
+    "keywords_es": [
+      "Transformada de Laplace",
+      "ecuaciones diferenciales",
+      "aplicaciones interactivas",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "abstract_en": "This didactic material introduces the reader to the study of ordinary differential equations using the Laplace Transform, supported by interactive resources developed in Mathematica and distributed in Wolfram CDF (Computable Document Format). Its main purpose is to serve as a dynamic and visual aid for the teaching and learning of this topic, allowing practical exploration of the main associated theorems: the first and second shifting theorems, the convolution theorem, and the transforms of derivatives, along with their inverse forms. The book also includes interactive applications that illustrate the solution of differential, integral, and integro-differential equations with constant coefficients, fostering a deeper understanding of the analytical and computational methods of the Laplace Transform.",
+    "keywords_en": [
+      "Laplace Transform",
+      "differential equations",
+      "interactive applications",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "abstract_pt": "Este material didático introduz o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
+    "keywords_pt": [
+      "Transformada de Laplace",
+      "equações diferenciais",
+      "aplicações interativas",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. Revista digital Matemática, Educación e Internet, 23(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
   },
   "ecuaciones-diferenciales-orden-superior-2020": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/portada.webp",
@@ -216,66 +244,55 @@
     ]
   },
 
- "vectores-rectas-y-planos-2018": {
-  "coverImage": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/portada.webp",
-  "title": "Vectores, Rectas y Planos. Visualización interactiva",
-  "title_en": "Vectors, Lines and Planes. Interactive Visualization",
-  "authors": [
-    {
-      "name": "Marco Gutiérrez M.",
-      "orcid": "https://orcid.org/0009-0004-0293-1578",
-      "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
-      "email": "",
-      "location": "Costa Rica"
-    },
-    {
-      "name": "Walter Mora F.",
-      "email": "wmoraz@itcr.ac.cr",
-      "orcid": "https://orcid.org/0009-0008-8770-3417",
-      "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
-      "location": "Costa Rica"
-    }
-  ],
-  "doi": "https://doi.org/10.18845/rdmei.v19i1.3856",
-  "received": "Marzo 2018",
-  "accepted": "Abril 2018",
-  "category": "universitaria",
-  "lastRevision": "Abril 2018",
-  "pdf": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf",
-  "resources": [
-    {
-      "type": "zip",
-      "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-      "url": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/CDF.zip"
-    },
-    {
-      "type": "link",
-      "label": "Descargar Wolfram Player (gratuito)",
-      "url": "https://www.wolfram.com/player/"
-    }
-  ],
-  "abstract_es": "El objetivo de este libro es la visualización interactiva en 2D y en 3D. La mayoría de las figuras incluyen un enlace a una aplicación llamada 'demostración' (aplicación interactiva), que se ejecuta con Wolfram CDFPlayer (gratuito). Las 'aplicaciones interactivas' son archivos .cdf que requieren tener instalada en la computadora dicha aplicación. Varias aplicaciones interactivas se utilizan para visualizar la dinámica de una definición o de un teorema y su significado. Como es conocido, la visualización interactiva funciona bien como complemento y requiere 'narrativa' por parte del profesor para obtener buenos resultados en la enseñanza. También se recomienda la realización de ejercicios de verbalización, en algunas actividades, por parte del estudiante.",
-  "keywords_es": [
-    "Visualización interactiva",
-    "vectores",
-    "rectas",
-    "planos"
-  ],
-  "abstract_en": "The objective of this book is interactive visualization in 2D and 3D. Most figures include a link to an application, usually called a 'demo' (interactive application), that runs with Wolfram CDFPlayer (free). The 'interactive applications' are .cdf files that require this application to be installed on the computer. Various interactive applications are used to visualize the dynamics of a definition or theorem and its meaning. As is known, interactive visualization works well as a complement and requires 'narration' by the teacher to achieve good teaching results. Verbalization exercises by the student are also desirable in some activities.",
-  "keywords_en": [
-    "Interactive visualization",
-    "vectors",
-    "lines",
-    "planes"
-  ],
-  "abstract_pt": "O objetivo deste livro é a visualização interativa em 2D e 3D. A maioria das figuras inclui um link para uma aplicação chamada 'demonstração' (aplicação interativa), que é executada com o Wolfram CDFPlayer (gratuito). As 'aplicações interativas' são arquivos .cdf que exigem que o aplicativo Wolfram CDFPlayer esteja instalado no computador. Várias aplicações interativas são usadas para visualizar a dinâmica de uma definição ou teorema e seu significado. Como se sabe, a visualização interativa funciona bem como complemento e requer 'narrativa' por parte do professor para obter bons resultados no ensino. Também são recomendados exercícios de verbalização, em algumas atividades, por parte do aluno.",
-  "keywords_pt": [
-    "Visualização interativa",
-    "vetores",
-    "retas",
-    "planos"
-  ],
-  "citation": "Gutiérrez, M., & Mora, W. (2018). Vectores, Rectas y Planos. Visualización interactiva. Revista digital Matemática, Educación e Internet, 19(1). Instituto Tecnológico de Costa Rica. DOI: https://doi.org/10.18845/rdmei.v19i1.3856"
-}
-
+  "vectores-rectas-y-planos-2018": {
+    "coverImage": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/portada.webp",
+    "title": "Vectores, Rectas y Planos. Visualización interactiva",
+    "title_en": "Vectors, Lines and Planes. Interactive Visualization",
+    "authors": [
+      {
+        "name": "Marco Gutiérrez M.",
+        "orcid": "https://orcid.org/0009-0004-0293-1578",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "email": "",
+        "location": "Costa Rica"
+      },
+      {
+        "name": "Walter Mora F.",
+        "email": "wmoraz@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-8770-3417",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
+    "doi": "https://doi.org/10.18845/rdmei.v19i1.3856",
+    "received": "Marzo 2018",
+    "accepted": "Abril 2018",
+    "category": "universitaria",
+    "lastRevision": "Abril 2018",
+    "pdf": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/libro.pdf",
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/libros/universitaria/geometria/vectores-rectas-y-planos-2018/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ],
+    "abstract_es": "El objetivo de este libro es la visualización interactiva en 2D y en 3D. La mayoría de las figuras incluyen un enlace a una aplicación llamada 'demostración' (aplicación interactiva), que se ejecuta con Wolfram CDFPlayer (gratuito). Las 'aplicaciones interactivas' son archivos .cdf que requieren tener instalada en la computadora dicha aplicación. Varias aplicaciones interactivas se utilizan para visualizar la dinámica de una definición o de un teorema y su significado. Como es conocido, la visualización interactiva funciona bien como complemento y requiere 'narrativa' por parte del profesor para obtener buenos resultados en la enseñanza. También se recomienda la realización de ejercicios de verbalización, en algunas actividades, por parte del estudiante.",
+    "keywords_es": [
+      "Visualización interactiva",
+      "vectores",
+      "rectas",
+      "planos"
+    ],
+    "abstract_en": "The objective of this book is interactive visualization in 2D and 3D. Most figures include a link to an application, usually called a 'demo' (interactive application), that runs with Wolfram CDFPlayer (free). The 'interactive applications' are .cdf files that require this application to be installed on the computer. Various interactive applications are used to visualize the dynamics of a definition or theorem and its meaning. As is known, interactive visualization works well as a complement and requires 'narration' by the teacher to achieve good teaching results. Verbalization exercises by the student are also desirable in some activities.",
+    "keywords_en": ["Interactive visualization", "vectors", "lines", "planes"],
+    "abstract_pt": "O objetivo deste livro é a visualização interativa em 2D e 3D. A maioria das figuras inclui um link para uma aplicação chamada 'demonstração' (aplicação interativa), que é executada com o Wolfram CDFPlayer (gratuito). As 'aplicações interativas' são arquivos .cdf que exigem que o aplicativo Wolfram CDFPlayer esteja instalado no computador. Várias aplicações interativas são usadas para visualizar a dinâmica de uma definição ou teorema e seu significado. Como se sabe, a visualização interativa funciona bem como complemento e requer 'narrativa' por parte do professor para obter bons resultados no ensino. Também são recomendados exercícios de verbalização, em algumas atividades, por parte do aluno.",
+    "keywords_pt": ["Visualização interativa", "vetores", "retas", "planos"],
+    "citation": "Gutiérrez, M., & Mora, W. (2018). Vectores, Rectas y Planos. Visualización interactiva. Revista digital Matemática, Educación e Internet, 19(1). Instituto Tecnológico de Costa Rica. DOI: https://doi.org/10.18845/rdmei.v19i1.3856"
+  }
 }
