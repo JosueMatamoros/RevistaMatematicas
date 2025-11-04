@@ -1,4 +1,4 @@
-// src/components/books/bookPage.jsx
+// src/components/books/BookPage.jsx
 "use client";
 
 import { useState } from "react";
@@ -11,8 +11,9 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
+import Image from "next/image";
 
-export default function bookPage({ book }) {
+export default function BookPage({ book }) {
   const pdfAbs = withFullUrl(book.pdf);
 
   // Estados para los toggles
@@ -48,9 +49,11 @@ export default function bookPage({ book }) {
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
                 {a.orcid && (
                   <a href={a.orcid} target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src={withBasePath("/logoORCID.png")}
                       alt="ORCID"
+                      width={20}
+                      height={20}
                       className="w-5 h-5 inline-block"
                     />
                   </a>

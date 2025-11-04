@@ -10,6 +10,7 @@ import {
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function ArticlePage({ article }) {
   const pdfAbs = withFullUrl(article.pdf);
@@ -49,9 +50,11 @@ export default function ArticlePage({ article }) {
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
                 {a.orcid && (
                   <a href={a.orcid} target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src={withBasePath("/logoORCID.png")}
                       alt="ORCID"
+                      width={20}
+                      height={20}
                       className="w-5 h-5 inline-block"
                     />
                   </a>

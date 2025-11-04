@@ -54,14 +54,14 @@ export default function NavsComponent({ isSidebarOpen }) {
               </Link>
             </li>
 
-            {/* Todos los Números */}
+            {/* Números anteriores */}
             <li>
               <Link
                 href="/Articulos"
                 className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
               >
                 <FaArrowDown19 />
-                <span>Todos los Números</span>
+                <span>Números anteriores</span>
               </Link>
             </li>
 
@@ -125,8 +125,9 @@ export default function NavsComponent({ isSidebarOpen }) {
                     text: "Materiales sin revisión",
                     href: "/materialdidactico/sinrevision",
                   },
-                ].map((item, i) => (
+                ].map((item, i, arr) => (
                   <li key={i}>
+                     {i === arr.length - 2 && <hr className="my-1 border-gray-300" />}
                     <Link
                       href={item.href}
                       className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
@@ -136,6 +137,17 @@ export default function NavsComponent({ isSidebarOpen }) {
                   </li>
                 ))}
               </ul>
+            </li>
+
+             {/* Para autores */}
+            <li>
+              <Link
+                href="/paginasgenerales/instrucciones"
+                className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
+              >
+                <FaUserEdit />
+                <span>Para autores</span>
+              </Link>
             </li>
 
             {/* Acerca de */}
@@ -190,16 +202,6 @@ export default function NavsComponent({ isSidebarOpen }) {
                 </li>
               </ul>
             </li>
-            {/* Para autores */}
-            <li>
-              <Link
-                href="/paginasgenerales/instrucciones"
-                className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
-              >
-                <FaUserEdit />
-                <span>Para autores</span>
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
@@ -248,7 +250,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                 { icon: <FaHome />, text: "Inicio", href: "/" },
                 {
                   icon: <FaArrowDown19 />,
-                  text: "Todos los Números",
+                  text: "Números anteriores",
                   href: "/Articulos",
                 },
                 {
@@ -332,6 +334,18 @@ export default function NavsComponent({ isSidebarOpen }) {
                 </ul>
               </li>
 
+              {/* Para autores */}
+              <li>
+                <Link
+                  href="/paginasgenerales/instrucciones"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
+                >
+                  <FaUserEdit />
+                  <span>Para autores</span>
+                </Link>
+              </li>
+
               {/* Acerca de */}
               <li>
                 <button
@@ -400,18 +414,6 @@ export default function NavsComponent({ isSidebarOpen }) {
                     </li>
                   ))}
                 </ul>
-              </li>
-
-              {/* Para autores */}
-              <li>
-                <Link
-                  href="/paginasgenerales/instrucciones"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
-                >
-                  <FaUserEdit />
-                  <span>Para autores</span>
-                </Link>
               </li>
             </ul>
           </aside>

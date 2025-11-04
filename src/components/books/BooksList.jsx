@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Typography, Button, Chip } from "@material-tailwind/react";
 import { FaFilePdf, FaFileArchive, FaLink } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
+import Image from "next/image";
 
 export default function BooksList({
   id,
@@ -42,10 +43,12 @@ export default function BooksList({
     >
       {/* Portada */}
       <div className="md:w-1/4 p-4 flex justify-center items-center ">
-        <img
+        <Image
           src={coverImage}
           alt={title}
           className="object-contain w-full max-h-64 aspect-[3/4]"
+          width={300}
+          height={400}
         />
       </div>
 
