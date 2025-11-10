@@ -20,15 +20,16 @@ export default function BooksList({
 }) {
   // función para construir urls seguras
   const getValidUrl = (url, type) => {
-    if (
-      type === "link" ||
-      url.startsWith("http://") ||
-      url.startsWith("https://")
-    ) {
-      return url;
-    }
-    return withFullUrl(url);
-  };
+  const isAbsolute = url.startsWith("http://") || url.startsWith("https://");
+
+  // No le pegues el basePath a archivos locales cuando Next ya lo maneja
+  if (!isAbsolute && type === "pdf") {
+    return url;
+  }
+
+  return withFullUrl(url);
+};
+
 
   // formatea autores si vienen como objetos
   const formattedAuthors =

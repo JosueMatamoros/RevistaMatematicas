@@ -14,7 +14,6 @@ import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 import Image from "next/image";
 
 export default function BookPage({ book }) {
-  const pdfAbs = withFullUrl(book.pdf);
 
   // Estados para los toggles
   const [showResumen, setShowResumen] = useState(false);
@@ -91,7 +90,7 @@ export default function BookPage({ book }) {
 
           <div className="flex items-center gap-3">
             <a
-              href={pdfAbs}
+              href={book.pdf}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm"
@@ -99,7 +98,7 @@ export default function BookPage({ book }) {
               Descargar <FaFilePdf className="text-red-600 w-4 h-4" />
             </a>
             <a
-              href={pdfAbs}
+              href={book.pdf}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-blue-secondary text-tec-blue-secondary hover:bg-blue-50 text-sm"
@@ -257,7 +256,7 @@ export default function BookPage({ book }) {
           <div className="w-full md:w-4/5 lg:w-3/4 border rounded-xl overflow-hidden shadow-lg bg-gray-100">
             <iframe
               loading="lazy"
-              src={withBasePath(book.pdf)}
+              src={book.pdf}
               className="w-full h-[65vh] md:h-[100vh] border-0"
               title={`Artículo completo - ${book.title}`}
             />
