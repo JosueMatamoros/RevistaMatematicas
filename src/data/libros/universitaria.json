@@ -159,37 +159,187 @@
     "coverImage": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/portada.webp",
     "title": "Cálculo Diferencial e Integral con Aplicaciones",
     "title_en": "Differential and Integral Calculus with Applications",
-    "authors": ["Elsie Hernández S."],
+    "authors": [
+      {
+        "name": "Elsie Hernández S.",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "2017",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/libro.pdf"
+    "pdf": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/libro.pdf",
+    "abstract_es": "Este texto aborda los principios fundamentales del cálculo diferencial e integral, presentando de forma clara y progresiva los conceptos de límite, derivada, integral y sus aplicaciones prácticas. A través de explicaciones detalladas, ejemplos resueltos y ejercicios, se busca fortalecer la comprensión conceptual y la habilidad para aplicar el cálculo en la resolución de problemas reales en ciencias e ingeniería. Además, se incluyen secciones dedicadas a la interpretación geométrica y física de los resultados, promoviendo una visión integral del análisis matemático.",
+    "keywords_es": [
+      "cálculo diferencial",
+      "cálculo integral",
+      "límites",
+      "derivadas",
+      "integrales definidas",
+      "aplicaciones del cálculo"
+    ],
+
+    "abstract_en": "This book addresses the fundamental principles of differential and integral calculus, presenting in a clear and progressive way the concepts of limit, derivative, integral, and their practical applications. Through detailed explanations, solved examples, and exercises, it aims to strengthen conceptual understanding and the ability to apply calculus in solving real-world problems in science and engineering. It also includes sections dedicated to the geometric and physical interpretation of results, promoting an integrated view of mathematical analysis.",
+    "keywords_en": [
+      "differential calculus",
+      "integral calculus",
+      "limits",
+      "derivatives",
+      "definite integrals",
+      "applications of calculus"
+    ],
+
+    "abstract_pt": "Este texto aborda os princípios fundamentais do cálculo diferencial e integral, apresentando de forma clara e progressiva os conceitos de limite, derivada, integral e suas aplicações práticas. Por meio de explicações detalhadas, exemplos resolvidos e exercícios, busca-se fortalecer a compreensão conceitual e a habilidade de aplicar o cálculo na resolução de problemas reais em ciências e engenharia. Além disso, incluem-se seções dedicadas à interpretação geométrica e física dos resultados, promovendo uma visão integrada da análise matemática.",
+    "keywords_pt": [
+      "cálculo diferencial",
+      "cálculo integral",
+      "limites",
+      "derivadas",
+      "integrais definidas",
+      "aplicações do cálculo"
+    ],
+
+    "citation": "Hernández S., E. (2017). Cálculo Diferencial e Integral con Aplicaciones. Revista digital Matemática, Educación e Internet, 18(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/calculo-diferencial-e-integral-2017/"
   },
   "metodos-numericos-2015": {
     "coverImage": "/libros/universitaria/analisis/metodos-numericos-2015/portada.webp",
     "title": "Métodos Numéricos con Basic Calc de LibreOffice y WxMaxima",
     "title_en": "Numerical Methods with LibreOffice Basic Calc and WxMaxima",
-    "authors": ["Walter A. Mora F."],
+    "authors": [
+      {
+        "name": "Walter Mora Flores",
+        "email": "wmoraz@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-8770-3417",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "2015",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/analisis/metodos-numericos-2015/libro.pdf"
+    "pdf": "/libros/universitaria/analisis/metodos-numericos-2015/libro.pdf",
+    "abstract_es": "Este libro presenta una introducción práctica a los métodos numéricos utilizando el lenguaje R, particularmente mediante el entorno RStudio. Se inicia con una guía detallada sobre la instalación, configuración y uso del programa, incluyendo la edición de scripts, la ejecución de código y la generación de reportes. Posteriormente, se abordan los fundamentos del lenguaje R: variables, funciones, vectores, matrices, arreglos, estructuras de control y el uso de paquetes especializados como pracma y matrix. En la segunda parte, se desarrollan los principios teóricos y computacionales de los métodos numéricos, incluyendo el análisis de errores, los polinomios de Taylor, la solución de ecuaciones no lineales mediante métodos iterativos (bisección, punto fijo, Newton, secante y Brent), la resolución de sistemas de ecuaciones lineales, la interpolación polinomial, la derivación e integración numérica y la aproximación de soluciones de ecuaciones diferenciales ordinarias. El texto combina teoría y práctica con ejemplos y ejercicios implementados en R, enfatizando la comprensión algorítmica y la validación numérica de los resultados.",
+    "keywords_es": [
+      "métodos numéricos",
+      "RStudio",
+      "análisis de errores",
+      "ecuaciones no lineales",
+      "interpolación polinomial",
+      "integración numérica"
+    ],
+
+    "abstract_en": "This book offers a practical introduction to numerical methods using the R language, particularly through the RStudio environment. It begins with a detailed guide to installing, configuring, and using the program, including script editing, code execution, and report generation. It then covers the fundamentals of the R language: variables, functions, vectors, matrices, arrays, control structures, and the use of specialized packages such as pracma and matrix. The second part develops the theoretical and computational principles of numerical methods, including error analysis, Taylor polynomials, the solution of nonlinear equations through iterative methods (bisection, fixed point, Newton, secant, and Brent), the solution of linear systems, polynomial interpolation, numerical differentiation and integration, and the approximation of ordinary differential equations. The text combines theory and practice with examples and exercises implemented in R, emphasizing algorithmic understanding and numerical validation of results.",
+    "keywords_en": [
+      "numerical methods",
+      "RStudio",
+      "error analysis",
+      "nonlinear equations",
+      "polynomial interpolation",
+      "numerical integration"
+    ],
+
+    "abstract_pt": "Este livro apresenta uma introdução prática aos métodos numéricos utilizando a linguagem R, especialmente por meio do ambiente RStudio. Inicia-se com um guia detalhado sobre a instalação, configuração e uso do programa, incluindo a edição de scripts, a execução de código e a geração de relatórios. Em seguida, abordam-se os fundamentos da linguagem R: variáveis, funções, vetores, matrizes, arranjos, estruturas de controle e o uso de pacotes especializados como pracma e matrix. Na segunda parte, desenvolvem-se os princípios teóricos e computacionais dos métodos numéricos, incluindo a análise de erros, os polinômios de Taylor, a solução de equações não lineares por métodos iterativos (bisseção, ponto fixo, Newton, secante e Brent), a resolução de sistemas lineares, a interpolação polinomial, a derivação e integração numérica e a aproximação de soluções de equações diferenciais ordinárias. O texto combina teoria e prática com exemplos e exercícios implementados em R, enfatizando a compreensão algorítmica e a validação numérica dos resultados.",
+    "keywords_pt": [
+      "métodos numéricos",
+      "RStudio",
+      "análise de erros",
+      "equações não lineares",
+      "interpolação polinomial",
+      "integração numérica"
+    ],
+
+    "citation": "Mora F., W. A. (2015). Métodos Numéricos con Basic Calc de LibreOffice y WxMaxima. Revista digital Matemática, Educación e Internet, 16(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/metodos-numericos-2015/"
   },
-  "matrices_sistemas_lineales-2013": {
+  "matrices-sistemas-lineales-2013": {
     "coverImage": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/portada.webp",
     "title": "Matrices y Sistemas Lineales",
     "title_en": "Matrices and Linear Systems",
-    "authors": ["Christian Páez P."],
+    "authors": [
+      {
+        "name": "Christian Páez",
+        "email": "cpaez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-5651-4699",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "2013",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/libro.pdf"
+    "pdf": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/libro.pdf",
+    "abstract_es": "Este texto introduce los conceptos fundamentales de las matrices y su aplicación en la resolución de sistemas lineales. Se abordan operaciones básicas con matrices, determinantes, matrices inversas, y propiedades esenciales del álgebra matricial. Asimismo, se analizan distintos métodos para resolver sistemas de ecuaciones lineales, incluyendo los métodos de Gauss, Gauss-Jordan y la regla de Cramer, junto con una discusión sobre la existencia y unicidad de soluciones. El enfoque del libro combina la teoría con ejemplos prácticos que facilitan la comprensión de los procedimientos algebraicos y su relevancia en la modelización de problemas en ingeniería, ciencias y matemáticas aplicadas.",
+    "keywords_es": [
+      "matrices",
+      "sistemas lineales",
+      "álgebra matricial",
+      "método de Gauss",
+      "determinantes"
+    ],
+
+    "abstract_en": "This text introduces the fundamental concepts of matrices and their application in solving linear systems. It covers basic matrix operations, determinants, inverse matrices, and key properties of matrix algebra. It also discusses various methods for solving systems of linear equations, including the Gauss, Gauss-Jordan, and Cramer’s rule methods, along with a discussion on the existence and uniqueness of solutions. The book combines theory with practical examples to enhance the understanding of algebraic procedures and their relevance in modeling problems in engineering, science, and applied mathematics.",
+    "keywords_en": [
+      "matrices",
+      "linear systems",
+      "matrix algebra",
+      "Gauss method",
+      "determinants"
+    ],
+
+    "abstract_pt": "Este texto introduz os conceitos fundamentais das matrizes e sua aplicação na resolução de sistemas lineares. São abordadas operações básicas com matrizes, determinantes, matrizes inversas e propriedades essenciais da álgebra matricial. Também são analisados diversos métodos para resolver sistemas de equações lineares, incluindo os métodos de Gauss, Gauss-Jordan e a regra de Cramer, juntamente com uma discussão sobre a existência e unicidade das soluções. O livro combina teoria e exemplos práticos para facilitar a compreensão dos procedimentos algébricos e sua relevância na modelagem de problemas em engenharia, ciências e matemática aplicada.",
+    "keywords_pt": [
+      "matrizes",
+      "sistemas lineares",
+      "álgebra matricial",
+      "método de Gauss",
+      "determinantes"
+    ],
+
+    "citation": "Páez P., C. (2013). Matrices y Sistemas Lineales. Revista digital Matemática, Educación e Internet, 14(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matrices-y-sistemas-lineales-2013/"
   },
   "teoria-de-numeros-2014": {
     "coverImage": "/libros/universitaria/algebra/teoria-de-numeros-2014/portada.webp",
     "title": "Introducción a la teoría de números. Ejemplos y Algoritmos",
     "title_en": "Introduction to Number Theory: Examples and Algorithms",
-    "authors": ["Walter A. Mora F."],
+    "authors": [
+      {
+        "name": "Walter Mora Flores",
+        "email": "wmoraz@itcr.ac.cr",
+        "orcid": "https://orcid.org/0009-0008-8770-3417",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Costa Rica"
+      }
+    ],
     "lastRevision": "2014",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/algebra/teoria-de-numeros-2014/libro.pdf"
+    "pdf": "/libros/universitaria/algebra/teoria-de-numeros-2014/libro.pdf",
+    "abstract_es": "Este libro introduce los conceptos fundamentales de la teoría de números desde una perspectiva elemental y algorítmica. Se abordan temas como divisibilidad, números primos, el máximo común divisor, el algoritmo de Euclides y sus extensiones, junto con la factorización y la aritmética modular. Además, se incluyen tópicos sobre congruencias, sistemas de ecuaciones diofánticas, funciones aritméticas y teoremas clásicos como los de Fermat, Euler y Wilson. El texto destaca por su enfoque práctico, presentando ejemplos desarrollados paso a paso y algoritmos implementables que facilitan la comprensión de los conceptos y su aplicación en la resolución de problemas.",
+    "keywords_es": [
+      "teoría de números",
+      "divisibilidad",
+      "congruencias",
+      "números primos",
+      "algoritmo de Euclides",
+      "aritmética modular"
+    ],
+    "abstract_en": "This book introduces the fundamental concepts of number theory from an elementary and algorithmic perspective. It covers topics such as divisibility, prime numbers, the greatest common divisor, the Euclidean algorithm and its extensions, together with factorization and modular arithmetic. Additional topics include congruences, systems of Diophantine equations, arithmetic functions, and classical theorems such as those of Fermat, Euler, and Wilson. The text emphasizes a practical approach, presenting step-by-step examples and implementable algorithms that facilitate the understanding and application of number theory concepts in problem solving.",
+    "keywords_en": [
+      "number theory",
+      "divisibility",
+      "congruences",
+      "prime numbers",
+      "Euclidean algorithm",
+      "modular arithmetic"
+    ],
+
+    "abstract_pt": "Este livro introduz os conceitos fundamentais da teoria dos números a partir de uma perspectiva elementar e algorítmica. São abordados temas como divisibilidade, números primos, o máximo divisor comum, o algoritmo de Euclides e suas extensões, juntamente com fatoração e aritmética modular. Além disso, incluem-se tópicos sobre congruências, sistemas de equações diofantinas, funções aritméticas e teoremas clássicos como os de Fermat, Euler e Wilson. O texto destaca-se pela abordagem prática, apresentando exemplos desenvolvidos passo a passo e algoritmos implementáveis que facilitam a compreensão dos conceitos e sua aplicação na resolução de problemas.",
+    "keywords_pt": [
+      "teoria dos números",
+      "divisibilidade",
+      "congruências",
+      "números primos",
+      "algoritmo de Euclides",
+      "aritmética modular"
+    ],
+
+    "citation": "Mora Flores, W. (2014). Introducción a la teoría de números. Ejemplos y Algoritmos. Revista digital Matemática, Educación e Internet, 15(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/teoria-de-numeros-2014/"
   },
   "edepa-2013": {
     "coverImage": "/libros/universitaria/estadistica/edepa-2013/portada.webp",
@@ -203,11 +353,51 @@
         "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
         "location": "Costa Rica"
       },
-      "Greivin Ramírez A. (Editores)"
+      {
+        "name": "Greivin Ramírez Arce",
+        "email": "gramirez@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-3731-5415",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Cartago, Costa Rica"
+      }
     ],
     "lastRevision": "2013",
     "category": "congreso",
-    "pdf": "/libros/universitaria/estadistica/edepa-2013/libro.pdf"
+    "pdf": "/libros/universitaria/estadistica/edepa-2013/libro.pdf",
+    "abstract_es": "El Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA) es una iniciativa del Instituto Tecnológico de Costa Rica (ITCR) que reúne a profesionales y docentes de distintos niveles educativos, tanto nacionales como internacionales, con el propósito de reflexionar sobre la enseñanza de la estadística, la probabilidad y el análisis de datos. Este volumen presenta una selección de contribuciones del II EDEPA, realizado en noviembre de 2011, así como trabajos derivados de la I Escuela de Verano EDEPA celebrada en diciembre de 2012. Los contenidos se organizan en tres secciones principales: didáctica, aplicaciones y uso de software, ofreciendo perspectivas diversas sobre estrategias pedagógicas, experiencias de aula e integración de herramientas tecnológicas. La obra busca fortalecer la alfabetización estadística y el pensamiento probabilístico, promoviendo la innovación y el intercambio académico en el ámbito de la educación matemática.",
+
+    "keywords_es": [
+      "didáctica de la estadística",
+      "probabilidad",
+      "análisis de datos",
+      "educación matemática",
+      "uso de software",
+      "innovación pedagógica"
+    ],
+
+    "abstract_en": "The Meeting on the Didactics of Statistics, Probability, and Data Analysis (EDEPA) is an initiative of the Costa Rica Institute of Technology (ITCR) that brings together professionals and educators from various educational levels, both national and international, to reflect on the teaching of statistics, probability, and data analysis. This volume includes a selection of contributions from the second EDEPA, held in November 2011, as well as works derived from the first EDEPA Summer School, held in December 2012. The contents are organized into three main sections: didactics, applications, and software use, providing diverse perspectives on pedagogical strategies, classroom experiences, and the integration of technological tools. The book aims to strengthen statistical literacy and probabilistic thinking while promoting innovation and academic exchange in mathematics education.",
+
+    "keywords_en": [
+      "statistics education",
+      "probability",
+      "data analysis",
+      "mathematics education",
+      "software use",
+      "pedagogical innovation"
+    ],
+
+    "abstract_pt": "O Encontro sobre Didática da Estatística, da Probabilidade e da Análise de Dados (EDEPA) é uma iniciativa do Instituto Tecnológico da Costa Rica (ITCR) que reúne profissionais e docentes de diferentes níveis educacionais, nacionais e internacionais, com o objetivo de refletir sobre o ensino da estatística, da probabilidade e da análise de dados. Este volume apresenta uma seleção de contribuições do II EDEPA, realizado em novembro de 2011, bem como trabalhos provenientes da I Escola de Verão EDEPA, realizada em dezembro de 2012. Os conteúdos estão organizados em três seções principais: didática, aplicações e uso de software, oferecendo diversas perspectivas sobre estratégias pedagógicas, experiências em sala de aula e integração de ferramentas tecnológicas. A obra busca fortalecer a alfabetização estatística e o pensamento probabilístico, promovendo a inovação e o intercâmbio acadêmico no campo da educação matemática.",
+
+    "keywords_pt": [
+      "didática da estatística",
+      "probabilidade",
+      "análise de dados",
+      "educação matemática",
+      "uso de software",
+      "inovação pedagógica"
+    ],
+
+    "citation": "Mora Flores, W., & Ramírez Arce, G. (2013). Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA). Instituto Tecnológico de Costa Rica. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/estadistica/edepa-2013/"
   },
   "fractales-2010": {
     "coverImage": "/libros/universitaria/analisis/fractales-2010/portada.webp",
@@ -216,7 +406,44 @@
     "authors": ["Manuel Alfaro", "Manuel Murillo", "Alberto Soto"],
     "lastRevision": "2010",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/analisis/fractales-2010/libro.pdf"
+    "pdf": "/libros/universitaria/analisis/fractales-2010/libro.pdf",
+    "abstract_es": "Este libro introduce de manera clara y accesible los fundamentos teóricos y las aplicaciones de los fractales, un campo que combina la matemática, la geometría y la computación para modelar estructuras irregulares presentes en la naturaleza. Se abordan conceptos esenciales como la autosimilitud, la dimensión fractal y los sistemas iterativos, acompañados de ejemplos visuales y ejercicios prácticos. Además, se exploran conexiones entre los fractales y otras áreas como el caos, la geometría dinámica y la simulación computacional. La obra busca desarrollar una comprensión conceptual del fenómeno fractal y su relevancia en el análisis de patrones, procesos naturales y fenómenos complejos.",
+
+    "keywords_es": [
+      "fractales",
+      "geometría fractal",
+      "autosimilitud",
+      "dimensión fractal",
+      "sistemas iterativos",
+      "caos",
+      "simulación computacional"
+    ],
+
+    "abstract_en": "This book provides a clear and accessible introduction to the theoretical foundations and applications of fractals, a field that combines mathematics, geometry, and computing to model irregular structures found in nature. It covers key concepts such as self-similarity, fractal dimension, and iterative systems, supported by visual examples and practical exercises. The text also explores connections between fractals and other areas such as chaos, dynamic geometry, and computational simulation. The work aims to develop a conceptual understanding of the fractal phenomenon and its relevance to the analysis of patterns, natural processes, and complex systems.",
+
+    "keywords_en": [
+      "fractals",
+      "fractal geometry",
+      "self-similarity",
+      "fractal dimension",
+      "iterative systems",
+      "chaos",
+      "computational simulation"
+    ],
+
+    "abstract_pt": "Este livro apresenta de forma clara e acessível os fundamentos teóricos e as aplicações dos fractais, um campo que combina matemática, geometria e computação para modelar estruturas irregulares presentes na natureza. São abordados conceitos essenciais como a auto-similaridade, a dimensão fractal e os sistemas iterativos, acompanhados de exemplos visuais e exercícios práticos. Além disso, explora conexões entre os fractais e outras áreas como o caos, a geometria dinâmica e a simulação computacional. A obra busca desenvolver uma compreensão conceitual do fenômeno fractal e sua relevância na análise de padrões, processos naturais e sistemas complexos.",
+
+    "keywords_pt": [
+      "fractais",
+      "geometria fractal",
+      "auto-similaridade",
+      "dimensão fractal",
+      "sistemas iterativos",
+      "caos",
+      "simulação computacional"
+    ],
+
+    "citation": "Alfaro, M., Murillo, M., & Soto, A. (2010). Fractales. Instituto Tecnológico de Costa Rica. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/analisis/fractales-2010/"
   },
   "xxx-ocm-2018": {
     "coverImage": "/libros/universitaria/olimpiadas/xxx-ocm-2018/portada.webp",
