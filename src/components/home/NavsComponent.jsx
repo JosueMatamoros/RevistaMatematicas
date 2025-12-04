@@ -58,10 +58,13 @@ export default function NavsComponent({ isSidebarOpen }) {
             <li>
               <Link
                 href="/Articulos"
-                className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
+                className="flex items-center gap-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
               >
-                <FaArrowDown19 />
-                <span>Números anteriores</span>
+                <FaArrowDown19 className="w-4 h-4 flex-shrink-0 " />
+
+                <span className="whitespace-normal leading-tight block">
+                  Números anteriores
+                </span>
               </Link>
             </li>
 
@@ -127,7 +130,9 @@ export default function NavsComponent({ isSidebarOpen }) {
                   },
                 ].map((item, i, arr) => (
                   <li key={i}>
-                     {i === arr.length - 2 && <hr className="my-1 border-gray-300" />}
+                    {i === arr.length - 2 && (
+                      <hr className="my-1 border-gray-300" />
+                    )}
                     <Link
                       href={item.href}
                       className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
@@ -139,13 +144,13 @@ export default function NavsComponent({ isSidebarOpen }) {
               </ul>
             </li>
 
-             {/* Para autores */}
+            {/* Para autores */}
             <li>
               <Link
                 href="/paginasgenerales/instrucciones"
                 className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4"
               >
-                <FaUserEdit />
+                <FaUserEdit className="w-4 h-4 flex-shrink-0 " />
                 <span>Para autores</span>
               </Link>
             </li>
