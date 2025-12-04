@@ -33,13 +33,13 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
       <div
         className={`
           bg-gray-50 shadow-lg transition-all duration-300 flex flex-col
-          overflow-hidden z-50
+          overflow-hidden z-50 rounded-md
 
           fixed top-0 right-0 h-full
-          ${isOpen ? "w-80" : "w-0"}
+          ${isOpen ? "w-80 " : "w-0"}
 
           xl:relative xl:top-auto xl:right-auto xl:h-auto xl:my-4
-          ${isOpen ? "xl:w-96 xl:rounded-md xl:mb-4" : "xl:w-0"}
+          ${isOpen ? "xl:w-96 xl:mb-4" : "xl:w-0"}
         `}
       >
         {isOpen && (
