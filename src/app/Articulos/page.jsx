@@ -71,13 +71,13 @@ export default function ArticulosIndexPage() {
                     )}
                   </div>
 
-                  {/* Fecha con ícono */}
+                  {/* Fecha */}
                   <div className="flex items-center gap-2 text-gray-600 mb-4">
                     <LuCalendar className="text-gray-500" />
                     <Typography color="gray">{issue.date}</Typography>
                   </div>
 
-                  {/* Link que se ve igual que el botón */}
+                   {/* Botón */}
                   <Link
                     href={`/Articulos/V${issue.volume}/${cleanIssue}`}
                     passHref

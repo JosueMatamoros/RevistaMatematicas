@@ -24,7 +24,6 @@ export const issues = [
     volume: 25,
     number: 1,
     date: "Agosto 2024 - Febrero 2025",
-    label: "",
     data: V25_N1_2024,
   }
 ];
