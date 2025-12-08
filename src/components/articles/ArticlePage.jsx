@@ -40,11 +40,16 @@ export default function ArticlePage({ article }) {
         </div>
 
         {/* Autores */}
-        <div className="mb-6 flex flex-wrap gap-4 justify-center">
+        <div className="mb-6 flex flex-wrap justify-center gap-4">
           {article.authors?.map((a, i) => (
             <div
               key={i}
-              className="flex-1 min-w-[250px] max-w-sm bg-white border border-gray-200 rounded-lg p-4 shadow-sm text-center"
+              className="
+            flex-shrink-0 flex-grow-0
+            basis-[30%] max-w-[350px]
+            min-w-[280px]
+            bg-white border border-gray-200 rounded-lg p-4 shadow-sm text-center
+          "
             >
               <div className="flex items-center justify-center gap-2 mb-2">
                 <h3 className="font-bold text-base text-gray-900">{a.name}</h3>
@@ -55,16 +60,18 @@ export default function ArticlePage({ article }) {
                       alt="ORCID"
                       width={20}
                       height={20}
-                      className="w-5 h-5 inline-block"
+                      className="w-5 h-5 inline-block shrink-0"
                     />
                   </a>
                 )}
               </div>
+
               {a.email && (
-                <p className="text-tec-blue-secondary text-sm mb-2">
+                <p className="text-tec-blue-secondary text-sm mb-2 break-all">
                   {a.email}
                 </p>
               )}
+
               <div className="text-sm text-gray-600 space-y-0.5">
                 {a.university && <p className="font-medium">{a.university}</p>}
                 {a.department && <p>{a.department}</p>}
