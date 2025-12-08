@@ -1,0 +1,53 @@
+{
+  "issueTitle": "Volumen 25, Número 2, Marzo 2025 - Agosto 2025",
+  "articles": [
+    {
+      "id": 1,
+      "title": "EREM: Aportes en competencias digitales al personal docente de matemática de la Región Caribe Norte de Costa Rica",
+      "title_en": "EREM: Contributions on digital competences to the mathematics teaching staff of the Northern Caribbean Region of Costa Rica",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Maynor Jiménez-Castro",
+          "email": "mynor.jimenez@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "location": "Guápiles, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-7984-6866"
+        },
+        {
+          "name": "Luis Fernando Mena Esquivel",
+          "email": "luis.mena.esquivel@mep.go.cr",
+          "university": "Universidad de Costa Rica",
+          "location": "Guápiles, Costa Rica",
+          "orcid": "https://orcid.org/0009-0004-4847-5264"
+        }
+      ],
+      "category": "Investigación",
+      "slug": "Articulos/V25/N2_2025/Jimenez",
+      "pdf": "/Articulos/V25/N2_2025/Jimenez/RevistaDigital_V25_n2_2025_Jimenez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7542",
+      "received": "9 de marzo de 2024",
+      "accepted": "1 de agosto de 2024",
+      "abstract_es": "Este artículo expone el impacto que ha dejado los Encuentros Regionales de Enseñanza de la Matemática (EREM), organizados por la Dirección Regional Educativa, el Recinto de la Universidad de Costa Rica en Guápiles y la Escuela de Matemática del Instituto Tecnológico de Costa Rica, en las competencias digitales a los docentes de primaria y secundaria participantes en los eventos comprendidos en el período 2011-2021. Para ello se trabajó con los docentes con mayor frecuencia de participaciones en estos encuentros, siguiendo los aspectos metodológicos del marco europeo para la Competencia Digital de los Educadores (DigCompEdu). En general, los resultados destacan niveles importantes de competencias digitales de B1 en Compromiso Profesional y Enseñanza y Aprendizaje y B2 en Contenidos digitales, pero un nivel incipiente en la competencia de Evaluación y Retroalimentación a través de herramientas digitales.",
+      "abstract_en": "This article outlines the impact left by the Regional Mathematics Teaching Encounters (EREM), organized by the Regional Educational Directorate, the Campus of the University of Costa Rica in Guápiles, and the School of Mathematics of the Technological Institute of Costa Rica, on digital competences of primary and secondary school teachers who participated in the events carried out from 2011–2021. The study focused on teachers with the highest frequency of participation in these encounters, following the methodological aspects of the European Framework for Digital Competence of Educators (DigCompEdu). In general, the results highlight a relevant B1 level on digital competences in Professional Commitment and Teaching and Learning; and a B2 level on Digital Content. However, there is an incipient level on Evaluation and Feedback through digital tools.",
+      "abstract_pt": "",
+      "keywords_es": [
+        "Tecnologías de información y la matemática",
+        "Matemática y educación secundaria",
+        "Formación docente",
+        "Competencias digitales"
+      ],
+      "keywords_en": [
+        "Information technology and mathematics",
+        "Mathematics and secondary education",
+        "Teacher training",
+        "Digital skills"
+      ],
+      "keywords_pt": [],
+      "citation": "Jiménez-Castro, M., & Mena Esquivel, L. F. (2025). EREM: Aportes en competencias digitales al personal docente de matemática de la Región Caribe Norte de Costa Rica. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7542"
+    }
+  ]
+}
