@@ -117,6 +117,90 @@
         "Operador Mittag-Leffler"
       ],
       "citation": "González Nava, E., Árciga Alejandre, M. P., Sánchez Ortiz, J., & Morales Buenaventura, J. A. (2025). Sistemas Lineales de Ecuaciones Diferenciales Fraccionarias. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7603"
+    },
+    {
+      "id": 3,
+      "title": "Algoritmo iterativo para calcular raíces cuadradas y cúbicas para estudiantes de educación media",
+      "title_en": "Iterative algorithm to calculate square and cubic roots for secondary and high school students",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Mario A. Sandoval-Hernández",
+          "email": "marioalberto.sandoval.cb190@dgeti.sems.gob.mx",
+          "university": "Centro de Bachillerato Tecnológico industrial y de servicios No.190",
+          "location": "Boca del Río, Veracruz, México",
+          "orcid": "https://orcid.org/0000-0002-5518-3858"
+        },
+        {
+          "name": "Griselda J. Morales-Alarcón",
+          "email": "zS21000480@estudiantes.uv.mx",
+          "university": "Universidad Veracruzana",
+          "location": "Xalapa, Veracruz, México",
+          "orcid": "https://orcid.org/0000-0003-0142-0923"
+        },
+        {
+          "name": "Gerardo C. Velez-López",
+          "email": "cesar18f452@gmail.com",
+          "university": "Instituto Nacional de Astrofísica, Óptica y Electrónica",
+          "location": "Tonantzintla, Puebla, México",
+          "orcid": "https://orcid.org/0000-0002-0726-1153"
+        },
+        {
+          "name": "Víctor M. Jiménez-Fernández",
+          "email": "vcjimenez@uv.mx",
+          "university": "Universidad Veracruzana",
+          "location": "Xalapa, Veracruz, México",
+          "orcid": "https://orcid.org/0000-0003-1811-1238"
+        },
+        {
+          "name": "Uriel A. Filobello-Niño",
+          "email": "ufilobello@uv.mx",
+          "university": "Universidad Veracruzana",
+          "location": "Xalapa, Veracruz, México",
+          "orcid": "https://orcid.org/0000-0002-3543-834X"
+        },
+        {
+          "name": "Héctor Vázquez Leal",
+          "email": "hvazquez@uv.mx",
+          "university": "Universidad Veracruzana",
+          "location": "Xalapa, Veracruz, México",
+          "orcid": "https://orcid.org/0000-0002-7785-5272"
+        }
+      ],
+      "category": "Didáctica",
+      "slug": "Articulos/V25/N2_2025/Sandoval",
+      "pdf": "/Articulos/V25/N2_2025/Sandoval/RevistaDigital_V25_n2_2025_Sandoval.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7604",
+      "received": "9 de mayo de 2024",
+      "accepted": "19 de setiembre de 2024",
+      "abstract_es": "En este artículo se presenta una metodología didáctica basada en el algoritmo numérico de Newton-Raphson, diseñada para enseñar a estudiantes de educación media superior cómo calcular raíces cuadradas y cúbicas. El enfoque de esta metodología está basada en el criterio de paro de convergencia cuadrática de Newton-Raphson, permitiendo en dos iteraciones una precisión de hasta cuatro dígitos significativos o más en las raíces obtenidas. Asimismo, esta metodología puede apoyarse en la descomposición de factores para su aplicación. Además, se incluyen ejemplos numéricos frecuentemente propuestos a los alumnos de educación media, con el fin de brindarles práctica en la aplicación del algoritmo enseñado en escuelas secundarias y preparatorias. La aplicación de este algoritmo trae como beneficio estimular el cálculo mental en los estudiantes.",
+      "abstract_en": "This article introduces a teaching methodology based on the Newton-Raphson numerical algorithm, specifically to teach for high school students in Mexico to learn how to compute square and cubic roots. The method relies on the Newton-Raphson algorithm's quadratic convergence stopping criterion, which achieves precision up to four significant digits in the roots calculated within just two iterations. Additionally, factor decomposition supports the application of this methodology. The article also includes numerical examples commonly given to middle school students, providing them with practical experience in using the algorithm as it is taught in secondary and high schools. Applying this algorithm helps enhance students' mental arithmetic skills, offering a significant educational benefit.",
+      "abstract_pt": "",
+      "keywords_es": [
+        "Matemática educativa",
+        "Alternativas de enseñanza",
+        "Enseñanza media superior",
+        "Aritmética",
+        "Discurso matemático escolar"
+      ],
+      "keywords_en": [
+        "Mathematics Education",
+        "Teaching Alternatives",
+        "High school",
+        "Arithmetic",
+        "School mathematical speech"
+      ],
+      "keywords_pt": [
+        "Educação matemática",
+        "Alternativas de ensino",
+        "Ensino médio",
+        "Aritmética",
+        "Discurso matemático escolar"
+      ],
+      "citation": "Sandoval-Hernández, M. A., Morales-Alarcón, G. J., Velez-López, G. C., Jiménez-Fernández, V. M., Vázquez Leal, H., & Filobello-Niño, U. A. (2025). Algoritmo iterativo para calcular raíces cuadradas y cúbicas para estudiantes de educación media. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7604"
     }
   ]
 }
