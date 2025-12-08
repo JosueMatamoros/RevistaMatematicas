@@ -46,8 +46,77 @@
         "Teacher training",
         "Digital skills"
       ],
-      "keywords_pt": [],
+      "keywords_pt": [
+        "Tecnologia da informação e matemática",
+        "Matemática e educação secundária",
+        "Formação de professores",
+        "Competências digitais"
+      ],
       "citation": "Jiménez-Castro, M., & Mena Esquivel, L. F. (2025). EREM: Aportes en competencias digitales al personal docente de matemática de la Región Caribe Norte de Costa Rica. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7542"
+    },
+    {
+      "id": 2,
+      "title": "Sistemas Lineales de Ecuaciones Diferenciales Fraccionarias",
+      "title_en": "Linear Fractional Differential Equations Systems",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Erika González Nava",
+          "email": "15282707@uagro.mx",
+          "university": "Universidad Autónoma de Guerrero",
+          "location": "Guerrero, México",
+          "orcid": "https://orcid.org/0009-0004-7484-6196"
+        },
+        {
+          "name": "Martín P. Árciga Alejandre",
+          "email": "mparciga@uagro.mx",
+          "university": "Universidad Autónoma de Guerrero",
+          "location": "Guerrero, México",
+          "orcid": "https://orcid.org/0000-0002-1637-8513"
+        },
+        {
+          "name": "Jorge Sánchez Ortiz",
+          "email": "jsanchez@uagro.mx",
+          "university": "Universidad Autónoma de Guerrero",
+          "location": "Guerrero, México",
+          "orcid": "https://orcid.org/0000-0002-9228-7285"
+        },
+        {
+          "name": "Jorge A. Morales Buenaventura",
+          "email": "18349939@uagro.mx",
+          "university": "Universidad Autónoma de Guerrero",
+          "location": "Guerrero, México",
+          "orcid": "https://orcid.org/0009-0008-2680-5073"
+        }
+      ],
+      "category": "Investigación",
+      "slug": "Articulos/V25/N2_2025/RevistaDigital_V25_n2_2025_Gonzalez.pdf",
+      "pdf": "/Articulos/V25/N2_2025/Gonzalez/RevistaDigital_V25_n2_2025_Gonzalez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7603",
+      "received": "12 de febrero de 2024",
+      "accepted": "1 de agosto de 2024",
+      "abstract_es": "Este trabajo se centra en la descripción cualitativa y cuantitativa de soluciones de sistemas lineales de ecuaciones diferenciales de orden fraccionario. La transformada de Laplace y la función Mittag-Leffler son las principales herramientas utilizadas para encontrar dichas soluciones. Como en el caso ordinario, los valores propios determinan la estabilidad del sistema mediante una condición que depende del orden de la derivada fraccionaria. Por último, se demuestra un teorema fundamental para los sistemas fraccionarios lineales y se dan algunos ejemplos particulares.",
+      "abstract_en": "This paper focuses on the qualitative and quantitative description of solutions for linear systems of differential equations with fractional order. The Laplace transform and the Mittag-Leffler function are the main tools used to find such solutions. As in the ordinary case, the eigenvalues determine the stability of the system via a condition depending on the order of the fractional derivative. Finally, a fundamental theorem for linear fractional systems is proved and some particular examples are given.",
+      "abstract_pt": "",
+      "keywords_es": [
+        "Derivada de Caputo",
+        "Transformada de Laplace",
+        "Operador Mittag-Leffler"
+      ],
+      "keywords_en": [
+        "Caputo derivative",
+        "Laplace transform",
+        "Mittag-Leffler operator"
+      ],
+      "keywords_pt": [
+        "Derivada de Caputo",
+        "Transformada de Laplace",
+        "Operador Mittag-Leffler"
+      ],
+      "citation": "González Nava, E., Árciga Alejandre, M. P., Sánchez Ortiz, J., & Morales Buenaventura, J. A. (2025). Sistemas Lineales de Ecuaciones Diferenciales Fraccionarias. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7603"
     }
   ]
 }
