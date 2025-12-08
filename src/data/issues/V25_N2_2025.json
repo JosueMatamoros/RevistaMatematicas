@@ -33,7 +33,7 @@
       "accepted": "1 de agosto de 2024",
       "abstract_es": "Este artículo expone el impacto que ha dejado los Encuentros Regionales de Enseñanza de la Matemática (EREM), organizados por la Dirección Regional Educativa, el Recinto de la Universidad de Costa Rica en Guápiles y la Escuela de Matemática del Instituto Tecnológico de Costa Rica, en las competencias digitales a los docentes de primaria y secundaria participantes en los eventos comprendidos en el período 2011-2021. Para ello se trabajó con los docentes con mayor frecuencia de participaciones en estos encuentros, siguiendo los aspectos metodológicos del marco europeo para la Competencia Digital de los Educadores (DigCompEdu). En general, los resultados destacan niveles importantes de competencias digitales de B1 en Compromiso Profesional y Enseñanza y Aprendizaje y B2 en Contenidos digitales, pero un nivel incipiente en la competencia de Evaluación y Retroalimentación a través de herramientas digitales.",
       "abstract_en": "This article outlines the impact left by the Regional Mathematics Teaching Encounters (EREM), organized by the Regional Educational Directorate, the Campus of the University of Costa Rica in Guápiles, and the School of Mathematics of the Technological Institute of Costa Rica, on digital competences of primary and secondary school teachers who participated in the events carried out from 2011–2021. The study focused on teachers with the highest frequency of participation in these encounters, following the methodological aspects of the European Framework for Digital Competence of Educators (DigCompEdu). In general, the results highlight a relevant B1 level on digital competences in Professional Commitment and Teaching and Learning; and a B2 level on Digital Content. However, there is an incipient level on Evaluation and Feedback through digital tools.",
-      "abstract_pt": "",
+      "abstract_pt": "Este artigo descreve o impacto deixado pelos Encontros Regionais de Ensino da Matemática (EREM), organizados pela Direção Regional Educativa, pelo Campus da Universidade de Costa Rica em Guápiles e pela Escola de Matemática do Instituto Tecnológico da Costa Rica, nas competências digitais de professores de ensino primário e secundário que participaram nos eventos realizados entre 2011 e 2021. O estudo concentrou-se nos docentes com maior frequência de participação nesses encontros, seguindo os aspectos metodológicos do Marco Europeu para a Competência Digital de Educadores (DigCompEdu). De modo geral, os resultados destacam níveis importantes de competências digitais: nível B1 em Compromisso Profissional e Ensino e Aprendizagem, e nível B2 em Conteúdos Digitais. Entretanto, observou-se um nível incipiente na competência de Avaliação e Retroalimentação por meio de ferramentas digitais.",
       "keywords_es": [
         "Tecnologías de información y la matemática",
         "Matemática y educación secundaria",
@@ -100,7 +100,7 @@
       "accepted": "1 de agosto de 2024",
       "abstract_es": "Este trabajo se centra en la descripción cualitativa y cuantitativa de soluciones de sistemas lineales de ecuaciones diferenciales de orden fraccionario. La transformada de Laplace y la función Mittag-Leffler son las principales herramientas utilizadas para encontrar dichas soluciones. Como en el caso ordinario, los valores propios determinan la estabilidad del sistema mediante una condición que depende del orden de la derivada fraccionaria. Por último, se demuestra un teorema fundamental para los sistemas fraccionarios lineales y se dan algunos ejemplos particulares.",
       "abstract_en": "This paper focuses on the qualitative and quantitative description of solutions for linear systems of differential equations with fractional order. The Laplace transform and the Mittag-Leffler function are the main tools used to find such solutions. As in the ordinary case, the eigenvalues determine the stability of the system via a condition depending on the order of the fractional derivative. Finally, a fundamental theorem for linear fractional systems is proved and some particular examples are given.",
-      "abstract_pt": "",
+      "abstract_pt": "Este trabalho aborda a descrição qualitativa e quantitativa das soluções de sistemas lineares de equações diferenciais de ordem fracionária. A transformada de Laplace e a função Mittag-Leffler são as principais ferramentas utilizadas para encontrar tais soluções. Assim como no caso ordinário, os valores próprios determinam a estabilidade do sistema por meio de uma condição que depende da ordem da derivada fracionária. Por fim, demonstra-se um teorema fundamental para os sistemas lineares fracionários e são apresentados alguns exemplos particulares.",
       "keywords_es": [
         "Derivada de Caputo",
         "Transformada de Laplace",
@@ -178,7 +178,7 @@
       "accepted": "19 de setiembre de 2024",
       "abstract_es": "En este artículo se presenta una metodología didáctica basada en el algoritmo numérico de Newton-Raphson, diseñada para enseñar a estudiantes de educación media superior cómo calcular raíces cuadradas y cúbicas. El enfoque de esta metodología está basada en el criterio de paro de convergencia cuadrática de Newton-Raphson, permitiendo en dos iteraciones una precisión de hasta cuatro dígitos significativos o más en las raíces obtenidas. Asimismo, esta metodología puede apoyarse en la descomposición de factores para su aplicación. Además, se incluyen ejemplos numéricos frecuentemente propuestos a los alumnos de educación media, con el fin de brindarles práctica en la aplicación del algoritmo enseñado en escuelas secundarias y preparatorias. La aplicación de este algoritmo trae como beneficio estimular el cálculo mental en los estudiantes.",
       "abstract_en": "This article introduces a teaching methodology based on the Newton-Raphson numerical algorithm, specifically to teach for high school students in Mexico to learn how to compute square and cubic roots. The method relies on the Newton-Raphson algorithm's quadratic convergence stopping criterion, which achieves precision up to four significant digits in the roots calculated within just two iterations. Additionally, factor decomposition supports the application of this methodology. The article also includes numerical examples commonly given to middle school students, providing them with practical experience in using the algorithm as it is taught in secondary and high schools. Applying this algorithm helps enhance students' mental arithmetic skills, offering a significant educational benefit.",
-      "abstract_pt": "",
+      "abstract_pt": "Este artigo apresenta uma metodologia didática baseada no algoritmo numérico de Newton-Raphson, desenvolvida para ensinar estudantes do ensino médio a calcular raízes quadradas e cúbicas. A abordagem dessa metodologia baseia-se no critério de parada por convergência quadrática do algoritmo de Newton-Raphson, permitindo obter, em duas iterações, uma precisão de até quatro dígitos significativos ou mais nas raízes calculadas. Além disso, essa metodologia pode apoiar-se na decomposição de fatores para sua aplicação. O artigo também inclui exemplos numéricos frequentemente propostos a alunos do ensino médio, com o objetivo de proporcionar prática na aplicação do algoritmo ensinado em escolas secundárias e preparatórias. A aplicação desse algoritmo traz como benefício estimular o cálculo mental dos estudantes.",
       "keywords_es": [
         "Matemática educativa",
         "Alternativas de enseñanza",
@@ -201,6 +201,128 @@
         "Discurso matemático escolar"
       ],
       "citation": "Sandoval-Hernández, M. A., Morales-Alarcón, G. J., Velez-López, G. C., Jiménez-Fernández, V. M., Vázquez Leal, H., & Filobello-Niño, U. A. (2025). Algoritmo iterativo para calcular raíces cuadradas y cúbicas para estudiantes de educación media. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7604"
+    },
+    {
+      "id": 4,
+      "title": "Estudio de la relación entre la “actitud hacia la utilidad de la matemática” y la “autoconfianza matemática” en dos colegios costarricenses",
+      "title_en": "Study of the relationship between “attitude towards the usefulness of mathematics” and “mathematical self-confidence” in two Costa Rican high schools",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Robin Sequeira Solano",
+          "email": "robinseq315@gmail.com",
+          "university": "Investigador independiente",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0009-0000-4808-8353"
+        },
+        {
+          "name": "Jennany Ortiz Mata",
+          "email": "jennany010900@gmail.com",
+          "university": "Investigador independiente",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0009-0002-0001-1191"
+        },
+        {
+          "name": "Luis Gerardo Meza Cascante",
+          "email": "gemeza@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5413-0172"
+        }
+      ],
+      "category": "Investigación",
+      "slug": "Articulos/V25/N2_2025/Sequeira",
+      "pdf": "/Articulos/V25/N2_2025/Sequeira/RevistaDigital_V25_n2_2025_Sequeira.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7606",
+      "received": "13 de enero de 2024",
+      "accepted": "1 de octubre de 2024",
+      "abstract_es": "En este estudio se investiga la relación entre la actitud hacia la utilidad de la matemática y la autoconfianza matemática en una muestra de 476 estudiantes de un colegio rural y otro urbano, ambos públicos y diurnos, en Costa Rica. Las variables se midieron utilizando las subescalas de Fennema y Sherman. Los resultados indican que los niveles de ambas variables son elevados, con un 87,4% del estudiantado mostrando una actitud positiva hacia la utilidad de la matemática y un 65,8% exhibiendo alta autoconfianza matemática. Se identificaron diferencias significativas en la autoconfianza matemática según el sexo, aunque no se observaron diferencias en la actitud hacia la utilidad de la matemática. Asimismo, se hallaron variaciones en ambas variables en función del tipo de colegio, destacándose que el colegio rural presentó los promedios más altos. No se encontraron diferencias significativas en ninguna de las variables según el nivel educativo. Finalmente, se detectó una relación positiva, débil y lineal entre la actitud hacia la utilidad de la matemática y la autoconfianza matemática.",
+      "abstract_en": "This study investigates the relationship between attitude towards the usefulness of mathematics and mathematical self-confidence in a sample of 476 students from a rural high school and an urban high school, both public and daytime, in Costa Rica. The variables were measured using the Fennema and Sherman subscales. The results indicate that both variables present high levels, with 87.4% of students showing a positive attitude towards the usefulness of mathematics and 65.8% exhibiting high mathematical self-confidence. Significant differences were identified in mathematical self-confidence according to sex, although no differences were observed in attitude towards the usefulness of mathematics. Likewise, variations in both variables were found according to the type of school, with rural schools showing the highest averages. No significant differences were found according to educational level. Finally, a positive, weak and linear relationship was detected between attitude towards the usefulness of mathematics and mathematical self-confidence.",
+      "abstract_pt": "Este estudo investiga a relação entre a atitude em relação à utilidade da matemática e a autoconfiança matemática em uma amostra de 476 estudantes de uma escola rural e outra urbana, ambas públicas e diurnas, na Costa Rica. As variáveis foram medidas utilizando as subescalas de Fennema e Sherman. Os resultados indicam que ambas as variáveis apresentam níveis elevados, com 87,4% dos estudantes mostrando uma atitude positiva em relação à utilidade da matemática e 65,8% exibindo alta autoconfiança matemática. Identificaram-se diferenças significativas na autoconfiança matemática segundo o sexo, embora não tenham sido observadas diferenças na atitude em relação à utilidade da matemática. Também foram encontradas variações em ambas as variáveis de acordo com o tipo de escola, destacando-se que a escola rural apresentou as médias mais altas. Não foram encontradas diferenças significativas em nenhuma das variáveis segundo o nível educativo. Por fim, foi detectada uma relação positiva, fraca e linear entre a atitude em relação à utilidade da matemática e a autoconfiança matemática.",
+      "keywords_es": ["Actitud", "Autoconfianza", "Utilidad", "Matemática"],
+      "keywords_en": [
+        "Attitude",
+        "Self-confidence",
+        "Usefulness",
+        "Mathematics"
+      ],
+      "keywords_pt": ["Atitude", "Autoconfiança", "Utilidade", "Matemática"],
+      "citation": "Sequeira Solano, R., Ortiz Mata, J., & Meza Cascante, L. G. (2025). Estudio de la relación entre la “actitud hacia la utilidad de la matemática” y la “autoconfianza matemática” en dos colegios costarricenses. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7606"
+    },
+    {
+      "id": 5,
+      "title": "Rotaciones y cuaterniones (sin secretos)",
+      "title_en": "Rotations and quaternions: The easy and convenient way",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Walter Mora Flores",
+          "email": "wmora2@gmail.com",
+          "university": "Investigador independiente",
+          "location": "Alajuela, Costa Rica",
+          "orcid": "https://orcid.org/0009-0008-8770-3417"
+        }
+      ],
+      "category": "Divulgación",
+      "slug": "Articulos/V25/N2_2025/Mora",
+      "pdf": "/Articulos/V25/N2_2025/Mora/RevistaDigital_V25_n2_2025_Mora.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7274",
+      "received": "8 de febrero de 2024",
+      "accepted": "10 de mayo de 2024",
+      "abstract_es": "Hay mucha literatura dispersa sobre cuaterniones y rotaciones que está orientada a aplicaciones prácticas pero no tanto a desarrollar la intuición y las matemáticas que hay detrás de las fórmulas. En este artículo partimos de los conocimientos básicos comunes de los cursos de Álgebra Lineal y se introducen los cuaterniones y su aplicación en rotaciones, siguiendo un flujo natural, teórico, práctico e intuitivo. El conjunto de cuaterniones, denotado H, es un espacio vectorial isomorfo a R4 y se define una multiplicación que le da estructura de campo no conmutativo. La multiplicación por un cuaternión unitario aplica una rotación en dos planos, de manera simultánea, de una manera similar a como la multiplicación por un número complejo unitario aplica una rotación. Para usar este hecho en rotaciones en R3, escogemos una base ortonormal de H adecuada (esto nos da dos planos), de tal manera que en un plano se fije el eje de rotación (es decir, no hay rotación) y en el otro plano se aplique la rotación deseada.",
+      "abstract_en": "There is a lot of scattered literature on quaternions and rotations that is oriented to practical applications but not so much to develop the intuition and mathematics behind the formulas. In this paper we start from the common basic knowledge of Linear Algebra courses and introduce quaternions and their application in rotations, following a natural, theoretical, practical and intuitive flow. The set of quaternions, denoted H, is a vector space isomorphic to R4 and a multiplication is defined which gives it a non-commutative field structure. Multiplication by a unitary quaternion applies a rotation in two planes, in a simultaneous manner, in a similar way as multiplication by a unitary complex number applies a rotation. To use this fact in rotations in R3, we choose a suitable orthonormal basis of H (this gives us two planes), such that in one plane the axis of rotation is fixed (i.e., no rotation) and in the other plane the desired rotation is applied.",
+      "abstract_pt": "Há muita literatura dispersa sobre quaternions e rotações que está orientada a aplicações práticas, mas não tanto ao desenvolvimento da intuição e da matemática por trás das fórmulas. Neste artigo, partimos dos conhecimentos básicos comuns dos cursos de Álgebra Linear e introduzimos os quaternions e sua aplicação em rotações, seguindo um fluxo natural, teórico, prático e intuitivo. O conjunto dos quaternions, denotado por H, é um espaço vetorial isomorfo a R4, e define-se uma multiplicação que lhe confere estrutura de corpo não comutativo. A multiplicação por um quaternion unitário aplica uma rotação em dois planos, de forma simultânea, de maneira similar à multiplicação por um número complexo unitário. Para utilizar esse fato em rotações em R3, escolhemos uma base ortonormal adequada de H (o que nos dá dois planos), de tal forma que em um plano o eixo de rotação permaneça fixo (ou seja, sem rotação) e no outro plano seja aplicada a rotação desejada.",
+      "keywords_es": [
+        "Rotaciones",
+        "Interpolación",
+        "Cuaterniones",
+        "Álgebra Lineal"
+      ],
+      "keywords_en": ["Rotations", "Interpolation", "Linear Algebra"],
+      "keywords_pt": [
+        "Rotações",
+        "Interpolação",
+        "Quaternions",
+        "Álgebra Linear"
+      ],
+      "citation": "Mora F., W. (2025). Rotaciones y cuaterniones (sin secretos). Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7274"
+    },
+    {
+      "id": 6,
+      "title": "Algunos cálculos sobre los primos de Sheldon: variaciones a una conjetura",
+      "title_en": "Some computations about Sheldon primes: variations on a conjecture",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "location": "Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        }
+      ],
+      "category": "Investigación",
+      "slug": "Articulos/V25/N2_2025/Miramontes",
+      "pdf": "/Articulos/V25/N2_2025/Miramontes/RevistaDigital_V25_n2_2025_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7602",
+      "received": "15 de abril de 2024",
+      "accepted": "5 de agosto de 2024",
+      "abstract_es": "La conjetura de Sheldon despierta el interés por encontrar posibles relaciones entre el producto de los dígitos de un número primo $p_n$ y su índice $n$. En este trabajo se muestra, en un ejercicio numérico, que dicha conjetura podría explicarse por el comportamiento cuasi-cíclico ascendente del producto de los dígitos que forman a $p_n$. Se encontró que el producto de los dígitos de $p_n$ no puede relacionarse matemáticamente al índice $n$ por varias razones, las cuales se exponen en este trabajo. Además, se reflexiona si dicha conjetura, basada en la observación de una coincidencia, podría modificarse al considerar un reordenamiento del índice de los números primos.",
+      "abstract_en": "Sheldon's conjecture arouses interest in finding possible relationships between the product of the digits of a prime number $p_n$ and its index $n$. This work shows, in a numerical exercise, that this conjecture could be explained by the quasi-cyclical ascending behavior of the product of the digits that make up $p_n$. It was found that the product of the digits of $p_n$ cannot be mathematically related to the index $n$ for several reasons, which are explained in this work. Furthermore, we reflect on whether this conjecture, based on the observation of a coincidence, could be modified by considering a rearrangement of the index of the prime numbers.",
+      "abstract_pt": "A conjectura de Sheldon desperta interesse em encontrar possíveis relações entre o produto dos dígitos de um número primo $p_n$ e seu índice $n$. Neste trabalho, mostra-se, por meio de um exercício numérico, que essa conjectura poderia ser explicada pelo comportamento quase cíclico ascendente do produto dos dígitos que compõem $p_n$. Verificou-se que o produto dos dígitos de $p_n$ não pode ser relacionado matematicamente ao índice $n$ por várias razões, as quais são apresentadas neste estudo. Além disso, reflete-se sobre a possibilidade de modificar essa conjectura, baseada na observação de uma coincidência, ao considerar um rearranjo do índice dos números primos.",
+      "keywords_es": ["Conjetura", "Números primos", "Primos de Sheldon"],
+      "keywords_en": ["Conjecture", "Prime numbers", "Sheldon primes"],
+      "keywords_pt": ["Conjetura", "Números primos", "Primos de Sheldon"],
+      "citation": "Miramontes, G. (2025). Algunos cálculos sobre los primos de Sheldon: variaciones a una conjetura. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7602"
     }
   ]
 }
