@@ -10,15 +10,13 @@ export const issues = [
     volume: 26,
     number: 1,
     date: "Agosto 2025 - Febrero 2026",
-    label: "Actual",
     data: V26_N1_2025,
   },
   {
     id: "V25_N2_2025",
     volume: 25,
-    number: 2,
+    number: 2,f
     date: "Marzo 2025 - Agosto 2025",
-    label: "Reciente",
     data: V25_N2_2025,
   },
   {
