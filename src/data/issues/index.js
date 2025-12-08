@@ -15,7 +15,7 @@ export const issues = [
   {
     id: "V25_N2_2025",
     volume: 25,
-    number: 2,f
+    number: 2,
     date: "Marzo 2025 - Agosto 2025",
     data: V25_N2_2025,
   },
