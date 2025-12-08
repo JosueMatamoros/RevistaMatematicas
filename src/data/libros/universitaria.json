@@ -72,6 +72,8 @@
     "lastRevision": "Agosto 2025",
     "category": "universitaria",
     "pdf": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/libro.pdf",
+    "received": "30 de setiembre de 2023",
+    "accepted": "27 de mayo de 2025",
     "abstract_es": "Este libro está dedicado a los fundamentos de la matemática, una disciplina que no solo subyace en el corazón de todas las ciencias naturales, sino que también constituye la base de nuestro razonamiento lógico cotidiano. A lo largo de estas páginas, se realiza una exploración rigurosa de conceptos esenciales como las demostraciones de implicaciones, el conjunto de los números reales, el conjunto de los números complejos y el tratamiento de expresiones y ecuaciones algebraicas. Nuestro objetivo es proporcionar una introducción accesible a estos temas, garantizando que el lector desarrolle una comprensión profunda y un aprecio por la estructura lógica de la matemática. Cada capítulo ha sido cuidadosamente estructurado para ofrecer una exposición progresiva de los temas, acompañada de ejemplos que ilustran tanto las aplicaciones prácticas como las teóricas de los conceptos tratados. Este texto está diseñado tanto para estudiantes que se inician en los estudios matemáticos como para aquellos que desean consolidar y profundizar sus conocimientos. Se han incluido ejercicios diseñados para que el lector aplique lo aprendido, promoviendo así un aprendizaje activo y reflexivo. Confiamos en que este libro se convertirá en un recurso valioso para entender los principios fundamentales del pensamiento matemático y en una herramienta esencial para quienes se dedican al estudio serio de esta disciplina.",
     "keywords_es": ["Fundamentos de Matemática"],
     "abstract_en": "This book is devoted to the fundamentals of mathematics—a discipline that not only underpins all the natural sciences but also forms the foundation of everyday logical reasoning. Within these pages, we explore essential concepts with rigor, including the demonstration of implications, the structure of the real and complex number systems, and the manipulation of algebraic expressions and equations. Our goal is to offer an accessible introduction to these topics, helping readers develop a solid understanding and appreciation of the logical framework that defines mathematics. Each chapter is carefully organized to present topics progressively, supported by examples that highlight both practical and theoretical aspects of the material. This text is intended for students beginning their mathematical journey, as well as for those seeking to strengthen and expand their foundational knowledge. A variety of exercises are included to encourage active engagement with the material and foster reflective learning. We are confident that this book will serve as a valuable resource for anyone looking to understand the core principles of mathematical thought—and as an essential companion for the serious study of the subject.",
@@ -94,7 +96,7 @@
       },
       {
         "name": "Alexander Borbón A.",
-        "email": "",
+        "email": "aborbon@itcr.ac.cr",
         "orcid": "https://orcid.org/0009-0006-4455-9414",
         "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
         "location": "Costa Rica"
@@ -121,7 +123,7 @@
     "authors": [
       {
         "name": "Enrique Vílchez Q.",
-        "email": "",
+        "email": "enrique.vilchez.quesada@una.cr",
         "orcid": "https://orcid.org/0000-0002-2571-5729",
         "university": "Universidad Nacional de Costa Rica",
         "location": "Costa Rica"
@@ -403,7 +405,15 @@
     "coverImage": "/libros/universitaria/analisis/fractales-2010/portada.webp",
     "title": "Fractales",
     "title_en": "Fractals",
-    "authors": ["Manuel Alfaro", "Manuel Murillo", "Alberto Soto"],
+    "authors": [
+      "Manuel Alfaro",
+      {
+        "name": "Manuel Murillo",
+        "email": "mmurillot@gmail.com",
+        "location": "Costa Rica"
+      },
+      "Alberto Soto"
+    ],
     "lastRevision": "2010",
     "category": "universitaria ",
     "pdf": "/libros/universitaria/analisis/fractales-2010/libro.pdf",
