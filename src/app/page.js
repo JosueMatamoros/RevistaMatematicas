@@ -3,7 +3,7 @@ import SidebarComponent from "../components/home/SidebarComponent";
 import NavsComponent from "../components/home/NavsComponent";
 import ArticlesList from "../components/articles/ArticlesList";
 import { useState } from "react";
-import issueData from "@/data/issues/N1_2025.json";
+import issueData from "@/data/issues/V26_N1_2025.json";
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);

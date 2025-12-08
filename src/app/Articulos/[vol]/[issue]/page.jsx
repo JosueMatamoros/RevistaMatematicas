@@ -1,19 +1,21 @@
-// src/app/Articulos/[vol]/[issue]/page.jsx
 import { issues } from "@/data/issues";
 import ArticlesList from "@/components/articles/ArticlesList";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
-// Generar todas las combinaciones de vol/issue
+// Generar rutas estáticas correctas
 export function generateStaticParams() {
-  return issues.map((issue) => ({
-    vol: `V${issue.volume}`,
-    issue: issue.id,
-  }));
+  return issues.map((issue) => {
+    const clean = issue.id.split("_").slice(1).join("_"); // N1_2025
+    return {
+      vol: `V${issue.volume}`,
+      issue: clean
+    };
+  });
 }
 
 export async function generateMetadata({ params }) {
   const current = issues.find(
-    (i) => `V${i.volume}` === params.vol && i.id === params.issue
+    i => `V${i.volume}` === params.vol && i.id.endsWith(params.issue)
   );
 
   if (!current) return { title: "Número no encontrado" };
@@ -25,9 +27,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default function IssuePage({ params }) {
-  const { vol, issue } = params;
-
-  const current = issues.find((i) => `V${i.volume}` === vol && i.id === issue);
+  const current = issues.find(
+    i => `V${i.volume}` === params.vol && i.id.endsWith(params.issue)
+  );
 
   if (!current) {
     return <div className="p-8 text-red-500">Número no encontrado</div>;

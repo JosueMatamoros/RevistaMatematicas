@@ -39,6 +39,7 @@ export default function ArticulosIndexPage() {
         {/* Grid de números */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {issues.map((issue, index) => {
+            const cleanIssue = issue.id.split("_").slice(1).join("_");
             let chipLabel = "";
             if (index === 0) chipLabel = "Actual";
             if (index === 1) chipLabel = "Reciente";
@@ -78,7 +79,7 @@ export default function ArticulosIndexPage() {
 
                   {/* Link que se ve igual que el botón */}
                   <Link
-                    href={`/Articulos/V${issue.volume}/${issue.id}`}
+                    href={`/Articulos/V${issue.volume}/${cleanIssue}`}
                     passHref
                   >
                     <Button
