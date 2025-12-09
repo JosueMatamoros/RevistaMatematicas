@@ -15,21 +15,21 @@
           "email": "emaparra@itcr.ac.cr",
           "university": "Instituto Tecnológico de Costa Rica",
           "location": "Cartago, Costa Rica",
-          "orcid": ""
+          "orcid": "https://orcid.org/0000-0002-9508-2664"
         },
         {
           "name": "Marianela Alpízar Vargas",
           "email": "marianela.alpizar.vargas@una.cr",
           "university": "Universidad Nacional de Costa Rica",
           "location": "Heredia, Costa Rica",
-          "orcid": ""
+          "orcid": "https://orcid.org/0000-0002-3515-1971"
         },
         {
           "name": "Miguel Picado Alfaro",
           "email": "miguel.picado.alfaro@una.cr",
           "university": "Universidad Nacional de Costa Rica",
           "location": "Heredia, Costa Rica",
-          "orcid": ""
+          "orcid": "https://orcid.org/0000-0002-7574-0797"
         }
       ],
       "category": "Investigación",
@@ -252,14 +252,14 @@
           "email": "katalina.oviedo.rodriguez@una.cr",
           "university": "Universidad Nacional",
           "location": "Heredia, Costa Rica",
-          "orcid": ""
+          "orcid": "https://orcid.org/0000-0001-8869-4067"
         },
         {
           "name": "Byron Jiménez Oviedo",
           "email": "byron.jimenez.oviedo@una.cr",
           "university": "Universidad Nacional",
           "location": "Heredia, Costa Rica",
-          "orcid": ""
+          "orcid": "https://orcid.org/0000-0002-5585-8739"
         }
       ],
       "category": "Didáctica",
