@@ -5,10 +5,11 @@ import SearchBar from "../common/SearchBar";
 import IndexingCards from "./IndexingCards";
 
 export default function SidebarComponent({ isOpen, setIsOpen }) {
-
-  // Bloquear scroll del body cuando sidebar esté abierto
+  // Bloquear scroll del body solo en móviles cuando sidebar esté abierto
   useEffect(() => {
-    if (isOpen) {
+    const isMobile = window.matchMedia("(max-width: 1200px)").matches;
+
+    if (isOpen && isMobile) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -36,7 +37,7 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
           overflow-hidden z-50 rounded-md
 
           fixed top-0 right-0 h-full
-          ${isOpen ? "w-80 " : "w-0"}
+          ${isOpen ? "w-80" : "w-0"}
 
           xl:relative xl:top-auto xl:right-auto xl:h-auto xl:my-4
           ${isOpen ? "xl:w-96 xl:mb-4" : "xl:w-0"}
@@ -48,6 +49,7 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
               <SearchBar />
             </div>
 
+            {/* Contenido con scroll solo en móvil */}
             <div className="flex-1 p-5 text-base space-y-4 overflow-y-auto">
               <h1 className="text-xl font-semibold text-tec-blue-primary mb-4 border-b pb-2">
                 Revista Digital Matemática
@@ -55,12 +57,20 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
 
               <p>
                 La revista digital{" "}
-                <span className="font-bold">Matemática, Educación e Internet</span>{" "}
-                es una publicación semestral y gratuita…
+                <span className="font-bold">
+                  Matemática, Educación e Internet
+                </span>{" "}
+                es una publicación semestral, gratuita y de acceso abierto,
+                fundada en el año 2000 y auspiciada por el Instituto Tecnológico
+                de Costa Rica. Publica artículos originales de investigación,
+                teóricos y aplicados, en matemática, enseñanza de la matemática
+                y temas afines.
               </p>
-
               <p>
-                Todos los artículos enviados son revisados por pares…
+                Todos los artículos enviados son revisados por pares bajo un
+                proceso de revisión doble ciega. Su público meta son docentes,
+                estudiantes e investigadores en matemática y enseñanza de la
+                matemática.{" "}
                 <a
                   href="https://revistas.tec.ac.cr/index.php/matematica"
                   className="text-[#012D50] underline"
