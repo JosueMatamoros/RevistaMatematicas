@@ -223,7 +223,7 @@ Lorem ipsum…
 
 Los archivos dentro de esta carpeta siguen una convención estricta de nombres para asegurar orden, trazabilidad y compatibilidad con el sistema. El formato requerido es:
 
-**V{volumen}_N{númeroDePublicación}_{año}.json**
+`V{volumen}_N{numeroDePublicacion}_{año}.json`
 
 Por ejemplo:
 `V26_N1_2025.json`
