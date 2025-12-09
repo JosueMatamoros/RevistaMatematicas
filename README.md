@@ -217,11 +217,87 @@ Lorem ipsum…
 
 <h2 id="issues">issues</h2>
 
-> Representa ediciones completas de la revista.
+> [!NOTE]
+> En esta sección se almacena toda la información correspondiente a los artículos publicados en cada edición de la revista.
+> Cada archivo JSON representa un número completo del volumen y contiene la lista de artículos, sus metadatos y la información necesaria para generar las páginas dinámicas del sitio.
 
-<h3 id="n1_2025json">N1_2025.json</h3>
+Los archivos dentro de esta carpeta siguen una convención estricta de nombres para asegurar orden, trazabilidad y compatibilidad con el sistema. El formato requerido es:
 
-Lorem ipsum…
+**V{volumen}_N{númeroDePublicación}_{año}.json**
+
+Por ejemplo:
+`V26_N1_2025.json`
+
+Donde:
+- **{volumen}** es el volumen al que pertenece la publicación.
+- **{númeroDePublicación}** identifica si corresponde a la primera o segunda edición de ese volumen (1 o 2).
+- **{año}** representa el año asociado a la edición.
+
+Cada uno de estos archivos contiene una estructura estandarizada que permite al sistema interpretar correctamente la información.
+A continuación, se muestra un esqueleto con las etiquetas que deben incluirse y una explicación de lo que debe colocarse en cada espacio:
+
+
+<h3 id="n1_2025json">V26_N1_2025.json</h3>
+
+```json
+{
+  "issueTitle": "Título completo del número de la revista. Debe incluir volumen, número y rango de fechas, por ejemplo: 'Volumen 26, Número 1, Agosto 2025 - Febrero 2026'.",
+
+  "articles": [
+    {
+      "id": "Identificador numérico único del artículo. Debe respetar el orden en que se mostrará en la revista, ejemplo: 1, 2, 3...",
+
+      "title": "Título original del artículo en español.",
+      "title_en": "Título equivalente del artículo en inglés.",
+
+      "volume": "Número de volumen al que pertenece este artículo. Ejemplo: 26.",
+      "number": "Número de edición dentro del volumen. Ejemplo: 1 para primera edición, 2 para segunda edición.",
+
+      "language": "Idioma original del artículo, tal como 'es', 'en' o 'pt'.",
+      "published": "Fecha oficial de publicación con formato 'YYYY-MM-DD'.",
+
+      "authors": [
+        {
+          "name": "Nombre completo del autor tal como aparece en la publicación.",
+          "email": "Correo de contacto institucional o personal del autor.",
+          "university": "Nombre de la universidad o institución del autor.",
+          "location": "Ubicación geográfica de la institución, por ejemplo 'Heredia, Costa Rica'.",
+          "orcid": "Enlace ORCID del autor. Si no existe, dejar vacío o eliminar el campo."
+        }
+        /* Si hay más autores, se agregan aquí, siempre separados por coma */
+      ],
+
+      "category": "Categoría del artículo dentro de la revista. Ejemplos: 'Investigación', 'Didáctica', 'Divulgación'.",
+
+      "slug": "Ruta relativa donde se generará la página dinámica del artículo. Debe coincidir exactamente con la estructura interna, por ejemplo: 'Articulos/V26/N1_2025/Apellido'.",
+
+      "pdf": "Ruta relativa del PDF del artículo dentro de la carpeta /public. Debe coincidir exactamente con el archivo almacenado. Ejemplo: '/Articulos/V26/N1_2025/Apellido/Archivo.pdf'.",
+
+      "doi": "Identificador DOI oficial asignado al artículo. Ejemplo: 'https://doi.org/...'.",
+
+      "received": "Fecha en que se recibió el artículo por primera vez. Mantiene el formato narrativo original enviado por los editores.",
+      "accepted": "Fecha en que el artículo fue aceptado oficialmente tras revisión.",
+
+      "abstract_es": "Resumen descriptivo del artículo en español.",
+      "abstract_en": "Resumen equivalente del artículo en inglés.",
+      "abstract_pt": "Resumen equivalente del artículo en portugués. Opcional, pero recomendado para estandarización.",
+
+      "keywords_es": [
+        "Lista de palabras clave en español relacionadas con el contenido."
+      ],
+      "keywords_en": [
+        "Lista de palabras clave equivalentes en inglés."
+      ],
+      "keywords_pt": [
+        "Lista de palavras-chave equivalentes em português."
+      ],
+
+      "citation": "Formato completo de citación oficial del artículo, normalmente siguiendo el estilo APA. Debe incluir autores, fecha, título, revista, volumen, número y DOI."
+    }
+  ]
+}
+```
+
 
 <h3 id="issuesindexjs">index.js</h3>
 
