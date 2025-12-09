@@ -323,6 +323,113 @@
       "keywords_en": ["Conjecture", "Prime numbers", "Sheldon primes"],
       "keywords_pt": ["Conjetura", "Números primos", "Primos de Sheldon"],
       "citation": "Miramontes, G. (2025). Algunos cálculos sobre los primos de Sheldon: variaciones a una conjetura. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7602"
+    },
+    {
+      "id": 7,
+      "title": "¿Haciendo trampa o aprendiendo? ChatGPT en la enseñanza de la función lineal",
+      "title_en": "Cheating or learning? ChatGPT in Teaching Linear Function",
+      "volume": 25,
+      "number": 2,
+      "language": "es",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "José Pablo Calderón Gairaud",
+          "email": "jose03pc@gmail.com",
+          "university": "Universidad de Puerto Rico",
+          "location": "Mayagüez, Puerto Rico",
+          "orcid": "https://orcid.org/0009-0001-7381-5134"
+        },
+        {
+          "name": "Cristhian Chavez Montoya",
+          "email": "acrismontoya@gmail.com",
+          "university": "Investigador independiente",
+          "location": "Alajuela, Costa Rica",
+          "orcid": "https://orcid.org/0009-0009-2090-8247"
+        }
+      ],
+      "category": "Didáctica",
+      "slug": "Articulos/V25/N2_2025/Calderon",
+      "pdf": "/Articulos/V25/N2_2025/Calderon/RevistaDigital_V25_n2_2025_Calderon.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7753",
+      "received": "3 de diciembre de 2023",
+      "accepted": "5 de agosto de 2024",
+      "abstract_es": "El siguiente artículo presenta un marco conceptual referente a las inteligencias artificiales, una breve descripción sobre lo que es ChatGPT, su impacto en la educación desde su lanzamiento, además de un resumen de las ventajas y desventajas de utilizar este tipo de IA en el aprendizaje de conceptos y/o nociones matemáticas. A raíz de este análisis se plantea una propuesta didáctica que consiste en una guía de trabajo independiente que involucra discusión interactiva y resolución de problemas utilizando ChatGPT, para abarcar los contenidos referentes a función lineal de 10° nivel del programa de estudios de matemáticas según el Ministerio de Educación Pública de Costa Rica. Se presenta una visión general sobre las implicaciones al utilizar ChatGPT en el estudio de la función lineal y los retos que se presentan al intentar implementarlo en el sistema educativo costarricense. Además, se describe la experiencia sobre la aplicación de la propuesta en una institución ubicada en Cartago en dos ocasiones, la primera ayudó a realizar mejoras en la propuesta y la segunda contribuyó a consolidar el diseño final de las correcciones. Se destaca que el uso de herramientas como ChatGPT aporta como acompañamiento estudiantil para mejorar la comprensión de los contenidos, sin embargo, no sustituye el trabajo realizado por un docente y la atención que este brinda.",
+      "abstract_en": "The following article presents a conceptual framework regarding artificial intelligence, a description of what ChatGPT is, its impact on education since its launch, as well as a summary of the advantages and disadvantages of using this type of AI in learning concepts and/or mathematical notions. As a result of this analysis, a didactic proposal is presented, consisting of an independent work guide that involves interactive discussion and problem-solving using ChatGPT, to cover the contents related to the linear function of the 10th level of the mathematics study program according to the Ministry of Public Education of Costa Rica. An overview of the implications of using ChatGPT in the study of the Linear Function and the challenges that arise when trying to implement it in the Costa Rican educational system is presented. In addition, the experience on the application of the proposal in an institution located in Cartago on two occasions is described, the first one helped to make improvements in the proposal, and the second contributed to consolidate the final design of the corrections. It is highlighted that the use of tools such as ChatGPT provides student support to improve the understanding of the contents; however, it does not replace the work done by a teacher and the attention that can be provided.",
+      "abstract_pt": "O seguinte artigo apresenta um marco conceitual referente às inteligências artificiais, uma breve descrição sobre o que é o ChatGPT, seu impacto na educação desde o seu lançamento, além de um resumo das vantagens e desvantagens de utilizar esse tipo de IA na aprendizagem de conceitos e/ou noções matemáticas. A partir dessa análise, propõe-se uma proposta didática que consiste em um guia de trabalho independente que envolve discussão interativa e resolução de problemas utilizando o ChatGPT, para abranger os conteúdos referentes à função linear do 10º nível do programa de estudos de matemática segundo o Ministério da Educação Pública da Costa Rica. Apresenta-se uma visão geral sobre as implicações do uso do ChatGPT no estudo da função linear e os desafios que surgem ao tentar implementá-lo no sistema educacional costarriquenho. Além disso, descreve-se a experiência da aplicação da proposta em uma instituição localizada em Cartago em duas ocasiões, sendo que a primeira ajudou a realizar melhorias na proposta e a segunda contribuiu para consolidar o desenho final das correções. Destaca-se que o uso de ferramentas como o ChatGPT oferece apoio estudantil para melhorar a compreensão dos conteúdos; no entanto, não substitui o trabalho realizado por um docente nem a atenção que este pode oferecer.",
+      "keywords_es": [
+        "ChatGPT",
+        "Guía de trabajo",
+        "Función lineal",
+        "Inteligencia artificial",
+        "Enseñanza"
+      ],
+      "keywords_en": [
+        "ChatGPT",
+        "Self-Study Guide",
+        "Linear Function",
+        "Artificial Intelligence"
+      ],
+      "keywords_pt": [
+        "ChatGPT",
+        "Guia de estudo",
+        "Função linear",
+        "Inteligência artificial"
+      ],
+      "citation": "Calderón Gairaud, J., & Chavez Montoya, C. (2025). ¿Haciendo trampa o aprendiendo? ChatGPT en la enseñanza de la función lineal. Revista Digital: Matemática, Educación e Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7753"
+    },
+    {
+      "id": 7,
+      "title": "GeoGebra as a Potential Tool for Exploring the Concepts of Continuity and Convergence",
+      "title_en": "GeoGebra as a Potential Tool for Exploring the Concepts of Continuity and Convergence",
+      "volume": 25,
+      "number": 2,
+      "language": "en",
+      "published": "2025-03-01",
+      "authors": [
+        {
+          "name": "André Luiz Araújo da Costa",
+          "email": "and.costa@uece.br",
+          "university": "Universidade Estadual do Ceará - UECE",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0003-1155-4204"
+        },
+        {
+          "name": "Francisco Régis Vieira Alves",
+          "email": "fregis@ifce.edu.br",
+          "university": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará - IFCE",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0003-3710-1561"
+        }
+      ],
+      "category": "Didáctica",
+      "slug": "Articulos/V25/N2_2025/Araujo",
+      "pdf": "/Articulos/V25/N2_2025/Araujo/RevistaDigital_V25_n2_2025_Araujo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v25i2.7821",
+      "received": "20 de septiembre de 2024",
+      "accepted": "10 de diciembre de 2024",
+      "abstract_es": "Este artículo ejemplifica el potencial de GeoGebra como recurso didáctico para la enseñanza del Análisis Real y Complejo. Para ser más precisos, nuestro objetivo principal es demostrar lo útil que es GeoGebra al proporcionar un enfoque visual para entender los conceptos de continuidad, equicontinuidad y la convergencia de secuencias de funciones reales de dos variables y funciones complejas de una variable. La complejidad de la definición de estos conceptos, que dependen de varios parámetros como los clásicos delta y épsilon, motivó la elección del tema de este artículo. Además, su conexión con el Teorema de Ascoli-Arzelà, que es significativo en muchas áreas de las matemáticas, también influyó en esta decisión. A lo largo del artículo, presentamos algunos applets desarrollados con GeoGebra que permiten una exploración satisfactoria de esos conceptos según nuestro análisis. Esta exploración se realiza a lo largo de una secuencia de ejemplos y contraejemplos para los conceptos de continuidad, equicontinuidad y convergencia tratados. En el Apéndice, proporcionamos algunas instrucciones para diseñar los applets utilizados a lo largo del texto.",
+      "abstract_en": "The following paper exemplifies the potential of GeoGebra as a didactic resource for teaching Real and Complex Analysis. More precisely, our main goal is to demonstrate how useful GeoGebra is in providing a visual approach to understanding the concepts of continuity, equicontinuity, and the convergence of sequences of real functions of two variables and complex functions of a single variable. The complexity of the definition of these concepts, which rely on various parameters such as the classical delta and epsilon, motivated the choice of the subject of this article. Moreover, their connection to the Ascoli–Arzelà Theorem, which is significant in many areas of mathematics, also influenced this decision. Throughout the paper, we present some applets developed using GeoGebra which allow for a satisfactory exploration of these concepts according to our analysis. This exploration is done through a sequence of examples and counterexamples for the concepts of continuity, equicontinuity, and convergence addressed. In the Appendix, we provide some instructions for designing the applets used throughout the text.",
+      "abstract_pt": "Este artigo exemplifica o potencial do GeoGebra como recurso didático para o ensino de Análise Real e Complexa. Mais precisamente, nosso objetivo principal é demonstrar o quão útil é o GeoGebra ao fornecer uma abordagem visual para compreender os conceitos de continuidade, equicontinuidade e a convergência de sequências de funções reais de duas variáveis e funções complexas de uma variável. A complexidade da definição desses conceitos, que dependem de diversos parâmetros como os clássicos delta e épsilon, motivou a escolha do tema deste artigo. Além disso, sua conexão com o Teorema de Ascoli–Arzelà, significativo em muitas áreas da matemática, também influenciou essa decisão. Ao longo do artigo, apresentamos alguns applets desenvolvidos com GeoGebra que permitem uma exploração satisfatória desses conceitos segundo nossa análise. Essa exploração ocorre por meio de uma sequência de exemplos e contraexemplos para os conceitos de continuidade, equicontinuidade e convergência abordados. No Apêndice, fornecemos algumas instruções para projetar os applets utilizados ao longo do texto.",
+      "keywords_es": [
+        "GeoGebra",
+        "Visualización",
+        "Análisis Real y Complejo",
+        "Equicontinuidad"
+      ],
+      "keywords_en": [
+        "GeoGebra",
+        "Visualization",
+        "Real and Complex Analysis",
+        "Equicontinuity"
+      ],
+      "keywords_pt": [
+        "GeoGebra",
+        "Visualização",
+        "Análise Real e Complexa",
+        "Equicontinuidade"
+      ],
+      "citation": "Araújo da Costa, A. L., & Vieira Alves, F. R. (2025). GeoGebra as a Potential Tool for Exploring the Concepts of Continuity and Convergence: GeoGebra como una Herramienta Potencial para Explorar los Conceptos de Continuidad y Convergencia. Revista Digital: Matemática, Educación E Internet, 25(2). https://doi.org/10.18845/rdmei.v25i2.7821"
     }
   ]
 }
