@@ -18,7 +18,7 @@ export default function BreadcrumbNav() {
           className="flex items-center gap-1 text-gray-800 hover:text-gray-900 text-sm font-medium"
         >
           <AiFillHome className="text-lg" />
-          Home
+          Inicio
         </Link>
 
         {segments.map((seg, idx) => {
