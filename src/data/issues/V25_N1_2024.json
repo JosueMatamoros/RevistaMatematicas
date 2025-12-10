@@ -1,27 +1,123 @@
 {
-  "issueTitle": "Prueba",
+  "issueTitle": "Volumen 25, Número 1, Agosto 2024 - Febrero 2025",
   "articles": [
     {
       "id": 1,
-      "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
-      "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
+      "title": "Una interpretación geométrica de los Axiomas de Peano como estrategia didáctica para la enseñanza y aprendizaje de los números naturales",
+      "title_en": "A geometric interpretation of the Peano Axioms as a didactic strategy for teaching and learning natural numbers",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-08-01",
       "authors": [
         {
-          "name": "Alejandra Alfaro-Barquero",
-          "email": "alealfaro@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-8901-7129"
+          "name": "Jesús Guillén Ruiz",
+          "email": "jesus.guillen@isfodosu.edu.do",
+          "university": "Instituto Superior de Formación Docente Salomé Ureña",
+          "location": "Santo Domingo de los Caballeros, República Dominicana",
+          "orcid": "https://orcid.org/0000-0002-5548-5821"
         },
         {
-          "name": "Sonia Chinchilla-Brenes",
-          "email": "schinchilla@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-1100-2568"
+          "name": "Dirwin Muñoz Pinto",
+          "email": "dirwin.munoz@isfodosu.edu.do",
+          "university": "Instituto Superior de Formación Docente Salomé Ureña",
+          "location": "Santo Domingo de los Caballeros, República Dominicana",
+          "orcid": "https://orcid.org/0000-0002-2400-9064"
+        },
+        {
+          "name": "Pedro Peña Duarte",
+          "email": "pedro.pena@isfodosu.edu.do",
+          "university": "Instituto Superior de Formación Docente Salomé Ureña",
+          "location": "Licey al Medio, República Dominicana",
+          "orcid": "https://orcid.org/0000-0002-3746-0030"
         }
-      ]
-
+      ],
+      "slug": "Articulos/V25/N1_2024/Guillen",
+      "pdf": "/Articulos/V25/N1_2024/Guillen/RevistaDigital_V25_n1_2024_Guillen.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7094",
+      "received": "10 de abril 2023",
+      "accepted": "15 marzo 2024",
+      "abstract_es": "Los axiomas de Peano son un conjunto de proposiciones que permiten definir de manera formal el conjunto de números naturales. En estos axiomas, Peano rescata la esencia de contar objetos y la materializa asumiendo la existencia de un conjunto, de una función en dicho conjunto (a la que llama sucesor) y un axioma de inducción. En este trabajo se hace una representación e interpretación geométrica de cada uno de estos axiomas que permiten comprender la independencia y necesidad de cada uno de ellos, lo que facilita el rigor conceptual de los mismos haciendo uso del lenguaje matemático. Por último, usando la geometría euclidiana, se hace una construcción geométrica de un sistema de números naturales sobre una recta.",
+      "abstract_en": "Peano’s axioms are a set of propositions that allow a formal definition of the set of natural numbers. In these axioms, Peano rescues the essence of counting objects and materializes it by assuming the existence of a set, of a function in this set (which he calls successor) and an axiom of induction. In this work a geometrical representation and interpretation of each of these axioms is made, which allows understanding the independence and necessity of each one of them, which facilitates the conceptual rigor of them by making use of mathematical language. Finally, using Euclidean geometry, a geometric construction of a system of natural numbers on a straight line is made.",
+      "abstract_pt": "Os axiomas de Peano são um conjunto de proposições que permitem definir formalmente o conjunto dos números naturais. Nesses axiomas, Peano resgata a essência de contar objetos e a materializa assumindo a existência de um conjunto, de uma função nesse conjunto (à qual ele chama sucessor) e um axioma de indução. Neste trabalho é feita uma representação e interpretação geométrica de cada um desses axiomas, o que permite compreender a independência e a necessidade de cada um deles, facilitando o rigor conceitual por meio da linguagem matemática. Por fim, utilizando a geometria euclidiana, é realizada uma construção geométrica de um sistema de números naturais sobre uma reta.",
+      "keywords_es": [
+        "Números naturales",
+        "geometría",
+        "sucesor",
+        "axiomas de Peano",
+        "inducción"
+      ],
+      "keywords_en": [
+        "Natural numbers",
+        "geometry",
+        "successor",
+        "Peano’s axioms",
+        "induction"
+      ],
+      "keywords_pt": [
+        "Números naturais",
+        "geometria",
+        "sucessor",
+        "axiomas de Peano",
+        "indução"
+      ],
+      "citation": "Guillén Ruiz, J., Muñoz Pinto, D., & Peña Duarte, P. (2024). Una interpretación geométrica de los Axiomas de Peano como estrategia didáctica para la enseñanza y aprendizaje de los números naturales. Revista digital Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7094"
+    },
+    {
+      "id": 2,
+      "title": "Desenvolvimento e Implementação de Sequências Didáticas para EDOs de Segunda Ordem: Aplicações Práticas com GeoGebra",
+      "title_en": "Development and Implementation of Didactic Sequences for Second Order ODEs: Practical Applications with GeoGebra",
+      "volume": 25,
+      "number": 1,
+      "language": "pt",
+      "published": "2024-08-01",
+      "authors": [
+        {
+          "name": "Ana Carla Pimentel Paiva",
+          "email": "carlapimentel00@gmail.com",
+          "university": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará-IFCE (campus Fortaleza)",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0001-5801-9562"
+        },
+        {
+          "name": "Francisco Régis Vieira Alves",
+          "email": "fregis@ifce.edu.br",
+          "university": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará-IFCE (campus Fortaleza)",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0003-3710-1561"
+        },
+        {
+          "name": "Helena Maria de Barros Campos",
+          "email": "hcampos@utad.pt",
+          "university": "Universidade de Trás-os-Montes e Alto Douro–UTAD",
+          "location": "Vila Real, Portugal",
+          "orcid": "https://orcid.org/0000-0003-2767-0998"
+        }
+      ],
+      "slug": "Articulos/V25/N1_2024/Paiva",
+      "pdf": "/Articulos/V25/N1_2024/Paiva/RevistaDigital_V25_n1_2024_Paiva.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7235",
+      "received": "30 octubre 2023",
+      "accepted": "30 mayo 2024",
+      "abstract_es": "Las Ecuaciones Diferenciales Ordinarias de Segundo Orden son un tema considerado en el enfoque tradicional de la teoría de las Ecuaciones Diferenciales Ordinarias (EDO). En este artículo se describen, de modo particular, dos etapas previstas por la Ingeniería Didáctica (ID): las fases de análisis preliminar y de análisis a priori. Se enfatizan actividades descritas y estructuradas con apoyo de la tecnología. La mediación favorecida por el uso adecuado de software permite evitar ciertos elementos que actúan como obstáculos para una comprensión amplia, inherente a estas ecuaciones. De este modo, se indican y estructuran situaciones-problema en GeoGebra con el fin de emplear la visualización en la comprensión de propiedades cualitativas (gráfico-geométricas) y no solo de naturaleza algorítmica. Así, se proporciona la descripción de factores pertinentes a la mediación didáctica de las ecuaciones diferenciales de segundo orden.",
+      "abstract_en": "Second Order Ordinary Differential Equations are a subject considered in the traditional approach to the theory of Ordinary Differential Equations – ODE. This article describes, in particular, two stages foreseen by Didactic Engineering – DE: the phases of preliminary analysis and a priori analysis. Activities described/structured with the support of technology are emphasized. Mediation affected by the appropriate exploitation of software makes it possible to avoid certain elements that act as obstacles to a broad understanding, inherent to these equations. In this way, we indicate and structure problem situations in GeoGebra, in order to use visualization to understand qualitative properties (graphic-geometric) and not just algorithmic ones. Thus, we provide the description of factors relevant to the didactic mediation of second-order differential equations.",
+      "abstract_pt": "As Equações Diferenciais Ordinárias de Segunda Ordem se apresentam como um assunto considerado na abordagem tradicional da teoria de Equações Diferenciais Ordinárias – EDO. Nesse artigo se descreve, de modo particular, duas etapas previstas pela Engenharia Didática – ED: as fases de análise prévia e análise a priori. Enfatizam-se atividades descritas/estruturadas com apoio da tecnologia. A mediação afetada pela exploração adequada de softwares possibilita evitar determinados elementos que atuam como entraves a um entendimento amplo, inerente a essas equações. Desse modo, indicamos e estruturamos situações-problema no Geogebra, de modo a empregar a visualização no entendimento de propriedades qualitativas (gráfico-geométricas) e não apenas de natureza algorítmica. Proporcionando assim, a descrição de fatores pertinentes à mediação didática das equações diferenciais de segunda ordem.",
+      "keywords_es": [
+        "Ecuaciones Diferenciales Ordinarias",
+        "Ingeniería Didáctica",
+        "GeoGebra"
+      ],
+      "keywords_en": [
+        "Second Order Ordinary Differential Equations",
+        "Didactic Engineering",
+        "GeoGebra"
+      ],
+      "keywords_pt": [
+        "Equações Diferenciais Ordinárias",
+        "Engenharia Didática",
+        "Geogebra"
+      ],
+      "citation": "Pimentel Paiva, A. C., Vieira Alves, F. R., & de Barros Campos, H. M. (2024). Desenvolvimento e Implementação de Sequências Didáticas para EDOs de Segunda Ordem: Aplicações Práticas com GeoGebra. Revista digital Matemática, Educação e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7235"
     }
-  ]   
+  ]
 }

@@ -2,6 +2,7 @@
 import V26_N1_2025 from "./V26_N1_2025.json";
 import V25_N2_2025 from "./V25_N2_2025.json";
 import V25_N1_2024 from "./V25_N1_2024.json";
+import V26_N2_2026 from "./V26_N2_2026.json";
 
 
 export const issues = [
