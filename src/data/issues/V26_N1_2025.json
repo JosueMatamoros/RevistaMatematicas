@@ -1,160 +1,8 @@
 {
   "issueTitle": "Volumen 26, Número 1, Agosto 2025 - Febrero 2026",
   "articles": [
-     {
+    {
       "id": 1,
-      "title": "Análisis de errores algebraicos que manifiestan docentes en formación de la carrera de Enseñanza de la Matemática en la Universidad Nacional de Costa Rica",
-      "title_en": "Analysis of algebraic errors displayed by mathematics teacher trainees in the mathematics education program at the National University of Costa Rica",
-      "volume": 26,
-      "number": 1,
-      "language": "es",
-      "published": "2025-08-01",
-      "authors": [
-        {
-          "name": "Emanuelle Parra Rodríguez",
-          "email": "emaparra@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-9508-2664"
-        },
-        {
-          "name": "Marianela Alpízar Vargas",
-          "email": "marianela.alpizar.vargas@una.cr",
-          "university": "Universidad Nacional de Costa Rica",
-          "location": "Heredia, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-3515-1971"
-        },
-        {
-          "name": "Miguel Picado Alfaro",
-          "email": "miguel.picado.alfaro@una.cr",
-          "university": "Universidad Nacional de Costa Rica",
-          "location": "Heredia, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-7574-0797"
-        }
-      ],
-      "category": "Investigación",
-      "slug": "Articulos/V26/N1_2025/Parra",
-      "pdf": "/Articulos/V26/N1_2025/Parra/RevistaDigital_V26_n1_2025_Parra.pdf",
-      "doi": "https://doi.org/10.18845/rdmei.v26i1.7964",
-      "received": "10 de marzo de 2024",
-      "accepted": "20 de marzo de 2025",
-      "abstract_es": "En este estudio se presentan resultados provenientes de un análisis cualitativo donde se describen y clasifican errores algebraicos que cometen estudiantes en formación inicial en enseñanza de la matemática cuando ingresan al curso MAC400 Matemática fundamental de la carrera Bachillerato y Licenciatura en la Enseñanza de la Matemática de la Universidad Nacional de Costa Rica, en un test diagnóstico. Se seleccionó una muestra de 24 estudiantes informantes extraída de tres grupos. Los contenidos de la prueba corresponden al álgebra básica, que constituye el área de enfoque del curso. El estudio reveló que los estudiantes ingresan con deficiencias sobre conocimientos algebraicos básicos, donde destacan errores asociados con el desarrollo de algoritmos o reglas inválidas para efectuar sumas y productos entre polinomios, que acarrean en otro tipo de operaciones con expresiones algebraicas.",
-      "abstract_en": "This study presents the results of a qualitative analysis describing and classifying algebraic errors made by pre-service mathematics teachers during their initial training when entering the MAC400 Fundamental Mathematics course in the Bachelor’s and Licentiate Degree Program in Mathematics Teaching at the National University of Costa Rica, based on a diagnostic test. A sample of 24 informant students was selected from three groups. The test contents correspond to basic algebra, which is the focus area of the course. The study revealed that students enter the course with deficiencies in basic algebraic knowledge, particularly errors related to the development of invalid algorithms or rules for performing additions and multiplications of polynomials, which subsequently lead to errors in other operations with algebraic expressions.",
-      "abstract_pt": "Neste estudo, são apresentados resultados provenientes de uma análise qualitativa na qual são descritos e classificados erros algébricos cometidos por estudantes em formação inicial em ensino da matemática ao ingressarem na disciplina MAC400 Matemática Fundamental da carreira de Bacharelado e Licenciatura em Ensino da Matemática da Universidade Nacional da Costa Rica, em um teste diagnóstico. Foi selecionada uma amostra de 24 estudantes informantes extraída de três grupos. Os conteúdos da prova correspondem à álgebra básica, que constitui a área de enfoque do curso. O estudo revelou que os estudantes ingressam com deficiências nos conhecimentos algébricos básicos, destacando-se erros associados ao desenvolvimento de algoritmos ou regras inválidas para realizar somas e produtos entre polinômios, o que afeta outros tipos de operações com expressões algébricas.",
-      "keywords_es": ["errores algebraicos", "educación matemática", "docentes en formación", "álgebra básica", "dificultades en la comprensión"],
-      "keywords_en": ["algebraic errors", "mathematics education", "pre-service teachers", "basic algebra", "comprehension difficulties"],
-      "keywords_pt": ["erros algébricos", "educação matemática", "docentes em formação", "álgebra básica", "dificuldades na compreensão"],
-      "citation": "Parra Rodríguez, E., Alpízar Vargas, M., & Picado Alfaro, M. (2025). Análisis de errores algebraicos que manifiestan docentes en formación de la carrera de Enseñanza de la Matemática en la Universidad Nacional de Costa Rica. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7964"
-    },
-    {
-      "id": 2,
-      "title": "Animaciones en LaTeX para la enseñanza del Movimiento Armónico Simple",
-      "title_en": "Animations in LaTeX for teaching Simple Harmonic Motion",
-      "volume": 26,
-      "number": 1,
-      "language": "es",
-      "published": "2025-08-01",
-      "authors": [
-        {
-          "name": "Carlos A. Jiménez Carballo",
-          "email": "carjimenez@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Costa Rica",
-          "orcid": "https://orcid.org/0000-0001-9934-5088"
-        }
-      ],
-      "category": "Didáctica",
-      "slug": "Articulos/V26/N1_2025/Jimenez",
-      "pdf": "/Articulos/V26/N1_2025/Jimenez/RevistaDigital_V26_n1_2025_Jimenez.pdf",
-      "doi": "https://doi.org/10.18845/rdmei.v26i1.7952",
-      "received": "6 de octubre de 2024",
-      "accepted": "15 de abril de 2025",
-      "abstract_es": "El objetivo principal de este trabajo es demostrar detalladamente cómo emplear LaTeX para elaborar animaciones educativas vinculadas a los conceptos fundamentales de la física en general, centrándose específicamente en el estudio del Movimiento Armónico Simple (MAS). Específicamente, en este contexto, se presentan los paquetes TikZ y animate que se utilizan en el entorno de LaTeX para la creación de animaciones a partir de gráficos vectoriales. Posteriormente, se muestran detalladamente los códigos básicos necesarios para implementar cinco animaciones de una partícula unida a un resorte que describe un MAS. Las animaciones buscan facilitar la transición suave y comprensible entre las complejas ecuaciones matemáticas que describen un fenómeno físico y su representación visual, permitiendo así una mejor comprensión.",
-      "abstract_en": "This work aims to comprehensively illustrate the use of LaTeX for the creation of educational animations pertaining to the fundamental concepts of physics, with a specific focus on the study of Simple Harmonic Motion (SHM). In this context, we present the TikZ and animate packages, which the LaTeX environment uses to create animations from vector graphics. Subsequently, the basic codes necessary to implement five animations of a particle attached to a spring that describe simple harmonic motion are shown in detail. The animations aim to facilitate a smooth and understandable transition between the complex mathematical equations that describe a physical phenomenon and their visual representation, thereby allowing for better comprehension.",
-      "abstract_pt": "O principal objetivo deste trabalho é mostrar detalhadamente o uso do LaTeX para elaborar animações educativas vinculadas aos conceitos fundamentais da física em geral, focando especificamente no estudo do Movimento Harmônico Simples (MAS). Especificamente, neste contexto, são apresentados os pacotes TikZ e animate, que são implementados no ambiente LaTeX para a criação de animações a partir de gráficos vetoriais. Posteriormente, são mostrados detalhadamente os códigos básicos necessários para implementar cinco animações de uma partícula presa a uma mola que descreve um MAS. As animações buscam facilitar a transição suave e compreensível entre as complexas equações matemáticas que descrevem um fenômeno físico e sua representação visual, permitindo assim uma melhor compreensão.",
-      "keywords_es": ["MAS", "LaTeX", "animate", "TikZ", "animaciones"],
-      "keywords_en": ["SHM", "LaTeX", "animate", "TikZ", "animations"],
-      "keywords_pt": ["MAS", "LaTeX", "animate", "TikZ", "animações"],
-      "citation": "Jiménez Carballo, C. A. (2025). Animaciones en LaTeX para la enseñanza del Movimiento Armónico Simple. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7952"
-    },
-    {
-      "id": 3,
-      "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
-      "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
-      "volume": 26,
-      "number": 1,
-      "language": "es",
-      "published": "2025-08-01",
-      "authors": [
-        {
-          "name": "Alejandra Alfaro-Barquero",
-          "email": "alealfaro@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-8901-7129"
-        },
-        {
-          "name": "Sonia Chinchilla-Brenes",
-          "email": "schinchilla@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-1100-2568"
-        }
-      ],
-      "category": "Didáctica",
-      "slug": "Articulos/V26/N1_2025/Alfaro",
-      "pdf": "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf",
-      "doi": "https://doi.org/10.18845/rdmei.v26i1.8119",
-      "received": "5 de junio de 2024",
-      "accepted": "30 de abril de 2025",
-      "abstract_es": "Este proyecto buscó evaluar el modelo de la teoría RIASEC de Holland, su aplicabilidad en la clasificación de carreras STEM del Instituto Tecnológico de Costa Rica, así como analizar diferencias en las puntuaciones de las escalas de actividades y habilidades del Self Directed-Search (versión en español) según sexo y nivel de satisfacción vocacional, en una muestra de 581 estudiantes de 18 carreras, con una media de edad de 20.29 años (DE=3.33), 40.62% mujeres y 59.38% hombres. Mediante modelos factoriales confirmatorios se evidenció la presencia de las 6 tipologías de la teoría RIASEC. En relación con la clasificación de carreras según los códigos de triadas del explorador de carreras y ocupaciones de Holland et al. (2005c), se obtuvo una coincidencia total (3 siglas) solo para el 33.33% de la muestra de carreras; una coincidencia parcial (2 siglas) para el 44.44% de las carreras y finalmente, 22.22% mostró una coincidencia mínima (1 sigla). El análisis de varianza evidenció que quienes mostraron mayores niveles de satisfacción vocacional, obtuvieron promedios más altos en las escalas de habilidades realista, emprendedora y social, pero no se evidenciaron diferencias significativas entre los puntajes de las escalas de habilidades. En relación con el sexo, las mujeres muestran promedios mayores en las tipologías artística y social y los hombres en la realista e investigativa.",
-      "abstract_en": "This project sought to evaluate Holland's RIASEC theory model, its applicability in the classification of STEM careers at the Costa Rica Institute of Technology, as well as analyze differences in the scores of the activities and skills scales of the Self Directed-Search (Spanish version) according to sex and level of vocational satisfaction, in a sample of 581 students from 18 majors, with an average age of 20.29 (SD=3.33), 40.62% women and 59.38% men. Through confirmatory factor models, the presence of the 6 typologies of the RIASEC theory was evidenced. Regarding the classification of careers according to the triad codes of the career and occupation explorer of Holland et al. (2005c), a complete match (3 acronyms) was obtained for only 33.33% of the courses; a partial match (2 acronyms) for 44.44% of the courses and finally, 22.22% showed a minimal match (1 acronym). The analysis of variance showed that those with higher levels of vocational satisfaction obtained higher averages in the realistic, entrepreneurial, and social skills scales, but no significant differences were found between the skills scores. Regarding sex, women show higher averages in the artistic and social typologies, and men in the realistic and investigative typologies.",
-      "abstract_pt": "Neste projeto buscou-se avaliar o modelo teórico RIASEC de Holland, sua aplicabilidade na classificação de cursos STEM no Instituto Tecnológico da Costa Rica, assim como analisar diferenças nas pontuações das escalas de atividades e habilidades do Self-Directed-Search (versão em espanhol) segundo o sexo e nível de satisfação profissional, em uma amostra de 581 estudantes de 18 cursos, com idade média de 20,29 anos (DP = 3,33), 40,62% mulheres e 59,38% homens. Por meio de modelos de fatores confirmatórios, evidenciou-se a presença das 6 tipologias da teoria RIASEC. Referente à classificação de cursos segundo os códigos da tríade do explorador de cursos e ocupações de Holland et al. (2005c), foi obtida uma correspondência total (3 siglas) apenas para 33,33% da amostra de cursos; uma correspondência parcial (2 siglas) para 44,44% dos cursos e, finalmente, 22,22% apresentaram uma correspondência mínima (1 sigla). A análise de variância mostrou que aqueles que apresentaram maiores níveis de satisfação profissional obtiveram médias mais altas nas escalas de habilidades realistas, empreendedoras e sociais, mas não foram evidenciadas diferenças significativas entre as pontuações nas escalas de habilidades. Em relação ao sexo, as mulheres apresentam médias mais altas nas tipologias artística e social, enquanto os homens se destacam nas tipologias realista e investigativa.",
-      "keywords_es": ["Interés", "habilidad", "orientación profesional", "enseñanza superior", "teoría RIASEC"],
-      "keywords_en": ["Interests", "ability", "career choice", "adult education", "RIASEC theory"],
-      "keywords_pt": ["interesse", "habilidade", "orientação profissional", "ensino superior", "teoria RIASEC"],
-      "citation": "Alfaro Barquero, A., & Chinchilla Brenes, S. (2025). Carreras STEM y su asociación con las tipologías RIASEC de Holland. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.8119"
-    },
-    {
-      "id": 4,
-      "title": "Competencias previas en estudiantes de cálculo diferencial. Análisis de un caso de estudio en la Universidad Técnica Nacional de Costa Rica",
-      "title_en": "Background knowledge required for differential calculus. A case study at the National Technical University of Costa Rica",
-      "volume": 26,
-      "number": 1,
-      "language": "es",
-      "published": "2025-08-01",
-      "authors": [
-        {
-          "name": "Tonny Andrey Garita Araya",
-          "email": "tonny.garita.araya@una.cr",
-          "university": "Universidad Nacional de Costa Rica",
-          "location": "Heredia, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-8994-478X"
-        },
-        {
-          "name": "Yeison Arley Ramírez Vanegas",
-          "email": "yeison.ramirez@udea.edu.co",
-          "university": "Universidad de Antioquia",
-          "location": "Medellín, Colombia",
-          "orcid": "https://orcid.org/0000-0001-6083-9163"
-        }
-      ],
-      "category": "Investigación",
-      "slug": "Articulos/V26/N1_2025/Garita",
-      "pdf": "/Articulos/V26/N1_2025/Garita/RevistaDigital_V26_n1_2025_Garita.pdf",
-      "doi": "https://doi.org/10.18845/rdmei.v26i1.8121",
-      "received": "16 de enero de 2025",
-      "accepted": "1 de mayo de 2025",
-      "abstract_es": "Este artículo muestra que, a pesar de las variantes en las pruebas estandarizadas de matemática al concluir la educación secundaria, el desempeño de los estudiantes a lo largo de los años sigue siendo bajo. También expone datos sobre el rendimiento de los estudiantes en el curso de Cálculo en las universidades públicas de Costa Rica. El estudio se enfoca en examinar la relación entre el currículo oficial del Ministerio de Educación Pública y las competencias matemáticas que los estudiantes adquieren para ingresar a la educación superior, con énfasis en la preparación para el cálculo diferencial. Para ello, se presentan los resultados de una prueba diagnóstica que evaluó el rendimiento de los estudiantes en: la determinación de la imagen de una función, el análisis de gráficas, la resolución de ecuaciones y de problemas de aplicación. Estos temas, abordados en secundaria, son fundamentales para la comprensión de conceptos clave del cálculo diferencial, como la interpretación de la derivada y sus aplicaciones. La investigación se realizó con una muestra de 23 estudiantes y evidenció dificultades significativas en la comprensión de conceptos básicos, como el cálculo de la pendiente de una recta a partir de dos puntos, así como en la ejecución de procedimientos algebraicos elementales para resolver ecuaciones. A partir de estos resultados, se compara la propuesta del programa de estudio de matemática para secundaria con el desempeño de los estudiantes, identificando posibles barreras que afectan el aprendizaje del cálculo diferencial.",
-      "abstract_en": "This article shows that, despite variations in standardized mathematics tests at the end of high school, student performance over the years remains low. It also presents data on student performance in the Calculus course at public universities in Costa Rica. The study focuses on examining the relationship between the official curriculum of the Ministry of Public Education and the mathematical competencies that students acquire to enter higher education, with emphasis on preparation for differential calculus. To this end, we present the results of a diagnostic test that evaluated students’ performance in: determining the image of a function, analyzing graphs, solving equations and application problems. These topics, addressed in high school, are fundamental for the understanding of key concepts of differential calculus, such as the interpretation of the derivative and its applications. The research was carried out with a sample of 23 students and revealed significant difficulties in the understanding of basic concepts, such as the calculation of the slope of a line from two points, as well as in the execution of elementary algebraic procedures to solve equations. Based on these results, the proposal of the mathematics program of study for secondary school is compared with the performance of the students, identifying possible barriers that affect the learning of differential calculus.",
-      "abstract_pt": "Este artigo mostra que, apesar das variações nas provas padronizadas de matemática ao concluir o ensino secundário, o desempenho dos estudantes ao longo dos anos continua sendo baixo. Também apresenta dados sobre o rendimento dos estudantes no curso de Cálculo nas universidades públicas da Costa Rica. O estudo foca na análise da relação entre o currículo oficial do Ministério da Educação Pública e as competências matemáticas que os estudantes adquirem para ingressar no ensino superior, com ênfase na preparação para o cálculo diferencial. Para isso, são apresentados os resultados de uma prova diagnóstica que avaliou o desempenho dos estudantes em: determinação da imagem de uma função, análise de gráficos, resolução de equações e de problemas de aplicação. Esses temas, abordados no ensino secundário, são fundamentais para a compreensão de conceitos-chave do cálculo diferencial, como a interpretação da derivada e suas aplicações. A pesquisa foi realizada com uma amostra de 23 estudantes e evidenciou dificuldades significativas na compreensão de conceitos básicos, como o cálculo da inclinação de uma reta a partir de dois pontos, assim como na execução de procedimentos algébricos elementares para resolver equações. A partir desses resultados, compara-se a proposta do programa de estudos de matemática para o ensino secundário com o desempenho dos estudantes, identificando possíveis barreiras que afetam a aprendizagem do cálculo diferencial.",
-      "keywords_es": ["Cálculo diferencial", "prueba diagnóstica", "educación secundaria"],
-      "keywords_en": ["Differential calculus", "diagnostic test", "high school education"],
-      "keywords_pt": ["Cálculo diferencial", "prova diagnóstica", "ensino secundário"],
-      "citation": "Garita Araya, T. A., & Ramírez Vanegas, Y. A. (2025). Competencias previas en estudiantes de cálculo diferencial. Análisis de un caso de estudio en la Universidad Técnica Nacional de Costa Rica. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.8121"
-    },
-    {
-      "id": 5,
       "title": "Errores y dificultades frecuentes al aplicar las técnicas de conteo",
       "title_en": "Frequent errors and difficulties in applying counting techniques",
       "volume": 26,
@@ -178,7 +26,6 @@
           "location": "Anzoátegui, Venezuela"
         }
       ],
-      "category": "Investigación",
       "slug": "Articulos/V26/N1_2025/Centeno",
       "pdf": "/Articulos/V26/N1_2025/Centeno/RevistaDigital_V26_n1_2025_Centeno.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v26i1.7876",
@@ -187,13 +34,28 @@
       "abstract_es": "La investigación se centró en identificar los errores y dificultades más frecuentes que presentan los estudiantes de Estadística I en la Universidad de Oriente, Núcleo de Anzoátegui, al aplicar técnicas de conteo, particularmente en la resolución de problemas de combinaciones y permutaciones. Los resultados evidenciaron que la mayor dificultad surge en relación con el entorno ambiental en el que se desarrollan las clases expositivas. Con el fin de reducir dichas dificultades, se implementaron estrategias de aprendizaje basadas en el enfoque cooperativo. Se concluye que los estudiantes requieren asumir una visión cooperativa del proceso de aprendizaje, aplicando estrategias como la reflexión consciente sobre el propósito u objeto de estudio y la conexión de los conocimientos previos con los nuevos contenidos.",
       "abstract_en": "The frequent errors and difficulties presented by Statistics I students at UDO Anzoátegui, when applying counting techniques, are found, for the most part, when solving combination and permutation problems. In this research, it was evident that the greatest difficulty is presented to the student in the environmental environment for the development of expository classes. Learning strategies were selected under cooperative learning, aimed at reducing possible errors and difficulties that students encounter in the application of counting techniques. It was concluded that students must manage a cooperative vision of the learning process and implement strategies, such as: conscious reflection on the purpose or object of study, connecting new knowledge and that already learned, organizing information and applying study techniques.",
       "abstract_pt": "A pesquisa centrou-se em identificar os erros e dificuldades mais frequentes apresentados pelos estudantes de Estatística I da Universidade de Oriente, Núcleo de Anzoátegui, ao aplicar técnicas de contagem, particularmente na resolução de problemas de combinações e permutações. Os resultados evidenciaram que a maior dificuldade surge em relação ao ambiente em que se desenvolvem as aulas expositivas. Com o objetivo de reduzir essas dificuldades, foram implementadas estratégias de aprendizagem baseadas na abordagem cooperativa. Conclui-se que os estudantes precisam assumir uma visão cooperativa do processo de aprendizagem, aplicando estratégias como a reflexão consciente sobre o propósito ou objeto de estudo e a conexão dos conhecimentos prévios com os novos conteúdos.",
-      "keywords_es": ["errores", "dificultades", "cooperativismo", "estrategias de aprendizaje"],
-      "keywords_en": ["errors", "difficulties", "cooperativism", "learning strategies"],
-      "keywords_pt": ["erros", "dificuldades", "cooperativismo", "estratégias de aprendizagem"],
+      "keywords_es": [
+        "errores",
+        "dificultades",
+        "cooperativismo",
+        "estrategias de aprendizaje"
+      ],
+      "keywords_en": [
+        "errors",
+        "difficulties",
+        "cooperativism",
+        "learning strategies"
+      ],
+      "keywords_pt": [
+        "erros",
+        "dificuldades",
+        "cooperativismo",
+        "estratégias de aprendizagem"
+      ],
       "citation": "Centeno Romero, M. V., & González Rodríguez, M. (2025). Errores y dificultades frecuentes al aplicar las técnicas de conteo. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7876"
     },
     {
-      "id": 6,
+      "id": 2,
       "title": "Estudio de la “ansiedad matemática” en estudiantes del curso de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología y del curso de Matemática General del Tecnológico de Costa Rica en el I Cuatrimestre de 2023",
       "title_en": "Study of “Mathematical Anxiety” in Students of the Precalculus Course at the Latin American University of Science and Technology and the General Mathematics Course at the Costa Rica Institute of Technology in the First Quarter of 2023",
       "title_pt": "Estudo da “ansiedade matemática” em estudantes da disciplina de Pré-Cálculo da Universidade Latino-americana de Ciência e Tecnologia e da disciplina de Matemática Geral do Instituto Tecnológico da Costa Rica no I Trimestre do ano 2023",
@@ -224,7 +86,6 @@
           "orcid": "https://orcid.org/0000-0002-9007-9322"
         }
       ],
-      "category": "Investigación",
       "slug": "Articulos/V26/N1_2025/Castro",
       "pdf": "/Articulos/V26/N1_2025/Castro/RevistaDigital_V26_n1_2025_Castro.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v26i1.7877",
@@ -233,13 +94,199 @@
       "abstract_es": "La ansiedad matemática es un fenómeno común que afecta negativamente el rendimiento académico de los estudiantes. Este estudio tuvo como objetivo principal evaluar el nivel de ansiedad matemática en estudiantes de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología (ULACIT) y Matemática General del Tecnológico de Costa Rica (TEC) durante el primer período del 2023. Además, se buscó determinar si existen diferencias en el nivel de ansiedad por sexo y centro educativo. La investigación fue de tipo cuantitativa descriptiva. La muestra estuvo compuesta por 905 estudiantes matriculados en los cursos mencionados, a quienes se les aplicó un cuestionario validado para medir la ansiedad matemática. Los resultados revelan que 19.01% exhibe altos niveles de ansiedad y las mujeres presentan un mayor nivel de ansiedad matemática en comparación con los hombres. Además, no se detectaron diferencias en el nivel de ansiedad matemática según el centro educativo.",
       "abstract_en": "Mathematics anxiety is a common phenomenon that negatively affects students’ academic performance. The main objective of this study was to evaluate the level of mathematical anxiety in Precalculus students of the Universidad Latinoamericana de Ciencia y Tecnología (ULACIT) and General Mathematics students of the Costa Rica Institute of Technology (TEC) during the first period of 2023. In addition, we sought to determine if there are differences in the level of anxiety by sex and educational center. The research was of a descriptive quantitative type. The sample consisted of 905 students enrolled in the aforementioned courses, who were administered a validated questionnaire to measure mathematics anxiety. Student’s t-test was used to analyze differences by sex and educational center. The results reveal that 19.01% exhibit high levels of anxiety and women present a higher level of mathematical anxiety compared to men. In addition, no differences were detected in the level of mathematical anxiety according to educational center.",
       "abstract_pt": "A ansiedade matemática é um fenômeno comum que afeta negativamente o desempenho acadêmico dos estudantes. Este estudo teve como objetivo principal avaliar o nível de ansiedade matemática em estudantes de Pré-Cálculo da Universidade Latino-americana de Ciência e Tecnologia (ULACIT) e de Matemática Geral do Instituto Tecnológico da Costa Rica (TEC) durante o primeiro trimestre do ano 2023. Além disso, buscou-se determinar se existem diferenças no nível de ansiedade por sexo e instituição de ensino. A pesquisa foi do tipo quantitativa descritiva. A amostra foi composta por 905 estudantes matriculados nas disciplinas indicadas, aos quais foi aplicado um questionário validado para medir a ansiedade matemática. Utilizou-se o teste t de Student para analisar as diferenças por sexo e instituição de ensino. Os resultados revelam que 19,01% dos estudantes apresentam altos níveis de ansiedade, e as mulheres mostram um nível maior de ansiedade matemática em comparação com os homens. Além disso, não foram detectadas diferenças no nível de ansiedade matemática de acordo com a instituição de ensino.",
-      "keywords_es": ["ansiedad matemática", "matemática educativa", "precálculo", "matemática general", "t de Student"],
-      "keywords_en": ["mathematics anxiety", "educational mathematics", "precalculus", "general mathematics", "student t-test"],
-      "keywords_pt": ["ansiedade matemática", "educação matemática", "pré-cálculo", "matemática geral", "teste t de Student"],
+      "keywords_es": [
+        "ansiedad matemática",
+        "matemática educativa",
+        "precálculo",
+        "matemática general",
+        "t de Student"
+      ],
+      "keywords_en": [
+        "mathematics anxiety",
+        "educational mathematics",
+        "precalculus",
+        "general mathematics",
+        "student t-test"
+      ],
+      "keywords_pt": [
+        "ansiedade matemática",
+        "educação matemática",
+        "pré-cálculo",
+        "matemática geral",
+        "teste t de Student"
+      ],
       "citation": "Castro Méndez, D., Agüero Calvo, E., & Alfaro Brenes, J. (2025). Estudio de la “ansiedad matemática” en estudiantes del curso de Precálculo de la Universidad Latinoamericana de Ciencia y Tecnología y del curso de Matemática General del Tecnológico de Costa Rica en el I Cuatrimestre de 2023. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7877"
     },
     {
-      "id": 7,
+      "id": 3,
+      "title": "Análisis de errores algebraicos que manifiestan docentes en formación de la carrera de Enseñanza de la Matemática en la Universidad Nacional de Costa Rica",
+      "title_en": "Analysis of algebraic errors displayed by mathematics teacher trainees in the mathematics education program at the National University of Costa Rica",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Emanuelle Parra Rodríguez",
+          "email": "emaparra@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9508-2664"
+        },
+        {
+          "name": "Marianela Alpízar Vargas",
+          "email": "marianela.alpizar.vargas@una.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-3515-1971"
+        },
+        {
+          "name": "Miguel Picado Alfaro",
+          "email": "miguel.picado.alfaro@una.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-7574-0797"
+        }
+      ],
+      "slug": "Articulos/V26/N1_2025/Parra",
+      "pdf": "/Articulos/V26/N1_2025/Parra/RevistaDigital_V26_n1_2025_Parra.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.7964",
+      "received": "10 de marzo de 2024",
+      "accepted": "20 de marzo de 2025",
+      "abstract_es": "En este estudio se presentan resultados provenientes de un análisis cualitativo donde se describen y clasifican errores algebraicos que cometen estudiantes en formación inicial en enseñanza de la matemática cuando ingresan al curso MAC400 Matemática fundamental de la carrera Bachillerato y Licenciatura en la Enseñanza de la Matemática de la Universidad Nacional de Costa Rica, en un test diagnóstico. Se seleccionó una muestra de 24 estudiantes informantes extraída de tres grupos. Los contenidos de la prueba corresponden al álgebra básica, que constituye el área de enfoque del curso. El estudio reveló que los estudiantes ingresan con deficiencias sobre conocimientos algebraicos básicos, donde destacan errores asociados con el desarrollo de algoritmos o reglas inválidas para efectuar sumas y productos entre polinomios, que acarrean en otro tipo de operaciones con expresiones algebraicas.",
+      "abstract_en": "This study presents the results of a qualitative analysis describing and classifying algebraic errors made by pre-service mathematics teachers during their initial training when entering the MAC400 Fundamental Mathematics course in the Bachelor’s and Licentiate Degree Program in Mathematics Teaching at the National University of Costa Rica, based on a diagnostic test. A sample of 24 informant students was selected from three groups. The test contents correspond to basic algebra, which is the focus area of the course. The study revealed that students enter the course with deficiencies in basic algebraic knowledge, particularly errors related to the development of invalid algorithms or rules for performing additions and multiplications of polynomials, which subsequently lead to errors in other operations with algebraic expressions.",
+      "abstract_pt": "Neste estudo, são apresentados resultados provenientes de uma análise qualitativa na qual são descritos e classificados erros algébricos cometidos por estudantes em formação inicial em ensino da matemática ao ingressarem na disciplina MAC400 Matemática Fundamental da carreira de Bacharelado e Licenciatura em Ensino da Matemática da Universidade Nacional da Costa Rica, em um teste diagnóstico. Foi selecionada uma amostra de 24 estudantes informantes extraída de três grupos. Os conteúdos da prova correspondem à álgebra básica, que constitui a área de enfoque do curso. O estudo revelou que os estudantes ingressam com deficiências nos conhecimentos algébricos básicos, destacando-se erros associados ao desenvolvimento de algoritmos ou regras inválidas para realizar somas e produtos entre polinômios, o que afeta outros tipos de operações com expressões algébricas.",
+      "keywords_es": [
+        "errores algebraicos",
+        "educación matemática",
+        "docentes en formación",
+        "álgebra básica",
+        "dificultades en la comprensión"
+      ],
+      "keywords_en": [
+        "algebraic errors",
+        "mathematics education",
+        "pre-service teachers",
+        "basic algebra",
+        "comprehension difficulties"
+      ],
+      "keywords_pt": [
+        "erros algébricos",
+        "educação matemática",
+        "docentes em formação",
+        "álgebra básica",
+        "dificuldades na compreensão"
+      ],
+      "citation": "Parra Rodríguez, E., Alpízar Vargas, M., & Picado Alfaro, M. (2025). Análisis de errores algebraicos que manifiestan docentes en formación de la carrera de Enseñanza de la Matemática en la Universidad Nacional de Costa Rica. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7964"
+    },
+    {
+      "id": 4,
+      "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
+      "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Alejandra Alfaro-Barquero",
+          "email": "alealfaro@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-8901-7129"
+        },
+        {
+          "name": "Sonia Chinchilla-Brenes",
+          "email": "schinchilla@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-1100-2568"
+        }
+      ],
+      "slug": "Articulos/V26/N1_2025/Alfaro",
+      "pdf": "/Articulos/V26/N1_2025/Alfaro/RevistaDigital_V26_n1_2025_Alfaro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.8119",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "Este proyecto buscó evaluar el modelo de la teoría RIASEC de Holland, su aplicabilidad en la clasificación de carreras STEM del Instituto Tecnológico de Costa Rica, así como analizar diferencias en las puntuaciones de las escalas de actividades y habilidades del Self Directed-Search (versión en español) según sexo y nivel de satisfacción vocacional, en una muestra de 581 estudiantes de 18 carreras, con una media de edad de 20.29 años (DE=3.33), 40.62% mujeres y 59.38% hombres. Mediante modelos factoriales confirmatorios se evidenció la presencia de las 6 tipologías de la teoría RIASEC. En relación con la clasificación de carreras según los códigos de triadas del explorador de carreras y ocupaciones de Holland et al. (2005c), se obtuvo una coincidencia total (3 siglas) solo para el 33.33% de la muestra de carreras; una coincidencia parcial (2 siglas) para el 44.44% de las carreras y finalmente, 22.22% mostró una coincidencia mínima (1 sigla). El análisis de varianza evidenció que quienes mostraron mayores niveles de satisfacción vocacional, obtuvieron promedios más altos en las escalas de habilidades realista, emprendedora y social, pero no se evidenciaron diferencias significativas entre los puntajes de las escalas de habilidades. En relación con el sexo, las mujeres muestran promedios mayores en las tipologías artística y social y los hombres en la realista e investigativa.",
+      "abstract_en": "This project sought to evaluate Holland's RIASEC theory model, its applicability in the classification of STEM careers at the Costa Rica Institute of Technology, as well as analyze differences in the scores of the activities and skills scales of the Self Directed-Search (Spanish version) according to sex and level of vocational satisfaction, in a sample of 581 students from 18 majors, with an average age of 20.29 (SD=3.33), 40.62% women and 59.38% men. Through confirmatory factor models, the presence of the 6 typologies of the RIASEC theory was evidenced. Regarding the classification of careers according to the triad codes of the career and occupation explorer of Holland et al. (2005c), a complete match (3 acronyms) was obtained for only 33.33% of the courses; a partial match (2 acronyms) for 44.44% of the courses and finally, 22.22% showed a minimal match (1 acronym). The analysis of variance showed that those with higher levels of vocational satisfaction obtained higher averages in the realistic, entrepreneurial, and social skills scales, but no significant differences were found between the skills scores. Regarding sex, women show higher averages in the artistic and social typologies, and men in the realistic and investigative typologies.",
+      "abstract_pt": "Neste projeto buscou-se avaliar o modelo teórico RIASEC de Holland, sua aplicabilidade na classificação de cursos STEM no Instituto Tecnológico da Costa Rica, assim como analisar diferenças nas pontuações das escalas de atividades e habilidades do Self-Directed-Search (versão em espanhol) segundo o sexo e nível de satisfação profissional, em uma amostra de 581 estudantes de 18 cursos, com idade média de 20,29 anos (DP = 3,33), 40,62% mulheres e 59,38% homens. Por meio de modelos de fatores confirmatórios, evidenciou-se a presença das 6 tipologias da teoria RIASEC. Referente à classificação de cursos segundo os códigos da tríade do explorador de cursos e ocupações de Holland et al. (2005c), foi obtida uma correspondência total (3 siglas) apenas para 33,33% da amostra de cursos; uma correspondência parcial (2 siglas) para 44,44% dos cursos e, finalmente, 22,22% apresentaram uma correspondência mínima (1 sigla). A análise de variância mostrou que aqueles que apresentaram maiores níveis de satisfação profissional obtiveram médias mais altas nas escalas de habilidades realistas, empreendedoras e sociais, mas não foram evidenciadas diferenças significativas entre as pontuações nas escalas de habilidades. Em relação ao sexo, as mulheres apresentam médias mais altas nas tipologias artística e social, enquanto os homens se destacam nas tipologias realista e investigativa.",
+      "keywords_es": [
+        "Interés",
+        "habilidad",
+        "orientación profesional",
+        "enseñanza superior",
+        "teoría RIASEC"
+      ],
+      "keywords_en": [
+        "Interests",
+        "ability",
+        "career choice",
+        "adult education",
+        "RIASEC theory"
+      ],
+      "keywords_pt": [
+        "interesse",
+        "habilidade",
+        "orientação profissional",
+        "ensino superior",
+        "teoria RIASEC"
+      ],
+      "citation": "Alfaro Barquero, A., & Chinchilla Brenes, S. (2025). Carreras STEM y su asociación con las tipologías RIASEC de Holland. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.8119"
+    },
+    {
+      "id": 5,
+      "title": "Aprendizaje Matemático en secundaria: Un análisis diagnóstico para la transición hacia Cálculo Diferencial",
+      "title_en": "Background knowledge required for differential calculus. A case study at the National Technical University of Costa Rica",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Tonny Andrey Garita Araya",
+          "email": "tonny.garita.araya@una.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-8994-478X"
+        },
+        {
+          "name": "Yeison Arley Ramírez Vanegas",
+          "email": "yeison.ramirez@udea.edu.co",
+          "university": "Universidad de Antioquia",
+          "location": "Medellín, Colombia",
+          "orcid": "https://orcid.org/0000-0001-6083-9163"
+        }
+      ],
+      "category": "Investigación",
+      "slug": "Articulos/V26/N1_2025/Garita",
+      "pdf": "/Articulos/V26/N1_2025/Garita/RevistaDigital_V26_n1_2025_Garita.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.8121",
+      "received": "16 de enero de 2025",
+      "accepted": "1 de mayo de 2025",
+      "abstract_es": "Este artículo muestra que, a pesar de las variantes en las pruebas estandarizadas de matemática al concluir la educación secundaria, el desempeño de los estudiantes a lo largo de los años sigue siendo bajo. También expone datos sobre el rendimiento de los estudiantes en el curso de Cálculo en las universidades públicas de Costa Rica. El estudio se enfoca en examinar la relación entre el currículo oficial del Ministerio de Educación Pública y las competencias matemáticas que los estudiantes adquieren para ingresar a la educación superior, con énfasis en la preparación para el cálculo diferencial. Para ello, se presentan los resultados de una prueba diagnóstica que evaluó el rendimiento de los estudiantes en: la determinación de la imagen de una función, el análisis de gráficas, la resolución de ecuaciones y de problemas de aplicación. Estos temas, abordados en secundaria, son fundamentales para la comprensión de conceptos clave del cálculo diferencial, como la interpretación de la derivada y sus aplicaciones. La investigación se realizó con una muestra de 23 estudiantes y evidenció dificultades significativas en la comprensión de conceptos básicos, como el cálculo de la pendiente de una recta a partir de dos puntos, así como en la ejecución de procedimientos algebraicos elementales para resolver ecuaciones. A partir de estos resultados, se compara la propuesta del programa de estudio de matemática para secundaria con el desempeño de los estudiantes, identificando posibles barreras que afectan el aprendizaje del cálculo diferencial.",
+      "abstract_en": "This article shows that, despite variations in standardized mathematics tests at the end of high school, student performance over the years remains low. It also presents data on student performance in the Calculus course at public universities in Costa Rica. The study focuses on examining the relationship between the official curriculum of the Ministry of Public Education and the mathematical competencies that students acquire to enter higher education, with emphasis on preparation for differential calculus. To this end, we present the results of a diagnostic test that evaluated students’ performance in: determining the image of a function, analyzing graphs, solving equations and application problems. These topics, addressed in high school, are fundamental for the understanding of key concepts of differential calculus, such as the interpretation of the derivative and its applications. The research was carried out with a sample of 23 students and revealed significant difficulties in the understanding of basic concepts, such as the calculation of the slope of a line from two points, as well as in the execution of elementary algebraic procedures to solve equations. Based on these results, the proposal of the mathematics program of study for secondary school is compared with the performance of the students, identifying possible barriers that affect the learning of differential calculus.",
+      "abstract_pt": "Este artigo mostra que, apesar das variações nas provas padronizadas de matemática ao concluir o ensino secundário, o desempenho dos estudantes ao longo dos anos continua sendo baixo. Também apresenta dados sobre o rendimento dos estudantes no curso de Cálculo nas universidades públicas da Costa Rica. O estudo foca na análise da relação entre o currículo oficial do Ministério da Educação Pública e as competências matemáticas que os estudantes adquirem para ingressar no ensino superior, com ênfase na preparação para o cálculo diferencial. Para isso, são apresentados os resultados de uma prova diagnóstica que avaliou o desempenho dos estudantes em: determinação da imagem de uma função, análise de gráficos, resolução de equações e de problemas de aplicação. Esses temas, abordados no ensino secundário, são fundamentais para a compreensão de conceitos-chave do cálculo diferencial, como a interpretação da derivada e suas aplicações. A pesquisa foi realizada com uma amostra de 23 estudantes e evidenciou dificuldades significativas na compreensão de conceitos básicos, como o cálculo da inclinação de uma reta a partir de dois pontos, assim como na execução de procedimentos algébricos elementares para resolver equações. A partir desses resultados, compara-se a proposta do programa de estudos de matemática para o ensino secundário com o desempenho dos estudantes, identificando possíveis barreiras que afetam a aprendizagem do cálculo diferencial.",
+      "keywords_es": [
+        "Cálculo diferencial",
+        "prueba diagnóstica",
+        "educación secundaria"
+      ],
+      "keywords_en": [
+        "Differential calculus",
+        "diagnostic test",
+        "high school education"
+      ],
+      "keywords_pt": [
+        "Cálculo diferencial",
+        "prova diagnóstica",
+        "ensino secundário"
+      ],
+      "citation": "Garita Araya, T. A., & Ramírez Vanegas, Y. A. (2025). Competencias previas en estudiantes de cálculo diferencial. Análisis de un caso de estudio en la Universidad Técnica Nacional de Costa Rica. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.8121"
+    },
+
+    {
+      "id": 6,
       "title": "Explorando la simulación estadística por medio del juego Pickleball",
       "title_en": "Exploring Statistical Simulation through the Game of Pickleball",
       "volume": 26,
@@ -262,7 +309,7 @@
           "orcid": "https://orcid.org/0000-0002-5585-8739"
         }
       ],
-      "category": "Didáctica",
+      "category": "Didáctica y software",
       "slug": "Articulos/V26/N1_2025/Oviedo",
       "pdf": "/Articulos/V26/N1_2025/Oviedo/RevistaDigital_V26_n1_2025_Oviedo.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v26i1.7950",
@@ -271,86 +318,162 @@
       "abstract_es": "En este documento se presenta un ejemplo práctico para la inicialización y exploración de la simulación estadística. Se realiza la simulación del juego Pickleball para la modalidad individual o \"singles\". La simulación se realiza con el lenguaje de programación R, en donde se simulan puntos y juegos completos y se aplica el enfoque de Monte Carlo para determinar la probabilidad de que un jugador gane un juego completo. Finalmente, se estima el número de puntos promedio que se deben jugar para concluir un set completo, esto en función de las habilidades (probabilidades) de los jugadores. El objetivo es ofrecer un caso práctico que facilite la comprensión y aplicación de la simulación estadística, demostrando cómo se pueden modelar y analizar eventos deportivos mediante métodos probabilísticos.",
       "abstract_en": "This document presents a practical example for initializing and exploring statistical simulation. The simulation of the game Pickleball is carried out for \"singles\" mode. The simulation is done using the R programming language, where points and full games are simulated, and the Monte Carlo approach is applied to determine the probability of a player winning a complete game. Finally, the average number of points required to complete a full set is estimated, based on the players’ skills (probabilities). The goal is to provide a practical case that facilitates the understanding and application of statistical simulation, demonstrating how sporting events can be modeled and analyzed using probabilistic methods.",
       "abstract_pt": "Neste documento, apresenta-se um exemplo prático para a iniciação e exploração da simulação estatística. Realiza-se a simulação do jogo Pickleball na modalidade individual ou \"singles\". A simulação é feita com a linguagem de programação R, na qual são simulados pontos e jogos completos, aplicando-se a abordagem de Monte Carlo para determinar a probabilidade de um jogador vencer um jogo completo. Por fim, estima-se o número médio de pontos que devem ser disputados para concluir um set completo, com base nas habilidades (probabilidades) dos jogadores. O objetivo é oferecer um caso prático que facilite a compreensão e aplicação da simulação estatística, para mostrar como eventos esportivos podem ser modelados e analisados por meio de métodos probabilísticos.",
-      "keywords_es": ["simulación estadística", "Pickleball", "R", "Monte Carlo"],
-      "keywords_en": ["statistical simulation", "Pickleball", "R", "Monte Carlo"],
-      "keywords_pt": ["simulação estatística", "Pickleball", "R", "Monte Carlo"],
+      "keywords_es": [
+        "simulación estadística",
+        "Pickleball",
+        "R",
+        "Monte Carlo"
+      ],
+      "keywords_en": [
+        "statistical simulation",
+        "Pickleball",
+        "R",
+        "Monte Carlo"
+      ],
+      "keywords_pt": [
+        "simulação estatística",
+        "Pickleball",
+        "R",
+        "Monte Carlo"
+      ],
       "citation": "Oviedo Rodríguez, K., & Jiménez Oviedo, B. (2025). Explorando la simulación estadística por medio del juego Pickleball. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7950"
     },
     {
-    "id": 8,
-    "title": "Paul Erdős, el mago de las matemáticas",
-    "title_en": "Paul Erdős, the math wizard",
-    "volume": 26,
-    "number": 1,
-    "language": "pt",
-    "published": "2025-08-01",
-    "authors": [
-      {
-        "name": "Luis Andrés Badilla Céspedes",
-        "email": "luis.badilla.cespedes@una.ac.cr",
-        "university": "Universidad Nacional de Costa Rica",
-        "location": "Heredia, Costa Rica",
-        "orcid": "https://orcid.org/0009-0000-0921-5807"
-      },
-      {
-        "name": "Wágner Badilla-Céspedes",
-        "email": "wagner@matmor.unam.mx",
-        "university": "Centro de Ciencias Matemáticas, UNAM, Campus Morelia",
-        "location": "Morelia, México",
-        "orcid": "https://orcid.org/0000-0001-7839-2559"
-      }
-    ],
-    "category": "Divulgación",
-    "slug": "Articulos/V26/N1_2025/Badilla",
-    "pdf": "/Articulos/V26/N1_2025/Badilla/RevistaDigital_V26_n1_2025_Badilla.pdf",
-    "doi": "https://doi.org/10.18845/rdmei.v26i1.7953",
-    "received": "29 de mayo de 2024",
-    "accepted": "10 de marzo de 2025",
-    "abstract_es": "En estas notas describimos ciertos aspectos relevantes sobre la vida de Paul Erdős. Mencionamos algunas de sus distinciones y premios, así como aportaciones matemáticas. Finalmente, damos una descripción histórica del teorema de los números primos.",
-    "abstract_en": "In these notes we describe certain relevant aspects about the life of Paul Erdős. We mention some of his honors and awards, as well as his mathematical contributions. Finally, we give a historical description of the prime number theorem.",
-    "abstract_pt": "Nesta nota, descrevemos alguns aspectos relevantes da vida de Paul Erdős. Mencionamos algumas de suas distinções e prêmios, bem como as suas contribuições matemáticas. Por fim, apresentamos uma descrição histórica do teorema dos números primos.",
-    "keywords_es": ["Paul Erdős", "teorema de los números primos", "teoría de números", "variable compleja"],
-    "keywords_en": ["Paul Erdős", "prime number theorem", "number theory", "complex variable"],
-    "keywords_pt": ["Paul Erdős", "teorema dos números primos", "teoria dos números", "variável complexa"],
-    "citation": "Badilla Céspedes, L., & Badilla Céspedes, W. (2025). Paul Erdős, el mago de las matemáticas. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7953"
-  },
-  {
-    "id": 9,
-    "title": "¿Qué es GeoGebra Discovery? Una ilustración",
-    "title_en": "What is GeoGebra Discovery? An illustration",
-    "volume": 26,
-    "number": 1,
-    "language": "es",
-    "published": "2025-08-01",
-    "authors": [
-      {
-        "name": "Saulo Mosquera López",
-        "email": "samolo@udenar.edu.co",
-        "university": "Grupo de investigación GESCAS, Universidad de Nariño",
-        "location": "Nariño, Colombia",
-        "orcid": "https://orcid.org/0000-0002-3585-0139"
-      },
-      {
-        "name": "Sergio Gómez Noguera",
-        "email": "sgomez1987@gmail.com",
-        "university": "Dpto de Matemáticas y Estadística, Universidad de Nariño",
-        "location": "Nariño, Colombia",
-        "orcid": "https://orcid.org/0000-0003-3921-4860"
-      }
-    ],
-    "category": "Divulgación",
-    "slug": "Articulos/V26/N1_2025/Mosquera",
-    "pdf": "/Articulos/V26/N1_2025/Mosquera/RevistaDigital_V26_n1_2025_Mosquera.pdf",
-    "doi": "https://doi.org/10.18845/rdmei.v26i1.7981",
-    "received": "30 de enero de 2025",
-    "accepted": "30 de abril de 2025",
-    "abstract_es": "GeoGebra es un software de matemáticas dinámicas que, entre otros, permite la construcción de objetos geométricos, que pueden manipularse a través del arrastre y así observar los cambios que experimenta la construcción y las relaciones que permanecen constantes en la misma. En los últimos años se ha incorporado a GeoGebra una versión experimental llamada GeoGebra Discovery, que consiste en una colección de herramientas y comandos, que posibilitan la verificación matemática rigurosa y el descubrimiento automático de proposiciones sobre figuras geométricas, es decir, GeoGebra Discovery es una versión de GeoGebra que complementa, mejora y amplía determinadas herramientas de razonamiento automático que están en la versión estándar. El objetivo de este documento es el de describir algunas de estas herramientas e ilustrar su uso con ejemplos que permitan al usuario visualizar e interpretar resultados de geometría plana obtenidos en las construcciones desarrolladas.",
-    "abstract_en": "GeoGebra is a dynamic mathematics software that, among other things, allows the construction of geometric objects, which can be manipulated by dragging and thus observing the changes that the construction undergoes and the relationships that remain constant in it. In recent years, an experimental version called GeoGebra Discovery has been incorporated into GeoGebra. This version consists of a collection of tools and commands that enable rigorous mathematical verification and the automatic discovery of propositions about geometric figures. In other words, GeoGebra Discovery is a version of GeoGebra that complements, improves and extends certain automatic reasoning tools that are in the standard version. The objective of this document is to describe some of these tools and illustrate their use with examples that allow the user to visualize and interpret plane geometry results obtained in the developed constructions.",
-    "abstract_pt": "GeoGebra é um software de matemática dinâmico que, entre outras coisas, entre outros, permite a construção de objetos geométricos. Esses objetos podem ser manipulados por meio de arrastar e soltar, permitindo ao usuário observar as mudanças que ocorrem na construção e as relações que permanecem constantes na mesma. Nos últimos anos, uma versão experimental chamada GeoGebra Discovery foi incorporada ao GeoGebra. Esta versão consiste em uma coleção de ferramentas e comandos que permitem uma verificação matemática rigorosa e a descoberta automática de proposições sobre figuras geométricas. Em outras palavras, o GeoGebra Discovery é uma versão do GeoGebra que complementa, melhora e estende certas ferramentas de raciocínio automático que estão na versão padrão. O objetivo deste documento é descrever algumas dessas ferramentas e ilustrar sua utilização com exemplos que permitam ao usuário visualizar e interpretar resultados de geometria plana obtidos nas construções desenvolvidas.",
-    "keywords_es": ["GeoGebra Discovery", "construcciones geométricas", "demostración automática", "descubrimiento"],
-    "keywords_en": ["GeoGebra Discovery", "geometric constructions", "automatic demonstration", "discovery"],
-    "keywords_pt": ["GeoGebra Discovery", "construções geométricas", "prova automática", "descoberta"],
-    "citation": "Mosquera López, S., & Gómez Noguera, S. (2025). ¿Qué es GeoGebra Discovery? Una ilustración. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7981"
-  }
+      "id": 7,
+      "title": "Animaciones en LaTeX para la enseñanza del Movimiento Armónico Simple",
+      "title_en": "Animations in LaTeX for teaching Simple Harmonic Motion",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Carlos A. Jiménez Carballo",
+          "email": "carjimenez@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-9934-5088"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V26/N1_2025/Jimenez",
+      "pdf": "/Articulos/V26/N1_2025/Jimenez/RevistaDigital_V26_n1_2025_Jimenez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.7952",
+      "received": "6 de octubre de 2024",
+      "accepted": "15 de abril de 2025",
+      "abstract_es": "El objetivo principal de este trabajo es demostrar detalladamente cómo emplear LaTeX para elaborar animaciones educativas vinculadas a los conceptos fundamentales de la física en general, centrándose específicamente en el estudio del Movimiento Armónico Simple (MAS). Específicamente, en este contexto, se presentan los paquetes TikZ y animate que se utilizan en el entorno de LaTeX para la creación de animaciones a partir de gráficos vectoriales. Posteriormente, se muestran detalladamente los códigos básicos necesarios para implementar cinco animaciones de una partícula unida a un resorte que describe un MAS. Las animaciones buscan facilitar la transición suave y comprensible entre las complejas ecuaciones matemáticas que describen un fenómeno físico y su representación visual, permitiendo así una mejor comprensión.",
+      "abstract_en": "This work aims to comprehensively illustrate the use of LaTeX for the creation of educational animations pertaining to the fundamental concepts of physics, with a specific focus on the study of Simple Harmonic Motion (SHM). In this context, we present the TikZ and animate packages, which the LaTeX environment uses to create animations from vector graphics. Subsequently, the basic codes necessary to implement five animations of a particle attached to a spring that describe simple harmonic motion are shown in detail. The animations aim to facilitate a smooth and understandable transition between the complex mathematical equations that describe a physical phenomenon and their visual representation, thereby allowing for better comprehension.",
+      "abstract_pt": "O principal objetivo deste trabalho é mostrar detalhadamente o uso do LaTeX para elaborar animações educativas vinculadas aos conceitos fundamentais da física em geral, focando especificamente no estudo do Movimento Harmônico Simples (MAS). Especificamente, neste contexto, são apresentados os pacotes TikZ e animate, que são implementados no ambiente LaTeX para a criação de animações a partir de gráficos vetoriais. Posteriormente, são mostrados detalhadamente os códigos básicos necessários para implementar cinco animações de uma partícula presa a uma mola que descreve um MAS. As animações buscam facilitar a transição suave e compreensível entre as complexas equações matemáticas que descrevem um fenômeno físico e sua representação visual, permitindo assim uma melhor compreensão.",
+      "keywords_es": ["MAS", "LaTeX", "animate", "TikZ", "animaciones"],
+      "keywords_en": ["SHM", "LaTeX", "animate", "TikZ", "animations"],
+      "keywords_pt": ["MAS", "LaTeX", "animate", "TikZ", "animações"],
+      "citation": "Jiménez Carballo, C. A. (2025). Animaciones en LaTeX para la enseñanza del Movimiento Armónico Simple. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7952"
+    },
+    {
+      "id": 8,
+      "title": "¿Qué es GeoGebra Discovery? Una ilustración",
+      "title_en": "What is GeoGebra Discovery? An illustration",
+      "volume": 26,
+      "number": 1,
+      "language": "es",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Saulo Mosquera López",
+          "email": "samolo@udenar.edu.co",
+          "university": "Grupo de investigación GESCAS, Universidad de Nariño",
+          "location": "Nariño, Colombia",
+          "orcid": "https://orcid.org/0000-0002-3585-0139"
+        },
+        {
+          "name": "Sergio Gómez Noguera",
+          "email": "sgomez1987@gmail.com",
+          "university": "Dpto de Matemáticas y Estadística, Universidad de Nariño",
+          "location": "Nariño, Colombia",
+          "orcid": "https://orcid.org/0000-0003-3921-4860"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V26/N1_2025/Mosquera",
+      "pdf": "/Articulos/V26/N1_2025/Mosquera/RevistaDigital_V26_n1_2025_Mosquera.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.7981",
+      "received": "30 de enero de 2025",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "GeoGebra es un software de matemáticas dinámicas que, entre otros, permite la construcción de objetos geométricos, que pueden manipularse a través del arrastre y así observar los cambios que experimenta la construcción y las relaciones que permanecen constantes en la misma. En los últimos años se ha incorporado a GeoGebra una versión experimental llamada GeoGebra Discovery, que consiste en una colección de herramientas y comandos, que posibilitan la verificación matemática rigurosa y el descubrimiento automático de proposiciones sobre figuras geométricas, es decir, GeoGebra Discovery es una versión de GeoGebra que complementa, mejora y amplía determinadas herramientas de razonamiento automático que están en la versión estándar. El objetivo de este documento es el de describir algunas de estas herramientas e ilustrar su uso con ejemplos que permitan al usuario visualizar e interpretar resultados de geometría plana obtenidos en las construcciones desarrolladas.",
+      "abstract_en": "GeoGebra is a dynamic mathematics software that, among other things, allows the construction of geometric objects, which can be manipulated by dragging and thus observing the changes that the construction undergoes and the relationships that remain constant in it. In recent years, an experimental version called GeoGebra Discovery has been incorporated into GeoGebra. This version consists of a collection of tools and commands that enable rigorous mathematical verification and the automatic discovery of propositions about geometric figures. In other words, GeoGebra Discovery is a version of GeoGebra that complements, improves and extends certain automatic reasoning tools that are in the standard version. The objective of this document is to describe some of these tools and illustrate their use with examples that allow the user to visualize and interpret plane geometry results obtained in the developed constructions.",
+      "abstract_pt": "GeoGebra é um software de matemática dinâmico que, entre outras coisas, entre outros, permite a construção de objetos geométricos. Esses objetos podem ser manipulados por meio de arrastar e soltar, permitindo ao usuário observar as mudanças que ocorrem na construção e as relações que permanecem constantes na mesma. Nos últimos anos, uma versão experimental chamada GeoGebra Discovery foi incorporada ao GeoGebra. Esta versão consiste em uma coleção de ferramentas e comandos que permitem uma verificação matemática rigorosa e a descoberta automática de proposições sobre figuras geométricas. Em outras palavras, o GeoGebra Discovery é uma versão do GeoGebra que complementa, melhora e estende certas ferramentas de raciocínio automático que estão na versão padrão. O objetivo deste documento é descrever algumas dessas ferramentas e ilustrar sua utilização com exemplos que permitam ao usuário visualizar e interpretar resultados de geometria plana obtidos nas construções desenvolvidas.",
+      "keywords_es": [
+        "GeoGebra Discovery",
+        "construcciones geométricas",
+        "demostración automática",
+        "descubrimiento"
+      ],
+      "keywords_en": [
+        "GeoGebra Discovery",
+        "geometric constructions",
+        "automatic demonstration",
+        "discovery"
+      ],
+      "keywords_pt": [
+        "GeoGebra Discovery",
+        "construções geométricas",
+        "prova automática",
+        "descoberta"
+      ],
+      "citation": "Mosquera López, S., & Gómez Noguera, S. (2025). ¿Qué es GeoGebra Discovery? Una ilustración. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7981"
+    },
+    {
+      "id": 9,
+      "title": "Paul Erdős, el mago de las matemáticas",
+      "title_en": "Paul Erdős, the math wizard",
+      "volume": 26,
+      "number": 1,
+      "language": "pt",
+      "published": "2025-08-01",
+      "authors": [
+        {
+          "name": "Luis Andrés Badilla Céspedes",
+          "email": "luis.badilla.cespedes@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0009-0000-0921-5807"
+        },
+        {
+          "name": "Wágner Badilla-Céspedes",
+          "email": "wagner@matmor.unam.mx",
+          "university": "Centro de Ciencias Matemáticas, UNAM, Campus Morelia",
+          "location": "Morelia, México",
+          "orcid": "https://orcid.org/0000-0001-7839-2559"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V26/N1_2025/Badilla",
+      "pdf": "/Articulos/V26/N1_2025/Badilla/RevistaDigital_V26_n1_2025_Badilla.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i1.7953",
+      "received": "29 de mayo de 2024",
+      "accepted": "10 de marzo de 2025",
+      "abstract_es": "En estas notas describimos ciertos aspectos relevantes sobre la vida de Paul Erdős. Mencionamos algunas de sus distinciones y premios, así como aportaciones matemáticas. Finalmente, damos una descripción histórica del teorema de los números primos.",
+      "abstract_en": "In these notes we describe certain relevant aspects about the life of Paul Erdős. We mention some of his honors and awards, as well as his mathematical contributions. Finally, we give a historical description of the prime number theorem.",
+      "abstract_pt": "Nesta nota, descrevemos alguns aspectos relevantes da vida de Paul Erdős. Mencionamos algumas de suas distinções e prêmios, bem como as suas contribuições matemáticas. Por fim, apresentamos uma descrição histórica do teorema dos números primos.",
+      "keywords_es": [
+        "Paul Erdős",
+        "teorema de los números primos",
+        "teoría de números",
+        "variable compleja"
+      ],
+      "keywords_en": [
+        "Paul Erdős",
+        "prime number theorem",
+        "number theory",
+        "complex variable"
+      ],
+      "keywords_pt": [
+        "Paul Erdős",
+        "teorema dos números primos",
+        "teoria dos números",
+        "variável complexa"
+      ],
+      "citation": "Badilla Céspedes, L., & Badilla Céspedes, W. (2025). Paul Erdős, el mago de las matemáticas. Revista Digital: Matemática, Educación e Internet, 26(1). https://doi.org/10.18845/rdmei.v26i1.7953"
+    }
   ]
 }
