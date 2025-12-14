@@ -16,7 +16,7 @@ export default function ArticlesList({ title, articles }) {
   const router = useRouter();
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
+    <div className="container mx-auto px-4 py-4 ">
       {/* Título dinámico */}
       <Typography
         variant="h4"
