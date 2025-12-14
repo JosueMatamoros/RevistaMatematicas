@@ -25,7 +25,6 @@
           "orcid": "https://orcid.org/0009-0004-4847-5264"
         }
       ],
-      "category": "Investigación",
       "slug": "Articulos/V25/N2_2025/Jimenez",
       "pdf": "/Articulos/V25/N2_2025/Jimenez/RevistaDigital_V25_n2_2025_Jimenez.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7542",
@@ -92,7 +91,6 @@
           "orcid": "https://orcid.org/0009-0008-2680-5073"
         }
       ],
-      "category": "Investigación",
       "slug": "Articulos/V25/N2_2025/Gonzalez",
       "pdf": "/Articulos/V25/N2_2025/Gonzalez/RevistaDigital_V25_n2_2025_Gonzalez.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7603",
@@ -170,7 +168,6 @@
           "orcid": "https://orcid.org/0000-0002-7785-5272"
         }
       ],
-      "category": "Didáctica",
       "slug": "Articulos/V25/N2_2025/Sandoval",
       "pdf": "/Articulos/V25/N2_2025/Sandoval/RevistaDigital_V25_n2_2025_Sandoval.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7604",
@@ -233,7 +230,6 @@
           "orcid": "https://orcid.org/0000-0002-5413-0172"
         }
       ],
-      "category": "Investigación",
       "slug": "Articulos/V25/N2_2025/Sequeira",
       "pdf": "/Articulos/V25/N2_2025/Sequeira/RevistaDigital_V25_n2_2025_Sequeira.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7606",
@@ -269,7 +265,7 @@
           "orcid": "https://orcid.org/0009-0008-8770-3417"
         }
       ],
-      "category": "Divulgación",
+      "category": "Didáctica y software",
       "slug": "Articulos/V25/N2_2025/Mora",
       "pdf": "/Articulos/V25/N2_2025/Mora/RevistaDigital_V25_n2_2025_Mora.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7274",
@@ -310,7 +306,7 @@
           "orcid": "https://orcid.org/0000-0001-5015-9982"
         }
       ],
-      "category": "Investigación",
+      "category": "Didáctica y software",
       "slug": "Articulos/V25/N2_2025/Miramontes",
       "pdf": "/Articulos/V25/N2_2025/Miramontes/RevistaDigital_V25_n2_2025_Miramontes.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7602",
@@ -348,7 +344,7 @@
           "orcid": "https://orcid.org/0009-0009-2090-8247"
         }
       ],
-      "category": "Didáctica",
+      "category": "Didáctica y software",
       "slug": "Articulos/V25/N2_2025/Calderon",
       "pdf": "/Articulos/V25/N2_2025/Calderon/RevistaDigital_V25_n2_2025_Calderon.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7753",
@@ -402,7 +398,7 @@
           "orcid": "https://orcid.org/0000-0003-3710-1561"
         }
       ],
-      "category": "Didáctica",
+      "category": "Didáctica y software",
       "slug": "Articulos/V25/N2_2025/Araujo",
       "pdf": "/Articulos/V25/N2_2025/Araujo/RevistaDigital_V25_n2_2025_Araujo.pdf",
       "doi": "https://doi.org/10.18845/rdmei.v25i2.7821",
