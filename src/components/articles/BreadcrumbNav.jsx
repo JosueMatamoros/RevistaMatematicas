@@ -10,14 +10,25 @@ export default function BreadcrumbNav() {
   const segments = pathname.split("/").filter(Boolean);
 
   return (
-    <div >
-      <Breadcrumbs className="bg-transparent  ">
-        {/* Siempre Home */}
+    <div>
+      <Breadcrumbs
+        className="
+          absolute -mt-14
+          bg-transparent
+          justify-center
+          text-white
+          [&>ol>li>a]:text-gray-300                   /* anteriores */
+          [&>ol>li>a:hover]:text-[#0582E0]            /* hover */
+          [&>ol>li>span]:text-white                   /* último */
+          [&>ol>li]:text-gray-400                     /* separadores '/' */
+        "
+      >
+        {/* Home */}
         <Link
           href="/"
-          className="flex items-center gap-1 text-gray-800 hover:text-gray-900 text-sm font-medium"
+          className="flex items-center gap-1 text-gray-300 hover:text-[#0582E0] text-sm font-medium"
         >
-          <AiFillHome className="text-lg" />
+          <AiFillHome className="text-white text-lg" />
           Inicio
         </Link>
 
@@ -28,7 +39,7 @@ export default function BreadcrumbNav() {
           return isLast ? (
             <span
               key={idx}
-              className="text-gray-900 font-semibold text-sm capitalize"
+              className="text-white font-semibold text-sm capitalize"
             >
               {seg.replace(/_/g, " ")}
             </span>
@@ -36,7 +47,7 @@ export default function BreadcrumbNav() {
             <Link
               key={idx}
               href={href}
-              className="text-gray-600 hover:text-gray-900 text-sm font-medium capitalize"
+              className="text-gray-300 hover:text-[#0582E0] text-sm font-medium capitalize"
             >
               {seg.replace(/_/g, " ")}
             </Link>
