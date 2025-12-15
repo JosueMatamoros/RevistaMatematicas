@@ -308,6 +308,76 @@
         "resolução de problemas"
       ],
       "citation": "Bermudo Navarrete, S., Cabrera Martínez, A., Pinto Leivas, J. C., Rojas Velázquez, O. de J., & Sigarreta Almira, J. M. (2024). Representación Gráfica: recurso heurístico-didáctico para la enseñanza-aprendizaje de la Matemática. Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7243"
+    },
+    {
+      "id": 5,
+      "title": "Sobre la parametrización de cónicas con rotación (la manera fácil)",
+      "title_en": "On parameterization of conics with rotation (the easy way)",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-02-08",
+      "authors": [
+        {
+          "name": "Walter Mora Flores",
+          "email": "wmora2@gmail.com",
+          "university": "Investigador independiente",
+          "location": "Alajuela, Costa Rica",
+          "orcid": "https://orcid.org/0009-0008-8770-3417"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V25/N1_2024/Mora",
+      "pdf": "/Articulos/V25/N1_2024/Mora/RevistaDigital_V25_n1_2024_Mora.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7091",
+      "received": "8 febrero 2024",
+      "accepted": "10 mayo 2024",
+      "abstract_es": "Se presentan algunas parametrizaciones usuales (trigonométricas y racionales) de las cónicas en posición estándar y algunas aplicaciones. Para cónicas con rotación en la que solo interesa una parametrización trigonométrica o una racional, se presentan los métodos de diagonalización no ortogonal y parametrización usando un haz de rectas.",
+      "abstract_en": "Some usual parameterizations (trigonometric and rational) of conics in standard position and some applications are presented. For conics with rotation in which only a trigonometric or a rational parameterization is of interest, the methods of non-orthogonal diagonalization and parameterization using a bundle of lines are presented.",
+      "abstract_pt": "São apresentadas algumas parametrizações usuais (trigonométricas e racionais) das cônicas em posição padrão, bem como algumas aplicações. Para cônicas com rotação, nas quais apenas uma parametrização trigonométrica ou racional é de interesse, são apresentados os métodos de diagonalização não ortogonal e de parametrização utilizando um feixe de retas.",
+      "keywords_es": ["Rotaciones", "cónicas", "parametrización"],
+      "keywords_en": ["Rotations", "conics", "parameterization"],
+      "keywords_pt": ["Rotações", "cônicas", "parametrização"],
+      "citation": "Mora Flores, W. (2024). Sobre la parametrización de cónicas con rotación (la manera fácil). Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7091"
+    },
+    {
+      "id": 6,
+      "title": "Acerca de algunos exponentes de Mersenne",
+      "title_en": "About some Mersenne exponents",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-08-01",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "location": "Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V25/N1_2024/Miramontes",
+      "pdf": "/Articulos/V25/N1_2024/Miramontes/RevistaDigital_V25_n1_2024_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7234",
+      "received": "23 octubre 2023",
+      "accepted": "5 abril 2024",
+      "abstract_es": "Los números primos de Mersenne crecen de manera vertiginosa y se vuelven intratables con las herramientas de cómputo actuales. En este trabajo se repasan brevemente las cadenas de Mersenne para mostrar cómo ese crecimiento exponencial impone un límite en su cálculo. Posteriormente, se propone el siguiente enfoque: dado un número primo q cualquiera es posible encontrar su exponente de Mersenne asociado, siempre y cuando se cumpla que log₂(q + 1) es exactamente entero, donde log₂() es el logaritmo en base 2. Adicionalmente, se propone una forma de aligerar, hasta cierto punto, la carga computacional al calcular log₂(q + 1) de cantidades gigantescas. Para ello se propone un escalamiento a q + 1, ya que sin él la capacidad numérica de las máquinas de cómputo no pueden diferenciar un número de otro que tenga algún valor decimal extremadamente pequeño. Este sencillo enfoque, que podría sorprender por su simplicidad, representa una alternativa para verificar si un primo q es un primo de Mersenne.",
+      "abstract_en": "Mersenne primes grow rapidly and become intractable with current computing tools. In this work, Mersenne chains are briefly reviewed to show how this exponential growth imposes a limit on their calculation. Subsequently, the following approach is proposed: given any prime number q, it is possible to find its associated Mersenne exponent, as long as log₂(q + 1) is exactly an integer, where log₂() is the base-2 logarithm. Furthermore, a way is proposed to lighten, to a certain extent, the computational load when calculating log₂(q + 1) of gigantic quantities. For this, a scaling to q + 1 is proposed, since without it the numerical capacity of computing machines cannot differentiate one number from another that has some extremely small decimal value. This simple approach, which might surprise due to its simplicity, represents an alternative to verify whether a prime q is a Mersenne prime.",
+      "abstract_pt": "Os números primos de Mersenne crescem de forma vertiginosa e tornam-se intratáveis com as ferramentas computacionais atuais. Neste trabalho, as cadeias de Mersenne são brevemente revisadas para mostrar como esse crescimento exponencial impõe um limite ao seu cálculo. Posteriormente, propõe-se a seguinte abordagem: dado qualquer número primo q, é possível encontrar seu expoente de Mersenne associado, desde que se cumpra que log₂(q + 1) seja exatamente um inteiro, onde log₂() é o logaritmo na base 2. Além disso, propõe-se uma forma de aliviar, até certo ponto, a carga computacional ao calcular log₂(q + 1) de quantidades gigantescas. Para isso, propõe-se um escalonamento para q + 1, pois sem ele a capacidade numérica das máquinas de computação não consegue diferenciar um número de outro que possua algum valor decimal extremamente pequeno. Essa abordagem simples, que pode surpreender por sua simplicidade, representa uma alternativa para verificar se um primo q é um primo de Mersenne.",
+      "keywords_es": [
+        "Números primos",
+        "primos de Mersenne",
+        "exponentes de Mersenne"
+      ],
+      "keywords_en": ["Prime numbers", "Mersenne primes", "Mersenne exponents"],
+      "keywords_pt": [
+        "Números primos",
+        "primos de Mersenne",
+        "expoentes de Mersenne"
+      ],
+      "citation": "Miramontes de León, G. (2024). Acerca de algunos exponentes de Mersenne. Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7234"
     }
   ]
 }
