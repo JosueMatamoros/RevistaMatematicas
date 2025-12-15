@@ -118,6 +118,196 @@
         "Geogebra"
       ],
       "citation": "Pimentel Paiva, A. C., Vieira Alves, F. R., & de Barros Campos, H. M. (2024). Desenvolvimento e Implementação de Sequências Didáticas para EDOs de Segunda Ordem: Aplicações Práticas com GeoGebra. Revista digital Matemática, Educação e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7235"
+    },
+    {
+      "id": 3,
+      "title": "Modelo de Transformación Docente a través de Redes Sociales: ejemplificación en X para la educación matemática en la era digital",
+      "title_en": "Model of Teaching Transformation through Social Networks: exemplification in X for mathematics education in the digital era",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-08-01",
+      "authors": [
+        {
+          "name": "Ángel Alsina",
+          "email": "angel.alsina@udg.edu",
+          "university": "Universidad de Girona",
+          "location": "Girona, España",
+          "orcid": "https://orcid.org/0000-0001-8506-1838"
+        }
+      ],
+      "slug": "Articulos/V25/N1_2024/Alsina",
+      "pdf": "/Articulos/V25/N1_2024/Alsina/RevistaDigital_V25_n1_2024_Alsina.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7236",
+      "received": "5 diciembre 2023",
+      "accepted": "1 junio 2024",
+      "abstract_es": "El objetivo de este artículo es presentar el Modelo de Transformación Docente a través de Redes Sociales (TD-RedesS), cuyo propósito principal es contribuir a una mejor comprensión del papel que juegan las redes sociales y cómo pueden utilizarse como estrategia informal para la formación del profesorado. Para ello, el artículo se estructura en tres partes, ejemplificadas en la educación matemática pero aplicables a cualquier otra área de conocimiento: en primer lugar, se fundamenta el desarrollo profesional del profesorado de matemáticas desde la perspectiva de la transformación docente; en segundo lugar, dado que el modelo TD-RedesS se ejemplifica en la red social X (antes Twitter), tanto por su valor educativo como por su acceso rápido a la información, se indaga en el uso de esta red como herramienta formativa para el profesorado de matemáticas en la era digital; y, en tercer lugar, se describe el modelo TD-RedesS: (a) para los emisores, incluye las estrategias de marketing en línea y los elementos para el seguimiento y reflexión posterior de las informaciones publicadas; (b) para los receptores, incluye la dimensión cognitiva (conocimientos), la procedimental (habilidades digitales) y la actitudinal (actitudes), junto con un ciclo de reflexión para promover la expansión conceptual y, de forma más general, contribuir al desarrollo profesional docente.",
+      "abstract_en": "The aim of this article is to present the Teaching Transformation through Social Networks (TD-RedesS) model, whose main purpose is to contribute to a better understanding of the role of social networks and how they can be used as an informal strategy for teacher education. To this end, the article is structured in three parts, exemplified in the area of mathematics education but applicable to any other area of knowledge: first, the professional development of mathematics teachers is grounded from the perspective of teacher transformation; second, given that the TD-RedesS model is exemplified in the social network X (formerly Twitter), both for its educational value and for its rapid access to information, the use of this network as a training tool for mathematics teachers in the digital age is explored; and third, the TD-RedesS model is described: (a) for senders, it includes online marketing strategies and elements for subsequent monitoring and reflection on published information; (b) for receivers, it includes the cognitive (knowledge), procedural (digital skills) and attitudinal (attitudes) dimensions, together with a cycle of reflection to promote conceptual expansion and, more generally, to contribute to teacher professional development.",
+      "abstract_pt": "O objetivo deste artigo é apresentar o Modelo de Transformação Docente por meio das Redes Sociais (TD-RedesS), cujo principal propósito é contribuir para uma melhor compreensão do papel que as redes sociais desempenham e de como podem ser utilizadas como estratégia informal para a formação de professores. Para isso, o artigo é estruturado em três partes, exemplificadas na educação matemática, mas aplicáveis a qualquer outra área do conhecimento: em primeiro lugar, fundamenta-se o desenvolvimento profissional do professorado de matemática a partir da perspectiva da transformação docente; em segundo lugar, dado que o modelo TD-RedesS é exemplificado na rede social X (anteriormente Twitter), tanto por seu valor educativo quanto por seu rápido acesso à informação, investiga-se o uso dessa rede como ferramenta formativa para o professorado de matemática na era digital; e, em terceiro lugar, descreve-se o modelo TD-RedesS: (a) para os emissores, inclui estratégias de marketing online e elementos para o acompanhamento e reflexão posterior das informações publicadas; (b) para os receptores, inclui as dimensões cognitiva (conhecimentos), procedimental (habilidades digitais) e atitudinal (atitudes), juntamente com um ciclo de reflexão para promover a expansão conceitual e, de forma mais geral, contribuir para o desenvolvimento profissional docente.",
+      "keywords_es": [
+        "Profesorado de matemáticas",
+        "desarrollo profesional",
+        "transformación docente",
+        "redes sociales",
+        "Twitter/X"
+      ],
+      "keywords_en": [
+        "Mathematics teachers",
+        "professional development",
+        "teacher transformation",
+        "social networks",
+        "Twitter/X"
+      ],
+      "keywords_pt": [
+        "Professorado de matemática",
+        "desenvolvimento profissional",
+        "transformação docente",
+        "redes sociais",
+        "Twitter/X"
+      ],
+      "citation": "Alsina, Á. (2024). Modelo de Transformación Docente a través de Redes Sociales: ejemplificación en X para la educación matemática en la era digital. Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7236"
+    },
+    {
+      "id": 4,
+      "title": "La enseñanza de los gráficos estadísticos: reseña de un libro de texto interactivo para tercer año de la educación costarricense",
+      "title_en": "The teaching of statistical graphs: review of an interactive textbook for third grade in Costa Rican education",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-08-01",
+      "authors": [
+        {
+          "name": "Carlos Monge Madriz",
+          "email": "camonge@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5148-2797"
+        },
+        {
+          "name": "Zuleyka Suárez Valdés-Ayala",
+          "email": "zsuarez@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Escazú, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-1822-4825"
+        },
+        {
+          "name": "Rebeca Solís Ortega",
+          "email": "rsolis@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-3065-8386"
+        },
+        {
+          "name": "Luis Gerardo Meza Cascante",
+          "email": "gemeza@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5413-0172"
+        }
+      ],
+      "slug": "Articulos/V25/N1_2024/Monge",
+      "pdf": "/Articulos/V25/N1_2024/Monge/RevistaDigital_V25_n1_2024_Monge.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7237",
+      "received": "23 setiembre 2023",
+      "accepted": "30 marzo 2024",
+      "abstract_es": "Este artículo presenta un libro interactivo de estadística destinado al tercer año de primaria, dirigido a niños y niñas de entre 8 y 9 años aproximadamente. El material fue elaborado en el año 2023 y se enfoca en la educación costarricense, analizando la pertinencia de sus actividades relacionadas con gráficos estadísticos. La metodología incluyó la identificación de habilidades, la revisión de un estudio sobre gráficos en libros de texto costarricenses, la consideración de aspectos teóricos, el diseño de actividades, el análisis de contenido y la validación con expertos. El libro promueve la resolución de problemas, la argumentación estadística y el uso de tecnología, de manera concordante con las disposiciones del programa de matemática vigente en la educación costarricense. Es un recurso educativo innovador y completo, que podría mejorar la enseñanza de estadística en la educación primaria.",
+      "abstract_en": "This paper introduces an interactive statistics book designed for third-grade primary students, targeting both boys and girls aged approximately 8 to 9 years old. Developed in 2023, the material is centered around Costa Rican education, examining the significance of its activities pertaining to statistical graphics. The methodology involved skill identification, a review of a study on graphics in Costa Rican textbooks, consideration of theoretical aspects, activity design, content analysis, and validation by experts. The book promotes problem-solving, statistical argumentation, and the utilization of technology, aligning with the current mathematics curriculum in Costa Rican education. It stands as an innovative and comprehensive educational resource poised to enhance the teaching of statistics in primary education.",
+      "abstract_pt": "Este artigo apresenta um livro interativo de estatística destinado ao terceiro ano do ensino fundamental, voltado para meninos e meninas com idades aproximadas entre 8 e 9 anos. O material foi elaborado em 2023 e está centrado na educação costarriquenha, analisando a pertinência de suas atividades relacionadas a gráficos estatísticos. A metodologia incluiu a identificação de habilidades, a revisão de um estudo sobre gráficos em livros didáticos costarriquenhos, a consideração de aspectos teóricos, o desenho de atividades, a análise de conteúdo e a validação por especialistas. O livro promove a resolução de problemas, a argumentação estatística e o uso da tecnologia, em consonância com o currículo de matemática vigente na educação da Costa Rica. Trata-se de um recurso educacional inovador e abrangente, que pode aprimorar o ensino de estatística no ensino fundamental.",
+      "keywords_es": [
+        "Enseñanza primaria",
+        "estadística",
+        "gráfico",
+        "libro de texto",
+        "enseñanza de la estadística"
+      ],
+      "keywords_en": [
+        "Primary education",
+        "statistics",
+        "graphs",
+        "textbooks",
+        "statistics education"
+      ],
+      "keywords_pt": [
+        "Ensino fundamental",
+        "estatística",
+        "gráficos",
+        "livro didático",
+        "ensino de estatística"
+      ],
+      "citation": "Monge Madriz, C., Suárez Valdés-Ayala, Z., Solís Ortega, R., & Meza Cascante, L. G. (2024). La enseñanza de los gráficos estadísticos: reseña de un libro de texto interactivo para tercer año de la educación costarricense. Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7237"
+    },
+    {
+      "id": 5,
+      "title": "Representación Gráfica: recurso heurístico-didáctico para la enseñanza-aprendizaje de la Matemática",
+      "title_en": "Graphical Representation: a heuristic-didactic resource for the teaching-learning of Mathematics",
+      "volume": 25,
+      "number": 1,
+      "language": "es",
+      "published": "2024-08-01",
+      "authors": [
+        {
+          "name": "Sergio Bermudo Navarrete",
+          "email": "sbernav@upo.es",
+          "university": "Universidad Pablo de Olavide",
+          "location": "Sevilla, España",
+          "orcid": "https://orcid.org/0000-0003-4838-3170"
+        },
+        {
+          "name": "Abel Cabrera Martínez",
+          "email": "abecamar@gmail.com",
+          "university": "Universidad de Córdoba",
+          "location": "Córdoba, España",
+          "orcid": "https://orcid.org/0000-0003-2806-4842"
+        },
+        {
+          "name": "José Carlos Pinto Leivas",
+          "email": "leivasjc@gmail.com",
+          "university": "Universidade Franciscana – UFN",
+          "location": "Santa Maria, Brasil",
+          "orcid": "https://orcid.org/0000-0001-6876-1461"
+        },
+        {
+          "name": "Osvaldo de Jesús Rojas Velázquez",
+          "email": "orojasv69@una.edu.co",
+          "university": "Universidad Antonio Nariño",
+          "location": "Bogotá, Colombia",
+          "orcid": "https://orcid.org/0000-0001-9015-2400"
+        },
+        {
+          "name": "José M. Sigarreta Almira",
+          "email": "jsmathguerrero@gmail.com",
+          "university": "Universidad Autónoma de Guerrero",
+          "location": "Acapulco, México",
+          "orcid": "https://orcid.org/0000-0002-0863-4695"
+        }
+      ],
+      "slug": "Articulos/V25/N1_2024/Bermudo",
+      "pdf": "/Articulos/V25/N1_2024/Bermudo/RevistaDigital_V25_n1_2024_Bermudo.pdf",
+      "doi": "https://doi.org/10.18845/meij.v25i1.7243",
+      "received": "20 diciembre 2023",
+      "accepted": "10 junio 2024",
+      "abstract_es": "Las limitaciones y dificultades que presentan los estudiantes en el aprendizaje de la Matemática ponen de manifiesto la necesidad de dotar a los docentes de estrategias para favorecer su proceso de enseñanza-aprendizaje. En esta dirección, se propone una estrategia didáctica para aprovechar las potencialidades de la Representación Gráfica como recurso heurístico-didáctico en el proceso de enseñanza-aprendizaje de la Matemática.",
+      "abstract_en": "The limitations and difficulties presented by students in the learning of Mathematics highlight the need to provide teachers with strategies to favor the teaching-learning process of Mathematics. In this direction, a didactic strategy is proposed to take advantage of the potential of Graphic Representation as a heuristic-didactic resource in the teaching-learning process of Mathematics.",
+      "abstract_pt": "As limitações e dificuldades apresentadas pelos estudantes na aprendizagem da Matemática evidenciam a necessidade de fornecer aos docentes estratégias que favoreçam o processo de ensino-aprendizagem da Matemática. Nesse sentido, propõe-se uma estratégia didática para aproveitar as potencialidades da Representação Gráfica como recurso heurístico-didático no processo de ensino-aprendizagem da Matemática.",
+      "keywords_es": [
+        "Principio heurístico",
+        "representación gráfica",
+        "enseñanza-aprendizaje",
+        "resolución de problemas"
+      ],
+      "keywords_en": [
+        "Heuristic principle",
+        "graphic representation",
+        "teaching-learning",
+        "problem solving"
+      ],
+      "keywords_pt": [
+        "Princípio heurístico",
+        "representação gráfica",
+        "ensino-aprendizagem",
+        "resolução de problemas"
+      ],
+      "citation": "Bermudo Navarrete, S., Cabrera Martínez, A., Pinto Leivas, J. C., Rojas Velázquez, O. de J., & Sigarreta Almira, J. M. (2024). Representación Gráfica: recurso heurístico-didáctico para la enseñanza-aprendizaje de la Matemática. Revista Digital: Matemática, Educación e Internet, 25(1). https://doi.org/10.18845/meij.v25i1.7243"
     }
   ]
 }
