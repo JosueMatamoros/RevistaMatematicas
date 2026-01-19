@@ -10,7 +10,7 @@ export async function generateStaticParams() {
     return issue.data.articles
       .filter((a) => a.slug)
       .map((a) => {
-        const slug = a.slug.split("/").pop(); // "Parra"
+        const slug = a.slug.split("/").pop();
         return {
           vol: `V${issue.volume}`,
           issue: cleanIssue,

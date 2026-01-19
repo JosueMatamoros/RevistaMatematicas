@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { withBasePath, withFullUrl } from "@/lib/basePath";
-import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 import {
   FaFilePdf,
   FaShareAlt,
@@ -22,10 +21,6 @@ export default function ArticlePage({ article }) {
 
   return (
     <article className="min-h-screen bg-white mb-16">
-      <div className="mt-2 mb-2">
-        <BreadcrumbNav />
-      </div>
-
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-4">

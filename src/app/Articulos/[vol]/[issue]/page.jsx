@@ -1,6 +1,5 @@
 import { issues } from "@/data/issues";
 import ArticlesList from "@/components/articles/ArticlesList";
-import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 
 // Generar rutas estáticas correctas
 export function generateStaticParams() {
@@ -37,7 +36,6 @@ export default function IssuePage({ params }) {
 
   return (
     <div>
-      <BreadcrumbNav />
       <ArticlesList
         title={`Volumen ${current.volume}, Número ${current.number}, ${current.date}`}
         articles={current.data.articles}

@@ -33,7 +33,7 @@ export default function NavsComponent({ isSidebarOpen }) {
       >
         <nav
           className={`
-            rounded-md border shadow-md px-6 py-3 relative
+            rounded-md border shadow-md px-6 py-3 relative mb-2
             transition-all duration-300 ease-in-out
             ${isSidebarOpen ? "w-full" : "inline-block"}
           `}
