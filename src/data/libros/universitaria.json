@@ -1,4 +1,84 @@
 {
+  "teoria-de-grupos-2025": {
+    "coverImage": "/libros/universitaria/algebra/teoria-de-grupos-2025/portada.webp",
+    "title": "Una introducción a la Teoría de Grupos",
+    "title_en": "An Introduction to Group Theory",
+    "title_pt": "Uma Introdução à Teoria dos Grupos",
+    "authors": [
+      {
+        "name": "Reiman Acuña Chacón",
+        "email": "reiacuna@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-0094-3282",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Héctor Barrantes González",
+        "email": "",
+        "orcid": "",
+        "university": "",
+        "location": ""
+      },
+      {
+        "name": "Bolívar Ramírez Santamaría",
+        "email": "",
+        "orcid": "",
+        "university": "",
+        "location": ""
+      }
+    ],
+    "lastRevision": "",
+    "category": "universitaria",
+    "pdf": "/libros/universitaria/algebra/teoria-de-grupos-2025/libro.pdf",
+    "received": "",
+    "accepted": "",
+    "abstract_es": "Este libro presenta una introducción sistemática a la Teoría de Grupos, construyendo el tema desde herramientas de teoría de números necesarias para el trabajo algebraico (propiedades de los enteros y aritmética modular) y avanzando hacia los conceptos centrales de grupos y sus estructuras asociadas. Se desarrollan definiciones y ejemplos fundamentales, resultados clásicos, grupos abelianos, el orden de un grupo y de un elemento, subgrupos, clases laterales y el teorema de Lagrange, grupos cíclicos, subgrupos normales y grupos cociente. Además, se estudian homomorfismos, núcleo e imagen, y teoremas de isomorfía, culminando con aplicaciones en áreas como música, teoría de grafos, simetría en física, computación y criptografía. El texto incluye ejercicios a lo largo de los capítulos y una sección extensa de soluciones, con el objetivo de reforzar la comprensión conceptual y la habilidad de argumentación y cálculo dentro del álgebra abstracta.",
+    "keywords_es": [
+      "teoría de grupos",
+      "aritmética modular",
+      "subgrupos",
+      "clases laterales",
+      "teorema de Lagrange",
+      "grupos cíclicos",
+      "subgrupos normales",
+      "grupo cociente",
+      "homomorfismos",
+      "teoremas de isomorfía",
+      "criptografía",
+      "simetría"
+    ],
+    "abstract_en": "This book offers a systematic introduction to Group Theory, building the subject from number-theoretic tools that support algebraic work (properties of the integers and modular arithmetic) and progressing to the core concepts and structures of groups. It develops fundamental definitions and examples, classical results, abelian groups, the order of a group and of an element, subgroups, cosets and Lagrange’s theorem, cyclic groups, normal subgroups and quotient groups. It also studies group homomorphisms, kernel and image, and the isomorphism theorems, and concludes with applications in areas such as music, graph theory, symmetry in physics, computing, and cryptography. Exercises are included throughout, together with an extensive solutions section, to strengthen conceptual understanding and problem-solving skills in abstract algebra.",
+    "keywords_en": [
+      "group theory",
+      "modular arithmetic",
+      "subgroups",
+      "cosets",
+      "Lagrange's theorem",
+      "cyclic groups",
+      "normal subgroups",
+      "quotient groups",
+      "homomorphisms",
+      "isomorphism theorems",
+      "cryptography",
+      "symmetry"
+    ],
+    "abstract_pt": "Este livro apresenta uma introdução sistemática à Teoria dos Grupos, construindo o tema a partir de ferramentas de teoria dos números necessárias ao trabalho algébrico (propriedades dos inteiros e aritmética modular) e avançando para os conceitos centrais e estruturas associadas aos grupos. São desenvolvidas definições e exemplos fundamentais, resultados clássicos, grupos abelianos, a ordem de um grupo e de um elemento, subgrupos, classes laterais e o teorema de Lagrange, grupos cíclicos, subgrupos normais e grupos quociente. Além disso, estudam-se homomorfismos de grupos, núcleo e imagem, e teoremas de isomorfismo, concluindo com aplicações em áreas como música, teoria dos grafos, simetria na física, computação e criptografia. O texto inclui exercícios ao longo dos capítulos e uma seção ampla de soluções, visando fortalecer a compreensão conceitual e as habilidades de resolução de problemas em álgebra abstrata.",
+    "keywords_pt": [
+      "teoria dos grupos",
+      "aritmética modular",
+      "subgrupos",
+      "classes laterais",
+      "teorema de Lagrange",
+      "grupos cíclicos",
+      "subgrupos normais",
+      "grupo quociente",
+      "homomorfismos",
+      "teoremas de isomorfismo",
+      "criptografia",
+      "simetria"
+    ],
+    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. Revista Digital Matemática, Educación e Internet. Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
+  },
   "fundamentos-de-matematica-2025": {
     "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
     "title": "Fundamentos de Matemática I: Compilación de Teoría y Ejercicios",
