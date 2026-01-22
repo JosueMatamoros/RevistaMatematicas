@@ -1,27 +1,667 @@
 {
-  "issueTitle": "V26 prueba",
+  "issueTitle": "Volumen 26, Número 2, Marzo 2026 - Agosto 2026",
   "articles": [
     {
       "id": 1,
-      "title": "Carreras STEM y su asociación con las tipologías RIASEC de Holland",
-      "title_en": "STEM Careers and Their Association with Holland's RIASEC Typologies",
+      "title": "Sobre la secuencia numérica de François, su tablero y la visualización de propiedades con mosaicos",
+      "title_en": "On the Francois numerical sequence, his board and some tillings properties",
+      "volume": 26,
+      "number": 2,
+      "language": "pt",
+      "published": "",
       "authors": [
         {
-          "name": "Alejandra Alfaro-Barquero",
-          "email": "alealfaro@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-8901-7129"
+          "name": "Francisco Regis Vieira Alves",
+          "email": "fregis@ifce.edu.br",
+          "university": "Instituto de Educação, Ciência e Tecnologia do Estado do Ceará",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0003-3710-1561"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Vieira",
+      "pdf": "/Articulos/V26/N2_2026/Vieira/V26_n2_Vieira.pdf",
+      "doi": "",
+      "received": "13 de marzo del 2024",
+      "accepted": "30 de julio del 2025",
+      "abstract_es": "El estudio de secuencias numericas recurrentes impone cierto carácter restrictivo y limitado, dado que, predominantemente, los compendios de libros de Historia de la Matematica acentúan solo el papel de la secuencia numerica recurrente de segundo orden, llamada secuencia de Fibonacci. Por otro lado, al examinar el interes moderno sobre la generalización de diversos casos de secuencias numericas recurrentes, se confirma que el enfoque combinatorio permite el descubrimiento de innumerables propiedades matematicas y, de manera especial, cuando se examinan tales propiedades con el empleo de la nocion de Tablero. Así, el presente trabajo aborda el caso de una secuencia numerica recurrente recientemente introducida en la literatura científica, llamada secuencia numerica de François. Finalmente, a partir de la constatacion de ciertos casos relacionados con la nocion de Tablero hexagonal, el trabajo presenta una formulacion que, de manera indirecta, termina empleando propiedades relacionadas con la secuencia de Lucas y Fibonacci.",
+      "abstract_en": "The study of recurring numerical sequences imposes a certain restrictive and limited aspect, since, predominantly, the compendiums of History of Mathematics books emphasize only the role of the recurring numerical sequence of 2nd order, called the Fibonacci sequence. On the other hand, when we examine the modern interest in the generalization of several other cases of recurring numerical sequences, we confirm that the combinatorial approach provides the discovery of numerous mathematical properties and, especially, when we examine such properties using the notion of Chessboard. Thus, the present work addresses the case of a recurring numerical sequence recently introduced in the scientific literature, called the Francois numerical sequence. Finally, from the observation of certain cases related to the notion of hexagonal board, the work presents a formulation that, indirectly, ends up using properties related to the Lucas and Fibonacci sequences.",
+      "abstract_pt": "O estudo de sequencias numéricas recorrentes impõe certo viés restritivo e limitado, uma vez que, predominantemente, os compêndios de livros de História da Matemática acentuam apenas o papel da sequência numérica recorrente de 2ª ordem, chamada de sequência de Fibonacci. Por outro lado, quando examinamos o interesse moderno sobre a generalização de vários outros casos de sequências numéricas recorrentes, confirmamos que a abordagem combinatória proporciona a descoberta de inúmeras propriedades matemáticas e, de modo especial, quando examinamos tais propriedades com o emprego da noção de Tabuleiro. Assim, o presente trabalho aborda o caso de uma sequência numérica recorrente recém introduzida na literatura científica, chamada de sequência numérica de Francois. Por fim, a partir da constatação de certos casos relacionados com a noção de Tabuleiro hexagonal, o trabalho apresenta uma formulação que, de modo indireto, finda por empregar propriedades relacionadas com a sequência de Lucas e Fibonacci.",
+      "keywords_es": [
+        "Historia de la Matematica",
+        "Secuencia numérica",
+        "Tablero",
+        "Profesor de Matemática"
+      ],
+      "keywords_en": [
+        "History of Mathematics",
+        "Numerical sequence",
+        "Board",
+        "Mathematics Teacher"
+      ],
+      "keywords_pt": [
+        "Historia da Matemática",
+        "Sequência numérica",
+        "Tabuleiro",
+        "Professor de Matemática"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 2,
+      "title": "Una introducción a los sistemas dinámicos discretos bidimensionales",
+      "title_en": "An introduction to two-dimensional discrete dynamical systems",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Alicia Santiago-Santos",
+          "email": "alicia@mixteco.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Instituto de Física y matemáticas",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0002-1888-7135"
         },
         {
-          "name": "Sonia Chinchilla-Brenes",
-          "email": "schinchilla@itcr.ac.cr",
-          "university": "Instituto Tecnológico de Costa Rica",
-          "location": "Cartago, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-1100-2568"
+          "name": "Isahi García-Ramos",
+          "email": "gari981027@gs.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Instituto de Física y matemáticas",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0009-0006-9563-7590"
         }
-      ]
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Santiago",
+      "pdf": "/Articulos/V26/N2_2026/Santiago/V26_n2_Santiago.pdf",
+      "doi": "",
+      "received": "24 febrero de 2025",
+      "accepted": "1 agosto de 2025",
+      "abstract_es": "Un sistema dinámico se puede definir informalmente como un sistema cuyo estado está especificado de forma única por un conjunto de variables y cuyo comportamiento está descrito por reglas predefinidas. El objetivo de este artículo es proporcionar al lector una introducción a ciertos tipos de modelos matemáticos (también conocidos como sistemas dinámicos). En particular, hablar de modelos discretos unidimensionales y bidimensionales. Por último, se dan algunos ejemplos y su solución.",
+      "abstract_en": "A dynamical system can be informally defined as a system whose state is uniquely specified by a set of variables and whose behavior is described by predefined rules. The objective of this article is to present the reader with an introduction to certain types of mathematical models (also known as dynamical systems). In particular, to study one-dimensional and two-dimensional discrete models. Finally, some examples and their solutions are given.",
+      "abstract_pt": "Um sistema dinâmico pode ser definido informalmente como um sistema cujo estado está especificado de um jeito único por um conjunto de variáveis e cujo comportamento é descrito por regras predefinidas. O objetivo deste artigo é fornecer ao leitor uma introdução a certos tipos de modelos matemáticos (também conhecidos como sistemas dinâmicos). Em particular, falar de modelos discretos unidimensionais e bidimensionais. Por fim, apresentam-se alguns exemplos e sua solução.",
+      "keywords_es": [
+        "Modelos matemáticos",
+        "sistemas dinámicos discretos",
+        "sistemas dinámicos continuos",
+        "sistemas dinámicos discretos bidimensionales"
+      ],
+      "keywords_en": [
+        "Mathematical models",
+        "discrete dynamical systems",
+        "continuous dynamical systems",
+        "two-dimensional discrete dynamical systems"
+      ],
+      "keywords_pt": [
+        "Modelos matemáticos",
+        "sistemas dinâmicos discretos",
+        "sistemas dinâmicos contínuos",
+        "sistemas dinâmicos discretos bidimensionais"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 3,
+      "title": "Estrategia basada en aprendizaje adaptativo con Inteligencia Artificial para el aprendizaje de funciones matemáticas de estudiantes de secundaria",
+      "title_en": "Adaptive learning based strategy with artificial intelligence for learning mathematical functions of high school students",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jorge Alonso Díaz Porras",
+          "email": "jadiaz@uned.ac.cr",
+          "university": "Colegio Nacional de Educación a Distancia",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9475-0544"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Diaz",
+      "pdf": "/Articulos/V26/N2_2026/Diaz/V26_n2_Diaz.pdf",
+      "doi": "",
+      "received": "21 de marzo de 2025",
+      "accepted": "30 de agosto de 2025",
+      "abstract_es": "La tecnología está revolucionando la forma de llevar a cabo el proceso de enseñanza-aprendizaje en todos los niveles educativos y, entre otras, las plataformas de aprendizaje adaptativo potenciadas con inteligencia artificial (IA) surgen como una alternativa viable, lo que es similar en el aprendizaje de las matemáticas. El objetivo del estudio fue analizar cómo una estrategia basada en aprendizaje adaptativo con inteligencia artificial potencia el aprendizaje de las funciones matemáticas de un estudiantado de secundaria. Se desarrolló una metodología cuantitativa, comparativa y de diseño pretest-postest sobre una muestra de 192 estudiantes de undécimo grado de educación secundaria de un colegio público en Costa Rica. Inicialmente, se les aplicó una prueba diagnóstica sobre el conocimiento de funciones matemáticas y, luego, se les intervino con la plataforma de aprendizaje adaptativo con IA Smartick. Por último, se les aplicó una prueba evaluativa final. Se comparó el rendimiento del estudiantado antes y después de la intervención mediante el factor de Bayes para igualdad de grupos, lo que corroboró la influencia de la intervención en el rendimiento académico. Los resultados indicaron un aumento significativo en el rendimiento del estudiantado tras la aplicación de la intervención, con una evidencia probabilística muy fuerte a favor de la hipótesis de un mayor rendimiento en el postest (BF10 > 1). Este resultado fue independiente del género, es decir, la mejora en el rendimiento fue igual para hombres y mujeres. Tras la intervención, los hombres obtuvieron un mayor rendimiento significativo, lo que sugiere que aprovecharon mejor las actividades de aprendizaje adaptativo en comparación con las mujeres. Se concluye que la plataforma de aprendizaje adaptativo con IA, Smartick, potencia el conocimiento del estudiantado en funciones matemáticas y mejora su rendimiento. Sin embargo, se debe estudiar más a fondo la diferencia en su abordaje por parte de hombres y mujeres.",
+      "abstract_en": "Technology is revolutionizing teaching and learning at all levels of education, and among others, adaptive learning platforms powered by artificial intelligence (AI) are emerging as a viable alternative, especially in mathematics learning. The aim of the study was to analyze how an adaptive learning strategy based on artificial intelligence improves the learning of mathematical functions in secondary school students. A quantitative, comparative, pretest-posttest methodology was developed for a sample of 192 eleventh grade secondary students from a public school in Costa Rica. They were first given a diagnostic test of their knowledge of mathematical functions and then received interventions using the Smartick adaptive learning platform with AI. Finally, they were given a final assessment test. The students’ performance before and after the intervention was compared using the Bayesian factor for group equality, which confirmed the influence of the intervention on academic performance. The results indicated a significant increase in student performance following the implementation of the intervention, with very strong probabilistic evidence supporting the hypothesis of higher performance on the post-test (BF10 > 1). This result was independent of gender, i.e., the improvement in performance was the same for males and females. After the intervention, males achieved significantly higher performance, suggesting that they benefited more from the adaptive learning activities compared to females. It is concluded that the AI-based adaptive learning platform, Smartick, enhances students’ knowledge of mathematical functions and improves their performance. However, the differences in how males and females approach the intervention require further investigation.",
+      "abstract_pt": "A tecnologia está revolucionando a forma de levar a cabo o processo de ensino-aprendizagem em todos os níveis educativos e, entre outras, as plataformas de aprendizagem adaptativa potenciadas por inteligência artificial (IA) surgem como uma alternativa viável, o que se observa também no ensino da matemática. O objetivo do estudo foi analisar como uma estratégia baseada em aprendizagem adaptativa com inteligência artificial potencia a aprendizagem das funções matemáticas de estudantes do ensino secundário. Desenvolveu-se uma metodologia quantitativa, comparativa e de desenho pré-teste-pós-teste sobre uma amostra de 192 estudantes do 11.º ano do ensino secundário de um colégio público na Costa Rica. Inicialmente, foi aplicada uma prova diagnóstica sobre o conhecimento de funções matemáticas e, em seguida, realizou-se a intervenção com a plataforma de aprendizagem adaptativa com IA Smartick. Por fim, foi aplicada uma prova avaliativa final. Comparou-se o rendimento dos estudantes antes e depois da intervenção mediante o fator de Bayes para igualdade de grupos, o que corroborou a influência da intervenção no rendimento acadêmico. Os resultados indicaram um aumento significativo no rendimento dos estudantes após a aplicação da intervenção, com evidência probabilística muito forte a favor da hipótese de um rendimento superior no pós-teste (BF10 > 1). Este resultado foi independente do gênero, isto é, a melhoria no rendimento foi igual para homens e mulheres. Após a intervenção, os homens obtiveram um rendimento significativamente maior, o que sugere que aproveitaram melhor as atividades de aprendizagem adaptativa em comparação com as mulheres. Conclui-se que a plataforma de aprendizagem adaptativa com IA, Smartick, potencia o conhecimento dos estudantes em funções matemáticas e melhora o seu rendimento. No entanto, deve-se estudar mais a fundo a diferença na sua abordagem por parte de homens e mulheres.",
+      "keywords_es": [
+        "Aprendizaje adaptativo",
+        "funciones matemáticas",
+        "inteligencia artificial",
+        "rendimiento académico",
+        "Smartick"
+      ],
+      "keywords_en": [
+        "Adaptive learning",
+        "mathematical functions",
+        "artificial intelligence",
+        "academic performance",
+        "Smartick"
+      ],
+      "keywords_pt": [
+        "Aprendizado adaptativo",
+        "funções matemáticas",
+        "inteligência artificial",
+        "desempenho acadêmico",
+        "Smartick"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 4,
+      "title": "Pensar geometricamente, actuar didácticamente: el modelo BARRISO como estrategia educativa",
+      "title_en": "Thinking geometrically, acting didactically: the BARRISO model as an educational strategy",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Luis Barrios Soto",
+          "email": "lmbs19@hotmail.com",
+          "university": "IED La Salle",
+          "department": "",
+          "location": "Barranquilla, Colombia",
+          "orcid": "https://orcid.org/0000-0002-5148-2017"
+        },
+        {
+          "name": "Ivan Padilla Escorcia",
+          "email": "ivanandrespadillaescorcia@hotmail.com",
+          "university": "IED para el Desarrollo de las Ciencias, Artes y Humanidades",
+          "department": "",
+          "location": "Barranquilla, Colombia",
+          "orcid": "https://orcid.org/0000-0003-1210-3712"
+        },
+        {
+          "name": "Mercedes Delgado González",
+          "email": "merdelgon@gmail.com",
+          "university": "Universidad del Zulia",
+          "department": "",
+          "location": "Maracaibo, Venezuela",
+          "orcid": "https://orcid.org/0000-0002-4292-8339"
+        },
+        {
+          "name": "Xiomara Arrieta",
+          "email": "xarrieta2410@yahoo.com",
+          "university": "Universidad del Zulia",
+          "department": "",
+          "location": "Maracaibo, Venezuela",
+          "orcid": "https://orcid.org/0000-0002-2250-3376"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Barrios",
+      "pdf": "/Articulos/V26/N2_2026/Barrios/V26_n2_Barrios.pdf",
+      "doi": "",
+      "received": "5 abril de 2025",
+      "accepted": "15 agosto de 2025",
+      "abstract_es": "En el contexto actual de la educación matemática, uno de los principales desafíos es promover el desarrollo del pensamiento geométrico de manera significativa y accesible para todos los estudiantes. A pesar de los avances metodológicos y tecnológicos, muchos enfoques de enseñanza aún presentan limitaciones para lograr una comprensión profunda de los conceptos geométricos. Este artículo presenta una experiencia didáctica desarrollada con estudiantes de décimo grado en una institución pública de Barranquilla, Colombia. La propuesta se centró en el desarrollo del pensamiento geométrico mediante el uso combinado de materiales concretos y herramientas digitales, guiada por una estrategia educativa basada en el modelo BARRISO. Se adoptó un enfoque cualitativo con diseño de investigación-acción y carácter descriptivo, utilizando observación participante y análisis de contenido para evaluar el proceso de aprendizaje. Los resultados evidencian que la integración de recursos manipulativos, tecnología educativa y contextos reales favorece el aprendizaje activo, el trabajo colaborativo y la conexión entre la geometría y la vida cotidiana. A través de una secuencia de actividades que incluyó la construcción manual de arcos de circunferencia, el uso de fórmulas, la comprobación de resultados y la representación digital, se promovió una comprensión significativa del concepto de longitud de arco. Esta experiencia resalta el valor del modelo BARRISO como estrategia pedagógica para mejorar las competencias matemáticas y fortalecer habilidades clave en los estudiantes.",
+      "abstract_en": "In the current context of mathematics education, one of the main challenges is to foster the development of geometric thinking in a meaningful and accessible way for all students. Despite methodological and technological advancements, many teaching approaches still struggle to achieve a deep understanding of geometric concepts. This article presents a didactic experience carried out with tenth-grade students from a public school in Barranquilla, Colombia. The proposal focused on promoting geometric thinking through the combined use of concrete materials and digital tools, guided by an educational strategy based on the BARRISO model. A qualitative approach was adopted, with an action-research design and a descriptive nature, using participant observation and content analysis to assess the learning process. The results show that integrating manipulative resources, educational technology, and real-life contexts supports active learning, collaborative work, and the connection between geometry and everyday life. Through a sequence of activities involving the manual construction of circular arcs, the application of formulas, result verification, and digital representation, a meaningful understanding of arc length was promoted. This experience highlights the potential of the BARRISO model as a pedagogical strategy to enhance mathematical competencies and strengthen key skills in students.",
+      "abstract_pt": "No contexto atual da educação matemática, um dos principais desafios é promover o desenvolvimento do pensamento geométrico de maneira significativa e acessível para todos os estudantes. Apesar dos avanços metodológicos e tecnológicos, muitos enfoques de ensino ainda apresentam limitações para alcançar uma compreensão profunda dos conceitos geométricos. Este artigo apresenta uma experiência didática desenvolvida com estudantes do décimo ano em uma instituição pública de Barranquilla, Colômbia. A proposta concentrou-se no desenvolvimento do pensamento geométrico por meio do uso combinado de materiais concretos e ferramentas digitais, guiada por uma estratégia educativa baseada no modelo BARRISO. Adotou-se uma abordagem qualitativa com desenho de pesquisa-ação e caráter descritivo, utilizando observação participante e análise de conteúdo para avaliar o processo de aprendizagem. Os resultados evidenciam que a integração de recursos manipulativos, tecnologia educativa e contextos reais favorece a aprendizagem ativa, o trabalho colaborativo e a conexão entre a geometria e a vida cotidiana. Por meio de uma sequência de atividades que incluiu a construção manual de arcos de circunferência, o uso de fórmulas, a verificação de resultados e a representação digital, promoveu-se uma compreensão significativa do conceito de comprimento de arco. Esta experiência ressalta o valor do modelo BARRISO como estratégia pedagógica para melhorar as competências matemáticas e fortalecer habilidades-chave nos estudantes.",
+      "keywords_es": [
+        "Pensamiento geométrico",
+        "material concreto",
+        "recursos digitales",
+        "GeoGebra",
+        "modelo BARRISO"
+      ],
+      "keywords_en": [
+        "Geometric thinking",
+        "concrete material",
+        "digital resources",
+        "GeoGebra",
+        "BARRISO model"
+      ],
+      "keywords_pt": [
+        "Pensamento geométrico",
+        "material concreto",
+        "recursos digitais",
+        "GeoGebra",
+        "modelo BARRISO"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 5,
+      "title": "Estrategia didáctica para la solución numérica de ecuaciones diferenciales ordinarias de orden superior",
+      "title_en": "Didactic strategy for solution of higher order ordinary differential equations",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Mario A. Sandoval-Hernández",
+          "email": "marioalberto.sandoval.cb190@dgeti.sems.gob.mx",
+          "university": "Centro de Bachillerato Tecnológico industrial y de servicios No.190",
+          "department": "",
+          "location": "Boca del Río, Ver., México",
+          "orcid": "https://orcid.org/0000-0002-5518-3858"
+        },
+        {
+          "name": "Hugo Jiménez-Islas",
+          "email": "hugo.jimenez@itcelaya.edu.mx",
+          "university": "Tecnológico Nacional de México en Celaya",
+          "department": "",
+          "location": "Celaya Gto., México",
+          "orcid": "https://orcid.org/0000-0002-1084-5520"
+        },
+        {
+          "name": "Salvador E. Torreblanca-Bouchan",
+          "email": "salvadorenrique.torreblanca.cb190@dgeti.sems.gob.mx",
+          "university": "Centro de Bachillerato Tecnológico industrial y de servicios No.190",
+          "department": "",
+          "location": "Boca del Río, Ver., México",
+          "orcid": "https://orcid.org/0000-0002-1695-2933"
+        },
+        {
+          "name": "F. Iván Molina-Herrera",
+          "email": "fi.molina@ugto.mx",
+          "university": "Universidad de Guanajuato",
+          "department": "",
+          "location": "Guanajuato Gto., México",
+          "orcid": "https://orcid.org/0009-0005-9209-2890"
+        },
+        {
+          "name": "J. Jesús Villegas-Saucillo",
+          "email": "jesus.villegas@itcelaya.edu.mx",
+          "university": "Tecnológico Nacional de México en Celaya",
+          "department": "",
+          "location": "Celaya Gto., México",
+          "orcid": "https://orcid.org/0000-0002-2863-5302"
+        },
+        {
+          "name": "Héctor Vázquez Leal",
+          "email": "hvazquez@uv.mx",
+          "university": "Universidad Veracruzana",
+          "department": "",
+          "location": "Xalapa, Ver., México",
+          "orcid": "https://orcid.org/0000-0002-7785-5272"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Sandoval",
+      "pdf": "/Articulos/V26/N2_2026/Sandoval/V26_n2_Sandoval.pdf",
+      "doi": "",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "En la enseñanza del análisis numérico en las instituciones de educación universitaria se utilizan libros de texto que omiten aspectos pedagógicos procedimentales, que inhiben algunos procesos de enseñanza-aprendizaje. En el caso de los algoritmos presentados en los libros de texto orientados a resolver ecuaciones diferenciales ordinarias mantienen la metodología de utilizar una ecuación diferencial de primer orden para la aplicación de los métodos numéricos de solución obviando los detalles cuando se da solución de ecuaciones diferenciales de orden superior. En este artículo educativo se presentan dos guías de solución didáctica con el fin de ayudar al aprendizaje con el objetivo de que los alumnos sean capaces de proponer la solución numérica para problemas de valor inicial aplicando los métodos de Euler y Runge-Kutta a ecuaciones ordinarias de orden superior y puedan entonces generar sus propias implementaciones en lenguajes de programación como Fortran 90. En este trabajo se presentan 4 casos de estudio mostrando la aplicación de la propuesta. En este trabajo se probaron las estrategias didácticas propuestas de este artículo a un grupo de estudiantes obteniéndose resultados favorables en los aprendizajes de los estudiantes.",
+      "abstract_en": "In the teaching of numerical analysis at university-level institutions, textbooks often neglect pedagogical aspects, which in some cases may hinder certain teaching-learning processes. Specifically, algorithms presented in textbooks for solving ordinary differential equations typically rely on the use of first-order differential equations, overlooking significant details required for solving higher-order differential equations. This educational article presents a generalized and didactic approach that enables students to formulate numerical solutions for initial value problems. By applying Euler’s and Runge-Kutta methods to higher-order ordinary differential equations, students will be empowered to develop and implement their own solutions in programming languages. This study includes four case studies that illustrate the practical application of the proposed approach. In this work, the two strategies proposed in this paper were tested on a group of students, obtaining favorable results in student learning.",
+      "abstract_pt": "Na ensino de análise numérica nas instituições de ensino superior, utilizam-se livros didáticos que omitem aspectos pedagógicos procedimentais, o que inibe alguns processos de ensino-aprendizagem. No caso dos algoritmos apresentados nos livros orientados para resolver equações diferenciais ordinárias, mantém-se a metodologia de usar uma equação diferencial de primeira ordem para a aplicação dos métodos numéricos de solução, ignorando os detalhes ao resolver equações diferenciais de ordem superior. Neste artigo educacional, apresentam-se dois guias de solução didática com o objetivo de auxiliar a aprendizagem, permitindo que os alunos sejam capazes de propor a solução numérica para problemas de valor inicial aplicando os métodos de Euler e Runge-Kutta a equações ordinárias de ordem superior e, assim, gerar suas próprias implementações em linguagens de programação como Fortran 90. Neste trabalho, apresentam-se quatro estudos de caso mostrando a aplicação da proposta. As estratégias didáticas propostas neste artigo foram testadas com um grupo de estudantes, obtendo-se resultados favoráveis na aprendizagem dos alunos.",
+      "keywords_es": [
+        "Matemática educativa",
+        "enseñanza universitaria",
+        "análisis numérico",
+        "discurso matemático escolar"
+      ],
+      "keywords_en": [
+        "Mathematics education",
+        "college education",
+        "numerical analysis",
+        "school mathematical speech"
+      ],
+      "keywords_pt": [
+        "Matemática educativa",
+        "ensino universitário",
+        "análise numérica",
+        "discurso matemático escolar"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 6,
+      "title": "Geogebra en la enseñanza de la geometría en escuela nueva",
+      "title_en": "Geogebra for teaching geometry in escuela nueva",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Maira Alejandra Franco-Saavedra",
+          "email": "alexa_ariam@hotmail.com",
+          "university": "I.E. Aurelio Martínez Mutis",
+          "department": "",
+          "location": "Santander, Bucaramanga, Colombia",
+          "orcid": "https://orcid.org/0009-0002-7791-644X"
+        },
+        {
+          "name": "Evelyn Carolina Medina-Naranjo",
+          "email": "ecarolina.medinanaranjo@gmail.com",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Bogotá D.C., Colombia",
+          "orcid": "https://orcid.org/0009-0001-2942-8516"
+        },
+        {
+          "name": "Carolina Tovar-Torres",
+          "email": "carolina.tovar@uniminuto.edu",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Ibagué, Colombia",
+          "orcid": "https://orcid.org/0000-0003-3019-9092"
+        },
+        {
+          "name": "Néstor Rafael Perico-Granados",
+          "email": "nestor.perico@uniminuto.edu.co",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Tunja, Colombia",
+          "orcid": "https://orcid.org/0000-0003-1768-793X"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Franco",
+      "pdf": "/Articulos/V26/N2_2026/Franco/V26_n2_Franco.pdf",
+      "doi": "",
+      "received": "22 de febrero de 2025",
+      "accepted": "15 de setiembre de 2025",
+      "abstract_es": "El presente artículo tiene como objetivo analizar los beneficios de utilizar el software GeoGebra en la enseñanza de la geometría en estudiantes de primaria. La investigación que le antecede se llevó a cabo en el Centro Educativo La Bodega, sede Arroyo de Agua, municipio de La Paz, Departamento del Cesar, Colombia. Esta institución opera bajo el modelo de Escuela Nueva. La muestra correspondió a la totalidad de la población, nueve estudiantes de los grados de 1° a 5°. Se trabajó con un enfoque mixto, alcance descriptivo y técnicas de recolección. Tras identificar las necesidades, se diseñó secuencia didáctica con mediación de GeoGebra basada en el modelo instruccional ADDIE. El análisis estadístico mostró mejoras significativas en las dimensiones analizadas.",
+      "abstract_en": "The present article aims to analyze the benefits of GeoGebra in teaching Geometry to primary school students. The preceding research was conducted at the Centro Educativo La Bodega, Arroyo de Agua campus, in the municipality of La Paz, Department of Cesar, Colombia, an institution that operates under the Escuela Nueva model. The sample comprised the entire population, consisting of nine students from grades 1° to 5°. A mixed-methods approach was used, with a descriptive scope and data collection techniques. After identifying the needs, a didactic sequence mediated by GeoGebra based on the ADDIE instructional model was designed. Statistical analysis showed significant improvements in the analyzed dimensions.",
+      "abstract_pt": "O presente artigo tem como objetivo analisar os benefícios de utilizar o software GeoGebra no ensino de geometria para estudantes do ensino fundamental. A pesquisa que o precede foi realizada no Centro Educativo La Bodega, sede Arroyo de Agua, município de La Paz, Departamento do Cesar, Colômbia. Esta instituição opera sob o modelo de Escola Nova. A amostra correspondeu à totalidade da população, nove estudantes das turmas de 1° a 5°. Trabalhou-se com uma abordagem mista, alcance descritivo e técnicas de recolha de dados. Após identificar as necessidades, foi desenhada uma sequência didática com mediação do GeoGebra baseada no modelo instrucional ADDIE. A análise estatística mostrou melhoras significativas nas dimensões analisadas.",
+      "keywords_es": [
+        "Enseñanza",
+        "Escuela nueva",
+        "Geometría",
+        "GeoGebra",
+        "Modelo Educacional"
+      ],
+      "keywords_en": [
+        "Teaching",
+        "New school",
+        "Geometry",
+        "GeoGebra",
+        "Educational models"
+      ],
+      "keywords_pt": [
+        "Ensino",
+        "Escola Nova",
+        "Geometria",
+        "GeoGebra",
+        "Modelo Educacional"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 7,
+      "title": "Modelación de sistemas positivos mediante distribuciones tipo fase",
+      "title_en": "Modeling positive systems using phase-type distributions",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Luz Judith Rodríguez Esparza",
+          "email": "luz.rodriguez@edu.uaa.mx",
+          "university": "Universidad Autónoma de Aguascalientes",
+          "department": "",
+          "location": "Aguascalientes, México",
+          "orcid": "https://orcid.org/0000-0003-2241-1102"
+        },
+        {
+          "name": "Fernando Baltazar Larios",
+          "email": "fernandobaltazar@ciencias.unam.mx",
+          "university": "Universidad Nacional Autónoma de México",
+          "department": "",
+          "location": "Coyoacán, México",
+          "orcid": "https://orcid.org/0000-0001-8292-3615"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Rodriguez",
+      "pdf": "/Articulos/V26/N2_2026/Rodriguez/V26_n2_Rodriguez.pdf",
+      "doi": "",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "En este artículo se considera la relación entre las distribuciones tipo fase y sistemas positivos a través de ejemplos prácticos y aplicaciones. Las distribuciones tipo fase, comúnmente utilizadas en la modelación de sistemas dinámicos, representan la evolución temporal de un conjunto de variables en función de su fase. Por otro lado, los sistemas positivos, que prevalecen en una amplia gama de disciplinas, son aquellos en los que las variables involucradas mantienen valores no negativos a lo largo del tiempo. A través de aplicaciones como la dinámica de la trayectoria de estudiantes y la gestión de la cadena de suministro, se muestra cómo las distribuciones tipo fase pueden ser útiles para describir y analizar sistemas positivos, ofreciendo una perspectiva sobre su comportamiento dinámico. El principal objetivo de este trabajo es establecer conexiones claras entre estos conceptos aparentemente diferentes, destacando su relevancia y utilidad en diversos campos de estudio. Los resultados aquí presentados contribuyen a una mejor comprensión de la interacción entre la teoría de las distribuciones tipo fase y la teoría de sistemas positivos, abriendo nuevas oportunidades para futuras investigaciones en este campo interdisciplinario.",
+      "abstract_en": "In this paper, we consider the relationship between phase-type distributions and positive systems through practical examples and applications. Phase-type distributions, commonly used in modelling dynamic systems, represent the temporal evolution of a set of variables based on their phase. On the other hand, positive systems, prevalent in a wide range of disciplines, are those where the involved variables maintain non-negative values over time. Through applications such as student trajectory dynamics and supply chain management, it is shown how phase-type distributions can be useful for describing and analyzing positive systems, offering insight into their dynamic behavior. Our main objective is to establish clear connections between these seemingly different concepts, highlighting their relevance and utility in various fields of study. The findings presented here contribute to a better understanding of the interaction between phase-type distribution theory and positive system theory, opening new opportunities for future research in this interdisciplinary field.",
+      "abstract_pt": "Neste artigo, considera-se a relação entre distribuições do tipo fase e sistemas positivos por meio de exemplos práticos e aplicações. As distribuições do tipo fase, comumente utilizadas na modelagem de sistemas dinâmicos, representam a evolução temporal de um conjunto de variáveis em função de sua fase. Por outro lado, os sistemas positivos, que prevalecem em uma ampla gama de disciplinas, são aqueles nos quais as variáveis envolvidas mantêm valores não negativos ao longo do tempo. Através de aplicações como a dinâmica da trajetória de estudantes e a gestão da cadeia de suprimentos, mostra-se como as distribuições do tipo fase podem ser úteis para descrever e analisar sistemas positivos, oferecendo uma perspectiva sobre seu comportamento dinâmico. O principal objetivo deste trabalho é estabelecer conexões claras entre esses conceitos aparentemente diferentes, destacando sua relevância e utilidade em diversos campos de estudo. Os resultados aqui apresentados contribuem para uma melhor compreensão da interação entre a teoria das distribuições do tipo fase e a teoria de sistemas positivos, abrindo novas oportunidades para futuras pesquisas neste campo interdisciplinar.",
+      "keywords_es": [
+        "Distribución tipo fase",
+        "sistemas positivos",
+        "sistemas de control"
+      ],
+      "keywords_en": [
+        "Phase-type distribution",
+        "positive systems",
+        "control systems"
+      ],
+      "keywords_pt": [
+        "Distribuição do tipo fase",
+        "sistemas positivos",
+        "sistemas de controle"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 8,
+      "title": "Desafíos y adaptaciones en la enseñanza de las matemáticas durante la pandemia: un análisis cualitativo de experiencias docentes con TIC en Costa Rica",
+      "title_en": "Challenges and adaptations in teaching mathematics during the pandemic: a qualitative analysis of teaching experiences with ICTs in Costa Rica",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Grettel Gutiérrez-Ruiz",
+          "email": "ggutierrez@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-3264-8464"
+        },
+        {
+          "name": "Francisco M. Aliaga",
+          "email": "francisco.aliaga@uv.es",
+          "university": "Universidad de Valencia",
+          "department": "",
+          "location": "Valencia, España",
+          "orcid": "https://orcid.org/0000-0003-4836-2396"
+        },
+        {
+          "name": "Gerardo Meza-Cascante",
+          "email": "gemeza@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5413-0172"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Gutierrez",
+      "pdf": "/Articulos/V26/N2_2026/Gutierrez/V26_n2_Gutierrez.pdf",
+      "doi": "",
+      "received": "21 marzo de 2025",
+      "accepted": "1 noviembre 2025",
+      "abstract_es": "Se reportan los resultados de un estudio que explora las experiencias y dificultades enfrentadas por docentes de matemática de la educación secundaria en Costa Rica al incorporar aceleradamente las Tecnologías de la Información y la Comunicación (TIC) en su enseñanza debido a la pandemia del COVID-19. La investigación, de carácter cualitativo, incluyó la participación de 12 docentes con más de 10 años de experiencia, provenientes de diversas provincias, a través de grupos focales virtuales. Se analizó la información con el software MAXQDA, revelando desafíos como el estrés laboral, problemas de conectividad, falta de apoyo institucional y dudas sobre el aprendizaje en entornos virtuales. A pesar de los esfuerzos del Ministerio de Educación Pública (MEP) y de otras instituciones para fortalecer la capacitación docente en TIC, estos se percibieron como insuficientes y tardíos. Se concluye que la formación continua y el acceso equitativo a recursos tecnológicos son esenciales para una integración efectiva de las TIC en la enseñanza de las matemáticas.",
+      "abstract_en": "This study reports the findings of research exploring the experiences and challenges faced by secondary school mathematics teachers in Costa Rica when rapidly integrating Information and Communication Technologies (ICT) into their teaching due to the COVID-19 pandemic. This qualitative study involved 12 teachers with over 10 years of experience from various provinces, participating in virtual focus groups. Data analysis using MAXQDA software revealed key challenges, including work-related stress, connectivity issues, lack of institutional support, and concerns about student learning in virtual environments. Despite efforts by the Ministry of Public Education and other institutions to enhance ICT training for teachers, these initiatives were perceived as insufficient and delayed. The study concludes that continuous professional development and equitable access to technological resources are essential for the effective integration of ICT in mathematics education.",
+      "abstract_pt": "Apresentam-se os resultados de um estudo que explora as experiências e dificuldades enfrentadas por professores de matemática da educação secundária na Costa Rica ao incorporar, de forma acelerada, as Tecnologias da Informação e Comunicação (TIC) em seu ensino devido à pandemia de COVID-19. A pesquisa, de caráter qualitativo, incluiu a participação de 12 docentes com mais de 10 anos de experiência, provenientes de diversas províncias, por meio de grupos focais virtuais. As informações foram analisadas com o software MAXQDA, revelando desafios como estresse laboral, problemas de conectividade, falta de apoio institucional e dúvidas sobre a aprendizagem em ambientes virtuais. Apesar dos esforços do Ministério da Educação Pública (MEP) e de outras instituições para fortalecer a capacitação docente em TIC, estes foram percebidos como insuficientes e tardios. Conclui-se que a formação contínua e o acesso equitativo a recursos tecnológicos são essenciais para uma integração efetiva das TIC no ensino da matemática.",
+      "keywords_es": [
+        "Enseñanza de la matemática",
+        "tecnología educativa",
+        "educación secundaria",
+        "formación docente en TIC",
+        "brecha digital educativa"
+      ],
+      "keywords_en": [
+        "Mathematics teaching",
+        "educational technology",
+        "secondary education",
+        "teacher training in ICT",
+        "educational digital divide"
+      ],
+      "keywords_pt": [
+        "Ensino da matemática",
+        "tecnologia educativa",
+        "ensino secundário",
+        "formação docente em TIC",
+        "lacuna digital educacional"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 9,
+      "title": "Explorando el origen histórico de las funciones trigonométricas",
+      "title_en": "Exploring the historical origin of trigonometric functions",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Estefanía Micol Bendersky Vieyra",
+          "email": "estefaniabendersky@gmail.com",
+          "university": "Universidad Nacional del Comahue",
+          "department": "Facultad de Economía y Administración. Departamento de Matemática",
+          "location": "Neuquén, Argentina",
+          "orcid": "https://orcid.org/0009-0007-2487-0181"
+        },
+        {
+          "name": "Blanca Muñoz Santis",
+          "email": "blamusa78@yahoo.com.ar",
+          "university": "Universidad Nacional del Comahue",
+          "department": "Facultad de Economía y Administración. Departamento de Matemática",
+          "location": "Neuquén, Argentina",
+          "orcid": "https://orcid.org/0009-0005-5636-2558"
+        },
+        {
+          "name": "María Laura Santori",
+          "email": "mlausantori@yahoo.com.ar",
+          "university": "Universidad Nacional del Comahue",
+          "department": "Facultad de Economía y Administración. Departamento de Matemática",
+          "location": "Neuquén, Argentina",
+          "orcid": "https://orcid.org/0000-0001-5142-0513"
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V26/N2_2026/Bendersky",
+      "pdf": "/Articulos/V26/N2_2026/Bendersky/V26_n2_Bendersky.pdf",
+      "doi": "",
+      "received": "26 noviembre de 2024",
+      "accepted": "8 agosto de 2025",
+      "abstract_es": "En el presente trabajo se describen, en base a diferentes fuentes bibliográficas, los desarrollos matemáticos que generaron, a lo largo de la historia, la construcción del objeto matemático llamado funciones trigonométricas. En primer lugar, se aborda el surgimiento de las razones trigonométricas. Luego se desarrolla la construcción de la noción de función para poder visualizar el marco en el que las distintas civilizaciones interpretaron al objeto en cuestión. Posteriormente, se detallan los aportes a la construcción de las funciones trigonométricas por parte de India. Además, se analiza el por qué los árabes fueron los interesados en su época en desarrollar la trigonometría sin perder de vista la influencia de la geometría esférica y las series en la consolidación de este objeto matemático.",
+      "abstract_en": "This paper describes, based on various bibliographic sources, the mathematical developments that led to the construction of the mathematical object known as trigonometric functions throughout history. First, it addresses the emergence of trigonometric ratios. It then develops the construction of the notion of a function to visualize the framework within which different civilizations interpreted the object in question. Subsequently, it details the contributions to the construction of trigonometric functions from India. It also analyzes why the Arabs were interested in developing trigonometry during their time, without losing sight of the influence of spherical geometry and series in the consolidation of this mathematical object.",
+      "abstract_pt": "No presente trabalho descrevem-se, com base em diferentes fontes bibliográficas, os desenvolvimentos matemáticos que geraram, ao longo da história, a construção do objeto matemático denominado funções trigonométricas. Em primeiro lugar, aborda-se o surgimento das razões trigonométricas. Em seguida, desenvolve-se a construção da noção de função para poder visualizar o contexto em que as diferentes civilizações interpretaram o objeto em questão. Posteriormente, detalham-se as contribuições para a construção das funções trigonométricas por parte da Índia. Além disso, analisa-se por que os árabes foram, em sua época, os interessados em desenvolver a trigonometria, sem perder de vista a influência da geometria esférica e das séries na consolidação desse objeto matemático.",
+      "keywords_es": [
+        "Historia de la Matemática",
+        "trigonometría",
+        "funciones trigonométricas"
+      ],
+      "keywords_en": [
+        "History of Mathematics",
+        "trigonometry",
+        "trigonometric functions"
+      ],
+      "keywords_pt": [
+        "Historia da Matemática",
+        "trigonometria",
+        "funções trigonométricas"
+      ],
+      "citation": ""
+    },
 
+    {
+      "id": 10,
+      "title": "Generar una Web Interactiva con LaTeX (usando Make4ht e IA)",
+      "title_en": "Transforming LaTeX Documents into Interactive Websites (with AI & Make4ht)",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Walter Mora Flores",
+          "email": "wmora2@gmail.com",
+          "university": "Investigador independiente",
+          "department": "",
+          "location": "Alajuela, Costa Rica",
+          "orcid": "https://orcid.org/0009-0008-8770-3417"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V26/N2_2026/Mora",
+      "pdf": "/Articulos/V26/N2_2026/Mora/V26_n2_Mora.pdf",
+      "doi": "",
+      "received": "2 de mayo de 2025",
+      "accepted": "1 de agosto de 2025",
+      "abstract_es": "Este documento presenta una plantilla configurada para convertir documentos LaTeX en páginas web interactivas utilizando Make4ht. Se abordan temas como la configuración de Make4ht, la conversión de entornos complejos a imágenes SVG, y con la asistencia de la IA, la inclusión de actividades interactivas con HTML, JavaScript y CSS, y la integración de elementos multimedia como applets de GeoGebra y videos de YouTube. El enfoque bimodal permite generar tanto PDF como HTML, aprovechando las ventajas de cada formato: el PDF para impresión y citación formal, y el HTML para accesibilidad e interactividad en dispositivos digitales.",
+      "abstract_en": "This document presents a configured template for converting LaTeX documents into interactive web pages using Make4ht. It addresses topics such as Make4ht configuration, the conversion of complex environments into SVG images and, with the assistance of AI, the inclusion of interactive activities using HTML, JavaScript, and CSS. The template also covers the integration of multimedia elements like GeoGebra applets and YouTube videos. This bimodal approach allows for the generation of both PDF and HTML, leveraging the advantages of each format: PDF for formal printing and citation, and HTML for accessibility and interactivity on digital devices.",
+      "abstract_pt": "Este documento apresenta um modelo configurado para converter documentos LaTeX em páginas web interativas utilizando o Make4ht. São abordados temas como a configuração do Make4ht, a conversão de ambientes complexos em imagens SVG e, com a assistência da IA, a inclusão de atividades interativas com HTML, JavaScript e CSS, além da integração de elementos multimídia como applets do GeoGebra e vídeos do YouTube. A abordagem bimodal permite gerar tanto PDF quanto HTML, aproveitando as vantagens de cada formato: o PDF para impressão e citação formal, e o HTML para acessibilidade e interatividade em dispositivos digitais.",
+      "keywords_es": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interactividad",
+        "JavaScript",
+        "IA"
+      ],
+      "keywords_en": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interactivity",
+        "JavaScript",
+        "AI"
+      ],
+      "keywords_pt": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interatividade",
+        "JavaScript",
+        "IA"
+      ],
+      "citation": "Mora Flores, W. (2026). Generar una Web Interactiva con LaTeX (usando Make4ht e IA). Revista Digital: Matemática, Educación e Internet, 26(2)."
+    },
+    {
+      "id": 11,
+      "title": "Una introducción a la programación de horarios: restricciones, parámetros y funciones objetivo",
+      "title_en": "An Introduction to Timetabling: Constraints, Parameters and Objective Functions",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José Gerardo Córdoba Hernández",
+          "email": "jose.cordoba.hernandez@una.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9919-0937"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V26/N2_2026/Cordoba",
+      "pdf": "/Articulos/V26/N2_2026/Cordoba/V26_n2_Cordoba.pdf",
+      "doi": "",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "La programación de horarios en instituciones educativas constituye un problema de optimización combinatoria cuyo objetivo es asignar cursos, docentes, aulas y bloques de tiempo de manera coordinada, respetando un conjunto de restricciones. Este artículo presenta una introducción al modelado matemático de dicho problema, diferenciando restricciones estrictas (hard constraints) y flexibles (soft constraints), así como la definición de conjuntos, parámetros y funciones objetivo que permiten estructurar formalmente el modelo. Se presentan tres ejemplos ilustrativos que muestran cómo la variación en los pesos asignados a preferencias y penalizaciones, junto con la reasignación puntual de eventos, impacta directamente el valor de la función objetivo. Los ejemplos evidencian que el equilibrio entre criterios y pequeños ajustes en las asignaciones pueden mejorar de forma significativa la calidad de los horarios generados. Este trabajo constituye una introducción didáctica y un punto de partida para investigaciones futuras orientadas al abordaje del problema de programación de horarios.",
+      "abstract_en": "Timetabling in educational institutions is a combinatorial optimization problem whose objective is to assign courses, instructors, classrooms, and time slots in a coordinated manner while satisfying a set of constraints. This article introduces the mathematical modeling of such a problem, distinguishing between hard and soft constraints, and formalizing the definition of sets, parameters, and objective functions that structure the model. Three illustrative examples are presented to demonstrate how variations in the weights assigned to preferences and penalties, together with the punctual reassignment of events, directly affect the objective function value. These examples show that balancing criteria and implementing minor adjustments in the allocations can significantly improve the quality of the generated timetables. This work provides a didactic introduction and a starting point for future research aimed at addressing the academic timetabling problem.",
+      "abstract_pt": "A programação de horários em instituições educativas constitui um problema de otimização combinatória cujo objetivo é atribuir cursos, docentes, salas e blocos de tempo de forma coordenada, respeitando um conjunto de restrições. Este artigo apresenta uma introdução ao modelamento matemático desse problema, diferenciando restrições estritas (hard constraints) e flexíveis (soft constraints), assim como a definição de conjuntos, parâmetros e funções objetivo que permitem estruturar formalmente o modelo. São apresentados três exemplos ilustrativos que mostram como a variação nos pesos atribuídos a preferências e penalizações, junto com a reatribuição pontual de eventos, impacta diretamente o valor da função objetivo. Os exemplos evidenciam que o equilíbrio entre critérios e pequenos ajustes nas atribuições podem melhorar de forma significativa a qualidade dos horários gerados. Este trabalho constitui uma introdução didática e um ponto de partida para futuras pesquisas orientadas ao abordamento do problema de programação de horários.",
+      "keywords_es": [
+        "Optimización combinatoria",
+        "asignación de recursos",
+        "programación de horarios"
+      ],
+      "keywords_en": [
+        "Combinatorial optimization",
+        "resource allocation",
+        "Timetabling"
+      ],
+      "keywords_pt": [
+        "Otimização combinatória",
+        "atribuição de recursos",
+        "programação de horários"
+      ],
+      "citation": ""
     }
   ]
 }

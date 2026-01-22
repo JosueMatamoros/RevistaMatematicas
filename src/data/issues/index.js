@@ -7,6 +7,13 @@ import V26_N2_2026 from "./V26_N2_2026.json";
 
 export const issues = [
   {
+    id: "V26_N2_2026",
+    volume: 26,
+    number: 2,
+    date: "Marzo 2026 - Agosto 2026",
+    data: V26_N2_2026,
+  },
+  {
     id: "V26_N1_2025",
     volume: 26,
     number: 1,
