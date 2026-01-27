@@ -14,17 +14,17 @@
       },
       {
         "name": "Héctor Barrantes González",
-        "email": "",
-        "orcid": "",
-        "university": "",
-        "location": ""
+        "email": "hector.barrantes@ucr.ac.cr",
+        "orcid": "https://orcid.org/0000-0001-7941-5759",
+        "university": "Universidad de Costa Rica",
+        "location": "San Ramón"
       },
       {
         "name": "Bolívar Ramírez Santamaría",
-        "email": "",
-        "orcid": "",
-        "university": "",
-        "location": ""
+        "email": "bolivar.ramirez@ucr.ac.cr ",
+        "orcid": "https://orcid.org/0009-0006-6087-8386",
+        "university": "Universidad de Costa Rica",
+        "location": "San Ramón"
       }
     ],
     "lastRevision": "",
