@@ -3,157 +3,6 @@
   "articles": [
     {
       "id": 1,
-      "title": "Sobre la secuencia numérica de François, su tablero y la visualización de propiedades con mosaicos",
-      "title_en": "On the Francois numerical sequence, his board and some tillings properties",
-      "volume": 26,
-      "number": 2,
-      "language": "pt",
-      "published": "",
-      "authors": [
-        {
-          "name": "Francisco Regis Vieira Alves",
-          "email": "fregis@ifce.edu.br",
-          "university": "Instituto de Educação, Ciência e Tecnologia do Estado do Ceará",
-          "location": "Fortaleza, Brasil",
-          "orcid": "https://orcid.org/0000-0003-3710-1561"
-        }
-      ],
-      "category": "",
-      "slug": "Articulos/V26/N2_2026/Vieira",
-      "pdf": "/Articulos/V26/N2_2026/Vieira/V26_n2_Vieira.pdf",
-      "doi": "https://doi.org/10.18845/rdmei.v26i2.8358",
-      "received": "13 de marzo del 2024",
-      "accepted": "30 de julio del 2025",
-      "abstract_es": "El estudio de secuencias numericas recurrentes impone cierto carácter restrictivo y limitado, dado que, predominantemente, los compendios de libros de Historia de la Matematica acentúan solo el papel de la secuencia numerica recurrente de segundo orden, llamada secuencia de Fibonacci. Por otro lado, al examinar el interes moderno sobre la generalización de diversos casos de secuencias numericas recurrentes, se confirma que el enfoque combinatorio permite el descubrimiento de innumerables propiedades matematicas y, de manera especial, cuando se examinan tales propiedades con el empleo de la nocion de Tablero. Así, el presente trabajo aborda el caso de una secuencia numerica recurrente recientemente introducida en la literatura científica, llamada secuencia numerica de François. Finalmente, a partir de la constatacion de ciertos casos relacionados con la nocion de Tablero hexagonal, el trabajo presenta una formulacion que, de manera indirecta, termina empleando propiedades relacionadas con la secuencia de Lucas y Fibonacci.",
-      "abstract_en": "The study of recurring numerical sequences imposes a certain restrictive and limited aspect, since, predominantly, the compendiums of History of Mathematics books emphasize only the role of the recurring numerical sequence of 2nd order, called the Fibonacci sequence. On the other hand, when we examine the modern interest in the generalization of several other cases of recurring numerical sequences, we confirm that the combinatorial approach provides the discovery of numerous mathematical properties and, especially, when we examine such properties using the notion of Chessboard. Thus, the present work addresses the case of a recurring numerical sequence recently introduced in the scientific literature, called the Francois numerical sequence. Finally, from the observation of certain cases related to the notion of hexagonal board, the work presents a formulation that, indirectly, ends up using properties related to the Lucas and Fibonacci sequences.",
-      "abstract_pt": "O estudo de sequencias numéricas recorrentes impõe certo viés restritivo e limitado, uma vez que, predominantemente, os compêndios de livros de História da Matemática acentuam apenas o papel da sequência numérica recorrente de 2ª ordem, chamada de sequência de Fibonacci. Por outro lado, quando examinamos o interesse moderno sobre a generalização de vários outros casos de sequências numéricas recorrentes, confirmamos que a abordagem combinatória proporciona a descoberta de inúmeras propriedades matemáticas e, de modo especial, quando examinamos tais propriedades com o emprego da noção de Tabuleiro. Assim, o presente trabalho aborda o caso de uma sequência numérica recorrente recém introduzida na literatura científica, chamada de sequência numérica de Francois. Por fim, a partir da constatação de certos casos relacionados com a noção de Tabuleiro hexagonal, o trabalho apresenta uma formulação que, de modo indireto, finda por empregar propriedades relacionadas com a sequência de Lucas e Fibonacci.",
-      "keywords_es": [
-        "Historia de la Matematica",
-        "Secuencia numérica",
-        "Tablero",
-        "Profesor de Matemática"
-      ],
-      "keywords_en": [
-        "History of Mathematics",
-        "Numerical sequence",
-        "Board",
-        "Mathematics Teacher"
-      ],
-      "keywords_pt": [
-        "Historia da Matemática",
-        "Sequência numérica",
-        "Tabuleiro",
-        "Professor de Matemática"
-      ],
-      "citation": ""
-    },
-    {
-      "id": 2,
-      "title": "Una introducción a los sistemas dinámicos discretos bidimensionales",
-      "title_en": "An introduction to two-dimensional discrete dynamical systems",
-      "volume": 26,
-      "number": 2,
-      "language": "es",
-      "published": "",
-      "authors": [
-        {
-          "name": "Alicia Santiago-Santos",
-          "email": "alicia@mixteco.utm.mx",
-          "university": "Universidad Tecnológica de la Mixteca",
-          "department": "Instituto de Física y matemáticas",
-          "location": "Huajuapan de León, Oaxaca, México",
-          "orcid": "https://orcid.org/0000-0002-1888-7135"
-        },
-        {
-          "name": "Isahi García-Ramos",
-          "email": "gari981027@gs.utm.mx",
-          "university": "Universidad Tecnológica de la Mixteca",
-          "department": "Instituto de Física y matemáticas",
-          "location": "Huajuapan de León, Oaxaca, México",
-          "orcid": "https://orcid.org/0009-0006-9563-7590"
-        }
-      ],
-      "category": "",
-      "slug": "Articulos/V26/N2_2026/Santiago",
-      "pdf": "/Articulos/V26/N2_2026/Santiago/V26_n2_Santiago.pdf",
-      "doi": "",
-      "received": "24 febrero de 2025",
-      "accepted": "1 agosto de 2025",
-      "abstract_es": "Un sistema dinámico se puede definir informalmente como un sistema cuyo estado está especificado de forma única por un conjunto de variables y cuyo comportamiento está descrito por reglas predefinidas. El objetivo de este artículo es proporcionar al lector una introducción a ciertos tipos de modelos matemáticos (también conocidos como sistemas dinámicos). En particular, hablar de modelos discretos unidimensionales y bidimensionales. Por último, se dan algunos ejemplos y su solución.",
-      "abstract_en": "A dynamical system can be informally defined as a system whose state is uniquely specified by a set of variables and whose behavior is described by predefined rules. The objective of this article is to present the reader with an introduction to certain types of mathematical models (also known as dynamical systems). In particular, to study one-dimensional and two-dimensional discrete models. Finally, some examples and their solutions are given.",
-      "abstract_pt": "Um sistema dinâmico pode ser definido informalmente como um sistema cujo estado está especificado de um jeito único por um conjunto de variáveis e cujo comportamento é descrito por regras predefinidas. O objetivo deste artigo é fornecer ao leitor uma introdução a certos tipos de modelos matemáticos (também conhecidos como sistemas dinâmicos). Em particular, falar de modelos discretos unidimensionais e bidimensionais. Por fim, apresentam-se alguns exemplos e sua solução.",
-      "keywords_es": [
-        "Modelos matemáticos",
-        "sistemas dinámicos discretos",
-        "sistemas dinámicos continuos",
-        "sistemas dinámicos discretos bidimensionales"
-      ],
-      "keywords_en": [
-        "Mathematical models",
-        "discrete dynamical systems",
-        "continuous dynamical systems",
-        "two-dimensional discrete dynamical systems"
-      ],
-      "keywords_pt": [
-        "Modelos matemáticos",
-        "sistemas dinâmicos discretos",
-        "sistemas dinâmicos contínuos",
-        "sistemas dinâmicos discretos bidimensionais"
-      ],
-      "citation": ""
-    },
-    {
-      "id": 3,
-      "title": "Estrategia basada en aprendizaje adaptativo con Inteligencia Artificial para el aprendizaje de funciones matemáticas de estudiantes de secundaria",
-      "title_en": "Adaptive learning based strategy with artificial intelligence for learning mathematical functions of high school students",
-      "volume": 26,
-      "number": 2,
-      "language": "es",
-      "published": "",
-      "authors": [
-        {
-          "name": "Jorge Alonso Díaz Porras",
-          "email": "jadiaz@uned.ac.cr",
-          "university": "Colegio Nacional de Educación a Distancia",
-          "department": "",
-          "location": "San José, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-9475-0544"
-        }
-      ],
-      "category": "",
-      "slug": "Articulos/V26/N2_2026/Diaz",
-      "pdf": "/Articulos/V26/N2_2026/Diaz/V26_n2_Diaz.pdf",
-      "doi": "",
-      "received": "21 de marzo de 2025",
-      "accepted": "30 de agosto de 2025",
-      "abstract_es": "La tecnología está revolucionando la forma de llevar a cabo el proceso de enseñanza-aprendizaje en todos los niveles educativos y, entre otras, las plataformas de aprendizaje adaptativo potenciadas con inteligencia artificial (IA) surgen como una alternativa viable, lo que es similar en el aprendizaje de las matemáticas. El objetivo del estudio fue analizar cómo una estrategia basada en aprendizaje adaptativo con inteligencia artificial potencia el aprendizaje de las funciones matemáticas de un estudiantado de secundaria. Se desarrolló una metodología cuantitativa, comparativa y de diseño pretest-postest sobre una muestra de 192 estudiantes de undécimo grado de educación secundaria de un colegio público en Costa Rica. Inicialmente, se les aplicó una prueba diagnóstica sobre el conocimiento de funciones matemáticas y, luego, se les intervino con la plataforma de aprendizaje adaptativo con IA Smartick. Por último, se les aplicó una prueba evaluativa final. Se comparó el rendimiento del estudiantado antes y después de la intervención mediante el factor de Bayes para igualdad de grupos, lo que corroboró la influencia de la intervención en el rendimiento académico. Los resultados indicaron un aumento significativo en el rendimiento del estudiantado tras la aplicación de la intervención, con una evidencia probabilística muy fuerte a favor de la hipótesis de un mayor rendimiento en el postest (BF10 > 1). Este resultado fue independiente del género, es decir, la mejora en el rendimiento fue igual para hombres y mujeres. Tras la intervención, los hombres obtuvieron un mayor rendimiento significativo, lo que sugiere que aprovecharon mejor las actividades de aprendizaje adaptativo en comparación con las mujeres. Se concluye que la plataforma de aprendizaje adaptativo con IA, Smartick, potencia el conocimiento del estudiantado en funciones matemáticas y mejora su rendimiento. Sin embargo, se debe estudiar más a fondo la diferencia en su abordaje por parte de hombres y mujeres.",
-      "abstract_en": "Technology is revolutionizing teaching and learning at all levels of education, and among others, adaptive learning platforms powered by artificial intelligence (AI) are emerging as a viable alternative, especially in mathematics learning. The aim of the study was to analyze how an adaptive learning strategy based on artificial intelligence improves the learning of mathematical functions in secondary school students. A quantitative, comparative, pretest-posttest methodology was developed for a sample of 192 eleventh grade secondary students from a public school in Costa Rica. They were first given a diagnostic test of their knowledge of mathematical functions and then received interventions using the Smartick adaptive learning platform with AI. Finally, they were given a final assessment test. The students’ performance before and after the intervention was compared using the Bayesian factor for group equality, which confirmed the influence of the intervention on academic performance. The results indicated a significant increase in student performance following the implementation of the intervention, with very strong probabilistic evidence supporting the hypothesis of higher performance on the post-test (BF10 > 1). This result was independent of gender, i.e., the improvement in performance was the same for males and females. After the intervention, males achieved significantly higher performance, suggesting that they benefited more from the adaptive learning activities compared to females. It is concluded that the AI-based adaptive learning platform, Smartick, enhances students’ knowledge of mathematical functions and improves their performance. However, the differences in how males and females approach the intervention require further investigation.",
-      "abstract_pt": "A tecnologia está revolucionando a forma de levar a cabo o processo de ensino-aprendizagem em todos os níveis educativos e, entre outras, as plataformas de aprendizagem adaptativa potenciadas por inteligência artificial (IA) surgem como uma alternativa viável, o que se observa também no ensino da matemática. O objetivo do estudo foi analisar como uma estratégia baseada em aprendizagem adaptativa com inteligência artificial potencia a aprendizagem das funções matemáticas de estudantes do ensino secundário. Desenvolveu-se uma metodologia quantitativa, comparativa e de desenho pré-teste-pós-teste sobre uma amostra de 192 estudantes do 11.º ano do ensino secundário de um colégio público na Costa Rica. Inicialmente, foi aplicada uma prova diagnóstica sobre o conhecimento de funções matemáticas e, em seguida, realizou-se a intervenção com a plataforma de aprendizagem adaptativa com IA Smartick. Por fim, foi aplicada uma prova avaliativa final. Comparou-se o rendimento dos estudantes antes e depois da intervenção mediante o fator de Bayes para igualdade de grupos, o que corroborou a influência da intervenção no rendimento acadêmico. Os resultados indicaram um aumento significativo no rendimento dos estudantes após a aplicação da intervenção, com evidência probabilística muito forte a favor da hipótese de um rendimento superior no pós-teste (BF10 > 1). Este resultado foi independente do gênero, isto é, a melhoria no rendimento foi igual para homens e mulheres. Após a intervenção, os homens obtiveram um rendimento significativamente maior, o que sugere que aproveitaram melhor as atividades de aprendizagem adaptativa em comparação com as mulheres. Conclui-se que a plataforma de aprendizagem adaptativa com IA, Smartick, potencia o conhecimento dos estudantes em funções matemáticas e melhora o seu rendimento. No entanto, deve-se estudar mais a fundo a diferença na sua abordagem por parte de homens e mulheres.",
-      "keywords_es": [
-        "Aprendizaje adaptativo",
-        "funciones matemáticas",
-        "inteligencia artificial",
-        "rendimiento académico",
-        "Smartick"
-      ],
-      "keywords_en": [
-        "Adaptive learning",
-        "mathematical functions",
-        "artificial intelligence",
-        "academic performance",
-        "Smartick"
-      ],
-      "keywords_pt": [
-        "Aprendizado adaptativo",
-        "funções matemáticas",
-        "inteligência artificial",
-        "desempenho acadêmico",
-        "Smartick"
-      ],
-      "citation": ""
-    },
-    {
-      "id": 4,
       "title": "Pensar geometricamente, actuar didácticamente: el modelo BARRISO como estrategia educativa",
       "title_en": "Thinking geometrically, acting didactically: the BARRISO model as an educational strategy",
       "volume": 26,
@@ -227,7 +76,7 @@
       "citation": ""
     },
     {
-      "id": 5,
+      "id": 2,
       "title": "Estrategia didáctica para la solución numérica de ecuaciones diferenciales ordinarias de orden superior",
       "title_en": "Didactic strategy for solution of higher order ordinary differential equations",
       "volume": 26,
@@ -314,81 +163,160 @@
       "citation": ""
     },
     {
-      "id": 6,
-      "title": "Geogebra en la enseñanza de la geometría en escuela nueva",
-      "title_en": "Geogebra for teaching geometry in escuela nueva",
+      "id": 3,
+      "title": "Sobre la secuencia numérica de François, su tablero y la visualización de propiedades con mosaicos",
+      "title_en": "On the Francois numerical sequence, his board and some tillings properties",
+      "volume": 26,
+      "number": 2,
+      "language": "pt",
+      "published": "",
+      "authors": [
+        {
+          "name": "Francisco Regis Vieira Alves",
+          "email": "fregis@ifce.edu.br",
+          "university": "Instituto de Educação, Ciência e Tecnologia do Estado do Ceará",
+          "location": "Fortaleza, Brasil",
+          "orcid": "https://orcid.org/0000-0003-3710-1561"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Vieira",
+      "pdf": "/Articulos/V26/N2_2026/Vieira/V26_n2_Vieira.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8358",
+      "received": "13 de marzo del 2024",
+      "accepted": "30 de julio del 2025",
+      "abstract_es": "El estudio de secuencias numericas recurrentes impone cierto carácter restrictivo y limitado, dado que, predominantemente, los compendios de libros de Historia de la Matematica acentúan solo el papel de la secuencia numerica recurrente de segundo orden, llamada secuencia de Fibonacci. Por otro lado, al examinar el interes moderno sobre la generalización de diversos casos de secuencias numericas recurrentes, se confirma que el enfoque combinatorio permite el descubrimiento de innumerables propiedades matematicas y, de manera especial, cuando se examinan tales propiedades con el empleo de la nocion de Tablero. Así, el presente trabajo aborda el caso de una secuencia numerica recurrente recientemente introducida en la literatura científica, llamada secuencia numerica de François. Finalmente, a partir de la constatacion de ciertos casos relacionados con la nocion de Tablero hexagonal, el trabajo presenta una formulacion que, de manera indirecta, termina empleando propiedades relacionadas con la secuencia de Lucas y Fibonacci.",
+      "abstract_en": "The study of recurring numerical sequences imposes a certain restrictive and limited aspect, since, predominantly, the compendiums of History of Mathematics books emphasize only the role of the recurring numerical sequence of 2nd order, called the Fibonacci sequence. On the other hand, when we examine the modern interest in the generalization of several other cases of recurring numerical sequences, we confirm that the combinatorial approach provides the discovery of numerous mathematical properties and, especially, when we examine such properties using the notion of Chessboard. Thus, the present work addresses the case of a recurring numerical sequence recently introduced in the scientific literature, called the Francois numerical sequence. Finally, from the observation of certain cases related to the notion of hexagonal board, the work presents a formulation that, indirectly, ends up using properties related to the Lucas and Fibonacci sequences.",
+      "abstract_pt": "O estudo de sequencias numéricas recorrentes impõe certo viés restritivo e limitado, uma vez que, predominantemente, os compêndios de livros de História da Matemática acentuam apenas o papel da sequência numérica recorrente de 2ª ordem, chamada de sequência de Fibonacci. Por outro lado, quando examinamos o interesse moderno sobre a generalização de vários outros casos de sequências numéricas recorrentes, confirmamos que a abordagem combinatória proporciona a descoberta de inúmeras propriedades matemáticas e, de modo especial, quando examinamos tais propriedades com o emprego da noção de Tabuleiro. Assim, o presente trabalho aborda o caso de uma sequência numérica recorrente recém introduzida na literatura científica, chamada de sequência numérica de Francois. Por fim, a partir da constatação de certos casos relacionados com a noção de Tabuleiro hexagonal, o trabalho apresenta uma formulação que, de modo indireto, finda por empregar propriedades relacionadas com a sequência de Lucas e Fibonacci.",
+      "keywords_es": [
+        "Historia de la Matematica",
+        "Secuencia numérica",
+        "Tablero",
+        "Profesor de Matemática"
+      ],
+      "keywords_en": [
+        "History of Mathematics",
+        "Numerical sequence",
+        "Board",
+        "Mathematics Teacher"
+      ],
+      "keywords_pt": [
+        "Historia da Matemática",
+        "Sequência numérica",
+        "Tabuleiro",
+        "Professor de Matemática"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 4,
+      "title": "Una introducción a los sistemas dinámicos discretos bidimensionales",
+      "title_en": "An introduction to two-dimensional discrete dynamical systems",
       "volume": 26,
       "number": 2,
       "language": "es",
       "published": "",
       "authors": [
         {
-          "name": "Maira Alejandra Franco-Saavedra",
-          "email": "alexa_ariam@hotmail.com",
-          "university": "I.E. Aurelio Martínez Mutis",
-          "department": "",
-          "location": "Santander, Bucaramanga, Colombia",
-          "orcid": "https://orcid.org/0009-0002-7791-644X"
+          "name": "Alicia Santiago-Santos",
+          "email": "alicia@mixteco.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Instituto de Física y matemáticas",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0002-1888-7135"
         },
         {
-          "name": "Evelyn Carolina Medina-Naranjo",
-          "email": "ecarolina.medinanaranjo@gmail.com",
-          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
-          "department": "",
-          "location": "Bogotá D.C., Colombia",
-          "orcid": "https://orcid.org/0009-0001-2942-8516"
-        },
-        {
-          "name": "Carolina Tovar-Torres",
-          "email": "carolina.tovar@uniminuto.edu",
-          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
-          "department": "",
-          "location": "Ibagué, Colombia",
-          "orcid": "https://orcid.org/0000-0003-3019-9092"
-        },
-        {
-          "name": "Néstor Rafael Perico-Granados",
-          "email": "nestor.perico@uniminuto.edu.co",
-          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
-          "department": "",
-          "location": "Tunja, Colombia",
-          "orcid": "https://orcid.org/0000-0003-1768-793X"
+          "name": "Isahi García-Ramos",
+          "email": "gari981027@gs.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Instituto de Física y matemáticas",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0009-0006-9563-7590"
         }
       ],
       "category": "",
-      "slug": "Articulos/V26/N2_2026/Franco",
-      "pdf": "/Articulos/V26/N2_2026/Franco/V26_n2_Franco.pdf",
-      "doi": "",
-      "received": "22 de febrero de 2025",
-      "accepted": "15 de setiembre de 2025",
-      "abstract_es": "El presente artículo tiene como objetivo analizar los beneficios de utilizar el software GeoGebra en la enseñanza de la geometría en estudiantes de primaria. La investigación que le antecede se llevó a cabo en el Centro Educativo La Bodega, sede Arroyo de Agua, municipio de La Paz, Departamento del Cesar, Colombia. Esta institución opera bajo el modelo de Escuela Nueva. La muestra correspondió a la totalidad de la población, nueve estudiantes de los grados de 1° a 5°. Se trabajó con un enfoque mixto, alcance descriptivo y técnicas de recolección. Tras identificar las necesidades, se diseñó secuencia didáctica con mediación de GeoGebra basada en el modelo instruccional ADDIE. El análisis estadístico mostró mejoras significativas en las dimensiones analizadas.",
-      "abstract_en": "The present article aims to analyze the benefits of GeoGebra in teaching Geometry to primary school students. The preceding research was conducted at the Centro Educativo La Bodega, Arroyo de Agua campus, in the municipality of La Paz, Department of Cesar, Colombia, an institution that operates under the Escuela Nueva model. The sample comprised the entire population, consisting of nine students from grades 1° to 5°. A mixed-methods approach was used, with a descriptive scope and data collection techniques. After identifying the needs, a didactic sequence mediated by GeoGebra based on the ADDIE instructional model was designed. Statistical analysis showed significant improvements in the analyzed dimensions.",
-      "abstract_pt": "O presente artigo tem como objetivo analisar os benefícios de utilizar o software GeoGebra no ensino de geometria para estudantes do ensino fundamental. A pesquisa que o precede foi realizada no Centro Educativo La Bodega, sede Arroyo de Agua, município de La Paz, Departamento do Cesar, Colômbia. Esta instituição opera sob o modelo de Escola Nova. A amostra correspondeu à totalidade da população, nove estudantes das turmas de 1° a 5°. Trabalhou-se com uma abordagem mista, alcance descritivo e técnicas de recolha de dados. Após identificar as necessidades, foi desenhada uma sequência didática com mediação do GeoGebra baseada no modelo instrucional ADDIE. A análise estatística mostrou melhoras significativas nas dimensões analisadas.",
+      "slug": "Articulos/V26/N2_2026/Santiago",
+      "pdf": "/Articulos/V26/N2_2026/Santiago/V26_n2_Santiago.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8387",
+      "received": "24 febrero de 2025",
+      "accepted": "1 agosto de 2025",
+      "abstract_es": "Un sistema dinámico se puede definir informalmente como un sistema cuyo estado está especificado de forma única por un conjunto de variables y cuyo comportamiento está descrito por reglas predefinidas. El objetivo de este artículo es proporcionar al lector una introducción a ciertos tipos de modelos matemáticos (también conocidos como sistemas dinámicos). En particular, hablar de modelos discretos unidimensionales y bidimensionales. Por último, se dan algunos ejemplos y su solución.",
+      "abstract_en": "A dynamical system can be informally defined as a system whose state is uniquely specified by a set of variables and whose behavior is described by predefined rules. The objective of this article is to present the reader with an introduction to certain types of mathematical models (also known as dynamical systems). In particular, to study one-dimensional and two-dimensional discrete models. Finally, some examples and their solutions are given.",
+      "abstract_pt": "Um sistema dinâmico pode ser definido informalmente como um sistema cujo estado está especificado de um jeito único por um conjunto de variáveis e cujo comportamento é descrito por regras predefinidas. O objetivo deste artigo é fornecer ao leitor uma introdução a certos tipos de modelos matemáticos (também conhecidos como sistemas dinâmicos). Em particular, falar de modelos discretos unidimensionais e bidimensionais. Por fim, apresentam-se alguns exemplos e sua solução.",
       "keywords_es": [
-        "Enseñanza",
-        "Escuela nueva",
-        "Geometría",
-        "GeoGebra",
-        "Modelo Educacional"
+        "Modelos matemáticos",
+        "sistemas dinámicos discretos",
+        "sistemas dinámicos continuos",
+        "sistemas dinámicos discretos bidimensionales"
       ],
       "keywords_en": [
-        "Teaching",
-        "New school",
-        "Geometry",
-        "GeoGebra",
-        "Educational models"
+        "Mathematical models",
+        "discrete dynamical systems",
+        "continuous dynamical systems",
+        "two-dimensional discrete dynamical systems"
       ],
       "keywords_pt": [
-        "Ensino",
-        "Escola Nova",
-        "Geometria",
-        "GeoGebra",
-        "Modelo Educacional"
+        "Modelos matemáticos",
+        "sistemas dinâmicos discretos",
+        "sistemas dinâmicos contínuos",
+        "sistemas dinâmicos discretos bidimensionais"
+      ],
+      "citation": ""
+    },
+
+
+    {
+      "id": 5,
+      "title": "Estrategia basada en aprendizaje adaptativo con Inteligencia Artificial para el aprendizaje de funciones matemáticas de estudiantes de secundaria",
+      "title_en": "Adaptive learning based strategy with artificial intelligence for learning mathematical functions of high school students",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jorge Alonso Díaz Porras",
+          "email": "jadiaz@uned.ac.cr",
+          "university": "Colegio Nacional de Educación a Distancia",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9475-0544"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Diaz",
+      "pdf": "/Articulos/V26/N2_2026/Diaz/V26_n2_Diaz.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8388",
+      "received": "21 de marzo de 2025",
+      "accepted": "30 de agosto de 2025",
+      "abstract_es": "La tecnología está revolucionando la forma de llevar a cabo el proceso de enseñanza-aprendizaje en todos los niveles educativos y, entre otras, las plataformas de aprendizaje adaptativo potenciadas con inteligencia artificial (IA) surgen como una alternativa viable, lo que es similar en el aprendizaje de las matemáticas. El objetivo del estudio fue analizar cómo una estrategia basada en aprendizaje adaptativo con inteligencia artificial potencia el aprendizaje de las funciones matemáticas de un estudiantado de secundaria. Se desarrolló una metodología cuantitativa, comparativa y de diseño pretest-postest sobre una muestra de 192 estudiantes de undécimo grado de educación secundaria de un colegio público en Costa Rica. Inicialmente, se les aplicó una prueba diagnóstica sobre el conocimiento de funciones matemáticas y, luego, se les intervino con la plataforma de aprendizaje adaptativo con IA Smartick. Por último, se les aplicó una prueba evaluativa final. Se comparó el rendimiento del estudiantado antes y después de la intervención mediante el factor de Bayes para igualdad de grupos, lo que corroboró la influencia de la intervención en el rendimiento académico. Los resultados indicaron un aumento significativo en el rendimiento del estudiantado tras la aplicación de la intervención, con una evidencia probabilística muy fuerte a favor de la hipótesis de un mayor rendimiento en el postest (BF10 > 1). Este resultado fue independiente del género, es decir, la mejora en el rendimiento fue igual para hombres y mujeres. Tras la intervención, los hombres obtuvieron un mayor rendimiento significativo, lo que sugiere que aprovecharon mejor las actividades de aprendizaje adaptativo en comparación con las mujeres. Se concluye que la plataforma de aprendizaje adaptativo con IA, Smartick, potencia el conocimiento del estudiantado en funciones matemáticas y mejora su rendimiento. Sin embargo, se debe estudiar más a fondo la diferencia en su abordaje por parte de hombres y mujeres.",
+      "abstract_en": "Technology is revolutionizing teaching and learning at all levels of education, and among others, adaptive learning platforms powered by artificial intelligence (AI) are emerging as a viable alternative, especially in mathematics learning. The aim of the study was to analyze how an adaptive learning strategy based on artificial intelligence improves the learning of mathematical functions in secondary school students. A quantitative, comparative, pretest-posttest methodology was developed for a sample of 192 eleventh grade secondary students from a public school in Costa Rica. They were first given a diagnostic test of their knowledge of mathematical functions and then received interventions using the Smartick adaptive learning platform with AI. Finally, they were given a final assessment test. The students’ performance before and after the intervention was compared using the Bayesian factor for group equality, which confirmed the influence of the intervention on academic performance. The results indicated a significant increase in student performance following the implementation of the intervention, with very strong probabilistic evidence supporting the hypothesis of higher performance on the post-test (BF10 > 1). This result was independent of gender, i.e., the improvement in performance was the same for males and females. After the intervention, males achieved significantly higher performance, suggesting that they benefited more from the adaptive learning activities compared to females. It is concluded that the AI-based adaptive learning platform, Smartick, enhances students’ knowledge of mathematical functions and improves their performance. However, the differences in how males and females approach the intervention require further investigation.",
+      "abstract_pt": "A tecnologia está revolucionando a forma de levar a cabo o processo de ensino-aprendizagem em todos os níveis educativos e, entre outras, as plataformas de aprendizagem adaptativa potenciadas por inteligência artificial (IA) surgem como uma alternativa viável, o que se observa também no ensino da matemática. O objetivo do estudo foi analisar como uma estratégia baseada em aprendizagem adaptativa com inteligência artificial potencia a aprendizagem das funções matemáticas de estudantes do ensino secundário. Desenvolveu-se uma metodologia quantitativa, comparativa e de desenho pré-teste-pós-teste sobre uma amostra de 192 estudantes do 11.º ano do ensino secundário de um colégio público na Costa Rica. Inicialmente, foi aplicada uma prova diagnóstica sobre o conhecimento de funções matemáticas e, em seguida, realizou-se a intervenção com a plataforma de aprendizagem adaptativa com IA Smartick. Por fim, foi aplicada uma prova avaliativa final. Comparou-se o rendimento dos estudantes antes e depois da intervenção mediante o fator de Bayes para igualdade de grupos, o que corroborou a influência da intervenção no rendimento acadêmico. Os resultados indicaram um aumento significativo no rendimento dos estudantes após a aplicação da intervenção, com evidência probabilística muito forte a favor da hipótese de um rendimento superior no pós-teste (BF10 > 1). Este resultado foi independente do gênero, isto é, a melhoria no rendimento foi igual para homens e mulheres. Após a intervenção, os homens obtiveram um rendimento significativamente maior, o que sugere que aproveitaram melhor as atividades de aprendizagem adaptativa em comparação com as mulheres. Conclui-se que a plataforma de aprendizagem adaptativa com IA, Smartick, potencia o conhecimento dos estudantes em funções matemáticas e melhora o seu rendimento. No entanto, deve-se estudar mais a fundo a diferença na sua abordagem por parte de homens e mulheres.",
+      "keywords_es": [
+        "Aprendizaje adaptativo",
+        "funciones matemáticas",
+        "inteligencia artificial",
+        "rendimiento académico",
+        "Smartick"
+      ],
+      "keywords_en": [
+        "Adaptive learning",
+        "mathematical functions",
+        "artificial intelligence",
+        "academic performance",
+        "Smartick"
+      ],
+      "keywords_pt": [
+        "Aprendizado adaptativo",
+        "funções matemáticas",
+        "inteligência artificial",
+        "desempenho acadêmico",
+        "Smartick"
       ],
       "citation": ""
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Modelación de sistemas positivos mediante distribuciones tipo fase",
       "title_en": "Modeling positive systems using phase-type distributions",
       "volume": 26,
@@ -416,7 +344,7 @@
       "category": "",
       "slug": "Articulos/V26/N2_2026/Rodriguez",
       "pdf": "/Articulos/V26/N2_2026/Rodriguez/V26_n2_Rodriguez.pdf",
-      "doi": "",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8389",
       "received": "5 de junio de 2024",
       "accepted": "30 de abril de 2025",
       "abstract_es": "En este artículo se considera la relación entre las distribuciones tipo fase y sistemas positivos a través de ejemplos prácticos y aplicaciones. Las distribuciones tipo fase, comúnmente utilizadas en la modelación de sistemas dinámicos, representan la evolución temporal de un conjunto de variables en función de su fase. Por otro lado, los sistemas positivos, que prevalecen en una amplia gama de disciplinas, son aquellos en los que las variables involucradas mantienen valores no negativos a lo largo del tiempo. A través de aplicaciones como la dinámica de la trayectoria de estudiantes y la gestión de la cadena de suministro, se muestra cómo las distribuciones tipo fase pueden ser útiles para describir y analizar sistemas positivos, ofreciendo una perspectiva sobre su comportamiento dinámico. El principal objetivo de este trabajo es establecer conexiones claras entre estos conceptos aparentemente diferentes, destacando su relevancia y utilidad en diversos campos de estudio. Los resultados aquí presentados contribuyen a una mejor comprensión de la interacción entre la teoría de las distribuciones tipo fase y la teoría de sistemas positivos, abriendo nuevas oportunidades para futuras investigaciones en este campo interdisciplinario.",
@@ -440,7 +368,7 @@
       "citation": ""
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "Desafíos y adaptaciones en la enseñanza de las matemáticas durante la pandemia: un análisis cualitativo de experiencias docentes con TIC en Costa Rica",
       "title_en": "Challenges and adaptations in teaching mathematics during the pandemic: a qualitative analysis of teaching experiences with ICTs in Costa Rica",
       "volume": 26,
@@ -476,7 +404,7 @@
       "category": "",
       "slug": "Articulos/V26/N2_2026/Gutierrez",
       "pdf": "/Articulos/V26/N2_2026/Gutierrez/V26_n2_Gutierrez.pdf",
-      "doi": "",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8403",
       "received": "21 marzo de 2025",
       "accepted": "1 noviembre 2025",
       "abstract_es": "Se reportan los resultados de un estudio que explora las experiencias y dificultades enfrentadas por docentes de matemática de la educación secundaria en Costa Rica al incorporar aceleradamente las Tecnologías de la Información y la Comunicación (TIC) en su enseñanza debido a la pandemia del COVID-19. La investigación, de carácter cualitativo, incluyó la participación de 12 docentes con más de 10 años de experiencia, provenientes de diversas provincias, a través de grupos focales virtuales. Se analizó la información con el software MAXQDA, revelando desafíos como el estrés laboral, problemas de conectividad, falta de apoyo institucional y dudas sobre el aprendizaje en entornos virtuales. A pesar de los esfuerzos del Ministerio de Educación Pública (MEP) y de otras instituciones para fortalecer la capacitación docente en TIC, estos se percibieron como insuficientes y tardíos. Se concluye que la formación continua y el acceso equitativo a recursos tecnológicos son esenciales para una integración efectiva de las TIC en la enseñanza de las matemáticas.",
@@ -506,7 +434,104 @@
       "citation": ""
     },
     {
+      "id": 8,
+      "title": "Generar una Web Interactiva con LaTeX (usando Make4ht e IA)",
+      "title_en": "Transforming LaTeX Documents into Interactive Websites (with AI & Make4ht)",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Walter Mora Flores",
+          "email": "wmora2@gmail.com",
+          "university": "Investigador independiente",
+          "department": "",
+          "location": "Alajuela, Costa Rica",
+          "orcid": "https://orcid.org/0009-0008-8770-3417"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V26/N2_2026/Mora",
+      "pdf": "/Articulos/V26/N2_2026/Mora/V26_n2_Mora.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8214",
+      "received": "2 de mayo de 2025",
+      "accepted": "1 de agosto de 2025",
+      "abstract_es": "Este documento presenta una plantilla configurada para convertir documentos LaTeX en páginas web interactivas utilizando Make4ht. Se abordan temas como la configuración de Make4ht, la conversión de entornos complejos a imágenes SVG, y con la asistencia de la IA, la inclusión de actividades interactivas con HTML, JavaScript y CSS, y la integración de elementos multimedia como applets de GeoGebra y videos de YouTube. El enfoque bimodal permite generar tanto PDF como HTML, aprovechando las ventajas de cada formato: el PDF para impresión y citación formal, y el HTML para accesibilidad e interactividad en dispositivos digitales.",
+      "abstract_en": "This document presents a configured template for converting LaTeX documents into interactive web pages using Make4ht. It addresses topics such as Make4ht configuration, the conversion of complex environments into SVG images and, with the assistance of AI, the inclusion of interactive activities using HTML, JavaScript, and CSS. The template also covers the integration of multimedia elements like GeoGebra applets and YouTube videos. This bimodal approach allows for the generation of both PDF and HTML, leveraging the advantages of each format: PDF for formal printing and citation, and HTML for accessibility and interactivity on digital devices.",
+      "abstract_pt": "Este documento apresenta um modelo configurado para converter documentos LaTeX em páginas web interativas utilizando o Make4ht. São abordados temas como a configuração do Make4ht, a conversão de ambientes complexos em imagens SVG e, com a assistência da IA, a inclusão de atividades interativas com HTML, JavaScript e CSS, além da integração de elementos multimídia como applets do GeoGebra e vídeos do YouTube. A abordagem bimodal permite gerar tanto PDF quanto HTML, aproveitando as vantagens de cada formato: o PDF para impressão e citação formal, e o HTML para acessibilidade e interatividade em dispositivos digitais.",
+      "keywords_es": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interactividad",
+        "JavaScript",
+        "IA"
+      ],
+      "keywords_en": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interactivity",
+        "JavaScript",
+        "AI"
+      ],
+      "keywords_pt": [
+        "Make4ht",
+        "LaTeX",
+        "HTML",
+        "interatividade",
+        "JavaScript",
+        "IA"
+      ],
+      "citation": "Mora Flores, W. (2026). Generar una Web Interactiva con LaTeX (usando Make4ht e IA). Revista Digital: Matemática, Educación e Internet, 26(2)."
+    },
+    {
       "id": 9,
+      "title": "Una introducción a la programación de horarios: restricciones, parámetros y funciones objetivo",
+      "title_en": "An Introduction to Timetabling: Constraints, Parameters and Objective Functions",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José Gerardo Córdoba Hernández",
+          "email": "jose.cordoba.hernandez@una.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9919-0937"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V26/N2_2026/Cordoba",
+      "pdf": "/Articulos/V26/N2_2026/Cordoba/V26_n2_Cordoba.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8404",
+      "received": "5 de junio de 2024",
+      "accepted": "30 de abril de 2025",
+      "abstract_es": "La programación de horarios en instituciones educativas constituye un problema de optimización combinatoria cuyo objetivo es asignar cursos, docentes, aulas y bloques de tiempo de manera coordinada, respetando un conjunto de restricciones. Este artículo presenta una introducción al modelado matemático de dicho problema, diferenciando restricciones estrictas (hard constraints) y flexibles (soft constraints), así como la definición de conjuntos, parámetros y funciones objetivo que permiten estructurar formalmente el modelo. Se presentan tres ejemplos ilustrativos que muestran cómo la variación en los pesos asignados a preferencias y penalizaciones, junto con la reasignación puntual de eventos, impacta directamente el valor de la función objetivo. Los ejemplos evidencian que el equilibrio entre criterios y pequeños ajustes en las asignaciones pueden mejorar de forma significativa la calidad de los horarios generados. Este trabajo constituye una introducción didáctica y un punto de partida para investigaciones futuras orientadas al abordaje del problema de programación de horarios.",
+      "abstract_en": "Timetabling in educational institutions is a combinatorial optimization problem whose objective is to assign courses, instructors, classrooms, and time slots in a coordinated manner while satisfying a set of constraints. This article introduces the mathematical modeling of such a problem, distinguishing between hard and soft constraints, and formalizing the definition of sets, parameters, and objective functions that structure the model. Three illustrative examples are presented to demonstrate how variations in the weights assigned to preferences and penalties, together with the punctual reassignment of events, directly affect the objective function value. These examples show that balancing criteria and implementing minor adjustments in the allocations can significantly improve the quality of the generated timetables. This work provides a didactic introduction and a starting point for future research aimed at addressing the academic timetabling problem.",
+      "abstract_pt": "A programação de horários em instituições educativas constitui um problema de otimização combinatória cujo objetivo é atribuir cursos, docentes, salas e blocos de tempo de forma coordenada, respeitando um conjunto de restrições. Este artigo apresenta uma introdução ao modelamento matemático desse problema, diferenciando restrições estritas (hard constraints) e flexíveis (soft constraints), assim como a definição de conjuntos, parâmetros e funções objetivo que permitem estruturar formalmente o modelo. São apresentados três exemplos ilustrativos que mostram como a variação nos pesos atribuídos a preferências e penalizações, junto com a reatribuição pontual de eventos, impacta diretamente o valor da função objetivo. Os exemplos evidenciam que o equilíbrio entre critérios e pequenos ajustes nas atribuições podem melhorar de forma significativa a qualidade dos horários gerados. Este trabalho constitui uma introdução didática e um ponto de partida para futuras pesquisas orientadas ao abordamento do problema de programação de horários.",
+      "keywords_es": [
+        "Optimización combinatoria",
+        "asignación de recursos",
+        "programación de horarios"
+      ],
+      "keywords_en": [
+        "Combinatorial optimization",
+        "resource allocation",
+        "Timetabling"
+      ],
+      "keywords_pt": [
+        "Otimização combinatória",
+        "atribuição de recursos",
+        "programação de horários"
+      ],
+      "citation": ""
+    },
+    {
+      "id": 10,
       "title": "Explorando el origen histórico de las funciones trigonométricas",
       "title_en": "Exploring the historical origin of trigonometric functions",
       "volume": 26,
@@ -542,7 +567,7 @@
       "category": "Historia",
       "slug": "Articulos/V26/N2_2026/Bendersky",
       "pdf": "/Articulos/V26/N2_2026/Bendersky/V26_n2_Bendersky.pdf",
-      "doi": "",
+      "doi": "https://doi.org/10.18845/rdmei.v26i2.8274",
       "received": "26 noviembre de 2024",
       "accepted": "8 agosto de 2025",
       "abstract_es": "En el presente trabajo se describen, en base a diferentes fuentes bibliográficas, los desarrollos matemáticos que generaron, a lo largo de la historia, la construcción del objeto matemático llamado funciones trigonométricas. En primer lugar, se aborda el surgimiento de las razones trigonométricas. Luego se desarrolla la construcción de la noción de función para poder visualizar el marco en el que las distintas civilizaciones interpretaron al objeto en cuestión. Posteriormente, se detallan los aportes a la construcción de las funciones trigonométricas por parte de India. Además, se analiza el por qué los árabes fueron los interesados en su época en desarrollar la trigonometría sin perder de vista la influencia de la geometría esférica y las series en la consolidación de este objeto matemático.",
@@ -562,104 +587,6 @@
         "Historia da Matemática",
         "trigonometria",
         "funções trigonométricas"
-      ],
-      "citation": ""
-    },
-
-    {
-      "id": 10,
-      "title": "Generar una Web Interactiva con LaTeX (usando Make4ht e IA)",
-      "title_en": "Transforming LaTeX Documents into Interactive Websites (with AI & Make4ht)",
-      "volume": 26,
-      "number": 2,
-      "language": "es",
-      "published": "",
-      "authors": [
-        {
-          "name": "Walter Mora Flores",
-          "email": "wmora2@gmail.com",
-          "university": "Investigador independiente",
-          "department": "",
-          "location": "Alajuela, Costa Rica",
-          "orcid": "https://orcid.org/0009-0008-8770-3417"
-        }
-      ],
-      "category": "Didáctica y Software",
-      "slug": "Articulos/V26/N2_2026/Mora",
-      "pdf": "/Articulos/V26/N2_2026/Mora/V26_n2_Mora.pdf",
-      "doi": "",
-      "received": "2 de mayo de 2025",
-      "accepted": "1 de agosto de 2025",
-      "abstract_es": "Este documento presenta una plantilla configurada para convertir documentos LaTeX en páginas web interactivas utilizando Make4ht. Se abordan temas como la configuración de Make4ht, la conversión de entornos complejos a imágenes SVG, y con la asistencia de la IA, la inclusión de actividades interactivas con HTML, JavaScript y CSS, y la integración de elementos multimedia como applets de GeoGebra y videos de YouTube. El enfoque bimodal permite generar tanto PDF como HTML, aprovechando las ventajas de cada formato: el PDF para impresión y citación formal, y el HTML para accesibilidad e interactividad en dispositivos digitales.",
-      "abstract_en": "This document presents a configured template for converting LaTeX documents into interactive web pages using Make4ht. It addresses topics such as Make4ht configuration, the conversion of complex environments into SVG images and, with the assistance of AI, the inclusion of interactive activities using HTML, JavaScript, and CSS. The template also covers the integration of multimedia elements like GeoGebra applets and YouTube videos. This bimodal approach allows for the generation of both PDF and HTML, leveraging the advantages of each format: PDF for formal printing and citation, and HTML for accessibility and interactivity on digital devices.",
-      "abstract_pt": "Este documento apresenta um modelo configurado para converter documentos LaTeX em páginas web interativas utilizando o Make4ht. São abordados temas como a configuração do Make4ht, a conversão de ambientes complexos em imagens SVG e, com a assistência da IA, a inclusão de atividades interativas com HTML, JavaScript e CSS, além da integração de elementos multimídia como applets do GeoGebra e vídeos do YouTube. A abordagem bimodal permite gerar tanto PDF quanto HTML, aproveitando as vantagens de cada formato: o PDF para impressão e citação formal, e o HTML para acessibilidade e interatividade em dispositivos digitais.",
-      "keywords_es": [
-        "Make4ht",
-        "LaTeX",
-        "HTML",
-        "interactividad",
-        "JavaScript",
-        "IA"
-      ],
-      "keywords_en": [
-        "Make4ht",
-        "LaTeX",
-        "HTML",
-        "interactivity",
-        "JavaScript",
-        "AI"
-      ],
-      "keywords_pt": [
-        "Make4ht",
-        "LaTeX",
-        "HTML",
-        "interatividade",
-        "JavaScript",
-        "IA"
-      ],
-      "citation": "Mora Flores, W. (2026). Generar una Web Interactiva con LaTeX (usando Make4ht e IA). Revista Digital: Matemática, Educación e Internet, 26(2)."
-    },
-    {
-      "id": 11,
-      "title": "Una introducción a la programación de horarios: restricciones, parámetros y funciones objetivo",
-      "title_en": "An Introduction to Timetabling: Constraints, Parameters and Objective Functions",
-      "volume": 26,
-      "number": 2,
-      "language": "es",
-      "published": "",
-      "authors": [
-        {
-          "name": "José Gerardo Córdoba Hernández",
-          "email": "jose.cordoba.hernandez@una.cr",
-          "university": "Universidad Nacional",
-          "department": "",
-          "location": "Heredia, Costa Rica",
-          "orcid": "https://orcid.org/0000-0002-9919-0937"
-        }
-      ],
-      "category": "Didáctica y Software",
-      "slug": "Articulos/V26/N2_2026/Cordoba",
-      "pdf": "/Articulos/V26/N2_2026/Cordoba/V26_n2_Cordoba.pdf",
-      "doi": "",
-      "received": "5 de junio de 2024",
-      "accepted": "30 de abril de 2025",
-      "abstract_es": "La programación de horarios en instituciones educativas constituye un problema de optimización combinatoria cuyo objetivo es asignar cursos, docentes, aulas y bloques de tiempo de manera coordinada, respetando un conjunto de restricciones. Este artículo presenta una introducción al modelado matemático de dicho problema, diferenciando restricciones estrictas (hard constraints) y flexibles (soft constraints), así como la definición de conjuntos, parámetros y funciones objetivo que permiten estructurar formalmente el modelo. Se presentan tres ejemplos ilustrativos que muestran cómo la variación en los pesos asignados a preferencias y penalizaciones, junto con la reasignación puntual de eventos, impacta directamente el valor de la función objetivo. Los ejemplos evidencian que el equilibrio entre criterios y pequeños ajustes en las asignaciones pueden mejorar de forma significativa la calidad de los horarios generados. Este trabajo constituye una introducción didáctica y un punto de partida para investigaciones futuras orientadas al abordaje del problema de programación de horarios.",
-      "abstract_en": "Timetabling in educational institutions is a combinatorial optimization problem whose objective is to assign courses, instructors, classrooms, and time slots in a coordinated manner while satisfying a set of constraints. This article introduces the mathematical modeling of such a problem, distinguishing between hard and soft constraints, and formalizing the definition of sets, parameters, and objective functions that structure the model. Three illustrative examples are presented to demonstrate how variations in the weights assigned to preferences and penalties, together with the punctual reassignment of events, directly affect the objective function value. These examples show that balancing criteria and implementing minor adjustments in the allocations can significantly improve the quality of the generated timetables. This work provides a didactic introduction and a starting point for future research aimed at addressing the academic timetabling problem.",
-      "abstract_pt": "A programação de horários em instituições educativas constitui um problema de otimização combinatória cujo objetivo é atribuir cursos, docentes, salas e blocos de tempo de forma coordenada, respeitando um conjunto de restrições. Este artigo apresenta uma introdução ao modelamento matemático desse problema, diferenciando restrições estritas (hard constraints) e flexíveis (soft constraints), assim como a definição de conjuntos, parâmetros e funções objetivo que permitem estruturar formalmente o modelo. São apresentados três exemplos ilustrativos que mostram como a variação nos pesos atribuídos a preferências e penalizações, junto com a reatribuição pontual de eventos, impacta diretamente o valor da função objetivo. Os exemplos evidenciam que o equilíbrio entre critérios e pequenos ajustes nas atribuições podem melhorar de forma significativa a qualidade dos horários gerados. Este trabalho constitui uma introdução didática e um ponto de partida para futuras pesquisas orientadas ao abordamento do problema de programação de horários.",
-      "keywords_es": [
-        "Optimización combinatoria",
-        "asignación de recursos",
-        "programación de horarios"
-      ],
-      "keywords_en": [
-        "Combinatorial optimization",
-        "resource allocation",
-        "Timetabling"
-      ],
-      "keywords_pt": [
-        "Otimização combinatória",
-        "atribuição de recursos",
-        "programação de horários"
       ],
       "citation": ""
     }
