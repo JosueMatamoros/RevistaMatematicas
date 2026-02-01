@@ -13,6 +13,29 @@ import Image from "next/image";
 
 export default function ArticlePage({ article }) {
   const pdfAbs = withFullUrl(article.pdf);
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "";
+
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(pageUrl);
+    } catch (err) {
+      console.error("No se pudo copiar al portapapeles", err);
+    }
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: article.title,
+          text: article.title,
+          url: pageUrl,
+        });
+      } catch (err) {
+        console.error("Error al compartir", err);
+      }
+    } else {
+      alert("Enlace copiado al portapapeles");
+    }
+  };
 
   // Estados para los toggles
   const [showResumen, setShowResumen] = useState(false);
@@ -119,14 +142,13 @@ export default function ArticlePage({ article }) {
             >
               Descargar <FaFilePdf className="text-red-600 w-4 h-4" />
             </a>
-            <a
-              href={pdfAbs}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={handleShare}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-blue-secondary text-tec-blue-secondary hover:bg-blue-50 text-sm"
             >
               Compartir <FaShareAlt className="text-blue-600 w-4 h-4" />
-            </a>
+            </button>
           </div>
         </div>
 
