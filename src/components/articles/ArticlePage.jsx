@@ -56,7 +56,7 @@ export default function ArticlePage({ article }) {
   const [showResumo, setShowResumo] = useState(false);
 
   return (
-    <article className="min-h-screen bg-white mb-16">
+    <article className="min-h-screen bg-white mb-16 mt-3">
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-4">

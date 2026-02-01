@@ -21,6 +21,7 @@ export default function BreadcrumbNav() {
           [&>ol>li>a:hover]:text-[#0582E0]            /* hover */
           [&>ol>li>span]:text-white                   /* último */
           [&>ol>li]:text-gray-400                     /* separadores '/' */
+          hidden xl:flex
         "
       >
         {/* Home */}
