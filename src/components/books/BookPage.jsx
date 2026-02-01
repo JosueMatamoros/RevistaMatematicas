@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { withBasePath, withFullUrl } from "@/lib/basePath";
+import { withBasePath} from "@/lib/basePath";
 import {
   FaFilePdf,
   FaShareAlt,
@@ -15,9 +15,32 @@ import Image from "next/image";
 
 export default function BookPage({ book }) {
 
-  // Estados para los toggles
   const [showResumen, setShowResumen] = useState(false);
   const [showAbstract, setShowAbstract] = useState(false);
+
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "";
+
+  const [copied, setCopied] = useState("");
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: book.title,
+          text: book.title,
+          url: pageUrl,
+        });
+      } catch (err) {}
+    } else {
+      try {
+        await navigator.clipboard.writeText(pageUrl);
+        setCopied("Enlace copiado");
+        setTimeout(() => setCopied(""), 2000);
+      } catch (err) {
+        setCopied("No se pudo copiar");
+        setTimeout(() => setCopied(""), 2000);
+      }
+    }
+  };
   const [showResumo, setShowResumo] = useState(false);
 
   return (
@@ -97,14 +120,20 @@ export default function BookPage({ book }) {
             >
               Descargar <FaFilePdf className="text-red-600 w-4 h-4" />
             </a>
-            <a
-              href={book.pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-blue-secondary text-tec-blue-secondary hover:bg-blue-50 text-sm"
-            >
-              Compartir <FaShareAlt className="text-blue-600 w-4 h-4" />
-            </a>
+            <div className="flex flex-col items-center">
+              <button
+                type="button"
+                onClick={handleShare}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-blue-secondary text-tec-blue-secondary hover:bg-blue-50 text-sm"
+              >
+                Compartir <FaShareAlt className="text-blue-600 w-4 h-4" />
+              </button>
+              {copied && (
+                <span className={`mt-1 px-3 py-1 rounded-full text-xs font-semibold ${copied === "Enlace copiado" ? "bg-blue-100 text-blue-700 border border-blue-200" : "bg-red-100 text-red-700 border border-red-200"}`}>
+                  {copied}
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
