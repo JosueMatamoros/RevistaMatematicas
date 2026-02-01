@@ -16,6 +16,20 @@ export default function ArticlePage({ article }) {
   const pageUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const [copied, setCopied] = useState("");
+  const [citationCopied, setCitationCopied] = useState(false);
+
+  const handleCopyCitation = async () => {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = article.citation;
+    const plainCitation = tempDiv.textContent || tempDiv.innerText || "";
+    try {
+      await navigator.clipboard.writeText(plainCitation);
+      setCitationCopied(true);
+      setTimeout(() => setCitationCopied(false), 2000);
+    } catch (err) {
+      setCitationCopied(false);
+    }
+  };
   const handleShare = async () => {
     if (navigator.share) {
       try {
@@ -282,11 +296,24 @@ export default function ArticlePage({ article }) {
         <section className="bg-gray-50 rounded-lg p-3 border mt-5">
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-base font-bold text-gray-900">Cómo citar</h2>
-            <FaCopy className="w-4 h-4 text-gray-800" />
+            <div className="relative flex flex-col items-center">
+              <button
+                type="button"
+                aria-label="Copiar cita"
+                onClick={handleCopyCitation}
+                className="focus:outline-none"
+              >
+                <FaCopy className="w-4 h-4 text-gray-800 cursor-pointer" />
+              </button>
+              {citationCopied && (
+                <span className="absolute top-6 text-xs bg-blue-100 text-blue-700 border border-blue-200 rounded-full px-3 py-1 font-semibold">Copiado</span>
+              )}
+            </div>
           </div>
-          <p className="text-sm text-gray-800 break-words break-all whitespace-pre-line">
-            {article.citation}
-          </p>
+          <p
+            className="text-sm text-gray-800 break-words break-all whitespace-pre-line"
+            dangerouslySetInnerHTML={{ __html: article.citation }}
+          />
         </section>
 
         {/* PDF */}
