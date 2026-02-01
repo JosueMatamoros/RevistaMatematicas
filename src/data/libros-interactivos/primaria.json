@@ -80,7 +80,7 @@
       "educação primária",
       "terceira série"
     ],
-    "citation": "Suárez Valdés-Ayala, Z., Solís Ortega, R., Monge Madriz, C., Sánchez Fernández, I., Meza Cascante, L.G., Agüero Calvo, E. (2024). Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria. Revista digital Matemática, Educación e Internet, 25(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/relaciones-algebra-3/"
+    "citation": "Suárez Valdés-Ayala, Z., Solís Ortega, R., Monge Madriz, C., Sánchez Fernández, I., Meza Cascante, L.G., Agüero Calvo, E. (2024). Relaciones y Álgebra. Educación virtual para estudiantes de tercer año de primaria. <i>Revista digital Matemática, Educación e Internet, 25(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/relaciones-algebra-3/"
   },
   "relaciones-algebra-6": {
     "coverImage": "/libros/primaria/relaciones-algebra-6/portada.webp",
@@ -145,7 +145,7 @@
     "keywords_en": ["Relations", "algebra", "primary education", "sixth grade"],
     "abstract_pt": "A Escola de Matemática do Instituto Tecnológico da Costa Rica, por meio de seu projeto Eveprim6, busca contribuir para a formação acadêmica dos estudantes do sexto ano do ensino fundamental e, ao mesmo tempo, oferecer um recurso para pais e professores dessa população. Para isso, foram consideradas as habilidades previstas no currículo atual da disciplina de matemática, conforme o Ministério da Educação Pública da Costa Rica. A equipe do Eveprim6 incentiva a revisão cuidadosa de todo o material disponível, elaborado com o objetivo de promover a aprendizagem autodirigida a distância. Este livro contém 6 capítulos, em cada um dos quais se encontram aspectos teóricos, exemplos, exercícios com solução, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se uma leitura aprofundada, refletindo e analisando cada um dos exemplos, exercícios e problemas propostos. Evite avançar para novos tópicos até sentir que assimilou o conteúdo. Para autoavaliação, pode apoiar-se nas práticas apresentadas ao final de cada capítulo, juntamente com as respectivas soluções. Algumas seções oferecem informações adicionais que permitem aprofundar-se em conteúdos específicos.",
     "keywords_pt": ["Relações", "álgebra", "educação primária", "sexto ano"],
-    "citation": "Solís Ortega, R., Suárez Valdés-Ayala, Z., Sánchez Fernández, I., Monge Madriz, C. (2023). Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/relaciones-algebra-6/"
+    "citation": "Solís Ortega, R., Suárez Valdés-Ayala, Z., Sánchez Fernández, I., Monge Madriz, C. (2023). Relaciones y Álgebra. Educación virtual para estudiantes de sexto año de primaria. <i>Revista digital Matemática, Educación e Internet, 23(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/relaciones-algebra-6/"
   },
   "numeros-6": {
     "coverImage": "/libros/primaria/numeros-6/portada.webp",
@@ -209,6 +209,6 @@
     "keywords_en": ["Numbers", "primary education", "sixth grade"],
     "abstract_pt": "A Escola de Matemática do Instituto Tecnológico da Costa Rica, por meio de seu projeto Eveprim6, busca contribuir para a formação acadêmica dos estudantes do sexto ano do ensino fundamental e oferecer um recurso valioso para pais e professores dessa faixa etária. Para isso, foram consideradas as habilidades incluídas no currículo atual de matemática, conforme estabelecido pelo Ministério da Educação Pública da Costa Rica. A equipe do Eveprim6 incentiva a revisão cuidadosa de todo o material, elaborado para promover a aprendizagem autodirigida a distância. Este livro é composto por 7 capítulos, cada um contendo aspectos teóricos, exemplos, exercícios com solução, problemas introdutórios, vídeos explicativos e atividades interativas na web. Recomenda-se uma leitura atenta, refletindo e analisando cada exemplo, exercício e problema proposto. Para autoavaliação, o livro oferece práticas e suas respectivas soluções ao final de cada capítulo. Algumas seções incluem informações adicionais que permitem aprofundar-se em conteúdos específicos.",
     "keywords_pt": ["Números", "educação primária", "sexto ano"],
-    "citation": "Sánchez Fernández, I., Monge Madriz, C., Solís Ortega, R., Suárez Valdés-Ayala, Z. (2023). EVEPRIM6: Números. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/numeros-6/"
+    "citation": "Sánchez Fernández, I., Monge Madriz, C., Solís Ortega, R., Suárez Valdés-Ayala, Z. (2023). EVEPRIM6: Números. <i>Revista digital Matemática, Educación e Internet, 23(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/numeros-6/"
   }
 }

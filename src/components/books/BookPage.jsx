@@ -271,13 +271,35 @@ export default function BookPage({ book }) {
 
         {/* Cita */}
         <section className="bg-gray-50 rounded-lg p-3 border mt-5">
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-2 relative">
             <h2 className="text-base font-bold text-gray-900">Cómo citar</h2>
-            <FaCopy className="w-4 h-4 text-gray-800" />
+            <div className="relative flex flex-col items-center">
+              <button
+                type="button"
+                onClick={async () => {
+                  try {
+                    await navigator.clipboard.writeText(
+                      book.citation.replace(/<[^>]+>/g, "")
+                    );
+                    setCopied("Copiado");
+                  } catch {
+                    setCopied("No se pudo copiar");
+                  }
+                  setTimeout(() => setCopied(""), 2000);
+                }}
+                className="focus:outline-none"
+                title="Copiar cita"
+              >
+                <FaCopy className="w-4 h-4 text-gray-800 hover:text-blue-600 transition-colors" />
+                {copied && (
+                  <span className={`absolute bottom-full mb-2 px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap z-10 ${copied === "Copiado" ? "bg-blue-100 text-blue-700 border border-blue-200" : "bg-red-100 text-red-700 border border-red-200"}`}>
+                    {copied}
+                  </span>
+                )}
+              </button>
+            </div>
           </div>
-          <p className="text-sm text-gray-800 break-words break-all whitespace-pre-line">
-            {book.citation}
-          </p>
+          <p className="text-sm text-gray-800 break-words break-all whitespace-pre-line" dangerouslySetInnerHTML={{ __html: book.citation }} />
         </section>
 
         {/* PDF */}

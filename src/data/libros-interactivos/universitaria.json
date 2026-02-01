@@ -46,7 +46,7 @@
       "aplicações interativas",
       "Wolfram CDF"
     ],
-    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2022/"
+    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2022/"
   },
   "calculo-varias-variables-2022": {
     "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.webp",
@@ -96,7 +96,7 @@
       "integrais duplas e triplas",
       "integrais de linha e de superfície"
     ],
-    "citation": "Mora Flores, W. (2022). Cálculo en Varias Variables. Visualización interactiva. 2da Ed. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/calculo-varias-variables-2022/"
+    "citation": "Mora Flores, W. (2022). Cálculo en Varias Variables. Visualización interactiva. 2da Ed. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/calculo-varias-variables-2022/"
   },
   "ecuaciones-diferenciales-primer-orden-2022": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2022/portada.svg",
@@ -146,7 +146,7 @@
       "aplicações interativas",
       "Wolfram CDF"
     ],
-    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales ordinarias de primer orden con apoyo interactivo y videos ilustrativos. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2022/"
+    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales ordinarias de primer orden con apoyo interactivo y videos ilustrativos. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2022/"
   },
 
   "ecuaciones-diferenciales-transformada-laplace-2021": {
@@ -203,7 +203,7 @@
       "Mathematica",
       "Wolfram CDF"
     ],
-    "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. Revista digital Matemática, Educación e Internet, 23(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
+    "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. <i>Revista digital Matemática, Educación e Internet, 23(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
   },
   "ecuaciones-diferenciales-orden-superior-2020": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2020/portada.webp",
@@ -265,7 +265,7 @@
       "método dos coeficientes indeterminados",
       "equação de Euler"
     ],
-    "citation": "Oviedo Ugalde, N.G. (2020). Ecuaciones diferenciales ordinarias de orden superior. Revista digital Matemática, Educación e Internet, 22(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2020/"
+    "citation": "Oviedo Ugalde, N.G. (2020). Ecuaciones diferenciales ordinarias de orden superior. <i>Revista digital Matemática, Educación e Internet, 22(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2020/"
   },
   "ecuaciones-diferenciales-primer-orden-2018": {
     "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-primer-orden-2018/portada.webp",
@@ -328,7 +328,7 @@
       "Bernoulli e Clairaut"
     ],
 
-    "citation": "Oviedo Ugalde, N.G. (2018). Ecuaciones diferenciales de primer orden. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2018/"
+    "citation": "Oviedo Ugalde, N.G. (2018). Ecuaciones diferenciales de primer orden. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2018/"
   },
 
   "vectores-rectas-y-planos-2018": {
@@ -380,6 +380,6 @@
     "keywords_en": ["Interactive visualization", "vectors", "lines", "planes"],
     "abstract_pt": "O objetivo deste livro é a visualização interativa em 2D e 3D. A maioria das figuras inclui um link para uma aplicação chamada 'demonstração' (aplicação interativa), que é executada com o Wolfram CDFPlayer (gratuito). As 'aplicações interativas' são arquivos .cdf que exigem que o aplicativo Wolfram CDFPlayer esteja instalado no computador. Várias aplicações interativas são usadas para visualizar a dinâmica de uma definição ou teorema e seu significado. Como se sabe, a visualização interativa funciona bem como complemento e requer 'narrativa' por parte do professor para obter bons resultados no ensino. Também são recomendados exercícios de verbalização, em algumas atividades, por parte do aluno.",
     "keywords_pt": ["Visualização interativa", "vetores", "retas", "planos"],
-    "citation": "Gutiérrez, M., & Mora, W. (2018). Vectores, Rectas y Planos. Visualización interactiva. Revista digital Matemática, Educación e Internet, 19(1). Instituto Tecnológico de Costa Rica. DOI: https://doi.org/10.18845/rdmei.v19i1.3856"
+    "citation": "Gutiérrez, M., & Mora, W. (2018). Vectores, Rectas y Planos. Visualización interactiva. <i>Revista digital Matemática, Educación e Internet, 19(1)</i>. Instituto Tecnológico de Costa Rica. DOI: https://doi.org/10.18845/rdmei.v19i1.3856"
   }
 }

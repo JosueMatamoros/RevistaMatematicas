@@ -297,6 +297,9 @@ export default function ArticlePage({ article }) {
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-base font-bold text-gray-900">Cómo citar</h2>
             <div className="relative flex flex-col items-center">
+              {citationCopied && (
+                <span className="absolute -top-7 z-10 text-xs bg-blue-100 text-blue-700 border border-blue-200 rounded-full px-3 py-1 font-semibold shadow">Copiado</span>
+              )}
               <button
                 type="button"
                 aria-label="Copiar cita"
@@ -305,9 +308,6 @@ export default function ArticlePage({ article }) {
               >
                 <FaCopy className="w-4 h-4 text-gray-800 cursor-pointer" />
               </button>
-              {citationCopied && (
-                <span className="absolute top-6 text-xs bg-blue-100 text-blue-700 border border-blue-200 rounded-full px-3 py-1 font-semibold">Copiado</span>
-              )}
             </div>
           </div>
           <p

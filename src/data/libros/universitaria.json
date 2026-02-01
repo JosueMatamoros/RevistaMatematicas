@@ -77,7 +77,7 @@
       "criptografia",
       "simetria"
     ],
-    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. Revista Digital Matemática, Educación e Internet. Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
+    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet, 26(2)</i>. Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
   },
   "fundamentos-de-matematica-2025": {
     "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
@@ -160,7 +160,7 @@
     "keywords_en": ["Foundations of Mathematics"],
     "abstract_pt": "Este livro é dedicado aos fundamentos da matemática, uma disciplina que não apenas sustenta todas as ciências naturais, mas também constitui a base do nosso raciocínio lógico cotidiano. Ao longo destas páginas, realiza-se uma exploração rigorosa de conceitos essenciais, como as demonstrações de implicações, o conjunto dos números reais, o conjunto dos números complexos e o tratamento de expressões e equações algébricas. Nosso objetivo é oferecer uma introdução acessível a esses temas, garantindo que o leitor desenvolva uma compreensão profunda e uma apreciação pela estrutura lógica da matemática. Cada capítulo foi cuidadosamente estruturado para oferecer uma exposição progressiva dos temas, acompanhada de exemplos que ilustram tanto as aplicações práticas quanto os aspectos teóricos dos conceitos tratados. Este texto foi projetado tanto para estudantes que estão iniciando seus estudos matemáticos quanto para aqueles que desejam consolidar e aprofundar seus conhecimentos. Foram incluídos exercícios projetados para que o leitor aplique o que aprendeu, promovendo assim uma aprendizagem ativa e reflexiva. Estamos confiantes de que este livro se tornará um recurso valioso para compreender os princípios fundamentais do pensamento matemático e uma ferramenta essencial para quem se dedica ao estudo sério desta disciplina.",
     "keywords_pt": ["Fundamentos de Matemática"],
-    "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. Revista Digital: Matemática, Educación e Internet, 26(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
+    "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. <i>Revista Digital: Matemática, Educación e Internet, 26(1)</i>. Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
   },
   "latex-2021": {
     "coverImage": "/libros/universitaria/otros/latex-2021/portada.webp",
@@ -194,7 +194,7 @@
     "abstract_pt": "Este texto aborda aspectos fundamentais e intermediários da composição tipográfica com LaTeX, do design editorial e da criação de apresentações com Beamer. Também inclui a edição de gráficos com Inkscape e TikZ, além do uso de ambientes avançados com os pacotes xparse e tcolorbox. São apresentados exemplos práticos, modelos e explicações que facilitam a compreensão e a aplicação dos conceitos na elaboração de documentos técnicos e acadêmicos. O livro reúne os temas mais comuns na edição de textos científicos, especialmente em matemática, educação e programação, e incorpora atualizações sobre novos pacotes e técnicas de design editorial.",
     "keywords_pt": ["LaTeX", "design editorial", "Beamer", "TikZ", "tcolorbox"],
 
-    "citation": "Mora Flores, W.A., & Borbón A., A. (2021). LaTeX. Revista digital Matemática, Educación e Internet, 23(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/latex-2021/"
+    "citation": "Mora Flores, W.A., & Borbón A., A. (2021). LaTeX. <i>Revista digital Matemática, Educación e Internet, 23(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/latex-2021/"
   },
   "matematica-discreta-2018": {
     "coverImage": "/libros/universitaria/algebra/matematica-discreta-2018/portada.webp",
@@ -235,7 +235,7 @@
       "teoria dos grafos",
       "indução matemática"
     ],
-    "citation": "Vílchez Q., E. (2018). Matemática Discreta. Revista digital Matemática, Educación e Internet, 20(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matematica-discreta-2018/"
+    "citation": "Vílchez Q., E. (2018). Matemática Discreta. <i>Revista digital Matemática, Educación e Internet, 20(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matematica-discreta-2018/"
   },
   "calculo-diferencial-e-integral-2017": {
     "coverImage": "/libros/universitaria/analisis/calculo-diferencial-e-integral-2017/portada.webp",
@@ -281,7 +281,7 @@
       "aplicações do cálculo"
     ],
 
-    "citation": "Hernández S., E. (2017). Cálculo Diferencial e Integral con Aplicaciones. Revista digital Matemática, Educación e Internet, 18(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/calculo-diferencial-e-integral-2017/"
+    "citation": "Hernández S., E. (2017). Cálculo Diferencial e Integral con Aplicaciones. <i>Revista digital Matemática, Educación e Internet, 18(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/calculo-diferencial-e-integral-2017/"
   },
   "metodos-numericos-2015": {
     "coverImage": "/libros/universitaria/analisis/metodos-numericos-2015/portada.webp",
@@ -329,7 +329,7 @@
       "integração numérica"
     ],
 
-    "citation": "Mora F., W. A. (2015). Métodos Numéricos con Basic Calc de LibreOffice y WxMaxima. Revista digital Matemática, Educación e Internet, 16(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/metodos-numericos-2015/"
+    "citation": "Mora F., W. A. (2015). Métodos Numéricos con Basic Calc de LibreOffice y WxMaxima. <i>Revista digital Matemática, Educación e Internet, 16(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/metodos-numericos-2015/"
   },
   "matrices-sistemas-lineales-2013": {
     "coverImage": "/libros/universitaria/algebra/matrices-y-sistemas-lineales-2013/portada.webp",
@@ -374,7 +374,7 @@
       "determinantes"
     ],
 
-    "citation": "Páez P., C. (2013). Matrices y Sistemas Lineales. Revista digital Matemática, Educación e Internet, 14(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matrices-y-sistemas-lineales-2013/"
+    "citation": "Páez P., C. (2013). Matrices y Sistemas Lineales. <i>Revista digital Matemática, Educación e Internet, 14(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/matrices-y-sistemas-lineales-2013/"
   },
   "teoria-de-numeros-2014": {
     "coverImage": "/libros/universitaria/algebra/teoria-de-numeros-2014/portada.webp",
@@ -421,7 +421,7 @@
       "aritmética modular"
     ],
 
-    "citation": "Mora Flores, W. (2014). Introducción a la teoría de números. Ejemplos y Algoritmos. Revista digital Matemática, Educación e Internet, 15(2). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/teoria-de-numeros-2014/"
+    "citation": "Mora Flores, W. (2014). Introducción a la teoría de números. Ejemplos y Algoritmos. <i>Revista digital Matemática, Educación e Internet, 15(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/teoria-de-numeros-2014/"
   },
   "edepa-2013": {
     "coverImage": "/libros/universitaria/estadistica/edepa-2013/portada.webp",
@@ -479,7 +479,7 @@
       "inovação pedagógica"
     ],
 
-    "citation": "Mora Flores, W., & Ramírez Arce, G. (2013). Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA). Instituto Tecnológico de Costa Rica. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/estadistica/edepa-2013/"
+    "citation": "Mora Flores, W., & Ramírez Arce, G. (2013). Encuentro sobre Didáctica de la Estadística, la Probabilidad y el Análisis de Datos (EDEPA). <i>Instituto Tecnológico de Costa Rica</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/estadistica/edepa-2013/"
   },
   "fractales-2010": {
     "coverImage": "/libros/universitaria/analisis/fractales-2010/portada.webp",
@@ -533,7 +533,7 @@
       "simulação computacional"
     ],
 
-    "citation": "Alfaro, M., Murillo, M., & Soto, A. (2010). Fractales. Instituto Tecnológico de Costa Rica. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/analisis/fractales-2010/"
+    "citation": "Alfaro, M., Murillo, M., & Soto, A. (2010). Fractales. <i>Instituto Tecnológico de Costa Rica</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/universitaria/analisis/fractales-2010/"
   },
   "xxx-ocm-2018": {
     "coverImage": "/libros/universitaria/olimpiadas/xxx-ocm-2018/portada.webp",
@@ -623,7 +623,7 @@
     "keywords_en": ["Problems", "Costa Rican mathematical olympiads"],
     "abstract_pt": "OLCOMA é a Comissão Costarriquenha de Olimpíadas de Matemática. Esta comissão é composta por acadêmicos da área de Matemática da Universidade Nacional, do Instituto Tecnológico da Costa Rica, da Universidade da Costa Rica, da Universidade Estatal a Distância e por representantes do Ministério da Educação Pública e do Ministério da Ciência, Tecnologia e Telecomunicações. Dentro da estrutura das Olimpíadas Costarriquenhas de Matemática, existem três níveis de competição. No Nível I participam estudantes do sétimo ano, entre 10 e 13 anos (também podem participar alunos do sexto ano do ensino fundamental). No Nível II participam estudantes do oitavo e nono anos, entre 14 e 15 anos, aproximadamente. No Nível III participam estudantes do décimo, décimo primeiro e décimo segundo anos, com mais de 15 anos. Durante o ano de 2017, o trabalho foi desenvolvido em três etapas. Na Primeira Eliminatória, os estudantes resolveram uma prova de seleção única com 25 itens. Na Segunda Eliminatória, os classificados realizaram uma prova com 12 questões de seleção única e três problemas de desenvolvimento. Na Etapa Final, os classificados realizaram duas provas em dias consecutivos, cada uma com três problemas de desenvolvimento. O objetivo deste livro é que os futuros participantes das Olimpíadas Costarriquenhas de Matemática tenham material de consulta. Os problemas apresentados neste livro representam um desafio para quem gosta de resolver exercícios matemáticos. Cada problema tem sua respectiva solução, para que, após tentar resolvê-lo, o leitor possa comparar o procedimento adotado com a solução proposta. Foram incorporados todos os problemas da Primeira, Segunda e Etapa Final para cada um dos três níveis de competição.",
     "keywords_pt": ["Problemas", "Olimpíadas matemáticas costarriquenhas"],
-    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2020). Problemas de exámenes y soluciones XXX Olimpiada Costarricense de Matemáticas. Revista digital Matemática, Educación e Internet, 22(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxx-ocm-2018/"
+    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2020). Problemas de exámenes y soluciones XXX Olimpiada Costarricense de Matemáticas. <i>Revista digital Matemática, Educación e Internet, 22(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxx-ocm-2018/"
   },
 
   "xxix-ocm-2017": {
@@ -715,6 +715,6 @@
     "keywords_en": ["Problems", "Costa Rican mathematical olympiads"],
     "abstract_pt": "OLCOMA é a Comissão Costarriquenha de Olimpíadas de Matemática. Esta comissão é composta por acadêmicos da área de Matemática da Universidade Nacional, do Instituto Tecnológico da Costa Rica, da Universidade da Costa Rica, da Universidade Estatal a Distância e por representantes do Ministério da Educação Pública e do Ministério da Ciência, Tecnologia e Telecomunicações. Dentro da estrutura das Olimpíadas Costarriquenhas de Matemática, existem três níveis de competição. No Nível I participam estudantes do sétimo ano, entre 10 e 13 anos (também podem participar alunos do sexto ano do ensino fundamental). No Nível II participam estudantes do oitavo e nono anos, entre 14 e 15 anos, aproximadamente. No Nível III participam estudantes do décimo, décimo primeiro e décimo segundo anos, com mais de 15 anos. Durante o ano de 2017, o trabalho foi desenvolvido em três etapas. Na Primeira Eliminatória, os estudantes resolveram uma prova de seleção única com 25 itens. Na Segunda Eliminatória, os classificados realizaram uma prova com 12 questões de seleção única e três problemas de desenvolvimento. Na Etapa Final, os classificados realizaram duas provas em dias consecutivos, cada uma com três problemas de desenvolvimento. O objetivo deste livro é que os futuros participantes das Olimpíadas Costarriquenhas de Matemática tenham material de consulta. Os problemas apresentados neste livro representam um desafio para quem gosta de resolver exercícios matemáticos. Cada problema tem sua respectiva solução, para que, após tentar resolvê-lo, o leitor possa comparar o procedimento adotado com a solução proposta. Foram incorporados todos os problemas da Primeira, Segunda e Etapa Final para cada um dos três níveis de competição.",
     "keywords_pt": ["Problemas", "Olimpíadas matemáticas costarriquenhas"],
-    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2019). Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas. Revista digital Matemática, Educación e Internet, 21(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxix-ocm-2017/"
+    "citation": "Páez, C., Abarca, M., Chaves, L., Hernández, A., Calderón, G., Mora, F., Ramírez, J., Jiménez, D., Mora, G., Chaves, E., Hernández, S. (2019). Problemas de exámenes y soluciones XXIX Olimpiada Costarricense de Matemáticas. <i>Revista digital Matemática, Educación e Internet, 21(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/xxix-ocm-2017/"
   }
 }
