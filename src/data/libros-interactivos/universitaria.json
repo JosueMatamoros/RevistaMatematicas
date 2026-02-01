@@ -1,6 +1,6 @@
 {
-  "ecuaciones-diferenciales-orden-superior-2022": {
-    "coverImage": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/portada.webp",
+  "edo-os-interactivo": {
+    "coverImage": "/libros/universitaria/analisis/edo-os-interactivo/portada.webp",
     "title": "Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos",
     "title_en": "Higher Order Differential Equations with Interactive Applications and Illustrative Videos",
     "authors": [
@@ -15,12 +15,12 @@
     "received": "30 de setiembre de 2021",
     "accepted": "25 de enero de 2022",
     "category": "universitaria",
-    "pdf": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/libro.pdf",
+    "pdf": "/libros/universitaria/analisis/edo-os-interactivo/libro.pdf",
     "resources": [
       {
         "type": "zip",
         "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/libros/universitaria/analisis/ecuaciones-diferenciales-orden-superior-2022/CDF.zip"
+        "url": "/libros/universitaria/analisis/edo-os-interactivo/CDF.zip"
       },
       {
         "type": "link",
@@ -46,7 +46,7 @@
       "aplicações interativas",
       "Wolfram CDF"
     ],
-    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2022/"
+    "citation": "Oviedo Ugalde, N.G. (2022). Ecuaciones diferenciales de orden superior con apoyo interactivo y videos ilustrativos. <i>Revista digital Matemática, Educación e Internet, 24(1)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/edo-os-interactivo/"
   },
   "calculo-varias-variables-2022": {
     "coverImage": "/libros/universitaria/analisis/calculo-varias-variables-2022/portada.webp",
