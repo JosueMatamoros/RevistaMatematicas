@@ -126,11 +126,7 @@ export default function BookPage({ book }) {
               >
                 Compartir <FaShareAlt className="text-blue-600 w-4 h-4" />
               </button>
-              {copied && (
-                <span className={`mt-1 px-3 py-1 rounded-full text-xs font-semibold ${copied === "Enlace copiado" ? "bg-blue-100 text-blue-700 border border-blue-200" : "bg-red-100 text-red-700 border border-red-200"}`}>
-                  {copied}
-                </span>
-              )}
+
             </div>
           </div>
           {/* Fechas */}
@@ -305,7 +301,13 @@ export default function BookPage({ book }) {
               >
                 <FaCopy className="w-4 h-4 text-gray-800 hover:text-blue-600 transition-colors" />
                 {copied && (
-                  <span className={`absolute bottom-full mb-2 px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap z-10 ${copied === "Copiado" ? "bg-blue-100 text-blue-700 border border-blue-200" : "bg-red-100 text-red-700 border border-red-200"}`}>
+                  <span
+                    className={`absolute bottom-full mb-2 px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap z-10
+                      ${copied === "Copiado" ? "bg-blue-100 text-blue-700 border border-blue-200" : "bg-red-100 text-red-700 border border-red-200"}
+                      left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-0`
+                    }
+                    style={{ left: '10px' }}
+                  >
                     {copied}
                   </span>
                 )}
