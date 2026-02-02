@@ -9,6 +9,7 @@ import {
   FaCopy,
   FaChevronDown,
   FaChevronUp,
+  FaFileArchive,
 } from "react-icons/fa";
 import BreadcrumbNav from "@/components/articles/BreadcrumbNav";
 import Image from "next/image";
@@ -94,24 +95,9 @@ export default function BookPage({ book }) {
           ))}
         </div>
 
-        {/* Fechas y acciones */}
-        <div className="flex justify-between items-center">
-          <div className="text-sm text-gray-600">
-            {book.received && book.accepted ? (
-              <>
-                <span className="font-semibold">Recibido:</span> {book.received}
-                <span className="mx-2 text-gray-400">|</span>
-                <span className="font-semibold">Aceptado:</span> {book.accepted}
-              </>
-            ) : (
-              <div className="text-center">
-                <span className="font-semibold">Última revisión:</span>{" "}
-                {book.lastRevision}
-              </div>
-            )}
-          </div>
-
-          <div className="flex items-center gap-3">
+        <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-center gap-2 md:gap-0">
+          {/* Acciones: botones */}
+          <div className="flex items-center gap-3 order-1 md:order-none justify-center md:justify-end mb-2 md:mb-0">
             <a
               href={book.pdf}
               target="_blank"
@@ -120,6 +106,18 @@ export default function BookPage({ book }) {
             >
               Descargar <FaFilePdf className="text-red-600 w-4 h-4" />
             </a>
+            {/* Botón ZIP si existe */}
+            {book.resources && Array.isArray(book.resources) && book.resources.some(r => r.type === "zip") && (
+              <a
+                href={book.resources.find(r => r.type === "zip").url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-yellow-500 text-yellow-700 hover:bg-yellow-50 text-sm"
+                download
+              >
+                <span className="hidden md:block ">Descargar </span> ZIP <FaFileArchive className="text-yellow-600 w-4 h-4" />
+              </a>
+            )}
             <div className="flex flex-col items-center">
               <button
                 type="button"
@@ -134,6 +132,21 @@ export default function BookPage({ book }) {
                 </span>
               )}
             </div>
+          </div>
+          {/* Fechas */}
+          <div className="text-sm text-gray-600 text-center md:text-left order-2 md:order-none">
+            {book.received && book.accepted ? (
+              <>
+                <span className="font-semibold">Recibido:</span> {book.received}
+                <span className="mx-2 text-gray-400">|</span>
+                <span className="font-semibold">Aceptado:</span> {book.accepted}
+              </>
+            ) : (
+              <div className="text-center md:text-left">
+                <span className="font-semibold">Última revisión:</span>{" "}
+                {book.lastRevision}
+              </div>
+            )}
           </div>
         </div>
 
