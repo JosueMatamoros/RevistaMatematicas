@@ -18,36 +18,72 @@ export default function BooksList({
   resources,
   category,
 }) {
-  // función para construir urls seguras
   const getValidUrl = (url, type) => {
+    if (typeof url !== "string" || url.length === 0) return "";
+
+    const t = String(type || "").trim().toLowerCase();
     const isAbsolute = url.startsWith("http://") || url.startsWith("https://");
 
-    // No le pegues el basePath a archivos locales cuando Next ya lo maneja
-    if (!isAbsolute && type === "pdf") {
-      return url;
+    if (t === "zip") {
+      if (isAbsolute) return url;
+      if (url.startsWith("/")) return url;
+      return `/${url}`;
     }
 
-    // Para recursos externos (tipo link), nunca modificar la URL
-    if (isAbsolute && type === "link") {
-      return url;
-    }
+    if (!isAbsolute && t === "pdf") return url;
+
+    if (isAbsolute && t === "link") return url;
 
     return withFullUrl(url);
   };
 
-
-  // formatea autores si vienen como objetos
   const formattedAuthors =
     authors && authors.length > 0
-      ? authors.map((a) => (typeof a === "string" ? a : a.name)).join(", ")
+      ? authors.map((a) => (typeof a === "string" ? a : a?.name)).join(", ")
       : "";
+
+  const openAsAnchor = (url) => {
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
+
+  const openPdf = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const url = getValidUrl(pdf, "pdf");
+    if (!url) return;
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const openResource = (e, res) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const type = String(res?.type || "").trim().toLowerCase();
+    const url = getValidUrl(res?.url, type);
+    if (!url) return;
+
+    if (type === "zip") {
+      console.log(url);
+      openAsAnchor(url);
+      return;
+    }
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <Link
       href={`/libros/${id}`}
       className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary"
     >
-      {/* Portada */}
       <div className="md:w-1/4 p-4 flex justify-center items-center ">
         <Image
           src={coverImage}
@@ -58,10 +94,8 @@ export default function BooksList({
         />
       </div>
 
-      {/* Información */}
       <div className="md:w-3/4 p-6 flex flex-col justify-between">
         <div>
-          {/* Título principal */}
           <Typography
             variant="h6"
             color="gray"
@@ -70,7 +104,6 @@ export default function BooksList({
             {title}
           </Typography>
 
-          {/* Título en inglés */}
           {title_en && (
             <Typography
               variant="h8"
@@ -81,7 +114,6 @@ export default function BooksList({
             </Typography>
           )}
 
-          {/* Autores */}
           {formattedAuthors && (
             <Typography
               variant="small"
@@ -93,7 +125,6 @@ export default function BooksList({
           )}
 
           <div className="flex gap-x-4 items-center">
-            {/* Última revisión */}
             {lastRevision && (
               <Typography
                 variant="small"
@@ -104,7 +135,6 @@ export default function BooksList({
               </Typography>
             )}
 
-            {/* Categoría */}
             {category && (
               <Chip
                 size="sm"
@@ -115,19 +145,24 @@ export default function BooksList({
             )}
           </div>
 
-          {/* Botón principal: Descargar PDF */}
           {pdf && (
             <div
               className="mt-3"
-              onClick={(e) => e.stopPropagation()}
-              onMouseDown={(e) => e.stopPropagation()}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+              }}
+              onMouseDown={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+              }}
             >
               <Button
                 size="sm"
                 variant="outlined"
                 color="red"
                 className="flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50 text-sm font-bold normal-case"
-                onClick={() => window.open(getValidUrl(pdf, "pdf"), "_blank")}
+                onClick={openPdf}
               >
                 <span>Descargar</span>
                 <FaFilePdf className="text-red-500 w-5 h-5 align-middle" />
@@ -136,12 +171,17 @@ export default function BooksList({
           )}
         </div>
 
-        {/* Recursos secundarios */}
-        {resources && resources.length > 0 && (
+        {Array.isArray(resources) && resources.length > 0 && (
           <div
             className="mt-3"
-            onClick={(e) => e.stopPropagation()}
-            onMouseDown={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onMouseDown={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
           >
             <Typography
               variant="small"
@@ -150,53 +190,56 @@ export default function BooksList({
             >
               Otros recursos
             </Typography>
+
             <div className="flex flex-wrap gap-3 ">
-              {resources.map((res) => (
-                <Button
-                  key={res.url}
-                  size="sm"
-                  variant="outlined"
-                  color="gray"
-                  className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
-                  onClick={e => {
-                    if (res.type === "zip") {
-                      window.open(getValidUrl(res.url, res.type), "_blank");
-                      setTimeout(() => {
-                        window.location.href = `/libros/${id}`;
-                      }, 500);
-                    } else {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      if (res.type === "link") {
-                        const url = getValidUrl(res.url, res.type);
-                        window.open(url, "_blank", "noopener,noreferrer");
-                      } else {
-                        window.open(getValidUrl(res.url, res.type), "_blank");
-                      }
-                    }
-                  }}
-                >
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: res.label.includes("CDF")
-                        ? res.label.replace(
-                            "CDF",
-                            `CDF <br class='block sm:hidden' />`
-                          )
-                        : res.label,
-                    }}
-                  />
-                  {res.type === "pdf" && (
-                    <FaFilePdf className="text-red-500 w-4 h-4 align-middle" />
-                  )}
-                  {res.type === "zip" && (
-                    <FaFileArchive className="text-yellow-600 w-4 h-4 align-middle" />
-                  )}
-                  {res.type === "link" && (
-                    <FaLink className="text-blue-500 w-4 h-4 align-middle" />
-                  )}
-                </Button>
-              ))}
+              {resources.map((res) => {
+                const type = String(res?.type || "").trim().toLowerCase();
+
+                if (type === "zip") {
+                  return (
+                    <Button
+                      key={`${type}-${res?.url}`}
+                      size="sm"
+                      variant="outlined"
+                      className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-yellow-500 text-yellow-700 hover:bg-yellow-50 text-sm font-medium normal-case"
+                      onClick={(e) => openResource(e, res)}
+                    >
+                      <span className="hidden md:block">Descargar </span>
+                      <span>ZIP</span>
+                      <FaFileArchive className="text-yellow-600 w-4 h-4 align-middle" />
+                    </Button>
+                  );
+                }
+
+                return (
+                  <Button
+                    key={`${type}-${res?.url}`}
+                    size="sm"
+                    variant="outlined"
+                    color="gray"
+                    className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
+                    onClick={(e) => openResource(e, res)}
+                  >
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          typeof res?.label === "string" && res.label.includes("CDF")
+                            ? res.label.replace(
+                                "CDF",
+                                `CDF <br class='block sm:hidden' />`
+                              )
+                            : res?.label || "",
+                      }}
+                    />
+                    {type === "pdf" && (
+                      <FaFilePdf className="text-red-500 w-4 h-4 align-middle" />
+                    )}
+                    {type === "link" && (
+                      <FaLink className="text-blue-500 w-4 h-4 align-middle" />
+                    )}
+                  </Button>
+                );
+              })}
             </div>
           </div>
         )}
