@@ -20,15 +20,20 @@ export default function BooksList({
 }) {
   // función para construir urls seguras
   const getValidUrl = (url, type) => {
-  const isAbsolute = url.startsWith("http://") || url.startsWith("https://");
+    const isAbsolute = url.startsWith("http://") || url.startsWith("https://");
 
-  // No le pegues el basePath a archivos locales cuando Next ya lo maneja
-  if (!isAbsolute && type === "pdf") {
-    return url;
-  }
+    // No le pegues el basePath a archivos locales cuando Next ya lo maneja
+    if (!isAbsolute && type === "pdf") {
+      return url;
+    }
 
-  return withFullUrl(url);
-};
+    // Para recursos externos (tipo link), nunca modificar la URL
+    if (isAbsolute && type === "link") {
+      return url;
+    }
+
+    return withFullUrl(url);
+  };
 
 
   // formatea autores si vienen como objetos
@@ -153,9 +158,23 @@ export default function BooksList({
                   variant="outlined"
                   color="gray"
                   className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-gray-300 text-gray-700 bg-white hover:bg-gray-100 text-sm font-medium normal-case"
-                  onClick={() =>
-                    window.open(getValidUrl(res.url, res.type), "_blank")
-                  }
+                  onClick={e => {
+                    if (res.type === "zip") {
+                      window.open(getValidUrl(res.url, res.type), "_blank");
+                      setTimeout(() => {
+                        window.location.href = `/libros/${id}`;
+                      }, 500);
+                    } else {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      if (res.type === "link") {
+                        const url = getValidUrl(res.url, res.type);
+                        window.open(url, "_blank", "noopener,noreferrer");
+                      } else {
+                        window.open(getValidUrl(res.url, res.type), "_blank");
+                      }
+                    }
+                  }}
                 >
                   <span
                     dangerouslySetInnerHTML={{
