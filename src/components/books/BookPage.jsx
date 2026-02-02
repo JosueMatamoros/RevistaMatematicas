@@ -53,7 +53,7 @@ export default function BookPage({ book }) {
       <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-4">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2 leading-tight">
+          <h1 className="text-3xl font-bold text-gray-900 mb-2 leading-tight pt-4">
             {book.title}
           </h1>
           {book.title_en && (
