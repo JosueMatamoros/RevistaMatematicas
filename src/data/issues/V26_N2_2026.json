@@ -77,6 +77,80 @@
     },
     {
       "id": 2,
+      "title": "Geogebra en la enseñanza de la geometría en escuela nueva",
+      "title_en": "Geogebra for teaching geometry in escuela nueva",
+      "volume": 26,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Maira Alejandra Franco-Saavedra",
+          "email": "alexa_ariam@hotmail.com",
+          "university": "I.E. Aurelio Martínez Mutis",
+          "department": "",
+          "location": "Santander, Bucaramanga, Colombia",
+          "orcid": "https://orcid.org/0009-0002-7791-644X"
+        },
+        {
+          "name": "Evelyn Carolina Medina-Naranjo",
+          "email": "ecarolina.medinanaranjo@gmail.com",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Bogotá D.C., Colombia",
+          "orcid": "https://orcid.org/0009-0001-2942-8516"
+        },
+        {
+          "name": "Carolina Tovar-Torres",
+          "email": "carolina.tovar@uniminuto.edu",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Ibagué, Colombia",
+          "orcid": "https://orcid.org/0000-0003-3019-9092"
+        },
+        {
+          "name": "Néstor Rafael Perico-Granados",
+          "email": "nestor.perico@uniminuto.edu.co",
+          "university": "Corporación Universitaria Minuto de Dios - UNIMINUTO",
+          "department": "",
+          "location": "Tunja, Colombia",
+          "orcid": "https://orcid.org/0000-0003-1768-793X"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V26/N2_2026/Franco",
+      "pdf": "/Articulos/V26/N2_2026/Franco/V26_n2_Franco.pdf",
+      "doi": "",
+      "received": "22 de febrero de 2025",
+      "accepted": "15 de setiembre de 2025",
+      "abstract_es": "El presente artículo tiene como objetivo analizar los beneficios de utilizar el software GeoGebra en la enseñanza de la geometría en estudiantes de primaria. La investigación que le antecede se llevó a cabo en el Centro Educativo La Bodega, sede Arroyo de Agua, municipio de La Paz, Departamento del Cesar, Colombia. Esta institución opera bajo el modelo de Escuela Nueva. La muestra correspondió a la totalidad de la población, nueve estudiantes de los grados de 1° a 5°. Se trabajó con un enfoque mixto, alcance descriptivo y técnicas de recolección. Tras identificar las necesidades, se diseñó secuencia didáctica con mediación de GeoGebra basada en el modelo instruccional ADDIE. El análisis estadístico mostró mejoras significativas en las dimensiones analizadas.",
+      "abstract_en": "The present article aims to analyze the benefits of GeoGebra in teaching Geometry to primary school students. The preceding research was conducted at the Centro Educativo La Bodega, Arroyo de Agua campus, in the municipality of La Paz, Department of Cesar, Colombia, an institution that operates under the Escuela Nueva model. The sample comprised the entire population, consisting of nine students from grades 1° to 5°. A mixed-methods approach was used, with a descriptive scope and data collection techniques. After identifying the needs, a didactic sequence mediated by GeoGebra based on the ADDIE instructional model was designed. Statistical analysis showed significant improvements in the analyzed dimensions.",
+      "abstract_pt": "O presente artigo tem como objetivo analisar os benefícios de utilizar o software GeoGebra no ensino de geometria para estudantes do ensino fundamental. A pesquisa que o precede foi realizada no Centro Educativo La Bodega, sede Arroyo de Agua, município de La Paz, Departamento do Cesar, Colômbia. Esta instituição opera sob o modelo de Escola Nova. A amostra correspondeu à totalidade da população, nove estudantes das turmas de 1° a 5°. Trabalhou-se com uma abordagem mista, alcance descritivo e técnicas de recolha de dados. Após identificar as necessidades, foi desenhada uma sequência didática com mediação do GeoGebra baseada no modelo instrucional ADDIE. A análise estatística mostrou melhoras significativas nas dimensões analisadas.",
+      "keywords_es": [
+        "Enseñanza",
+        "Escuela nueva",
+        "Geometría",
+        "GeoGebra",
+        "Modelo Educacional"
+      ],
+      "keywords_en": [
+        "Teaching",
+        "New school",
+        "Geometry",
+        "GeoGebra",
+        "Educational models"
+      ],
+      "keywords_pt": [
+        "Ensino",
+        "Escola Nova",
+        "Geometria",
+        "GeoGebra",
+        "Modelo Educacional"
+      ],
+      "citation": "Franco-Saavedra, M. A., Medina-Naranjo, E. C., Tovar-Torres, C., & Perico-Granados, N. R. (2026). Geogebra en la enseñanza de la geometría en escuela nueva. <i>Revista Digital Matemática: Educación e Investigación</i>, 26(2), 45-60."
+    },
+    {
+      "id": 3,
       "title": "Estrategia didáctica para la solución numérica de ecuaciones diferenciales ordinarias de orden superior",
       "title_en": "Didactic strategy for solution of higher order ordinary differential equations",
       "volume": 26,
@@ -163,7 +237,7 @@
       "citation": "Barrios Soto, L., Padilla Escorcia, I., Delgado González, M., & Arrieta, X. (2026). Pensar geométricamente, actuar didácticamente: el modelo BARRISO como estrategia educativa. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8273"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Sobre la secuencia numérica de François, su tablero y la visualización de propiedades con mosaicos",
       "title_en": "On the Francois numerical sequence, his board and some tillings properties",
       "volume": 26,
@@ -209,7 +283,7 @@
       "citation": "Sandoval-Hernández, M. A., Jiménez-Islas, H., Torreblanca-Bouchan, S. E., Molina-Herrera, F. I., Villegas-Saucillo, J. J., & Vázquez Leal, H. (2026). Estrategia didáctica para la solución numérica de ecuaciones diferenciales ordinarias de orden superior. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>."
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Una introducción a los sistemas dinámicos discretos bidimensionales",
       "title_en": "An introduction to two-dimensional discrete dynamical systems",
       "volume": 26,
@@ -264,9 +338,8 @@
       "citation": "Vieira Alves, F. R. (2026). Sobre la secuencia numérica de François, su tablero y la visualización de propiedades con mosaicos. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8358"
     },
 
-
     {
-      "id": 5,
+      "id": 6,
       "title": "Estrategia basada en aprendizaje adaptativo con Inteligencia Artificial para el aprendizaje de funciones matemáticas de estudiantes de secundaria",
       "title_en": "Adaptive learning based strategy with artificial intelligence for learning mathematical functions of high school students",
       "volume": 26,
@@ -316,7 +389,7 @@
       "citation": "Santiago-Santos, A., & García-Ramos, I. (2026). Una introducción a los sistemas dinámicos discretos bidimensionales. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8387"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Modelación de sistemas positivos mediante distribuciones tipo fase",
       "title_en": "Modeling positive systems using phase-type distributions",
       "volume": 26,
@@ -368,7 +441,7 @@
       "citation": "Díaz Porras, J. A. (2026). Estrategia basada en aprendizaje adaptativo con Inteligencia Artificial para el aprendizaje de funciones matemáticas de estudiantes de secundaria. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8388"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Desafíos y adaptaciones en la enseñanza de las matemáticas durante la pandemia: un análisis cualitativo de experiencias docentes con TIC en Costa Rica",
       "title_en": "Challenges and adaptations in teaching mathematics during the pandemic: a qualitative analysis of teaching experiences with ICTs in Costa Rica",
       "volume": 26,
@@ -434,7 +507,7 @@
       "citation": "Rodríguez Esparza, L. J., & Baltazar Larios, F. (2026). Modelación de sistemas positivos mediante distribuciones tipo fase. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8389"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Generar una Web Interactiva con LaTeX (usando Make4ht e IA)",
       "title_en": "Transforming LaTeX Documents into Interactive Websites (with AI & Make4ht)",
       "volume": 26,
@@ -487,7 +560,7 @@
       "citation": "Mora Flores, W. (2026). Generar una Web Interactiva con LaTeX (usando Make4ht e IA). g<i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8214"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Una introducción a la programación de horarios: restricciones, parámetros y funciones objetivo",
       "title_en": "An Introduction to Timetabling: Constraints, Parameters and Objective Functions",
       "volume": 26,
@@ -531,7 +604,7 @@
       "citation": "Córdoba Hernández, J. G. (2026). Una introducción a la programación de horarios: restricciones, parámetros y funciones objetivo. <i>Revista Digital: Matemática, Educación e Internet, 26(2)</i>. https://doi.org/10.18845/rdmei.v26i2.8404"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Explorando el origen histórico de las funciones trigonométricas",
       "title_en": "Exploring the historical origin of trigonometric functions",
       "volume": 26,
