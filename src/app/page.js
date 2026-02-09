@@ -35,6 +35,7 @@ export default function Home() {
           <ArticlesList
             title={issueData.issueTitle}
             articles={issueData.articles}
+            books={issueData.books || []}
           />
         </main>
 
