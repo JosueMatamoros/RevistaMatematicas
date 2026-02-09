@@ -11,8 +11,9 @@ import {
 } from "@material-tailwind/react";
 import { FaFilePdf } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
+import BooksList from "@/components/books/BooksList";
 
-export default function ArticlesList({ title, articles }) {
+export default function ArticlesList({ title, articles, books = [] }) {
   const router = useRouter();
 
   return (
@@ -86,7 +87,9 @@ export default function ArticlesList({ title, articles }) {
                       size="sm"
                       variant="outlined"
                       value={article.category}
-                      className={"hidden md:inline-flex border-blue-300 text-blue-700 bg-blue-50"}
+                      className={
+                        "hidden md:inline-flex border-blue-300 text-blue-700 bg-blue-50"
+                      }
                     />
                   )}
                 </div>
@@ -121,6 +124,17 @@ export default function ArticlesList({ title, articles }) {
           );
         })}
       </div>
+
+      {books.length > 0 && (
+        <div className="mb-8 mt-8">
+          <Typography variant="h4" className="font-display mb-2 font-bold">
+            Libros
+          </Typography>
+          {books.map((book) => (
+            <BooksList key={book.id} {...book} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

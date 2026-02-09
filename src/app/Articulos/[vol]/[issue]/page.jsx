@@ -34,11 +34,13 @@ export default function IssuePage({ params }) {
     return <div className="p-8 text-red-500">Número no encontrado</div>;
   }
 
+  const books = current.data.books || [];
   return (
     <div>
       <ArticlesList
         title={`Volumen ${current.volume}, Número ${current.number}, ${current.date}`}
         articles={current.data.articles}
+        books={books}
       />
     </div>
   );

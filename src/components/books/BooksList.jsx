@@ -84,7 +84,7 @@ export default function BooksList({
       href={`/libros/${id}`}
       className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary"
     >
-      <div className="md:w-1/4 p-4 flex justify-center items-center ">
+      <div className="md:w-1/4 p-4 flex justify-center items-center">
         <Image
           src={coverImage}
           alt={title}
@@ -129,7 +129,7 @@ export default function BooksList({
               <Typography
                 variant="small"
                 color="gray"
-                className=" text-gray-500"
+                className="text-gray-500"
               >
                 Última revisión: {lastRevision}
               </Typography>
@@ -191,7 +191,7 @@ export default function BooksList({
               Otros recursos
             </Typography>
 
-            <div className="flex flex-wrap gap-3 ">
+            <div className="flex flex-wrap gap-3">
               {resources.map((res) => {
                 const type = String(res?.type || "").trim().toLowerCase();
 
@@ -204,8 +204,18 @@ export default function BooksList({
                       className="flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md border border-yellow-500 text-yellow-700 hover:bg-yellow-50 text-sm font-medium normal-case"
                       onClick={(e) => openResource(e, res)}
                     >
-                      <span className="hidden md:block">Descargar </span>
-                      <span>ZIP</span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html:
+                            typeof res?.label === "string" &&
+                            res.label.includes("CDF")
+                              ? res.label.replace(
+                                  "CDF",
+                                  `CDF <br class='block sm:hidden' />`
+                                )
+                              : res?.label || "",
+                        }}
+                      />
                       <FaFileArchive className="text-yellow-600 w-4 h-4 align-middle" />
                     </Button>
                   );
@@ -223,7 +233,8 @@ export default function BooksList({
                     <span
                       dangerouslySetInnerHTML={{
                         __html:
-                          typeof res?.label === "string" && res.label.includes("CDF")
+                          typeof res?.label === "string" &&
+                          res.label.includes("CDF")
                             ? res.label.replace(
                                 "CDF",
                                 `CDF <br class='block sm:hidden' />`
