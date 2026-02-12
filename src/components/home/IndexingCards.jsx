@@ -4,7 +4,7 @@ import Link from "next/link";
 import { withBasePath } from "@/lib/basePath";
 
 const indexers = [
-  { name: "SciELO", src: withBasePath("/indexadoras/scileoCambiar.webp"), url: "https://www.redalyc.org/revista.oa?id=6079" },
+  { name: "SciELO", src: withBasePath("/indexadoras/scileoCambiar.webp"), url: "https://www.scielo.sa.cr/scielo.php?script=sci_serial&pid=1659-0643&lng=es&nrm=iso" },
   { name: "Redalyc", src: withBasePath("/indexadoras/redalycLogo.webp"), url: "https://www.redalyc.org/revista.oa?id=6079&tipo=coleccion" },
   { name: "Latindex", src: withBasePath("/indexadoras/latindexLogo.webp"), url: "https://www.latindex.org/latindex/ficha/15341" },
   { name: "DOAJ", src: withBasePath("/indexadoras/DOAJlogo.webp"), url: "https://doaj.org/toc/1659-0643" },

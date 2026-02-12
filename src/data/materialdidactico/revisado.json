@@ -198,17 +198,17 @@
                 "email": "trabajos_alexvilla@hotmail.com",
                 "university": "Investigador independiente",
                 "location": "Carúpano, Venezuela",
-                "orcid": ""
+                "orcid": "https://orcid.org/0000-0002-4628-1894"
               },
               {
                 "name": "Francisco Villarroel Rosillo",
                 "email": "fjvillr02@gmail.com",
                 "university": "Investigador independiente",
                 "location": "Carúpano, Venezuela",
-                "orcid": ""
+                "orcid": "https://orcid.org/0000-0002-9159-5892"
               }
             ],
-            "category": "Didáctica y software",
+            "category": "",
             "slug": "V25_N1_2024/Villarroel",
             "pdf": "/materialRevisado/articulos/V25_N1_2024/Villarroel.pdf",
             "doi": "",

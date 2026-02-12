@@ -1,6 +1,7 @@
 import { withFullUrl } from "@/lib/basePath";
 import BookPage from "@/components/books/BookPage";
 import ArticlePage from "@/components/articles/ArticlePage";
+import NavsComponent from "@/components/home/NavsComponent";
 import revisadoData from "@/data/materialdidactico/revisado.json";
 
 const allBooks = revisadoData.libros || {};
@@ -103,20 +104,33 @@ export default function Page({ params }) {
 
   if (!item) {
     return (
-      <div className="p-8 text-center text-red-500">
-        No existe el material
+      <div>
+        <NavsComponent />
+        <div className="p-8 text-center text-red-500">
+          No existe el material
+        </div>
       </div>
     );
   }
 
   if (item.type === "book") {
     const normalizedBook = normalizeBook(item.data);
-    return <BookPage book={normalizedBook} />;
+    return (
+      <div>
+        <NavsComponent />
+        <BookPage book={normalizedBook} showBreadcrumb={false} />
+      </div>
+    );
   }
 
   if (item.type === "article") {
     const normalizedArticle = normalizeArticle(item.data);
-    return <ArticlePage article={normalizedArticle} />;
+    return (
+      <div>
+        <NavsComponent />
+        <ArticlePage article={normalizedArticle} />
+      </div>
+    );
   }
 
   return null;

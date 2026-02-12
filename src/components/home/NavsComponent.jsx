@@ -309,7 +309,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                     "Olimpiadas",
                     {
                       text: "Materiales revisados",
-                      href: "/materialdidactico/revisados",
+                      href: "/materialdidactico/revisado",
                     },
                     {
                       text: "Materiales sin revisión",

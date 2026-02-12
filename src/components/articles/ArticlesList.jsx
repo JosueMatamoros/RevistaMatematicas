@@ -18,7 +18,8 @@ export default function ArticlesList({
   articles = [],
   books = [],
   sections = [],
-  basePath = null // null = usa slug directo, string = usa basePath/slug
+  basePath = null, // null = usa slug directo, string = usa basePath/slug
+  noPadding = false
 }) {
   const router = useRouter();
 
@@ -124,7 +125,7 @@ export default function ArticlesList({
   // Si hay sections, renderizar por secciones
   if (sections.length > 0) {
     return (
-      <div className="container mx-auto px-4 py-4">
+      <div className={noPadding ? "" : "container mx-auto px-4 py-4"}>
         {sections.map((section, idx) => (
           <div key={idx} className="mb-8">
             {section.sectionTitle && (
@@ -157,7 +158,7 @@ export default function ArticlesList({
 
   // Comportamiento original con articles y title
   return (
-    <div className="container mx-auto px-4 py-4 ">
+    <div className={noPadding ? "" : "container mx-auto px-4 py-4"}>
       <Typography
         variant="h4"
         className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
