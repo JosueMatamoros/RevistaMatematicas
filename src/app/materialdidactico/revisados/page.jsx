@@ -25,7 +25,7 @@ export default function Page() {
           <BooksList
             key={book.id}
             {...book}
-            basePath="/materialdidactico/revisado"
+            basePath="/materialdidactico/revisados"
           />
         ))}
       </div>
