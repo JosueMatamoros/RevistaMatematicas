@@ -46,11 +46,11 @@
         "Mathematica",
         "Wolfram CDF"
       ],
-      "abstract_pt": "Este material didático introduz o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
+      "abstract_pt": "Este material didático introduce o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
       "keywords_pt": [
         "Transformada de Laplace",
-        "equações diferenciais",
-        "aplicações interativas",
+        "ecuaciones diferenciales",
+        "aplicaciones interactivas",
         "Mathematica",
         "Wolfram CDF"
       ],
@@ -239,6 +239,330 @@
               "números oblongos"
             ],
             "citation": "Villarroel Salazar, A., & Villarroel Rosillo, F. (2024). Sobre las familias de ecuaciones cuadráticas diofánticas: teoremas, formación y características. <i>Revista Digital: Matemática, Educación e Internet, 25(1)</i>."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Volumen 24, Número 2, Marzo 2024 - Agosto 2024",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Uma Aplicação em Geometria Projetiva - O GeoGebra e as Ferramentas Projetivas",
+            "title_en": "A Projective Geometry Application - GeoGebra and Projective Tools",
+            "volume": 24,
+            "number": 2,
+            "language": "pt",
+            "published": "2024-03-01",
+            "authors": [
+              {
+                "name": "Lucas Cunha Bastos",
+                "email": "lucascbastos@gmail.com",
+                "university": "SEDUC-CE / IFCE",
+                "location": "Brasil",
+                "orcid": "https://orcid.org/0000-0002-7815-2018"
+              },
+              {
+                "name": "Francisco Régis Vieira Alves",
+                "email": "fregis@ifce.edu.br",
+                "university": "IFCE",
+                "location": "Brasil",
+                "orcid": "https://orcid.org/0000-0003-3710-1561"
+              },
+              {
+                "name": "Paulo C. C. De Oliveira",
+                "email": "paulocesar.oliveira@urca.br",
+                "university": "URCA",
+                "location": "Brasil",
+                "orcid": "https://orcid.org/0000-0002-4075-6625"
+              }
+            ],
+            "category": "",
+            "slug": "V24_N2_2024/Cunha",
+            "pdf": "/materialRevisado/articulos/V24_N2_2024/Cunha.pdf",
+            "doi": "",
+            "received": "31 mayo 2023",
+            "accepted": "20 noviembre 2023",
+            "abstract_pt": "Este artigo representa o recorte de uma tese de doutorado em andamento, nele apresentamos ferramentas construídas no software GeoGebra que possibilitam a projeção de elementos geométricos entre diferentes planos, nomeados neste artigo de Plano Euclidiano e Plano Projetivo, buscando favorecer a visualização de conceitos pertinentes à Geometria Projetiva. Neste artigo são apresentadas as projeções de ponto, reta, segmento de reta e círculo. Tais ferramentas buscam diminuir o número de etapas necessárias para a projeção dos elementos geométricos nas construções realizadas no estudo de Geometria Projetiva, permitindo a observação da transição entre os Planos Euclidiano e Projetivo.",
+            "abstract_en": "This article represents an excerpt from a doctoral thesis in progress, in it we present tools built in the GeoGebra software that allow the projection of geometric elements between different planes, named in this article Euclidean Plan and Projective Plan, seeking to favor the visualization of concepts pertinent to Projective Geometry. In this article, point, line, line segment and circle projections are presented. Such tools seek to reduce the number of steps necessary for the projection of geometric elements in the constructions carried out in the study of Projective Geometry, allowing the observation of the transition between the Euclidean and Projective Planes.",
+            "abstract_es": "Este artículo representa un recorte de una tesis doctoral en curso. En él se presentan herramientas construidas en el software GeoGebra que permiten la proyección de elementos geométricos entre diferentes planos, denominados en este trabajo Plano Euclidiano y Plano Proyectivo, con el objetivo de favorecer la visualización de conceptos propios de la Geometría Proyectiva. Se presentan proyecciones de punto, recta, segmento de recta y círculo. Dichas herramientas buscan reducir el número de pasos necesarios para proyectar elementos geométricos en las construcciones realizadas en el estudio de la Geometría Proyectiva, permitiendo observar la transición entre los Planos Euclidiano y Proyectivo.",
+            "keywords_pt": [
+              "GeoGebra",
+              "Geometria Projetiva",
+              "Ferramentas Projetivas"
+            ],
+            "keywords_en": [
+              "GeoGebra",
+              "Projective Geometry",
+              "Projective Tools"
+            ],
+            "keywords_es": [
+              "GeoGebra",
+              "Geometría Proyectiva",
+              "Herramientas Proyectivas"
+            ],
+            "citation": "Bastos, L. C., Alves, F. R. V., & De Oliveira, P. C. C. (2024). Uma Aplicação em Geometria Projetiva - O GeoGebra e as Ferramentas Projetivas. <i>Revista Digital: Matemática, Educación e Internet, 24(2)</i>."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Volumen 24, Número 1, Agosto 2023 - Febrero 2024",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Relación de orden total en los complejos y algunas consecuencias",
+            "title_en": "Total order relation in the complex numbers and its implications",
+            "volume": 24,
+            "number": 1,
+            "language": "es",
+            "published": "2023-08-01",
+            "authors": [
+              {
+                "name": "Daniel Escobar Celis",
+                "email": "danielcelis526@gmail.com",
+                "university": "Universidad de Oriente",
+                "location": "Venezuela",
+                "orcid": "https://orcid.org/0000-0003-4000-5829"
+              }
+            ],
+            "category": "",
+            "slug": "V24_N1_2023/Escobar",
+            "pdf": "/materialRevisado/articulos/V24_N1_2023/Escobar.pdf",
+            "doi": "",
+            "received": "20 enero 2021",
+            "accepted": "1 marzo 2023",
+            "abstract_es": "En este trabajo deduciremos una relación de orden total en el conjunto de los números complejos a partir de la definición de igualdad de dos números complejos. Daremos una interpretación de esta relación y probaremos algunas de sus propiedades, como consecuencia mostraremos que dos de los cuatro enunciados de la propiedad arquimediana no aplican mientras que los otros dos sí. Por otra parte, enunciaremos una versión para los números complejos de la función valor absoluto y función parte entera, así como también estudiaremos algunos tipos de inecuaciones en C, para finalizar, enunciaremos una versión para el conjunto C de las cortaduras de Dedekind.",
+            "abstract_en": "In this work we will derive a total order relation in the set of complex numbers from the definition of equality of two complex numbers. We will give an interpretation of this relationship and test some of its properties, as a consequence we will show that two of the four statements of the Arquimedian property do not apply while the other two do. On the other hand, we will estate a version for the complex numbers of absolute value function and integer function, as well as we will study some types of inequalities in C, and finally we will estate a version for the set C of Dedekind's cuts.",
+            "abstract_pt": "Neste trabalho, deduziremos uma relação de ordem total no conjunto dos números complexos a partir da definição de igualdade de dois números complexos. Apresentaremos uma interpretação dessa relação e provaremos algumas de suas propriedades; como consequência, mostraremos que dois dos quatro enunciados da propriedade arquimediana não se aplicam, enquanto os outros dois se aplicam. Além disso, enunciaremos uma versão, para os números complexos, das funções valor absoluto e parte inteira, bem como estudaremos alguns tipos de desigualdades em C. Por fim, enunciaremos uma versão, para o conjunto C, dos cortes de Dedekind.",
+            "keywords_es": [
+              "relación de orden",
+              "orden en los complejos",
+              "inecuaciones en los complejos",
+              "cortaduras de Dedekind en los complejos"
+            ],
+            "keywords_en": [
+              "relationship of order",
+              "order in the complexes",
+              "inequalities in the complexes",
+              "Dedekind cuts in the complexes"
+            ],
+            "keywords_pt": [
+              "relação de ordem",
+              "ordem nos complexos",
+              "desigualdades nos complexos",
+              "cortes de Dedekind nos complexos"
+            ],
+            "citation": "Escobar Celis, D. (2023). Relación de orden total en los complejos y algunas consecuencias. <i>Revista Digital: Matemática, Educación e Internet, 24(1)</i>."
+          },
+          {
+            "id": 2,
+            "title": "Del test de Chika a un criterio general de divisibilidad entre cualquier número primo o compuesto (terminados en 1, 3, 7, 9): características y consecuencias",
+            "title_en": "From the Chika test to a general criterion of divisibility between any prime or composite number (ended in 1, 3, 7, 9): characteristics and consequences",
+            "volume": 24,
+            "number": 1,
+            "language": "es",
+            "published": "2023-08-01",
+            "authors": [
+              {
+                "name": "Alexander José Villarroel Salazar",
+                "email": "trabajos_alexvilla@hotmail.com",
+                "university": "Investigador Independiente",
+                "location": "Venezuela",
+                "orcid": "https://orcid.org/0000-0002-4628-1894"
+              },
+              {
+                "name": "Francisco Javier Villarroel Rosillo",
+                "email": "fjvillr02@gmail.com",
+                "university": "Investigador Independiente",
+                "location": "Venezuela",
+                "orcid": "https://orcid.org/0000-0002-9159-5892"
+              }
+            ],
+            "category": "",
+            "slug": "V24_N1_2023/Villarroel",
+            "pdf": "/materialRevisado/articulos/V24_N1_2023/Villarroel.pdf",
+            "doi": "",
+            "received": "14 junio 2022",
+            "accepted": "19 marzo 2023",
+            "abstract_es": "El propósito del siguiente artículo es mostrar un criterio general de divisibilidad que se basa en una manipulación matemática del test de Chika, el cual permite romper con el actual caos de criterios existentes para distintos divisores. Se establece una forma unificada para dividir entre números terminados en 1, 3, 7 y 9, en los cuales se encuentran todos los primos con excepción del 2 y el 5. Se desarrollan los conceptos de pivotes de división, números simbólicos y familia de pivotes, así como un teorema general de divisibilidad con su respectiva demostración, mostrando además sus implicaciones para números compuestos.",
+            "abstract_en": "The purpose of this article is to present a general divisibility criterion based on a mathematical manipulation of the Chika test, allowing a unified approach to divisibility among numbers ending in 1, 3, 7, and 9, which include all prime numbers except 2 and 5. The concepts of division pivots, symbolic numbers, and families of pivots are developed, culminating in a general divisibility theorem with its proof and implications for both prime and composite numbers.",
+            "abstract_pt": "O objetivo deste artigo é apresentar um critério geral de divisibilidade baseado em uma manipulação matemática do teste de Chika, permitindo uma abordagem unificada para a divisibilidade entre números terminados em 1, 3, 7 e 9, que incluem todos os números primos com exceção de 2 e 5. São desenvolvidos os conceitos de pivôs de divisão, números simbólicos e famílias de pivôs, culminando em um teorema geral de divisibilidade com sua demonstração e implicações para números primos e compostos.",
+            "keywords_es": [
+              "divisibilidad",
+              "números primos",
+              "números compuestos",
+              "criterio de divisibilidad",
+              "test de Chika"
+            ],
+            "keywords_en": [
+              "divisibility",
+              "prime numbers",
+              "composite numbers",
+              "divisibility criterion",
+              "Chika test"
+            ],
+            "keywords_pt": [
+              "divisibilidade",
+              "números primos",
+              "números compostos",
+              "critério de divisibilidade",
+              "teste de Chika"
+            ],
+            "citation": "Villarroel Salazar, A. J., & Villarroel Rosillo, F. J. (2023). Del test de Chika a un criterio general de divisibilidad entre cualquier número primo o compuesto (terminados en 1, 3, 7, 9): características y consecuencias. Revista Digital: Matemática, Educación e Internet, 24(1)."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Volumen 23, Número 2, Marzo 2023 - Agosto 2023",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Biyección entre Q × Q y N utilizando el árbol de Calkin–Wilf: Un ejemplo gráfico",
+            "title_en": "Bijection between Q × Q and N using the Calkin-Wilf tree: A graphic example",
+            "volume": 23,
+            "number": 2,
+            "language": "es",
+            "published": "2023-03-01",
+            "authors": [
+              {
+                "name": "Arturo Salico",
+                "email": "arturo.nardi@bue.edu.ar",
+                "university": "IES N° 1 “Dra. Alicia Moreau de Justo”",
+                "location": "Ciudad Autónoma de Buenos Aires, Argentina",
+                "orcid": "https://orcid.org/0000-0001-7740-4204"
+              }
+            ],
+            "category": "",
+            "slug": "V23_N2_2023/Salico",
+            "pdf": "/materialRevisado/articulos/V23_N2_2023/Salico.pdf",
+            "doi": "",
+            "received": "26 abril 2022",
+            "accepted": "2 agosto 2022",
+            "abstract_es": "Hay tantos pares de números racionales como números naturales. ¿Cómo mostramos a nuestros estudiantes de topología este hecho tan contraintuitivo? En este breve artículo, haremos una demostración gráfica de la coordinabilidad entre Q × Q y N0, por ende también con N, es decir, la coordinabilidad entre el plano racional y los números naturales.",
+            "abstract_en": "There are as many pairs of rational numbers as there are natural numbers. How do we show our topology students this very counterintuitive fact? In this brief article, we will make a graphic demonstration of the coordinability between Q × Q and N0, therefore also with N, that is, the rational plane has the same cardinality as the natural numbers.",
+            "abstract_pt": "Há tantos pares de números racionais quanto números naturais. Como mostramos aos nossos estudantes de topologia esse fato tão contraintuitivo? Neste breve artigo, faremos uma demonstração gráfica da coordenabilidade entre Q × Q e N0, e portanto também com N, isto é, da coordenabilidade entre o plano racional e os números naturais.",
+            "keywords_es": [
+              "coordinabilidad",
+              "conjuntos numerables",
+              "topología"
+            ],
+            "keywords_en": [
+              "coordinability",
+              "countable sets",
+              "topology"
+            ],
+            "keywords_pt": [
+              "coordenabilidade",
+              "conjuntos enumeráveis",
+              "topologia"
+            ],
+            "citation": "Salico, A. (2023). Biyección entre Q × Q y N utilizando el árbol de Calkin–Wilf: Un ejemplo gráfico. Revista Digital: Matemática, Educación e Internet, 23(2)."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Volumen 23, Número 1, Agosto 2022 - Febrero 2023",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Sobre las propiedades de los pentagonales generalizados y sus relaciones con números como triangulares, oblongos y otros",
+            "title_en": "On the properties of generalized pentagonals and their relationships with numbers such as triangular, oblong and others",
+            "volume": 23,
+            "number": 1,
+            "language": "es",
+            "published": "2022-08-01",
+            "authors": [
+              {
+                "name": "Alexander José Villarroel Salazar",
+                "email": "trabajos_alexvilla@hotmail.com",
+                "university": "Investigador Independiente",
+                "location": "Carúpano, Venezuela",
+                "orcid": "https://orcid.org/0000-0002-4628-1894"
+              },
+              {
+                "name": "Francisco Javier Villarroel Rosillo",
+                "email": "fjvill02@gmail.com",
+                "university": "Investigador Independente",
+                "location": "Carúpano, Venezuela",
+                "orcid": "https://orcid.org/0000-0002-9159-5892"
+              }
+            ],
+            "category": "",
+            "slug": "V23_N1_2022/Villarroel",
+            "pdf": "/materialRevisado/articulos/V23_N1_2022/Villarroel.pdf",
+            "doi": "",
+            "received": "11 julio 2021",
+            "accepted": "1 abril 2022",
+            "abstract_es": "En este artículo se estudian los números pentagonales generalizados y una serie de propiedades desarrolladas a partir de su análisis, las cuales permiten apreciar cómo dichos números se relacionan con números cuadrados, cúbicos, triangulares, oblongos y con diversas sucesiones numéricas. Se presentan resultados que evidencian conexiones algebraicas y estructurales entre estos conjuntos numéricos, destacando su valor dentro de la teoría de números y su potencial didáctico.",
+            "abstract_en": "This article studies generalized pentagonal numbers and a series of properties derived from their analysis, which allow us to appreciate how these numbers are related to square, cubic, triangular, oblong numbers and various numerical sequences. The results highlight algebraic and structural connections among these sets of numbers, emphasizing their value within number theory and their didactic potential.",
+            "abstract_pt": "Este artigo estuda os números pentagonais generalizados e uma série de propriedades desenvolvidas a partir de sua análise, que permitem apreciar como esses números se relacionam com números quadrados, cúbicos, triangulares, oblongos e com diversas sequências numéricas. São apresentados resultados que evidenciam conexões algébricas e estruturais entre esses conjuntos numéricos, destacando seu valor na teoria dos números e seu potencial didático.",
+            "keywords_es": [
+              "números pentagonales generalizados",
+              "números triangulares",
+              "números cuadrados",
+              "números oblongos",
+              "propiedades numéricas"
+            ],
+            "keywords_en": [
+              "generalized pentagonal numbers",
+              "triangular numbers",
+              "square numbers",
+              "oblong numbers",
+              "numerical properties"
+            ],
+            "keywords_pt": [
+              "números pentagonais generalizados",
+              "números triangulares",
+              "números quadrados",
+              "números oblongos",
+              "propriedades numéricas"
+            ],
+            "citation": "Villarroel Salazar, A. J., & Villarroel Rosillo, F. J. (2022). Sobre las propiedades de los pentagonales generalizados y sus relaciones con números como triangulares, oblongos y otros. Revista Digital: Matemática, Educación e Internet, 23(1)."
+          },
+          {
+            "id": 2,
+            "title": "Presentación de un algoritmo para la obtención de ceros de funciones reales no lineales de varias variables reales",
+            "title_en": "Presentation of an algorithm for obtaining zeros of non-linear real functions of several real variables",
+            "volume": 23,
+            "number": 1,
+            "language": "es",
+            "published": "2022-08-01",
+            "authors": [
+              {
+                "name": "Manuel Vázquez Mourazos",
+                "email": "manuelvazquezmourazos@gmail.com",
+                "university": "IES Arcebispo Xelmírez I",
+                "location": "Melide, Coruña, España",
+                "orcid": "https://orcid.org/0000-0003-1166-9562"
+              }
+            ],
+            "category": "",
+            "slug": "V23_N1_2022/Vazquez",
+            "pdf": "/materialRevisado/articulos/V23_N1_2022/Vazquez.pdf",
+            "doi": "",
+            "received": "15 enero 2022",
+            "accepted": "15 junio 2022",
+            "abstract_es": "El método de Newton-Raphson permite calcular raíces de una función real de variable real. Además, existe una extensión de este método para calcular raíces de una función f : R^n → R^n. En este artículo, partiendo de la interpretación geométrica del método de Newton-Raphson, se presenta una ampliación del mismo que permite calcular raíces de una función real de varias variables reales, f : R^n → R. El objetivo es ofrecer una exposición didáctica que permita deducir dicha ampliación de forma sencilla. Asimismo, se expone una posible implementación del algoritmo en MatLab, se realizan diversas ejecuciones para comprobar su funcionamiento y se analizan los resultados obtenidos, concluyendo con una discusión sobre sus limitaciones y posibles líneas de investigación futura.",
+            "abstract_en": "The Newton-Raphson method allows the computation of roots of a real function of one real variable. There is also an extension of this method to compute roots of a function f : R^n → R^n. In this article, starting from the geometric interpretation of the Newton-Raphson method, an extension is presented that allows computing roots of a real function of several real variables, f : R^n → R. The aim is to provide a didactic exposition that enables a simple deduction of this extension. Furthermore, a possible implementation of the algorithm in MatLab is presented, several executions are performed to verify its behavior, and the obtained results are analyzed, concluding with a discussion of its limitations and possible lines of future research.",
+            "abstract_pt": "O método de Newton-Raphson permite calcular raízes de uma função real de variável real. Além disso, existe uma extensão desse método para calcular raízes de uma função f : R^n → R^n. Neste artigo, partindo da interpretação geométrica do método de Newton-Raphson, apresenta-se uma ampliação que permite calcular raízes de uma função real de várias variáveis reais, f : R^n → R. O objetivo é oferecer uma exposição didática que permita deduzir essa ampliação de forma simples. Além disso, apresenta-se uma possível implementação do algoritmo em MatLab, realizam-se diversas execuções para verificar seu funcionamento e analisam-se os resultados obtidos, finalizando com uma discussão sobre suas limitações e possíveis linhas de investigação futura.",
+            "keywords_es": [
+              "método de Newton-Raphson",
+              "cero de una función",
+              "función real de varias variables reales",
+              "función no lineal"
+            ],
+            "keywords_en": [
+              "Newton-Raphson method",
+              "root of a function",
+              "real function of several real variables",
+              "non-linear function"
+            ],
+            "keywords_pt": [
+              "método de Newton-Raphson",
+              "zero de uma função",
+              "função real de várias variáveis reais",
+              "função não linear"
+            ],
+            "citation": "Vázquez Mourazos, M. (2022). Presentación de un algoritmo para la obtención de ceros de funciones reales no lineales de varias variables reales. Revista Digital: Matemática, Educación e Internet, 23(1)."
           }
         ]
       }
