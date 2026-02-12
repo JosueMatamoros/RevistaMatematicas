@@ -13,12 +13,151 @@ import { FaFilePdf } from "react-icons/fa";
 import { withFullUrl } from "@/lib/basePath";
 import BooksList from "@/components/books/BooksList";
 
-export default function ArticlesList({ title, articles, books = [] }) {
+export default function ArticlesList({
+  title,
+  articles = [],
+  books = [],
+  sections = [],
+  basePath = null // null = usa slug directo, string = usa basePath/slug
+}) {
   const router = useRouter();
 
+  // Construye la ruta según basePath
+  const buildRoute = (slug) => {
+    if (!slug) return null;
+    // Si no hay basePath, usar la ruta del slug directamente (comportamiento original)
+    if (!basePath) return `/${slug}`;
+    // Si hay basePath, combinarlo con el slug
+    return `${basePath}/${slug}`;
+  };
+
+  // Renderiza un artículo individual
+  const renderArticle = (article) => {
+    const handleCardClick = () => {
+      const route = buildRoute(article.slug);
+      if (route) router.push(route);
+    };
+
+    const handlePdfDownload = (e) => {
+      e.stopPropagation();
+      if (article.pdf) window.open(withFullUrl(article.pdf), "_blank");
+    };
+
+    const authorsText = Array.isArray(article.authors)
+      ? article.authors.map((a) => a.name).join(", ")
+      : article.author;
+
+    return (
+      <Card
+        key={article.id}
+        onClick={handleCardClick}
+        className="group border-l-4 hover:shadow-lg bg-gray-50 transition-all duration-300 hover:border-l-tec-blue-secondary cursor-pointer"
+      >
+        <CardBody>
+          <Typography
+            variant="h6"
+            color="blue-gray"
+            className="font-alt font-semibold group-hover:text-tec-blue-secondary transition-colors duration-200"
+          >
+            {article.title}
+          </Typography>
+
+          {article.title_en && (
+            <Typography
+              variant="h8"
+              color="gray"
+              className="font-alt font-semibold mb-2 border-l-2 pl-2 text-gray-500"
+            >
+              {article.title_en}
+            </Typography>
+          )}
+
+          <div className="flex items-center gap-3 mb-3">
+            {authorsText && (
+              <Typography
+                variant="small"
+                color="gray"
+                className="font-medium"
+              >
+                {authorsText}
+              </Typography>
+            )}
+
+            {article.category && (
+              <Chip
+                size="sm"
+                variant="outlined"
+                value={article.category}
+                className="hidden md:inline-flex border-blue-300 text-blue-700 bg-blue-50"
+              />
+            )}
+          </div>
+
+          {article.pdf && (
+            <Button
+              size="sm"
+              variant="outlined"
+              color="red"
+              className="normal-case items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm hidden md:inline-flex"
+              onClick={handlePdfDownload}
+            >
+              Descargar
+              <FaFilePdf className="text-red-600 w-4 h-4" />
+            </Button>
+          )}
+
+          {article.category && (
+            <div className="mt-3 flex justify md:hidden">
+              <Chip
+                size="sm"
+                variant="outlined"
+                value={article.category}
+                className="border-blue-300 text-blue-700 bg-blue-50"
+              />
+            </div>
+          )}
+        </CardBody>
+      </Card>
+    );
+  };
+
+  // Si hay sections, renderizar por secciones
+  if (sections.length > 0) {
+    return (
+      <div className="container mx-auto px-4 py-4">
+        {sections.map((section, idx) => (
+          <div key={idx} className="mb-8">
+            {section.sectionTitle && (
+              <Typography
+                variant="h4"
+                className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
+              >
+                {section.sectionTitle}
+              </Typography>
+            )}
+            <div className="space-y-6">
+              {section.articles?.map((article) => renderArticle(article))}
+            </div>
+          </div>
+        ))}
+
+        {books.length > 0 && (
+          <div className="mb-8 mt-8">
+            <Typography variant="h4" className="font-display mb-2 font-bold">
+              Libros
+            </Typography>
+            {books.map((book) => (
+              <BooksList key={book.id} {...book} basePath={basePath} />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Comportamiento original con articles y title
   return (
     <div className="container mx-auto px-4 py-4 ">
-      {/* Título dinámico */}
       <Typography
         variant="h4"
         className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
@@ -27,102 +166,7 @@ export default function ArticlesList({ title, articles, books = [] }) {
       </Typography>
 
       <div className="space-y-6">
-        {articles.map((article) => {
-          const handleCardClick = () => {
-            if (article.slug) router.push(`/${article.slug}`);
-          };
-
-          const handlePdfDownload = (e) => {
-            e.stopPropagation();
-            if (article.pdf) window.open(withFullUrl(article.pdf), "_blank");
-          };
-
-          // --- Autores: ---
-          const authorsText = Array.isArray(article.authors)
-            ? article.authors.map((a) => a.name).join(", ")
-            : article.author;
-
-          return (
-            <Card
-              key={article.id}
-              onClick={handleCardClick}
-              className="group border-l-4 hover:shadow-lg bg-gray-50 transition-all duration-300 hover:border-l-tec-blue-secondary cursor-pointer"
-            >
-              <CardBody>
-                {/* Título principal */}
-                <Typography
-                  variant="h6"
-                  color="blue-gray"
-                  className="font-alt font-semibold group-hover:text-tec-blue-secondary transition-colors duration-200"
-                >
-                  {article.title}
-                </Typography>
-
-                {/* Subtítulo en inglés (si existe) */}
-                {article.title_en && (
-                  <Typography
-                    variant="h8"
-                    color="gray"
-                    className="font-alt font-semibold mb-2 border-l-2 pl-2 text-gray-500"
-                  >
-                    {article.title_en}
-                  </Typography>
-                )}
-
-                {/* Autores y categoría SOLO en pantallas grandes */}
-                <div className="flex items-center gap-3 mb-3">
-                  {authorsText && (
-                    <Typography
-                      variant="small"
-                      color="gray"
-                      className="font-medium"
-                    >
-                      {authorsText}
-                    </Typography>
-                  )}
-
-                  {/* Chip en pantallas grandes */}
-                  {article.category && (
-                    <Chip
-                      size="sm"
-                      variant="outlined"
-                      value={article.category}
-                      className={
-                        "hidden md:inline-flex border-blue-300 text-blue-700 bg-blue-50"
-                      }
-                    />
-                  )}
-                </div>
-
-                {/* Botón de descarga SOLO en pantallas grandes */}
-                {article.pdf && (
-                  <Button
-                    size="sm"
-                    variant="outlined"
-                    color="red"
-                    className="normal-case items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm hidden md:inline-flex"
-                    onClick={handlePdfDownload}
-                  >
-                    Descargar
-                    <FaFilePdf className="text-red-600 w-4 h-4" />
-                  </Button>
-                )}
-
-                {/* Chip en pantallas pequeñas y medianas */}
-                {article.category && (
-                  <div className="mt-3 flex justify md:hidden">
-                    <Chip
-                      size="sm"
-                      variant="outlined"
-                      value={article.category}
-                      className="border-blue-300 text-blue-700 bg-blue-50"
-                    />
-                  </div>
-                )}
-              </CardBody>
-            </Card>
-          );
-        })}
+        {articles.map((article) => renderArticle(article))}
       </div>
 
       {books.length > 0 && (

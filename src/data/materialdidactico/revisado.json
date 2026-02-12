@@ -1,180 +1,247 @@
 {
-  "ecuaciones-diferenciales-transformada-laplace-2021": {
-    "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/portada.webp",
-    "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
-    "title_en": "Differential Equations using Laplace Transform",
-    "authors": [
-      {
-        "name": "Norberto Gerardo Oviedo Ugalde",
-        "email": "noviedo@itcr.ac.cr",
-        "orcid": "https://orcid.org/0000-0003-2167-0196",
-        "university": "Instituto Tecnológico de Costa Rica",
-        "location": "Costa Rica"
-      }
-    ],
-    "lastRevision": "Marzo 2021",
-    "category": "universitaria",
-    "received": "4 de abril de 2020",
-    "accepted": "18 de marzo de 2021",
-    "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
-    "resources": [
-      {
-        "type": "zip",
-        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/CDF.zip"
-      },
-      {
-        "type": "link",
-        "label": "Descargar Wolfram Player (gratuito)",
-        "url": "https://www.wolfram.com/player/"
-      }
-    ],
-    "abstract_es": "Este material didáctico introduce al lector en el estudio de las ecuaciones diferenciales ordinarias mediante el uso de la Transformada de Laplace, apoyándose en recursos interactivos desarrollados en Mathematica y distribuidos en formato Wolfram CDF (Computable Document Format). Su propósito principal es servir como apoyo dinámico y visual para la enseñanza y el aprendizaje de este tema, permitiendo explorar de forma práctica los principales teoremas asociados: los teoremas de traslación, el teorema de convolución y las transformadas de derivadas, junto con sus formas inversas. El libro incluye además aplicaciones interactivas que ilustran la resolución de ecuaciones diferenciales, integrales e integro-diferenciales con coeficientes constantes, promoviendo una comprensión más profunda de los métodos analíticos y computacionales de la Transformada de Laplace.",
-    "keywords_es": [
-      "Transformada de Laplace",
-      "ecuaciones diferenciales",
-      "aplicaciones interactivas",
-      "Mathematica",
-      "Wolfram CDF"
-    ],
-    "abstract_en": "This didactic material introduces the reader to the study of ordinary differential equations using the Laplace Transform, supported by interactive resources developed in Mathematica and distributed in Wolfram CDF (Computable Document Format). Its main purpose is to serve as a dynamic and visual aid for the teaching and learning of this topic, allowing practical exploration of the main associated theorems: the first and second shifting theorems, the convolution theorem, and the transforms of derivatives, along with their inverse forms. The book also includes interactive applications that illustrate the solution of differential, integral, and integro-differential equations with constant coefficients, fostering a deeper understanding of the analytical and computational methods of the Laplace Transform.",
-    "keywords_en": [
-      "Laplace Transform",
-      "differential equations",
-      "interactive applications",
-      "Mathematica",
-      "Wolfram CDF"
-    ],
-    "abstract_pt": "Este material didático introduz o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
-    "keywords_pt": [
-      "Transformada de Laplace",
-      "equações diferenciais",
-      "aplicações interativas",
-      "Mathematica",
-      "Wolfram CDF"
-    ],
-    "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. Revista digital Matemática, Educación e Internet, 23(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
+  "libros": {
+    "ecuaciones-diferenciales-transformada-laplace-2021": {
+      "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/portada.webp",
+      "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
+      "title_en": "Differential Equations using Laplace Transform",
+      "authors": [
+        {
+          "name": "Norberto Gerardo Oviedo Ugalde",
+          "email": "noviedo@itcr.ac.cr",
+          "orcid": "https://orcid.org/0000-0003-2167-0196",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Costa Rica"
+        }
+      ],
+      "lastRevision": "Marzo 2021",
+      "category": "universitaria",
+      "received": "4 de abril de 2020",
+      "accepted": "18 de marzo de 2021",
+      "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
+      "resources": [
+        {
+          "type": "zip",
+          "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+          "url": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/CDF.zip"
+        },
+        {
+          "type": "link",
+          "label": "Descargar Wolfram Player (gratuito)",
+          "url": "https://www.wolfram.com/player/"
+        }
+      ],
+      "abstract_es": "Este material didáctico introduce al lector en el estudio de las ecuaciones diferenciales ordinarias mediante el uso de la Transformada de Laplace, apoyándose en recursos interactivos desarrollados en Mathematica y distribuidos en formato Wolfram CDF (Computable Document Format). Su propósito principal es servir como apoyo dinámico y visual para la enseñanza y el aprendizaje de este tema, permitiendo explorar de forma práctica los principales teoremas asociados: los teoremas de traslación, el teorema de convolución y las transformadas de derivadas, junto con sus formas inversas. El libro incluye además aplicaciones interactivas que ilustran la resolución de ecuaciones diferenciales, integrales e integro-diferenciales con coeficientes constantes, promoviendo una comprensión más profunda de los métodos analíticos y computacionales de la Transformada de Laplace.",
+      "keywords_es": [
+        "Transformada de Laplace",
+        "ecuaciones diferenciales",
+        "aplicaciones interactivas",
+        "Mathematica",
+        "Wolfram CDF"
+      ],
+      "abstract_en": "This didactic material introduces the reader to the study of ordinary differential equations using the Laplace Transform, supported by interactive resources developed in Mathematica and distributed in Wolfram CDF (Computable Document Format). Its main purpose is to serve as a dynamic and visual aid for the teaching and learning of this topic, allowing practical exploration of the main associated theorems: the first and second shifting theorems, the convolution theorem, and the transforms of derivatives, along with their inverse forms. The book also includes interactive applications that illustrate the solution of differential, integral, and integro-differential equations with constant coefficients, fostering a deeper understanding of the analytical and computational methods of the Laplace Transform.",
+      "keywords_en": [
+        "Laplace Transform",
+        "differential equations",
+        "interactive applications",
+        "Mathematica",
+        "Wolfram CDF"
+      ],
+      "abstract_pt": "Este material didático introduz o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
+      "keywords_pt": [
+        "Transformada de Laplace",
+        "equações diferenciais",
+        "aplicações interativas",
+        "Mathematica",
+        "Wolfram CDF"
+      ],
+      "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. Revista digital Matemática, Educación e Internet, 23(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
+    },
+    "ecuaciones-diferenciales-orden-superior-2020": {
+      "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/portada.webp",
+      "title": "Ecuaciones diferenciales de orden superior",
+      "title_en": "Higher Order Differential Equations",
+      "authors": [
+        {
+          "name": "Norberto Gerardo Oviedo Ugalde",
+          "email": "noviedo@itcr.ac.cr",
+          "orcid": "https://orcid.org/0000-0003-2167-0196",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Costa Rica"
+        }
+      ],
+      "lastRevision": "Marzo 2020",
+      "category": "universitaria",
+      "received": "24 de abril de 2020",
+      "accepted": "12 de agosto de 2020",
+      "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/libro.pdf",
+      "resources": [
+        {
+          "type": "zip",
+          "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+          "url": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/CDF.zip"
+        },
+        {
+          "type": "link",
+          "label": "Descargar Wolfram Player (gratuito)",
+          "url": "https://www.wolfram.com/player/"
+        }
+      ],
+      "abstract_es": "Este material didáctico presenta una colección de documentos en formato CDF que abordan el estudio de ecuaciones diferenciales ordinarias de orden superior, con especial énfasis en las ecuaciones diferenciales lineales con coeficientes constantes (de segundo, tercer y cuarto orden) y en las ecuaciones con coeficientes variables de segundo orden. El propósito de este recurso es servir como apoyo interactivo para la enseñanza y aprendizaje de temas como el Wronskiano de funciones, el teorema de la segunda solución, la ecuación característica, los métodos de coeficientes indeterminados y de variación de parámetros, así como la resolución de ecuaciones diferenciales de Euler. Cada módulo interactivo ofrece una breve exposición teórica acompañada de ejemplos resueltos paso a paso, permitiendo al lector visualizar los procedimientos de solución de manera dinámica y comprensible. El material se desarrolla en el entorno Wolfram CDF Player, con el fin de fomentar un aprendizaje visual y experimental de los conceptos fundamentales de las ecuaciones diferenciales de orden superior.",
+      "keywords_es": [
+        "ecuaciones diferenciales ordinarias",
+        "coeficientes constantes",
+        "coeficientes variables",
+        "Wronskiano",
+        "variación de parámetros",
+        "método de coeficientes indeterminados",
+        "ecuación de Euler"
+      ],
+      "abstract_en": "This educational material presents a collection of CDF documents focused on the study of higher-order ordinary differential equations, with special emphasis on linear differential equations with constant coefficients (second, third, and fourth order) and those with variable coefficients of second order. The main objective is to serve as an interactive aid for teaching and learning topics such as the Wronskian of functions, the second solution theorem, the characteristic equation, the methods of undetermined coefficients and variation of parameters, as well as the resolution of Euler's differential equations. Each interactive module provides a concise theoretical overview accompanied by step-by-step solved examples, allowing readers to visualize solution processes dynamically. Developed using Wolfram CDF Player, this resource promotes a visual and experimental understanding of key concepts in higher-order differential equations.",
+      "keywords_en": [
+        "ordinary differential equations",
+        "constant coefficients",
+        "variable coefficients",
+        "Wronskian",
+        "variation of parameters",
+        "method of undetermined coefficients",
+        "Euler equation"
+      ],
+      "abstract_pt": "Este material didático apresenta uma coleção de documentos em formato CDF dedicados ao estudo das equações diferenciais ordinárias de ordem superior, com ênfase especial nas equações diferenciais lineares com coeficientes constantes (de segunda, terceira e quarta ordem) e nas equações com coeficientes variáveis de segunda ordem. O objetivo principal é servir como um apoio interativo para o ensino e a aprendizagem de temas como o Wronskiano de funções, o teorema da segunda solução, a equação característica, os métodos dos coeficientes indeterminados e da variação dos parâmetros, além da resolução das equações diferenciais de Euler. Cada módulo interativo apresenta um breve resumo teórico acompanhado de exemplos resolvidos passo a passo, permitindo ao leitor visualizar os processos de solução de forma dinâmica. Desenvolvido no ambiente Wolfram CDF Player, o material estimula uma compreensão visual e experimental dos conceitos fundamentais das equações diferenciais de ordem superior.",
+      "keywords_pt": [
+        "equações diferenciais ordinárias",
+        "coeficientes constantes",
+        "coeficientes variáveis",
+        "Wronskiano",
+        "variação dos parâmetros",
+        "método dos coeficientes indeterminados",
+        "equação de Euler"
+      ],
+      "citation": "Oviedo Ugalde, N.G. (2020). Ecuaciones diferenciales ordinarias de orden superior. Revista digital Matemática, Educación e Internet, 22(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2020/"
+    },
+    "ecuaciones-diferenciales-primer-orden-2018": {
+      "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/portada.webp",
+      "title": "Ecuaciones diferenciales ordinarias de 1er orden",
+      "title_en": "First Order Ordinary Differential Equations",
+      "authors": [
+        {
+          "name": "Norberto Gerardo Oviedo Ugalde",
+          "email": "noviedo@itcr.ac.cr",
+          "orcid": "https://orcid.org/0000-0003-2167-0196",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "location": "Costa Rica"
+        }
+      ],
+      "lastRevision": "2018",
+      "category": "universitaria",
+      "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/libro.pdf",
+      "resources": [
+        {
+          "type": "zip",
+          "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+          "url": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/CDF.zip"
+        },
+        {
+          "type": "link",
+          "label": "Descargar Wolfram Player (gratuito)",
+          "url": "https://www.wolfram.com/player/"
+        }
+      ],
+      "abstract_es": "Este material didáctico presenta un conjunto de páginas interactivas en formato CDF desarrolladas con el software Mathematica, destinadas al estudio de las ecuaciones diferenciales ordinarias de primer orden. Su propósito es apoyar la enseñanza y el aprendizaje de los principales métodos de resolución de este tipo de ecuaciones mediante una experiencia visual y práctica. Cada página incluye una breve introducción teórica con definiciones, teoremas y procedimientos, acompañada de ejemplos resueltos paso a paso que permiten al lector comprender el proceso de solución de manera dinámica. Entre los temas abordados se encuentran las ecuaciones en variables separables, homogéneas, exactas, con factor integrante, lineales de primer orden y ecuaciones especiales como las de Bernoulli y Clairaut.",
+      "keywords_es": [
+        "ecuaciones diferenciales ordinarias",
+        "primer orden",
+        "métodos de resolución",
+        "variables separables",
+        "ecuaciones exactas",
+        "ecuaciones lineales",
+        "Bernoulli y Clairaut"
+      ],
+      "abstract_en": "This educational material presents a set of interactive pages in CDF format developed with Mathematica software, focused on the study of first-order ordinary differential equations. Its purpose is to support the teaching and learning of the main methods used to solve such equations through a visual and practical approach. Each page includes a concise theoretical introduction with definitions, theorems, and procedures, accompanied by step-by-step solved examples that allow readers to understand the solution process dynamically. The topics covered include separable, homogeneous, and exact equations, integrating factors, first-order linear equations, and special cases such as Bernoulli and Clairaut equations.",
+      "keywords_en": [
+        "ordinary differential equations",
+        "first order",
+        "solution methods",
+        "separable variables",
+        "exact equations",
+        "linear equations",
+        "Bernoulli and Clairaut"
+      ],
+      "abstract_pt": "Este material didático apresenta um conjunto de páginas interativas em formato CDF desenvolvidas com o software Mathematica, voltadas para o estudo das equações diferenciais ordinárias de primeira ordem. Seu objetivo é apoiar o ensino e a aprendizagem dos principais métodos de resolução desse tipo de equação por meio de uma abordagem visual e prática. Cada página inclui uma breve introdução teórica com definições, teoremas e procedimentos, acompanhada de exemplos resolvidos passo a passo que permitem ao leitor compreender o processo de solução de forma dinâmica. Entre os temas abordados estão as equações em variáveis separáveis, homogêneas, exatas, com fator integrante, lineares de primeira ordem e casos especiais como as equações de Bernoulli e Clairaut.",
+      "keywords_pt": [
+        "equações diferenciais ordinárias",
+        "primeira ordem",
+        "métodos de resolução",
+        "variáveis separáveis",
+        "equações exatas",
+        "equações lineares",
+        "Bernoulli e Clairaut"
+      ],
+      "citation": "Oviedo Ugalde, N.G. (2018). Ecuaciones diferenciales de primer orden. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2018/"
+    }
   },
-  "ecuaciones-diferenciales-orden-superior-2020": {
-    "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/portada.webp",
-    "title": "Ecuaciones diferenciales de orden superior",
-    "title_en": "Higher Order Differential Equations",
-    "authors": [
+  "articulos": {
+    "sections": [
       {
-        "name": "Norberto Gerardo Oviedo Ugalde",
-        "email": "noviedo@itcr.ac.cr",
-        "orcid": "https://orcid.org/0000-0003-2167-0196",
-        "university": "Instituto Tecnológico de Costa Rica",
-        "location": "Costa Rica"
+        "sectionTitle": "Volumen 25, Número 1, Agosto 2024 - Febrero 2025",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Sobre las familias de ecuaciones cuadráticas diofánticas: teoremas, formación y características",
+            "title_en": "On the families of Diophantine quadratic equations: theorems, formation and characteristics",
+            "volume": 25,
+            "number": 1,
+            "language": "es",
+            "published": "2024-08-01",
+            "authors": [
+              {
+                "name": "Alexander Villarroel Salazar",
+                "email": "trabajos_alexvilla@hotmail.com",
+                "university": "Investigador independiente",
+                "location": "Carúpano, Venezuela",
+                "orcid": ""
+              },
+              {
+                "name": "Francisco Villarroel Rosillo",
+                "email": "fjvillr02@gmail.com",
+                "university": "Investigador independiente",
+                "location": "Carúpano, Venezuela",
+                "orcid": ""
+              }
+            ],
+            "category": "Didáctica y software",
+            "slug": "V25_N1_2024/Villarroel",
+            "pdf": "/materialRevisado/articulos/V25_N1_2024/Villarroel.pdf",
+            "doi": "",
+            "received": "6 noviembre 2023",
+            "accepted": "9 mayo 2024",
+            "abstract_es": "En este artículo, los autores insertan al mundo de la teoría de números su creación denominada familia de ecuaciones cuadráticas diofánticas, las cuales surgen a partir de la idea de generalizar el comportamiento que tienen todas las parábolas de un mismo eje de simetría y cuyas raíces (puntos de corte sobre el eje x) sean valores enteros. Luego de hacer la verificación de las soluciones se llevan a cabo las verificaciones de generalización que provienen de la relación de las parábolas para su generación con números cuadrados u oblongos, según sea el coeficiente b que en la expresión x² + bx = 0. A lo largo del artículo, se presentan características de dichas familias, aspectos de su formación y se establecen ecuaciones para el coeficiente independiente C(k) que dependen de sucesiones, así como para los valores de solución o raíces x1(k) y x2(k) que surgen de cada ecuación.",
+            "abstract_en": "In this article, the authors introduce into the field of number theory their creation called family of Diophantine quadratic equations, which arise from the idea of generalizing the behavior of all parabolas sharing the same axis of symmetry and whose roots (x-intercepts) are integer values. After verifying the solutions, generalization verifications are carried out based on the relationship of the parabolas with square or oblong numbers, depending on the coefficient b in the expression x² + bx = 0. Throughout the article, characteristics of these families and aspects of their formation are presented, and equations are established for the independent coefficient C(k), which depends on sequences, as well as for the solution values or roots x1(k) and x2(k) arising from each equation.",
+            "abstract_pt": "Neste artigo, os autores inserem no campo da teoria dos números a sua criação denominada família de equações quadráticas diofantinas, as quais surgem a partir da ideia de generalizar o comportamento de todas as parábolas que compartilham o mesmo eixo de simetria e cujas raízes (pontos de interseção com o eixo x) são valores inteiros. Após verificar as soluções, realizam-se as verificações de generalização que decorrem da relação das parábolas com números quadrados ou oblongos, dependendo do coeficiente b na expressão x² + bx = 0. Ao longo do artigo, apresentam-se características dessas famílias, aspectos de sua formação e estabelecem-se equações para o coeficiente independente C(k), que depende de sequências, assim como para os valores das soluções ou raízes x1(k) e x2(k) que surgem de cada equação.",
+            "keywords_es": [
+              "Ecuación cuadrática",
+              "soluciones diofánticas",
+              "sucesiones",
+              "números cuadrados",
+              "números oblongos"
+            ],
+            "keywords_en": [
+              "Quadratic equation",
+              "Diophantine solutions",
+              "sequences",
+              "square numbers",
+              "oblong numbers"
+            ],
+            "keywords_pt": [
+              "Equação quadrática",
+              "soluções diofantinas",
+              "sequências",
+              "números quadrados",
+              "números oblongos"
+            ],
+            "citation": "Villarroel Salazar, A., & Villarroel Rosillo, F. (2024). Sobre las familias de ecuaciones cuadráticas diofánticas: teoremas, formación y características. <i>Revista Digital: Matemática, Educación e Internet, 25(1)</i>."
+          }
+        ]
       }
-    ],
-    "lastRevision": "Marzo 2020",
-    "category": "universitaria",
-    "received": "24 de abril de 2020",
-    "accepted": "12 de agosto de 2020",
-    "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/libro.pdf",
-    "resources": [
-      {
-        "type": "zip",
-        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/materialRevisado/libros/ecuaciones-diferenciales-orden-superior-2020/CDF.zip"
-      },
-      {
-        "type": "link",
-        "label": "Descargar Wolfram Player (gratuito)",
-        "url": "https://www.wolfram.com/player/"
-      }
-    ],
-    "abstract_es": "Este material didáctico presenta una colección de documentos en formato CDF que abordan el estudio de ecuaciones diferenciales ordinarias de orden superior, con especial énfasis en las ecuaciones diferenciales lineales con coeficientes constantes (de segundo, tercer y cuarto orden) y en las ecuaciones con coeficientes variables de segundo orden. El propósito de este recurso es servir como apoyo interactivo para la enseñanza y aprendizaje de temas como el Wronskiano de funciones, el teorema de la segunda solución, la ecuación característica, los métodos de coeficientes indeterminados y de variación de parámetros, así como la resolución de ecuaciones diferenciales de Euler. Cada módulo interactivo ofrece una breve exposición teórica acompañada de ejemplos resueltos paso a paso, permitiendo al lector visualizar los procedimientos de solución de manera dinámica y comprensible. El material se desarrolla en el entorno Wolfram CDF Player, con el fin de fomentar un aprendizaje visual y experimental de los conceptos fundamentales de las ecuaciones diferenciales de orden superior.",
-    "keywords_es": [
-      "ecuaciones diferenciales ordinarias",
-      "coeficientes constantes",
-      "coeficientes variables",
-      "Wronskiano",
-      "variación de parámetros",
-      "método de coeficientes indeterminados",
-      "ecuación de Euler"
-    ],
-    "abstract_en": "This educational material presents a collection of CDF documents focused on the study of higher-order ordinary differential equations, with special emphasis on linear differential equations with constant coefficients (second, third, and fourth order) and those with variable coefficients of second order. The main objective is to serve as an interactive aid for teaching and learning topics such as the Wronskian of functions, the second solution theorem, the characteristic equation, the methods of undetermined coefficients and variation of parameters, as well as the resolution of Euler's differential equations. Each interactive module provides a concise theoretical overview accompanied by step-by-step solved examples, allowing readers to visualize solution processes dynamically. Developed using Wolfram CDF Player, this resource promotes a visual and experimental understanding of key concepts in higher-order differential equations.",
-    "keywords_en": [
-      "ordinary differential equations",
-      "constant coefficients",
-      "variable coefficients",
-      "Wronskian",
-      "variation of parameters",
-      "method of undetermined coefficients",
-      "Euler equation"
-    ],
-    "abstract_pt": "Este material didático apresenta uma coleção de documentos em formato CDF dedicados ao estudo das equações diferenciais ordinárias de ordem superior, com ênfase especial nas equações diferenciais lineares com coeficientes constantes (de segunda, terceira e quarta ordem) e nas equações com coeficientes variáveis de segunda ordem. O objetivo principal é servir como um apoio interativo para o ensino e a aprendizagem de temas como o Wronskiano de funções, o teorema da segunda solução, a equação característica, os métodos dos coeficientes indeterminados e da variação dos parâmetros, além da resolução das equações diferenciais de Euler. Cada módulo interativo apresenta um breve resumo teórico acompanhado de exemplos resolvidos passo a passo, permitindo ao leitor visualizar os processos de solução de forma dinâmica. Desenvolvido no ambiente Wolfram CDF Player, o material estimula uma compreensão visual e experimental dos conceitos fundamentais das equações diferenciais de ordem superior.",
-    "keywords_pt": [
-      "equações diferenciais ordinárias",
-      "coeficientes constantes",
-      "coeficientes variáveis",
-      "Wronskiano",
-      "variação dos parâmetros",
-      "método dos coeficientes indeterminados",
-      "equação de Euler"
-    ],
-    "citation": "Oviedo Ugalde, N.G. (2020). Ecuaciones diferenciales ordinarias de orden superior. Revista digital Matemática, Educación e Internet, 22(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-orden-superior-2020/"
-  },
-  "ecuaciones-diferenciales-primer-orden-2018": {
-    "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/portada.webp",
-    "title": "Ecuaciones diferenciales ordinarias de 1er orden",
-    "title_en": "First Order Ordinary Differential Equations",
-    "authors": [
-      {
-        "name": "Norberto Gerardo Oviedo Ugalde",
-        "email": "noviedo@itcr.ac.cr",
-        "orcid": "https://orcid.org/0000-0003-2167-0196",
-        "university": "Instituto Tecnológico de Costa Rica",
-        "location": "Costa Rica"
-      }
-    ],
-    "lastRevision": "2018",
-    "category": "universitaria",
-    "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/libro.pdf",
-    "resources": [
-      {
-        "type": "zip",
-        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
-        "url": "/materialRevisado/libros/ecuaciones-diferenciales-primer-orden-2018/CDF.zip"
-      },
-      {
-        "type": "link",
-        "label": "Descargar Wolfram Player (gratuito)",
-        "url": "https://www.wolfram.com/player/"
-      }
-    ],
-    "abstract_es": "Este material didáctico presenta un conjunto de páginas interactivas en formato CDF desarrolladas con el software Mathematica, destinadas al estudio de las ecuaciones diferenciales ordinarias de primer orden. Su propósito es apoyar la enseñanza y el aprendizaje de los principales métodos de resolución de este tipo de ecuaciones mediante una experiencia visual y práctica. Cada página incluye una breve introducción teórica con definiciones, teoremas y procedimientos, acompañada de ejemplos resueltos paso a paso que permiten al lector comprender el proceso de solución de manera dinámica. Entre los temas abordados se encuentran las ecuaciones en variables separables, homogéneas, exactas, con factor integrante, lineales de primer orden y ecuaciones especiales como las de Bernoulli y Clairaut.",
-    "keywords_es": [
-      "ecuaciones diferenciales ordinarias",
-      "primer orden",
-      "métodos de resolución",
-      "variables separables",
-      "ecuaciones exactas",
-      "ecuaciones lineales",
-      "Bernoulli y Clairaut"
-    ],
-    "abstract_en": "This educational material presents a set of interactive pages in CDF format developed with Mathematica software, focused on the study of first-order ordinary differential equations. Its purpose is to support the teaching and learning of the main methods used to solve such equations through a visual and practical approach. Each page includes a concise theoretical introduction with definitions, theorems, and procedures, accompanied by step-by-step solved examples that allow readers to understand the solution process dynamically. The topics covered include separable, homogeneous, and exact equations, integrating factors, first-order linear equations, and special cases such as Bernoulli and Clairaut equations.",
-    "keywords_en": [
-      "ordinary differential equations",
-      "first order",
-      "solution methods",
-      "separable variables",
-      "exact equations",
-      "linear equations",
-      "Bernoulli and Clairaut"
-    ],
-    "abstract_pt": "Este material didático apresenta um conjunto de páginas interativas em formato CDF desenvolvidas com o software Mathematica, voltadas para o estudo das equações diferenciais ordinárias de primeira ordem. Seu objetivo é apoiar o ensino e a aprendizagem dos principais métodos de resolução desse tipo de equação por meio de uma abordagem visual e prática. Cada página inclui uma breve introdução teórica com definições, teoremas e procedimentos, acompanhada de exemplos resolvidos passo a passo que permitem ao leitor compreender o processo de solução de forma dinâmica. Entre os temas abordados estão as equações em variáveis separáveis, homogêneas, exatas, com fator integrante, lineares de primeira ordem e casos especiais como as equações de Bernoulli e Clairaut.",
-    "keywords_pt": [
-      "equações diferenciais ordinárias",
-      "primeira ordem",
-      "métodos de resolução",
-      "variáveis separáveis",
-      "equações exatas",
-      "equações lineares",
-      "Bernoulli e Clairaut"
-    ],
-    "citation": "Oviedo Ugalde, N.G. (2018). Ecuaciones diferenciales de primer orden. Revista digital Matemática, Educación e Internet, 24(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-primer-orden-2018/"
+    ]
   }
 }

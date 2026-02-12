@@ -122,7 +122,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                   },
                   {
                     text: "Materiales revisados",
-                    href: "/materialdidactico/revisados",
+                    href: "/materialdidactico/revisado",
                   },
                   {
                     text: "Materiales sin revisión",
