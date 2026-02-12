@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Typography, Button, Chip } from "@material-tailwind/react";
 import { FaFilePdf, FaFileArchive, FaLink } from "react-icons/fa";
-import { withFullUrl } from "@/lib/basePath";
+import { withFullUrl, withBasePath } from "@/lib/basePath";
 import Image from "next/image";
 
 export default function BooksList({
@@ -18,7 +18,14 @@ export default function BooksList({
   resources,
   category,
   basePath = "/libros",
+  useBasePath = false,
 }) {
+  const applyBasePath = (url) => {
+    if (!url || typeof url !== "string") return url;
+    if (url.startsWith("http://") || url.startsWith("https://")) return url;
+    return useBasePath ? withBasePath(url) : url;
+  };
+
   const getValidUrl = (url, type) => {
     if (typeof url !== "string" || url.length === 0) return "";
 
@@ -57,7 +64,7 @@ export default function BooksList({
     e.preventDefault();
     e.stopPropagation();
 
-    const url = getValidUrl(pdf, "pdf");
+    const url = applyBasePath(getValidUrl(pdf, "pdf"));
     if (!url) return;
 
     window.open(url, "_blank", "noopener,noreferrer");
@@ -68,7 +75,7 @@ export default function BooksList({
     e.stopPropagation();
 
     const type = String(res?.type || "").trim().toLowerCase();
-    const url = getValidUrl(res?.url, type);
+    const url = applyBasePath(getValidUrl(res?.url, type));
     if (!url) return;
 
     if (type === "zip") {
@@ -87,7 +94,7 @@ export default function BooksList({
     >
       <div className="md:w-1/4 p-4 flex justify-center items-center">
         <Image
-          src={coverImage}
+          src={applyBasePath(coverImage)}
           alt={title}
           className="object-contain w-full max-h-64 aspect-[3/4]"
           width={300}

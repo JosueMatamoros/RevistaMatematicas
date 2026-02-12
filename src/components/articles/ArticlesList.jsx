@@ -10,7 +10,7 @@ import {
   Chip,
 } from "@material-tailwind/react";
 import { FaFilePdf } from "react-icons/fa";
-import { withFullUrl } from "@/lib/basePath";
+import { withFullUrl, withBasePath } from "@/lib/basePath";
 import BooksList from "@/components/books/BooksList";
 
 export default function ArticlesList({
@@ -19,7 +19,8 @@ export default function ArticlesList({
   books = [],
   sections = [],
   basePath = null, // null = usa slug directo, string = usa basePath/slug
-  noPadding = false
+  noPadding = false,
+  useBasePath = false
 }) {
   const router = useRouter();
 
@@ -41,7 +42,10 @@ export default function ArticlesList({
 
     const handlePdfDownload = (e) => {
       e.stopPropagation();
-      if (article.pdf) window.open(withFullUrl(article.pdf), "_blank");
+      if (article.pdf) {
+        const pdfUrl = useBasePath ? withBasePath(article.pdf) : withFullUrl(article.pdf);
+        window.open(pdfUrl, "_blank");
+      }
     };
 
     const authorsText = Array.isArray(article.authors)
@@ -148,7 +152,7 @@ export default function ArticlesList({
               Libros
             </Typography>
             {books.map((book) => (
-              <BooksList key={book.id} {...book} basePath={basePath} />
+              <BooksList key={book.id} {...book} basePath={basePath} useBasePath={useBasePath} />
             ))}
           </div>
         )}
@@ -176,7 +180,7 @@ export default function ArticlesList({
             Libros
           </Typography>
           {books.map((book) => (
-            <BooksList key={book.id} {...book} />
+            <BooksList key={book.id} {...book} useBasePath={useBasePath} />
           ))}
         </div>
       )}

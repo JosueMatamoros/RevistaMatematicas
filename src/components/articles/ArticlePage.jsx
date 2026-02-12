@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { withBasePath, withFullUrl } from "@/lib/basePath";
+import { withBasePath} from "@/lib/basePath";
 import {
   FaFilePdf,
   FaShareAlt,
@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 
 export default function ArticlePage({ article }) {
-  const pdfAbs = withFullUrl(article.pdf);
+  const pdfUrl = withBasePath(article.pdf);
   const pageUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const [copied, setCopied] = useState("");
@@ -148,7 +148,7 @@ export default function ArticlePage({ article }) {
 
           <div className="flex justify-center lg:justify-end gap-3">
             <a
-              href={pdfAbs}
+              href={pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-tec-red-primary text-tec-red-primary hover:bg-red-50 text-sm"
@@ -321,7 +321,7 @@ export default function ArticlePage({ article }) {
           <div className="w-full md:w-4/5 lg:w-3/4 border rounded-xl overflow-hidden shadow-lg bg-gray-100">
             <iframe
               loading="lazy"
-              src={withBasePath(article.pdf)}
+              src={pdfUrl}
               className="w-full h-[65vh] md:h-[100vh] border-0"
               title={`Artículo completo - ${article.title}`}
             />

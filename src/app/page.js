@@ -36,6 +36,7 @@ export default function Home() {
             title={issueData.issueTitle}
             articles={issueData.articles}
             books={issueData.books || []}
+            useBasePath={true}
           />
         </main>
 

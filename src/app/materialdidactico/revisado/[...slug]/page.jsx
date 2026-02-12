@@ -1,4 +1,4 @@
-import { withFullUrl } from "@/lib/basePath";
+import { withFullUrl, withBasePath } from "@/lib/basePath";
 import BookPage from "@/components/books/BookPage";
 import ArticlePage from "@/components/articles/ArticlePage";
 import NavsComponent from "@/components/home/NavsComponent";
@@ -6,7 +6,6 @@ import revisadoData from "@/data/materialdidactico/revisado.json";
 
 const allBooks = revisadoData.libros || {};
 
-// Extraer todos los artículos de las secciones
 const allArticles = (revisadoData.articulos?.sections || []).reduce((acc, section) => {
   (section.articles || []).forEach((article) => {
     if (article.slug) {
@@ -16,9 +15,7 @@ const allArticles = (revisadoData.articulos?.sections || []).reduce((acc, sectio
   return acc;
 }, {});
 
-// Función para encontrar el item (libro o artículo) por slug
 function findItem(slugPath) {
-  // slugPath es el slug completo (puede tener /)
   if (allBooks[slugPath]) {
     return { type: "book", data: allBooks[slugPath] };
   }
@@ -71,7 +68,8 @@ export async function generateMetadata({ params }) {
 function normalizeBook(book) {
   return {
     ...book,
-    pdf: withFullUrl(book.pdf),
+    pdf: withBasePath(book.pdf),
+    coverImage: withBasePath(book.coverImage),
     authors: Array.isArray(book.authors)
       ? book.authors.map((a) =>
           typeof a === "string" ? { name: a } : a
@@ -80,7 +78,7 @@ function normalizeBook(book) {
     resources: book.resources
       ? book.resources.map((r) => ({
           ...r,
-          url: withFullUrl(r.url),
+          url: r.type === "link" ? r.url : withBasePath(r.url),
         }))
       : [],
   };
@@ -89,7 +87,7 @@ function normalizeBook(book) {
 function normalizeArticle(article) {
   return {
     ...article,
-    pdf: withFullUrl(article.pdf),
+    pdf: withBasePath(article.pdf),
     authors: Array.isArray(article.authors)
       ? article.authors.map((a) =>
           typeof a === "string" ? { name: a } : a

@@ -8,13 +8,11 @@ import NavsComponent from "@/components/home/NavsComponent";
 import revisadoData from "@/data/materialdidactico/revisado.json";
 
 export default function Page() {
-  // Procesar libros
   const books = Object.entries(revisadoData.libros || {}).map(([id, book]) => ({
     id,
     ...book,
   }));
 
-  // Procesar artículos (secciones)
   const articleSections = revisadoData.articulos?.sections || [];
 
   return (
@@ -39,6 +37,7 @@ export default function Page() {
             sections={articleSections}
             basePath="/materialdidactico/revisado"
             noPadding
+            useBasePath={true}
           />
         )}
 
@@ -54,6 +53,7 @@ export default function Page() {
                   key={book.id}
                   {...book}
                   basePath="/materialdidactico/revisado"
+                  useBasePath={true}
                 />
               ))}
             </div>
