@@ -1,0 +1,58 @@
+{
+  "ecuaciones-diferenciales-transformada-laplace-2021": {
+    "coverImage": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/portada.webp",
+    "title": "Ecuaciones diferenciales mediante Transformada de Laplace",
+    "title_en": "Differential Equations using Laplace Transform",
+    "authors": [
+      {
+        "name": "Norberto Gerardo Oviedo Ugalde",
+        "email": "noviedo@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0003-2167-0196",
+        "university": "Instituto Tecnológico de Costa Rica",
+        "location": "Costa Rica"
+      }
+    ],
+    "lastRevision": "Marzo 2021",
+    "category": "universitaria",
+    "received": "4 de abril de 2020",
+    "accepted": "18 de marzo de 2021",
+    "pdf": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/libro.pdf",
+    "resources": [
+      {
+        "type": "zip",
+        "label": "Archivos interactivos CDF (requiere Wolfram Player)",
+        "url": "/materialRevisado/libros/ecuaciones-diferenciales-transformada-laplace-2021/CDF.zip"
+      },
+      {
+        "type": "link",
+        "label": "Descargar Wolfram Player (gratuito)",
+        "url": "https://www.wolfram.com/player/"
+      }
+    ],
+    "abstract_es": "Este material didáctico introduce al lector en el estudio de las ecuaciones diferenciales ordinarias mediante el uso de la Transformada de Laplace, apoyándose en recursos interactivos desarrollados en Mathematica y distribuidos en formato Wolfram CDF (Computable Document Format). Su propósito principal es servir como apoyo dinámico y visual para la enseñanza y el aprendizaje de este tema, permitiendo explorar de forma práctica los principales teoremas asociados: los teoremas de traslación, el teorema de convolución y las transformadas de derivadas, junto con sus formas inversas. El libro incluye además aplicaciones interactivas que ilustran la resolución de ecuaciones diferenciales, integrales e integro-diferenciales con coeficientes constantes, promoviendo una comprensión más profunda de los métodos analíticos y computacionales de la Transformada de Laplace.",
+    "keywords_es": [
+      "Transformada de Laplace",
+      "ecuaciones diferenciales",
+      "aplicaciones interactivas",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "abstract_en": "This didactic material introduces the reader to the study of ordinary differential equations using the Laplace Transform, supported by interactive resources developed in Mathematica and distributed in Wolfram CDF (Computable Document Format). Its main purpose is to serve as a dynamic and visual aid for the teaching and learning of this topic, allowing practical exploration of the main associated theorems: the first and second shifting theorems, the convolution theorem, and the transforms of derivatives, along with their inverse forms. The book also includes interactive applications that illustrate the solution of differential, integral, and integro-differential equations with constant coefficients, fostering a deeper understanding of the analytical and computational methods of the Laplace Transform.",
+    "keywords_en": [
+      "Laplace Transform",
+      "differential equations",
+      "interactive applications",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "abstract_pt": "Este material didático introduz o leitor ao estudo das equações diferenciais ordinárias utilizando a Transformada de Laplace, apoiando-se em recursos interativos desenvolvidos no Mathematica e distribuídos no formato Wolfram CDF (Computable Document Format). Seu principal objetivo é servir como um apoio dinâmico e visual para o ensino e a aprendizagem deste tema, permitindo explorar de forma prática os principais teoremas associados: os teoremas de translação, o teorema de convolução e as transformadas de derivadas, juntamente com suas formas inversas. O livro também inclui aplicações interativas que ilustram a resolução de equações diferenciais, integrais e integro-diferenciais com coeficientes constantes, promovendo uma compreensão mais profunda dos métodos analíticos e computacionais da Transformada de Laplace.",
+    "keywords_pt": [
+      "Transformada de Laplace",
+      "equações diferenciais",
+      "aplicações interativas",
+      "Mathematica",
+      "Wolfram CDF"
+    ],
+    "citation": "Oviedo Ugalde, N.G. (2021). Ecuaciones diferenciales mediante Transformada de Laplace. Revista digital Matemática, Educación e Internet, 23(1). Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/ecuaciones-diferenciales-transformada-laplace-2021/"
+  }
+}

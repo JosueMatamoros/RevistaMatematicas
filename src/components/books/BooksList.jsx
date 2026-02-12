@@ -17,6 +17,7 @@ export default function BooksList({
   pdf,
   resources,
   category,
+  basePath = "/libros",
 }) {
   const getValidUrl = (url, type) => {
     if (typeof url !== "string" || url.length === 0) return "";
@@ -81,7 +82,7 @@ export default function BooksList({
 
   return (
     <Link
-      href={`/libros/${id}`}
+      href={`${basePath}/${id}`}
       className="group flex flex-col md:flex-row bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 border-l-4 hover:border-l-tec-blue-secondary"
     >
       <div className="md:w-1/4 p-4 flex justify-center items-center">
