@@ -2,8 +2,12 @@
 
 import React from "react";
 import NavsComponent from "@/components/home/NavsComponent";
+import ArticlesList from "@/components/articles/ArticlesList";
+import sinRevisionData from "@/data/materialdidactico/sinrevision.json";
 
 export default function Page() {
+  const articleSections = sinRevisionData.articulos?.sections || [];
+
   return (
     <div>
       <NavsComponent />
@@ -21,6 +25,16 @@ export default function Page() {
             editorial.
           </p>
         </div>
+
+        {/* Listado de artículos sin revisión por secciones */}
+        {articleSections.length > 0 && articleSections.some(s => s.articles?.length > 0) && (
+          <ArticlesList
+            sections={articleSections}
+            basePath="/materialdidactico/sinrevision"
+            noPadding
+            useBasePath={true}
+          />
+        )}
       </section>
     </div>
   );

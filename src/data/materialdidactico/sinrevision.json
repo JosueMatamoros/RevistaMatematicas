@@ -1,0 +1,151 @@
+{
+  "articulos": {
+    "sections": [
+      {
+        "sectionTitle": "Artículos",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Intervalos de confianza para un promedio de una población",
+            "title_en": "Confidence Intervals for the Mean of a Population",
+            "volume": 25,
+            "number": 1,
+            "language": "es",
+            "published": "2024-08-01",
+            "authors": [
+              {
+                "name": "Estela Ramos Miranda",
+                "email": "griselda123@estudiantec.cr",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              },
+              {
+                "name": "Marco Salazar Vega",
+                "email": "marcosavega@estudiantec.cr",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              }
+            ],
+            "category": "",
+            "slug": "articulos/Ramos",
+            "pdf": "/materialNoRevisado/articulos/Ramos.pdf",
+            "doi": "",
+            "received": "1 noviembre 2023",
+            "accepted": "15 mayo 2024",
+            "abstract_es": "La propuesta didáctica se centra en enseñar a los estudiantes cómo calcular intervalos de confianza para un promedio a partir de datos muestrales, utilizando técnicas como la distribución t de Student o la distribución normal estándar. Además, se utiliza el software Fathom para analizar datos de ejercicios reales, como los censos realizados por el Instituto Nacional de Estadística y Censos (INEC), mostrando los cálculos tanto con fórmulas y tablas estadísticas como con apoyo tecnológico. Se enfatiza la interpretación de resultados y la toma de decisiones basadas en datos, así como la validación de procedimientos mediante diferentes métodos de cálculo.",
+            "abstract_en": "The teaching proposal focuses on helping students learn how to calculate confidence intervals for a population mean using sample data, applying techniques such as Student’s t distribution or the standard normal distribution. Additionally, Fathom software is used to analyze real data, including census data from the National Institute of Statistics and Censuses (INEC), presenting calculations both manually and with technological support. Emphasis is placed on interpreting results, making data-based decisions, and validating procedures through different calculation methods.",
+            "abstract_pt": "A proposta didática concentra-se em ensinar aos estudantes como calcular intervalos de confiança para a média de uma população a partir de dados amostrais, utilizando técnicas como a distribuição t de Student ou a distribuição normal padrão. Além disso, utiliza-se o software Fathom para analisar dados de exercícios reais, como os censos realizados pelo Instituto Nacional de Estatística e Censos (INEC), apresentando os cálculos tanto por meio de fórmulas e tabelas estatísticas quanto com o apoio tecnológico. Dá-se ênfase à interpretação dos resultados, à tomada de decisões baseada em dados e à validação dos procedimentos por diferentes métodos de cálculo.",
+            "keywords_es": [
+              "intervalo de confianza",
+              "promedio",
+              "población",
+              "muestra",
+              "estadística inferencial",
+              "Fathom"
+            ],
+            "keywords_en": [
+              "confidence interval",
+              "mean",
+              "population",
+              "sample",
+              "inferential statistics",
+              "Fathom"
+            ],
+            "keywords_pt": [
+              "intervalo de confiança",
+              "média",
+              "população",
+              "amostra",
+              "estatística inferencial",
+              "Fathom"
+            ],
+            "citation": "Ramos Miranda, E., & Salazar Vega, M. (2024). Intervalos de confianza para un promedio de una población. <i>Revista Digital: Matemática, Educación e Internet, 25(1)</i>."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Enseñanza primaria",
+        "articles": [
+          {
+            "id": 2,
+            "title": "Actividades de Educación Matemática para Primaria. I Ciclo",
+            "title_en": "Mathematics Education Activities for Primary School. First Cycle",
+            "authors": [
+              {
+                "name": "Reiman Acuña Chacón",
+                "email": "reiacuna@tec.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-0094-3282",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              },
+              {
+                "name": "Evelyn Agüero Calvo",
+                "email": "evaguero@tec.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-2294-0357",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              },
+              {
+                "name": "Luis Gerardo Meza Cascante",
+                "email": "gemeza@tec.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-5413-0172",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              },
+              {
+                "name": "Carlos Monge Madriz",
+                "email": "camonge@tec.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-5148-2797",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              },
+              {
+                "name": "Angie Solís Palma",
+                "email": "ansolis@tec.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-8508-6151",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              }
+            ],
+            "category": "",
+            "slug": "Ensenanza_Primaria/Renova_I_Ciclo",
+            "pdf": "/materialNoRevisado/primaria/Renova_I_Ciclo.pdf",
+            "abstract_es": "Este libro recopila un conjunto de actividades didácticas diseñadas para el I Ciclo de la educación primaria, desarrolladas en el marco del Proyecto RENOVA del Instituto Tecnológico de Costa Rica. Las propuestas abarcan áreas como números, geometría, medidas y estadística, integrando el entorno cotidiano, el juego y el uso de recursos manipulativos como estrategias para fortalecer el aprendizaje matemático. Cada actividad incluye orientaciones para la persona docente, materiales requeridos y sugerencias metodológicas que promueven la participación activa, el trabajo colaborativo y el desarrollo de actitudes positivas hacia las matemáticas.",
+            "abstract_en": "This book compiles a set of didactic activities designed for the first cycle of primary education, developed within the RENOVA Project of the Technological Institute of Costa Rica. The proposals cover areas such as numbers, geometry, measurement, and statistics, integrating everyday contexts, games, and manipulative resources as strategies to strengthen mathematical learning. Each activity includes guidance for teachers, required materials, and methodological suggestions that promote active participation, collaborative work, and the development of positive attitudes toward mathematics.",
+            "abstract_pt": "Este livro reúne um conjunto de atividades didáticas destinadas ao primeiro ciclo do ensino fundamental, desenvolvidas no âmbito do Projeto RENOVA do Instituto Tecnológico da Costa Rica. As propostas contemplam áreas como números, geometria, medidas e estatística, integrando o cotidiano, o jogo e o uso de materiais manipulativos como estratégias para fortalecer a aprendizagem matemática. Cada atividade inclui orientações para a pessoa docente, materiais necessários e sugestões metodológicas que promovem a participação ativa, o trabalho colaborativo e o desenvolvimento de atitudes positivas em relação à matemática.",
+            "keywords_es": [
+              "educación matemática",
+              "educación primaria",
+              "actividades didácticas",
+              "geometría",
+              "números",
+              "estadística",
+              "aprendizaje activo"
+            ],
+            "keywords_en": [
+              "mathematics education",
+              "primary education",
+              "didactic activities",
+              "geometry",
+              "numbers",
+              "statistics",
+              "active learning"
+            ],
+            "keywords_pt": [
+              "educação matemática",
+              "ensino fundamental",
+              "atividades didáticas",
+              "geometria",
+              "números",
+              "estatística",
+              "aprendizagem ativa"
+            ],
+            "citation": "Acuña Chacón, R., Agüero Calvo, E., Meza Cascante, L. G., Monge Madriz, C., & Solís Palma, A. (Proyecto RENOVA). Actividades de Educación Matemática para Primaria. I Ciclo. Instituto Tecnológico de Costa Rica."
+          }
+        ]
+      }
+    ]
+  }
+}
