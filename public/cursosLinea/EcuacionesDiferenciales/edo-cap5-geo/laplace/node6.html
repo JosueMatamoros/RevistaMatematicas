@@ -1,0 +1,2608 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Funci&oacute;n escal&oacute;n</TITLE>
+<META NAME="description" CONTENT="Funci&oacute;n escal&oacute;n">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+
+<H1><A NAME="SECTION00120000000000000000"></A> <A NAME="233"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table176">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table177">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table178">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" id="table179">
+      <tr>
+        <td width="364" height="1">
+		<img border="0" src="images/caps.png" width="360" height="10"></td>
+        <td width="50%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|</font><font color="#000080" face="Arial Narrow" size="2">&nbsp;
+			<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp; 
+<a href="node3.html">3</a>&nbsp;
+<a href="node4.html">4</a>&nbsp; <a href="node5.html">5</a>&nbsp;
+6 <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table180">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<p><b>Funci&oacute;n escal&oacute;n</b>
+
+<P>
+En ingenier&iacute;a es com&uacute;n encontrar funciones que corresponden a estados de <I>s&iacute;</I> o <I>no</I>, o bien <I>activo</I> o <I>inactivo</I>. Por ejemplo, una fuerza externa que act&uacute;a sobre un sistema mec&aacute;nico o una tensi&oacute;n eléctrica aplicada a un circuito, puede tener que suspenderse después de cierto tiempo. Para tratar de forma efectiva con estas funciones discontinuas conviene introducir una funci&oacute;n especial llamada <B>funci&oacute;n escal&oacute;n unitario</B>.
+
+<p>&nbsp;<div align="center">
+  <center>
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table181">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Funci&oacute;n de Heaviside]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La funci&oacute;n escal&oacute;n unitario o funci&oacute;n de Heaviside<A NAME="tex2html11"
+  HREF="footnode.html#foot898"><SUP>1.2</SUP></A> <!-- MATH
+ $H: [0, + \infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.gif"
+ ALT="$ H: [0, + \infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> se define como
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+H(t-a) =
+\begin{cases}
+0 & \text{Si $0 \leq t < a$} \\
+1 & \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="201" HEIGHT="64" BORDER="0"
+ SRC="img327.gif"
+ ALT="\begin{displaymath}
+H(t-a) =
+\begin{cases}
+0 &amp; \text{Si $0 \leq t &lt; a$} \\
+1 &amp; \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> la funci&oacute;n de heaviside se definio sobre el intervalo <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, pues esto es suficiente para la transformada de Laplace. En un sentido m&aacute;s general <IMG
+ WIDTH="93" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img328.gif"
+ ALT="$ H(t-a)=0$"> para <IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img329.gif"
+ ALT="$ t &lt; a$">.
+
+&nbsp;&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="left"><br>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+Trazar la gr&aacute;fica de la funci&oacute;n <!-- MATH
+ $f(t)=H(t-1)$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.gif"
+ ALT="$ f(t)=H(t-1)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+La funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> est&aacute; dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) =
+\begin{cases}
+0 & \text{Si $0 \leq t < 1$\  } \\
+1 & \text{Si $t \geq 1$} \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="166" HEIGHT="64" BORDER="0"
+ SRC="img331.gif"
+ ALT="\begin{displaymath}
+f(t) =
+\begin{cases}
+0 &amp; \text{Si $0 \leq t &lt; 1$\ } \\
+1 &amp; \text{Si $t \geq 1$} \\
+\end{cases}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+y su gr&aacute;fica se muestra en la figura <a href="#1.5">1.5</a><DIV ALIGN="CENTER">
+
+<P align="center">
+<a name="1.5">
+<img border="0" src="images/Heaviside.gif" width="239" height="154"></a>
+
+<p>Figura 1.5
+</DIV>
+
+<P>
+&nbsp;<P>
+Cuando la funci&oacute;n de Heaviside <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.gif"
+ ALT="$ H(t-a)$"> se multilplica por una funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">, definida para <IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$ t
+\geq 0$">, ésta funci&oacute;n se <I>desactiva</I>  en el intervalo <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.gif"
+ ALT="$ [0,a]$">, como muestra en siguiente ejemplo.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Trazar la gr&aacute;fica de la funci&oacute;n <!-- MATH
+ $f(t) = Sen(t) H(t-2 \pi)$
+ -->
+<IMG
+ WIDTH="167" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.gif"
+ ALT="$ f(t) = Sen(t) H(t-2 \pi)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+La funci&oacute;n est&aacute; dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) =
+\begin{cases}
+0 & \text{Si $0 \leq t < 2 \pi$} \\
+Sen(t) & \text{Si $t \geq 2 \pi$} \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="214" HEIGHT="64" BORDER="0"
+ SRC="img336.gif"
+ ALT="\begin{displaymath}
+f(t) =
+\begin{cases}
+0 &amp; \text{Si $0 \leq t &lt; 2 \pi$} \\
+Sen(t) &amp; \text{Si $t \geq 2 \pi$} \\
+\end{cases}
+\end{displaymath}">
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<img border="0" src="images/Lapla4.gif" width="293" height="180"></DIV><P></P>
+
+<P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="lapla11"></A>Figura 1.6</DIV>
+<DIV ALIGN="CENTER">
+
+&nbsp;</DIV>
+<DIV ALIGN="left">
+
+La funci&oacute;n de Heaviside puede utilizarse para expresar funciones continuas a trozos de una manera compacta, como se muestra en el siguiente ejemplo.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Use la funci&oacute;n de Heaviside para reescribir la funci&oacute;n
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t)=
+\begin{cases}
+g(t) & \text{Si $0 \leq < a$\  } \\
+h(t) & \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="172" HEIGHT="64" BORDER="0"
+ SRC="img338.gif"
+ ALT="\begin{displaymath}
+f(t)=
+\begin{cases}
+g(t) &amp; \text{Si $0 \leq &lt; a$\ } \\
+h(t) &amp; \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}">
+</DIV>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Para reescribir la funci&oacute;n basta usar la definici&oacute;n de la funci&oacute;n Heaveside
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+f(t) & = &
+\begin{cases}
+g(t) - g(t) \cdot 0 + h(t) \cdot 0 & \text{Si $0 \leq t , a$} \\
+g(t) - g(t) \cdot 1 + h(t) \cdot 1 & \text{Si $t \geq a$} \\
+\end{cases} \\
+& = & g(t) - g(t)H(t-a) + h(t)H(t-a) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table182">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.gif"
+ ALT="$\displaystyle f(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="253" HEIGHT="64" BORDER="0"
+ SRC="img340.gif"
+ ALT="\begin{displaymath}\begin{cases}
+g(t) - g(t) \cdot 0 + h(t) \cdot 0 &amp; \text{Si $...
+...) \cdot 1 + h(t) \cdot 1 &amp; \text{Si $t \geq a$} \\
+\end{cases}\end{displaymath}"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="243" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.gif"
+ ALT="$\displaystyle g(t) - g(t)H(t-a) + h(t)H(t-a)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> la funci&oacute;n
+
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="187" HEIGHT="85" BORDER="0"
+ SRC="img342.gif"
+ ALT="\begin{displaymath}
+f(t) =
+\begin{cases}
+p(t) &amp; \text{Si $0 \leq t &lt; a$\ } \\...
+...q t &lt; b$\ } \\
+r(t) &amp; \text{Si $t \geq b$} \\
+\end{cases}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+se escribe usando la funci&oacute;n de Heaviside como
+
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="409" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img343.gif"
+ ALT="$\displaystyle f(t) = p(t) + \left( q(t) - p(t) \right) H(t-a) + \left( r(t) - q(t) \right) H(t-b)
+$">
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="left">
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table183">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema </font>
+        </b>[Transformada de la funci&oacute;n Heaviside]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La transformada de la funci&oacute;n de Heaviside es
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ H(t-a) \} = \frac{e^{-sa}}{s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="147" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img344.gif"
+ ALT="$\displaystyle {\cal L} \{ H(t-a) \} = \frac{e^{-sa}}{s}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+</DIV>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+Usando la definici&oacute;n de transformada
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ H(t-a) \} & = & \int_0^{\infty} e^{-st} H(t-a) dt \\
+& = & \underbrace{\int_0^{a} e^{-st} \cdot 0 dt}_{0} + \int_a^{\infty} e^{-st} dt \\
+ & = & \int_a^{\infty} e^{-st} dt \\
+& = & -\frac{e^{-st}}{s} \biggr|_a^{\infty} \\
+& = & \frac{e^{-as}}{s} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table184">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="90" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.gif"
+ ALT="$\displaystyle {\cal L} \{ H(t-a) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="139" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} H(t-a) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="184" HEIGHT="83" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.gif"
+ ALT="$\displaystyle \underbrace{\int_0^{a} e^{-st} \cdot 0 dt}_{0} + \int_a^{\infty} e^{-st} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.gif"
+ ALT="$\displaystyle \int_a^{\infty} e^{-st} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="67" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.gif"
+ ALT="$\displaystyle -\frac{e^{-st}}{s} \biggr\vert _a^{\infty}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="38" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img350.gif"
+ ALT="$\displaystyle \frac{e^{-as}}{s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+
+<p>&nbsp;</DIV>
+
+<P>
+En el primer teorema de traslaci&oacute;n nos permit&iacute;o calcular la transformada de una funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> al ser multiplicada por una funci&oacute;n exponencial <IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img351.gif"
+ ALT="$ e^{kt}$">, el segundo teorema de traslaci&oacute;n nos permitir&aacute; calcular la trasformada de una funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> que es multiplicada por una funci&oacute;n escal&oacute;n.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table185">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema </font>
+        </b>[Segundo teorema de traslaci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <!-- MATH
+ ${\cal L} \{ f(t) \} = F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$"> y <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img352.gif"
+ ALT="$ a &gt; 0$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ f(t-a) H(t-a) \} = e^{-as}F(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="230" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img353.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t-a) H(t-a) \} = e^{-as}F(s)
+$">
+</DIV><P></P>
+
+<P>
+<B>Forma inversa del segundo teorema de traslaci&oacute;n:</B>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t-a) H(t-a) = {\cal L}^{-1} \{e^{-as} F(s) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="248" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img354.gif"
+ ALT="$\displaystyle f(t-a) H(t-a) = {\cal L}^{-1} \{e^{-as} F(s) \}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+Usando la definici&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{f(t-a) \}H(t-a) & = & \int_0^{\infty} e^{-st} f(t-a0 H(t-a) dt dt \\
+& = & \int_0^a e^{-st} f(t-a) \cdot 0 dt  + \int_a^{\infty} e^{-st} f(t-a) dt \\
+& = & \int_a^{\infty} e^{-st} f(\underbrace{t-a}_{u=t-a}) dt \\
+& = & \int_0^{\infty} e^{-s(u+a)} f(u) du \\
+& = & e^{-sa} \int_0^{\infty} e^{-su} f(u) du \\
+& = & e^{-sa} {\cal L} \{ f(t) \} \\
+& = & e^{-sa} F(s)
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table186">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="146" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.gif"
+ ALT="$\displaystyle {\cal L} \{f(t-a) \}H(t-a)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="210" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} f(t-a0 H(t-a) dt dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="297" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.gif"
+ ALT="$\displaystyle \int_0^a e^{-st} f(t-a) \cdot 0 dt + \int_a^{\infty} e^{-st} f(t-a) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="139" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img358.gif"
+ ALT="$\displaystyle \int_a^{\infty} e^{-st} f(\underbrace{t-a}_{u=t-a}) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="142" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img359.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-s(u+a)} f(u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="149" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img360.gif"
+ ALT="$\displaystyle e^{-sa} \int_0^{\infty} e^{-su} f(u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="89" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.gif"
+ ALT="$\displaystyle e^{-sa} {\cal L} \{ f(t) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.gif"
+ ALT="$\displaystyle e^{-sa} F(s)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+
+<P>
+<B>Observaci&oacute;n:</B> podemos usar el segundo teorema de traslaci&oacute;n para calcular  la transformada de Laplace de la funci&oacute;n <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.gif"
+ ALT="$ H(t-a)$"> haciendo <IMG
+ WIDTH="60" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img363.gif"
+ ALT="$ f(t)=1$">:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ H(t-a)  \right\} = {\cal L} \left\{ 1 \cdot H(t-a)  \right\} = e^{-as} {\cal L} \left\{ 1 \right\} = \frac{e^{-as}}{s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="370" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img364.gif"
+ ALT="$\displaystyle {\cal L} \left\{ H(t-a) \right\} = {\cal L} \left\{ 1 \cdot H(t-a) \right\} = e^{-as} {\cal L} \left\{ 1 \right\} = \frac{e^{-as}}{s}
+$">
+</DIV>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t H(t-2) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="96" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.gif"
+ ALT="$\displaystyle {\cal L} \{ t H(t-2) \}
+$">
+</DIV>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Para poder usar el segundo teorema de traslaci&oacute;n debemos completar <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$"> a <IMG
+ WIDTH="36" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img366.gif"
+ ALT="$ t-2$">
+
+	<P>
+&nbsp;<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ t H(t-a) \} & = & {\cal L} \{ (t-2 +2) H(t-2) \} \\
+& = & {\cal L} \{ (t-2) H(t-2) \} + 2 {\cal L} \{ H(t-2) \} \\
+& = & \frac{e^{-2s}}{s^2} + \frac{2e^{-2s}}{s}
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table187">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="96" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img367.gif"
+ ALT="$\displaystyle {\cal L} \{ t H(t-a) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="163" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.gif"
+ ALT="$\displaystyle {\cal L} \{ (t-2 +2) H(t-2) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="250" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.gif"
+ ALT="$\displaystyle {\cal L} \{ (t-2) H(t-2) \} + 2 {\cal L} \{ H(t-2) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="99" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img370.gif"
+ ALT="$\displaystyle \frac{e^{-2s}}{s^2} + \frac{2e^{-2s}}{s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+
+<P>
+<font color="#008000">Ejemplo</font>
+
+<P>&nbsp;Calcular <!-- MATH
+ ${\cal L} \{ f(t) \}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $">, donde
+
+</P>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) =
+\begin{cases}
+-t + 1 & \text{Si $0 \leq t < 1$} \\
+1 &  \text{Si $1 \leq t < 2$\  } \\
+t - 2 &  \text{Si $t \geq  2$}
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="205" HEIGHT="85" BORDER="0"
+ SRC="img371.gif"
+ ALT="\begin{displaymath}
+f(t) =
+\begin{cases}
+-t + 1 &amp; \text{Si $0 \leq t &lt; 1$} \\...
+...\leq t &lt; 2$\ } \\
+t - 2 &amp; \text{Si $t \geq 2$}
+\end{cases}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><B>:</B><P>
+Observe que la funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> puede reescribirse como
+
+<DIV ALIGN="left">
+&nbsp;<TABLE CELLPADDING="0" WIDTH="50%" id="table188">
+	<TR VALIGN="MIDDLE">
+		<TD NOWRAP ALIGN="RIGHT">
+		<IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.gif"
+ ALT="$\displaystyle f(t)$"></TD>
+		<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+		<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+		<TD ALIGN="LEFT" NOWRAP>
+		<IMG
+ WIDTH="249" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img372.gif"
+ ALT="$\displaystyle 1 - t +t H(t-1) + \left( t - 3 \right) H(t-2)$"></TD>
+	</TR>
+	<TR VALIGN="MIDDLE">
+		<TD NOWRAP ALIGN="RIGHT">
+		<IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.gif"
+ ALT="$\displaystyle f(t)$"></TD>
+		<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+		<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+		<TD ALIGN="LEFT" NOWRAP>
+		<IMG
+ WIDTH="292" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img373.gif"
+ ALT="$\displaystyle 1 - t + \left( t-1 \right) H(t-1) + \left( t-2 \right) H(t-2)$"></TD>
+	</TR>
+</TABLE>
+</DIV>
+
+<P>
+con lo cual
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ f(t) \} & = & {\cal L} \{ 1 \} + {\cal L} \left\{ \left(t - 1 \right)H(t-1) \right\} + {\cal L} \left\{ \left(  t - 2 \right) H(t-2) \right\}  \\
+& = & \frac{1}{s} + \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table189">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="352" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img374.gif"
+ ALT="$\displaystyle {\cal L} \{ 1 \} + {\cal L} \left\{ \left(t - 1 \right)H(t-1) \right\} + {\cal L} \left\{ \left( t - 2 \right) H(t-2) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="116" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img375.gif"
+ ALT="$\displaystyle \frac{1}{s} + \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t^2 H(t-2) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="103" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img376.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 H(t-2) \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Para poder usar el segundo teorema de traslaci&oacute;n debemos completar de forma adecuada el término <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img377.gif"
+ ALT="$ t^2$">
+
+<P>
+&nbsp;<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table190">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="103" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img376.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 H(t-2) \}
+$"></TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="233" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img378.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \left( \left(t - 2 \right)^2 + 4t - 4 \right) H(t-2) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="318" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img379.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \left(t - 2 \right)^2 H(t-2) \right\} + 4 {\cal L} \left\{ \left( t - 1 \right) H(t-2) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>
+<IMG
+ WIDTH="427" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img380.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \left(t - 2 \right)^2 H(t-2) \right\} + 4 {\cal L} \left\{ \left( t - 2 \right) H(t-2) \right\} + 4 {\cal L} \{ H(t-2) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="169" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img381.gif"
+ ALT="$\displaystyle \frac{2e^{-2s}}{s^3} + \frac{4e^{-2s}}{s^2} + \frac{4e^{-2s}}{s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="155" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img382.gif"
+ ALT="$\displaystyle 2e^{-2s} \left( \frac{1}{s^3} + \frac{2}{s^2} + \frac{2}{s} \right)$"></TD>
+</TR>
+</TABLE></div>
+<P>
+Como lo muestran los ejemplos anteriores algunas veces es necesario sumar y restar algunos términos con la idea de poder usar el segundo teorema de traslaci&oacute;n. Pero existe una forma alternativa que nos evita el tener que hacer esto.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table210">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Corolario </font>
+        </b>[Forma alternativa al segundo teorema de traslaci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f:[0,+ \infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&oacute;n continua a trozos y de orden exponencial en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ f(t) H(t-a) \} = e^{-as} {\cal L} \{ f(t+a)  \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="253" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img383.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) H(t-a) \} = e^{-as} {\cal L} \{ f(t+a) \}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Usando la definici&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ f(t) H(t-a) \} & = & \int_0^{\infty} e^{-st} f(t) H(t-a) dt \\
+& = & \int_a^{\infty} e^{-st} f(t) dt \\
+& = &  \int_0^{\infty} e^{-s(u+a} f(u+a) du \\
+& = & e^{-sa} \int_0^{\infty} e^{-su} f(\underbrace{u+a}_{t=u+a}) du \\
+& = & e^{-sa} {\cal L} \{ f(t + a \} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table211">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="118" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img384.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) H(t-a) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="166" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img385.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} f(t) H(t-a) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="106" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img386.gif"
+ ALT="$\displaystyle \int_a^{\infty} e^{-st} f(t) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="165" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img387.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-s(u+a} f(u+a) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="179" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img388.gif"
+ ALT="$\displaystyle e^{-sa} \int_0^{\infty} e^{-su} f(\underbrace{u+a}_{t=u+a}) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="110" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img389.gif"
+ ALT="$\displaystyle e^{-sa} {\cal L} \{ f(t + a \}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ \left(t^2 + t \right) H(t-3) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="145" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img390.gif"
+ ALT="$\displaystyle {\cal L} \{ \left(t^2 + t \right) H(t-3) \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Usando la forma alternativa del segundo teorema de traslaci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ \left(t^2 + t \right) H(t-3) \} & = & e^{-3s} {\cal L} \left\{ \left( t + 3  \right)^2 + t + 3 \right\} \\
+& = & e^{-3s} {\cal L} \left\{ t^2 + 7t + 12 \right\} \\
+& = & e^{-3s} \left( \frac{2}{s^3} + \frac{7}{s^2} + \frac{12}{s}   \right) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table212">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="145" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img390.gif"
+ ALT="$\displaystyle {\cal L} \{ \left(t^2 + t \right) H(t-3) \}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="174" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img391.gif"
+ ALT="$\displaystyle e^{-3s} {\cal L} \left\{ \left( t + 3 \right)^2 + t + 3 \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="147" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img392.gif"
+ ALT="$\displaystyle e^{-3s} {\cal L} \left\{ t^2 + 7t + 12 \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="155" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img393.gif"
+ ALT="$\displaystyle e^{-3s} \left( \frac{2}{s^3} + \frac{7}{s^2} + \frac{12}{s} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Los siguientes ejemplos muestran el uso del segundo teorema de traslaci&oacute;n en su forma inversa.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 9}  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="114" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 9} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+<P>
+En este caso <!-- MATH
+ $a = \frac{\pi}{2}$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img395.gif"
+ ALT="$ a = \frac{\pi}{2}$"> y
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+F(s)= \frac{s}{s^2+9} \Rightarrow f(t) = Cos(3t)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="230" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img396.gif"
+ ALT="$\displaystyle F(s)= \frac{s}{s^2+9} \Rightarrow f(t) = Cos(3t)
+$">
+</DIV><P></P>
+
+<P>
+con lo cual
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 9}  \right\} & = & {\cal L}^{-1} \left\{ \frac{s}{s^2 + 9} \right\}_{t \rightarrow t - \frac{\pi}{2}} H\left(t-\frac{\pi}{2} \right) \\
+& = & Cos \left(3 \left(t - \frac{\pi}{2}  \right) \right) H\left(t - \frac{\pi}{2} \right) \\
+& = & - Sen(3t) H\left(t - \frac{\pi}{2} \right) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table213">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="114" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 9} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="225" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 9} \right\}_{t \rightarrow t - \frac{\pi}{2}} H\left(t-\frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="198" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img398.gif"
+ ALT="$\displaystyle Cos \left(3 \left(t - \frac{\pi}{2} \right) \right) H\left(t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="144" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img399.gif"
+ ALT="$\displaystyle - Sen(3t) H\left(t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{  \frac{2se^{-\pi s/2}}{s^2 - 5s + 6}  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="138" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img400.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{2se^{-\pi s/2}}{s^2 - 5s + 6} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Primero hallemos la descomposici&oacute;n en fraciones parciales
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{2s}{s^2 -5s + 6} = \frac{6}{s-3} - \frac{4}{s-2}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="202" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img401.gif"
+ ALT="$\displaystyle \frac{2s}{s^2 -5s + 6} = \frac{6}{s-3} - \frac{4}{s-2}
+$">
+</DIV><P></P>
+
+<P>
+con lo cual
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{  \frac{2se^{-\pi s/2}}{s^2 - 5s + 6}  \right\} & = &
+ \frac{6 e^{- \pi s/2}}{s-3} - \frac{4 e^{- \pi s/2}}{s-2} \\
+& = & 6 {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\}_{t \rightarrow t - \frac{\pi}{2} }  H\left( t - \frac{\pi}{2} \right)  \\
+& - &  4 {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\}_{t \rightarrow t - \frac{\pi}{2} }   H\left( t - \frac{\pi}{2} \right)  \\
+& = & 6 e^{3 \left( t - \frac{\pi}{2} \right) } - 4 e^{2 \left( t - \frac{\pi}{2} \right) } \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table214">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="138" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img400.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{2se^{-\pi s/2}}{s^2 - 5s + 6} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="136" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img402.gif"
+ ALT="$\displaystyle \frac{6 e^{- \pi s/2}}{s-3} - \frac{4 e^{- \pi s/2}}{s-2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="225" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img403.gif"
+ ALT="$\displaystyle 6 {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\}_{t \rightarrow t - \frac{\pi}{2} } H\left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img404.gif"
+ ALT="$\displaystyle -$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="225" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img405.gif"
+ ALT="$\displaystyle 4 {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\}_{t \rightarrow t - \frac{\pi}{2} } H\left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="143" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img406.gif"
+ ALT="$\displaystyle 6 e^{3 \left( t - \frac{\pi}{2} \right) } - 4 e^{2 \left( t - \frac{\pi}{2} \right) }$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="146" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img407.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Como el discriminante de <!-- MATH
+ $s^2 + 4s + 13$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img408.gif"
+ ALT="$ s^2 + 4s + 13$"> es negativo, no es factorizable en <!-- MATH
+ $\mbox{$I \hspace{-1.3mm} R$}$
+ -->
+&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> y debemos completar el cuadrado.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\} & = &
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\} \\
+& = & {\cal L}^{-1} \left\{ \frac{\left(s + 2 - 2 \right) e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\} \\
+& = & {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}
+-2  {\cal L}^{-1} \left\{ \frac{ e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}  \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table215">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="146" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img407.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="145" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img409.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="185" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 - 2 \right) e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="327" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img411.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)e^{-\pi s/2}}{ \le...
+...{\cal L}^{-1} \left\{ \frac{ e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+En este punto debemos usar el primer teorema de traslaci&oacute;n para calcular cada una de las transformadas inversas de la siguiente forma:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = e^{-2t} Cos(3t)
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="92%" id="table216">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+	<p align="center"><IMG
+ WIDTH="302" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img412.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = e^{-2t} Cos(3t)$"></TD>
+</TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+y
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{1}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = \frac{e^{-2t}}{3} Sen(3t)
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="96%" id="table217">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+	<p align="center">
+	<IMG
+ WIDTH="305" HEIGHT="64" BORDER="0"
+ SRC="img413.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = \frac{e^{-2t}}{3} Sen(3t)$"></TD>
+</TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+Y de aqu&iacute;
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\} & = &
+e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2} \right) \right) H\left( t - \frac{\pi}{2} \right)  \\
+& + & \frac{2}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right) \\
+& = & - e^{-2t + \pi} Sen(3t) - \frac{2}{3} e^{-2t + \pi} Cos(3t) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table218">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="146" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img407.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="260" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img414.gif"
+ ALT="$\displaystyle e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2} \right) \right) H\left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="272" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img416.gif"
+ ALT="$\displaystyle \frac{2}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2} \right) \right) H \left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="248" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.gif"
+ ALT="$\displaystyle - e^{-2t + \pi} Sen(3t) - \frac{2}{3} e^{-2t + \pi} Cos(3t)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{\left( 2s + 3\right) e^{- \pi s/2} }{s^2 + 4s + 13}  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="164" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{\left( 2s + 3\right) e^{- \pi s/2} }{s^2 + 4s + 13} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Este ejemplo combina los dos teoremas de traslaci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{\left( 2s + 3\right) e^{- \pi s/2} }{s^2 + 4s + 13}  \right\} & = &
+2 {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right) e^{-\pi s /2}}{ \left( s + 2  \right)^2 + 9} \right\}  - \frac{1}{3} {\cal L}^{-1} \left\{ \frac{e^{-\pi s /2}}{\left( s + 2  \right)^2 + 9}   \right\} \\
+& = & -2 e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right) \\
+& - & \frac{1}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right)  \\
+& = & -2 e^{-2t + \pi} Sen(3t)H \left( t - \frac{\pi}{2} \right)    - \frac{1}{3} e^{-2t + \pi} Cos(3t)H \left( t - \frac{\pi}{2} \right)   \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table219">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+	<IMG
+ WIDTH="139" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img418.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{\left( 2s + 3\right) e^{- \pi s/2} }{s^2 + 4s + 13} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>
+<IMG
+ WIDTH="335" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.gif"
+ ALT="$\displaystyle 2 {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right) e^{-\pi s /2}}{...
+...{\cal L}^{-1} \left\{ \frac{e^{-\pi s /2}}{\left( s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="281" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img420.gif"
+ ALT="$\displaystyle -2 e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2} \right) \right) H \left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img404.gif"
+ ALT="$\displaystyle -$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="272" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img421.gif"
+ ALT="$\displaystyle \frac{1}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2} \right) \right) H \left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>
+<IMG
+ WIDTH="374" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img422.gif"
+ ALT="$\displaystyle -2 e^{-2t + \pi} Sen(3t)H \left( t - \frac{\pi}{2} \right) - \frac{1}{3} e^{-2t + \pi} Cos(3t)H \left( t - \frac{\pi}{2} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table220">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema </font>
+        </b>&nbsp;[Multiplicaci&oacute;n por <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img423.gif"
+ ALT="$ t^n$">.]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f; [0,\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img424.gif"
+ ALT="$ f; [0,\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&oacute;n continua a trozos y de orden exponencial en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t^n f(t) \} = (-1)^n F^{n}(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="175" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img425.gif"
+ ALT="$\displaystyle {\cal L} \{ t^n f(t) \} = (-1)^n F^{n}(s)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<p>
+<BR CLEAR="ALL">
+
+	</p>
+	<P></P>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t^2 Sen(2t) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="97" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img426.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 Sen(2t) \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n </font> 
+<BR>
+Aplicando el teorema anterior para <IMG
+ WIDTH="42" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img427.gif"
+ ALT="$ n=2$">, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ t^2 Sen(2t) \} & = & (-1)^2 \left( {\cal L} \left\{ Sen(2t)  \right\} \right)^{\prime \prime} \\
+& = & \left( \frac{2}{s^2 + 4} \right)^{\prime \prime} \\
+& = & \frac{12s^2 - 16}{\left( s^2 + 4 \right)^3} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table221">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="97" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img426.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 Sen(2t) \}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="149" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img428.gif"
+ ALT="$\displaystyle (-1)^2 \left( {\cal L} \left\{ Sen(2t) \right\} \right)^{\prime \prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="80" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img429.gif"
+ ALT="$\displaystyle \left( \frac{2}{s^2 + 4} \right)^{\prime \prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="73" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img430.gif"
+ ALT="$\displaystyle \frac{12s^2 - 16}{\left( s^2 + 4 \right)^3}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+El siguiente ejemplo muestra una combinaci&oacute;n del primer teorema de traslaci&oacute;n y el teorema anterior.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ te^{-2 t} Cos(3t) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="119" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img431.gif"
+ ALT="$\displaystyle {\cal L} \{ te^{-2 t} Cos(3t) \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n </font> 
+<BR>
+Primero aplicamos el teorema de multiplicaci&oacute;n por <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$"> y luego el de traslaci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ te^{-2 t} Cos(3t) \} & = & - \left( {\cal L} \{ e^{-2 t} Cos(3t)  \}  \right)^{\prime} \\
+& = &  - \left( {\cal L} \{ Cos(3t) \}_{s \rightarrow s +2}  \right)^{\prime}  \\
+& = & - \left(  \frac{s +2 }{ (s+2)^2 + 9}  \right)^{\prime} \\
+& = & \frac{s^2 + 4s - 5}{\left( s^2 + 4s + 13 \right)^2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table222">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="119" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img431.gif"
+ ALT="$\displaystyle {\cal L} \{ te^{-2 t} Cos(3t) \}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="147" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.gif"
+ ALT="$\displaystyle - \left( {\cal L} \{ e^{-2 t} Cos(3t) \} \right)^{\prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="157" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img433.gif"
+ ALT="$\displaystyle - \left( {\cal L} \{ Cos(3t) \}_{s \rightarrow s +2} \right)^{\prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="132" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img434.gif"
+ ALT="$\displaystyle - \left( \frac{s +2 }{ (s+2)^2 + 9} \right)^{\prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="111" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img435.gif"
+ ALT="$\displaystyle \frac{s^2 + 4s - 5}{\left( s^2 + 4s + 13 \right)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule el valor de la siguiente integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} t e^{-2t} Cos(3t) dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="138" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img436.gif"
+ ALT="$\displaystyle \int_0^{\infty} t e^{-2t} Cos(3t) dt
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Por el teorema de multiplicaci&oacute;n por <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img423.gif"
+ ALT="$ t^n$">, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{t Cos(3t) \} & = &  \int_0^{\infty} te^{-st}Cos(3t)\\
+& = & (-1)^{1} \left(  \frac{s}{s^2 + 9} \right)^{\prime} \\
+& = & \frac{s^2 - 9}{\left( s^2 + 9 \right)^2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table223">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="89" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img437.gif"
+ ALT="$\displaystyle {\cal L} \{t Cos(3t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="124" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img438.gif"
+ ALT="$\displaystyle \int_0^{\infty} te^{-st}Cos(3t)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="119" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img439.gif"
+ ALT="$\displaystyle (-1)^{1} \left( \frac{s}{s^2 + 9} \right)^{\prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="68" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img440.gif"
+ ALT="$\displaystyle \frac{s^2 - 9}{\left( s^2 + 9 \right)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+De donde obtenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} t e^{-st} Cost(3t) dt = \frac{s^2 - 9}{\left( s^2 + 9 \right)^2}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="230" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.gif"
+ ALT="$\displaystyle \int_0^{\infty} t e^{-st} Cost(3t) dt = \frac{s^2 - 9}{\left( s^2 + 9 \right)^2}
+$">
+</DIV><P></P>
+
+<P>
+y tomando <IMG
+ WIDTH="40" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img442.gif"
+ ALT="$ s=2$">
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} t e^{-2t} Cost(3t) dt = \frac{5}{169}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="193" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img443.gif"
+ ALT="$\displaystyle \int_0^{\infty} t e^{-2t} Cost(3t) dt = \frac{5}{169}
+$">
+</DIV><P></P>
+
+<P>
+Existe un caso especial del teorema anterior, cuando <IMG
+ WIDTH="42" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img444.gif"
+ ALT="$ n=1$">, que es muy &uacute;til en el c&aacute;lculo de transformadas inversas.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table224">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Corolario </font>
+        </b>[Multiplicaci&oacute;n por <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$">.]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <!-- MATH
+ ${\cal L} \{f(t) \}=F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) = - \frac{1}{t} {\cal L}^{-1} \{ F^{\prime}(s) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="157" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img445.gif"
+ ALT="$\displaystyle f(t) = - \frac{1}{t} {\cal L}^{-1} \{ F^{\prime}(s) \}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ ln \left( \frac{s + 1}{s-1} \right) \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="137" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img446.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ ln \left( \frac{s + 1}{s-1} \right) \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+Si
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ f(t) \} = F(s) = ln \left( \frac{s + 1}{s-1} \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="212" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img447.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) \} = F(s) = ln \left( \frac{s + 1}{s-1} \right)
+$">
+</DIV><P></P>
+
+<P>
+por el corolario tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+f(t) & = & - \frac{1}{t} {\cal L}^{-1} \left\{ \left( ln \left( \frac{s + 1}{s-1} \right) \right)^{\prime} \right\}  \\
+& = & - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{-2}{(s-1)(s+1)} \right\} \\
+& = & - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{1}{s+1} - \frac{1}{s-1}  \right\} \\
+& = & -\frac{e^{-t} - e^t }{t} \\
+& = & \frac{2 Senh(t)}{t} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table225">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.gif"
+ ALT="$\displaystyle f(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="191" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.gif"
+ ALT="$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \left( ln \left( \frac{s + 1}{s-1} \right) \right)^{\prime} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="180" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img449.gif"
+ ALT="$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{-2}{(s-1)(s+1)} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="179" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img450.gif"
+ ALT="$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{1}{s+1} - \frac{1}{s-1} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="75" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img451.gif"
+ ALT="$\displaystyle -\frac{e^{-t} - e^t }{t}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="70" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img452.gif"
+ ALT="$\displaystyle \frac{2 Senh(t)}{t}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table226">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema </font>
+        </b>[Divisi&oacute;n por <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$">.]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f:[0,+ \infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&oacute;n continua a trozos y de orden exponencial en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$"> tal que el l&iacute;mite
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow 0^+} \frac{f(t)}{t}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="70" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img453.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow 0^+} \frac{f(t)}{t}
+$">
+</DIV><P></P>
+
+<P>
+existe, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_s^{\infty} F(u) du
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="177" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img454.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_s^{\infty} F(u) du
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Sea
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+g(t) = \frac{f(t)}{t} \Rightarrow f(t)= t g(t)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="188" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img455.gif"
+ ALT="$\displaystyle g(t) = \frac{f(t)}{t} \Rightarrow f(t)= t g(t)
+$">
+</DIV><P></P>
+
+<P>
+entonces aplicando transformada de Laplace a ambos lados tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+F(s)={\cal L} \left\{ f(t)  \right\} = {\cal L } \left\{ tg(t) \right\} = - \left( {\cal L} \left\{ g(t)  \right\} \right)^{\prime} = - G^{\prime}(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="376" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img456.gif"
+ ALT="$\displaystyle F(s)={\cal L} \left\{ f(t) \right\} = {\cal L } \left\{ tg(t) \ri...
+... = - \left( {\cal L} \left\{ g(t) \right\} \right)^{\prime} = - G^{\prime}(s)
+$">
+</DIV><P></P>
+
+<P>
+Integrando
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+G(s) = - \int_{\infty}^s F(u) du = \int_{s}^{\infty} F(u) du
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="253" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img457.gif"
+ ALT="$\displaystyle G(s) = - \int_{\infty}^s F(u) du = \int_{s}^{\infty} F(u) du
+$">
+</DIV><P></P>
+
+<P>
+es decir,
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_{s}^{\infty}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="123" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_{s}^{\infty}
+$">
+</DIV><P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> la constante de integraci&oacute;n debe escogerse de forma de tal que <!-- MATH
+ $\lim_{s \rightarrow \infty} G(s) = 0$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img459.gif"
+ ALT="$ \lim_{s \rightarrow \infty} G(s) = 0$">.
+
+<P>
+El siguiente ejemplo muestra una aplicaci&oacute;n de este teorema.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{Sen(t)}{t} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="90" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img460.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{Sen(t)}{t} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font> 
+<BR>
+<P>
+Tenemos que
+<!-- MATH
+ \begin{displaymath}
+F(s) = \frac{1}{s^2 + 1}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="102" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img461.gif"
+ ALT="$\displaystyle F(s) = \frac{1}{s^2 + 1}
+$">
+</DIV><P></P>
+
+<P>
+con lo cual
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \frac{Sen(t)}{t} \right\} & = & \int_s^{\infty} \frac{1}{u^2 + 1} du \\
+& = & ArcTan(s) \biggr|_s^{\infty} \\
+& = &  \frac{\pi}{2} - ArcTan(s)
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table227">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+	<p align="center"><IMG
+ WIDTH="90" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img460.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{Sen(t)}{t} \right\}
+$"></TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP width="245"><IMG
+ WIDTH="100" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img462.gif"
+ ALT="$\displaystyle \int_s^{\infty} \frac{1}{u^2 + 1} du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT" height="57">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP height="57"><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP width="245" height="57"><IMG
+ WIDTH="98" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img463.gif"
+ ALT="$\displaystyle ArcTan(s) \biggr\vert _s^{\infty}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="15" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP width="245"><IMG
+ WIDTH="112" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img464.gif"
+ ALT="$\displaystyle \frac{\pi}{2} - ArcTan(s)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule el valor de la siguiente integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \frac{e^{-t} - e^{-3t}}{t} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="125" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img465.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{e^{-t} - e^{-3t}}{t} dt
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n </font> 
+<BR>
+Si
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) = e^{-t} -e^{-3t}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="124" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img466.gif"
+ ALT="$\displaystyle f(t) = e^{-t} -e^{-3t}
+$">
+</DIV><P></P>
+
+<P>
+entonces
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \frac{f(t)}{t}  \right\} & = & \int_s^{\infty} \left\{ \frac{1}{u+1} - \frac{1}{u+3} \right\} du  \\
+& = & ln \left( \frac{u+1}{u+3} \right) \biggr|_s^{\infty}  \\
+& = & ln \left( \frac{s+3}{s+1} \right)
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table228">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="72" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img467.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{f(t)}{t} \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="179" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img468.gif"
+ ALT="$\displaystyle \int_s^{\infty} \left\{ \frac{1}{u+1} - \frac{1}{u+3} \right\} du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="103" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img469.gif"
+ ALT="$\displaystyle ln \left( \frac{u+1}{u+3} \right) \biggr\vert _s^{\infty}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="82" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img470.gif"
+ ALT="$\displaystyle ln \left( \frac{s+3}{s+1} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+De donde
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \left(\frac{e^{-t} - e^{-3t}}{t} \right) dt =  ln \left( \frac{s+3}{s+1} \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="251" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img471.gif"
+ ALT="$\displaystyle \int_0^{\infty} \left(\frac{e^{-t} - e^{-3t}}{t} \right) dt = ln \left( \frac{s+3}{s+1} \right)
+$">
+</DIV><P></P>
+
+<P>
+y tomando el l&iacute;mite cuando <!-- MATH
+ $s \rightarrow 0^{+}$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img472.gif"
+ ALT="$ s \rightarrow 0^{+}$">, tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \frac{e^{-t}- e^{-3t}}{t} dt = ln(3)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="181" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img473.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{e^{-t}- e^{-3t}}{t} dt = ln(3)
+$">
+</DIV><P></P>
+
+<p>&nbsp;<p align="left">&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../../"><font color="#000080" face="Arial Narrow" size="2">Inicio
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<p>&nbsp;</p>
+<div align="left">
+  &nbsp;</div></div>
+</BODY>
+</HTML>

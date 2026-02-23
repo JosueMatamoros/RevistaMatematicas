@@ -1,0 +1,1911 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2003.3.8)  25 FEB 2005 08:21
+**./images.tex
+(./images.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo
+File: bk10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+(/usr/share/texmf/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2001/01/30 v4.1c Spanish support from the babel system
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
+\es@quottoks=\toks14
+\es@quotdepth=\count89
+Package babel Info: Making . an active character on input line 464.
+Package babel Info: Making " an active character on input line 495.
+Package babel Info: Making < an active character on input line 581.
+Package babel Info: Making > an active character on input line 582.
+)) (/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2001/08/31 v1.1 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 125.
+(/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+\sizebox=\box26
+\lthtmlwrite=\write3
+(./images.aux)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=627.36243pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=35.0pt
+
+latex2htmlLength evensidemargin=89.0pt
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 144.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 144.
+l2hSize :tex2html_wrap_inline936:8.0pt::8.0pt::38.56018pt.
+[1
+
+
+
+]
+l2hSize :tex2html_wrap_inline938:6.95831pt::6.95831pt::5.76163pt.
+[2
+
+
+]
+l2hSize :tex2html_wrap_inline940:6.45831pt::0.0pt::6.2153pt.
+[3
+
+
+]
+l2hSize :tex2html_wrap_inline942:6.45831pt::0.0pt::5.78592pt.
+[4
+
+
+]
+l2hSize :tex2html_wrap_inline944:6.45831pt::0.0pt::9.28017pt.
+[5
+
+
+]
+l2hSize :tex2html_wrap_inline946:6.83331pt::0.0pt::8.31949pt.
+[6
+
+
+]
+l2hSize :tex2html_wrap_inline948:8.94843pt::8.94843pt::9.99614pt.
+[7
+
+
+]
+l2hSize :tex2html_wrap_inline950:9.22066pt::9.22066pt::28.61525pt.
+[8
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.194 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.194 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \end{displaymath}
+                       %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath16:12.0pt::0.0pt::349.0pt.
+[9
+
+
+]
+l2hSize :tex2html_wrap_inline954:6.95831pt::6.95831pt::14.40863pt.
+[10
+
+
+]
+l2hSize :tex2html_wrap_inline956:6.95831pt::6.95831pt::5.6285pt.
+[11
+
+
+]
+l2hSize :tex2html_wrap_inline960:9.82217pt::9.82217pt::29.90887pt.
+[12
+
+
+]
+l2hSize :displaymath802:22.76462pt::0.0pt::349.0pt.
+[13
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.229 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \end{displaymath}
+                       %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath27:21.56903pt::0.0pt::349.0pt.
+[14
+
+
+]
+l2hSize :displaymath803:21.56903pt::0.0pt::349.0pt.
+[15
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.246 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \end{displaymath}
+                       %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath38:22.76462pt::0.0pt::349.0pt.
+[16
+
+
+]
+l2hSize :displaymath804:25.00023pt::0.0pt::349.0pt.
+[17
+
+
+]
+l2hSize :displaymath805:27.03914pt::0.0pt::349.0pt.
+[18
+
+
+]
+l2hSize :tex2html_wrap_inline962:10.03891pt::10.03891pt::105.4685pt.
+[19
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.278 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.278 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 \end{displaymath}
+                       %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath70:14.5pt::0.0pt::349.0pt.
+[20
+
+
+]
+l2hSize :tex2html_wrap_inline968:6.45831pt::0.0pt::6.50238pt.
+[21
+
+
+]
+l2hSize :displaymath806:14.5pt::0.0pt::349.0pt.
+[22
+
+
+]
+l2hSize :tex2html_wrap_inline972:10.05673pt::10.05673pt::72.94672pt.
+[23
+
+
+]
+l2hSize :displaymath807:18.04999pt::0.0pt::349.0pt.
+[24
+
+
+]
+l2hSize :displaymath808:28.84256pt::0.0pt::349.0pt.
+[25
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.325 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.325 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 \end{displaymath}
+                       %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath101:14.5pt::0.0pt::349.0pt.
+[26
+
+
+]
+l2hSize :tex2html_wrap_inline976:8.0pt::8.0pt::24.19916pt.
+[27
+
+
+]
+l2hSize :tex2html_wrap_inline978:7.44444pt::7.44444pt::62.02295pt.
+[28
+
+
+]
+l2hSize :tex2html_wrap_inline980:8.0pt::8.0pt::43.05556pt.
+[29
+
+
+]
+l2hSize :tex2html_wrap_inline984:6.94444pt::0.0pt::6.02087pt.
+[30
+
+
+]
+l2hSize :tex2html_wrap_inline986:8.0pt::8.0pt::19.12157pt.
+[31
+
+
+]
+l2hSize :displaymath809:24.00941pt::0.0pt::349.0pt.
+[32
+
+
+]
+l2hSize :tex2html_wrap_inline990:6.45831pt::0.0pt::4.11115pt.
+[33
+
+
+]
+l2hSize :tex2html_wrap_inline992:6.95831pt::6.95831pt::5.53128pt.
+[34
+
+
+]
+l2hSize :displaymath810:22.76462pt::0.0pt::349.0pt.
+[35
+
+
+]
+l2hSize :tex2html_wrap_inline996:6.83331pt::0.0pt::7.3056pt.
+[36
+
+
+]
+l2hSize :tex2html_wrap_inline998:6.83331pt::0.0pt::8.17018pt.
+[37
+
+
+]
+l2hSize :tex2html_wrap_inline1000:6.83331pt::0.0pt::8.36252pt.
+[38
+
+
+]
+l2hSize :tex2html_wrap_inline1002:8.0pt::8.0pt::19.84726pt.
+[39
+
+
+]
+l2hSize :displaymath811:13.94444pt::0.0pt::349.0pt.
+[40
+
+
+]
+l2hSize :displaymath812:14.5pt::0.0pt::349.0pt.
+[41
+
+
+]
+l2hSize :displaymath813:15.50006pt::0.0pt::349.0pt.
+[42
+
+
+]
+l2hSize :displaymath814:22.76462pt::0.0pt::349.0pt.
+[43
+
+
+]
+l2hSize :displaymath815:24.70906pt::0.0pt::349.0pt.
+[44
+
+
+]
+l2hSize :displaymath816:25.40523pt::0.0pt::349.0pt.
+[45
+
+
+]
+l2hSize :tex2html_wrap_inline1018:8.01782pt::8.01782pt::115.7652pt.
+[46
+
+
+]
+l2hSize :tex2html_wrap_inline1020:9.82217pt::9.82217pt::109.71002pt.
+[47
+
+
+]
+l2hSize :tex2html_wrap_inline1022:15.0001pt::15.0001pt::84.56166pt.
+[48
+
+
+]
+l2hSize :tex2html_wrap_inline1024:9.37892pt::9.37892pt::72.92815pt.
+[49
+
+
+]
+l2hSize :tex2html_wrap_inline1026:10.67732pt::10.67732pt::95.29916pt.
+[50
+
+
+]
+l2hSize :tex2html_wrap_inline1028:9.82217pt::9.82217pt::79.66078pt.
+[51
+
+
+]
+l2hSize :tex2html_wrap_inline1030:11.20108pt::11.20108pt::86.0677pt.
+[52
+
+
+]
+l2hSize :tex2html_wrap_inline1032:10.67732pt::10.67732pt::50.20795pt.
+[53
+
+
+]
+l2hSize :tex2html_wrap_inline1034:10.67732pt::10.67732pt::86.69057pt.
+[54
+
+
+]
+l2hSize :tex2html_wrap_inline1036:8.0pt::8.0pt::37.71638pt.
+[55
+
+
+]
+l2hSize :tex2html_wrap_inline1038:6.83331pt::0.0pt::5.68057pt.
+[56
+
+
+]
+l2hSize :displaymath817:14.5pt::0.0pt::349.0pt.
+[57
+
+
+]
+l2hSize :tex2html_wrap_inline1040:7.33331pt::7.33331pt::23.61795pt.
+[58
+
+
+]
+l2hSize :tex2html_wrap_inline1048:9.63329pt::9.63329pt::54.85176pt.
+[59
+
+
+]
+l2hSize :tex2html_wrap_inline1050:8.01782pt::8.01782pt::36.61293pt.
+[60
+
+
+]
+l2hSize :tex2html_wrap_inline1052:8.0pt::8.0pt::47.88185pt.
+[61
+
+
+]
+l2hSize :displaymath818:21.2999pt::0.0pt::349.0pt.
+[62
+
+
+]
+l2hSize :tex2html_wrap_inline1056:8.46227pt::8.46227pt::70.19542pt.
+[63
+
+
+]
+l2hSize :tex2html_wrap_inline1058:8.01782pt::8.01782pt::45.09941pt.
+[64
+
+
+]
+l2hSize :tex2html_wrap_inline1062:7.33331pt::7.33331pt::27.58925pt.
+[65
+
+
+]
+l2hSize :displaymath819:13.94444pt::0.0pt::349.0pt.
+[66
+
+
+]
+l2hSize :tex2html_wrap_inline1066:10.67732pt::10.67732pt::118.39534pt.
+[67
+
+
+]
+l2hSize :displaymath820:24.70906pt::0.0pt::349.0pt.
+[68
+
+
+]
+l2hSize :tex2html_wrap_inline1068:8.14003pt::0.0pt::12.65631pt.
+[69
+
+
+]
+l2hSize :displaymath821:21.56903pt::0.0pt::349.0pt.
+[70
+
+
+]
+l2hSize :displaymath822:24.70906pt::0.0pt::349.0pt.
+[71
+
+
+]
+l2hSize :displaymath823:24.70906pt::0.0pt::349.0pt.
+[72
+
+
+]
+l2hSize :displaymath824:25.00023pt::0.0pt::349.0pt.
+[73
+
+
+]
+l2hSize :tex2html_wrap_inline1072:8.64003pt::8.64003pt::91.22432pt.
+[74
+
+
+]
+l2hSize :tex2html_wrap_inline1074:10.05673pt::10.05673pt::64.24309pt.
+[75
+
+
+]
+l2hSize :displaymath825:23.01347pt::0.0pt::349.0pt.
+[76
+
+
+]
+l2hSize :displaymath826:26.22174pt::0.0pt::349.0pt.
+[77
+
+
+]
+l2hSize :displaymath827:25.00023pt::0.0pt::349.0pt.
+[78
+
+
+]
+l2hSize :tex2html_wrap_inline1078:8.64003pt::8.64003pt::86.51373pt.
+[79
+
+
+]
+l2hSize :tex2html_wrap_inline1080:8.01782pt::8.01782pt::8.56718pt.
+[80
+
+
+]
+l2hSize :displaymath828:28.81728pt::0.0pt::349.0pt.
+[81
+
+
+]
+l2hSize :displaymath829:23.59795pt::0.0pt::349.0pt.
+[82
+
+
+]
+l2hSize :displaymath830:24.3763pt::0.0pt::349.0pt.
+[83
+
+
+]
+l2hSize :tex2html_wrap_inline1082:8.01782pt::8.01782pt::81.67468pt.
+[84
+
+
+]
+l2hSize :tex2html_wrap_inline1086:8.0pt::8.0pt::57.60861pt.
+[85
+
+
+]
+l2hSize :tex2html_wrap_inline1088:8.0pt::8.0pt::20.07756pt.
+[86
+
+
+]
+l2hSize :tex2html_wrap_inline1090:10.51399pt::10.51399pt::84.81604pt.
+[87
+
+
+]
+l2hSize :displaymath831:24.3763pt::0.0pt::349.0pt.
+[88
+
+
+]
+l2hSize :displaymath832:25.00023pt::0.0pt::349.0pt.
+[89
+
+
+]
+l2hSize :tex2html_wrap_inline1096:8.0pt::8.0pt::108.6541pt.
+[90
+
+
+]
+l2hSize :tex2html_wrap_inline1098:8.01782pt::8.01782pt::46.68971pt.
+[91
+
+
+]
+l2hSize :tex2html_wrap_inline1100:8.0pt::8.0pt::103.0673pt.
+[92
+
+
+]
+l2hSize :tex2html_wrap_inline1102:8.0pt::8.0pt::57.45486pt.
+[93
+
+
+]
+l2hSize :tex2html_wrap_inline1108:8.0pt::8.0pt::108.40399pt.
+[94
+
+
+]
+l2hSize :tex2html_wrap_inline1110:8.64003pt::8.64003pt::59.65965pt.
+[95
+
+
+]
+l2hSize :tex2html_wrap_inline1112:10.05673pt::10.05673pt::77.35873pt.
+[96
+
+
+]
+l2hSize :displaymath833:13.94444pt::0.0pt::349.0pt.
+[97
+
+
+]
+l2hSize :displaymath834:24.70906pt::0.0pt::349.0pt.
+[98
+
+
+]
+l2hSize :tex2html_wrap_inline1114:6.95831pt::6.95831pt::9.31372pt.
+[99
+
+
+]
+l2hSize :tex2html_wrap_inline1116:6.95831pt::6.95831pt::9.31372pt.
+[100
+
+
+]
+l2hSize :tex2html_wrap_inline1118:8.64003pt::8.64003pt::60.0798pt.
+[101
+
+
+]
+l2hSize :tex2html_wrap_inline1120:9.00005pt::9.00005pt::111.93738pt.
+[102
+
+
+]
+l2hSize :tex2html_wrap_inline1122:10.36893pt::10.36893pt::115.74893pt.
+[103
+
+
+]
+l2hSize :tex2html_wrap_inline1124:8.01782pt::8.01782pt::55.09944pt.
+[104
+
+
+]
+l2hSize :tex2html_wrap_inline1126:12.00008pt::12.00008pt::62.91042pt.
+[105
+
+
+]
+l2hSize :tex2html_wrap_inline1128:8.01782pt::8.01782pt::84.09013pt.
+[106
+
+
+]
+l2hSize :tex2html_wrap_inline1130:9.09729pt::9.09729pt::81.90273pt.
+[107
+
+
+]
+l2hSize :tex2html_wrap_inline1132:8.64003pt::8.64003pt::90.19327pt.
+[108
+
+
+]
+l2hSize :tex2html_wrap_inline1134:8.94843pt::8.94843pt::53.5754pt.
+[109
+
+
+]
+l2hSize :tex2html_wrap_inline1136:8.94843pt::8.94843pt::90.50757pt.
+[110
+
+
+]
+l2hSize :tex2html_wrap_inline1138:15.0001pt::15.0001pt::81.47925pt.
+[111
+
+
+]
+l2hSize :tex2html_wrap_inline1140:8.01782pt::8.01782pt::50.09943pt.
+[112
+
+
+]
+l2hSize :tex2html_wrap_inline1142:15.88869pt::15.88869pt::109.66422pt.
+[113
+
+
+]
+l2hSize :tex2html_wrap_inline1144:8.01782pt::8.01782pt::81.5428pt.
+[114
+
+
+]
+l2hSize :tex2html_wrap_inline1146:9.37892pt::9.37892pt::66.86386pt.
+[115
+
+
+]
+l2hSize :tex2html_wrap_inline1148:8.01782pt::8.01782pt::85.02328pt.
+[116
+
+
+]
+l2hSize :tex2html_wrap_inline1150:8.64003pt::8.64003pt::78.02078pt.
+[117
+
+
+]
+l2hSize :tex2html_wrap_inline1152:6.95831pt::6.95831pt::24.54854pt.
+[118
+
+
+]
+l2hSize :tex2html_wrap_inline1154:8.64003pt::8.64003pt::92.8957pt.
+[119
+
+
+]
+l2hSize :tex2html_wrap_inline1156:8.01782pt::8.01782pt::76.97903pt.
+[120
+
+
+]
+l2hSize :tex2html_wrap_inline1158:8.01782pt::8.01782pt::37.87729pt.
+[121
+
+
+]
+l2hSize :tex2html_wrap_inline1160:15.0001pt::15.0001pt::89.82257pt.
+[122
+
+
+]
+l2hSize :tex2html_wrap_inline1162:8.64003pt::8.64003pt::82.54863pt.
+[123
+
+
+]
+l2hSize :tex2html_wrap_inline1168:7.1428pt::7.1428pt::35.88196pt.
+[124
+
+
+]
+l2hSize :tex2html_wrap_inline1170:8.01782pt::8.01782pt::76.97903pt.
+[125
+
+
+]
+l2hSize :tex2html_wrap_inline1172:8.01782pt::8.01782pt::86.97906pt.
+[126
+
+
+]
+l2hSize :tex2html_wrap_inline1174:8.01782pt::8.01782pt::71.97902pt.
+[127
+
+
+]
+l2hSize :tex2html_wrap_inline1178:7.1428pt::7.1428pt::32.40623pt.
+[128
+
+
+]
+l2hSize :tex2html_wrap_inline1180:8.64003pt::8.64003pt::56.89111pt.
+[129
+
+
+]
+l2hSize :tex2html_wrap_inline1182:8.64003pt::8.64003pt::92.8957pt.
+[130
+
+
+]
+l2hSize :tex2html_wrap_inline1184:8.64003pt::8.64003pt::55.17352pt.
+[131
+
+
+]
+l2hSize :tex2html_wrap_inline1186:10.05673pt::10.05673pt::72.09714pt.
+[132
+
+
+]
+l2hSize :tex2html_wrap_inline1188:8.64003pt::8.64003pt::51.51842pt.
+[133
+
+
+]
+l2hSize :tex2html_wrap_inline1194:8.64003pt::8.64003pt::55.17352pt.
+[134
+
+
+]
+l2hSize :tex2html_wrap_inline1196:8.0pt::8.0pt::56.77658pt.
+[135
+
+
+]
+l2hSize :displaymath835:25.00023pt::0.0pt::349.0pt.
+[136
+
+
+]
+l2hSize :tex2html_wrap_inline1198:10.03891pt::10.03891pt::75.33203pt.
+[137
+
+
+]
+l2hSize :displaymath836:27.2779pt::0.0pt::349.0pt.
+[138
+
+
+]
+l2hSize :tex2html_wrap_inline1200:6.45831pt::0.0pt::23.87608pt.
+[139
+
+
+]
+l2hSize :tex2html_wrap_inline1202:6.95831pt::6.95831pt::31.87267pt.
+[140
+
+
+]
+l2hSize :tex2html_wrap_inline1204:8.64003pt::8.64003pt::59.65965pt.
+[141
+
+
+]
+l2hSize :tex2html_wrap_inline1208:6.95831pt::6.95831pt::32.58792pt.
+[142
+
+
+]
+l2hSize :tex2html_wrap_inline1214:8.64003pt::8.64003pt::50.17351pt.
+[143
+
+
+]
+l2hSize :tex2html_wrap_inline1216:10.05673pt::10.05673pt::65.4305pt.
+[144
+
+
+]
+l2hSize :tex2html_wrap_inline1220:8.64003pt::8.64003pt::34.8171pt.
+[145
+
+
+]
+l2hSize :tex2html_wrap_inline1222:9.63329pt::9.63329pt::75.72902pt.
+[146
+
+
+]
+l2hSize :tex2html_wrap_inline1224:13.86949pt::13.86949pt::92.65266pt.
+[147
+
+
+]
+l2hSize :tex2html_wrap_inline1226:8.64003pt::8.64003pt::51.00453pt.
+[148
+
+
+]
+l2hSize :tex2html_wrap_inline1228:10.67732pt::10.67732pt::49.50117pt.
+[149
+
+
+]
+l2hSize :tex2html_wrap_inline1230:8.64003pt::8.64003pt::48.87029pt.
+[150
+
+
+]
+l2hSize :tex2html_wrap_inline1232:8.01782pt::8.01782pt::31.78435pt.
+[151
+
+
+]
+l2hSize :tex2html_wrap_inline1234:6.95831pt::6.95831pt::42.19775pt.
+[152
+
+
+]
+l2hSize :tex2html_wrap_inline1236:6.95831pt::6.95831pt::24.09486pt.
+[153
+
+
+]
+l2hSize :tex2html_wrap_inline1238:11.43733pt::11.43733pt::96.95724pt.
+[154
+
+
+]
+l2hSize :tex2html_wrap_inline1240:8.94843pt::8.94843pt::46.9117pt.
+[155
+
+
+]
+l2hSize :tex2html_wrap_inline1242:6.95831pt::6.95831pt::23.86452pt.
+[156
+
+
+]
+l2hSize :tex2html_wrap_inline1244:6.95831pt::6.95831pt::23.86452pt.
+[157
+
+
+]
+l2hSize :tex2html_wrap_inline1248:8.0pt::8.0pt::106.51376pt.
+[158
+
+
+]
+l2hSize :tex2html_wrap_inline1252:6.95831pt::6.95831pt::8.15688pt.
+[159
+
+
+]
+l2hSize :displaymath837:68.6135pt::0.0pt::349.0pt.
+[160
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1261 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1261 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1262 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath430:14.5pt::0.0pt::349.0pt.
+[161
+
+
+]
+l2hSize :displaymath838:25.0pt::0.0pt::349.0pt.
+[162
+
+
+]
+l2hSize :tex2html_wrap_inline1262:8.64003pt::8.64003pt::59.14577pt.
+[163
+
+
+]
+l2hSize :tex2html_wrap_inline1264:9.37892pt::9.37892pt::34.83102pt.
+[164
+
+
+]
+l2hSize :tex2html_wrap_inline1266:6.95831pt::6.95831pt::24.81012pt.
+[165
+
+
+]
+l2hSize :tex2html_wrap_inline1274:8.0pt::8.0pt::27.72227pt.
+[166
+
+
+]
+l2hSize :tex2html_wrap_inline1276:6.83331pt::0.0pt::8.00005pt.
+[167
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1312 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1312 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1313 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath447:14.5pt::0.0pt::349.0pt.
+[168
+
+
+]
+l2hSize :displaymath839:13.94444pt::0.0pt::349.0pt.
+[169
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1329 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1329 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1330 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath450:13.94444pt::0.0pt::349.0pt.
+[170
+
+
+]
+l2hSize :displaymath840:15.50006pt::0.0pt::349.0pt.
+[171
+
+
+]
+l2hSize :tex2html_wrap_inline1282:8.0pt::8.0pt::28.30907pt.
+[172
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1352 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1352 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1353 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath459:14.5pt::0.0pt::349.0pt.
+[173
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1361 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1361 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1362 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath462:14.5pt::0.0pt::349.0pt.
+[174
+
+
+]
+l2hSize :tex2html_wrap_inline1288:8.0pt::8.0pt::37.06941pt.
+[175
+
+
+]
+l2hSize :displaymath841:14.5pt::0.0pt::349.0pt.
+[176
+
+
+]
+l2hSize :tex2html_wrap_inline1292:6.83331pt::0.0pt::8.58684pt.
+[177
+
+
+]
+l2hSize :tex2html_wrap_inline1294:8.0pt::8.0pt::33.84837pt.
+[178
+
+
+]
+l2hSize :displaymath842:22.4375pt::0.0pt::349.0pt.
+[179
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1404 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1404 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1405 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath472:26.22174pt::0.0pt::349.0pt.
+[180
+
+
+]
+l2hSize :tex2html_wrap_inline1296:8.0pt::8.0pt::75.39227pt.
+[181
+
+
+]
+l2hSize :tex2html_wrap_inline1298:8.64003pt::8.64003pt::58.50455pt.
+[182
+
+
+]
+l2hSize :tex2html_wrap_inline1300:8.64003pt::8.64003pt::128.85553pt.
+[183
+
+
+]
+l2hSize :tex2html_wrap_inline1302:8.64003pt::8.64003pt::102.46617pt.
+[184
+
+
+]
+l2hSize :tex2html_wrap_inline1304:8.46227pt::8.46227pt::125.34717pt.
+[185
+
+
+]
+l2hSize :tex2html_wrap_inline1306:8.64003pt::8.64003pt::114.26982pt.
+[186
+
+
+]
+l2hSize :tex2html_wrap_inline1312:8.0pt::8.0pt::120.08464pt.
+[187
+
+
+]
+l2hSize :tex2html_wrap_inline1322:6.95831pt::6.95831pt::23.72453pt.
+[188
+
+
+]
+l2hSize :displaymath843:82.32413pt::0.0pt::349.0pt.
+[189
+
+
+]
+l2hSize :tex2html_wrap_inline1324:6.83331pt::0.0pt::8.30907pt.
+[190
+
+
+]
+l2hSize :tex2html_wrap_inline1328:6.95831pt::6.95831pt::22.44438pt.
+[191
+
+
+]
+l2hSize :tex2html_wrap_inline1330:8.64003pt::8.64003pt::76.66072pt.
+[192
+
+
+]
+l2hSize :tex2html_wrap_inline1332:8.0pt::8.0pt::17.60422pt.
+[193
+
+
+]
+l2hSize :tex2html_wrap_inline1336:6.45831pt::0.0pt::24.54854pt.
+[194
+
+
+]
+l2hSize :tex2html_wrap_inline1338:6.95831pt::6.95831pt::31.81708pt.
+[195
+
+
+]
+l2hSize :displaymath844:38.77736pt::0.0pt::349.0pt.
+[196
+
+
+]
+l2hSize :displaymath845:22.76462pt::0.0pt::349.0pt.
+[197
+
+
+]
+l2hSize :tex2html_wrap_inline1342:8.0pt::8.0pt::37.32635pt.
+[198
+
+
+]
+l2hSize :tex2html_wrap_inline1344:7.33331pt::7.33331pt::34.11108pt.
+[199
+
+
+]
+l2hSize :displaymath846:22.76462pt::0.0pt::349.0pt.
+[200
+
+
+]
+l2hSize :displaymath847:21.06903pt::0.0pt::349.0pt.
+[201
+
+
+]
+l2hSize :tex2html_wrap_inline1348:8.01782pt::8.01782pt::47.90971pt.
+[202
+
+
+]
+l2hSize :tex2html_wrap_inline1350:6.83331pt::0.0pt::26.92007pt.
+[203
+
+
+]
+l2hSize :displaymath848:21.06903pt::0.0pt::349.0pt.
+[204
+
+
+]
+l2hSize :tex2html_wrap_inline1354:8.0pt::8.0pt::23.69911pt.
+[205
+
+
+]
+l2hSize :tex2html_wrap_inline1356:7.4512pt::7.4512pt::7.43475pt.
+[206
+
+
+]
+l2hSize :tex2html_wrap_inline1358:8.0pt::8.0pt::22.72227pt.
+[207
+
+
+]
+l2hSize :displaymath849:27.13168pt::0.0pt::349.0pt.
+[208
+
+
+]
+l2hSize :displaymath850:22.76462pt::0.0pt::349.0pt.
+[209
+
+
+]
+l2hSize :tex2html_wrap_inline1360:8.0pt::8.0pt::37.32635pt.
+[210
+
+
+]
+l2hSize :tex2html_wrap_inline1362:6.83331pt::0.0pt::26.69576pt.
+[211
+
+
+]
+l2hSize :tex2html_wrap_inline1364:8.64003pt::8.64003pt::51.00453pt.
+[212
+
+
+]
+l2hSize :displaymath851:80.88725pt::0.0pt::349.0pt.
+[213
+
+
+]
+l2hSize :tex2html_wrap_inline1386:6.45831pt::0.0pt::22.44438pt.
+[214
+
+
+]
+l2hSize :tex2html_wrap_inline1388:6.45831pt::0.0pt::24.54854pt.
+[215
+
+
+]
+l2hSize :displaymath852:38.77736pt::0.0pt::349.0pt.
+[216
+
+
+]
+l2hSize :displaymath853:21.06903pt::0.0pt::349.0pt.
+[217
+
+
+]
+l2hSize :displaymath854:25.00023pt::0.0pt::349.0pt.
+[218
+
+
+]
+l2hSize :displaymath856:25.00023pt::0.0pt::349.0pt.
+[219
+
+
+]
+l2hSize :tex2html_wrap_inline1396:10.67732pt::10.67732pt::29.9324pt.
+[220
+
+
+]
+l2hSize :displaymath857:26.13408pt::0.0pt::349.0pt.
+[221
+
+
+]
+l2hSize :tex2html_wrap_inline1398:8.0pt::8.0pt::36.87268pt.
+[222
+
+
+]
+l2hSize :tex2html_wrap_inline1400:6.45831pt::0.0pt::23.16083pt.
+[223
+
+
+]
+l2hSize :tex2html_wrap_inline1404:7.5305pt::7.5305pt::14.09499pt.
+[224
+
+
+]
+l2hSize :tex2html_wrap_inline1406:7.44444pt::7.44444pt::24.09486pt.
+[225
+
+
+]
+l2hSize :tex2html_wrap_inline1410:8.64003pt::8.64003pt::98.32498pt.
+[226
+
+
+]
+l2hSize :tex2html_wrap_inline1414:8.0pt::8.0pt::53.68654pt.
+[227
+
+
+]
+l2hSize :tex2html_wrap_inline1416:8.0pt::8.0pt::29.67137pt.
+[228
+
+
+]
+l2hSize :tex2html_wrap_inline1418:9.82217pt::9.82217pt::12.28514pt.
+[229
+
+
+]
+l2hSize :tex2html_wrap_inline1424:6.95831pt::6.95831pt::10.70143pt.
+[230
+
+
+]
+l2hSize :tex2html_wrap_inline1426:8.0pt::8.0pt::19.2547pt.
+[231
+
+
+]
+l2hSize :displaymath858:25.92221pt::0.0pt::349.0pt.
+[232
+
+
+]
+l2hSize :tex2html_wrap_inline1430:8.0pt::8.0pt::62.31482pt.
+[233
+
+
+]
+l2hSize :tex2html_wrap_inline1432:9.82217pt::9.82217pt::42.8807pt.
+[234
+
+
+]
+l2hSize :tex2html_wrap_inline1434:6.95831pt::6.95831pt::24.09486pt.
+[235
+
+
+]
+l2hSize :tex2html_wrap_inline1436:8.0pt::8.0pt::32.31259pt.
+[236
+
+
+]
+l2hSize :tex2html_wrap_inline1438:6.95831pt::6.95831pt::28.22221pt.
+[237
+
+
+]
+l2hSize :displaymath859:25.92221pt::0.0pt::349.0pt.
+[238
+
+
+]
+l2hSize :tex2html_wrap_inline1442:8.0pt::8.0pt::42.07407pt.
+[239
+
+
+]
+l2hSize :tex2html_wrap_inline1446:6.94444pt::0.0pt::4.79169pt.
+[240
+
+
+]
+l2hSize :displaymath860:26.20947pt::0.0pt::349.0pt.
+[241
+
+
+]
+l2hSize :tex2html_wrap_inline1448:9.82217pt::9.82217pt::44.00574pt.
+[242
+
+
+]
+l2hSize :tex2html_wrap_inline1450:8.0pt::8.0pt::49.93932pt.
+[243
+
+
+]
+l2hSize :tex2html_wrap_inline1458:9.37222pt::9.37222pt::78.15404pt.
+[244
+
+
+]
+l2hSize :tex2html_wrap_inline1460:15.62897pt::15.62897pt::90.20331pt.
+[245
+
+
+]
+l2hSize :tex2html_wrap_inline1462:15.0001pt::15.0001pt::84.32748pt.
+[246
+
+
+]
+l2hSize :tex2html_wrap_inline1466:15.62897pt::15.62897pt::90.3144pt.
+[247
+
+
+]
+l2hSize :tex2html_wrap_inline1468:10.03891pt::10.03891pt::61.6765pt.
+[248
+
+
+]
+l2hSize :tex2html_wrap_inline1472:8.01782pt::8.01782pt::35.49536pt.
+[249
+
+
+]
+l2hSize :tex2html_wrap_inline1476:6.95831pt::6.95831pt::11.4769pt.
+[250
+
+
+]
+l2hSize :tex2html_wrap_inline1478:8.64003pt::8.64003pt::48.87029pt.
+[251
+
+
+]
+l2hSize :displaymath862:26.17783pt::0.0pt::349.0pt.
+[252
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1968 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1968 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1969 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath689:25.92221pt::0.0pt::349.0pt.
+[253
+
+
+]
+l2hSize :tex2html_wrap_inline1488:8.01782pt::8.01782pt::28.21425pt.
+[254
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1983 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.1983 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1984 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath699:21.9579pt::0.0pt::349.0pt.
+[255
+
+
+]
+l2hSize :tex2html_wrap_inline1490:6.94444pt::0.0pt::6.26161pt.
+[256
+
+
+]
+l2hSize :displaymath863:20.45792pt::0.0pt::349.0pt.
+[257
+
+
+]
+l2hSize :tex2html_wrap_inline1494:8.0pt::8.0pt::32.31259pt.
+[258
+
+
+]
+l2hSize :displaymath864:14.5pt::0.0pt::349.0pt.
+[259
+
+
+]
+l2hSize :displaymath865:14.5pt::0.0pt::349.0pt.
+[260
+
+
+]
+l2hSize :displaymath866:25.0pt::0.0pt::349.0pt.
+[261
+
+
+]
+l2hSize :tex2html_wrap_inline1496:6.45831pt::0.0pt::7.08334pt.
+[262
+
+
+]
+l2hSize :tex2html_wrap_inline1498:8.0pt::8.0pt::44.28621pt.
+[263
+
+
+]
+l2hSize :tex2html_wrap_inline1500:6.45831pt::0.0pt::22.44438pt.
+[264
+
+
+]
+l2hSize :tex2html_wrap_inline1502:6.95831pt::6.95831pt::30.22218pt.
+[265
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2069 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.2069 
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2070 \end{displaymath}
+                        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+l2hSize :displaymath724:25.39845pt::0.0pt::349.0pt.
+[266
+
+
+]
+l2hSize :tex2html_wrap_inline1504:8.64003pt::8.64003pt::139.06683pt.
+[267
+
+
+]
+l2hSize :tex2html_wrap_inline1506:8.0pt::8.0pt::24.50078pt.
+[268
+
+
+]
+l2hSize :tex2html_wrap_inline1508:6.95831pt::6.95831pt::46.05573pt.
+[269
+
+
+]
+l2hSize :tex2html_wrap_inline1512:6.59525pt::0.0pt::3.94516pt.
+[270
+
+
+]
+l2hSize :tex2html_wrap_inline1520:6.95831pt::6.95831pt::13.27785pt.
+[271
+
+
+]
+l2hSize :tex2html_wrap_inline1526:8.0pt::8.0pt::80.20615pt.
+[272
+
+
+]
+l2hSize :tex2html_wrap_inline1528:8.0pt::8.0pt::83.3897pt.
+[273
+
+
+]
+l2hSize :tex2html_wrap_inline1532:8.0pt::8.0pt::16.05052pt.
+[274
+
+
+]
+l2hSize :tex2html_wrap_inline1534:8.0pt::8.0pt::111.37868pt.
+[275
+
+
+]
+l2hSize :tex2html_wrap_inline1536:6.95831pt::6.95831pt::76.05582pt.
+[276
+
+
+] (./images.aux) ) 
+Here is how much of TeX's memory you used:
+ 1261 strings out of 95847
+ 15269 string characters out of 1195949
+ 65415 words of memory out of 1000001
+ 4237 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 24i,11n,25p,192b,226s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on images.dvi (276 pages, 78084 bytes).

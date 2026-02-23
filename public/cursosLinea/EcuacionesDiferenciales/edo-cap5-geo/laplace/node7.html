@@ -1,0 +1,1350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Convoluci&oacute;n y transformadas</TITLE>
+<META NAME="description" CONTENT="Convoluci&oacute;n y transformadas">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00150000000000000000"></A> <A NAME="1462"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table33">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table34">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table35">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" id="table36">
+      <tr>
+        <td width="364" height="1">
+		<img border="0" src="images/caps.png" width="360" height="10"></td>
+        <td width="50%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|</font><font color="#000080" face="Arial Narrow" size="2">&nbsp;
+			<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a>&nbsp; 7&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table37">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+
+<p><b>Convoluci&oacute;n y transformadas
+</b>
+
+</p>
+
+<P>
+Como hemos visto, la transformada de Laplace es lineal, es decir, la transformada de una suma es la suma de las transformadas, entonces cabe preguntarse si se tiene algo similar para el producto, la respuesta es no. En general la transformada no conmuta con la multiplicaci&oacute;n ordinaria, o sea, la transformada de un producto no es el producto de las transformadas, pero podemos definir un nuevo producto generalizado bajo el cual esto es cierto.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table55">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Convoluci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La funci&oacute;n <!-- MATH
+ $h: {\cal C}(I) \times {\cal C}(I) \rightarrow {\cal C}(I)$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img474.gif"
+ ALT="$ h: {\cal C}(I) \times {\cal C}(I) \rightarrow {\cal C}(I)$">, donde <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img475.gif"
+ ALT="$ {\cal C}$"> es el conjunto de funciones continuas en el intervalo <!-- MATH
+ $I=[0, +\infty[$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img476.gif"
+ ALT="$ I=[0, +\infty[$"> dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+h(t)= \left(f \star g \right)(t) = \int_0^t f(t - \tau ) g(\tau ) d \tau
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="265" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img477.gif"
+ ALT="$\displaystyle h(t)= \left(f \star g \right)(t) = \int_0^t f(t - \tau ) g(\tau ) d \tau
+$">
+</DIV><P></P>
+
+<P>
+se conoce como la convoluci&oacute;n de <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$">.
+
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+&nbsp;<P>
+La convoluci&oacute;n tiene muchas de las propiedades de la multiplicaci&oacute;n ordinaria, como veremos en el siguiente teorema.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table56">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Propiedades de la convoluci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sean <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$"> funciones continuas en el intervalo <!-- MATH
+ $[0, +\infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+
+<OL>
+<LI><!-- MATH
+ $f \star g = g \star f$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img478.gif"
+ ALT="$ f \star g = g \star f$">   (ley conmutativa)
+</LI>
+<LI><!-- MATH
+ $f \star ( g + h ) = f \star g + f \star h$
+ -->
+<IMG
+ WIDTH="184" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img479.gif"
+ ALT="$ f \star ( g + h ) = f \star g + f \star h$">   (ley distributiva)
+</LI>
+<LI><!-- MATH
+ $(f \star g) \star h = f \star (g \star h)$
+ -->
+<IMG
+ WIDTH="163" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img480.gif"
+ ALT="$ (f \star g) \star h = f \star (g \star h)$">   (ley asociativa)
+</LI>
+<LI><!-- MATH
+ $f \star 0 = 0 \star f = 0$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img481.gif"
+ ALT="$ f \star 0 = 0 \star f = 0$">
+</LI>
+</OL>
+
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+La demostraci&oacute;n de estas propiedades es muy simple. Haremos la primera de ellas y dejamos las restantes al lector.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+(f \star g)(t) & = & \int_0^t f(\tau) g(\underbrace{t - \tau}_{u=t - \tau}) d \tau \\
+& = & - \int_t^0 f(t-u) g(u) du \\
+& = & \int_0^t g(u) f(t-u) du \\
+& = & (g \star f)(t) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table57">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="66" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img482.gif"
+ ALT="$\displaystyle (f \star g)(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="135" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img483.gif"
+ ALT="$\displaystyle \int_0^t f(\tau) g(\underbrace{t - \tau}_{u=t - \tau}) d \tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="147" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img484.gif"
+ ALT="$\displaystyle - \int_t^0 f(t-u) g(u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="130" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img485.gif"
+ ALT="$\displaystyle \int_0^t g(u) f(t-u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="66" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img486.gif"
+ ALT="$\displaystyle (g \star f)(t)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+&nbsp;<P>
+<B>Observaci&oacute;n:</B> sin embargo, existen algunas propiedades de la multiplicaci&oacute;n ordinaria que la convoluci&oacute;n no tiene. Por ejemplo, no es cierto en general que <!-- MATH
+ $f \star 1 = f$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img487.gif"
+ ALT="$ f \star 1 = f$">; para ver esto, note que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+Cos(t) \star 1 & = & \int_0^t Cos(\tau) d \tau \\
+& = & Sen(\tau) \biggr|_0^t \\
+& = & Sen(t) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table58">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="72" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img488.gif"
+ ALT="$\displaystyle Cos(t) \star 1$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="93" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img489.gif"
+ ALT="$\displaystyle \int_0^t Cos(\tau) d \tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="64" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img490.gif"
+ ALT="$\displaystyle Sen(\tau) \biggr\vert _0^t$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="49" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img491.gif"
+ ALT="$\displaystyle Sen(t)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo </font>
+<BR>
+Calcule la convoluci&oacute;n de <IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img492.gif"
+ ALT="$ f(t)=e^t$"> y <!-- MATH
+ $g(t)=Sen(t)$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img493.gif"
+ ALT="$ g(t)=Sen(t)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando la definici&oacute;n e integraci&oacute;n por partes, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+e^t \star Sen(t) & = & \int_0^t e^{\tau} Sen(t- \tau) d \tau \\
+& = & \frac{e^{} \left(Cos(\tau - t) - Sen(\tau - t)   \right)}{2} \biggr|_0^t \\
+& = & \frac{e^t -Sen(t) - Cos(t)}{2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table59">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="77" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img494.gif"
+ ALT="$\displaystyle e^t \star Sen(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="134" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img495.gif"
+ ALT="$\displaystyle \int_0^t e^{\tau} Sen(t- \tau) d \tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="210" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img496.gif"
+ ALT="$\displaystyle \frac{e^{} \left(Cos(\tau - t) - Sen(\tau - t) \right)}{2} \biggr\vert _0^t$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="150" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img497.gif"
+ ALT="$\displaystyle \frac{e^t -Sen(t) - Cos(t)}{2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule la convoluci&oacute;n de las funciones <!-- MATH
+ $f(t)=Sen(at)$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img498.gif"
+ ALT="$ f(t)=Sen(at)$"> y <!-- MATH
+ $g(t)=Cos(bt)$
+ -->
+<IMG
+ WIDTH="103" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img499.gif"
+ ALT="$ g(t)=Cos(bt)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando la definici&oacute;n e integraci&oacute;n por partes
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left( Sen(at) \star Cos(bt) \right)(t) & = & \int_0^t Sen \left(a(t - \tau)\right) Cos(b \tau) d\tau \\
+& = & \frac{1}{2} \int_0^t \left( Sen\left(at + \left( b - a\right) \tau \right) + Sen\left(at - \left(b - a  \right) \tau \right)  \right) d\tau  \\
+& = & \frac{a \left(Cos(bt) - Cos(at)   \right)}{\left(a + b \right) \left(a-b \right)} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table60">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="158" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img500.gif"
+ ALT="$\displaystyle \left( Sen(at) \star Cos(bt) \right)(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="200" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img501.gif"
+ ALT="$\displaystyle \int_0^t Sen \left(a(t - \tau)\right) Cos(b \tau) d\tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>
+<IMG
+ WIDTH="340" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img502.gif"
+ ALT="$\displaystyle \frac{1}{2} \int_0^t \left( Sen\left(at + \left( b - a\right) \tau \right) + Sen\left(at - \left(b - a \right) \tau \right) \right) d\tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="157" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img503.gif"
+ ALT="$\displaystyle \frac{a \left(Cos(bt) - Cos(at) \right)}{\left(a + b \right) \left(a-b \right)}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> para calcular la integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^t Sen(t - \tau) Cos(b \tau) d\tau
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="174" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img504.gif"
+ ALT="$\displaystyle \int_0^t Sen(t - \tau) Cos(b \tau) d\tau
+$">
+</DIV><P></P>
+
+<P>
+del ejemplo anterior, hemos usado la identidad
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+Sen(\alpha) Cos(\beta) = \frac{Sen(\alpha + \beta) + Sen(\alpha - \beta)}{2}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="307" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img505.gif"
+ ALT="$\displaystyle Sen(\alpha) Cos(\beta) = \frac{Sen(\alpha + \beta) + Sen(\alpha - \beta)}{2}
+$">
+</DIV><P></P>
+
+<P>
+Otras identidades que pueden ser &uacute;tiles en el c&aacute;lculo de integrales similares son
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+Cos(\alpha) Cos(\beta) & = & \frac{Cos(\alpha + \beta) + Cos(\alpha - \beta)}{2} \\
+Sen(\alpha) Sen(\beta) & = & \frac{Cos(\alpha - \beta) - Cos(\alpha + \beta)}{2} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table61">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="103" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img506.gif"
+ ALT="$\displaystyle Cos(\alpha) Cos(\beta)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="185" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img507.gif"
+ ALT="$\displaystyle \frac{Cos(\alpha + \beta) + Cos(\alpha - \beta)}{2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="103" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img508.gif"
+ ALT="$\displaystyle Sen(\alpha) Sen(\beta)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="185" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img509.gif"
+ ALT="$\displaystyle \frac{Cos(\alpha - \beta) - Cos(\alpha + \beta)}{2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+El siguiente teorema establece un resultado de mucha importancia te&oacute;rica y pr&aacute;ctica, como veremos.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table62">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Teorema de convoluci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <!-- MATH
+ ${\cal L} \{f(t) \}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $"> y <!-- MATH
+ ${\cal L} \{g(t) \}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img510.gif"
+ ALT="$ {\cal L} \{g(t) \}$"> existen para <!-- MATH
+ $s > a \geq 0$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img511.gif"
+ ALT="$ s &gt; a \geq 0$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{(f \star g)(t) \} = {\cal L} \{f(t) \} {\cal L} \{g(t) \} = F(s) G(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="308" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img512.gif"
+ ALT="$\displaystyle {\cal L} \{(f \star g)(t) \} = {\cal L} \{f(t) \} {\cal L} \{g(t) \} = F(s) G(s)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> La forma inversa del teorema de convoluci&oacute;n
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+(f \star g)(t) = {\cal L}^{-1} \left(F(s) G(s)  \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="195" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img513.gif"
+ ALT="$\displaystyle (f \star g)(t) = {\cal L}^{-1} \left(F(s) G(s) \right)
+$">
+</DIV><P></P>
+
+<P>
+es muy importante en la soluci&oacute;n de ecuaciones diferenciales, pues nos puede evitar el c&aacute;lculo de fraciones parciales complejas.
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ e^t \star Sen(t)  \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img514.gif"
+ ALT="$\displaystyle {\cal L} \{ e^t \star Sen(t) \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando el teorema de convoluci&oacute;n tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ e^t \star Sen(t) \} & = & {\cal L} \{ e^t \} {\cal L} \{ Sen(t)\} \\
+& = & \frac{1}{s-1} \frac{1}{s^2 +1} \\
+& = & \frac{1}{(s+1)(s^2+1)} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table63">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img514.gif"
+ ALT="$\displaystyle {\cal L} \{ e^t \star Sen(t) \}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="116" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img515.gif"
+ ALT="$\displaystyle {\cal L} \{ e^t \} {\cal L} \{ Sen(t)\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="88" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.gif"
+ ALT="$\displaystyle \frac{1}{s-1} \frac{1}{s^2 +1}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="108" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img517.gif"
+ ALT="$\displaystyle \frac{1}{(s+1)(s^2+1)}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> como ya hemos calculado <!-- MATH
+ $e^t \star Sen(t)$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.gif"
+ ALT="$ e^t \star Sen(t)$"> podemos corroborar el resultado obtenido anteriormente
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ e^t \star Sen(t)\} & = & {\cal L} \left\{ \frac{e^t -Sen(t) - Cos(t)}{2}  \right\} \\
+& = & \frac{1}{2} {\cal L} \{e^t \} - \frac{1}{2} {\cal L} \{ Sen(t) \} - \frac{1}{2} {\cal L} \{ Cos(t) \} \\
+& = & \frac{1}{2} \left( \frac{1}{s-1} - \frac{1}{s^2+1} - \frac{s}{s^2+1} \right) \\
+& = & \frac{1}{(s-1)(s^2+1)} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table64">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img514.gif"
+ ALT="$\displaystyle {\cal L} \{ e^t \star Sen(t) \}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="188" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img519.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{e^t -Sen(t) - Cos(t)}{2} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="262" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img520.gif"
+ ALT="$\displaystyle \frac{1}{2} {\cal L} \{e^t \} - \frac{1}{2} {\cal L} \{ Sen(t) \} - \frac{1}{2} {\cal L} \{ Cos(t) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="210" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img521.gif"
+ ALT="$\displaystyle \frac{1}{2} \left( \frac{1}{s-1} - \frac{1}{s^2+1} - \frac{s}{s^2+1} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="108" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.gif"
+ ALT="$\displaystyle \frac{1}{(s-1)(s^2+1)}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+como obtuvimos en el ejemplo anterior.
+
+<P>
+Los siguientes ejemplos muestran el uso de la forma inversa del teorema de convoluci&oacute;n para el c&aacute;lculo de transformadas inversas.
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule la siguiente transformada inversa
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="156" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando el teorema de convoluci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)}  \right\} & = & {\cal L}^{-1} \left\{ \frac{1}{s-2} \frac{1}{s-3}  \right\} \\
+& = & {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\} \\
+& = & {\cal L} e^{2t} \star e^{3t} \\
+& = & \int_0^t e^{2 \tau} e^{3(t - \tau)} d \tau \\
+& = & e^{3t} - e^{2t} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table65">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="156" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="135" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img524.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \frac{1}{s-3} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="205" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img525.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="68" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img526.gif"
+ ALT="$\displaystyle {\cal L} e^{2t} \star e^{3t}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="112" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img527.gif"
+ ALT="$\displaystyle \int_0^t e^{2 \tau} e^{3(t - \tau)} d \tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="61" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img528.gif"
+ ALT="$\displaystyle e^{3t} - e^{2t}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> en este ejemplo el uso de fraciones parciales resulta viable, pues
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}  & = & {\cal L}^{-1} \left\{  \frac{1}{s-3} - \frac{1}{s-2} \right\}   \\
+& = & {\cal L}^{-1} \left\{ \frac{1}{s-3}  \right\} - {\cal L} \left\{ \frac{1}{s-2} \right\} \\
+& = & e^{3t} - e^{2t}
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table66">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="156" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="154" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img529.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-3} - \frac{1}{s-2} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="192" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img530.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\} - {\cal L} \left\{ \frac{1}{s-2} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="61" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img528.gif"
+ ALT="$\displaystyle e^{3t} - e^{2t}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Los siguientes ejemplos muestran situaciones donde el uso de fraciones parciales puede ser realmente complejo, comparado con el uso del teorema de convoluci&oacute;n.
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule la siguiente transformada inversa
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{s}{(s^2 + 4)(s^2 + 9)}  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="170" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img531.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s^2 + 4)(s^2 + 9)} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando el teorema de convoluci&oacute;n, tenemos
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{s}{(s^2 + 4)(s^2 + 9)}  \right\} & = & {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \frac{1}{s^2 + 9}  \right\} \\
+& = &  {\cal L}^{-1} \left\{ \frac{s}{s^2+4} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s^2+9}  \right\} \\
+& = & Cos(2t) \star Sen(3t) \\
+& = & \int_0^t Cos(2 \tau) Sen \left(3 \left(t - \tau \right) \right) d \tau \\
+& = & \frac{3Cos(2t) - 3 Cos(3t) }{5}
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table67">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="170" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img531.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s^2 + 4)(s^2 + 9)} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="149" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img532.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \frac{1}{s^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="219" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img533.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2+4} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s^2+9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="126" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img534.gif"
+ ALT="$\displaystyle Cos(2t) \star Sen(3t)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="203" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img535.gif"
+ ALT="$\displaystyle \int_0^t Cos(2 \tau) Sen \left(3 \left(t - \tau \right) \right) d \tau$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="150" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img536.gif"
+ ALT="$\displaystyle \frac{3Cos(2t) - 3 Cos(3t) }{5}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> en este ejemplo la expansi&oacute;n en fraciones parciales no es tan simple
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{1}{(s^2+4)(s^2+9)} = \frac{1}{5} \left( \frac{s}{s^2 + 4} - \frac{s}{s^2 + 9} \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="286" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img537.gif"
+ ALT="$\displaystyle \frac{1}{(s^2+4)(s^2+9)} = \frac{1}{5} \left( \frac{s}{s^2 + 4} - \frac{s}{s^2 + 9} \right)
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule la siguiente transformada inversa
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{s}{(s-2)(s^2-4s+13)} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="206" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img538.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s-2)(s^2-4s+13)} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando convoluci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{s}{(s-1)(s^2-4s+13)} \right\} & = & {\cal L}^{-1} \left\{ \frac{s - 2 + 2}{\left( \left( s -2 \right)^2 + 4 \right)\left(s - 1 \right)} \right\}  \\
+& = & {\cal L}^{-1} \left\{ \frac{s-2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)}  \right\}  \\
+& + & {\cal L}^{-1} \left\{ \frac{2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)}  \right\}  \\
+& = & e^{2t}Cos(3t) \star e^{t} + e^{2t} Sen(3t) \star e^{t} \\
+& = & \frac{e^t \left(1 - e^t Cos(3t) + 2e^t Sen(3t)  \right)}{5} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table68">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="206" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img539.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s-1)(s^2-4s+13)} \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="217" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img540.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s - 2 + 2}{\left( \left( s -2 \right)^2 + 4 \right)\left(s - 1 \right)} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="217" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img541.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s-2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="217" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img542.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="225" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.gif"
+ ALT="$\displaystyle e^{2t}Cos(3t) \star e^{t} + e^{2t} Sen(3t) \star e^{t}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="223" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img544.gif"
+ ALT="$\displaystyle \frac{e^t \left(1 - e^t Cos(3t) + 2e^t Sen(3t) \right)}{5}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+El siguiente corolario es &uacute;til en el c&aacute;lculo de la transformada de una integral.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table69">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Corolario</font>
+        </b>
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Tomando <IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img545.gif"
+ ALT="$ g(t)=1$"> en el teorema de convoluci&oacute;n tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{F(s)}{s} = {\cal L} \left\{ \int_0^t f(\tau) d \tau \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="170" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img546.gif"
+ ALT="$\displaystyle \frac{F(s)}{s} = {\cal L} \left\{ \int_0^t f(\tau) d \tau \right\}
+$">
+</DIV><P></P>
+
+<P>
+donde <!-- MATH
+ $F(s) = {\cal L} \{ f(t) \}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.gif"
+ ALT="$ F(s) = {\cal L} \{ f(t) \}$">
+
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ f \star 1 \} & = & {\cal L} \{f(t) \} {\cal L} \{ 1 \} \\
+{\cal L} \{ \int_0^t f(\tau) d\tau \} & = & \frac{F(s)}{s}
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table70">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img547.gif"
+ ALT="$\displaystyle {\cal L} \{ f \star 1 \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="92" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img548.gif"
+ ALT="$\displaystyle {\cal L} \{f(t) \} {\cal L} \{ 1 \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="102" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img549.gif"
+ ALT="$\displaystyle {\cal L} \{ \int_0^t f(\tau) d\tau \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="39" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.gif"
+ ALT="$\displaystyle \frac{F(s)}{s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule la siguiente transformada
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \int_0^t \tau Sen(\tau) d\tau  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="139" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img551.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \int_0^t \tau Sen(\tau) d\tau \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Usando el corolario anterior y el teorema de multiplicaci&oacute;n por <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img423.gif"
+ ALT="$ t^n$">, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \int_0^t \tau Sen(\tau) d\tau  \right\} & = & \frac{{\cal L} \left\{ t Sen(t) \right\} }{s} \\
+& = & - \frac{ \left( {\cal L} \{  Sen(t) \} \right)^{\prime}}{s} \\
+& = & -\frac{1}{s} \left( \frac{s}{s^2+1} \right)^{\prime} \\
+& = & \frac{s^2 - 1}{s \left( s^2 + 1 \right)^2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table71">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="139" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img551.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \int_0^t \tau Sen(\tau) d\tau \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="88" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img552.gif"
+ ALT="$\displaystyle \frac{{\cal L} \left\{ t Sen(t) \right\} }{s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="109" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img553.gif"
+ ALT="$\displaystyle - \frac{ \left( {\cal L} \{ Sen(t) \} \right)^{\prime}}{s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="104" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img554.gif"
+ ALT="$\displaystyle -\frac{1}{s} \left( \frac{s}{s^2+1} \right)^{\prime}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img555.gif"
+ ALT="$\displaystyle \frac{s^2 - 1}{s \left( s^2 + 1 \right)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<p>&nbsp;<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<center>
+  <H1>
+<BR>
+&nbsp;</H1>
+</BODY>
+</HTML>

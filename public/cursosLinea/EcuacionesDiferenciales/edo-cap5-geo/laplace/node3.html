@@ -1,0 +1,2128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Propiedades de la Transformada de Laplace</TITLE>
+<META NAME="description" CONTENT="Propiedades de la Transformada de Laplace">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00120000000000000000"></A> <A NAME="233"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table38">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table39">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table40">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" id="table41">
+      <tr>
+        <td width="364" height="1">
+		<img border="0" src="images/caps.png" width="360" height="10"></td>
+        <td width="50%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|</font><font color="#000080" face="Arial Narrow" size="2">&nbsp;
+			<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp; 3&nbsp;
+<a href="node4.html">4</a>&nbsp; <a href="node5.html">5</a>&nbsp;
+<a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table42">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<p><b><font size="3">Propiedades de la Transformada de Laplace
+</font></b>
+
+</p>
+
+<P>
+Como la transformada de Laplace se define en términos de una integral impropia 
+que puede ser divergente, existen funciones para las cuales no existe dicha 
+transformada, incluso hay funciones discontinuas, como la del ejemplo anterior, 
+que pueden tener transformada; entonces, ¿ bajo qué condiciones una funciones 
+tienen transformada de Laplace ?. Antes de dar una respuesta parcial a esta 
+pregunta debemos dar algunas definiciones.
+
+<p>&nbsp;<div align="center">
+  <center>
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table43">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Funciones continuas a trozos]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Decimos que una funci&oacute;n <!-- MATH
+ $f:[a,b] \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.gif"
+ ALT="$ f:[a,b] \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> es continua a trozos si
+
+<P>
+
+<OL>
+<LI><IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> est&aacute; definida y es continua en todo <!-- MATH
+ $x \in [a,b]$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$ x \in [a,b]$">, salvo en un n&uacute;mero finito de puntos <IMG
+ WIDTH="20" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.gif"
+ ALT="$ x_k$">, para
+<!-- MATH
+ $k=1,2,\ldots,n$
+ -->
+<IMG
+ WIDTH="101" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.gif"
+ ALT="$ k=1,2,\ldots,n$">.
+
+<P>
+</LI>
+<LI>Para cada <!-- MATH
+ $x_k \in [a,b]$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.gif"
+ ALT="$ x_k \in [a,b]$"> los l&iacute;mites
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(x_k^+) = \lim_{h \rightarrow 0} f(x_k + h) \hspace{1cm} f(x_k^-) = \lim_{h \rightarrow 0} f(x_k - h)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="367" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.gif"
+ ALT="$\displaystyle f(x_k^+) = \lim_{h \rightarrow 0} f(x_k + h) \hspace{1cm} f(x_k^-) = \lim_{h \rightarrow 0} f(x_k - h)
+$">
+</DIV><P></P>
+
+<P>
+existen. Note que, solamente uno de estos l&iacute;mites es pertinente si <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.gif"
+ ALT="$ x_0$"> es uno de los extremos de <IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.gif"
+ ALT="$ [a,b]$">.
+
+</LI>
+</OL>
+
+&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<P>En general, el requisito de que estos l&iacute;mites sean finitos en todos los 
+puntos 
+<IMG
+ WIDTH="20" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.gif"
+ ALT="$ x_k$"> implica que las &uacute;nicas discontinuidades de 
+<IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> son <I>discontinuidades de salto</I>, del tipo que aparecen el la 
+figura<a href="#1.2"> 1.2. </a>
+
+</p>
+<P>&nbsp;</p>
+      <p align="center"><a name="1.2"> <img border="0" src="images/Saltodisc.gif" width="223" height="155"></a> 
+      </p>
+      <P align="center">Figura 1.2</p>
+
+<p align="left"><br>
+&nbsp;<P>
+Intuitivamente podr&iacute;amos pensar que las funciones continuas a trozos son <I>casi 
+continua</I> o que no son  <I>demasiado discontinua</I>.
+
+<P>
+Otra de las ideas importantes en el estudio de la existencia de la transformada 
+de Laplace es que entendemos porqué una funci&oacute;n no crezca <I>demasiado r&aacute;pido</I>.
+
+<P>&nbsp;
+<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table64">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Definici&oacute;n</font>
+        </b>[Funciones de orden exponencial]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+Decimos que la funci&oacute;n <!-- MATH
+ $f: [0,+\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> es de orden exponencial si existen n&uacute;meros <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$">, <IMG
+ WIDTH="49" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.gif"
+ ALT="$ M&gt;0$"> y <IMG
+ WIDTH="44" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$ T&gt;0$"> tales que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+|f(t) | \leq Me^{kt}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="98" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.gif"
+ ALT="$\displaystyle \vert f(t) \vert \leq Me^{kt}
+$">
+</DIV><P></P>
+
+<P>
+para <IMG
+ WIDTH="42" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$ t &gt; T$">
+
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+Intuitivamente esto significa que la funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> esta por debajo de una funci&oacute;n exponencial, como se muestra en 
+la <a href="#1.3">1.3.
+
+</a>
+
+<P>
+&nbsp;<P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="orden1"></A>
+<a name="1.3">
+<img border="0" src="images/Orden.gif" width="232" height="155"></a></DIV>
+<DIV ALIGN="CENTER">
+
+Figura 1.3</DIV>
+
+<P>
+<B>Observaci&oacute;n:</B> algunas veces, para verificar que una funci&oacute;n <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> es de orden exponencial, conviene calcular el siguiente l&iacute;mite:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow \infty} \frac{|f(t)|}{e^{kt}} = L
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="108" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow \infty} \frac{\vert f(t)\vert}{e^{kt}} = L
+$">
+</DIV><P></P>
+
+<P>
+para alg&uacute;n valor de <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$">. Si <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.gif"
+ ALT="$ L$"> es finito, entonces <IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.gif"
+ ALT="$ M$"> puede ser cualquier n&uacute;mero mayor que <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.gif"
+ ALT="$ L$"> (y este determina <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$ T$">). Por otro lado, si <IMG
+ WIDTH="51" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img98.gif"
+ ALT="$ L= \infty$">, <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> no es de orden exponencial.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Compruebe que <IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.gif"
+ ALT="$ f(t)=t^3$"> es de orden exponencial.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Para comprobar esto, apliquemos tres veces la regla de L'Hôpital
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow \infty} \frac{t^3}{e^{kt}} = \lim_{t \rightarrow \infty} \frac{3t^2}{ke^{kt}}
+= \lim_{t \rightarrow \infty} \frac{6t}{k^2e^{kt}} = \lim_{t \rightarrow \infty} \frac{6}{k^3e^{kt}} = 0,
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="368" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow \infty} \frac{t^3}{e^{kt}} = \lim_{t \rightar...
+...} \frac{6t}{k^2e^{kt}} = \lim_{t \rightarrow \infty} \frac{6}{k^3e^{kt}} = 0,
+$">
+</DIV><P></P>
+
+<P>
+para cualquier n&uacute;mero positivo <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$">. Por lo tanto, si <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$"> es suficientemente grande <!-- MATH
+ $|t^3| < e^t$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.gif"
+ ALT="$ \vert t^3\vert &lt; e^t$">, y as&iacute; <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img102.gif"
+ ALT="$ t^3$"> es de orden exponencial.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Compruebe que la funci&oacute;n <!-- MATH
+ $f(t)=e^{bt}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.gif"
+ ALT="$ f(t)=e^{bt}$"> es de orden exponencial para cualquier valor de <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.gif"
+ ALT="$ b$">.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Calculando el l&iacute;mite
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow \infty} \frac{e^{bt}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{(b-k)t}=0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="188" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow \infty} \frac{e^{bt}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{(b-k)t}=0
+$">
+</DIV><P></P>
+
+<P>
+siempre y cuando <IMG
+ WIDTH="40" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.gif"
+ ALT="$ k&gt;b$">. De donde, <!-- MATH
+ $e^{bt} < e^{kt}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$ e^{bt} &lt; e^{kt}$"> para  <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$"> grande.
+
+<P>
+<B>Observaci&oacute;n:</B> no es dif&iacute;cil comprobar que cualquier polinomio de grado <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.gif"
+ ALT="$ n$"> o funci&oacute;n trigonométrica como Sen(bt), Cos(bt), con <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.gif"
+ ALT="$ b$"> constante, son de orden exponencial, as&iacute; como, las sumas y 
+productos de un n&uacute;mero finito de estas funciones. En general, si <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> y <IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.gif"
+ ALT="$ g(t)$"> son de orden exponencial la suma
+<!-- MATH
+ $f(t) + g(t)$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img110.gif"
+ ALT="$ f(t) + g(t)$"> y el producto <!-- MATH
+ $f(t) \cdot g(t)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.gif"
+ ALT="$ f(t) \cdot g(t)$"> son de orden exponencial.
+
+<P>
+<font color="#008000">Ejemplo</font><BR>
+Compruebe que la funci&oacute;n <!-- MATH
+ $f(t)=e^{t^2}$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.gif"
+ ALT="$ f(t)=e^{t^2}$"> no es de orden exponencial.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Calculando el l&iacute;mite tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow \infty} \frac{e^{t^2}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{t^2 - kt} = \infty
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="192" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow \infty} \frac{e^{t^2}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{t^2 - kt} = \infty
+$">
+</DIV><P></P>
+
+<P>
+para cualquier valor de <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$">, con lo cual la funci&oacute;n
+<!-- MATH
+ $f(t)=e^{t^2}$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.gif"
+ ALT="$ f(t)=e^{t^2}$"> no es de orden exponencial.
+
+<P>
+El siguiente resultado enuncia un resultado que parece obvio.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table65">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Funciones acotadas]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f: [0,+ \infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&oacute;n acotada, entonces es de orden exponencial.</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Como <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> es acotada <!-- MATH
+ $|f(t)| \leq M$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.gif"
+ ALT="$ \vert f(t)\vert \leq M$"> para todo <!-- MATH
+ $t \in [0,\infty[$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.gif"
+ ALT="$ t \in [0,\infty[$">. Entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow \infty} \frac{|f(t)|}{e^{kt}} \leq \lim_{t \rightarrow \infty} \frac{M}{e^{kt}} = 0,
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="188" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow \infty} \frac{\vert f(t)\vert}{e^{kt}} \leq \lim_{t \rightarrow \infty} \frac{M}{e^{kt}} = 0,
+$">
+</DIV><P></P>
+
+<P>
+para cualquier <IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.gif"
+ ALT="$ k &gt;0$">, con lo cual <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> es de orden exponencial.
+
+<P>
+&nbsp;<P>
+<B>Observaci&oacute;n:</B> como <IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img119.gif"
+ ALT="$ Sen(bt)$"> y <IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.gif"
+ ALT="$ Cos(bt)$"> son acotadas, son de orden exponencial.
+
+<P>
+Una vez definidos los conceptos de funci&oacute;n continua a trozos y funci&oacute;n de orden 
+exponencial ya estamos listos para enunciar una condici&oacute;n necesaria para la 
+existencia de la transformada de Laplace.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table66">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Existencia de la transformada]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $y: [0, +\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img121.gif"
+ ALT="$ y: [0, +\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&oacute;n continua a trozos y de orden exponencial, entonces la 
+		transformada de Laplace de <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$ y(t)$"> existe. Es decir, existe un n&uacute;mero <IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$ s_0$"> tal que
+<!-- MATH
+ $Y(s)={\cal L} \{ y(t) \}$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.gif"
+ ALT="$ Y(s)={\cal L} \{ y(t) \}$"> existe para <IMG
+ WIDTH="46" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$ s &gt; s_0$">.
+
+</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Por ser <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> de orden exponencial existen n&uacute;meros no negativos
+<IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$ T$">, <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$"> y <IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.gif"
+ ALT="$ M$"> tales que <!-- MATH
+ $|y(t)| \leq Me^{kt}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.gif"
+ ALT="$ \vert y(t)\vert \leq Me^{kt}$">, para <IMG
+ WIDTH="42" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$ t &gt; T$">. As&iacute; que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{y(t) \} & = & \int_0^{\infty} e^{-st}y(t) dt \\
+& = &   \int_0^T e^{-st}y(t) dt + \lim_{b \rightarrow \infty} \int_T^b e^{-st} y(t) dt \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table67">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$\displaystyle {\cal L} \{y(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="105" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} y(t) dt
+$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="249" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.gif"
+ ALT="$\displaystyle \int_0^T e^{-st}y(t) dt + \lim_{b \rightarrow \infty} \int_T^b e^{-st} y(t) dt$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+La primera integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^T e^{-st}y(t) dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="101" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.gif"
+ ALT="$\displaystyle \int_0^T e^{-st}y(t) dt
+$">
+</DIV><P></P>
+
+<P>
+es una integral definida, por tanto existe. Para la segunda integral note que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left| \int_T^b e^{-st} y(t) dt \right| & \leq & \int_T^b e^{-st} |y(t) | dt \\
+& \leq & \int_T^b e^{-st} M e^{kt} dt \\
+& = & M \int_T^b e^{(k-s)t} dt \\
+& = & M \frac{e^{(k-s)b} - e^{(k-s)T} }{k-s} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table68">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="108" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.gif"
+ ALT="$\displaystyle \left\vert \int_T^b e^{-st} y(t) dt \right\vert$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$\displaystyle \leq$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="106" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.gif"
+ ALT="$\displaystyle \int_T^b e^{-st} \vert y(t) \vert dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$\displaystyle \leq$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="108" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img131.gif"
+ ALT="$\displaystyle \int_T^b e^{-st} M e^{kt} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="108" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.gif"
+ ALT="$\displaystyle M \int_T^b e^{(k-s)t} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="141" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.gif"
+ ALT="$\displaystyle M \frac{e^{(k-s)b} - e^{(k-s)T} }{k-s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Ahora, como
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{M}{k-s} \lim_{b \rightarrow \infty} \left( e^{(k-s)b} - e^{(k-s)T} \right) = \frac{Me^{-(s-k)T}}{s-k}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="317" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img134.gif"
+ ALT="$\displaystyle \frac{M}{k-s} \lim_{b \rightarrow \infty} \left( e^{(k-s)b} - e^{(k-s)T} \right) = \frac{Me^{-(s-k)T}}{s-k}
+$">
+</DIV><P></P>
+
+<P>
+siempre y cuando <IMG
+ WIDTH="40" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$ s &gt; k$">, tenemos que la integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_T^b e^{-st} y(t) dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="97" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img135.gif"
+ ALT="$\displaystyle \int_T^b e^{-st} y(t) dt
+$">
+</DIV><P></P>
+
+<P>
+existe y con ello la transformada.
+
+<P>
+&nbsp;<P>
+<B>Observaci&oacute;n:</B> el teorema anterior enuncia una condici&oacute;n suficiente y no 
+necesaria para la existencia de la transformada de Laplace, es decir, puede 
+darse el caso de una funci&oacute;n <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> que no cumpla las hip&oacute;tesis del teorema, pero a&uacute;n as&iacute; tenga 
+transformada, como lo muestra el siguiente ejemplo.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Compruebe que la transformada
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ \frac{1}{\sqrt{t}} \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="53" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.gif"
+ ALT="$\displaystyle {\cal L} \{ \frac{1}{\sqrt{t}} \}
+$">
+</DIV><P></P>
+
+<P>
+existe, a&uacute;n cuando <!-- MATH
+ $f(t)=\frac{1}{\sqrt{t}}$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.gif"
+ ALT="$ f(t)=\frac{1}{\sqrt{t}}$"> no cumple las hip&oacute;tesis del teorema de 
+existencia anterior.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Claramente <!-- MATH
+ $f(t)=\sqrt{t}$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.gif"
+ ALT="$ f(t)=\sqrt{t}$"> tiene una discontinuidad infinita en
+<IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img139.gif"
+ ALT="$ x=0$">, con lo cual no es continua a trozos en el intervalo
+<!-- MATH
+ $[0,\infty[$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.gif"
+ ALT="$ [0,\infty[$">; pero
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \frac{1}{\sqrt{t}} \right\} & = & \int_0^{\infty} \underbrace{\frac{e^{-st}}{\sqrt{t}} }_{u = st} dt \\
+& = & \frac{1}{\sqrt{u}} \int_0^{\infty} \frac{e^{-u}}{\underbrace{\sqrt{u}}_{z^2=u}} du \\
+& = & \frac{2}{\sqrt{s}} \int_0^{\infty} e^{-z^2} dz
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table69">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="63" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="85" HEIGHT="83" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.gif"
+ ALT="$\displaystyle \int_0^{\infty} \underbrace{\frac{e^{-st}}{\sqrt{t}} }_{u = st} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="115" HEIGHT="86" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.gif"
+ ALT="$\displaystyle \frac{1}{\sqrt{u}} \int_0^{\infty} \frac{e^{-u}}{\underbrace{\sqrt{u}}_{z^2=u}} du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="110" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.gif"
+ ALT="$\displaystyle \frac{2}{\sqrt{s}} \int_0^{\infty} e^{-z^2} dz$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Para calcular esta &uacute;ltima integral sea
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+I_b = \int_0^b e^{-x^2} dx = \int_0^b e^{-y^2} dy
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="206" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.gif"
+ ALT="$\displaystyle I_b = \int_0^b e^{-x^2} dx = \int_0^b e^{-y^2} dy
+$">
+</DIV><P></P>
+
+<P>
+con lo cual
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{b \rightarrow +\infty} I_b = \int_0^{\infty} e^{-x^2} dx
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="162" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.gif"
+ ALT="$\displaystyle \lim_{b \rightarrow +\infty} I_b = \int_0^{\infty} e^{-x^2} dx
+$">
+</DIV><P></P>
+
+<P>
+Ahora note que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+I^2_b  & = & \left( \int_0^b e^{-x^2} dx  \right)\left( \int_0^b e^{-y^2} dy  \right) \\
+& = & \int_0^b \int_0^b e^{-(x^2 + y^2)}dx dy \\
+& = & \iint_R e^{-(x^2 + y^2)}dx dy
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" WIDTH="50%" id="table70">
+	<TR VALIGN="MIDDLE">
+		<TD NOWRAP ALIGN="RIGHT">
+		<IMG
+ WIDTH="18" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.gif"
+ ALT="$\displaystyle I^2_b$"></TD>
+		<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+		<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+		<TD ALIGN="LEFT" NOWRAP>
+		<IMG
+ WIDTH="203" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.gif"
+ ALT="$\displaystyle \left( \int_0^b e^{-x^2} dx \right)\left( \int_0^b e^{-y^2} dy \right)$"></TD>
+	</TR>
+	<TR VALIGN="MIDDLE">
+		<TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+		<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+		<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+		<TD ALIGN="LEFT" NOWRAP>
+		<IMG
+ WIDTH="151" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.gif"
+ ALT="$\displaystyle \int_0^b \int_0^b e^{-(x^2 + y^2)}dx dy$"></TD>
+	</TR>
+	<TR VALIGN="MIDDLE">
+		<TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+		<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+		<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+		<TD ALIGN="LEFT" NOWRAP>
+		<IMG
+ WIDTH="134" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.gif"
+ ALT="$\displaystyle \iint_R e^{-(x^2 + y^2)}dx dy$"></TD>
+	</TR>
+</TABLE>
+</DIV>
+&nbsp;<p>
+<BR CLEAR="ALL">
+
+</p>
+
+<P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="lapla2"></A>
+<a name="1.4">
+<img border="0" src="images/Integral.gif" width="287" height="243"></a>
+</DIV>
+<DIV ALIGN="CENTER">
+
+Figura 1.4</DIV>
+
+<P>
+Donde <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img152.gif"
+ ALT="$ R$"> es el cuadrado de lado <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.gif"
+ ALT="$ b$">, que se muestra en la figura<a href="#1.4"> 1.4 </a> Observe que si <IMG
+ WIDTH="22" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.gif"
+ ALT="$ R_1$"> y <IMG
+ WIDTH="22" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.gif"
+ ALT="$ R_2$"> son las regiones que se muestran en la figura <a href="#1.4">1.4
+</a>entonces
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\iint_{R_1} e^{-(x^2 + y^2)} dx dy & \leq I^2_b \leq & \iint_{R_2} e^{-(x^2 + y^2)} dx dy \\
+\int_0^{\frac{\pi}{2}} \int_0^b re^{-r^2} dr d\theta & \leq I^2_b \leq & \int_0^{\frac{\pi}{2}} \int_0^{b\sqrt{2}} r e^{-r^2} dr d\theta   \\
+\frac{\pi \left( 1 - e^{-b^2} \right)}{4}  & \leq I^2_b \leq  & \frac{\pi \left(1 -e^{-2b^2} \right)}{4}  \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table71">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="140" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.gif"
+ ALT="$\displaystyle \iint_{R_1} e^{-(x^2 + y^2)} dx dy$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="52" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.gif"
+ ALT="$\displaystyle \leq I^2_b \leq$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="140" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.gif"
+ ALT="$\displaystyle \iint_{R_2} e^{-(x^2 + y^2)} dx dy$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="128" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.gif"
+ ALT="$\displaystyle \int_0^{\frac{\pi}{2}} \int_0^b re^{-r^2} dr d\theta$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="52" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.gif"
+ ALT="$\displaystyle \leq I^2_b \leq$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="145" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.gif"
+ ALT="$\displaystyle \int_0^{\frac{\pi}{2}} \int_0^{b\sqrt{2}} r e^{-r^2} dr d\theta$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="96" HEIGHT="78" ALIGN="MIDDLE" BORDER="0"
+ SRC="img160.gif"
+ ALT="$\displaystyle \frac{\pi \left( 1 - e^{-b^2} \right)}{4}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="52" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.gif"
+ ALT="$\displaystyle \leq I^2_b \leq$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="102" HEIGHT="78" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.gif"
+ ALT="$\displaystyle \frac{\pi \left(1 -e^{-2b^2} \right)}{4}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Con lo cual, tomando el l&iacute;mite
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{b \rightarrow \infty} I^2_b = \frac{\pi}{4}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="87" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.gif"
+ ALT="$\displaystyle \lim_{b \rightarrow \infty} I^2_b = \frac{\pi}{4}
+$">
+</DIV><P></P>
+
+<P>
+Y as&iacute;, <!-- MATH
+ $I = \frac{\sqrt{\pi}}{2}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.gif"
+ ALT="$ I = \frac{\sqrt{\pi}}{2}$">. Por lo tanto
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}= \sqrt{\frac{\pi}{s} }
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="114" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}= \sqrt{\frac{\pi}{s} }
+$">
+</DIV><P></P>
+
+<P>
+El siguiente ejemplo muestra una funci&oacute;n para la cual no existe la transformada 
+de Laplace.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Compruebe que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ \frac{1}{t^2}\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="47" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.gif"
+ ALT="$\displaystyle {\cal L} \{ \frac{1}{t^2}\}
+$">
+</DIV><P></P>
+
+<P>
+no existe.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Usando la definici&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ \frac{1}{t^2} \} & = & \int_0^{\infty} \frac{e^{-st}}{t^2} dt \\
+& = & \int_0^1 \frac{e^{-st}}{t^2} dt + \int_1^{\infty} \frac{e^{-st}}{t^2} dt \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table72">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="47" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.gif"
+ ALT="$\displaystyle {\cal L} \{ \frac{1}{t^2}\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="82" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img166.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{e^{-st}}{t^2} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="174" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img167.gif"
+ ALT="$\displaystyle \int_0^1 \frac{e^{-st}}{t^2} dt + \int_1^{\infty} \frac{e^{-st}}{t^2} dt$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Y puesto que la integral impropia
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^1 \frac{e^{-st}}{t^2} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="76" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.gif"
+ ALT="$\displaystyle \int_0^1 \frac{e^{-st}}{t^2} dt
+$">
+</DIV><P></P>
+
+<P>
+diverge, la transformada no existe.
+
+<P>
+<B>Observaci&oacute;n:</B> la otra integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_1^{\infty} \frac{e^{-st}}{t^2} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="82" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.gif"
+ ALT="$\displaystyle \int_1^{\infty} \frac{e^{-st}}{t^2} dt
+$">
+</DIV><P></P>
+
+<P>
+es convergente para <IMG
+ WIDTH="40" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$ s &gt;0$">, pues
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{e^{-st}}{t^2} \leq \frac{1}{t^2}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="74" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.gif"
+ ALT="$\displaystyle \frac{e^{-st}}{t^2} \leq \frac{1}{t^2}
+$">
+</DIV><P></P>
+
+<P>
+La integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^1 \frac{e^{-st}}{t^2} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="76" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.gif"
+ ALT="$\displaystyle \int_0^1 \frac{e^{-st}}{t^2} dt
+$">
+</DIV><P></P>
+
+<P>
+diverge, pues, por el criterio de comparaci&oacute;n
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow 0^+} \frac{\frac{e^{-st}}{t^2}}{\frac{1}{t^2}} =
+\lim_{t \rightarrow 0^+} \frac{1}{e^{-st}} = 1
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="190" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow 0^+} \frac{\frac{e^{-st}}{t^2}}{\frac{1}{t^2}} =
+\lim_{t \rightarrow 0^+} \frac{1}{e^{-st}} = 1
+$">
+</DIV><P></P>
+
+<P>
+para toda <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$ s$">, con lo cual ambas integrales convergen o divergen; pero
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^1 \frac{1}{t^2} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="59" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.gif"
+ ALT="$\displaystyle \int_0^1 \frac{1}{t^2} dt
+$">
+</DIV><P></P>
+
+<P>
+diverge.
+
+<P>
+Ahora vamos a enunciar algunos propiedades de la transformada.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table73">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema </font>&nbsp;</b>[Linealidad de la transformada]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+Si <!-- MATH
+ ${\cal L} \{f(t) \} =F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$"> y <!-- MATH
+ ${\cal L} \{ g(t) \} = G(s)$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.gif"
+ ALT="$ {\cal L} \{ g(t) \} = G(s)$"> existen entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ f(t) + c g(t) \} =  {\cal } \{ f(t) \} + {\cal L} \{ g(t) \} = F(s) + G(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="353" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img175.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) + c g(t) \} = {\cal } \{ f(t) \} + {\cal L} \{ g(t) \} = F(s) + G(s)
+$">
+</DIV><P></P>
+
+<P>
+para cualquier constante real <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.gif"
+ ALT="$ c$">. &nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+Es una consecuencia directa de la convergencia de la suma en integrales 
+impropias.
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \left( f(t) + c g(t)  \right) dt = \int_0^{\infty} f(t) dt + c \int_0^{\infty} g(t) = F(s) + G(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="432" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.gif"
+ ALT="$\displaystyle \int_0^{\infty} \left( f(t) + c g(t) \right) dt = \int_0^{\infty} f(t) dt + c \int_0^{\infty} g(t) = F(s) + G(s)
+$">
+</DIV><P></P>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Calcule <!-- MATH
+ ${\cal L} \{Sen^2(t) \}$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="$ {\cal L} \{Sen^2(t) \}$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Como
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+Sen^2(t) = \frac{1-Cos(2t)}{2},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="167" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.gif"
+ ALT="$\displaystyle Sen^2(t) = \frac{1-Cos(2t)}{2},
+$">
+</DIV><P></P>
+
+<P>
+por la propiedad de linealidad
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{Sen^2(t) \} & = & {\cal L} \{ \frac{1-Cos(2t)}{2} \}\\
+& = & \frac{1}{2} {\cal L} \{ 1 \} - \frac{1}{2} {\cal L} \{Cos(2t) \} \\
+& = & \frac{1}{2s} - \frac{s}{2 \left( s^2 + 4  \right) } \\
+& = & \frac{2}{s \left( s^2 + 4 \right)} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table74">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="83" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.gif"
+ ALT="$\displaystyle {\cal L} \{Sen^2(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="115" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\displaystyle {\cal L} \{ \frac{1-Cos(2t)}{2} \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="162" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\displaystyle \frac{1}{2} {\cal L} \{ 1 \} - \frac{1}{2} {\cal L} \{Cos(2t) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="111" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\displaystyle \frac{1}{2s} - \frac{s}{2 \left( s^2 + 4 \right) }$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="71" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$\displaystyle \frac{2}{s \left( s^2 + 4 \right)}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Con la idea de aplicar la transformada de Laplace a la soluci&oacute;n de ecuaciones 
+diferenciales necesitamos calcular la transformada de una derivada.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table75">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Transformada de una derivada]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+Si <!-- MATH
+ $y^{\prime}(t)$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.gif"
+ ALT="$ y^{\prime}(t)$"> es continua a trozos y de orden exponencial en el 
+intervalo <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ y(t)  \} = sY(s) - y(0)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="166" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.gif"
+ ALT="$\displaystyle {\cal L} \{ y(t) \} = sY(s) - y(0)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+
+<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Integrando por partes
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ y^{\prime}(t) \} & = & \int_0^{\infty} e^{-st}y^{}(t) dt \\
+& = & e^{-st}y(t) \Bigr|^{\infty}_0 + s \int_0^{\infty} e^{-st}y(t) dt \\
+& = & -y(0) + s {\cal L} \{ y(t)\} \\
+& = & s Y(s) - y(0) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table76">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.gif"
+ ALT="$\displaystyle {\cal L} \{ y^{\prime}(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="105" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st}y^{}(t) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="208" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.gif"
+ ALT="$\displaystyle e^{-st}y(t) \Bigr\vert^{\infty}_0 + s \int_0^{\infty} e^{-st}y(t) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="124" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.gif"
+ ALT="$\displaystyle -y(0) + s {\cal L} \{ y(t)\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="91" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.gif"
+ ALT="$\displaystyle s Y(s) - y(0)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Con un argumento similar podemos demostrar que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ y^{\prime \prime}(t) \} & = & -y^{\prime}(0) + s {\cal } \{ y^{\prime}(t) \} \\
+& = & -y^{\prime}(0) + s \left( sY(s) - y(0) \right) \\
+& = & s^2 Y(s) - y^{\prime}(0) - sy(0)
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table77">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$\displaystyle {\cal L} \{ y^{\prime \prime}(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="122" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$\displaystyle -y^{\prime}(0) + s {\cal } \{ y^{\prime}(t) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="179" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.gif"
+ ALT="$\displaystyle -y^{\prime}(0) + s \left( sY(s) - y(0) \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="158" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.gif"
+ ALT="$\displaystyle s^2 Y(s) - y^{\prime}(0) - sy(0)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Use el resultado anterior para calcular
+
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="43" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 \}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Haciendo <IMG
+ WIDTH="65" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$ f(t)=t^2$">, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ f^{\prime} (t)\} & = & s {\cal L} \{ f(t)\} - f(0) \\
+{\cal L} \{ 2t \} & = & s {\cal L} \{ t^2 \} - 0 \\
+2 {\cal L} \{ t \} & = & s {\cal L} \{ t^2 \} \\
+\frac{2}{s^2} & = & s {\cal L } \{ t^2 \} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table78">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.gif"
+ ALT="$\displaystyle {\cal L} \{ f^{\prime} (t)\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="114" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$\displaystyle s {\cal L} \{ f(t)\} - f(0)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.gif"
+ ALT="$\displaystyle {\cal L} \{ 2t \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.gif"
+ ALT="$\displaystyle s {\cal L} \{ t^2 \} - 0$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.gif"
+ ALT="$\displaystyle 2 {\cal L} \{ t \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="50" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.gif"
+ ALT="$\displaystyle s {\cal L} \{ t^2 \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="21" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$\displaystyle \frac{2}{s^2}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="50" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.gif"
+ ALT="$\displaystyle s {\cal L} \{ t^2 \}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+y de aqu&iacute; concluimos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t^2 \} = \frac{2}{s^3}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="82" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.gif"
+ ALT="$\displaystyle {\cal L} \{ t^2 \} = \frac{2}{s^3}
+$">
+</DIV><P></P>
+
+<P>
+El siguiente resultado generaliza la transformada de una derivada.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table79">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Definici&oacute;n</font>
+        </b>[Transformada de una derivada]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+Si <!-- MATH
+ $y(t),y^{\prime}(t), \cdots, y^n(t)$
+ -->
+<IMG
+ WIDTH="141" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.gif"
+ ALT="$ y(t),y^{\prime}(t), \cdots, y^n(t)$"> son continuas a trozos y de orden 
+exponencial en el intervalo <!-- MATH
+ $[0, + \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ y^n(t) \} & = & s^n Y(s) - \sum_{j=0}^{n-1} s_j y^{n-1-j}(0) \\
+                      & = & s^n Y(s) - y^{n-1}(0) - sy^{n-2}(0) - \cdots - s^{n-1}y(0) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table80">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="65" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle {\cal L} \{ y^n(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="182" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle s^n Y(s) - \sum_{j=0}^{n-1} s_j y^{n-1-j}(0)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="324" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$\displaystyle s^n Y(s) - y^{n-1}(0) - sy^{n-2}(0) - \cdots - s^{n-1}y(0)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+&nbsp;<P>
+El siguiente teorema trata sobre el efecto que tiene en una transformada la 
+escalaci&oacute;n de una funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table81">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">
+		&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Propiedad de escalaci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+Sea <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> una funci&oacute;n continua a trozos y de orden exponencial en <!-- MATH
+ $[0, + \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, si <IMG
+ WIDTH="39" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img211.gif"
+ ALT="$ c \neq 0$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ f(t) \} = \frac{1}{c} F \left( \frac{s}{c} \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="136" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) \} = \frac{1}{c} F \left( \frac{s}{c} \right)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+
+<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+Para comprobar esta propiedad basta hacer un cambio de variable, <IMG
+ WIDTH="46" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img213.gif"
+ ALT="$ u=ct$">
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ f(ct) \} & = & \int_0^{\infty} e^{-st}f(ct) dt \\
+                     & = & \frac{1}{c} \int_0^{\infty} e^{-\frac{su}{c}} f(u) du \\
+                     & = & \frac{1}{c} F\left( \frac{s}{c}  \right) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table82">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img214.gif"
+ ALT="$\displaystyle {\cal L} \{ f(ct) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="113" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st}f(ct) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="132" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.gif"
+ ALT="$\displaystyle \frac{1}{c} \int_0^{\infty} e^{-\frac{su}{c}} f(u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="60" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.gif"
+ ALT="$\displaystyle \frac{1}{c} F\left( \frac{s}{c} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Si
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ Senh(t) \} = \frac{1}{s^2 - 1},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="156" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.gif"
+ ALT="$\displaystyle {\cal L} \{ Senh(t) \} = \frac{1}{s^2 - 1},
+$">
+</DIV><P></P>
+
+<P>
+calcule <!-- MATH
+ ${\cal L} \{ Senh(kt) \}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img219.gif"
+ ALT="$ {\cal L} \{ Senh(kt) \}$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+
+<P>
+Usando la propiedad de escalamiento
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ Senh(kt) \} & = & \frac{1}{k} \left( \frac{1}{\left( \frac{s}{k} \right)^2 - 1}   \right) \\
+& = & \frac{1}{k} \frac{k^2}{s^2 - k^2} \\
+& = & \frac{k}{s^2 - k^2} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table83">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.gif"
+ ALT="$\displaystyle {\cal L} \{ Senh(kt) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="107" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.gif"
+ ALT="$\displaystyle \frac{1}{k} \left( \frac{1}{\left( \frac{s}{k} \right)^2 - 1} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="69" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$\displaystyle \frac{1}{k} \frac{k^2}{s^2 - k^2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="57" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$\displaystyle \frac{k}{s^2 - k^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../../"><font color="#000080" face="Arial Narrow" size="2">Inicio
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<div align="left">
+  &nbsp;</div>
+</BODY>
+</HTML>
+</table></table>

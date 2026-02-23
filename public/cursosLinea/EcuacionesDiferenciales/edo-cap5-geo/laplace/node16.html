@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Sistemas de ecuaciones diferenciales</TITLE>
+<META NAME="description" CONTENT="Sistemas de ecuaciones diferenciales">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table21">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table22">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table23">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" id="table24">
+      <tr>
+        <td width="364" height="1">
+		<img border="0" src="images/caps.png" width="360" height="10"></td>
+        <td width="50%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|</font><font color="#000080" face="Arial Narrow" size="2">&nbsp;
+			<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a><a href="node15.html">&nbsp;15</a>&nbsp; 16</font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table25">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<p><b><A NAME="SECTION-1447788544">Sistemas de ecuaciones diferenciales</A>
+</b>
+
+</p>
+
+<P>
+El siguiente ejemplo muestra el uso de la transformada de Laplace en la soluci&oacute;n de sistemas de ecuaciones diferenciales.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Resuelva el siguiente sistema de ecuaciones diferenciales
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\frac{dx}{dt} & = & 2x - 3y  \\
+\frac{dy}{dt} & = & y - 2x \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table32">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="24" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img785.gif"
+ ALT="$\displaystyle \frac{dx}{dt}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img786.gif"
+ ALT="$\displaystyle 2x - 3y$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="24" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img787.gif"
+ ALT="$\displaystyle \frac{dy}{dt}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="48" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img788.gif"
+ ALT="$\displaystyle y - 2x$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+con las condiciones <IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img789.gif"
+ ALT="$ x(0)=8$">, <IMG
+ WIDTH="61" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img790.gif"
+ ALT="$ y(0)=3$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Si <!-- MATH
+ ${\cal L} \{ x(t) \}=X(s)$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img791.gif"
+ ALT="$ {\cal L} \{ x(t) \}=X(s)$"> y <!-- MATH
+ ${\cal L} \{y(t)\}=Y(s)$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.gif"
+ ALT="$ {\cal
+L} \{y(t) \} = Y(s)$">, entonces
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+sX(s) - 8 & = & 2X(s) - 3Y(s) \\
+sY(s) - 3 & = & Y(s) - 2X(s) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table33">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="72" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img792.gif"
+ ALT="$\displaystyle sX(s) - 8$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="105" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img793.gif"
+ ALT="$\displaystyle 2X(s) - 3Y(s)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="70" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img794.gif"
+ ALT="$\displaystyle sY(s) - 3$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="97" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img795.gif"
+ ALT="$\displaystyle Y(s) - 2X(s)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+o agrupando
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left(s - 2 \right)X(s) + 3Y(s) & = & 8  \\
+2X(s) + \left(s - 1 \right)Y(s) & = & 3  \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table34">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="147" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img796.gif"
+ ALT="$\displaystyle \left(s - 2 \right)X(s) + 3Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img797.gif"
+ ALT="$\displaystyle 8$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="147" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img798.gif"
+ ALT="$\displaystyle 2X(s) + \left(s - 1 \right)Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img799.gif"
+ ALT="$\displaystyle 3$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Ahora usemos la regla de Cramer para resolver el sistema anterior
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+X(s) = \frac{\biggr|
+\begin{array}{cc} 8 & 3 \\3 & s-1 \\\end{array}
+\biggr|}
+{\biggr| \begin{array}{cc} 8 & 3 \\3 & s-1 \\\end{array}
+\biggr|} = \frac{8s-17}{s^2-3s-4} = \frac{8s-17}{(s+1)(s-4)} = \frac{5}{s+1} + \frac{3}{s-4}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="482" HEIGHT="97" BORDER="0"
+ SRC="img800.gif"
+ ALT="\begin{displaymath}
+X(s) = \frac{\biggr\vert
+\begin{array}{cc} 8 &amp; 3 \\ 3 &amp; s-...
+...4} = \frac{8s-17}{(s+1)(s-4)} = \frac{5}{s+1} + \frac{3}{s-4}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+Y(s) = \frac{\biggr|
+\begin{array}{cc} s-2 & 8 \\2 & 31 \\\end{array}
+\biggr|}
+{\biggr| \begin{array}{cc} s-2 & 3 \\2 & s-1 \\\end{array}
+\biggr|} = \frac{3s-22}{s^2-3s-4} = \frac{3s-22}{(s+1)(s-4)} = \frac{5}{s+1} - \frac{2}{s-4}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="508" HEIGHT="87" BORDER="0"
+ SRC="img801.gif"
+ ALT="\begin{displaymath}
+Y(s) = \frac{\biggr\vert
+\begin{array}{cc} s-2 &amp; 8 \\ 2 &amp; ...
+...4} = \frac{3s-22}{(s+1)(s-4)} = \frac{5}{s+1} - \frac{2}{s-4}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+De donde obtenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+x(t) = {\cal L}^{-1} \{X(s)  \} = 5e^{-t} + 3e^{4t}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="229" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img802.gif"
+ ALT="$\displaystyle x(t) = {\cal L}^{-1} \{X(s) \} = 5e^{-t} + 3e^{4t}
+$">
+</DIV><P></P>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+y(t) = {\cal L} \{Y(s) \} = 5e^{-t} - 2e^{4t}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="209" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img803.gif"
+ ALT="$\displaystyle y(t) = {\cal L} \{Y(s) \} = 5e^{-t} - 2e^{4t}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+        Dada la malla eléctrica de la figura <a href="#1.15">1.15</a>, 
+        determine el valor de las corrientes <IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img804.gif"
+ ALT="$ i_1$"> y <IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img805.gif"
+ ALT="$ i_2$">, si inicialmente valen cero. 
+            <P align="center"><a name="1.15"><img src="images/Malla.gif" width="292" height="140"></a> 
+      <DIV ALIGN="CENTER">
+
+<A NAME="malla1"></A>
+        Figura 1.15</DIV>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Puesto que la segunda ley de Kirchhoff establece que la suma algebraica de las ca&iacute;das de voltaje alrededor de cualquier malla cerrada es cero, tenemos que:
+
+<P>
+
+<UL>
+<LI>Para la malla <B>KLMNK</B>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+-10i_1 - 2 \frac{dti_1}{dt} + 4 \frac{di_2}{dt} + 20 i_2 = 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="231" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.gif"
+ ALT="$\displaystyle -10i_1 - 2 \frac{dti_1}{dt} + 4 \frac{di_2}{dt} + 20 i_2 = 0
+$">
+</DIV><P></P>
+
+<P>
+</LI>
+<LI>Y para la malla <B>JKNPJ</B>:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+30 i - 110  + 2 \frac{di_1}{dt} + 10 i_1 = 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="197" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img808.gif"
+ ALT="$\displaystyle 30 i - 110 + 2 \frac{di_1}{dt} + 10 i_1 = 0
+$">
+</DIV><P></P>
+
+<P>
+</LI>
+</UL>
+
+<P>
+De donde obtenemos el siguiente sistema:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+-5i_1 - \frac{di_1}{dt} + 2 \frac{di_2}{dt} + 10i_2 & = & 0 \\
+\frac{di_1}{dt} + 20 i_1 + 15i_2 & = & 55  \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table35">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="180" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img809.gif"
+ ALT="$\displaystyle -5i_1 - \frac{di_1}{dt} + 2 \frac{di_2}{dt} + 10i_2$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="124" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img810.gif"
+ ALT="$\displaystyle \frac{di_1}{dt} + 20 i_1 + 15i_2$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img811.gif"
+ ALT="$\displaystyle 55$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Tomando transformada de Laplace y usando las condiciones iniciales, <!-- MATH
+ $i_1(0)=i_2(0)=0$
+ -->
+<IMG
+ WIDTH="119" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img812.gif"
+ ALT="$ i_1(0)=i_2(0)=0$">, obtenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left( s + 5 \right)i_1 - \left(2s + 10  \right)i_2 & = & 0 \\
+\left( s + 20 \right)i_1 + 15i_2 & = & \frac{55}{s} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table36">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="163" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img813.gif"
+ ALT="$\displaystyle \left( s + 5 \right)i_1 - \left(2s + 10 \right)i_2$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="121" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img814.gif"
+ ALT="$\displaystyle \left( s + 20 \right)i_1 + 15i_2$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="23" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img815.gif"
+ ALT="$\displaystyle \frac{55}{s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Observe que de la primera ecuaci&oacute;n <IMG
+ WIDTH="57" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img816.gif"
+ ALT="$ i_1=2i_2$">, de modo que la segunda ecuaci&oacute;n se transforma en
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+i_2 = \frac{55}{s \left(2s + 55  \right)} = \frac{1}{s} - \frac{2}{2s+55}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="221" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img817.gif"
+ ALT="$\displaystyle i_2 = \frac{55}{s \left(2s + 55 \right)} = \frac{1}{s} - \frac{2}{2s+55}
+$">
+</DIV><P></P>
+
+<P>
+Entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+i_2(t)  =  1 - e^{-\frac{55t}{2}}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="120" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img818.gif"
+ ALT="$\displaystyle i_2(t) = 1 - e^{-\frac{55t}{2}}
+$">
+</DIV><P></P>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+i_1(t) = 2i_2  = 2 - 2 e^{-\frac{55t}{2}}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="169" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img819.gif"
+ ALT="$\displaystyle i_1(t) = 2i_2 = 2 - 2 e^{-\frac{55t}{2}}
+$">
+</DIV><P></P>
+
+<P>
+y
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+i(t) = i_1(t) + i_2(t) = 3 \left(1 - e^{-\frac{55t}{2}} \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="244" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img820.gif"
+ ALT="$\displaystyle i(t) = i_1(t) + i_2(t) = 3 \left(1 - e^{-\frac{55t}{2}} \right)
+$">
+</DIV><P></P>
+
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../../"><font color="#000080" face="Arial Narrow" size="2">Inicio
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>
+
+</BODY>
+</HTML>

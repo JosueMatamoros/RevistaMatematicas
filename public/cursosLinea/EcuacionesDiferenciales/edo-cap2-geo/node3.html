@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaciones diferenciales homog&#233;neas</TITLE>
+<META NAME="description" CONTENT="Ecuaciones diferenciales homog&#233;neas">
+<META NAME="keywords" CONTENT="edo2v1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo2v1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+	<table height="35" cellSpacing="0" cellPadding="0" width="100%" border="0" id="table10">
+		<tr>
+			<td width="100%" height="1">
+			<img height="29" src="images/Encabezado-de-capitulos.png" width="356" border="0"> 
+			<table id="table11" cellSpacing="0" cellPadding="0" width="100%" bgColor="#808080" border="0">
+				<tr>
+					<td height="4">
+					<table id="table12" cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<tr>
+							<td height="1"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div align="left">
+	<div align="left">
+		<table height="1" width="100%" border="0" class="table13">
+			<tr>
+				<td width="191" height="1">
+				<img height="10" src="images/cap-aplicaciones1er-orden.gif" width="373" border="0"></td>
+				<td width="100%" height="1">
+				<p align="right">
+				<font face="Arial Narrow" color="#808080" size="2">|Instituto 
+				Tecnol&oacute;gico de Costa Rica|Escuela de Matem&aacute;tica| </font>
+				<font face="Arial Narrow" color="#000080" size="2">
+				<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni 
+				Figueroa M.</a></font></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<p><br>
+<font size="2"><a href="./">1</a><font color="#000080">&nbsp; </font>
+<a href="node2.html">2</a><font color="#000080">&nbsp; </font>
+3<font color="#000080">&nbsp; </font>
+<a href="node5.html">4</a><font color="#000080">&nbsp; <a href="node7.html">5</a>&nbsp;
+<a href="node9.html">6</a>&nbsp; <a href="node11.html">7</a>&nbsp;
+<a href="node13.html">8</a> <a href="node14.html">&nbsp;9</a>&nbsp;
+<a href="node15.html">10</a>&nbsp; <a href="node17.html">11</a></font></font></p>
+<center>
+<table height="37" cellSpacing="0" cellPadding="0" width="577" border="0" id="table14">
+	<tr>
+		<td width="68" height="37">&nbsp; 
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+		<td width="509" height="37">
+		<H1><A NAME="SECTION1024196609">
+		<font size="3">Ecuaciones diferenciales homog&#233;neas</font></A>
+</H1>
+
+<P>
+Existen algunas ecuaciones diferenciales que al hacer un cambio de variable adecuado  se 
+reducen a ecuaciones en variables separadas, como el ejemplo anterior.
+
+<P>
+Antes de estudiar las ecuaciones diferenciales homog&#233;neas es
+necesario definir lo que es una funci&#243;n homog&#233;nea.
+
+		<P>
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table16">
+			<tr>
+				<td width="16" bgColor="#ffcc00" height="1"><b>
+				<font color="#000080" size="2">&nbsp;</font> </b></td>
+				<td width="483" bgColor="#99cc33" height="1"><b>
+				<font color="#000080" size="2">&nbsp;Definici&oacute;n</font> </b>&nbsp;[Funciones homog&#233;neas] 
+				</td>
+			</tr>
+			<tr>
+				<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+				<td width="483" bgColor="#fffdf0" height="76">Una funci&#243;n <!-- MATH
+ $f: D \subset \mbox{$\  I \hspace{-1.23mm} R $\  }^2 \rightarrow \mbox{$\  I \hspace{-1.23mm} R $\  }$
+ -->
+<IMG
+ WIDTH="143" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$f: D \subset \mbox{$\ I \hspace{-1.23mm} R $\ }^2 \rightarrow \mbox{$\ I \hspace{-1.23mm} R $\ }$"> se dice homog&#233;nea de grado
+<IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.gif"
+ ALT="$n$"> si
+
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+f(tx,ty) = t^n f(x,y)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="138" HEIGHT="28" BORDER="0"
+ SRC="img38.gif"
+ ALT="\begin{displaymath}
+f(tx,ty) = t^n f(x,y)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+para todo <IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$t &gt; 0$"> y todo <IMG
+ WIDTH="73" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$(x,y) \in D$">.
+
+				</td>
+			</tr>
+		</table>
+		<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font>
+
+<P>
+
+<OL>
+<LI>La funci&#243;n <!-- MATH
+ $f(x,y)= \frac{1}{\sqrt{x+y}}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$f(x,y)= \frac{1}{\sqrt{x+y}}$"> es homogé&#233;nea
+de grado <IMG
+ WIDTH="13" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\frac{1}{2}$">.
+
+<P>
+</LI>
+<LI>Las funciones <!-- MATH
+ $f(x,y)=e{\frac{x}{y} }$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$f(x,y)=e{\frac{x}{y} }$">, <!-- MATH
+ $f(x,y)= \frac{x^2 -
+y^2}{x^2 + y^2}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$f(x,y)= \frac{x^2 -
+y^2}{x^2 + y^2} $">, <!-- MATH
+ $f(x,y)=\frac{x}{2x+y}$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.gif"
+ ALT="$f(x,y)=\frac{x}{2x+y}$"> son homog&#233;neas de
+grado 0.
+
+<P>
+</LI>
+<LI>Las funciones <!-- MATH
+ $f(x,y)= x^2 + y^2$
+ -->
+<IMG
+ WIDTH="122" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.gif"
+ ALT="$f(x,y)= x^2 + y^2$">, <IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.gif"
+ ALT="$f(x,y)=xy$">,
+<!-- MATH
+ $f(x,y)=x^2-2xy+y^2$
+ -->
+<IMG
+ WIDTH="167" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="$f(x,y)=x^2-2xy+y^2$"> son homog&#233;neas de grado 2.
+
+<P>
+</LI>
+</OL>
+
+<P>
+Ahora definimos lo que es una ecuaci&#243;n diferencial homog&#233;nea.<P>
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table17">
+			<tr>
+				<td width="16" bgColor="#ffcc00" height="1"><b>
+				<font color="#000080" size="2">&nbsp;</font> </b></td>
+				<td width="483" bgColor="#99cc33" height="1"><b>
+				<font color="#000080" size="2">&nbsp;Definici&oacute;n</font> </b>[Ecuaci&#243;n diferencial homog&#233;nea]
+				</td>
+			</tr>
+			<tr>
+				<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+				<td width="483" bgColor="#fffdf0" height="76">&nbsp;Una ecuaci&#243;n diferencial ordinaria de primer orden, <!-- MATH
+ $y^{\prime}
+= f(x,y)$
+ -->
+<IMG
+ WIDTH="84" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.gif"
+ ALT="$y^{\prime}
+= f(x,y)$">, es homog&#233;nea <A NAME="88"></A> si la
+funci&#243;n <IMG
+ WIDTH="49" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.gif"
+ ALT="$f(x,y)$"> es homog&#233;nea de orden cero.
+
+</td>
+			</tr>
+		</table>
+
+<P>
+&nbsp;<P>
+<B>Observaci&#243;n:</B> si la ecuaci&#243;n diferencial est&#225; escrita en la
+forma
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+M(x,y) dx + N(x,y) dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="187" HEIGHT="28" BORDER="0"
+ SRC="img51.gif"
+ ALT="\begin{displaymath}
+M(x,y) dx + N(x,y) dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+ser&#237;a homog&#233;nea s&#237; y s&#243;lo s&#237; los coeficientes <IMG
+ WIDTH="57" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.gif"
+ ALT="$M(x,y)$"> y
+<IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.gif"
+ ALT="$N(x,y)$"> son funciones homog&#233;neos del mismo grado.
+
+		<P>
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table18">
+			<tr>
+				<td width="16" bgColor="#ffcc00" height="1"><b>
+				<font color="#000080" size="2">&nbsp;</font> </b></td>
+				<td width="483" bgColor="#99cc33" height="1"><b>
+				<font color="#000080" size="2">&nbsp;Teorema</font></b></td>
+			</tr>
+			<tr>
+				<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+				<td width="483" bgColor="#fffdf0" height="76">Si la ecuaci&#243;n diferencial ordinaria de primer orden
+
+				<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = f(x,y)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="79" HEIGHT="28" BORDER="0"
+ SRC="img54.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = f(x,y)
+\end{displaymath}">
+</DIV>
+<P></P>
+
+<P>
+es homog&#233;nea, entonces el cambio de variable <IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$y=ux$"> la reduce a
+una ecuaci&#243;n diferencial en variables separadas.
+
+				<p>&nbsp;</td>
+				</tr>
+			</table>
+
+<P>
+&nbsp;<P>
+<B>Demostraci&#243;n:</B>
+
+			<P>
+Al hacer la sustituci&#243;n obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x u^{\prime} +  u = f(x, x u)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="126" HEIGHT="28" BORDER="0"
+ SRC="img55.gif"
+ ALT="\begin{displaymath}
+x u^{\prime} + u = f(x, x u)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Pero como <IMG
+ WIDTH="49" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.gif"
+ ALT="$f(x,y)$"> es una funci&#243;n homog&#233;nea de grado cero tenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x \frac{du}{dx} +  u = x^0 f(1,u)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="140" HEIGHT="39" BORDER="0"
+ SRC="img56.gif"
+ ALT="\begin{displaymath}
+x \frac{du}{dx} + u = x^0 f(1,u)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+de donde
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x \frac{du}{dx} = f(1,u) - u \Rightarrow \frac{du}{f(1,u) - u} = \frac{dx}{x}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="269" HEIGHT="43" BORDER="0"
+ SRC="img57.gif"
+ ALT="\begin{displaymath}
+x \frac{du}{dx} = f(1,u) - u \Rightarrow \frac{du}{f(1,u) - u} = \frac{dx}{x}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+la cual es separable, como se quer&#237;a.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><P>
+&nbsp;<BR>
+Resuelva la ecuaci&#243;n diferencial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left(x^2 + y^2 \right) dx +  xy dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="165" HEIGHT="30" BORDER="0"
+ SRC="img58.gif"
+ ALT="\begin{displaymath}
+\left(x^2 + y^2 \right) dx + xy dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+La ecuaci&#243;n diferencial es homog&#233;nea pues  <!-- MATH
+ $M(x,y) = x^2 +
+y^2$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.gif"
+ ALT="$M(x,y) = x^2 +
+y^2$"> y <IMG
+ WIDTH="93" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.gif"
+ ALT="$N(x,y) = xy$"> son homog&#233;neas de grado dos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+M(tx,ty) & = & \left(t x  \right)^2 + \left(t y   \right)^2 = t^2 \left( x^2 + y^2 \right) = t^2 M(x,y)  \\
+N(tx,ty) & = & \left(t x \right) \left( t y \right) = t^2 \left( xy \right) = t^2 N(x,y)  \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="387" HEIGHT="46" BORDER="0"
+ SRC="img61.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+M(tx,ty) &amp; = &amp; \left(t x \right)^2 + \l...
+...\right) = t^2 \left( xy \right) = t^2 N(x,y) \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Haciendo la sustituci&#243;n
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\left(x^2 + \left(u x  \right)^2    \right) dx + x \left( u y \right) \left( x du + u dx  \right) & = &  0 \\
+x^2 \left( 1 + 2 u^2 \right) dx + u x^3 du & = & 0 \\
+x^3 \left(\frac{1}{x} dx + \frac{u}{1 + 2 u^2} du    \right) & = & 0 \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="309" HEIGHT="83" BORDER="0"
+ SRC="img62.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\left(x^2 + \left(u x \right)^2 \right)...
+... dx + \frac{u}{1 + 2 u^2} du \right) &amp; = &amp; 0 \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+de donde
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{1}{x} dx + \frac{u}{1 + 2 u^2} du =0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="149" HEIGHT="40" BORDER="0"
+ SRC="img63.gif"
+ ALT="\begin{displaymath}
+\frac{1}{x} dx + \frac{u}{1 + 2 u^2} du =0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando y volviendo a las variables <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.gif"
+ ALT="$x$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$y$"> obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+Ln \mid x \mid + \frac{1}{4} Ln \mid 1 + 2 \left(\frac{y}{x} \right)^2  \mid =  c \Rightarrow x^4 + 2 x^2 y^2 = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="352" HEIGHT="39" BORDER="0"
+ SRC="img66.gif"
+ ALT="\begin{displaymath}
+Ln \mid x \mid + \frac{1}{4} Ln \mid 1 + 2 \left(\frac{y}{x} \right)^2 \mid = c \Rightarrow x^4 + 2 x^2 y^2 = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Note que <IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.gif"
+ ALT="$x=0$"> es una soluci&#243;n singular de la ecuaci&#243;n diferencial dada.
+
+			<P>
+&nbsp;<P>
+<B>Observaci&#243;n:</B> Cuando la ecuaci&#243;n diferencial homog&#233;nea est&#225; escrita en la forma
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+M(x,y) dx + N(x,y) dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="187" HEIGHT="28" BORDER="0"
+ SRC="img51.gif"
+ ALT="\begin{displaymath}
+M(x,y) dx + N(x,y) dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+conviene m&#225;s rescribirla en la forma
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} = -\frac{M(x,y)}{N(x,y)}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="109" HEIGHT="44" BORDER="0"
+ SRC="img68.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} = -\frac{M(x,y)}{N(x,y)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P> 
+
+<P>
+y aplicar qu&#237; el cambio de variable <IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$y=ux$">.
+
+<P>
+<font color="#008000">Ejemplo</font>
+
+			<P>
+<BR>
+Resuelva la ecuaci&#243;n diferencial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x y^{\prime} = \sqrt{x^2 - y^2 } + y
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="137" HEIGHT="28" BORDER="0"
+ SRC="img69.gif"
+ ALT="\begin{displaymath}
+x y^{\prime} = \sqrt{x^2 - y^2 } + y
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Factorizando <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.gif"
+ ALT="$x$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = \sqrt{1 - \left( \frac{y}{x}  \right)^2} + \frac{y}{x}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="147" HEIGHT="45" BORDER="0"
+ SRC="img70.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = \sqrt{1 - \left( \frac{y}{x} \right)^2} + \frac{y}{x}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Haciendo la sustituci&#243;n <IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$y=ux$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{du}{\sqrt{1- u^2}} = \frac{dx}{x}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="100" HEIGHT="43" BORDER="0"
+ SRC="img71.gif"
+ ALT="\begin{displaymath}
+\frac{du}{\sqrt{1- u^2}} = \frac{dx}{x}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+ArcSen(u)  = Ln \mid x \mid  + Ln \mid c \mid
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="213" HEIGHT="28" BORDER="0"
+ SRC="img72.gif"
+ ALT="\begin{displaymath}
+ArcSen(u) = Ln \mid x \mid + Ln \mid c \mid
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Y despejando <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$y$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+& \Rightarrow &  arcsen\left( \frac{y}{x}  \right) = Ln \left( cx \right) \\
+& \Rightarrow & y = Sen \left(Ln \left( cx \right) \right) \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="178" HEIGHT="45" BORDER="0"
+ SRC="img73.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+&amp; \Rightarrow &amp; arcsen\left( \frac{y}{x...
+...&amp; y = Sen \left(Ln \left( cx \right) \right) \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<B>Observaci&#243;n:</B> al dividir por el factor <!-- MATH
+ $x \sqrt{1 - u^2}$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$x \sqrt{1 - u^2} $"> se pudo
+haber perdido algunas soluciones, pero <IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.gif"
+ ALT="$x=0$"> no es soluci&#243;n y <!-- MATH
+ $1
+- \frac{x^2}{y^2} =0 \Rightarrow y = \pm x$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$1
+- \frac{x^2}{y^2} =0 \Rightarrow y = \pm x$"> que son soluciones
+singulares.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS0"><STRONG>Subsecciones</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html89"
+  HREF="node4.html">Ejercicios</A>
+</UL>
+			<p>&nbsp; </p>
+			<p>&nbsp; <!--Table of Child-Links--></p>
+			<hr color="#c0c0c0" SIZE="0"><center>
+			<p align="center"><a href="../">
+			<font face="Arial Narrow" color="#000080" size="2"><br>
+			</font></a><font face="Arial Narrow" color="#808080" size="2">
+			<a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a><a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/"></a><a target="_blank" href="https://tec.ac.cr"></a></font> </p>
+			</center></td>
+		</tr>
+	</table>
+	<p>&nbsp;</p>
+</center>
+
+<H1>&nbsp;</H1>
+<H1>&nbsp;</H1>
+</BODY>
+</HTML>

@@ -1,0 +1,1341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>La transformada inversa de Laplace</TITLE>
+<META NAME="description" CONTENT="La transformada inversa de Laplace">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00130000000000000000"></A> <A NAME="573"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table27">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table28">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table29">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" id="table30">
+      <tr>
+        <td width="364" height="1">
+		<img border="0" src="images/caps.png" width="360" height="10"></td>
+        <td width="50%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|</font><font color="#000080" face="Arial Narrow" size="2">&nbsp;
+			<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; 4&nbsp; <a href="node5.html">5</a>&nbsp;
+<a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table31">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<p><b>
+La transformada inversa de Laplace
+</b>
+
+</p>
+
+<P>
+Al aplicar la transformada de Laplace a una ecuaci&#243;n diferencial
+la convertimos en una ecuaci&#243;n algebraica, la cual podemos
+resolver para <IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$ Y(s)$">, es decir, <!-- MATH
+ $Y(s) = G(S)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.gif"
+ ALT="$ Y(s) = G(S)$">. Ahora, como <!-- MATH
+ ${\cal
+L} \{y(t) \} = Y(s)$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.gif"
+ ALT="$ {\cal
+L} \{y(t) \} = Y(s)$"> si pudi&#233;ramos devolvernos obtendr&#237;amos la
+soluci&#243;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$ y(t)$"> que buscamos. Es decir, necesitamos de la
+transformada inversa <!-- MATH
+ ${\cal L}^{-1} \{Y(s) \}$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.gif"
+ ALT="$ {\cal L}^{-1} \{Y(s) \}$">, para hallar la
+funci&#243;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$ y(t)$">
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+y(t) = {\cal L}^{-1} \{F(s) \} = {\cal L}^{-1} \{ G(s) \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="225" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.gif"
+ ALT="$\displaystyle y(t) = {\cal L}^{-1} \{F(s) \} = {\cal L}^{-1} \{ G(s) \}
+$">
+</DIV><P></P>
+
+<P>
+Entonces definamos la transformada inversa.
+
+<p>&nbsp;<div align="center">
+  <center>
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table32">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Transformada inversa de Laplace]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> es la transformada de Laplace de una funci&#243;n continua
+<IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">, es decir, <!-- MATH
+ ${\cal L} \{ f(t)\} = F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$">, entonces la
+transformada inversa de Laplace de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$">, escrita <!-- MATH
+ ${\cal L}^{-1}
+\{ F(s) \}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.gif"
+ ALT="$ {\cal L}^{-1}
+\{ F(s) \}$"> es <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">, es decir, <!-- MATH
+ ${\cal L}^{-1} \{F(s) \} =f(t)$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.gif"
+ ALT="$ {\cal L}^{-1} \{F(s) \} =f(t)$">
+
+</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<p align="left"><br>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="103" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Puesto que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ Cos(2t) \} = \frac{s}{s^2 + 4}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="151" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.gif"
+ ALT="$\displaystyle {\cal L} \{ Cos(2t) \} = \frac{s}{s^2 + 4}
+$">
+</DIV><P></P>
+
+<P>
+tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} = Cos(2t)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="178" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} = Cos(2t)
+$">
+</DIV><P></P>
+
+<P>
+<B>Observaci&#243;n</B> existe un problema potencial al trabajar con
+la transformada inversa, puede no ser &#250;nica. En efecto, es
+posible que <!-- MATH
+ ${\cal L} \{f(t) \} = {\cal L} \{ g(t) \}$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$ {\cal L} \{f(t) \} = {\cal L} \{ g(t) \}$">, siendo
+<!-- MATH
+ $f(t) \neq g(t)$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.gif"
+ ALT="$ f(t) \neq g(t)$">. Para nuestro prop&#243;sito esto no es tan malo
+como parece, pues, si <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$"> son continuas y de orden
+exponencial en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$"> y <!-- MATH
+ ${\cal L} \{ f(t)\} = {\cal L} \{
+g(t) \}$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$ {\cal L} \{f(t) \} = {\cal L} \{ g(t) \}$">, entonces <IMG
+ WIDTH="78" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img238.gif"
+ ALT="$ f(t)=g(t)$">; pero, si <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$"> son continuas y
+de orden exponencial en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$"> y <!-- MATH
+ ${\cal L} \{ f(t) \} =
+{\cal } \{g(t) \}$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img239.gif"
+ ALT="$ {\cal L} \{ f(t) \} =
+{\cal } \{g(t) \}$">, entonces se puede demostrar que las funciones
+<IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$"> son <I>casi</I> iguales; esto quiere decir, que pueden
+diferir s&#243;lo en puntos de discontinuidad.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Calcule <!-- MATH
+ ${\cal L} \{ f(t)\}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $">, donde <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> esta dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t) = \begin{cases}
+ 1 & \text{Si $t \geq 0$, $t \neq 1$, $t\neq 2$\  } \\
+ 3 & \text{Si $t=1$} \\
+ 4 & \text{Si $t=2$} \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="240" HEIGHT="85" ALIGN="MIDDLE" BORDER="0"
+ SRC="img240.gif"
+ ALT="$\displaystyle f(t) = \begin{cases}
+1 &amp; \text{Si $t \geq 0$, $t \neq 1$, $t\neq 2$\ } \\
+3 &amp; \text{Si $t=1$} \\
+4 &amp; \text{Si $t=2$} \\
+\end{cases}
+$">
+</DIV><P></P>
+
+<P>
+&#191;Qu&#233; se puede concluir ?
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+Usando la definici&#243;n de transformada
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{g(t) \} & = & \int_0^{\infty} e^{-st}g(t) dt \\
+& = & \int_0^{\infty} e^{-st} dt \\
+& = & -\frac{e^{-st}}{s} \biggr|^{\infty}_0 \\
+& = & \frac{1}{s} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table42">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img241.gif"
+ ALT="$\displaystyle {\cal L} \{g(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="104" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img242.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st}g(t) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img243.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="67" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\displaystyle -\frac{e^{-st}}{s} \biggr\vert^{\infty}_0$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="15" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img245.gif"
+ ALT="$\displaystyle \frac{1}{s}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Pero, anteriormente hemos comprobado que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ 1 \} = \frac{1}{s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="71" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img246.gif"
+ ALT="$\displaystyle {\cal L} \{ 1 \} = \frac{1}{s}
+$">
+</DIV><P></P>
+
+<P>
+con lo cual las funciones <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> y <IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.gif"
+ ALT="$ g(t)$"> tienen la misma transformada, de este modo, la transformada inversa de
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+F(s)=\frac{1}{s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="68" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img247.gif"
+ ALT="$\displaystyle F(s)=\frac{1}{s}
+$">
+</DIV><P></P>
+
+<P>
+no es &#250;nica.
+
+<P>
+El siguiente resultado establece el comportamiento de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> en infinito.
+
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table43">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Comportamiento de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> en infinito]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f:[0,+ \infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&#243;n continua a
+trozos y de orden exponencial en <!-- MATH
+ $[0, + \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{s \rightarrow \infty} {\cal L} \{ f(t) \} = \lim_{s \rightarrow \infty} F(s) = 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="208" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.gif"
+ ALT="$\displaystyle \lim_{s \rightarrow \infty} {\cal L} \{ f(t) \} = \lim_{s \rightarrow \infty} F(s) = 0
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&#243;n</B> 
+<BR>
+<P>
+Puesto que <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> es continua a trozos en <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">
+necesariamente es acotada en este intervalo; o sea, <!-- MATH
+ $\|f(t) \| <
+M$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img249.gif"
+ ALT="$ \Vert f(t) \Vert &lt;
+M$"> para todo <!-- MATH
+ $t \in [0,\infty[$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.gif"
+ ALT="$ t \in [0,\infty[$">. De donde
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\biggr| {\cal L} \left\{ f(t) \right\}  \biggr| \leq  \int_0^{\infty} \mid f(t) \mid e^{-st} dt = -M \frac{e^{-st}}{s} \biggr|_0^{\infty} = \frac{M}{s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="363" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.gif"
+ ALT="$\displaystyle \biggr\vert {\cal L} \left\{ f(t) \right\} \biggr\vert \leq \int_...
+... \mid e^{-st} dt = -M \frac{e^{-st}}{s} \biggr\vert _0^{\infty} = \frac{M}{s}
+$">
+</DIV><P></P>
+
+<P>
+y as&iacute; <!-- MATH
+ $\mid {\cal L} \left\{ f(t) \right\} \mid \rightarrow 0$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.gif"
+ ALT="$ \mid {\cal L} \left\{ f(t) \right\} \mid \rightarrow 0$"> cuando <!-- MATH
+ $s \rightarrow \infty$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.gif"
+ ALT="$ s \rightarrow \infty$">, de modo que <!-- MATH
+ ${\cal L} \left\{ f(t) \right\} \rightarrow 0$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img253.gif"
+ ALT="$ {\cal L} \left\{ f(t) \right\} \rightarrow 0$"> cuando <!-- MATH
+ $s \rightarrow \infty$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.gif"
+ ALT="$ s \rightarrow \infty$">.
+
+<P>
+&nbsp;<P>
+<B>Observaci&#243;n:</B> el resultado anterior es v&#225;lido
+independientemente de que <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> sea continua a trozos o de orden
+exponencial, basta con que <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> existe.
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+&#191; Porqu&#233; no existe una funci&#243;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> tal que <!-- MATH
+ ${\cal L} \{
+f(t) \} = \frac{s}{s+1}$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.gif"
+ ALT="$ {\cal L} \{
+f(t) \} = \frac{s}{s+1}$"> ?
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Suponga que existe, entonces por el teorema anterior
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{s \rightarrow \infty} \frac{s}{s+1} = 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="105" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img255.gif"
+ ALT="$\displaystyle \lim_{s \rightarrow \infty} \frac{s}{s+1} = 0
+$">
+</DIV><P></P>
+
+<P>
+lo cual es falso; por lo tanto no existe tal funci&#243;n.
+
+<P>
+<B>Observaci&#243;n:</B> con un argumento similar podemos concluir que
+no existen una funci&#243;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> tal que <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img256.gif"
+ ALT="$ F(s)=1$">, <!-- MATH
+ $F(s) = s^2$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.gif"
+ ALT="$ F(s) = s^2$">,
+<!-- MATH
+ $F(s)=Sen(s)$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ F(s)=Sen(s)$">, <!-- MATH
+ $F(s)=Ln(s)$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.gif"
+ ALT="$ F(s)=Ln(s)$">, es decir, estas funciones no tienen
+transformada inversa. Por otro lado, una funci&#243;n racional
+<!-- MATH
+ $F(s)=\frac{P(s)}{Q(s)}$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img260.gif"
+ ALT="$ F(s)=\frac{P(s)}{Q(s)}$"> es la transformada de alguna funci&#243;n
+<IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> si el grado del numerador <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img261.gif"
+ ALT="$ P(s)$"> es menor que la del
+denominador <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.gif"
+ ALT="$ Q(s)$">.
+
+<P>
+Los siguientes resultados son &#250;tiles en an&#225;lisis de sistemas
+de control autom&#225;tico, especialmente cuando se trazan
+gr&#225;ficas.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table44">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Del valor inicial]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <!-- MATH
+ ${\cal L} \left\{ f(t) \right\}=F(s)$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.gif"
+ ALT="$ {\cal L} \left\{ f(t) \right\}=F(s)$"> y <!-- MATH
+ $\lim_{t \rightarrow 0^+} f(t)$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.gif"
+ ALT="$ \lim_{t \rightarrow 0^+} f(t)$"> existe y es igual a <IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.gif"
+ ALT="$ f(0)$">,<p>&nbsp;entonces </p>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow 0} f(t) = \lim_{s \rightarrow + \infty} sF(s)=f(0)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="213" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow 0} f(t) = \lim_{s \rightarrow + \infty} sF(s)=f(0)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P>
+&nbsp;<P>
+<B>Demostraci&#243;n:</B> 
+<BR>
+Como
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{f^{\prime}(t)  \right\} = sF(s) - f(0)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="175" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.gif"
+ ALT="$\displaystyle {\cal L} \left\{f^{\prime}(t) \right\} = sF(s) - f(0)
+$">
+</DIV><P></P>
+
+<P>
+y
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{s \rightarrow + \infty} {\cal L} \left\{ f^{\prime}(t) \right\} = 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="138" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.gif"
+ ALT="$\displaystyle \lim_{s \rightarrow + \infty} {\cal L} \left\{ f^{\prime}(t) \right\} = 0
+$">
+</DIV><P></P>
+
+<P>
+siempre y cuando <!-- MATH
+ $f^{\prime}(t)$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.gif"
+ ALT="$ f^{\prime}(t)$"> sea continua a trozos y de orden exponencial. Tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{s \rightarrow + \infty} sF(s) = f(0) = \lim_{t \rightarrow 0^+} f(t)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="222" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.gif"
+ ALT="$\displaystyle \lim_{s \rightarrow + \infty} sF(s) = f(0) = \lim_{t \rightarrow 0^+} f(t)
+$">
+</DIV><P></P>
+
+<P>
+siempre y cuando <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> sea continua por la derecha en <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img271.gif"
+ ALT="$ t=0$">.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>
+<BR>
+Si <!-- MATH
+ $f(t)=Cos(t)$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.gif"
+ ALT="$ f(t)=Cos(t)$">, calcule <!-- MATH
+ $\lim_{s \rightarrow \infty} sF(s)$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.gif"
+ ALT="$ \lim_{s \rightarrow \infty} sF(s)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Usando el teorema del valor inicial
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{s \rightarrow \infty} sF(s) = f(0) = 1
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="157" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.gif"
+ ALT="$\displaystyle \lim_{s \rightarrow \infty} sF(s) = f(0) = 1
+$">
+</DIV><P></P>
+
+<P>
+Note que no fue necesario calcular <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$">.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table45">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Del valor final]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <!-- MATH
+ ${\cal L} \left\{f(t) \right\}=F(s)$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.gif"
+ ALT="$ {\cal L} \left\{ f(t) \right\}=F(s)$"> y el l&iacute;mite <!-- MATH
+ $\lim_{t \rightarrow \infty} f(t)$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.gif"
+ ALT="$ \lim_{t \rightarrow \infty} f(t)$"> existe, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{t \rightarrow + \infty} f(t) = \lim_{s \rightarrow 0} sF(s)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="162" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.gif"
+ ALT="$\displaystyle \lim_{t \rightarrow + \infty} f(t) = \lim_{s \rightarrow 0} sF(s)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n:</B> 
+<BR>
+An&aacute;loga a la anterior.
+
+<P>
+El siguiente teorema establece la linealidad de la transformada inversa.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table46">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Linealidad de la transformada inversa]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sean <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$ f$"> y <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$ g$"> funciones continuas a trozos y de orden exponencial en  el intervalo <!-- MATH
+ $[0,+ \infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$"> tales que <!-- MATH
+ ${\cal L} \{f(t) \}=F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$"> y <!-- MATH
+ ${\cal L} \{g(t) \}=G(s)$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.gif"
+ ALT="$ {\cal L} \{ g(t) \} = G(s)$"> , entonces
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \{ \alpha F(s) + G(s) \} & = &  \alpha {\cal L}^{-1} \{F(s) \} + {\cal L}^{-1} \{G(s) \}  \\
+& = & \alpha f(t) + g(t)  \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table47">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="141" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \{ \alpha F(s) + G(s) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="185" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \alpha {\cal L}^{-1} \{F(s) \} + {\cal L}^{-1} \{G(s) \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="87" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.gif"
+ ALT="$\displaystyle \alpha f(t) + g(t)$"></TD>
+</TR>
+</TABLE></div>
+		</DIV>
+&nbsp;</td>
+    </tr>
+  </table>
+  	<p>
+<BR CLEAR="ALL">
+
+	</p>
+
+<P>
+<font color="#008000">Ejemplo </font>
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="166" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+Para usar la propiedad de linealidad de la transformada inversa de Laplace primero debemos expandir
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="111" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img281.gif"
+ ALT="$\displaystyle \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)}
+$">
+</DIV><P></P>
+
+<P>
+en fraciones parciales
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{1}{s-2} - \frac{s}{s^2 + 4} + \frac{2}{s^2 + 4}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="172" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img282.gif"
+ ALT="$\displaystyle \frac{1}{s-2} - \frac{s}{s^2 + 4} + \frac{2}{s^2 + 4}
+$">
+</DIV><P></P>
+
+<P>
+ahora s&iacute;
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right) }
+ \right\} & = &  {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} - {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} + {\cal L}^{-1} \left\{ \frac{2}{s^2 + 4}
+\right\} \\
+& = &  e^{2t} - Cos(2t) + Sen(2t) \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table48">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="166" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>
+<IMG
+ WIDTH="320" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img283.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} - {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} + {\cal L}^{-1} \left\{ \frac{2}{s^2 + 4}
+\right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="169" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img284.gif"
+ ALT="$\displaystyle e^{2t} - Cos(2t) + Sen(2t)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+El siguiente ejemplo ilustra el proceso que vamos a usar en la soluci&oacute;n de ecuaciones diferenciales mediante Laplace. Es un ejemplo que puede ser resuelto de manera m&aacute;s eficiente con las técnicas ya estudiadas, pero el objetivo es aplicar algunas de las propiedades enunciadas hasta ahora e introducir la técnica de soluci&oacute;n de ecuaciones diferenciales.
+
+<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+Use la transformada de Laplace para resolver el problema de valor inicial
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} - 3y & = &  e^{2t} \\
+y(0) & = & 1  \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="129" HEIGHT="54" BORDER="0"
+ SRC="img285.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} - 3y &amp; = &amp; e^{2t} \\
+y(0) &amp; = &amp; 1 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+
+<P>
+Aplicando transformada de Laplace a ambos lados de la ecuaci&oacute;n diferencial
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{y^{\prime} - 3y   \} & = & {\cal L} \{ e^{2t}  \} \\
+{\cal L} \{ y^{\prime} \} - 3 {\cal L} \{ y \} & = & \frac{1}{s-2} \\
+sY(s)- y(0) - 3Y(s) & = & \frac{1}{s-2} \\
+sY(s)- 1 - 3Y(s) & = & \frac{1}{s-2} \\
+Y(s) & = & \frac{s-1}{(s-2)(s-3)} \\
+Y(s) & = & -\frac{1}{s-2} + \frac{2}{s-3} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table49">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="79" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img286.gif"
+ ALT="$\displaystyle {\cal L} \{y^{\prime} - 3y \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="49" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.gif"
+ ALT="$\displaystyle {\cal L} \{ e^{2t} \}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="105" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.gif"
+ ALT="$\displaystyle {\cal L} \{ y^{\prime} \} - 3 {\cal L} \{ y \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="42" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.gif"
+ ALT="$\displaystyle \frac{1}{s-2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="151" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.gif"
+ ALT="$\displaystyle sY(s)- y(0) - 3Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="42" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.gif"
+ ALT="$\displaystyle \frac{1}{s-2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="131" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.gif"
+ ALT="$\displaystyle sY(s)- 1 - 3Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="42" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.gif"
+ ALT="$\displaystyle \frac{1}{s-2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\displaystyle Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="101" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.gif"
+ ALT="$\displaystyle \frac{s-1}{(s-2)(s-3)}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\displaystyle Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="112" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.gif"
+ ALT="$\displaystyle -\frac{1}{s-2} + \frac{2}{s-3}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Ahora debemos de aplicar transformada inversa para hallar <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$ y(t)$">
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \{Y(s) \} & = & -{\cal L}^{-1}  \left\{ \frac{1}{s-2} \right\} + 2 {\cal L}^{-1}
+\left\{ \frac{1}{s-3} \right\} \\
+y(t) & = & -e^{2t} +  e^{3t} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table50">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="80" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img295.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \{Y(s) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="229" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img296.gif"
+ ALT="$\displaystyle -{\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} + 2 {\cal L}^{-1}
+\left\{ \frac{1}{s-3} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.gif"
+ ALT="$\displaystyle y(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="74" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.gif"
+ ALT="$\displaystyle -e^{2t} + e^{3t}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> est&aacute; ecuaci&oacute;n diferencial puede resolverse como una ecuaci&oacute;n lineal con factor integrante <!-- MATH
+ $\mu(t)=e^{-3t}$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img299.gif"
+ ALT="$ \mu(t)=e^{-3t}$">.<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../../"><font color="#000080" face="Arial Narrow" size="2">Inicio
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<p>&nbsp;</p>
+<div align="left">
+  &nbsp;</div>
+</BODY>
+</HTML>
+</table>

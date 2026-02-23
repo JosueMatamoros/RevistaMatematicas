@@ -1,0 +1,793 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Soluci&#243;n de una ecuaci&#243;n diferencial</TITLE>
+<META NAME="description" CONTENT="Soluci&#243;n de una ecuaci&#243;n diferencial">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+4&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node9.html"><font color="#000080">6</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node11.html"><font color="#000080">7</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node12.html"><font color="#000080">8</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node14.html"><font color="#000080">9</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node15.html"><font color="#000080">10</font></a><font color="#000080">
+</font>&nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;<b> <A NAME="SECTION-1395851263">
+<font size="3">Soluci&#243;n de una ecuaci&#243;n diferencial</font></A><font size="3">
+</font></b>
+<p>&nbsp;</p>
+
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table16">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b>&nbsp;</b></td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b><font size="2"> <span lang="en-us">&nbsp;[ Solucion de una ecuaci</span><span lang="es-cr">&oacute;n 
+		diferencial</span><span lang="en-us">]</span></font></td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Decimos que <IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$y=g(x)$"> es una soluci&#243;n de la ecuaci&#243;n
+diferencial <a NAME="185" href="node3.html#1.4"><font color="#000080">1.4</font></a>, en el intervalo <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.gif"
+ ALT="$I$"> si
+
+		<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+F(x,y,g(x),g^{(1)}(x),\ldots, g^{(n)}(x)) = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="251" HEIGHT="28" BORDER="0"
+ SRC="img57.gif"
+ ALT="\begin{displaymath}
+F(x,y,g(x),g^{(1)}(x),\ldots, g^{(n)}(x)) = 0
+\end{displaymath}">
+</DIV>
+&nbsp;</td>
+    </tr>
+  </table>
+  	<p>
+<BR CLEAR="ALL">
+	</p>
+<P></P>
+
+<P>
+para toda <IMG
+ WIDTH="40" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.gif"
+ ALT="$x \in I$">. Es decir, una soluci&#243;n, es una funci&#243;n
+<IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$g(x)$"> definida en alg&#250;n intervalo <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.gif"
+ ALT="$I$"> que al sustituirla en la
+ecuaci&#243;n la transforma en una identidad para todo <IMG
+ WIDTH="40" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.gif"
+ ALT="$x \in I$">.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font> 
+<BR>
+La funci&#243;n <!-- MATH
+ $y = \sqrt{4-x^2}$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.gif"
+ ALT="$y = \sqrt{4-x^2}$"> es soluci&#243;n de la ecuaci&#243;n
+diferencial ordinaria <!-- MATH
+ $y^{\prime} = -\frac{x}{y}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.gif"
+ ALT="$y^{\prime} = -\frac{x}{y}$"> para toda <IMG
+ WIDTH="78" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.gif"
+ ALT="$x \in
+]-2,2[$">.
+
+<P>
+Derivando la funci&#243;n <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$y$"> obtenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = - \frac{x}{\sqrt{4-x^2} } = - \frac{x}{y}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="152" HEIGHT="39" BORDER="0"
+ SRC="img62.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = - \frac{x}{\sqrt{4-x^2} } = - \frac{x}{y}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>
+<BR>
+La funci&#243;n <!-- MATH
+ $y = e^{-x} + x -1$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.gif"
+ ALT="$y = e^{-x} + x -1$"> es soluci&#243;n de la ecuaci&#243;n
+diferencial <!-- MATH
+ $y^{\prime} +y = x$
+ -->
+<IMG
+ WIDTH="74" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.gif"
+ ALT="$y^{\prime} +y = x$"> para toda <!-- MATH
+ $x \in  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$x \in \mbox{$I \hspace{-1.3mm} R$} $">.
+
+<P>
+Derivando la funci&#243;n <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$y$"> y sustituyendo obtenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} + y = -e^{-x} + 1 + e^x + x - 1 = x
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="247" HEIGHT="27" BORDER="0"
+ SRC="img66.gif"
+ ALT="\begin{displaymath}
+y^{\prime} + y = -e^{-x} + 1 + e^x + x - 1 = x
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+La funci&#243;n <!-- MATH
+ $u(x,y) = \frac{x^3}{3}e^y + 2xe^y - 2x$
+ -->
+<IMG
+ WIDTH="191" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.gif"
+ ALT="$u(x,y) = \frac{x^3}{3}e^y + 2xe^y - 2x$"> es
+soluci&#243;n de la ecuaci&#243;n diferencial parcial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial u}{\partial x} + 2
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="108" HEIGHT="44" BORDER="0"
+ SRC="img68.gif"
+ ALT="\begin{displaymath}
+\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial u}{\partial x} + 2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+en todo <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img69.gif"
+ ALT="$R^2$">.
+
+<P>
+Calculando las derivadas parciales
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{\partial u}{\partial x} = x^2e^y + 2e^y -2
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="142" HEIGHT="39" BORDER="0"
+ SRC="img70.gif"
+ ALT="\begin{displaymath}
+\frac{\partial u}{\partial x} = x^2e^y + 2e^y -2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{\partial^2 u}{\partial x \partial y} = x^2e^y + 2e^y
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="133" HEIGHT="44" BORDER="0"
+ SRC="img71.gif"
+ ALT="\begin{displaymath}
+\frac{\partial^2 u}{\partial x \partial y} = x^2e^y + 2e^y
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Al sustituir obtenemos una igualdad
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{\partial u}{\partial x} + 2 = x^2e^y + 2 e^y -2 + 2 = x^2 e^y + 2e^y = \frac{\partial^2 u}{\partial x \partial y}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="352" HEIGHT="44" BORDER="0"
+ SRC="img72.gif"
+ ALT="\begin{displaymath}
+\frac{\partial u}{\partial x} + 2 = x^2e^y + 2 e^y -2 + 2 = x^2 e^y + 2e^y = \frac{\partial^2 u}{\partial x \partial y}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Recuerde que no toda ecuaci&#243;n diferencial que se nos ocurra
+tiene soluci&#243;n, por ejemplo, para la ecuaci&#243;n diferencial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left( \frac{dy}{dx} \right) + y^2 = -1
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="117" HEIGHT="45" BORDER="0"
+ SRC="img73.gif"
+ ALT="\begin{displaymath}
+\left( \frac{dy}{dx} \right) + y^2 = -1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+no existe una funci&#243;n real derivable que la satisfaga, pues el
+lado derecho es  negativo y el lado izquierdo positivo. De aqu&#237;
+en adelante vamos a suponer que las soluciones que buscamos son
+reales y que el intervalo <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.gif"
+ ALT="$I$"> es el adecuado que permita que la
+soluci&#243;n tenga sentido.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+La funci&#243;n <!-- MATH
+ $y^3 -3x+3+3y=5$
+ -->
+<IMG
+ WIDTH="147" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$y^3 -3x+3+3y=5$"> es una soluci&#243;n de la ecuaci&#243;n
+<!-- MATH
+ $y^{\prime \prime} = -2y \left( y^{\prime} \right)^3$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$y^{\prime \prime} = -2y \left( y^{\prime} \right)^3$">.
+
+<P>
+Derivando impl&#237;citamente con respecto a <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$">, obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+3y^2 y^{\prime} - 3 + 3 y^{\prime} = 0 \Rightarrow y^{\prime} = \frac{1}{y^2 +  1}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="236" HEIGHT="41" BORDER="0"
+ SRC="img76.gif"
+ ALT="\begin{displaymath}
+3y^2 y^{\prime} - 3 + 3 y^{\prime} = 0 \Rightarrow y^{\prime} = \frac{1}{y^2 + 1}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Derivando impl&#237;citamente de nuevo, para calcular la segunda
+derivada
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime \prime} = - \frac{2y y^{\prime}}{\left( y^2 +  1 \right)^2} = - \frac{2y}{\left(y^2 + 1 \right)^3}  = -2y \left(y^{\prime}   \right)^3
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="300" HEIGHT="47" BORDER="0"
+ SRC="img77.gif"
+ ALT="\begin{displaymath}
+y^{\prime \prime} = - \frac{2y y^{\prime}}{\left( y^2 + 1 \...
+...2y}{\left(y^2 + 1 \right)^3} = -2y \left(y^{\prime} \right)^3
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Hasta este momento hemos visto ejemplos en los cuales la
+soluci&oacute;&#243;n esta dada en formas expl&#237;cita o impl&#237;cita. En los
+siguientes ejemplos se muestran situaciones un tanto diferentes.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+La curva dada en forma param&#233;trica por
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x & = &  te^t \\
+y & = & e^{-t} \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="93" HEIGHT="45" BORDER="0"
+ SRC="img78.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x &amp; = &amp; te^t \\
+y &amp; = &amp; e^{-t} \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+es soluci&#243;n de la ecuaci&#243;n diferencial <!-- MATH
+ $\left(1 + xy \right)
+y^{\prime} + y^2 = 0$
+ -->
+<IMG
+ WIDTH="140" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\left(1 + xy \right)
+y^{\prime} + y^2 = 0$">.
+
+<P>
+Calculemos <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$y^{\prime}$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = \frac{dy}{dx} = \frac{ \frac{dy}{dt} }{ \frac{dx}{dt} } = \frac{-e^{-t}}{e^t + te^t}= \frac{-e^{-2t}}{1+t}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="240" HEIGHT="51" BORDER="0"
+ SRC="img81.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = \frac{dy}{dx} = \frac{ \frac{dy}{dt} }{ \frac{dx}{dt} } = \frac{-e^{-t}}{e^t + te^t}= \frac{-e^{-2t}}{1+t}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Sustituyendo
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left( 1+ xy \right) y^{\prime} + y^2 = \left(1 + t \right) \frac{-e^{-2t}}{1+t} + e^{-2t} = -2e^{-2t} + 2e^{-2t} = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="425" HEIGHT="42" BORDER="0"
+ SRC="img82.gif"
+ ALT="\begin{displaymath}
+\left( 1+ xy \right) y^{\prime} + y^2 = \left(1 + t \right) \frac{-e^{-2t}}{1+t} + e^{-2t} = -2e^{-2t} + 2e^{-2t} = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+<P>
+La funci&#243;n
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = x \int_0^x \frac{Sen(t)}{t} dt + 4
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="159" HEIGHT="44" BORDER="0"
+ SRC="img83.gif"
+ ALT="\begin{displaymath}
+y = x \int_0^x \frac{Sen(t)}{t} dt + 4
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+es soluci&#243;n de la ecuaci&#243;n diferencial <!-- MATH
+ $xy^{\prime} = y + x
+Sen(x)$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.gif"
+ ALT="$xy^{\prime} = y + x
+Sen(x)$">.
+
+<P>
+Observe que para calcular <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$y^{\prime}$"> debemos usar el teorema
+fundamental del c&#225;lculo<SUP><a NAME="tex2html103" HREF="footnode.html#foot781"><font color="#000080">1.2</font></a></SUP>
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = \int_0^x \frac{Sen(t)}{t} dt + Sen(x)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="192" HEIGHT="44" BORDER="0"
+ SRC="img88.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = \int_0^x \frac{Sen(t)}{t} dt + Sen(x)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Sustituyendo
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+xy^{\prime} = x \left( \int_0^x \frac{Sen(t)}{t} dt + Sen(t)  \right) = y + xsen(x)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="336" HEIGHT="45" BORDER="0"
+ SRC="img89.gif"
+ ALT="\begin{displaymath}
+xy^{\prime} = x \left( \int_0^x \frac{Sen(t)}{t} dt + Sen(t) \right) = y + xsen(x)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Si la soluci&#243;n de una ecuaci&#243;n diferencial de orden <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> tiene
+<IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> constantes diferentes, diremos que dicha soluci&#243;n es la <I>
+soluci&#243;n general</I> <A NAME="277"></A> de la ecuaci&#243;n
+diferencial . Si asignamos valores a algunas o todas esas
+constantes obtenemos lo que se conoce como <I>una soluci&#243;n
+particular</I> <A NAME="278"></A>.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+<P>
+La familia de curvas <!-- MATH
+ $y = ASen(x) + BCos(x)$
+ -->
+<IMG
+ WIDTH="175" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.gif"
+ ALT="$y = ASen(x) + BCos(x)$"> es la soluci&#243;n
+general de la ecuaci&#243;n diferencial <!-- MATH
+ $y^{\prime \prime } + y = 0$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$y^{\prime \prime } + y = 0$">,
+mientras que <!-- MATH
+ $y=2Sen(x) + 3Cos(x)$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.gif"
+ ALT="$y=2Sen(x) + 3Cos(x)$"> y <IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$y=ASen(x)$"> son soluciones
+particulares.
+
+<P>
+Algunas veces, a una soluci&#243;n de una ecuaci&#243;n diferencial se
+le llama <I>integral de la ecuaci&#243;n</I> y a su gr&#225;fica <I>
+curva integral</I> <A NAME="279"></A> o <I>curva soluci&#243;n</I>.
+Como la soluci&#243;n general de una ecuaci&#243;n diferencial de orden
+<IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> tiene <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> constantes se acostumbra llamarla <I>familia
+n-param&#233;trica de soluciones</I> y se denota por
+<!-- MATH
+ $G(x,y,c_1,c_2,\ldots,c_n)=0$
+ -->
+<IMG
+ WIDTH="175" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.gif"
+ ALT="$G(x,y,c_1,c_2,\ldots,c_n)=0$">. Esto quiere decir que una
+ecuaci&#243;n diferencial tiene una cantidad infinita de soluciones
+que corresponden a la elecci&#243;n ilimitada de esos param&#233;tros.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo </font>&nbsp;<BR>
+<P>
+La familia de par&#225;bolas <IMG
+ WIDTH="97" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$y^2=2xc-c^2$"> es la soluci&#243;n general
+de la ecuaci&#243;n diferencial <!-- MATH
+ $y=2xy^{\prime} -y \left( y^{\prime}
+\right)^2$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.gif"
+ ALT="$y=2xy^{\prime} -y \left( y^{\prime}
+\right)^2$">.
+
+<P>
+Derivando impl&#237;citamente
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+2yy^{\prime} = 2c \Rightarrow y y^{\prime} = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="139" HEIGHT="27" BORDER="0"
+ SRC="img97.gif"
+ ALT="\begin{displaymath}
+2yy^{\prime} = 2c \Rightarrow y y^{\prime} = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Sustituyendo
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+2xy^{\prime} -y \left( y^{\prime} \right)^2= 2xy^{\prime} - cy^{\prime} = y^{\prime} \left(2x -c \right) = \frac{c}{y} \left(2x - c \right) = \frac{2cx-c^2}{y}= \frac{y^2}{y}= y
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="518" HEIGHT="44" BORDER="0"
+ SRC="img98.gif"
+ ALT="\begin{displaymath}
+2xy^{\prime} -y \left( y^{\prime} \right)^2= 2xy^{\prime} -...
+...y} \left(2x - c \right) = \frac{2cx-c^2}{y}= \frac{y^2}{y}= y
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+En la<font color="#000080"> </font><a href="#figura2"><font color="#000080">
+figura 2</font></a> se muestran algunas curvas soluci&#243;n.
+
+<P>
+<DIV ALIGN="CENTER">
+&nbsp;<a name="figura2"><img border="0" src="images/soluciones.gif" width="207" height="222"></a></DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 2</font></DIV>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS1"><STRONG>Subsecciones</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html104"
+  HREF="node6.html">Ejercicios</A>
+</UL>
+<p>&nbsp;<!--Table of Child-Links--><a NAME="CHILD_LINKS0"></a><hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

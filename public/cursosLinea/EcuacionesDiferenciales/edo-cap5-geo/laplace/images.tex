@@ -1,0 +1,5438 @@
+\batchmode
+\documentclass{book}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage[spanish]{babel}
+\usepackage{graphics}
+\usepackage{amsmath}%
+\providecommand{\R}{ \mbox{$I \hspace{-1.3mm} R$} } 
+
+
+
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Rho}{\textrm{R}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Chi}{\textrm{X}}
+\providecommand{\Iota}{\textrm{J}}
+\providecommand{\omicron}{\textrm{o}}
+\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Alpha}{\textrm{A}}
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+
+
+\selectlanguage{spanish}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6319}%
+$ m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6321}%
+$\displaystyle m \frac{d^2x}{dt^2} + \beta \frac{dx}{dt} + kx = f(t) \hspace{1.5cm} L \frac{d^2q}{dt^2} + \beta \frac{dq}{dt} + kq = E(t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6323}%
+$ f(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6325}%
+$ E(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6329}%
+$ D$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6333}%
+$ a \leq t \leq b$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6335}%
+$ K(s,t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6337}%
+$ t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6339}%
+$ s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6341}%
+$\displaystyle T\left( f(t) \right) = F(s) = \int_a^b K(s,t) f(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6345}%
+$ T$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6351}%
+$ a=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6353}%
+$ b = \infty$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6355}%
+$ K(s,t)=e^{-st}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6357}%
+$ y(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6359}%
+$ t
+\geq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6361}%
+$\displaystyle \int_0^{\infty} e^{-st} y(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6363}%
+$ s > s_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6369}%
+$\displaystyle y(s) = {\cal L} \{y(t) \} = \int_0^{\infty} e^{-st}y(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6371}%
+$ {\cal L} \{ 1\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6373}%
+$\displaystyle {\cal L} \{ 1 \} = \int_0^{\infty} e^{-st} dt = \frac{e^{-st}}{-s} \Biggr|^{\infty}_{0} = \frac{1}{s},
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6375}%
+$ s >0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6377}%
+$ {\cal L} \{t \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6380}%
+$\displaystyle {\cal L} \{t \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6382}%
+$\displaystyle =$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6384}%
+$\displaystyle \int_0^{\infty} t e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6388}%
+$\displaystyle \frac{te^{-st}}{-s} \Biggr|^{\infty}_{0} + \frac{1}{s} \int_0^{\infty} e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6392}%
+$\displaystyle 0 + \frac{1}{s} {\cal L} \{ 1\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6396}%
+$\displaystyle \frac{1}{s} \frac{1}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6400}%
+$\displaystyle \frac{1}{s^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6402}%
+$\displaystyle {\cal L} \{ t^n \} = \frac{n!}{s^{n+1}}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6406}%
+$ n \geq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6408}%
+$ {\cal L} \{ e^{kt} \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6411}%
+$\displaystyle {\cal L} \{ e^{kt} \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6415}%
+$\displaystyle \int_0^{\infty} e^{-st} e^{kt} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6419}%
+$\displaystyle \int_0^{\infty} e^{(k-s)t} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6423}%
+$\displaystyle \frac{e^{(k-s)t}}{k-s} \Biggr|^{\infty}_{0}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6427}%
+$\displaystyle \frac{1}{s-k}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6429}%
+$ s > k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6431}%
+$ Sen(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6433}%
+$ Cos(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6435}%
+$ {\cal L} \{Sen(kt) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6437}%
+$ {\cal L} \{Cos(kt) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6440}%
+$\displaystyle {\cal L} \{ Sen(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6444}%
+$\displaystyle \int_0^{\infty} e^{-st} Sen(kt) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6448}%
+$\displaystyle - \frac{e^{-st}Sen(kt)}{s} \biggr|^{\infty}_{0}  + \frac{k}{s} \int_0^{\infty} e^{-st} Cos(kt) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6452}%
+$\displaystyle 0 + \frac{k}{s} {\cal L} \{ Cos(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6456}%
+$\displaystyle \frac{k}{s} {\cal L} \{ Cos(kt)\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6459}%
+$\displaystyle {\cal L} \{ Cos(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6463}%
+$\displaystyle \int_0^{\infty} e^{-st} Cos(kt) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6467}%
+$\displaystyle - \frac{e^{-st} Cos(kt)}{s} \Biggr|^{\infty}_0 - \frac{k}{s} \int_0^{\infty} e^{-st} Sen(kt) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6471}%
+$\displaystyle \frac{1}{s} -  \frac{k}{s} \int_0^{\infty} e^{-st} Sen(kt) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6475}%
+$\displaystyle \frac{1}{s} - \frac{k}{s} {\cal L} \{Sen(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6479}%
+$\displaystyle \frac{1}{s} - \frac{k}{s} \left( \frac{k}{s} {\cal L} \{ Sen(kt) \} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6483}%
+$\displaystyle \frac{1}{s}  - \frac{k^2}{s^2} {\cal L} \{ Cos(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6485}%
+$\displaystyle {\cal L} \{Cos(kt) \} = \frac{s}{s^2 + k^2},
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6489}%
+$ Sen(kt)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6491}%
+$\displaystyle {\cal L} \{Sen(kt) \} = \frac{k}{s} {\cal L} \{ Cos(kt)\} = \frac{k}{s} \frac{s}{s^2 + k^2} = \frac{k}{s^2 + k^2},
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6497}%
+$\displaystyle Cos(t) = \frac{e^{it} + e^{-it}}{2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6500}%
+$\displaystyle {\cal L} \left\{ Cos(kt) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6504}%
+$\displaystyle {\cal L} \left\{ \frac{e^{ikt}+ e^{-ikt}}{2}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6508}%
+$\displaystyle \frac{1}{2} \left( {\cal L} \left\{ e^{ikt} \right\} + {\cal L} \left\{ e^{-ikt} \right\} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6512}%
+$\displaystyle \frac{1}{2} \left( \frac{1}{s - ik} + \frac{1}{s + ik}  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6516}%
+$\displaystyle \frac{1}{2} \left( \frac{2s}{s^2 + k^2}   \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6520}%
+$\displaystyle \frac{s}{s^2 + k^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6522}%
+$\displaystyle Sen(t) =  \frac{e^{it} - e^{-it}}{2i}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6524}%
+$ {\cal L} \left\{ Sen(kt) \right\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6526}%
+$ {\cal L} \{ f(t) \} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath6528}%
+\begin{displaymath}
+f(t) =
+\begin{cases}
+t^2 + 1 &  \text{Si $0 \leq t \leq 1$\  } \\
+t - 1 &   \text{Si t > 1} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6531}%
+$\displaystyle {\cal L} \{ f(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6535}%
+$\displaystyle \int_0^{\infty} f(t) e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6539}%
+$\displaystyle \int_0^{1} \left( t^2 + 1 \right) e^{-st} dt  + \int_1^{\infty} \left( t - 1\right) e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6543}%
+$\displaystyle -e^{-st} \left(  \frac{t^2 + 1}{s} + \frac{2t}{s^2} + \frac{2}{s^3}  \right) \Biggr|^{1}_0   - e^{-st} \left( \frac{t-1}{s} + \frac{1}{s^2} \right)\Biggr|^{\infty}_{1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6547}%
+$\displaystyle \frac{s^2 + 2 - e^{-s} \left( s^2 + s + 1 \right) }{s^3} + \frac{e^{-s}}{s^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6551}%
+$\displaystyle \frac{s^2 + 2 - e^{-s} \left( s^2 + 2s + 1 \right) }{s^3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6556}%
+$ f:[a,b] \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6557}%
+$ \mbox{$I \hspace{-1.3mm} R$}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6558}%
+$ $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6560}%
+$ f$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6562}%
+$ x \in [a,b]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6564}%
+$ x_k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6566}%
+$ k=1,2,\ldots,n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6568}%
+$ x_k \in [a,b]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6570}%
+$\displaystyle f(x_k^+) = \lim_{h \rightarrow 0} f(x_k + h) \hspace{1cm} f(x_k^-) = \lim_{h \rightarrow 0} f(x_k - h)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6572}%
+$ x_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6574}%
+$ [a,b]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure242}%
+\begin{figure}
+SALTODISC
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6580}%
+$ f: [0,+\infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6584}%
+$ k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6586}%
+$ M>0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6588}%
+$ T>0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6590}%
+$\displaystyle |f(t) | \leq Me^{kt}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6592}%
+$ t > T$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure251}%
+\begin{figure}
+ORDEN
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6598}%
+$\displaystyle \lim_{t \rightarrow \infty} \frac{|f(t)|}{e^{kt}} = L
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6602}%
+$ L$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6604}%
+$ M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6610}%
+$ L= \infty$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6614}%
+$ f(t)=t^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6616}%
+$\displaystyle \lim_{t \rightarrow \infty} \frac{t^3}{e^{kt}} = \lim_{t \rightarrow \infty} \frac{3t^2}{ke^{kt}}
+= \lim_{t \rightarrow \infty} \frac{6t}{k^2e^{kt}} = \lim_{t \rightarrow \infty} \frac{6}{k^3e^{kt}} = 0,
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6622}%
+$ |t^3| < e^t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6624}%
+$ t^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6626}%
+$ f(t)=e^{bt}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6628}%
+$ b$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6630}%
+$\displaystyle \lim_{t \rightarrow \infty} \frac{e^{bt}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{(b-k)t}=0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6632}%
+$ k>b$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6634}%
+$ e^{bt} < e^{kt}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6638}%
+$ n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6644}%
+$ g(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6646}%
+$ f(t) + g(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6648}%
+$ f(t) \cdot g(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6650}%
+$ f(t)=e^{t^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6652}%
+$\displaystyle \lim_{t \rightarrow \infty} \frac{e^{t^2}}{e^{kt}} = \lim_{t \rightarrow \infty} e^{t^2 - kt} = \infty
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6664}%
+$ |f(t)| \leq M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6666}%
+$ t \in [0,\infty[$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6668}%
+$\displaystyle \lim_{t \rightarrow \infty} \frac{|f(t)|}{e^{kt}} \leq \lim_{t \rightarrow \infty} \frac{M}{e^{kt}} = 0,
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6670}%
+$ k >0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6674}%
+$ \clubsuit$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6676}%
+$ Sen(bt)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6678}%
+$ Cos(bt)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6680}%
+$ y: [0, +\infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6686}%
+$ s_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6688}%
+$ Y(s)={\cal L} \{ y(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6700}%
+$ |y(t)| \leq Me^{kt}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6705}%
+$\displaystyle {\cal L} \{y(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6713}%
+$\displaystyle \int_0^T e^{-st}y(t) dt + \lim_{b \rightarrow \infty} \int_T^b e^{-st} y(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6715}%
+$\displaystyle \int_0^T e^{-st}y(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6718}%
+$\displaystyle \left| \int_T^b e^{-st} y(t) dt \right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6720}%
+$\displaystyle \leq$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6722}%
+$\displaystyle \int_T^b e^{-st} |y(t) | dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6726}%
+$\displaystyle \int_T^b e^{-st} M e^{kt} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6730}%
+$\displaystyle M \int_T^b e^{(k-s)t} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6734}%
+$\displaystyle M \frac{e^{(k-s)b} - e^{(k-s)T} }{k-s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6736}%
+$\displaystyle \frac{M}{k-s} \lim_{b \rightarrow \infty} \left( e^{(k-s)b} - e^{(k-s)T} \right) = \frac{Me^{-(s-k)T}}{s-k}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6740}%
+$\displaystyle \int_T^b e^{-st} y(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6746}%
+$\displaystyle {\cal L} \{ \frac{1}{\sqrt{t}} \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6748}%
+$ f(t)=\frac{1}{\sqrt{t}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6750}%
+$ f(t)=\sqrt{t}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6752}%
+$ x=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6754}%
+$ [0,\infty[$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6757}%
+$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6761}%
+$\displaystyle \int_0^{\infty} \underbrace{\frac{e^{-st}}{\sqrt{t}} }_{u = st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6765}%
+$\displaystyle \frac{1}{\sqrt{u}} \int_0^{\infty} \frac{e^{-u}}{\underbrace{\sqrt{u}}_{z^2=u}} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6769}%
+$\displaystyle \frac{2}{\sqrt{s}} \int_0^{\infty} e^{-z^2} dz$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6771}%
+$\displaystyle I_b = \int_0^b e^{-x^2} dx = \int_0^b e^{-y^2} dy
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6773}%
+$\displaystyle \lim_{b \rightarrow +\infty} I_b = \int_0^{\infty} e^{-x^2} dx
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6776}%
+$\displaystyle I^2_b$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6780}%
+$\displaystyle \left( \int_0^b e^{-x^2} dx  \right)\left( \int_0^b e^{-y^2} dy  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6784}%
+$\displaystyle \int_0^b \int_0^b e^{-(x^2 + y^2)}dx dy$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6788}%
+$\displaystyle \iint_R e^{-(x^2 + y^2)}dx dy$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure372}%
+\begin{figure}
+INTEGRAL
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6790}%
+$ R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6794}%
+$ R_1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6796}%
+$ R_2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6799}%
+$\displaystyle \iint_{R_1} e^{-(x^2 + y^2)} dx dy$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6801}%
+$\displaystyle \leq I^2_b \leq$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6803}%
+$\displaystyle \iint_{R_2} e^{-(x^2 + y^2)} dx dy$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6805}%
+$\displaystyle \int_0^{\frac{\pi}{2}} \int_0^b re^{-r^2} dr d\theta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6809}%
+$\displaystyle \int_0^{\frac{\pi}{2}} \int_0^{b\sqrt{2}} r e^{-r^2} dr d\theta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6811}%
+$\displaystyle \frac{\pi \left( 1 - e^{-b^2} \right)}{4}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6815}%
+$\displaystyle \frac{\pi \left(1 -e^{-2b^2} \right)}{4}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6817}%
+$\displaystyle \lim_{b \rightarrow \infty} I^2_b = \frac{\pi}{4}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6819}%
+$ I = \frac{\sqrt{\pi}}{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6821}%
+$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}= \sqrt{\frac{\pi}{s} }
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6823}%
+$\displaystyle {\cal L} \{ \frac{1}{t^2}\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6830}%
+$\displaystyle \int_0^{\infty} \frac{e^{-st}}{t^2} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6834}%
+$\displaystyle \int_0^1 \frac{e^{-st}}{t^2} dt + \int_1^{\infty} \frac{e^{-st}}{t^2} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6836}%
+$\displaystyle \int_0^1 \frac{e^{-st}}{t^2} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6838}%
+$\displaystyle \int_1^{\infty} \frac{e^{-st}}{t^2} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6842}%
+$\displaystyle \frac{e^{-st}}{t^2} \leq \frac{1}{t^2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6846}%
+$\displaystyle \lim_{t \rightarrow 0^+} \frac{\frac{e^{-st}}{t^2}}{\frac{1}{t^2}} =
+\lim_{t \rightarrow 0^+} \frac{1}{e^{-st}} = 1
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6850}%
+$\displaystyle \int_0^1 \frac{1}{t^2} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6852}%
+$ {\cal L} \{f(t) \} =F(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6854}%
+$ {\cal L} \{ g(t) \} = G(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6856}%
+$\displaystyle {\cal L} \{ f(t) + c g(t) \} =  {\cal } \{ f(t) \} + {\cal L} \{ g(t) \} = F(s) + G(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6858}%
+$ c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6860}%
+$\displaystyle \int_0^{\infty} \left( f(t) + c g(t)  \right) dt = \int_0^{\infty} f(t) dt + c \int_0^{\infty} g(t) = F(s) + G(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6864}%
+$ {\cal L} \{Sen^2(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6866}%
+$\displaystyle Sen^2(t) = \frac{1-Cos(2t)}{2},
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6869}%
+$\displaystyle {\cal L} \{Sen^2(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6873}%
+$\displaystyle {\cal L} \{ \frac{1-Cos(2t)}{2} \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6877}%
+$\displaystyle \frac{1}{2} {\cal L} \{ 1 \} - \frac{1}{2} {\cal L} \{Cos(2t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6881}%
+$\displaystyle \frac{1}{2s} - \frac{s}{2 \left( s^2 + 4  \right) }$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6885}%
+$\displaystyle \frac{2}{s \left( s^2 + 4 \right)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6887}%
+$ y^{\prime}(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6889}%
+$ [0,+ \infty[$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6891}%
+$\displaystyle {\cal L} \{ y(t)  \} = sY(s) - y(0)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6894}%
+$\displaystyle {\cal L} \{ y^{\prime}(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6898}%
+$\displaystyle \int_0^{\infty} e^{-st}y^{}(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6902}%
+$\displaystyle e^{-st}y(t) \Bigr|^{\infty}_0 + s \int_0^{\infty} e^{-st}y(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6906}%
+$\displaystyle -y(0) + s {\cal L} \{ y(t)\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6910}%
+$\displaystyle s Y(s) - y(0)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6913}%
+$\displaystyle {\cal L} \{ y^{\prime \prime}(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6917}%
+$\displaystyle -y^{\prime}(0) + s {\cal } \{ y^{\prime}(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6921}%
+$\displaystyle -y^{\prime}(0) + s \left( sY(s) - y(0) \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6925}%
+$\displaystyle s^2 Y(s) - y^{\prime}(0) - sy(0)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6929}%
+$\displaystyle {\cal L} \{ t^2 \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6931}%
+$ f(t)=t^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6934}%
+$\displaystyle {\cal L} \{ f^{\prime} (t)\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6938}%
+$\displaystyle s {\cal L} \{ f(t)\} - f(0)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6940}%
+$\displaystyle {\cal L} \{ 2t \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6944}%
+$\displaystyle s {\cal L} \{ t^2 \} - 0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6946}%
+$\displaystyle 2 {\cal L} \{ t \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6950}%
+$\displaystyle s {\cal L} \{ t^2 \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6952}%
+$\displaystyle \frac{2}{s^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6958}%
+$\displaystyle {\cal L} \{ t^2 \} = \frac{2}{s^3}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6960}%
+$ y(t),y^{\prime}(t), \cdots, y^n(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6965}%
+$\displaystyle {\cal L} \{ y^n(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6969}%
+$\displaystyle s^n Y(s) - \sum_{j=0}^{n-1} s_j y^{n-1-j}(0)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6973}%
+$\displaystyle s^n Y(s) - y^{n-1}(0) - sy^{n-2}(0) - \cdots - s^{n-1}y(0)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6981}%
+$ c \neq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6983}%
+$\displaystyle {\cal L} \{ f(t) \} = \frac{1}{c} F \left( \frac{s}{c} \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6985}%
+$ u=ct$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6988}%
+$\displaystyle {\cal L} \{ f(ct) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6992}%
+$\displaystyle \int_0^{\infty} e^{-st}f(ct) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6996}%
+$\displaystyle \frac{1}{c} \int_0^{\infty} e^{-\frac{su}{c}} f(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7000}%
+$\displaystyle \frac{1}{c} F\left( \frac{s}{c}  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7004}%
+$\displaystyle {\cal L} \{ Senh(t) \} = \frac{1}{s^2 - 1},
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7006}%
+$ {\cal L} \{ Senh(kt) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7009}%
+$\displaystyle {\cal L} \{ Senh(kt) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7013}%
+$\displaystyle \frac{1}{k} \left( \frac{1}{\left( \frac{s}{k} \right)^2 - 1}   \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7017}%
+$\displaystyle \frac{1}{k} \frac{k^2}{s^2 - k^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7021}%
+$\displaystyle \frac{k}{s^2 - k^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7025}%
+$ Y(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7027}%
+$ Y(s) = G(S)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7029}%
+$ {\cal
+L} \{y(t) \} = Y(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7033}%
+$ {\cal L}^{-1} \{Y(s) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7037}%
+$\displaystyle y(t) = {\cal L}^{-1} \{F(s) \} = {\cal L}^{-1} \{ G(s) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7039}%
+$ F(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7047}%
+$ {\cal L}^{-1}
+\{ F(s) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7051}%
+$ {\cal L}^{-1} \{F(s) \} =f(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7053}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7055}%
+$\displaystyle {\cal L} \{ Cos(2t) \} = \frac{s}{s^2 + 4}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7057}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} = Cos(2t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7059}%
+$ {\cal L} \{f(t) \} = {\cal L} \{ g(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7061}%
+$ f(t) \neq g(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7065}%
+$ g$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7071}%
+$ f(t)=g(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7079}%
+$ {\cal L} \{ f(t) \} =
+{\cal } \{g(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7089}%
+$\displaystyle f(t) = \begin{cases}
+1 & \text{Si $t \geq 0$, $t \neq 1$, $t\neq 2$\  } \\
+3 & \text{Si $t=1$} \\
+4 & \text{Si $t=2$} \\
+\end{cases}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7092}%
+$\displaystyle {\cal L} \{g(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7096}%
+$\displaystyle \int_0^{\infty} e^{-st}g(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7100}%
+$\displaystyle \int_0^{\infty} e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7104}%
+$\displaystyle -\frac{e^{-st}}{s} \biggr|^{\infty}_0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7108}%
+$\displaystyle \frac{1}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7110}%
+$\displaystyle {\cal L} \{ 1 \} = \frac{1}{s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7116}%
+$\displaystyle F(s)=\frac{1}{s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7128}%
+$\displaystyle \lim_{s \rightarrow \infty} {\cal L} \{ f(t) \} = \lim_{s \rightarrow \infty} F(s) = 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7134}%
+$ \|f(t) \| <
+M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7138}%
+$\displaystyle \biggr| {\cal L} \left\{ f(t) \right\}  \biggr| \leq  \int_0^{\infty} \mid f(t) \mid e^{-st} dt = -M \frac{e^{-st}}{s} \biggr|_0^{\infty} = \frac{M}{s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7140}%
+$ \mid {\cal L} \left\{ f(t) \right\} \mid \rightarrow 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7142}%
+$ s \rightarrow \infty$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7144}%
+$ {\cal L} \left\{ f(t) \right\} \rightarrow 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7156}%
+$ {\cal L} \{
+f(t) \} = \frac{s}{s+1}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7158}%
+$\displaystyle \lim_{s \rightarrow \infty} \frac{s}{s+1} = 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7162}%
+$ F(s)=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7164}%
+$ F(s) = s^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7166}%
+$ F(s)=Sen(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7168}%
+$ F(s)=Ln(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7170}%
+$ F(s)=\frac{P(s)}{Q(s)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7174}%
+$ P(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7176}%
+$ Q(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7178}%
+$ {\cal L} \left\{ f(t) \right\}=F(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7180}%
+$ \lim_{t \rightarrow 0^+} f(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7182}%
+$ f(0)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7184}%
+$\displaystyle \lim_{t \rightarrow 0} f(t) = \lim_{s \rightarrow + \infty} sF(s)=f(0)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7186}%
+$\displaystyle {\cal L} \left\{f^{\prime}(t)  \right\} = sF(s) - f(0)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7188}%
+$\displaystyle \lim_{s \rightarrow + \infty} {\cal L} \left\{ f^{\prime}(t) \right\} = 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7190}%
+$ f^{\prime}(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7192}%
+$\displaystyle \lim_{s \rightarrow + \infty} sF(s) = f(0) = \lim_{t \rightarrow 0^+} f(t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7196}%
+$ t=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7200}%
+$ f(t)=Cos(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7202}%
+$ \lim_{s \rightarrow \infty} sF(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7204}%
+$\displaystyle \lim_{s \rightarrow \infty} sF(s) = f(0) = 1
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7210}%
+$ \lim_{t \rightarrow \infty} f(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7212}%
+$\displaystyle \lim_{t \rightarrow + \infty} f(t) = \lim_{s \rightarrow 0} sF(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7225}%
+$\displaystyle {\cal L}^{-1} \{ \alpha F(s) + G(s) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7229}%
+$\displaystyle \alpha {\cal L}^{-1} \{F(s) \} + {\cal L}^{-1} \{G(s) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7233}%
+$\displaystyle \alpha f(t) + g(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7235}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7237}%
+$\displaystyle \frac{4s}{\left(s - 2 \right) \left( s^2 + 4 \right)}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7239}%
+$\displaystyle \frac{1}{s-2} - \frac{s}{s^2 + 4} + \frac{2}{s^2 + 4}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7246}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} - {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \right\} + {\cal L}^{-1} \left\{ \frac{2}{s^2 + 4}
+\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7250}%
+$\displaystyle e^{2t} - Cos(2t) + Sen(2t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7252}%
+\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} - 3y & = &  e^{2t} \\
+y(0) & = & 1  \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7255}%
+$\displaystyle {\cal L} \{y^{\prime} - 3y   \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7259}%
+$\displaystyle {\cal L} \{ e^{2t}  \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7261}%
+$\displaystyle {\cal L} \{ y^{\prime} \} - 3 {\cal L} \{ y \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7265}%
+$\displaystyle \frac{1}{s-2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7267}%
+$\displaystyle sY(s)- y(0) - 3Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7273}%
+$\displaystyle sY(s)- 1 - 3Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7279}%
+$\displaystyle Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7283}%
+$\displaystyle \frac{s-1}{(s-2)(s-3)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7289}%
+$\displaystyle -\frac{1}{s-2} + \frac{2}{s-3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7294}%
+$\displaystyle {\cal L}^{-1} \{Y(s) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7298}%
+$\displaystyle -{\cal L}^{-1}  \left\{ \frac{1}{s-2} \right\} + 2 {\cal L}^{-1}
+\left\{ \frac{1}{s-3} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7300}%
+$\displaystyle y(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7304}%
+$\displaystyle -e^{2t} +  e^{3t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7306}%
+$ \mu(t)=e^{-3t}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7310}%
+$ {\cal L} \{e^{kt}Sen(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7314}%
+$ {\cal L} \{e^{kt} f(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7318}%
+$ F(s-k)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7324}%
+$\displaystyle {\cal L} \{e^{kt} f(t)  \} = F(s-k)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7326}%
+$ F(s) = {\cal L} \{ f(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7328}%
+$\displaystyle e^{kt}f(t) = {\cal L}^{-1} \left\{ F(s-k)  \right\} = {\cal L} \left\{ F(s)\bigr|_{x \rightarrow s-k}  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7330}%
+$\displaystyle {\cal L} \{e^{kt} f(t) \} = \int_0^{\infty} e^{-st} e^{kt} f(t) dt =
+\int_0^{\infty} e^{-(s-k)t} f(t) dt = F(s-k)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7338}%
+$ |k|$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7348}%
+$ k<0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7352}%
+$\displaystyle {\cal L} \{ e^{kt} f(t) \} = {\cal L} \{f(t) \}\bigr|_{s \rightarrow s-k}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7354}%
+$ s \rightarrow s-k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7358}%
+$ s-k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7364}%
+$\displaystyle {\cal L} \left\{ e^{at} Cos(bt) \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7371}%
+$\displaystyle {\cal L} \{ Cos(bt) \} \biggr|_{s \rightarrow s-a}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7375}%
+$\displaystyle \frac{s}{s^2 + b^2} \biggr|_{s \rightarrow s-a}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7379}%
+$\displaystyle \frac{s-a}{ \left( s - a \right)^2 + b^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7381}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{\left(s-3  \right)^3} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7388}%
+$\displaystyle \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{\left(s-3  \right)^3} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7392}%
+$\displaystyle \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{s^3} \biggr|_{s \rightarrow s-3} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7396}%
+$\displaystyle \frac{1}{2} t^2e^{3t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7398}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4s + 13} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7405}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{s}{\left( s + 2 \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7409}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{s + 2 -2}{ \left(s + 2  \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7413}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{s + 2}{ \left(s + 2  \right)^2 + 9} \right\} - 2{\cal L}^{-1} \left\{  \frac{1}{ \left(s + 2 \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7417}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{s}{s^2 + 9} \biggr|_{s \rightarrow s+2}   \right\} - \frac{2}{3} {\cal L}^{-1} \left\{  \frac{3}{s^2 + 9} \biggr|_{s \rightarrow s+2}    \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7421}%
+$\displaystyle e^{-2t} Cos(3t) - \frac{2}{3} e^{-2t} Sen(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7427}%
+$ H: [0, + \infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7431}%
+\begin{displaymath}
+H(t-a) =
+\begin{cases}
+0 & \text{Si $0 \leq t < a$} \\
+1 & \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7435}%
+$ H(t-a)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7437}%
+$ t < a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7439}%
+$ f(t)=H(t-1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7443}%
+\begin{displaymath}
+f(t) =
+\begin{cases}
+0 & \text{Si $0 \leq t < 1$\  } \\
+1 & \text{Si $t \geq 1$} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure911}%
+\begin{figure}
+HEAVISIDE
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7445}%
+$ H(t-a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7451}%
+$ [0,a]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7453}%
+$ f(t) = Sen(t) H(t-2 \pi)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7455}%
+\begin{displaymath}
+f(t) =
+\begin{cases}
+0 & \text{Si $0 \leq t < 2 \pi$} \\
+Sen(t) & \text{Si $t \geq 2 \pi$} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure921}%
+\begin{figure}
+LAPLA4
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7457}%
+\begin{displaymath}
+f(t)=
+\begin{cases}
+g(t) & \text{Si $0 \leq < a$\  } \\
+h(t) & \text{Si $t \geq a$} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7460}%
+$\displaystyle f(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7464}%
+\begin{displaymath}\begin{cases}
+g(t) - g(t) \cdot 0 + h(t) \cdot 0 & \text{Si $0 \leq t , a$} \\
+g(t) - g(t) \cdot 1 + h(t) \cdot 1 & \text{Si $t \geq a$} \\
+\end{cases}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7468}%
+$\displaystyle g(t) - g(t)H(t-a) + h(t)H(t-a)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7470}%
+\begin{displaymath}
+f(t) =
+\begin{cases}
+p(t) & \text{Si $0 \leq t < a$\  } \\
+q(t) & \text{Si $a \leq t < b$\  } \\
+r(t) & \text{Si $t \geq b$} \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7472}%
+$\displaystyle f(t) = p(t) + \left( q(t) - p(t)  \right) H(t-a)  + \left( r(t) - q(t) \right) H(t-b)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7474}%
+$\displaystyle {\cal L} \{ H(t-a) \} = \frac{e^{-sa}}{s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7477}%
+$\displaystyle {\cal L} \{ H(t-a) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7481}%
+$\displaystyle \int_0^{\infty} e^{-st} H(t-a) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7485}%
+$\displaystyle \underbrace{\int_0^{a} e^{-st} \cdot 0 dt}_{0} + \int_a^{\infty} e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7489}%
+$\displaystyle \int_a^{\infty} e^{-st} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7493}%
+$\displaystyle -\frac{e^{-st}}{s} \biggr|_a^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7497}%
+$\displaystyle \frac{e^{-as}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7503}%
+$ e^{kt}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7509}%
+$ a > 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7511}%
+$\displaystyle {\cal L} \{ f(t-a) H(t-a) \} = e^{-as}F(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7513}%
+$\displaystyle f(t-a) H(t-a) = {\cal L}^{-1} \{e^{-as} F(s) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7516}%
+$\displaystyle {\cal L} \{f(t-a) \}H(t-a)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7520}%
+$\displaystyle \int_0^{\infty} e^{-st} f(t-a0 H(t-a) dt dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7524}%
+$\displaystyle \int_0^a e^{-st} f(t-a) \cdot 0 dt  + \int_a^{\infty} e^{-st} f(t-a) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7528}%
+$\displaystyle \int_a^{\infty} e^{-st} f(\underbrace{t-a}_{u=t-a}) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7532}%
+$\displaystyle \int_0^{\infty} e^{-s(u+a)} f(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7536}%
+$\displaystyle e^{-sa} \int_0^{\infty} e^{-su} f(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7540}%
+$\displaystyle e^{-sa} {\cal L} \{ f(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7544}%
+$\displaystyle e^{-sa} F(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7548}%
+$ f(t)=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7550}%
+$\displaystyle {\cal L} \left\{ H(t-a)  \right\} = {\cal L} \left\{ 1 \cdot H(t-a)  \right\} = e^{-as} {\cal L} \left\{ 1 \right\} = \frac{e^{-as}}{s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7554}%
+$\displaystyle {\cal L} \{ t H(t-2) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7558}%
+$ t-2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7561}%
+$\displaystyle {\cal L} \{ t H(t-a) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7565}%
+$\displaystyle {\cal L} \{ (t-2 +2) H(t-2) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7569}%
+$\displaystyle {\cal L} \{ (t-2) H(t-2) \} + 2 {\cal L} \{ H(t-2) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7573}%
+$\displaystyle \frac{e^{-2s}}{s^2} + \frac{2e^{-2s}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath7577}%
+\begin{displaymath}
+f(t) =
+\begin{cases}
+-t + 1 & \text{Si $0 \leq t < 1$} \\
+1 &  \text{Si $1 \leq t < 2$\  } \\
+t - 2 &  \text{Si $t \geq  2$}
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7586}%
+$\displaystyle 1 - t +t H(t-1) + \left( t - 3 \right) H(t-2)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7592}%
+$\displaystyle 1 - t + \left( t-1 \right) H(t-1) + \left( t-2 \right) H(t-2)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7599}%
+$\displaystyle {\cal L} \{ 1 \} + {\cal L} \left\{ \left(t - 1 \right)H(t-1) \right\} + {\cal L} \left\{ \left(  t - 2 \right) H(t-2) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7603}%
+$\displaystyle \frac{1}{s} + \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7605}%
+$\displaystyle {\cal L} \{ t^2 H(t-2) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7607}%
+$ t^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7614}%
+$\displaystyle {\cal L} \left\{ \left( \left(t - 2 \right)^2 + 4t - 4  \right) H(t-2)  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7618}%
+$\displaystyle {\cal L} \left\{ \left(t - 2 \right)^2 H(t-2) \right\} + 4 {\cal L} \left\{ \left( t - 1 \right) H(t-2)  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7622}%
+$\displaystyle {\cal L} \left\{ \left(t - 2 \right)^2 H(t-2) \right\} + 4 {\cal L} \left\{ \left( t - 2 \right) H(t-2)  \right\}  + 4 {\cal L} \{ H(t-2) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7626}%
+$\displaystyle \frac{2e^{-2s}}{s^3} + \frac{4e^{-2s}}{s^2} +  \frac{4e^{-2s}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7630}%
+$\displaystyle 2e^{-2s} \left( \frac{1}{s^3} + \frac{2}{s^2} +  \frac{2}{s}  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7638}%
+$\displaystyle {\cal L} \{ f(t) H(t-a) \} = e^{-as} {\cal L} \{ f(t+a)  \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7641}%
+$\displaystyle {\cal L} \{ f(t) H(t-a) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7645}%
+$\displaystyle \int_0^{\infty} e^{-st} f(t) H(t-a) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7649}%
+$\displaystyle \int_a^{\infty} e^{-st} f(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7653}%
+$\displaystyle \int_0^{\infty} e^{-s(u+a} f(u+a) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7657}%
+$\displaystyle e^{-sa} \int_0^{\infty} e^{-su} f(\underbrace{u+a}_{t=u+a}) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7661}%
+$\displaystyle e^{-sa} {\cal L} \{ f(t + a \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7665}%
+$\displaystyle {\cal L} \{ \left(t^2 + t \right) H(t-3) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7672}%
+$\displaystyle e^{-3s} {\cal L} \left\{ \left( t + 3  \right)^2 + t + 3 \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7676}%
+$\displaystyle e^{-3s} {\cal L} \left\{ t^2 + 7t + 12 \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7680}%
+$\displaystyle e^{-3s} \left( \frac{2}{s^3} + \frac{7}{s^2} + \frac{12}{s}   \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7682}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 9}  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7684}%
+$ a = \frac{\pi}{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7686}%
+$\displaystyle F(s)= \frac{s}{s^2+9} \Rightarrow f(t) = Cos(3t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7693}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 9} \right\}_{t \rightarrow t - \frac{\pi}{2}} H\left(t-\frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7697}%
+$\displaystyle Cos \left(3 \left(t - \frac{\pi}{2}  \right) \right) H\left(t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7701}%
+$\displaystyle - Sen(3t) H\left(t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7703}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{2se^{-\pi s/2}}{s^2 - 5s + 6}  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7705}%
+$\displaystyle \frac{2s}{s^2 -5s + 6} = \frac{6}{s-3} - \frac{4}{s-2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7712}%
+$\displaystyle \frac{6 e^{- \pi s/2}}{s-3} - \frac{4 e^{- \pi s/2}}{s-2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7716}%
+$\displaystyle 6 {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\}_{t \rightarrow t - \frac{\pi}{2} }  H\left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7718}%
+$\displaystyle -$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7720}%
+$\displaystyle 4 {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\}_{t \rightarrow t - \frac{\pi}{2} }   H\left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7724}%
+$\displaystyle 6 e^{3 \left( t - \frac{\pi}{2} \right) } - 4 e^{2 \left( t - \frac{\pi}{2} \right) }$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7726}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{s^2 + 4s + 13} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7728}%
+$ s^2 + 4s + 13$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7738}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{se^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7742}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 - 2 \right) e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7746}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}
+-2  {\cal L}^{-1} \left\{ \frac{ e^{-\pi s/2}}{ \left(s + 2 \right)^2 + 9} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7749}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right)}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = e^{-2t} Cos(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7752}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{ \left(s + 2 \right)^2 + 9} \right\}
+\Rightarrow f(t) = \frac{e^{-2t}}{3} Sen(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7759}%
+$\displaystyle e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2} \right) \right) H\left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7761}%
+$\displaystyle +$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7763}%
+$\displaystyle \frac{2}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7767}%
+$\displaystyle - e^{-2t + \pi} Sen(3t) - \frac{2}{3} e^{-2t + \pi} Cos(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7769}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{\left( 2s + 3\right) e^{- \pi s/2} }{s^2 + 4s + 13}  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7776}%
+$\displaystyle 2 {\cal L}^{-1} \left\{ \frac{\left(s + 2 \right) e^{-\pi s /2}}{ \left( s + 2  \right)^2 + 9} \right\}  - \frac{1}{3} {\cal L}^{-1} \left\{ \frac{e^{-\pi s /2}}{\left( s + 2  \right)^2 + 9}   \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7780}%
+$\displaystyle -2 e^{-2\left( t - \frac{\pi}{2} \right)} Cos \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7784}%
+$\displaystyle \frac{1}{3} e^{-2\left( t - \frac{\pi}{2} \right)} Sen \left( 3 \left( t - \frac{\pi}{2}  \right) \right) H \left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7788}%
+$\displaystyle -2 e^{-2t + \pi} Sen(3t)H \left( t - \frac{\pi}{2} \right)    - \frac{1}{3} e^{-2t + \pi} Cos(3t)H \left( t - \frac{\pi}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7790}%
+$ t^n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7792}%
+$ f; [0,\infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7798}%
+$\displaystyle {\cal L} \{ t^n f(t) \} = (-1)^n F^{n}(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7800}%
+$\displaystyle {\cal L} \{ t^2 Sen(2t) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7802}%
+$ n=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7809}%
+$\displaystyle (-1)^2 \left( {\cal L} \left\{ Sen(2t)  \right\} \right)^{\prime \prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7813}%
+$\displaystyle \left( \frac{2}{s^2 + 4} \right)^{\prime \prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7817}%
+$\displaystyle \frac{12s^2 - 16}{\left( s^2 + 4 \right)^3}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7819}%
+$\displaystyle {\cal L} \{ te^{-2 t} Cos(3t) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7828}%
+$\displaystyle - \left( {\cal L} \{ e^{-2 t} Cos(3t)  \}  \right)^{\prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7832}%
+$\displaystyle - \left( {\cal L} \{ Cos(3t) \}_{s \rightarrow s +2}  \right)^{\prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7836}%
+$\displaystyle - \left(  \frac{s +2 }{ (s+2)^2 + 9}  \right)^{\prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7840}%
+$\displaystyle \frac{s^2 + 4s - 5}{\left( s^2 + 4s + 13 \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7842}%
+$\displaystyle \int_0^{\infty} t e^{-2t} Cos(3t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7847}%
+$\displaystyle {\cal L} \{t Cos(3t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7851}%
+$\displaystyle \int_0^{\infty} te^{-st}Cos(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7855}%
+$\displaystyle (-1)^{1} \left(  \frac{s}{s^2 + 9} \right)^{\prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7859}%
+$\displaystyle \frac{s^2 - 9}{\left( s^2 + 9 \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7861}%
+$\displaystyle \int_0^{\infty} t e^{-st} Cost(3t) dt = \frac{s^2 - 9}{\left( s^2 + 9 \right)^2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7863}%
+$ s=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7865}%
+$\displaystyle \int_0^{\infty} t e^{-2t} Cost(3t) dt = \frac{5}{169}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7867}%
+$ n=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7873}%
+$\displaystyle f(t) = - \frac{1}{t} {\cal L}^{-1} \{ F^{\prime}(s) \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7875}%
+$\displaystyle {\cal L}^{-1} \left\{ ln \left( \frac{s + 1}{s-1} \right) \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7877}%
+$\displaystyle {\cal L} \{ f(t) \} = F(s) = ln \left( \frac{s + 1}{s-1} \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7884}%
+$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \left( ln \left( \frac{s + 1}{s-1} \right) \right)^{\prime} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7888}%
+$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{-2}{(s-1)(s+1)} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7892}%
+$\displaystyle - \frac{1}{t} {\cal L}^{-1} \left\{ \frac{1}{s+1} - \frac{1}{s-1}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7896}%
+$\displaystyle -\frac{e^{-t} - e^t }{t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7900}%
+$\displaystyle \frac{2 Senh(t)}{t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7910}%
+$\displaystyle \lim_{t \rightarrow 0^+} \frac{f(t)}{t}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7912}%
+$\displaystyle {\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_s^{\infty} F(u) du
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7914}%
+$\displaystyle g(t) = \frac{f(t)}{t} \Rightarrow f(t)= t g(t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7916}%
+$\displaystyle F(s)={\cal L} \left\{ f(t)  \right\} = {\cal L } \left\{ tg(t) \right\} = - \left( {\cal L} \left\{ g(t)  \right\} \right)^{\prime} = - G^{\prime}(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7918}%
+$\displaystyle G(s) = - \int_{\infty}^s F(u) du = \int_{s}^{\infty} F(u) du
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7920}%
+$\displaystyle {\cal L} \left\{ \frac{f(t)}{t} \right\} = \int_{s}^{\infty}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7924}%
+$ \lim_{s \rightarrow \infty} G(s) = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7926}%
+$\displaystyle {\cal L} \left\{ \frac{Sen(t)}{t} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7928}%
+$\displaystyle F(s) = \frac{1}{s^2 + 1}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7935}%
+$\displaystyle \int_s^{\infty} \frac{1}{u^2 + 1} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7939}%
+$\displaystyle ArcTan(s) \biggr|_s^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7943}%
+$\displaystyle \frac{\pi}{2} - ArcTan(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7945}%
+$\displaystyle \int_0^{\infty} \frac{e^{-t} - e^{-3t}}{t} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7947}%
+$\displaystyle f(t) = e^{-t} -e^{-3t}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7950}%
+$\displaystyle {\cal L} \left\{ \frac{f(t)}{t}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7954}%
+$\displaystyle \int_s^{\infty} \left\{ \frac{1}{u+1} - \frac{1}{u+3} \right\} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7958}%
+$\displaystyle ln \left( \frac{u+1}{u+3} \right) \biggr|_s^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7962}%
+$\displaystyle ln \left( \frac{s+3}{s+1} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7964}%
+$\displaystyle \int_0^{\infty} \left(\frac{e^{-t} - e^{-3t}}{t} \right) dt =  ln \left( \frac{s+3}{s+1} \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7966}%
+$ s \rightarrow 0^{+}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7968}%
+$\displaystyle \int_0^{\infty} \frac{e^{-t}- e^{-3t}}{t} dt = ln(3)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7972}%
+$ h: {\cal C}(I) \times {\cal C}(I) \rightarrow {\cal C}(I)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7974}%
+$ {\cal C}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7976}%
+$ I=[0, +\infty[$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7978}%
+$\displaystyle h(t)= \left(f \star g \right)(t) = \int_0^t f(t - \tau ) g(\tau ) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7990}%
+$ f \star g = g \star f$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7992}%
+$ f \star ( g + h ) = f \star g + f \star h$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7994}%
+$ (f \star g) \star h = f \star (g \star h)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7996}%
+$ f \star 0 = 0 \star f = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7999}%
+$\displaystyle (f \star g)(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8003}%
+$\displaystyle \int_0^t f(\tau) g(\underbrace{t - \tau}_{u=t - \tau}) d \tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8007}%
+$\displaystyle - \int_t^0 f(t-u) g(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8011}%
+$\displaystyle \int_0^t g(u) f(t-u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8015}%
+$\displaystyle (g \star f)(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8019}%
+$ f \star 1 = f$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8022}%
+$\displaystyle Cos(t) \star 1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8026}%
+$\displaystyle \int_0^t Cos(\tau) d \tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8030}%
+$\displaystyle Sen(\tau) \biggr|_0^t$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8034}%
+$\displaystyle Sen(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8036}%
+$ f(t)=e^t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8038}%
+$ g(t)=Sen(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8041}%
+$\displaystyle e^t \star Sen(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8045}%
+$\displaystyle \int_0^t e^{\tau} Sen(t- \tau) d \tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8049}%
+$\displaystyle \frac{e^{} \left(Cos(\tau - t) - Sen(\tau - t)   \right)}{2} \biggr|_0^t$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8053}%
+$\displaystyle \frac{e^t -Sen(t) - Cos(t)}{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8055}%
+$ f(t)=Sen(at)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8057}%
+$ g(t)=Cos(bt)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8060}%
+$\displaystyle \left( Sen(at) \star Cos(bt) \right)(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8064}%
+$\displaystyle \int_0^t Sen \left(a(t - \tau)\right) Cos(b \tau) d\tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8068}%
+$\displaystyle \frac{1}{2} \int_0^t \left( Sen\left(at + \left( b - a\right) \tau \right) + Sen\left(at - \left(b - a  \right) \tau \right)  \right) d\tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8072}%
+$\displaystyle \frac{a \left(Cos(bt) - Cos(at)   \right)}{\left(a + b \right) \left(a-b \right)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8074}%
+$\displaystyle \int_0^t Sen(t - \tau) Cos(b \tau) d\tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8076}%
+$\displaystyle Sen(\alpha) Cos(\beta) = \frac{Sen(\alpha + \beta) + Sen(\alpha - \beta)}{2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8079}%
+$\displaystyle Cos(\alpha) Cos(\beta)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8083}%
+$\displaystyle \frac{Cos(\alpha + \beta) + Cos(\alpha - \beta)}{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8085}%
+$\displaystyle Sen(\alpha) Sen(\beta)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8089}%
+$\displaystyle \frac{Cos(\alpha - \beta) - Cos(\alpha + \beta)}{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8093}%
+$ {\cal L} \{g(t) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8095}%
+$ s > a \geq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8097}%
+$\displaystyle {\cal L} \{(f \star g)(t) \} = {\cal L} \{f(t) \} {\cal L} \{g(t) \} = F(s) G(s)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8099}%
+$\displaystyle (f \star g)(t) = {\cal L}^{-1} \left(F(s) G(s)  \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8101}%
+$\displaystyle {\cal L} \{ e^t \star Sen(t)  \}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8108}%
+$\displaystyle {\cal L} \{ e^t \} {\cal L} \{ Sen(t)\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8112}%
+$\displaystyle \frac{1}{s-1} \frac{1}{s^2 +1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8116}%
+$\displaystyle \frac{1}{(s+1)(s^2+1)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8118}%
+$ e^t \star Sen(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8125}%
+$\displaystyle {\cal L} \left\{ \frac{e^t -Sen(t) - Cos(t)}{2}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8129}%
+$\displaystyle \frac{1}{2} {\cal L} \{e^t \} - \frac{1}{2} {\cal L} \{ Sen(t) \} - \frac{1}{2} {\cal L} \{ Cos(t) \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8133}%
+$\displaystyle \frac{1}{2} \left( \frac{1}{s-1} - \frac{1}{s^2+1} - \frac{s}{s^2+1} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8137}%
+$\displaystyle \frac{1}{(s-1)(s^2+1)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8139}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{(s-2)(s-3)} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8146}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \frac{1}{s-3}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8150}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-2} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s-3} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8154}%
+$\displaystyle {\cal L} e^{2t} \star e^{3t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8158}%
+$\displaystyle \int_0^t e^{2 \tau} e^{3(t - \tau)} d \tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8162}%
+$\displaystyle e^{3t} - e^{2t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8169}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{1}{s-3} - \frac{1}{s-2} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8173}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{s-3}  \right\} - {\cal L} \left\{ \frac{1}{s-2} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8179}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s^2 + 4)(s^2 + 9)}  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8186}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4} \frac{1}{s^2 + 9}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8190}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2+4} \right\} \star {\cal L}^{-1} \left\{ \frac{1}{s^2+9}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8194}%
+$\displaystyle Cos(2t) \star Sen(3t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8198}%
+$\displaystyle \int_0^t Cos(2 \tau) Sen \left(3 \left(t - \tau \right) \right) d \tau$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8202}%
+$\displaystyle \frac{3Cos(2t) - 3 Cos(3t) }{5}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8204}%
+$\displaystyle \frac{1}{(s^2+4)(s^2+9)} = \frac{1}{5} \left( \frac{s}{s^2 + 4} - \frac{s}{s^2 + 9} \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8206}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s-2)(s^2-4s+13)} \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8209}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{(s-1)(s^2-4s+13)} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8213}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s - 2 + 2}{\left( \left( s -2 \right)^2 + 4 \right)\left(s - 1 \right)} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8217}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{s-2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8221}%
+$\displaystyle {\cal L}^{-1} \left\{ \frac{2}{\left( \left( s -2 \right)^2 + 4 \right) \left(s - 1 \right)}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8225}%
+$\displaystyle e^{2t}Cos(3t) \star e^{t} + e^{2t} Sen(3t) \star e^{t}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8229}%
+$\displaystyle \frac{e^t \left(1 - e^t Cos(3t) + 2e^t Sen(3t)  \right)}{5}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8231}%
+$ g(t)=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8233}%
+$\displaystyle \frac{F(s)}{s} = {\cal L} \left\{ \int_0^t f(\tau) d \tau \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8238}%
+$\displaystyle {\cal L} \{ f \star 1 \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8242}%
+$\displaystyle {\cal L} \{f(t) \} {\cal L} \{ 1 \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8244}%
+$\displaystyle {\cal L} \{ \int_0^t f(\tau) d\tau \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8248}%
+$\displaystyle \frac{F(s)}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8252}%
+$\displaystyle {\cal L} \left\{ \int_0^t \tau Sen(\tau) d\tau  \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8261}%
+$\displaystyle \frac{{\cal L} \left\{ t Sen(t) \right\} }{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8265}%
+$\displaystyle - \frac{ \left( {\cal L} \{  Sen(t) \} \right)^{\prime}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8269}%
+$\displaystyle -\frac{1}{s} \left( \frac{s}{s^2+1} \right)^{\prime}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8273}%
+$\displaystyle \frac{s^2 - 1}{s \left( s^2 + 1 \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8287}%
+$\displaystyle {\cal L} \{f(t) \} = \frac{1}{1-e^{-sT}} \int_0^T e^{-st} f(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8294}%
+$\displaystyle \int_0^T e^{-st} f(t) dt +
+\int_T^{2T} \underbrace{e^{-st} f(t) dt}_{t=2T+u}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8298}%
+$\displaystyle \int_{2T}^{3T} \underbrace{e^{-st}f(t) dt}_{t=3T+u}) +
+\ldots
++  \int_{(n-1)T}^{nT} \underbrace{e^{-st} f(t) dt}_{t=nT+u}) + \ldots$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8302}%
+$\displaystyle \int_0^T e^{-st} f(t) dt + \int_0^{T} e^{-s(u+T)} \underbrace{f(u + T)}_{f(u+T)=f(u)} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8306}%
+$\displaystyle \ldots + \int_0^{T} e^{-s(u+nT)} \underbrace{f(u + nT)}_{f(u + nT)=f(u)} dt + \ldots$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8310}%
+$\displaystyle \left(1 + e^{-sT} + e^{-2sT} + e^{-3sT} + \ldots   \right) \int_0^T e^{-su} f(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8314}%
+$\displaystyle \frac{1}{1 - e^{-sT}} \int_0^T e^{-su} f(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure1753}%
+\begin{figure}
+SIERRA.EPS
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8322}%
+$ T=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8329}%
+$\displaystyle \frac{1}{1-e^{2s}} \int_0^{2} e^{-st} f(t) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8333}%
+$\displaystyle \frac{1}{1-e^{-2s}} \left( \int_0^1 te^{-st} dy + \int_1^2 (2-t) e^{-st} dt \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8337}%
+$\displaystyle \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} - \frac{e^{-s}}{s} - \frac{e^{-s}}{s^2} +
+\frac{e^{-s}}{s} - \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2}  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8341}%
+$\displaystyle \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} + \frac{e^{-2s}}{s^2}  - \frac{2e^{-s}}{s^2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8344}%
+$ \delta_a : [0,+\infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8348}%
+\begin{displaymath}
+\delta_a(t - t_0) =
+\begin{cases}
+0 & \text{Si $0 \leq t \leq t_0-a$}  \\
+\frac{1}{2a} & \text{Si $t_0-a \leq t \leq t_0+a$} \\
+0 & \text{Si $t \geq t$} \\
+\end{cases}
+ \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8352}%
+$ t_0>0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8354}%
+$ a=0.5$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8356}%
+$ t_0=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8358}%
+$ a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8360}%
+$ \delta_a(t-t_0)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8362}%
+$ t_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure1805}%
+\begin{figure}
+IMPULSO
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8364}%
+$\displaystyle \int_0^{\infty} \delta_a(t-t_0) dt = 1
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8367}%
+$\displaystyle \int_0^{\infty} \delta_a(t-t_0) dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8371}%
+$\displaystyle \int_0^{t_0-a} 0 \cdot dt + \int_{t_0-a}^{t_0+a} \frac{1}{2a} \cdot dt + \int_{t_0+a}^{\infty} 0 \cdot dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8375}%
+$\displaystyle 0 + \frac{2a}{2a} + 0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8379}%
+$\displaystyle 1$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8385}%
+$\displaystyle \lim_{a \rightarrow 0} \delta_a(t-t_0) = \delta(t-t_0)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8387}%
+\begin{displaymath}
+\delta(t-t_0) =
+\begin{cases}
+\infty & \text{Si $t = t_0$} \\
+0 & \text{Si $t \neq t_0$} \\
+\end{cases}
+\hspace{1cm}
+\int_0^{\infty} \delta(t-t_0) dt = 1
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8391}%
+$\displaystyle {\cal L} \{\delta(t-t_0)  \} = e^{-st_0}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8393}%
+$\displaystyle \delta_a(t-t_0) = \frac{1}{2a} \left( H(t - (t_0-a)) - H(t-(t_0 + a))   \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8396}%
+$\displaystyle {\cal L} \left\{ \delta_a \left(t - t_0 \right) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8400}%
+$\displaystyle \frac{1}{2a} {\cal L} \left\{ H(t - (t_0-a))   \right\} - \frac{1}{2a} \left\{ H(t-(t_0 + a))     \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8404}%
+$\displaystyle \frac{1}{2a} \left( \frac{e^{-s(t_0-a)}}{s} \right) -   \frac{1}{2a} \left( \frac{e^{-s(t_0+a)}}{s} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8408}%
+$\displaystyle e^{-st_0} \left( \frac{e^{sa} - e^{-sa}}{2sa}  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8411}%
+$\displaystyle {\cal L} \left\{ \delta(t - t_0) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8415}%
+$\displaystyle {\cal L} \left\{ \lim_{a \rightarrow 0} \delta_a(t- t_0) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8419}%
+$\displaystyle \lim_{a \rightarrow 0} {\cal L} \left\{ \delta_a(t- t_0)  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8423}%
+$\displaystyle \lim_{a \rightarrow 0} e^{-st_0} \underbrace{\left( \frac{e^{sa} - e^{-sa}}{2sa}  \right)}_{L'H \hat{o}pital}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8427}%
+$\displaystyle e^{-st_0} \lim_{a \rightarrow 0} \frac{se^{sa} + se^{-sa}}{2s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8431}%
+$\displaystyle e^{-st_0}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8435}%
+$ {\cal L} \left\{ \delta(t-t_0) \right\} =e^{-st_0}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8437}%
+$ {\cal L} \left\{ \delta(t) \right\}=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8439}%
+$ \delta(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8445}%
+$ {\cal L} \{ \delta(t-2 \pi) \}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8447}%
+$\displaystyle {\cal L} \{ \delta(t - 2 \pi) \} = e^{-2 \pi s}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8452}%
+$ \Gamma(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8454}%
+$ \Gamma: [0,\infty[ \rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8458}%
+$\displaystyle \int_0^{\infty} e^{-t} t^{x-1} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure1906}%
+\begin{figure}
+GAMMA
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8460}%
+$ x > 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8462}%
+$\displaystyle \Gamma(x+1) = x \Gamma(x)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8465}%
+$\displaystyle \Gamma(x)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8473}%
+$\displaystyle \underbrace{\frac{e^{-t}t^x}{x} \biggr |_0^{\infty}}_{0} + \frac{1}{x} \int_0^{\infty} e^{-t}t^x dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8477}%
+$\displaystyle \frac{1}{x} \Gamma(x+1)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8479}%
+$ \Gamma\left(\frac{1}{2}\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8482}%
+$\displaystyle \Gamma\left( \frac{1}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8486}%
+$\displaystyle \int_0^{\infty} \underbrace{t^{-\frac{1}{2}} e^{-t}}_{u^2=t} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8490}%
+$\displaystyle 2 \int_0^{\infty} e^{u^2} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8494}%
+$\displaystyle \sqrt{\pi}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8498}%
+$ p=1,2,\ldots$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8500}%
+$ n=1,2,\ldots$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8502}%
+$\displaystyle \Gamma(x+p) = (x+p-1)(x+p-2) \ldots x \Gamma(x)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8504}%
+$ \Gamma(n+1)=n!$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8506}%
+$ \Gamma\left(\frac{3}{2}\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8508}%
+$ \Gamma\left(\frac{5}{2}\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8510}%
+$ \Gamma\left(-\frac{1}{2}\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8515}%
+$\displaystyle \Gamma\left( \frac{3}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8519}%
+$\displaystyle \Gamma \left(\frac{1}{2} + 1 \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8523}%
+$\displaystyle \frac{1}{2} \Gamma\left( \frac{1}{2}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8527}%
+$\displaystyle \frac{\sqrt{\pi}}{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8532}%
+$\displaystyle \Gamma\left( \frac{5}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8536}%
+$\displaystyle \Gamma\left( \frac{3}{2} + 1 \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8540}%
+$\displaystyle \frac{3}{2} \Gamma\left( \frac{3}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8544}%
+$\displaystyle \frac{3}{2} \frac{\sqrt{\pi}}{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8548}%
+$\displaystyle \frac{3 \sqrt{\pi} }{4}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8557}%
+$\displaystyle \Gamma\left( - \frac{1}{2} + 1  \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8563}%
+$\displaystyle - \frac{1}{2} \Gamma\left( -\frac{1}{2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8565}%
+$\displaystyle \Gamma\left( -\frac{1}{2} \right) = -2 \sqrt{\pi}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8567}%
+$\displaystyle \beta(x,y) = \int_0^1 t^{x-1} \left( 1 - t \right)^{y-1} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8569}%
+$ \beta(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8573}%
+$ y>0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8575}%
+$ \beta(x,y) = \beta(y,x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8581}%
+$\displaystyle \beta(x,y) = 2 \int_0^{\frac{\pi}{2}} \left(Sen(t)  \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8587}%
+$\displaystyle \beta(x,y) = \int_0^{\infty} \frac{t^{x-1}}{\left(1 + t \right)^{x+y}} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8593}%
+$\displaystyle \beta(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8596}%
+$\displaystyle \beta(x,y)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8600}%
+$\displaystyle \int_0^1 t^{x-1} \left(1 - t \right)^{y-1} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8604}%
+$\displaystyle \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_{\frac{1}{2}}^1 t^{x-1} \underbrace{\left(1 - t \right)^{y-1}}_{u=1-t} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8608}%
+$\displaystyle \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_0^{1} u^{y-1} \left(1 - u \right)^{x-1} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8610}%
+$\displaystyle 1 - x < 1 \Rightarrow x > 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8612}%
+$\displaystyle 1 - y < 1 \Rightarrow y > 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8614}%
+$ u=1-t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8621}%
+$\displaystyle \int_0^1 t^{x-1} \underbrace{\left( 1-t \right)^{y-1}}_{u=1-t} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8625}%
+$\displaystyle \int_0^1 u^{y-1} \left(1 -u \right)^{x-1} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8629}%
+$\displaystyle \beta(y,x)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8631}%
+$\displaystyle t = Sen^2(u) \Rightarrow dt = 2 Sen(u) Cos(u) du
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8638}%
+$\displaystyle \int_0^1 t^{x-1} \underbrace{\left( 1- t \right)^{y-1}}_{t=Sen^2(u)} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8642}%
+$\displaystyle \int_0^{\frac{\pi}{2}} \left( Sen^2(u) \right)^{x-1} \left(1 - Sen^2(u)  \right)^{y-1} 2 Sen(u) Cos(u) du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8646}%
+$\displaystyle 2 \int_0^{\frac{\pi}{2}} \left(Sen(t)  \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8648}%
+$\displaystyle t = \frac{u}{1 + u} \Rightarrow dt = \frac{du}{\left(1 + u \right)^2}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8659}%
+$\displaystyle \int_0^{\infty} \left( \frac{u}{1+u}  \right)^{x-1} \left( 1 - \frac{u}{1+u}  \right)^{y-1} \frac{1}{\left( 1 + u \right)^2}du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8663}%
+$\displaystyle \int_0^{\infty} \frac{u^{x-1}}{\left( 1 + u  \right)^{x+y}} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8667}%
+$\displaystyle \int_0^{\infty} \frac{t^3}{\left( 1 + t \right)^7} dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8674}%
+$\displaystyle \beta(4,3)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8678}%
+$\displaystyle \frac{\Gamma(3) \Gamma(4)}{\Gamma(7)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8682}%
+$\displaystyle \frac{12}{720}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8686}%
+$\displaystyle \frac{1}{60}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8690}%
+$ n!$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8692}%
+$ 52!$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8694}%
+$ (n/e)^n \sqrt{2 \pi n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8700}%
+$\displaystyle \lim_{n \rightarrow \infty} \frac{\left( \frac{n}{e} \right)^n \sqrt{2\pi n}}{n!} = 1
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8704}%
+$\displaystyle \Gamma(n + 1)  \approx n^n e^{-n}\sqrt{2 \pi n}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8708}%
+$ t^x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8712}%
+$\displaystyle {\cal L} \{ t^x \} = \frac{\Gamma(x+1)}{s^{x+1}}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8714}%
+$ u=st$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8717}%
+$\displaystyle {\cal L} \{ t^x \}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8721}%
+$\displaystyle \int_0^{\infty} e^{-st} t^{x} dt$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8725}%
+$\displaystyle \frac{1}{s} \int_0^{\infty} e^{-u} \left( \frac{u}{s} \right)^{-u} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8729}%
+$\displaystyle \frac{1}{s^{x+1}} \int_0^{\infty} u^x e^{-u} du$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8733}%
+$\displaystyle \frac{\Gamma(x+1)}{s^{x+1}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8744}%
+$\displaystyle \frac{\Gamma(\frac{1}{2} )}{\sqrt{s}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8748}%
+$\displaystyle \sqrt{\frac{\pi}{s}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8750}%
+$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{s -2} } \right\}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8757}%
+$\displaystyle e^{2t} {\cal L} \left\{ \frac{1}{\sqrt{s}} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8761}%
+$\displaystyle \frac{e^{2t}}{\sqrt{\pi t}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8763}%
+$ {\cal L} \left\{J_0(t)  \right\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8765}%
+$ J_0(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8767}%
+$\displaystyle J_0(t) =  1 - \frac{t^2}{2^2} + \frac{t^4}{2^2 4^2} - \frac{t^6}{2^2 4^2 6^2} + \cdots
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8770}%
+$\displaystyle {\cal L} \left\{  J_0(t) \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8774}%
+$\displaystyle \frac{1}{s} - \frac{1}{2^2} \frac{2!}{s^3} + \frac{1}{2^2 4^2} \frac{4!}{s^5} + \frac{1}{2^2 4^2 6^2} \frac{6!}{s^7} + \cdots$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8778}%
+$\displaystyle \frac{1}{s} \left\{ 1 -\frac{1}{2} \frac{1}{s^2} + \frac{1 \cdot 3}{2 \cdot 4}  \frac{1}{s^4} - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} \frac{1}{s^6} + \cdots \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8782}%
+$\displaystyle \frac{1}{s} \left\{ \left( 1 + \frac{1}{s^2}  \right)^{-1/2} \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8786}%
+$\displaystyle \frac{1}{\sqrt{s^2 + 1}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8788}%
+$\displaystyle \frac{1}{\sqrt{x + 1}} = 1 - \frac{1}{2} x + \frac{1 \cdot 3}{2 \cdot 4} x^2 - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} x^3 + \cdots
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8790}%
+$ \left| x \right| <1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8798}%
+\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime \prime} + 2y^{\prime} + 2y  & = & \delta(t-\pi) \\
+y(0) & = & 0 \\
+y^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8801}%
+$\displaystyle \left( s^2 + 2s + 2 \right)Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8805}%
+$\displaystyle e^{- \pi s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8811}%
+$\displaystyle \frac{e^{-\pi s}}{s^2 +2s + 2 }$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8817}%
+$\displaystyle \frac{e^{-\pi s}}{(s+1)^2 + 1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8819}%
+$\displaystyle y(t) = e^{-(t- \pi)} Sen(t- \pi) H(t-\pi)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2237}%
+\begin{figure}
+VINICIAL
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8823}%
+\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 16x & = & f(t) \\
+x(0) & = & 0 \\
+x^{\prime}(0) & = & 1 \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8827}%
+\begin{displaymath}
+\begin{cases}
+Cos(4t) & \text{Si $0 \leq t < \pi$\  }  \\
+0 &  \text{Si $t \geq \pi$\  } \\
+\end{cases}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8833}%
+$\displaystyle f(t)=Cos(4t) - Cos(4t)H(t-\pi) = Cos(4t) - Cos\left(4 \left((t - \pi\right) )\right)H(t-\pi)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8836}%
+$\displaystyle s^2X(s) -sx(0) - x^{\prime}x(0) + 16X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8840}%
+$\displaystyle \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8842}%
+$\displaystyle \left(s^2 + 16 \right)X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8846}%
+$\displaystyle 1 + \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8848}%
+$\displaystyle X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8852}%
+$\displaystyle \frac{1}{s^2+16} + \frac{s}{(s^2+16)^2} - \frac{se^{-\pi s}}{(s^2+16)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8854}%
+$\displaystyle x(t) = \frac{1}{4} Sen(4t) + \frac{t}{8} Sen(4t) - \frac{t-\pi}{8} Sen\left(4 \left((t-\pi\right) \right) H(t-\pi)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8856}%
+$ x(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2275}%
+\begin{figure}
+GRAFICA2
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8858}%
+\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+t y^{\prime \prime} + y^{\prime} + 4t y & = & 0 \\
+y(0) & = & 3 \\
+y^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8861}%
+$\displaystyle {\cal L} \left\{t y^{\prime \prime}  \right\} + {\cal L} \left\{ y^{\prime} \right\} + 4 {\cal L} \left\{ ty\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8866}%
+$\displaystyle - \left(s^2 Y(s) - s y(0) - y^{\prime}(0)  \right)^{\prime} + sY(s) - y(0) - 4 Y^{\prime}(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8871}%
+$\displaystyle \frac{dY(s)}{ds} + \frac{sY(s)}{s^2 + 4}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8876}%
+$\displaystyle Ln\left(Y(s) \right) + \frac{1}{2} Ln \left(s^2 + 4 \right) = c \Rightarrow Y(s) = \frac{c}{\sqrt{s^2 + 4}}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8878}%
+$\displaystyle y(t) = c J_0(2t)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8882}%
+$ y(0)= cJ_0(0) = c = 3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8884}%
+$ y(t)=3J_0(2t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8890}%
+$ t=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8892}%
+$ t=4$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8896}%
+$ t=5$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8898}%
+$\displaystyle F=ks \Rightarrow 16 = 2k \Rightarrow k = 8
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath8900}%
+\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 8x^{\prime} + 16x & = & 2 \left( -2 \delta(t-2) + 4H(t-4)  \right) \\
+x(0) & = & 3  \\
+x^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8903}%
+$\displaystyle s^2X(s)-sx(0)-x^{\prime}(0) + 8sX(s) - 8x(0) + 16X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8907}%
+$\displaystyle -4e^{-2s} + 8 \frac{e^{-4s}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8909}%
+$\displaystyle \left( s +4 \right)^2 X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8913}%
+$\displaystyle 3s + 3$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8917}%
+$\displaystyle 4e^{-2s} + 8 \frac{e^{-4s}}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8923}%
+$\displaystyle \frac{3s+3}{\left( s + 4 \right)^2} - \frac{4e^{-2s}}{\left( s + 4 \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8927}%
+$\displaystyle \frac{8e^{-4s}}{s\left( s +4  \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8929}%
+$ -2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8931}%
+$ x(0)=3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8938}%
+$\displaystyle \frac{3}{s+4} - \frac{9}{\left(s+4 \right)^2} - \frac{4e^{-2s}}{\left(s+4\right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8942}%
+$\displaystyle \frac{8e^{-4s}}{s+4} - \frac{32e^{-4s}}{s \left(s +4 \right)^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8945}%
+$\displaystyle x(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8949}%
+$\displaystyle 3e^{-4t} - 9te^{-4t}-4(t-2)e^{-4(t-2)}H(t-2) + 8e^{-4(t-2)}H(t-4)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8953}%
+$\displaystyle 32(t-4)e^{-4(t-4)}H(t-4)
+-32$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8955}%
+$ x(5)=0.454137$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2351}%
+\begin{figure}
+RESORTE
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8961}%
+$\displaystyle f(t) = \phi(t) + \alpha \int_a^t K(t, \tau)f(\tau) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8965}%
+$ K(t,\tau)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8969}%
+$ \alpha$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8973}%
+$ \phi(t)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8975}%
+$\displaystyle f(t) = \alpha \int_a^t K(t, \tau) f(t) dt
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8977}%
+$\displaystyle f(t) =  4t -3 \int_0^{t} f(\tau) Sen(t - \tau) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8984}%
+$\displaystyle 4 {\cal L} \{ t \} - 3 {\cal L} \left\{ \int_0^{t} f(\tau) Sen(t - \tau) d \tau
+\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8986}%
+$\displaystyle F(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8990}%
+$\displaystyle \frac{4}{s^2} - \frac{3F(s)}{s^2 + 1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8992}%
+$\displaystyle \left( 1 + \frac{3}{s^2+ 1} \right)F(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8996}%
+$\displaystyle \frac{4}{s^2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9002}%
+$\displaystyle \frac{4(s^2 +1)}{s^2(s^2 + 4)}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9008}%
+$\displaystyle \frac{1}{s^2} + \frac{3}{s^2 + 4}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9015}%
+$\displaystyle {\cal L}^{-1} \left\{  \frac{1}{s^2} + \frac{3}{s^2 + 4}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9019}%
+$\displaystyle {\cal L} \left\{ \frac{1}{s^2} \right\} + 3{\cal L} \left\{ \frac{1}{s^2+4}  \right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9023}%
+$\displaystyle t + \frac{3}{2}Sen(2t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9029}%
+$ L \frac{di}{dt}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9031}%
+$ Ri$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9033}%
+$ \frac{q}{c}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9035}%
+$\displaystyle \frac{dq}{dt} = i(t) \Rightarrow q = \int_0^t i( \tau) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9037}%
+$\displaystyle \frac{1}{c} \int_0^t i( \tau) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9039}%
+$ i(t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9045}%
+$ C$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2408}%
+\begin{figure}
+RLC
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9049}%
+$\displaystyle L \frac{di}{dt} + Ri + \frac{1}{c} \int_0^t i( \tau) d \tau
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9053}%
+$ \Omega$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9055}%
+$ 10^{-3}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9057}%
+$ i(0)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2419}%
+\begin{figure}
+EXTERNA
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9061}%
+$ t \geq 1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9063}%
+$\displaystyle E(t) = 120t - 120tH(t-1)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9065}%
+$\displaystyle \frac{1}{10} \frac{di}{dt} + 20i + 1000 \int_0^t i( \tau) d \tau = 120t - 120t H(t-1)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9068}%
+$\displaystyle \frac{1}{10} sI(s)  - i(0) + 20 I(s)  + 1000 \frac{I(s)}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9072}%
+$\displaystyle 120 \left( \frac{1}{s^2} - \frac{e^{-s}}{s^2} - \frac{e^{-s}}{s} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9074}%
+$\displaystyle s^2 I(s) + 200s I(s) + 10000I(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9078}%
+$\displaystyle 1200s \left( \frac{1}{s^2} - \frac{e^{-s}}{s^2} - \frac{e^{-s}}{s} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9080}%
+$\displaystyle \left(s + 100 \right)^2 I(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9084}%
+$\displaystyle 1200 \left( \frac{1}{s} - \frac{e^{-s}}{s} - e^{-s} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9086}%
+$\displaystyle I(s) =  1200 \left( \frac{1}{s(s+100)^2} - \frac{e^{-s}}{s(s+100)^2} + \frac{e^{-s}}{(s+100)^2}   \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9089}%
+$\displaystyle I(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9093}%
+$\displaystyle \frac{3}{25} \left( \frac{1}{s} - \frac{1}{s+100} - \frac{100}{s(s+100)^2} \right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9097}%
+$\displaystyle \left.\frac{e^{-s}}{s}+ \frac{e^{-s}}{s+100} + \frac{100e^{-s}}{(s+100)^2} - \frac{10000e^{-s}}{(s+100)^2} \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9100}%
+$\displaystyle i(t)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9104}%
+$\displaystyle \frac{3}{25} \left( 1- H(t-1) - e^{-100t} + e^{-100t} H(t-1)   \right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9108}%
+$\displaystyle 12e^{-100t} - 1188(t-1)e^{-100(t-1)}H(t-1)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9112}%
+$\displaystyle \frac{dx}{dt}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9116}%
+$\displaystyle 2x - 3y$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9118}%
+$\displaystyle \frac{dy}{dt}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9122}%
+$\displaystyle y - 2x$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9124}%
+$ x(0)=8$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9126}%
+$ y(0)=3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9128}%
+$ {\cal L} \{ x(t) \}=X(s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9133}%
+$\displaystyle sX(s) - 8$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9137}%
+$\displaystyle 2X(s) - 3Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9139}%
+$\displaystyle sY(s) - 3$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9143}%
+$\displaystyle Y(s) - 2X(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9146}%
+$\displaystyle \left(s - 2 \right)X(s) + 3Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9150}%
+$\displaystyle 8$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9152}%
+$\displaystyle 2X(s) + \left(s - 1 \right)Y(s)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9156}%
+$\displaystyle 3$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath9158}%
+\begin{displaymath}
+X(s) = \frac{\biggr|
+\begin{array}{cc} 8 & 3 \\3 & s-1 \\\end{array}
+\biggr|}
+{\biggr| \begin{array}{cc} 8 & 3 \\3 & s-1 \\\end{array}
+\biggr|} = \frac{8s-17}{s^2-3s-4} = \frac{8s-17}{(s+1)(s-4)} = \frac{5}{s+1} + \frac{3}{s-4}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath9160}%
+\begin{displaymath}
+Y(s) = \frac{\biggr|
+\begin{array}{cc} s-2 & 8 \\2 & 31 \\\end{array}
+\biggr|}
+{\biggr| \begin{array}{cc} s-2 & 3 \\2 & s-1 \\\end{array}
+\biggr|} = \frac{3s-22}{s^2-3s-4} = \frac{3s-22}{(s+1)(s-4)} = \frac{5}{s+1} - \frac{2}{s-4}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9162}%
+$\displaystyle x(t) = {\cal L}^{-1} \{X(s)  \} = 5e^{-t} + 3e^{4t}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9164}%
+$\displaystyle y(t) = {\cal L} \{Y(s) \} = 5e^{-t} - 2e^{4t}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9166}%
+$ i_1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9168}%
+$ i_2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure2534}%
+\begin{figure}
+MALLA
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9170}%
+$\displaystyle -10i_1 - 2 \frac{dti_1}{dt} + 4 \frac{di_2}{dt} + 20 i_2 = 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9172}%
+$\displaystyle 30 i - 110  + 2 \frac{di_1}{dt} + 10 i_1 = 0
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9175}%
+$\displaystyle -5i_1 - \frac{di_1}{dt} + 2 \frac{di_2}{dt} + 10i_2$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9180}%
+$\displaystyle \frac{di_1}{dt} + 20 i_1 + 15i_2$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9184}%
+$\displaystyle 55$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9186}%
+$ i_1(0)=i_2(0)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9189}%
+$\displaystyle \left( s + 5 \right)i_1 - \left(2s + 10  \right)i_2$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9194}%
+$\displaystyle \left( s + 20 \right)i_1 + 15i_2$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9198}%
+$\displaystyle \frac{55}{s}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9200}%
+$ i_1=2i_2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9202}%
+$\displaystyle i_2 = \frac{55}{s \left(2s + 55  \right)} = \frac{1}{s} - \frac{2}{2s+55}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9204}%
+$\displaystyle i_2(t)  =  1 - e^{-\frac{55t}{2}}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9206}%
+$\displaystyle i_1(t) = 2i_2  = 2 - 2 e^{-\frac{55t}{2}}
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay9208}%
+$\displaystyle i(t) = i_1(t) + i_2(t) = 3 \left(1 - e^{-\frac{55t}{2}} \right)
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

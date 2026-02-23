@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Soluci&oacute;n de ecuaciones diferenciales</TITLE>
+<META NAME="description" CONTENT="Soluci&oacute;n de ecuaciones diferenciales">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp; 12&nbsp;
+<a href="node13.html">13</a>&nbsp; <a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;<p>&nbsp;<b><A NAME="SECTION-266764287">Soluci&oacute;n de ecuaciones diferenciales</A>
+</b>
+
+</p>
+
+<P>
+La transformada de Laplace es &uacute;til para resolver ecuaciones diferenciales que involucran funciones <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">, peri&oacute;dicas, funciones discontinuas a trozos o deltas de Dirac, como lo muestran los siguientes ejemplos.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Resuelva el siguiente problema de valor inicial
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime \prime} + 2y^{\prime} + 2y  & = & \delta(t-\pi) \\
+y(0) & = & 0 \\
+y^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="211" HEIGHT="73" BORDER="0"
+ SRC="img692.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime \prime} + 2y^{\prime...
+... &amp; = &amp; 0 \\
+y^{\prime}(0) &amp; = &amp; 0 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp;
+<BR>
+Tomando la transformada a ambos lados, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left( s^2 + 2s + 2 \right)Y(s) & = & e^{- \pi s}  \\
+Y(s) & = & \frac{e^{-\pi s}}{s^2 +2s + 2 } \\
+Y(s) & = & \frac{e^{-\pi s}}{(s+1)^2 + 1} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="130" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img693.gif"
+ ALT="$\displaystyle \left( s^2 + 2s + 2 \right)Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img694.gif"
+ ALT="$\displaystyle e^{- \pi s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\displaystyle Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="84" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img695.gif"
+ ALT="$\displaystyle \frac{e^{-\pi s}}{s^2 +2s + 2 }$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\displaystyle Y(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="89" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img696.gif"
+ ALT="$\displaystyle \frac{e^{-\pi s}}{(s+1)^2 + 1}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Y al aplicar la transformada inversa
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+y(t) = e^{-(t- \pi)} Sen(t- \pi) H(t-\pi)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="238" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img697.gif"
+ ALT="$\displaystyle y(t) = e^{-(t- \pi)} Sen(t- \pi) H(t-\pi)
+$">
+</DIV><P></P>
+
+<P>
+La gr&aacute;fica de la soluci&oacute;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$ y(t)$"> se muestra en la figura<a href="#1.10"> 1.10</a><P align="center">
+<a name="1.10">
+<img border="0" src="images/Vinicial.gif" width="295" height="182"></a><P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="grafica3"></A>
+<p>Figura 1.10</DIV>
+
+<P>
+<font color="#008000">Ejemplo</font><BR>
+Resuelva el siguiente problema de valor inicial
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 16x & = & f(t) \\
+x(0) & = & 0 \\
+x^{\prime}(0) & = & 1 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="153" HEIGHT="73" BORDER="0"
+ SRC="img699.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 16x &amp; = &amp; ...
+... &amp; = &amp; 0 \\
+x^{\prime}(0) &amp; = &amp; 1 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+donde <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> est&aacute; dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{cases}
+Cos(4t) & \text{Si $0 \leq t < \pi$\  }  \\
+0 &  \text{Si $t \geq \pi$\  } \\
+\end{cases}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="164" HEIGHT="64" BORDER="0"
+ SRC="img700.gif"
+ ALT="\begin{displaymath}
+\begin{cases}
+Cos(4t) &amp; \text{Si $0 \leq t &lt; \pi$\ } \\
+0 &amp; \text{Si $t \geq \pi$\ } \\
+\end{cases}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+<P>
+La funci&oacute;n <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> puede interpretarse como una fuerza externa que act&uacute;a en un sistema mec&aacute;nico s&oacute;lo por un tiempo corto, siendo desactivada posteriormente. Aunque este problema puede resolverse de la forma convencional no es  conveniente.
+
+<P>
+Primero usemos la funci&oacute;n de Heaviside para reescribir <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$">:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+f(t)=Cos(4t) - Cos(4t)H(t-\pi) = Cos(4t) - Cos\left(4 \left((t - \pi\right) )\right)H(t-\pi)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="512" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img701.gif"
+ ALT="$\displaystyle f(t)=Cos(4t) - Cos(4t)H(t-\pi) = Cos(4t) - Cos\left(4 \left((t - \pi\right) )\right)H(t-\pi)
+$">
+</DIV><P></P>
+
+<P>
+Aplicando transformada tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+s^2X(s) -sx(0) - x^{\prime}x(0) + 16X(s) & = & \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}  \\
+\left(s^2 + 16 \right)X(s) & = & 1 + \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}   \\
+X(s) & = & \frac{1}{s^2+16} + \frac{s}{(s^2+16)^2} - \frac{se^{-\pi s}}{(s^2+16)^2} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="240" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img702.gif"
+ ALT="$\displaystyle s^2X(s) -sx(0) - x^{\prime}x(0) + 16X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="130" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img703.gif"
+ ALT="$\displaystyle \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="104" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img704.gif"
+ ALT="$\displaystyle \left(s^2 + 16 \right)X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="157" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img705.gif"
+ ALT="$\displaystyle 1 + \frac{s}{s^2+16} - \frac{se^{-\pi s}}{s^2+16}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img706.gif"
+ ALT="$\displaystyle X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="242" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img707.gif"
+ ALT="$\displaystyle \frac{1}{s^2+16} + \frac{s}{(s^2+16)^2} - \frac{se^{-\pi s}}{(s^2+16)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Al aplicar la transformada inversa obtenemos
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+x(t) = \frac{1}{4} Sen(4t) + \frac{t}{8} Sen(4t) - \frac{t-\pi}{8} Sen\left(4 \left((t-\pi\right) \right) H(t-\pi)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="431" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img708.gif"
+ ALT="$\displaystyle x(t) = \frac{1}{4} Sen(4t) + \frac{t}{8} Sen(4t) - \frac{t-\pi}{8} Sen\left(4 \left((t-\pi\right) \right) H(t-\pi)
+$">
+</DIV><P></P>
+
+<P>
+La gr&aacute;fica de <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img709.gif"
+ ALT="$ x(t)$"> se muestra en la figura <a href="#1.11">1.11.</a>
+
+<P align="center">
+<a name="1.11">
+<img border="0" src="images/Grafica2.gif" width="236" height="145"></a><P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="grafica4"></A>
+Figura 1.11</DIV>
+
+<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+Resolver el siguiente problema de valor inicial
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+t y^{\prime \prime} + y^{\prime} + 4t y & = & 0 \\
+y(0) & = & 3 \\
+y^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="167" HEIGHT="73" BORDER="0"
+ SRC="img711.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+t y^{\prime \prime} + y^{\prim...
+... &amp; = &amp; 3 \\
+y^{\prime}(0) &amp; = &amp; 0 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+En este caso la ecuaci&oacute;n diferencial tiene coeficientes variables, por lo que la transformada de Laplace resulta muy &uacute;til.
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{t y^{\prime \prime}  \right\} + {\cal L} \left\{ y^{\prime} \right\} + 4 {\cal L} \left\{ ty\right\} & = & 0 \\
+- \left(s^2 Y(s) - s y(0) - y^{\prime}(0)  \right)^{\prime} + sY(s) - y(0) - 4 Y^{\prime}(s) & = & 0 \\
+\frac{dY(s)}{ds} + \frac{sY(s)}{s^2 + 4} & = & 0 \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table18">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="188" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img712.gif"
+ ALT="$\displaystyle {\cal L} \left\{t y^{\prime \prime} \right\} + {\cal L} \left\{ y^{\prime} \right\} + 4 {\cal L} \left\{ ty\right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP>
+<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="absbottom" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="365" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img713.gif"
+ ALT="$\displaystyle - \left(s^2 Y(s) - s y(0) - y^{\prime}(0) \right)^{\prime} + sY(s) - y(0) - 4 Y^{\prime}(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="114" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img714.gif"
+ ALT="$\displaystyle \frac{dY(s)}{ds} + \frac{sY(s)}{s^2 + 4}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Integrando obtenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+Ln\left(Y(s) \right) + \frac{1}{2} Ln \left(s^2 + 4 \right) = c \Rightarrow Y(s) = \frac{c}{\sqrt{s^2 + 4}}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="348" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img715.gif"
+ ALT="$\displaystyle Ln\left(Y(s) \right) + \frac{1}{2} Ln \left(s^2 + 4 \right) = c \Rightarrow Y(s) = \frac{c}{\sqrt{s^2 + 4}}
+$">
+</DIV><P></P>
+
+<P>
+De donde obtenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+y(t) = c J_0(2t)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="100" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img716.gif"
+ ALT="$\displaystyle y(t) = c J_0(2t)
+$">
+</DIV><P></P>
+
+<P>
+Para determinar el valor de <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.gif"
+ ALT="$ c$"> obsérvese que <!-- MATH
+ $y(0)= cJ_0(0) = c = 3$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img717.gif"
+ ALT="$ y(0)= cJ_0(0) = c = 3$">. Con lo cual la soluci&oacute;n al problema est&aacute; dada por <!-- MATH
+ $y(t)=3J_0(2t)$
+ -->
+<IMG
+ WIDTH="101" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img718.gif"
+ ALT="$ y(t)=3J_0(2t)$">.
+
+<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H2>&nbsp;</H2>
+</BODY>
+</HTML>

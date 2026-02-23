@@ -1,0 +1,717 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaci&#243;n lineal de primer orden</TITLE>
+<META NAME="description" CONTENT="Ecuaci&#243;n lineal de primer orden">
+<META NAME="keywords" CONTENT="edo2v1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo2v1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+	<table height="35" cellSpacing="0" cellPadding="0" width="100%" border="0" id="table10">
+		<tr>
+			<td width="100%" height="1">
+			<img height="29" src="images/Encabezado-de-capitulos.png" width="356" border="0"> 
+			<table id="table11" cellSpacing="0" cellPadding="0" width="100%" bgColor="#808080" border="0">
+				<tr>
+					<td height="4">
+					<table id="table12" cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<tr>
+							<td height="1"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div align="left">
+	<div align="left">
+		<table height="1" width="100%" border="0" class="table13">
+			<tr>
+				<td width="191" height="1">
+				<img height="10" src="images/cap-aplicaciones1er-orden.gif" width="373" border="0"></td>
+				<td width="100%" height="1">
+				<p align="right">
+				<font face="Arial Narrow" color="#808080" size="2">|Instituto 
+				Tecnol&oacute;gico de Costa Rica|Escuela de Matem&aacute;tica| </font>
+				<font face="Arial Narrow" color="#000080" size="2">
+				<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni 
+				Figueroa M.</a></font></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<p><br>
+<font size="2"><a href="./">1</a><font color="#000080">&nbsp; </font>
+<a href="node2.html">2</a><font color="#000080">&nbsp; </font>
+<a href="node3.html">3</a><font color="#000080">&nbsp; </font>
+<a href="node5.html">4</a><font color="#000080">&nbsp; <a href="node7.html">5</a>&nbsp;
+6&nbsp; <a href="node11.html">7</a>&nbsp;
+<a href="node13.html">8</a> <a href="node14.html">&nbsp;9</a>&nbsp;
+<a href="node15.html">10</a>&nbsp; <a href="node17.html">11</a></font></font></p>
+<center>
+<table height="37" cellSpacing="0" cellPadding="0" width="577" border="0" id="table14">
+	<tr>
+		<td width="68" height="37">&nbsp; 
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+		<td width="509" height="37">
+		<div align="center">
+			<H1 align="left"><A NAME="SECTION-1940979711">
+			<font size="3">Ecuaci&#243;n lineal de primer orden</font></A><font size="3">
+			</font>
+</H1>
+
+<P align="left">
+Tal vez, esta sea una de las ecuaciones diferenciales de mayor
+importancia, pues muchas de las aplicaciones que trataremos se modelan 
+por medio de una ecuaci&#243;n de este tipo.
+
+			<P align="left">
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table18">
+				<tr>
+					<td width="16" bgColor="#ffcc00" height="1"><b>
+					<font color="#000080" size="2">&nbsp;</font> </b></td>
+					<td width="483" bgColor="#99cc33" height="1"><b>
+					<font color="#000080" size="2">&nbsp;Definici&oacute;n</font> </b>[Ecuaci&#243;n lineal]
+					</td>
+				</tr>
+				<tr>
+					<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+					<td width="483" bgColor="#fffdf0" height="76">&nbsp;Una ecuaci&#243;n diferencial de primer orden que puede escribirse en
+la forma
+
+<P align="left"></P>
+<DIV ALIGN="center">
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} +  P(x)y = Q(x)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="135" HEIGHT="39" BORDER="0"
+ SRC="img204.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+donde <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$P(x)$"> y <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.gif"
+ ALT="$Q(x)$"> son funciones reales, se llama ecuaci&#243;n
+diferencial lineal.
+
+					</td>
+				</tr>
+			</table>
+
+<P align="left">
+&nbsp;<P align="left">
+<B>Observaci&#243;n:</B> una ecuaci&#243;n diferencial lineal de orden <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.gif"
+ ALT="$n$"> tiene la forma
+
+			<P align="left"></P>
+<DIV ALIGN="left">
+<!-- MATH
+ \begin{displaymath}
+a_{n}(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y^{\prime} + a_0(x) y = f(x)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="405" HEIGHT="28" BORDER="0"
+ SRC="img207.gif"
+ ALT="\begin{displaymath}
+a_{n}(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y^{\prime} + a_0(x) y = f(x)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+donde los coeficientes <IMG
+ WIDTH="38" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$a_i(x)$"> son funciones reales y <IMG
+ WIDTH="71" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$a_n(x) \neq 0$">. Note que cuando <IMG
+ WIDTH="42" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img210.gif"
+ ALT="$n=1$"> tenemos que
+
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+a_1(x) y^{\prime} + a_0(x)y = f(x)
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="165" HEIGHT="28" BORDER="0"
+ SRC="img211.gif"
+ ALT="\begin{displaymath}
+a_1(x) y^{\prime} + a_0(x)y = f(x)
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+y al dividir por <IMG
+ WIDTH="40" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.gif"
+ ALT="$a_1(x)$">
+
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} + \frac{a_0(x)}{a_1(x)} y = \frac{f(x)}{a_1(x)}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="142" HEIGHT="44" BORDER="0"
+ SRC="img213.gif"
+ ALT="\begin{displaymath}
+y^{\prime} + \frac{a_0(x)}{a_1(x)} y = \frac{f(x)}{a_1(x)}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+La cual tiene la forma
+
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} + P(x)y  = Q(x)
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="129" HEIGHT="28" BORDER="0"
+ SRC="img214.gif"
+ ALT="\begin{displaymath}
+y^{\prime} + P(x)y = Q(x)
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+&nbsp;<P align="left">
+donde <!-- MATH
+ $P(x) = \frac{a_0(x)}{a_1(x)}$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.gif"
+ ALT="$P(x) = \frac{a_0(x)}{a_1(x)} $"> y <!-- MATH
+ $Q(x) = \frac{f(x)}{a_1(x)}$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.gif"
+ ALT="$Q(x) = \frac{f(x)}{a_1(x)} $">.
+
+			<P align="left">
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table19">
+				<tr>
+					<td width="16" bgColor="#ffcc00" height="1"><b>
+					<font color="#000080" size="2">&nbsp;</font> </b></td>
+					<td width="483" bgColor="#99cc33" height="1"><b>
+					<font color="#000080" size="2">&nbsp;</font>Teorema</b></td>
+				</tr>
+				<tr>
+					<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+					<td width="483" bgColor="#fffdf0" height="76">
+
+<P align="left">
+La soluci&#243;n general de la ecuaci&#243;n diferencial de primer orden
+
+<P align="left">
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{dy}{dx} + P(x) y =  Q(x)
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table20">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="edo2:eq9"></A>
+	<a name="1.10"><IMG
+ WIDTH="135" HEIGHT="39" BORDER="0"
+ SRC="img204.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+<p align="left">(1.10)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P align="left"></P>
+
+<P align="left">
+est&#225; dada por
+
+<BR><P align="left"></P>
+<DIV ALIGN="center">
+<!-- MATH
+ \begin{displaymath}
+y = e^{- \int P(x) dx} \left(\int Q(x) e^{\int P(x) dx }  dx \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="258" HEIGHT="45" BORDER="0"
+ SRC="img217.gif"
+ ALT="\begin{displaymath}
+y = e^{- \int P(x) dx} \left(\int Q(x) e^{\int P(x) dx } dx \right)
+\end{displaymath}">
+</DIV>
+					&nbsp;</td>
+				</tr>
+			</table>
+
+<P align="left">
+&nbsp;<P align="left"></P>
+
+<P align="left">
+<B>Demostraci&#243;n</B> 
+<BR>
+Reescribiendo la ecuaci&#243;n<a href="#1.10"> 1.10</a> como
+
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\left(P(x) y - Q(x)  \right) dx - dy = 0
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="191" HEIGHT="28" BORDER="0"
+ SRC="img218.gif"
+ ALT="\begin{displaymath}
+\left(P(x) y - Q(x) \right) dx - dy = 0
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+podemos comprobar que <!-- MATH
+ $e^{\int P(x) dx}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img219.gif"
+ ALT="$e^{\int P(x) dx} $"> es un factor integrante.
+Multiplicando la ecuaci&#243;n <a href="#1.10">1.10</a> por este factor tenemos
+que
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+e^{\int P(x) dx } \frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="198" HEIGHT="39" BORDER="0"
+ SRC="img220.gif"
+ ALT="\begin{displaymath}
+e^{\int P(x) dx } \frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+de donde
+
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\frac{d \left(y e^{\int P(x) dx } \right)  }{dx} = Q(x) e^{\int P(x) dx}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="217" HEIGHT="53" BORDER="0"
+ SRC="img221.gif"
+ ALT="\begin{displaymath}
+\frac{d \left(y e^{\int P(x) dx } \right) }{dx} = Q(x) e^{\int P(x) dx}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+e integrando respecto con <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.gif"
+ ALT="$x$">
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+y e^{\int P(x) dx} = \int \left( Q(x) e^{\int P(x) dx} \right) dx
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="244" HEIGHT="42" BORDER="0"
+ SRC="img222.gif"
+ ALT="\begin{displaymath}
+y e^{\int P(x) dx} = \int \left( Q(x) e^{\int P(x) dx} \right) dx
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+como se quer&#237;a.
+
+<P align="left">
+<font color="#008000">Ejemplo<b>:</b></font><P align="left">
+&nbsp;<BR>
+Resolver la ecuaci&#243;n
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+x \frac{dy}{dx} - 4y = x^6 e^x
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="116" HEIGHT="39" BORDER="0"
+ SRC="img223.gif"
+ ALT="\begin{displaymath}
+x \frac{dy}{dx} - 4y = x^6 e^x
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+Reescribiendo la ecuaci&#243;n tenemos
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} - \frac{4}{x} y = x^5 e^x
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="111" HEIGHT="39" BORDER="0"
+ SRC="img224.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} - \frac{4}{x} y = x^5 e^x
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+El factor integrante est&#225; dado por
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\mu(x)= e^{-4 \int \frac{dx}{x} } = e^{-4 Ln(x)} = \frac{1}{x^4}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="226" HEIGHT="38" BORDER="0"
+ SRC="img225.gif"
+ ALT="\begin{displaymath}
+\mu(x)= e^{-4 \int \frac{dx}{x} } = e^{-4 Ln(x)} = \frac{1}{x^4}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+Con lo cual la soluci&#243;n est&#225; dada por
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\frac{y}{x^4} = \int x e^x dx = x e^x - e^x + c
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="207" HEIGHT="42" BORDER="0"
+ SRC="img226.gif"
+ ALT="\begin{displaymath}
+\frac{y}{x^4} = \int x e^x dx = x e^x - e^x + c
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+Es decir, <!-- MATH
+ $y = x^5 e^x - x^4 e^x + cx^4$
+ -->
+<IMG
+ WIDTH="158" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.gif"
+ ALT="$y = x^5 e^x - x^4 e^x + cx^4$">
+
+<P align="left">
+<font color="#008000">Ejemplo:</font><P align="left">
+&nbsp;<BR>
+Considere la ecuaci&#243;n diferencial 
+
+<P align="left">
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+x^ 2 y  dx + \left( y^ 2 + x^ 2 p(x)  \right) dy  = 0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table17">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqli0"></A>
+	<a name="1.11"><IMG
+ WIDTH="203" HEIGHT="30" BORDER="0"
+ SRC="img228.gif"
+ ALT="\begin{displaymath}
+x^ 2 y dx + \left( y^ 2 + x^ 2 p(x) \right) dy = 0
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+<p align="left">(1.11)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P align="left"></P>
+
+<P align="left">
+Encuentre una funci&#243;n <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$P(x)$"> de forma tal que la ecuaci&#243;n diferencial <a href="#1.11">(1.11)</a> sea exacta y resuelva dicha ecuaci&#243;n diferencial.
+
+<P align="left">
+Para que la ecuaci&#243;n <a href="#1.11">(1.11)</a> sea exacta debe cumplir 
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\frac{\partial M}{\partial y} = x^2 = \frac{\partial N}{\partial x} = 2x P(x) + x^2 P^{\prime}(x)
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="260" HEIGHT="42" BORDER="0"
+ SRC="img229.gif"
+ ALT="\begin{displaymath}
+\frac{\partial M}{\partial y} = x^2 = \frac{\partial N}{\partial x} = 2x P(x) + x^2 P^{\prime}(x)
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+De aqu&#237; obtenemos la ecuaci&#243;n diferencial lineas en <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img230.gif"
+ ALT="$P$"> y <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.gif"
+ ALT="$x$">
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+x^2 = 2x P(x) + x^2 P^{\prime}(x) \Rightarrow P^{\prime}(x) + \frac{2}{x} P(x) = 1
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="319" HEIGHT="38" BORDER="0"
+ SRC="img231.gif"
+ ALT="\begin{displaymath}
+x^2 = 2x P(x) + x^2 P^{\prime}(x) \Rightarrow P^{\prime}(x) + \frac{2}{x} P(x) = 1
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+cuya soluci&#243;n es 
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+P(x) = \frac{x}{3} + \frac{c}{x^2}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="105" HEIGHT="35" BORDER="0"
+ SRC="img232.gif"
+ ALT="\begin{displaymath}
+P(x) = \frac{x}{3} + \frac{c}{x^2}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+De donde tomando <IMG
+ WIDTH="39" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$c=0$"> obtenemos que <!-- MATH
+ $P(x)=\frac{x}{3}$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.gif"
+ ALT="$P(x)=\frac{x}{3}$">.
+
+<P align="left">
+<font color="#008000">Ejemplo:</font>
+<BR>
+Compruebe que la ecuaci&#243;n diferencial 
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} + P(x) y = Q(x) y Ln(y)
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="178" HEIGHT="28" BORDER="0"
+ SRC="img234.gif"
+ ALT="\begin{displaymath}
+y^{\prime} + P(x) y = Q(x) y Ln(y)
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+donde <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$P(x)$"> y <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.gif"
+ ALT="$Q(x)$"> son funcuiones reales, se transforma en una ecuaci&#243;n diferencial lineal al hacer <IMG
+ WIDTH="74" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$u=Ln(y)$">.
+
+<P align="left">
+Como 
+
+<P align="left">
+<BR><P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+u = Ln(y) \Rightarrow u^{\prime} = \frac{y^{\prime}}{y} \Rightarrow y^{\prime} = u^{\prime} y = u^{\prime} e^{u}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="278" HEIGHT="43" BORDER="0"
+ SRC="img236.gif"
+ ALT="\begin{displaymath}
+u = Ln(y) \Rightarrow u^{\prime} = \frac{y^{\prime}}{y} \Rightarrow y^{\prime} = u^{\prime} y = u^{\prime} e^{u}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+Sustituyendo
+
+			<P align="left"></P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+y^{\prime}+ P(x) y = Q(x) y Ln(y) & \Rightarrow &  u^{\prime} e^u + P(x) e^u = Q(x) u e^u \\
+& \Rightarrow & u^{\prime} + P(x) = Q(x) u \\
+& \Rightarrow & u^{\prime} - Q(x) u = -P(x) \\
+\end{array}
+\end{displaymath}
+ -->
+
+			<IMG
+ WIDTH="404" HEIGHT="64" BORDER="0"
+ SRC="img237.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+y^{\prime}+ P(x) y = Q(x) y Ln(y) &amp; \Ri...
+...
+&amp; \Rightarrow &amp; u^{\prime} - Q(x) u = -P(x) \\
+\end{array}
+\end{displaymath}">
+<BR CLEAR="ALL">
+<P align="left"></P>
+
+<P align="left">
+la cual es una ecuaci&#243;n diferencial lineal.
+
+<P align="left">
+<BR><HR align="left">
+			<p align="left">
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS0"><STRONG>Subsecciones</STRONG></A>
+
+</p>
+
+<UL>
+<LI>
+<p align="left"><A NAME="tex2html146"
+  HREF="node10.html">Ejercicios</A>
+</UL>
+			<p align="left">&nbsp;</p>
+			<center>&nbsp;</center></div>
+		<p align="center"><br>
+&nbsp;</p>
+		<hr color="#c0c0c0" SIZE="0"><center>
+		<p align="center"><a href="../">
+		<font face="Arial Narrow" color="#000080" size="2"><br>
+		</font></a><font face="Arial Narrow" color="#808080" size="2">
+		<a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a><a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/"></a><a target="_blank" href="https://tec.ac.cr"></a></font> </p>
+		</center></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+</center>
+
+<H1>&nbsp;</H1>
+<H1>&nbsp;</H1>
+</BODY>
+</HTML>

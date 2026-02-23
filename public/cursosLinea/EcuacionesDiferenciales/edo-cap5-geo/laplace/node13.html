@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Sistemas mec&aacute;nicos</TITLE>
+<META NAME="description" CONTENT="Sistemas mec&aacute;nicos">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H2><A NAME="SECTION00192000000000000000"></A> <A NAME="2305"></A>
+</H2>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; 13&nbsp; <a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+
+<p><b>Sistemas mec&aacute;nicos</b>
+
+</p>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Un peso de 16 libras suspendido de un resorte lo estira 2 pies. En el instante <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img271.gif"
+ ALT="$ t=0$"> el peso se hala 3 pies por debajo de la posici&oacute;n de equilibrio y se suelta. Asuma una fuerza amortiguadora de 4 veces la velocidad instant&aacute;nea. En el inst&aacute;nte <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img719.gif"
+ ALT="$ t=2$"> el peso recibe un golpe seco, desde abajo, que transmite 2 unidades de momentum a la masa; adem&aacute;s, en el instante <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img720.gif"
+ ALT="$ t=4$"> se activa una fuerza  externa con una magnitud de 4 unidades. Entonces
+
+<P>
+
+<OL>
+<LI>Determine la ecuaci&oacute;n diferencial y condiciones iniciales que describen el movimiento.
+
+<P>
+</LI>
+<LI>Encuentre la posici&oacute;n del peso en cualquier instante <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$ t$">.
+
+<P>
+</LI>
+<LI>&#191;Cu&aacute;l es la posici&oacute;n del peso en <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img721.gif"
+ ALT="$ t=5$"> ?
+</LI>
+</OL>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+Para hallar la constante del resorte
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+F=ks \Rightarrow 16 = 2k \Rightarrow k = 8
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="194" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img722.gif"
+ ALT="$\displaystyle F=ks \Rightarrow 16 = 2k \Rightarrow k = 8
+$">
+</DIV><P></P>
+
+<P>
+Con lo cual el modelo matem&aacute;tico es
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 8x^{\prime} + 16x & = & 2 \left( -2 \delta(t-2) + 4H(t-4)  \right) \\
+x(0) & = & 3  \\
+x^{\prime}(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="350" HEIGHT="73" BORDER="0"
+ SRC="img723.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+x^{\prime \prime} + 8x^{\prime...
+... &amp; = &amp; 3 \\
+x^{\prime}(0) &amp; = &amp; 0 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Aplicando transformada
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+s^2X(s)-sx(0)-x^{\prime}(0) + 8sX(s) - 8x(0) + 16X(s) & = & -4e^{-2s} + 8 \frac{e^{-4s}}{s} \\
+\left( s +4 \right)^2 X(s) & = & 3s + 3 \\
+& - & 4e^{-2s} + 8 \frac{e^{-4s}}{s} \\
+X(s) & = & \frac{3s+3}{\left( s + 4 \right)^2} - \frac{4e^{-2s}}{\left( s + 4 \right)^2} \\
+& + &  \frac{8e^{-4s}}{s\left( s +4  \right)^2} \\
+\end{eqnarray*}
+ -->
+<div align="left">
+<TABLE CELLPADDING="0" WIDTH="50%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="357" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img724.gif"
+ ALT="$\displaystyle s^2X(s)-sx(0)-x^{\prime}(0) + 8sX(s) - 8x(0) + 16X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="116" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img725.gif"
+ ALT="$\displaystyle -4e^{-2s} + 8 \frac{e^{-4s}}{s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="94" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img726.gif"
+ ALT="$\displaystyle \left( s +4 \right)^2 X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="46" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img727.gif"
+ ALT="$\displaystyle 3s + 3$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img404.gif"
+ ALT="$\displaystyle -$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="103" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img728.gif"
+ ALT="$\displaystyle 4e^{-2s} + 8 \frac{e^{-4s}}{s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img706.gif"
+ ALT="$\displaystyle X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="139" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img729.gif"
+ ALT="$\displaystyle \frac{3s+3}{\left( s + 4 \right)^2} - \frac{4e^{-2s}}{\left( s + 4 \right)^2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="71" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.gif"
+ ALT="$\displaystyle \frac{8e^{-4s}}{s\left( s +4 \right)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+El <IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img731.gif"
+ ALT="$ -2$"> que acompa&ntilde;a a la funci&oacute;n delta se debe a que el golpe es desde abajo con una intensidad de 2 unidades, adem&aacute;s recuerde que <IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img732.gif"
+ ALT="$ x(0)=3$">, pues el peso esta por debajo de la posici&oacute;n de equilibrio. Aplicando fracciones parciales
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+X(s) & = & \frac{3}{s+4} - \frac{9}{\left(s+4 \right)^2} - \frac{4e^{-2s}}{\left(s+4\right)^2}  \\
+& + & \frac{8e^{-4s}}{s+4} - \frac{32e^{-4s}}{s \left(s +4 \right)^2} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img706.gif"
+ ALT="$\displaystyle X(s)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="197" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img733.gif"
+ ALT="$\displaystyle \frac{3}{s+4} - \frac{9}{\left(s+4 \right)^2} - \frac{4e^{-2s}}{\left(s+4\right)^2}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="133" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img734.gif"
+ ALT="$\displaystyle \frac{8e^{-4s}}{s+4} - \frac{32e^{-4s}}{s \left(s +4 \right)^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+De donde obtenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+x(t) & = & 3e^{-4t} - 9te^{-4t}-4(t-2)e^{-4(t-2)}H(t-2) + 8e^{-4(t-2)}H(t-4)  \\
+& - &  32(t-4)e^{-4(t-4)}H(t-4)
+-32 \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table18">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img735.gif"
+ ALT="$\displaystyle x(t)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="434" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img736.gif"
+ ALT="$\displaystyle 3e^{-4t} - 9te^{-4t}-4(t-2)e^{-4(t-2)}H(t-2) + 8e^{-4(t-2)}H(t-4)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img404.gif"
+ ALT="$\displaystyle -$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="215" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img737.gif"
+ ALT="$\displaystyle 32(t-4)e^{-4(t-4)}H(t-4)
+-32$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+Y as&iacute; <!-- MATH
+ $x(5)=0.454137$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img738.gif"
+ ALT="$ x(5)=0.454137$">. La gr&aacute;fica de <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img709.gif"
+ ALT="$ x(t)$"> se muestra en la figura <a href="#1.12">1.12 </a>
+
+<P align="center">
+<a name="1.12">
+<img border="0" src="images/Resorte.gif" width="313" height="203"></a><P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="resorte0"></A>
+<p>Figura 1.12</DIV>
+
+<p align="center">&nbsp;<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<H2>
+<BR>
+&nbsp;</H2>
+</BODY>
+</HTML>

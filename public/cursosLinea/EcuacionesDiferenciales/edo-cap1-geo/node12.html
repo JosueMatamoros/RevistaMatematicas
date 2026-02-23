@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Existencia y unicidad</TITLE>
+<META NAME="description" CONTENT="Existencia y unicidad">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node5.html"><font color="#000080">4</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node9.html"><font color="#000080">6</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node11.html"><font color="#000080">7</font></a><font color="#000080">&nbsp;&nbsp;
+8&nbsp;&nbsp;
+</font><a href="node14.html"><font color="#000080">9</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node15.html"><font color="#000080">10</font></a> &nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;<b>
+<A NAME="SECTION1808859137">
+Existencia y unicidad</A>
+
+</b>
+
+<P>
+Cuando un problema de valor inicial modela matem&#225;ticamente una
+situaci&oacute;n f&#237;sica, la existencia y unicidad <A NAME="583"></A>
+<A NAME="584"></A> de la soluci&#243;n es de suma importancia, pues,
+con seguridad se espera tener una soluci&#243;n, debido a que
+f&#237;sicamente <I>algo debe suceder</I>. Por otra parte, se supone
+que la soluci&#243;n sea &#250;nica, pues si repetimos el experimento en
+condiciones id&#233;nticas, cabe esperar los mismos resultados,
+siempre y cuando el modelo sea determin&#237;stico. Por lo tanto, al
+considerar un problema de valor inicial es natural preguntarse
+por:
+
+<P>
+
+<OL>
+<LI><B>Existencia:</B> &#191;Existir&#225; una soluci&#243;n al problema ?
+
+<P>
+</LI>
+<LI><B>Unicidad:</B> &#191;En caso de que exista soluci&#243;n, ser&#225;
+&#250;nica ?
+
+<P>
+</LI>
+<LI><B>Determinaci&#243;n:</B> &#191;En caso de que exista soluci&#243;n,
+como la determinamos ?
+
+<P>
+</LI>
+</OL>
+
+<P>
+En ésta secci&#243;n nos ocuparemos de las dos primeras
+interrogantes: existencia y unicidad y dejamos la determinaci&#243;n
+de soluci&#243;n  para el pr&#243;ximo cap&#237;tulo.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+Dado el problema de valor inicial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} (x) & = & x \sqrt{y} \\
+y(0) & = & 0 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="128" HEIGHT="45" BORDER="0"
+ SRC="img219.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} (x) &amp; = &amp; x \sqrt{y} \\
+y(0) &amp; = &amp; 0 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+no resulta dif&#237;cil comprobar que <!-- MATH
+ $y = \frac{ x^4}{16}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.gif"
+ ALT="$y = \frac{ x^4}{16}$"> es
+soluci&#243;n, pues separando variables e integrando obtenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} = x \sqrt{y} =  \Rightarrow \frac{dy}{\sqrt{y}} = x dx \Rightarrow 2 \sqrt{y} = \frac{x^2}{2} + c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="304" HEIGHT="46" BORDER="0"
+ SRC="img221.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} = x \sqrt{y} = \Rightarrow \frac{dy}{\sqrt{y}} = x dx \Rightarrow 2 \sqrt{y} = \frac{x^2}{2} + c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Y usando la condici&#243;n inicial <IMG
+ WIDTH="61" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$y(0)=0$"> obtenemos que <IMG
+ WIDTH="39" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img223.gif"
+ ALT="$c=0$">, con
+lo cual la soluci&#243;n ser&#237;a <!-- MATH
+ $y=\frac{x^4}{16}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.gif"
+ ALT="$y = \frac{ x^4}{16}$">. Observe que al
+resolver la ecuaci&#243;n diferencial dividimos por <IMG
+ WIDTH="25" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$\sqrt{y}$"> lo
+cual supone que <IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.gif"
+ ALT="$y \neq 0$">, pero podemos verificar que <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.gif"
+ ALT="$y=0$"> es
+soluci&#243;n, en este caso una soluci&#243;n singular. En conclusi&#243;n,
+el problema de valor inicial dado tiene soluci&#243;n pero no es
+&#250;nica, como poder predecir este comportamiento sin tener que
+resolverlo; el siguiente teorema nos da una respuesta parcial.
+
+  <P>
+&nbsp;<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table16">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Teorema</font>
+        </b>
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $R = [a,b] \times [c,d] \subset R^2$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.gif"
+ ALT="$R = [a,b] \times [c,d] \subset R^2$"> tal que <!-- MATH
+ $(x_0,y_0) \in
+ \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.gif"
+ ALT="$(x_0,y_0) \in
+\mbox{$I \hspace{-1.3mm} R$} $">. Si <IMG
+ WIDTH="49" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.gif"
+ ALT="$f(x,y)$"> y <!-- MATH
+ $\frac{\partial f}{\partial y}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$\frac{\partial f}{\partial y}$"> son continuas
+en <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.gif"
+ ALT="$R$">, entonces existe un intervalo abierto <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.gif"
+ ALT="$I$">, centrado en
+<IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.gif"
+ ALT="$x_0$"> y una funci&#243;n <IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.gif"
+ ALT="$y(x)$"> definida en <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.gif"
+ ALT="$I$">, que satisface el
+problema de valor inicial
+
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+\frac{dy}{dx} & = & f(x,y) \\
+y(x_0) & = & y_0 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="144" HEIGHT="46" BORDER="0"
+ SRC="img232.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+\frac{dy}{dx} &amp; = &amp; f(x,y) \\
+y(x_0) &amp; = &amp; y_0 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+&nbsp;</td>
+    </tr>
+  </table>
+  	<p>
+<BR CLEAR="ALL">
+	</p>
+<P></P>
+
+<P>
+<font color="#008000">Ejemplo</font><B>:</B>
+<BR>
+En el ejemplo anterior tenemos que <!-- MATH
+ $f(x,y)=x \sqrt{y}$
+ -->
+<IMG
+ WIDTH="101" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.gif"
+ ALT="$f(x,y)=x \sqrt{y}$"> y
+<!-- MATH
+ $\frac{\partial f}{\partial y}=\frac{x}{2 \sqrt{y}}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.gif"
+ ALT="$\frac{\partial f}{\partial y}=\frac{x}{2 \sqrt{y}}$">, las cuales
+son continual en el semiplano definido por <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$y&gt;0$">; por
+consiguiente, el teorema garantiza  que para cada punto
+<IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.gif"
+ ALT="$(x_0,y_0)$"> con <IMG
+ WIDTH="47" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.gif"
+ ALT="$y_0 &gt; 0$"> de ese semiplano, hay un intervalo
+centrado en <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.gif"
+ ALT="$x_0$"> en el cual la ecuaci&#243;n diferencial tiene una
+soluci&#243;n &#250;nica. As&#237; por ejemplo, sin resolverlo sabemos que
+el problema de valor inicial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+\frac{dy}{dx} & = & x \sqrt{y} \\
+y(2) & = & 1 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="122" HEIGHT="46" BORDER="0"
+ SRC="img238.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+\frac{dy}{dx} &amp; = &amp; x \sqrt{y} \\
+y(2) &amp; = &amp; 1 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+tiene soluci&#243;n &#250;nica, mientras que para los problemas en donde
+<IMG
+ WIDTH="69" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img239.gif"
+ ALT="$y(x_0)=0$"> el teorema no garantiza nada, es decir, podr&iacute;a suceder
+cualquier cosa: que no tenga soluci&#243;n, que tenga soluci&#243;n
+&#250;nica o varias soluciones, como sucedi&#243; en el ejemplo
+anterior.
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><B>:</B> 
+<BR>
+<P>
+Hallar los valores de <IMG
+ WIDTH="11" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$a$"> y <IMG
+ WIDTH="10" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img240.gif"
+ ALT="$b$"> para los cuales el teorema de
+existencia y unicidad garantiza que el problema de valor inicial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left \{
+\begin{array}{rcl}
+y^{\prime} & = & \frac{x}{y} \\
+y(a) & = & b \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="100" HEIGHT="47" BORDER="0"
+ SRC="img241.gif"
+ ALT="\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+y^{\prime} &amp; = &amp; \frac{x}{y} \\
+y(a) &amp; = &amp; b \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+tiene soluci&#243;n &#250;nica.
+
+<P>
+Como la derivada parcial  <!-- MATH
+ $\frac{\partial f}{\partial y} = -
+\frac{x}{y^2}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img242.gif"
+ ALT="$\frac{\partial f}{\partial y} = -
+\frac{x}{y^2} $"> y <!-- MATH
+ $f(x,y)=\frac{x}{y}$
+ -->
+<IMG
+ WIDTH="82" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img243.gif"
+ ALT="$f(x,y)=\frac{x}{y}$"> son continua en todo punto
+<IMG
+ WIDTH="40" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$(x,y)$"> donde <IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.gif"
+ ALT="$y \neq 0$">, el teorema garantiza que existe una
+soluci&#243;n en el conjunto  <!-- MATH
+ ${(x,y) \in  \mbox{$I \hspace{-1.3mm} R$} ^2 \| y \neq 0 }$
+ -->
+<IMG
+ WIDTH="127" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.gif"
+ ALT="${(x,y) \in \mbox{$I \hspace{-1.3mm} R$} ^2 \Vert y \neq 0 }$">.
+
+<P>
+El teorema de existencia y unicidad <A NAME="644"></A>
+<A NAME="645"></A> nos da una condici&#243;n suficiente. Por lo tanto
+el hecho de que no se cumplan las hip&#243;tesis no nos permite
+concluir nada. Por otro lado, aunque el teorema nos asegure la
+existencia no nos garantiza que exista un m&#233;todo para llegar a
+ella, quiz&#225;s, lo mejor que podamos hacer sea aproximarla.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS1"><STRONG>Subsecciones</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html170"
+  HREF="node13.html">Ejercicios</A>
+</UL>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

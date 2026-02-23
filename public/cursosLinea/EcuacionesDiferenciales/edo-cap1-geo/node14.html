@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>M&#233;todo de Euler</TITLE>
+<META NAME="description" CONTENT="M&#233;todo de Euler">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<font color="#000080">
+<BR>
+</font>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node5.html"><font color="#000080">4</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node9.html"><font color="#000080">6</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node11.html"><font color="#000080">7</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node12.html"><font color="#000080">8</font></a><font color="#000080">&nbsp;&nbsp;
+9&nbsp;&nbsp;
+</font><a href="node15.html"><font color="#000080">10</font></a> &nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<b><A NAME="SECTION-611188735">
+<font size="3">M&#233;todo de Euler</font></A><font size="3"> </font></b>
+
+<P>
+Una de las t&#233;cnicas m&#225;s simples para aproximar soluciones de
+una ecuaci&#243;n diferencial es el m&#233;todo de Euler, o de las
+rectas tangentes. Suponga que se desea aproximar la soluci&#243;n
+del problema de valor inicial
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\begin{array}{rcl}
+\frac{dy}{dx} & = & f(x,y) \\
+y(x_0) & = & y_0
+\end{array}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table16">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><a NAME="eq4"><IMG
+ WIDTH="126" HEIGHT="46" BORDER="0"
+ SRC="img253.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{dy}{dx} &amp; = &amp; f(x,y) \\
+y(x_0) &amp; = &amp; y_0
+\end{array}
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.12)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Observe en la<a href="#imagen9"> <font color="#000080">figura 9</font></a> que la pendiente de la recta tangente
+a&nbsp; la curva <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$y=f(x)$"> est&#225; dada por <!-- MATH
+ $f^{\prime}(x_n)$
+ -->
+<IMG
+ WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.gif"
+ ALT="$f^{\prime}(x_n)$"> y es
+aproximadamente igual a la pendiente de la recta secante
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{y_{n+1}-y_n}{x_n + h - x_n} = \frac{y_{n+1}-y_n}{h}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table17">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq5"></A><a name="1.13"><IMG
+ WIDTH="178" HEIGHT="40" BORDER="0"
+ SRC="img255.gif"
+ ALT="\begin{displaymath}
+\frac{y_{n+1}-y_n}{x_n + h - x_n} = \frac{y_{n+1}-y_n}{h}
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.13)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+siempre y cuando <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img256.gif"
+ ALT="$h$"> sea <I>peque&#241;o</I>. De aqu&#237; obtenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+f^{x_n} \approx \frac{y_{n+1}-y_n}{h} \Rightarrow y_{n+1} = y_n + h f^{\prime}(x_n)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="284" HEIGHT="37" BORDER="0"
+ SRC="img257.gif"
+ ALT="\begin{displaymath}
+f^{x_n} \approx \frac{y_{n+1}-y_n}{h} \Rightarrow y_{n+1} = y_n + h f^{\prime}(x_n)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Con lo cual podemos usar el punto <IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.gif"
+ ALT="$(x_0,y_0)$"> para construir el
+siguiente punto <IMG
+ WIDTH="54" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$(x_1,y_1)$"> y as&#237; sucesivamente. De esta forma generamos
+la sucesi&#243;n de puntos:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+(x_0,y_0), (x_1,y_1), \cdots, (x_n,y_n)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="194" HEIGHT="28" BORDER="0"
+ SRC="img259.gif"
+ ALT="\begin{displaymath}
+(x_0,y_0), (x_1,y_1), \cdots, (x_n,y_n)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+los cuales es de esperar que se encuentren <I>cercanos</I> a los puntos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+(x_0, y(x_0)), (x_1,y(x_1)), \cdots, (x_n, y(x_n))
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="260" HEIGHT="28" BORDER="0"
+ SRC="img260.gif"
+ ALT="\begin{displaymath}
+(x_0, y(x_0)), (x_1,y(x_1)), \cdots, (x_n, y(x_n))
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<DIV ALIGN="CENTER">
+<FONT SIZE="+2"><a name="imagen9"><img border="0" src="images/euler.gif" width="323" height="264"></a></FONT></DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 9</font>
+
+</DIV>
+
+<P>
+Al sustituir el valor aproximado de la derivada <a href="#1.13">
+<font color="#000080">1.13</font></a> en la
+ecuaci&#243;n diferencial del problema de valor inicial <a href="#eq4">
+<font color="#000080">1.12</font></a>
+obtenemos el m&#233;todo de Euler
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+y_{n+1} & = & y_n + h f(x_n,y_n)  \\
+x_n & = & x_0 + n*h \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="184" HEIGHT="45" BORDER="0"
+ SRC="img261.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+y_{n+1} &amp; = &amp; y_n + h f(x_n,y_n) \\
+x_n &amp; = &amp; x_0 + n*h \\
+\end{array}
+\end{displaymath}">
+</DIV>
+    <p>
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

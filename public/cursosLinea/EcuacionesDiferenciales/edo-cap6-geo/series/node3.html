@@ -1,0 +1,1190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>M&#233;todo de los coeficientes indeterminados</TITLE>
+<META NAME="description" CONTENT="M&#233;todo de los coeficientes indeterminados">
+<META NAME="keywords" CONTENT="series">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="series.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/Series.gif" width="105" height="26"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a><a href="node2.html"> 2</a> 3 </font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<H1><font size="3">M&#233;todo de los coeficientes indeterminados</font>
+</H1>
+
+<P>
+Vamos a limitar nuestro estudio al enunciado y manejo del m&#233;todo, sin entrar en los detalles te&#243;ricos 
+del mismo. Recuerde que una serie de potencias representa a una funci&#243;n <IMG
+ WIDTH="13" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$f$"> en un intervalo de 
+convergencia <IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$I$"> y que podemos derivarla sucesivamente, para obtener series para 
+<IMG
+ WIDTH="17" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$f^{\prime}$">, <!-- MATH
+ $f^{\prime \prime}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$f^{\prime \prime}$">,<!-- MATH
+ $f^{\prime \prime \prime}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$f^{\prime \prime \prime}$">, etc. Por ejemplo,
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+f(x) & = & a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \ldots = \sum_{i=0}^{\infty} a_n x^n\\
+f^{\prime}(x) & = & a_1 + 2 a_2 x + 3 a_3 x^2 + 4 a_4 x^3 + \ldots = \sum_{n=0}^{\infty} n a_n x^{n-1}  \\
+f^{\prime \prime}(x) & = & 2 a_2 + 6 a_3 x + 12 a_4 x^2 + 20 a_5 x^3 + \ldots = \sum_{n=0}^{\infty} n \left( n-1 \right) x^{n-2}
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="475" HEIGHT="159" BORDER="0"
+ SRC="img8.gif"
+ ALT="\begin{eqnarray*}
+f(x) &amp; = &amp; a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \ldots = \sum_{i...
+...x^3 + \ldots = \sum_{n=0}^{\infty} n \left( n-1 \right) x^{n-2}
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Los siguientes ejemplos muestran como aplicar el m&#233;todo de las series de potencias a la soluci&#243;n de 
+ecuaciones diferenciales. Iniciamos con un ejemplo muy simple, pero que nos har&#225; entender la mec&#225;nica 
+del m&#233;todo.
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Ejemplo</font><BR>
+Usando series de potencias halle la soluci&#243;n de la ecuaci&#243;n <!-- MATH
+ $y^{\prime} - 2y = 0$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$y^{\prime} - 2y = 0$">.
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+<BR>
+<BR>
+
+<P>
+Supongamos que la soluci&#243;n se puede expresar como
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="91" HEIGHT="53" BORDER="0"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}
+y = \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Entonces, <IMG
+ WIDTH="16" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$y^{\prime}$"> esta dada por
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = \sum_{n=0}^{\infty} n a_n x^{n-1}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="120" HEIGHT="53" BORDER="0"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = \sum_{n=0}^{\infty} n a_n x^{n-1}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Sustituyendo en la ecuaci&#243;n diferencial, obtenemos que
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+y^{\prime} - 2y & = & 0 \\
+\sum_{n=0}^{\infty} n a_n x^{n-1} - 2 \sum_{n=0}^{\infty} a_n x^n & = & 0 \\
+\sum_{n=0}^{\infty} n a_n x^{n-1} & = & 2 \sum_{n=0}^{\infty} a_n x^n \\
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="295" HEIGHT="139" BORDER="0"
+ SRC="img13.gif"
+ ALT="\begin{eqnarray*}
+y^{\prime} - 2y &amp; = &amp; 0 \\
+\sum_{n=0}^{\infty} n a_n x^{n-1...
+...^{\infty} n a_n x^{n-1} &amp; = &amp; 2 \sum_{n=0}^{\infty} a_n x^n \\
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Ahora debemos ajustar los &#237;ndices de las sumas de forma que
+aparezca <IMG
+ WIDTH="21" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="$x^n$"> en cada serie.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\sum_{n=-1}^{\infty} \left(n + 1 \right) a_{n+1} x^n = 2 \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="233" HEIGHT="54" BORDER="0"
+ SRC="img15.gif"
+ ALT="\begin{displaymath}
+\sum_{n=-1}^{\infty} \left(n + 1 \right) a_{n+1} x^n = 2 \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Igualando los coeficientes correspondientes
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left(n + 1 \right) a_{n+1} = 2 a_n \Rightarrow a_{n+1} = \frac{2a_n}{n+1}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="248" HEIGHT="40" BORDER="0"
+ SRC="img16.gif"
+ ALT="\begin{displaymath}
+\left(n + 1 \right) a_{n+1} = 2 a_n \Rightarrow a_{n+1} = \frac{2a_n}{n+1}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+para <IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$n \geq 0$">.
+
+<P>
+Esta f&#243;rmula genera los siguientes coeficientes
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+a_1 & = & 2a_0 \\
+a_2 & = & \frac{2a_1}{2}=\frac{2^2 a_0}{2} \\
+a_3 & = & \frac{2a_2}{3}= \frac{2^3 a_0}{2 \cdot 3}= \frac{2^3 a_0}{3!} \\
+a_4 & = & \frac{2a_3}{4} = \frac{2^4 a_0}{2 \cdot 3 \cdot 4} = \frac{2^4 a_0}{4!} \\
+\vdots \\
+a_n & = & \frac{2^n a_0}{n!} \\
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="213" HEIGHT="231" BORDER="0"
+ SRC="img18.gif"
+ ALT="\begin{eqnarray*}
+a_1 &amp; = &amp; 2a_0 \\
+a_2 &amp; = &amp; \frac{2a_1}{2}=\frac{2^2 a_0}{2...
+...{2^4 a_0}{4!} \\
+\vdots \\
+a_n &amp; = &amp; \frac{2^n a_0}{n!} \\
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+De donde obtenemos que la soluci&#243;n esta dada por 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = \sum_{n=0}^{\infty} \frac{2^n a_0}{n!} x^n = a_0 \sum_{n=0}^{\infty} \frac{\left(2 x \right)^n}{n!} = a_0 e^{2x}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="274" HEIGHT="53" BORDER="0"
+ SRC="img19.gif"
+ ALT="\begin{displaymath}
+y = \sum_{n=0}^{\infty} \frac{2^n a_0}{n!} x^n = a_0 \sum_{n=0}^{\infty} \frac{\left(2 x \right)^n}{n!} = a_0 e^{2x}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Aqu&#237; hemos usado la expansi&#243;n en series de potencias para la funci&#243;n exponencial 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="83" HEIGHT="53" BORDER="0"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<B>Observaci&#243;n:</B> esta ecuaci&#243;n diferencial puede ser resuelta de manera m&#225;s simple por medio de 
+separaci&#243;n de variables.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} - 2 y = 0 \Rightarrow \frac{dy}{y} = 2 dx \Rightarrow Ln(y) = 2x + c  \Rightarrow y = c e^{2x},
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="387" HEIGHT="42" BORDER="0"
+ SRC="img21.gif"
+ ALT="\begin{displaymath}
+y^{\prime} - 2 y = 0 \Rightarrow \frac{dy}{y} = 2 dx \Rightarrow Ln(y) = 2x + c \Rightarrow y = c e^{2x},
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+pero como digimos, la idea es ilustrar el m&#233;todo.
+
+<P>
+El siguiente ejemplo no puede ser resuelto por las t&#233;cnicas estudiadas hasta el momento, a pesar de 
+ser muy simple en apariencia.
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Usando series de potencias resuelva la ecuaci&#243;n diferencial <!-- MATH
+ $y^{\prime \prime} + x y^{\prime} + y = 0$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$y^{\prime \prime} + x y^{\prime} + y = 0$">
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+<BR>
+<BR>
+
+<P>
+Suponga que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y =\sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="91" HEIGHT="53" BORDER="0"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}
+y = \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+es una soluci&#243;n de la ecuaci&#243;n diferencial. Entonces
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime} = \sum_{n=0}^{\infty} n a_n x^{n-1} \Rightarrow xy^{\prime} = \sum_{n=0}^{\infty} n a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="259" HEIGHT="53" BORDER="0"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}
+y^{\prime} = \sum_{n=0}^{\infty} n a_n x^{n-1} \Rightarrow xy^{\prime} = \sum_{n=0}^{\infty} n a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime \prime} = \sum_{n=0}^{\infty} n \left(n - 1 \right) a_n x^{n-2}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="178" HEIGHT="53" BORDER="0"
+ SRC="img24.gif"
+ ALT="\begin{displaymath}
+y^{\prime \prime} = \sum_{n=0}^{\infty} n \left(n - 1 \right) a_n x^{n-2}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Sustituyendo en la ecuaci&#243;n diferencial
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\sum_{n=0}^{\infty} n \left( n-1 \right) a_n x^{n-2} + \sum_{n=0}^{\infty} n a_n x^n + \sum_{n=0}^{\infty} a_n x^n & = & 0 \\
+\sum_{n=0}^{\infty} n \left( n -1 \right) a_n x^{n-2} & = & -\sum_{n=0}^{\infty} \left(n + 1  \right) a_n x^n \\
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="485" HEIGHT="112" BORDER="0"
+ SRC="img25.gif"
+ ALT="\begin{eqnarray*}
+\sum_{n=0}^{\infty} n \left( n-1 \right) a_n x^{n-2} + \sum_{...
+...n-2} &amp; = &amp; -\sum_{n=0}^{\infty} \left(n + 1 \right) a_n x^n \\
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Ajustando los &iacute;ndices
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\sum_{n=-2}^{\infty} \left(n + 2 \right) \left(n + 1 \right) a_{n+2} x^n = - \sum_{n=0}^{\infty} \left(n + 1 \right) a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="341" HEIGHT="54" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}
+\sum_{n=-2}^{\infty} \left(n + 2 \right) \left(n + 1 \right...
+...{n+2} x^n = - \sum_{n=0}^{\infty} \left(n + 1 \right) a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Igualando los coeficientes
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+a_{n+2} = - \frac{n + 1}{\left(n+2 \right) \left(n + 1 \right)} a_n = - \frac{a_n}{n+2}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="261" HEIGHT="42" BORDER="0"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}
+a_{n+2} = - \frac{n + 1}{\left(n+2 \right) \left(n + 1 \right)} a_n = - \frac{a_n}{n+2}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+para <IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$n \geq 0$">.
+
+<P>
+De esta forma los coeficientes de la serie soluci&#243;n est&#225;n
+dados por:
+
+<P>
+
+<UL>
+<LI>Coeficientes pares:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+a_2 & = & - \frac{a_0}{2} \\
+a_4 & = & - \frac{a_2}{4}= \frac{a_0}{2 \cdot 4} \\
+a_6 & = & - \frac{a_4}{6} = - \frac{a_0}{2 \cdot 4 \cdot 6} \\
+\vdots & & \vdots \\
+a_{2n} & = & \frac{(-1)^n a_0}{2 \cdot 4 \cdot 6 \ldots (2n)} = \frac{(-1)^n a_0}{2^n n!}
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="251" HEIGHT="179" BORDER="0"
+ SRC="img28.gif"
+ ALT="\begin{eqnarray*}
+a_2 &amp; = &amp; - \frac{a_0}{2} \\
+a_4 &amp; = &amp; - \frac{a_2}{4}= \fr...
+...a_0}{2 \cdot 4 \cdot 6 \ldots (2n)} = \frac{(-1)^n a_0}{2^n n!}
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+</LI>
+<LI>Coeficientes impares:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+a_3 & = & - \frac{a_1}{3} \\
+a_5 & = & - \frac{a_3}{5}= \frac{a_1}{3 \cdot 5} \\
+a_7 & = & - \frac{a_5}{7} = - \frac{a_1}{3 \cdot 5 \cdot 7} \\
+\vdots & & \vdots \\
+a_{2n+1} & = & \frac{(-1)^n a_1}{3 \cdot 5 \cdot 7 \ldots (2n+1)}
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="213" HEIGHT="179" BORDER="0"
+ SRC="img29.gif"
+ ALT="\begin{eqnarray*}
+a_3 &amp; = &amp; - \frac{a_1}{3} \\
+a_5 &amp; = &amp; - \frac{a_3}{5}= \fr...
+...{2n+1} &amp; = &amp; \frac{(-1)^n a_1}{3 \cdot 5 \cdot 7 \ldots (2n+1)}
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+</LI>
+</UL>
+
+<P>
+De esta forma la serie soluci&#243;n se puede representar como la
+suma de dos series, una para las potencias pares con  coeficientes
+en t&#233;rminos de <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$a_0$"> y otra para las potencias impares con
+coeficientes en t&#233;rminos de <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$a_1$">.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = a_0 \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{2^n n!} + a_1 \sum_{n=0}^{\infty} \frac{(-)^n x^{2n+1}}{3 \cdot 5 \cdot 7 \ldots (2n+1)}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="338" HEIGHT="53" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}
+y = a_0 \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{2^n n!} + ...
+...infty} \frac{(-)^n x^{2n+1}}{3 \cdot 5 \cdot 7 \ldots (2n+1)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<B>Observaci&#243;n:</B> la soluci&#243;n tiene dos constantes
+arbitrarias <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$a_0$"> y <IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$a_1$"> tal como era de esperar para una
+ecuaci&#243;n diferencial de segundo orden.
+
+<P>
+El siguiente ejemplo ilustra el procedimiento cuando la ecuaci&#243;n
+diferencial tiene condiciones iniciales.
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+<P>
+<BR>
+<BR>
+
+<P>
+Use el teorema de Taylor<A NAME="tex2html3"
+  HREF="footnode.html#foot386"><SUP>1.1</SUP></A>
+para hallar la
+soluci&#243;n en serie de potencias del problema de valor inicial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} & = & y^2 -x \\
+y(0) & = & 1
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="133" HEIGHT="45" BORDER="0"
+ SRC="img39.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+y^{\prime} &amp; = &amp; y^2 -x \\
+y(0) &amp; = &amp; 1
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+A continuaci&#243;n, use los primeros seis t&#233;rminos de la
+soluci&#243;n para aproximar los valores de <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$y$"> en el intervalo
+<IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$[0,1]$"> con un paso de avance de <IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$0.1$">.
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font><BR>
+<P>
+<BR>
+<BR>
+
+<P>
+La soluci&#243;n <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$y$"> del problema de valor inicial puede expresarse por medio del teorema de Taylor como 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = y(0) + \frac{y^{\prime}(0)}{1!} x + \frac{y^{\prime \prime}(0)}{2!} x^2  + \frac{y^{\prime \prime}(0)}{3!} x^3 + \ldots
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="313" HEIGHT="40" BORDER="0"
+ SRC="img43.gif"
+ ALT="\begin{displaymath}
+y = y(0) + \frac{y^{\prime}(0)}{1!} x + \frac{y^{\prime \prime}(0)}{2!} x^2 + \frac{y^{\prime \prime}(0)}{3!} x^3 + \ldots
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+con <IMG
+ WIDTH="39" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img44.gif"
+ ALT="$c=0$">. Como <IMG
+ WIDTH="61" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.gif"
+ ALT="$y(0)=1$"> y <!-- MATH
+ $y^{\prime} = y^2 - x$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.gif"
+ ALT="$y^{\prime} = y^2 - x$">, tenemos que
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+y^{\prime} = y^2 -x & \Rightarrow & y^{\prime}(0) = 1 \\
+y^{\prime \prime} = 2yy^{\prime} - 1 & \Rightarrow & y^{\prime \prime}(0) = 2-1=1  \\
+y^{\prime \prime \prime} = 2yy^{\prime \prime} + 2 \left( y^{\prime} \right)^2 & \Rightarrow & y^{\prime \prime \prime}(0)=2+2=4 \\
+y^{(4)} = 2yy^{\prime \prime \prime} + 6y^{\prime}y^{\prime \prime} &  \Rightarrow & y^{(4)} = 8 + 6 = 14 \\
+y^{(5)} = 2yy^{(4)} + 8y^{\prime} y^{\prime \prime \prime} + 6 \left( y^{\prime \prime} \right)^2 & \Rightarrow & y^{(5)}(0) = 28 + 32 + 6 = 66 \\
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="445" HEIGHT="147" BORDER="0"
+ SRC="img47.gif"
+ ALT="\begin{eqnarray*}
+y^{\prime} = y^2 -x &amp; \Rightarrow &amp; y^{\prime}(0) = 1 \\
+y^...
+...me} \right)^2 &amp; \Rightarrow &amp; y^{(5)}(0) = 28 + 32 + 6 = 66 \\
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+De donde obtenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = 1 + x + \frac{1}{2} x^2 + \frac{4}{3!} x^3 + \frac{14}{4!} x^4 + \frac{66}{5!} x^5 + \ldots
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="312" HEIGHT="38" BORDER="0"
+ SRC="img48.gif"
+ ALT="\begin{displaymath}
+y = 1 + x + \frac{1}{2} x^2 + \frac{4}{3!} x^3 + \frac{14}{4!} x^4 + \frac{66}{5!} x^5 + \ldots
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Usando los seis primeros t&#233;rminos de esta serie, calculamos los
+valores de <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$y$"> que se muestran en la siguiente tabla, adem&#225;s en
+la figura<a href="#1.1"> 1.1</a> se muestra la gr&#225;fica de este polinomio.
+
+<P>
+&nbsp;<P>
+&nbsp;<div align="center">
+	<table border="1" width="40%" id="table18" bordercolorlight="#C0C0C0" bordercolordark="#C0C0C0" style="border-collapse: collapse">
+		<tr>
+			<td>
+			<p align="center">x</td>
+			<td>
+			<p align="center">y</td>
+			<td>
+			<p align="center">x</td>
+			<td>
+			<p align="center">y</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0</td>
+			<td>
+			<p align="center">1</td>
+			<td>
+			<p align="center">0.6</td>
+			<td>
+			<p align="center">2.0424</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0.1</td>
+			<td>
+			<p align="center">1.1057</td>
+			<td>
+			<p align="center">0.7</td>
+			<td>
+			<p align="center">2.4062</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0.2</td>
+			<td>
+			<p align="center">1.2264</td>
+			<td>
+			<p align="center">0.8</td>
+			<td>
+			<p align="center">2.8805</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0.3</td>
+			<td>
+			<p align="center">1.3691</td>
+			<td>
+			<p align="center">0.9</td>
+			<td>
+			<p align="center">34985</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0.4</td>
+			<td>
+			<p align="center">1.5432</td>
+			<td>
+			<p align="center">1</td>
+			<td>
+			<p align="center">4.3</td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">0.5</td>
+			<td>
+			<p align="center">1.7620</td>
+			<td>
+			<p align="center">1.1</td>
+			<td>
+			<p align="center">528999</td>
+		</tr>
+	</table>
+</div>
+
+<P>
+<B>Observaci&#243;n:</B> para una serie de Taylor entre m&#225;s lejos estemos del centro de convergencia 
+(en este caso <IMG
+ WIDTH="39" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img44.gif"
+ ALT="$c=0$">), menor es la precisi&#243;n de nuestra estimaci&#243;n. Es importante tener claro que si 
+las condiciones iniciales est&#225;n dadas en <IMG
+ WIDTH="42" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.gif"
+ ALT="$x=a$">, debemos usar el desarrollo en series de potencias para la
+soluci&#243;n <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$y$"> alrededor de <IMG
+ WIDTH="40" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.gif"
+ ALT="$c=a$">.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="serie2"></A><A NAME="255"></A>
+<TABLE id="table17">
+<CAPTION ALIGN="BOTTOM">&nbsp;</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<a name="1.1">
+<IMG
+ WIDTH="250" HEIGHT="157" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.gif"
+ ALT="\includegraphics{serie1.eps}"></a>
+
+</DIV></TD></TR>
+</TABLE>
+	<p><STRONG>Figura 1.1:</STRONG>
+Gr&#225;fica de <IMG
+ WIDTH="33" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$y(x)$"></DIV>
+
+<P>
+<BR>
+<BR>
+
+<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+<P>
+<BR>
+<BR>
+
+<P>
+Encuentre una series de potencias para la soluci&#243;n general de la
+ecuaci&#243;n diferencial
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y^{\prime \prime} + Sen(x) y^{\prime} + e^x y = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="169" HEIGHT="28" BORDER="0"
+ SRC="img52.gif"
+ ALT="\begin{displaymath}
+y^{\prime \prime} + Sen(x) y^{\prime} + e^x y = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+<BR>
+<BR>
+Como todos los coeficientes admiten desarrollo alrededor de <IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.gif"
+ ALT="$x=0$">,
+podemos suponer que la soluci&#243;n <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$y$"> es de la forma
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = a_0 + a_1x + a_2x^2 + a_3x^3 + \ldots + a_n x^n + \ldots = \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="404" HEIGHT="53" BORDER="0"
+ SRC="img54.gif"
+ ALT="\begin{displaymath}
+y = a_0 + a_1x + a_2x^2 + a_3x^3 + \ldots + a_n x^n + \ldots = \sum_{n=0}^{\infty} a_n x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Adem&#225;s, recuerde que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+Sen(x) = x - \frac{1}{3!} x^3 + \frac{1}{5!} x^5 + \ldots + \frac{(-1)^n}{(2n+1)!} x^{2n+1}  = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="499" HEIGHT="53" BORDER="0"
+ SRC="img55.gif"
+ ALT="\begin{displaymath}
+Sen(x) = x - \frac{1}{3!} x^3 + \frac{1}{5!} x^5 + \ldots +...
+...^{2n+1} = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+e^x = 1 +x + \frac{1}{2!} x^2 + \frac{1}{3!} x^3 + \ldots + \frac{1}{n!} x^n + \ldots = \sum_{n=0}^{\infty} \frac{1}{n!}x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="390" HEIGHT="53" BORDER="0"
+ SRC="img56.gif"
+ ALT="\begin{displaymath}
+e^x = 1 +x + \frac{1}{2!} x^2 + \frac{1}{3!} x^3 + \ldots + \frac{1}{n!} x^n + \ldots = \sum_{n=0}^{\infty} \frac{1}{n!}x^n
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+para toda <!-- MATH
+ $x \in  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.gif"
+ ALT="$x \in \mbox{$I \hspace{-1.3mm} R$} $">.
+
+<P>
+Sustituyendo en la ecuaci&#243;n diferencial obtenemos que
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\sum_{n=0}^{\infty} n\left( n-1 \right)a_n x^{n-2} + \left( \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}  \right) \left( \sum_{n=0}^{\infty} n a_n x^{n-1}\right) & + & \\
+ \left(  \sum_{n=0}^{\infty} \frac{1}{n!}x^n \right) \left( \sum_{n=0}^{\infty} a_n x^n  \right) & = & 0
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="485" HEIGHT="109" BORDER="0"
+ SRC="img58.gif"
+ ALT="\begin{eqnarray*}
+\sum_{n=0}^{\infty} n\left( n-1 \right)a_n x^{n-2} + \left( \...
+...}x^n \right) \left( \sum_{n=0}^{\infty} a_n x^n \right) &amp; = &amp; 0
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Multiplicando las series y simplificando tenemos que
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\left(2a_2 + a_0  \right) + \left(6a_3 + 2a_1 + a_0 \right)x + \left(12a_4 + 3a_2 + a_1 + \frac{a_0}{2}  \right)x^2 & + & \\
+\left(20a_5 + 4a_3 + a_2 + \frac{a_1}{2} + \frac{a_0}{6} \right) x^3 + \ldots & = & 0
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="471" HEIGHT="70" BORDER="0"
+ SRC="img59.gif"
+ ALT="\begin{eqnarray*}
+\left(2a_2 + a_0 \right) + \left(6a_3 + 2a_1 + a_0 \right)x +...
+..._2 + \frac{a_1}{2} + \frac{a_0}{6} \right) x^3 + \ldots &amp; = &amp; 0
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Igualando cada uno de los coeficientes a cero
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+a_2 & = & - \frac{a_0}{2} \\
+a_3 & = & - \frac{2a_1 + a_0}{6}=- \frac{a_1}{3} - \frac{a_0}{6} \\
+a_4 & = & - \frac{a_2}{4} - \frac{a_1}{12} - \frac{a_0}{24} = \frac{a_0}{8} - \frac{a_1}{12} - \frac{a_0}{24} = \frac{a_0}{12} - \frac{a_1}{12} \\
+a_5 & = & - \frac{a_3}{5} - \frac{a_2}{20} - \frac{a_1}{60} - \frac{a_0}{120} = \frac{a_0}{20} + \frac{a_1}{20}
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="366" HEIGHT="143" BORDER="0"
+ SRC="img60.gif"
+ ALT="\begin{eqnarray*}
+a_2 &amp; = &amp; - \frac{a_0}{2} \\
+a_3 &amp; = &amp; - \frac{2a_1 + a_0}{...
+...ac{a_1}{60} - \frac{a_0}{120} = \frac{a_0}{20} + \frac{a_1}{20}
+\end{eqnarray*}"></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Sustituyendo estos valores en la serie tenemos que
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = a_0 \left(1 - \frac{1}{2} x^2 - \frac{1}{6} x^3 + \frac{1}{12} x^4 + \frac{1}{20} x^5 + \ldots   \right) + a_1 \left(   x - \frac{1}{3} x^3 - \frac{1}{12} x^4 + \frac{1}{20} x^5 + \ldots \right)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="579" HEIGHT="45" BORDER="0"
+ SRC="img61.gif"
+ ALT="\begin{displaymath}
+y = a_0 \left(1 - \frac{1}{2} x^2 - \frac{1}{6} x^3 + \frac...
+...3} x^3 - \frac{1}{12} x^4 + \frac{1}{20} x^5 + \ldots \right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+para <!-- MATH
+ $x \in  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.gif"
+ ALT="$x \in \mbox{$I \hspace{-1.3mm} R$} $">.
+
+<P>
+<B>Observaci&#243;n:</B> algunas veces cuando necesitamos multiplicar
+dos series es &#250;til la siguiente f&#243;rmula
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left( \sum_{n=0}^{\infty} a_n x^n \right) \left( \sum_{n=0}^{\infty} b_n x^n  \right) = \sum_{n=0}^{\infty} \left( \sum_{k=0}^{n} a_k b_{n-k}\right) x^n
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="337" HEIGHT="55" BORDER="0"
+ SRC="img62.gif"
+ ALT="\begin{displaymath}
+\left( \sum_{n=0}^{\infty} a_n x^n \right) \left( \sum_{n=0...
+...m_{n=0}^{\infty} \left( \sum_{k=0}^{n} a_k b_{n-k}\right) x^n
+\end{displaymath}">
+</DIV>
+<p align="center">&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../../"><font color="#000080" face="Arial Narrow" size="2">Inicio
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+</BODY>
+</HTML>

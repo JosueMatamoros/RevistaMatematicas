@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Soluci&#243;n num&#233;rica</TITLE>
+<META NAME="description" CONTENT="Soluci&#243;n num&#233;rica">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela de Matem&aacute;tica| </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">
+			M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<font color="#000080">
+<BR>
+</font>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node5.html"><font color="#000080">4</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node9.html"><font color="#000080">6</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node11.html"><font color="#000080">7</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node12.html"><font color="#000080">8</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node14.html"><font color="#000080">9</font></a><font color="#000080">&nbsp;&nbsp;
+10</font> &nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="53" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="524" height="37">
+&nbsp;<b> <A NAME="SECTION1263730689">
+Soluci&#243;n num&#233;rica</A>
+</b>
+
+<P>
+Para facilitar el trabajo y evitar la tarea de programaci&#243;n del m&#233;todo, podemos 
+usar una hoja de c&#225;lculo como Microsoft Excel (en Windows) o Gnumeric (en Linux).
+
+<P>
+Veamos el siguiente ejemplo
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+<P>
+Una resistencia de 5 <IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img262.gif"
+ ALT="$\omega$"> y un inductor de 1 Henrio se conectan en serie con 
+un generador de <IMG
+ WIDTH="73" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.gif"
+ ALT="$10 Cos(5 t)$"> voltios. Si la corriente es 0 en <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img264.gif"
+ ALT="$t=0$">, &#191; calcule la 
+la corriente en el instante <IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.gif"
+ ALT="$t=0.5$"> segundos ? 
+
+<P>
+Usando las ley de Kirchhoff modelamos la situaci&#243;n anterior con el siguiente problema de valor inicial
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\left\{
+\begin{array}{rcl}
+\frac{di}{dt} & = & 10 Cos(5t) - 5i \\
+i(0) & = & 0 \\
+\end{array}
+\right.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table16">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="circuito0"></A>
+	<a name="1.14"><IMG
+ WIDTH="190" HEIGHT="45" BORDER="0"
+ SRC="img266.gif"
+ ALT="\begin{displaymath}
+\left\{
+\begin{array}{rcl}
+\frac{di}{dt} &amp; = &amp; 10 Cos(5t) - 5i \\
+i(0) &amp; = &amp; 0 \\
+\end{array}
+\right.
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.14)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+F&#225;cilmente podemos comprobar que su soluci&#243;n general esta dada por 
+<!-- MATH
+ $i(t)=Cos(5t) + Sen(5t) - e^{-5t}$
+ -->
+<IMG
+ WIDTH="224" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.gif"
+ ALT="$i(t)=Cos(5t) + Sen(5t) - e^{-5t}$">, con lo cual 
+<IMG
+ WIDTH="41" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.gif"
+ ALT="$i(0.5)$"> es aproximandamente igual a <IMG
+ WIDTH="76" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.gif"
+ ALT="$-0.284756$">.
+
+<P>
+Ahora vamos usar una hoja de c&#225;lculo y el m&#233;todo de Euler para aproximar 
+la soluci&#243;n del problema de valor inicial anterior. 
+
+<P>
+Primero pongamonos de acuerdo con los contenidos de cada columna
+
+<P>
+
+<UL>
+<LI>La columna <B>A</B> representar&#225; el tiempo <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$">. 
+
+<P>
+</LI>
+<LI>La columna <B>B</B> representar&#225; la aproximaci&#243;n de la corriente <IMG
+ WIDTH="9" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.gif"
+ ALT="$i$">, 
+dada por el m&#233;todo de Euler. 
+
+<P>
+</LI>
+<LI>La celda <B>C</B> representar&#225; el paso de avance <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img256.gif"
+ ALT="$h$">.
+
+<P>
+</LI>
+</UL>
+
+<P>
+Ahora coloquemos los valores iniciales en la celda correspondiente
+
+<P>
+
+<UL>
+<LI>En la celda <B>A2</B> escribimos el valor inicial del tiempo, en nuestro caso  0, 
+
+<P>
+</LI>
+<LI>En la celda <B>B2</B> escribimos el valor inicial de la corriente, es decir, 0 
+
+<P>
+</LI>
+<LI>En la celda <B>C2</B> escribimos el valor de <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img256.gif"
+ ALT="$h$">, digamos 0.01. 
+
+<P>
+</LI>
+<LI>En la celda <B>A3</B> escribimos la f&#243;rmula que construir&#225; los
+valores de <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$">, es decir, <TT>=A2 + C$2</TT> y arrastramos &#233;sta celda hasta
+alcanzar el valor de <IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.gif"
+ ALT="$0.5$">. 
+
+<P>
+</LI>
+<LI>En la celda <B>B3</B> escribimos  la f&#243;rmula que construir&#225; la sucesi&#243;n 
+de valores para <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$y$">, es decir, <TT>=B2 + C$2*(10*Cos(5*A2) - 5*B2)</TT> y la arrastramos hasta
+alcanzar el valor de <IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.gif"
+ ALT="$t=0.5$"> en la columna <B>A</B> (el signo de d&#243;lares $ se usa
+para evitar que el valor se actualize conforme arrastramos la
+celda).
+
+<P>
+</LI>
+</UL>
+
+<P>
+Una vez generados los valores para las columnas <B>A</B> y <B>B</B>
+podemos observar que <!-- MATH
+ $y(0.5) \approx -0.26456$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.gif"
+ ALT="$y(0.5) \approx -0.26456$"> que es similar al
+valor real ya encontrado (<!-- MATH
+ $i(0.5) =-0.284756$
+ -->
+<IMG
+ WIDTH="135" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.gif"
+ ALT="$i(0.5) =-0.284756 $">) . En la <a href="#figura10"><font color="#000080">figura 
+10</font></a> 
+se muestra este proceso junto con una gr&#225;fica de la soluci&#243;n aproximada
+obtenida a partir de las columnas <B>A</B> y <B>B</B> y en el mismo
+sistema de coordenadas la gr&#225;fica de la soluci&#243;n <I>exacta</I>
+<!-- MATH
+ $i(t)=Cos(5t) + Sen(5t) - e^{-5t}$
+ -->
+<IMG
+ WIDTH="224" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.gif"
+ ALT="$i(t)=Cos(5t) + Sen(5t) - e^{-5t}$">.
+
+<P>
+<DIV ALIGN="CENTER">
+<a name="figura10">
+<img border="0" src="images/figura.gif" width="668" height="607"></a></DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 10</font></DIV>
+
+<P>
+Usar una hoja de c&#225;lculo para aproximar la soluci&#243;n de una
+ecuaci&#243;n diferencial resulta sencillo, pero existen muchas otras
+opciones que podemos usar. El siguiente c&#243;digo muestra una funci&#243;n
+implementada para la <TT>TI92</TT> que calcula el valor aproximado de
+<IMG
+ WIDTH="28" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.gif"
+ ALT="$i(c)$"> para el problema de valor inicial anterior <a href="#1.14">
+<font color="#000080">(1.14)</font></a>
+
+<P>
+<PRE>
+euler(a,b,c,h)
+Func
+local x0, y0,
+While x0 &lt; c
+y0 + h*f(x0,y0) -&gt; y0
+x0 + h -&gt; x0
+EndWhile
+Return y0
+EndFunc
+</PRE>
+
+<P>
+Antes de usar la funci&#243;n <TT>Euler</TT> debemos definir la
+funci&#243;n <!-- MATH
+ $f(x,y)=10 Cos(5x) - 5y$
+ -->
+<IMG
+ WIDTH="179" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.gif"
+ ALT="$f(x,y)=10 Cos(5x) - 5y$">; y para ejecutarla escribimos en la 
+ventana <TT>Home</TT>: <TT>euler(0,0,0.5,0.01)</TT>. Al hacerlo obtenemos el 
+valor <!-- MATH
+ $-0.264558272036$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.gif"
+ ALT="$-0.264558272036$"> que est&#225; muy cerca de valor real.
+
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2">
+- <a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista virtual 
+Matem&aacute;tica, Educaci&oacute;n e Internet</a> - <a href="https://tec.ac.cr" target="_blank">
+ITCR</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

@@ -1,0 +1,685 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaciones en variables separadas</TITLE>
+<META NAME="description" CONTENT="Ecuaciones en variables separadas">
+<META NAME="keywords" CONTENT="edo2v1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo2v1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+	<table height="35" cellSpacing="0" cellPadding="0" width="100%" border="0" id="table10">
+		<tr>
+			<td width="100%" height="1">
+			<img height="29" src="images/Encabezado-de-capitulos.png" width="356" border="0"> 
+			<table id="table11" cellSpacing="0" cellPadding="0" width="100%" bgColor="#808080" border="0">
+				<tr>
+					<td height="4">
+					<table id="table12" cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<tr>
+							<td height="1"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div align="left">
+	<div align="left">
+		<table height="1" width="100%" border="0" class="table13">
+			<tr>
+				<td width="191" height="1">
+				<img height="10" src="images/cap-aplicaciones1er-orden.gif" width="373" border="0"></td>
+				<td width="100%" height="1">
+				<p align="right">
+				<font face="Arial Narrow" color="#808080" size="2">|Instituto 
+				Tecnol&oacute;gico de Costa Rica|Escuela de Matem&aacute;tica| </font>
+				<font face="Arial Narrow" color="#000080" size="2">
+				<a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni 
+				Figueroa M.</a></font></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<p><br>
+<font size="2"><a href="./">1</a><font color="#000080">&nbsp; </font>
+2<font color="#000080">&nbsp; </font>
+<a href="node3.html">3</a><font color="#000080">&nbsp; </font>
+<a href="node5.html">4</a><font color="#000080">&nbsp; <a href="node7.html">5</a>&nbsp;
+<a href="node9.html">6</a>&nbsp; <a href="node11.html">7</a>&nbsp;
+<a href="node13.html">8</a> <a href="node14.html">&nbsp;9</a>&nbsp;
+<a href="node15.html">10</a>&nbsp; <a href="node17.html">11</a></font></font></p>
+<center>
+<table height="37" cellSpacing="0" cellPadding="0" width="577" border="0" id="table14">
+	<tr>
+		<td width="68" height="37">&nbsp; 
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+		<td width="509" height="37">&nbsp;
+<BR>
+		<b>Ecuaciones en variables separadas
+</b>
+
+<P>
+Las ecuaciones diferenciales de primer orden son las m&#225;s simples
+de resolver, al menos en teor&#237;a. Muchos problemas de la
+f&#237;sica, biolog&#237;a, econom&#237;a, ingenier&#237;a, etc., conducen a
+problemas de valor inicial que involucran ecuaciones de primer
+orden.
+
+<P>
+Durante muchos a&#241;os los matem&#225;ticos se esforzaron por resolver tipos espec&#237;ficos de
+ecuaciones diferenciales. Debido a esto existen hoy en d&#237;a muchas t&#233;cnicas de
+soluci&#243;n, algunas de las cuales estudiaremos.
+
+		<P>
+&nbsp;<table height="31" cellSpacing="0" cellPadding="0" width="509" border="0" id="table17">
+			<tr>
+				<td width="16" bgColor="#ffcc00" height="1"><b>
+				<font color="#000080" size="2">&nbsp;</font> </b></td>
+				<td width="483" bgColor="#99cc33" height="1"><b>
+				<font color="#000080" size="2">&nbsp;Definici&oacute;n</font> </b>[Ecuaci&#243;n diferencial separable]</td>
+			</tr>
+			<tr>
+				<td width="16" bgColor="#fffdf0" height="76">&nbsp;</td>
+				<td width="483" bgColor="#fffdf0" height="76">Una ecuaci&#243;n diferencial ordinaria de primer orden
+<!-- MATH
+ $f(x,y,y^{\prime})=0$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$f(x,y,y^{\prime})=0$"> que puede escribirse en la forma:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+f(x) dx + g(y) dy =0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="140" HEIGHT="28" BORDER="0"
+ SRC="img5.gif"
+ ALT="\begin{displaymath}
+f(x) dx + g(y) dy =0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+se llama ecuaci&#243;n diferencial en variables separadas.
+
+				<p>&nbsp;</td>
+				</tr>
+			</table>
+
+<P>
+<B>Observaci&oacute;n:</B> una ecuaci&#243;n de la forma:
+
+			<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+f_1(x)g_1(y) dx - f_2(x) g_2(y) dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="224" HEIGHT="28" BORDER="0"
+ SRC="img6.gif"
+ ALT="\begin{displaymath}
+f_1(x)g_1(y) dx - f_2(x) g_2(y) dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+puede transformarse en una ecuaci&#243;n en variables separadas al
+dividir por el factor <IMG
+ WIDTH="75" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$f_2(x) g_1(y)$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{f_1(x)}{f_2(x)} dx - \frac{g_2(y)}{g_1(y)} dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="159" HEIGHT="44" BORDER="0"
+ SRC="img8.gif"
+ ALT="\begin{displaymath}
+\frac{f_1(x)}{f_2(x)} dx - \frac{g_2(y)}{g_1(y)} dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y al integrar obtenemos la soluci&#243;n
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\int \frac{f_1(x)}{f_2(x)} dx = \int  \frac{g_2(y)}{g_1(y)} dy
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="170" HEIGHT="44" BORDER="0"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}
+\int \frac{f_1(x)}{f_2(x)} dx = \int \frac{g_2(y)}{g_1(y)} dy
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Tenga presente que al dividir por el factor <IMG
+ WIDTH="75" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$f_2(x) g_1(y)$"> puede perder soluciones que anulan este factor, las 
+cuales pueden ser soluciones singulares.
+
+			<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Resuelva la ecuaci&#243;n diferencial ordinaria
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+3 e^x Tan(y) dx + \left(2 - e^x \right) Sec^2(y) dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="265" HEIGHT="28" BORDER="0"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}
+3 e^x Tan(y) dx + \left(2 - e^x \right) Sec^2(y) dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Dividiendo por el factor <!-- MATH
+ $Tan(y) \left(2 - e^x \right)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$Tan(y) \left(2 - e^x \right)$"> obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{3 e^x}{2 - e^x} dx + \frac{Sec^2(y) }{Tan(y)} dy = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="183" HEIGHT="45" BORDER="0"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}
+\frac{3 e^x}{2 - e^x} dx + \frac{Sec^2(y) }{Tan(y)} dy = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Y al integrar
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+-3 Ln \mid2 - e^x \mid + Ln \mid Tan(y) \mid = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="238" HEIGHT="28" BORDER="0"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}
+-3 Ln \mid2 - e^x \mid + Ln \mid Tan(y) \mid = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Simplificando
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{Tan(y)}{\left(2 - e^x  \right)^3} = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="92" HEIGHT="47" BORDER="0"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}
+\frac{Tan(y)}{\left(2 - e^x \right)^3} = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Observe que el factor <!-- MATH
+ $Tan(y) \left( 2 - e^x  \right)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$Tan(y) \left(2 - e^x \right)$"> es cero
+cuando <IMG
+ WIDTH="74" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$x = Ln(2)$"> y <IMG
+ WIDTH="51" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$y= k \pi$"> con <!-- MATH
+ $k \in \mbox{$\  Z \hspace{-2.2mm} Z  $}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$k \in \mbox{$\ Z \hspace{-2.2mm} Z $}$">y al sustituirlas en
+la ecuaci&#243;n original se comprueba que son soluciones, pero se
+obtienen de la soluci&oacute;n general tomando <IMG
+ WIDTH="59" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$c = + \infty$"> y <IMG
+ WIDTH="39" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$c=0$">,
+respectivamente.
+
+			<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><P>
+&nbsp;<BR>
+La pendiente de una familia de curvas est&#225; dada por:<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} = - \frac{3x + xy^2}{2y + x^2y}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="116" HEIGHT="44" BORDER="0"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} = - \frac{3x + xy^2}{2y + x^2y}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Encuentre el miembro de la familia que pasa por el punto <IMG
+ WIDTH="38" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$(2,1)$">.
+
+<P>
+Separando variables
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{y}{3 + y^2} dy = - \frac{x}{2 + x^2} dx
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="159" HEIGHT="38" BORDER="0"
+ SRC="img22.gif"
+ ALT="\begin{displaymath}
+\frac{y}{3 + y^2} dy = - \frac{x}{2 + x^2} dx
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+Ln \left(3 + y^2 \right) + Ln \left( 2 + x^2 \right) = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="210" HEIGHT="30" BORDER="0"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}
+Ln \left(3 + y^2 \right) + Ln \left( 2 + x^2 \right) = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Simplificando
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2  \right) = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="144" HEIGHT="30" BORDER="0"
+ SRC="img24.gif"
+ ALT="\begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2 \right) = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Evaluando en el punto <IMG
+ WIDTH="38" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$(2,1)$"> obtenemos que <IMG
+ WIDTH="47" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.gif"
+ ALT="$c=24$">, con lo cual el miembro de la familia buscado es
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2  \right) = 24
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="154" HEIGHT="30" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2 \right) = 24
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+La recta tangente a la curva <!-- MATH
+ $\left( 3 + y^2 \right) \left(2 + x^2  \right) = 24$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\left ( 3 + y^2 \right ) \left (2 + x^2 \right ) = 24$"> en el punto <IMG
+ WIDTH="38" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$(2,1)$"> se 
+muestran en la figura<a href="#1.1"> 1.1.</a>
+
+		<P>
+&nbsp;<P align="center">
+<a name="1.1">
+<img border="0" src="images/pendiente.gif" width="213" height="261"></a><P>
+
+<DIV ALIGN="CENTER"><A NAME="edo2:fig2"></A><A NAME="44"></A>
+<TABLE id="table16">
+<CAPTION ALIGN="BOTTOM"><STRONG>Figura 1.1:</STRONG>
+Recta tangente a la curva <!-- MATH
+ $\left( 3 + y^2 \right) \left(2 + x^2  \right) = 24$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\left ( 3 + y^2 \right ) \left (2 + x^2 \right ) = 24$">.</CAPTION>
+<TR><TD>&nbsp;</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><P>
+La ecuaci&#243;n diferencial ordinaria
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dy}{dx} = \frac{4y^2 - x^4}{4xy}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="101" HEIGHT="44" BORDER="0"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}
+\frac{dy}{dx} = \frac{4y^2 - x^4}{4xy}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+no es separable, pero se convierte en separable al hacer el cambio de variable <IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$y=ux$">.
+
+<P>
+Al tratar de separar variables llegamos a la ecuaci&#243;n
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+4y dy = \frac{4y^2 - x^4}{x} dx
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="133" HEIGHT="41" BORDER="0"
+ SRC="img30.gif"
+ ALT="\begin{displaymath}
+4y dy = \frac{4y^2 - x^4}{x} dx
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+la cual no es separable.
+
+<P>
+Por otro lado, al hacer el cambio de variable <IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$y=ux$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y = ux \Rightarrow y^{\prime} = x u^{\prime} + u
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="158" HEIGHT="27" BORDER="0"
+ SRC="img31.gif"
+ ALT="\begin{displaymath}
+y = ux \Rightarrow y^{\prime} = x u^{\prime} + u
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+con lo que al sustituir en la ecuaci&#243;n diferencial obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x u^{\prime} + u = \frac{4u^2- x^2}{4u}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="133" HEIGHT="41" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}
+x u^{\prime} + u = \frac{4u^2- x^2}{4u}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y simplificando
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{du}{dx} = - \frac{x}{4u}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="72" HEIGHT="39" BORDER="0"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}
+\frac{du}{dx} = - \frac{x}{4u}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+la cual es separable. Al integrar llegamos a la soluci&#243;n
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+2u^2 + \frac{x^2}{2} = c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="91" HEIGHT="41" BORDER="0"
+ SRC="img34.gif"
+ ALT="\begin{displaymath}
+2u^2 + \frac{x^2}{2} = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Volviendo a la variable original
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+2 \left( \frac{y}{x}  \right)^2 + \frac{x^2}{2} =  c
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="117" HEIGHT="41" BORDER="0"
+ SRC="img35.gif"
+ ALT="\begin{displaymath}
+2 \left( \frac{y}{x} \right)^2 + \frac{x^2}{2} = c
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+la cual es la soluci&#243;n buscada.
+
+			<p>&nbsp;</p>
+			<p align="center"><br>
+			<br>
+&nbsp;</p>
+			<p>&nbsp; <!--Table of Child-Links--></p>
+			<hr color="#c0c0c0" SIZE="0"><center>
+			<p align="center"><a href="../">
+			<font face="Arial Narrow" color="#000080" size="2"><br>
+			</font></a><font face="Arial Narrow" color="#808080" size="2">
+			<a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a><a target="_blank" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/"></a><a target="_blank" href="https://tec.ac.cr"></a></font> </p>
+			</center></td>
+		</tr>
+	</table>
+	<p>&nbsp;</p>
+</center>
+<H1>
+<BR>
+&nbsp;</H1>
+</BODY>
+</HTML>

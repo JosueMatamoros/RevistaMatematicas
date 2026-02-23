@@ -1,0 +1,701 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Problemas de valor inicial y de frontera</TITLE>
+<META NAME="description" CONTENT="Problemas de valor inicial y de frontera">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node5.html"><font color="#000080">4</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node9.html"><font color="#000080">6</font></a><font color="#000080">&nbsp;&nbsp;
+7&nbsp;&nbsp;
+</font><a href="node12.html"><font color="#000080">8</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node14.html"><font color="#000080">9</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node15.html"><font color="#000080">10</font></a> &nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+<b><A NAME="SECTION-66060287">
+<font size="3">Problemas de valor inicial y de frontera</font></A></b><font size="3">
+</font>
+<p>En la mayor&#237;a de las aplicaciones estamos interesados no en la
+soluci&#243;n general de una ecuaci&#243;n diferencial, sino en una
+soluci&#243;n particular <A NAME="492"></A> que satisfaga
+ciertas condiciones dadas. Esto da origen a los problemas de valor
+inicial o de frontera.
+
+  </p>
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table16">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b><font size="2"> <span lang="en-us">&nbsp;[ Problema de valor inicial</span><span lang="en-us">]</span></font></td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Un problema de valor inicial o de Cauchy 
+		<A NAME="494"></A> consta de una ecuaci&#243;n diferencial de orden <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> y de <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$">
+condiciones iniciales impuestas a la funci&#243;n desconocida y a sus
+<IMG
+ WIDTH="40" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.gif"
+ ALT="$n-1$"> primeras derivadas en un valor de la variable independiente.
+Es decir
+
+</td>
+    </tr>
+  </table>
+
+<P>
+&nbsp;Es decir
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\frac{d^n y}{d x^n} & = & f(x,y,y^{(1)}, y^{(2)}, \ldots, y^{(n-1)} ) \\
+y(x_0) & = & y_0 \\
+y^{(1)} (x_0) & = & y_1 \\
+y^{(2)} (x_0) & = & y_2 \\
+\vdots        & = & \vdots \\
+y^{(n)} (x_0) & = & y_{n-1} \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="289" HEIGHT="136" BORDER="0"
+ SRC="img189.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{d^n y}{d x^n} &amp; = &amp; f(x,y,y^{(1)}...
+... = &amp; \vdots \\
+y^{(n)} (x_0) &amp; = &amp; y_{n-1} \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+<P>
+Una part&#237;cula <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img190.gif"
+ ALT="$P$"> se mueve a lo largo del eje <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$"> de manera tal
+que su aceleraci&#243;n en cualquier tiempo <IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.gif"
+ ALT="$t \geq 0$"> est&#225; dada
+por <!-- MATH
+ $a(t) = 8 - 4t + t^2$
+ -->
+<IMG
+ WIDTH="124" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.gif"
+ ALT="$a(t) = 8 - 4t + t^2$">. Encuentre la posici&#243;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$x(t)$"> de la
+part&#237;cula en cualquier tiempo <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$">, suponiendo que inicialmente
+la part&#237;cula est&#225; localizada en <IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img194.gif"
+ ALT="$x=1$"> y est&#225; viajando a una
+velocidad de <IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.gif"
+ ALT="$v=-3$">.
+
+<P>
+Recuerde que la primera derivada de la posici&#243;n nos da la
+velocidad y la segunda derivada la aceleraci&#243;n. De donde el
+problema de valor inicial ser&#237;a
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\frac{d^2 x}{d t^2} & = & 8 - 4t + t^2 \\
+x(0) & = & 1 \\
+x^{\prime} (0) & = & -3 \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="149" HEIGHT="67" BORDER="0"
+ SRC="img196.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{d^2 x}{d t^2} &amp; = &amp; 8 - 4t + t^2 \\
+x(0) &amp; = &amp; 1 \\
+x^{\prime} (0) &amp; = &amp; -3 \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando con respecto a <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$"> obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dx}{dt} = 8t - 2t^2 + \frac{t^3}{3} + A
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="162" HEIGHT="41" BORDER="0"
+ SRC="img197.gif"
+ ALT="\begin{displaymath}
+\frac{dx}{dt} = 8t - 2t^2 + \frac{t^3}{3} + A
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y usando la condici&#243;n <IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$x(0)=1$"> podemos hallar que <IMG
+ WIDTH="57" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.gif"
+ ALT="$A = -3$">, con
+lo cual la velocidad en cualquier tiempo <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$"> ser&#237;a
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\frac{dx}{dt} = 8t - 2t^2 + \frac{t^3}{3} - 3
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="157" HEIGHT="41" BORDER="0"
+ SRC="img200.gif"
+ ALT="\begin{displaymath}
+\frac{dx}{dt} = 8t - 2t^2 + \frac{t^3}{3} - 3
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando de nuevo
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x(t) = 4t^2 - \frac{2}{3} t^3 + \frac{1}{12} t^4 - 3t + B
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="229" HEIGHT="38" BORDER="0"
+ SRC="img201.gif"
+ ALT="\begin{displaymath}
+x(t) = 4t^2 - \frac{2}{3} t^3 + \frac{1}{12} t^4 - 3t + B
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+y usando la condici&#243;n <!-- MATH
+ $x^{\prime}(0)=-3$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.gif"
+ ALT="$x^{\prime}(0)=-3$"> podemos determinar que
+<IMG
+ WIDTH="45" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img203.gif"
+ ALT="$B=1$"> y obtener la posici&#243;n de la part&#237;cula en cualquier
+tiempo <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3}t^3 + 4t^2 - 3t + 1
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="224" HEIGHT="38" BORDER="0"
+ SRC="img204.gif"
+ ALT="\begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3}t^3 + 4t^2 - 3t + 1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+En la<a href="#figura7"> <font color="#000080">figura 7</font></a> se muestra la gr&#225;fica de la
+posici&#243;n de la part&#237;cula versus tiempo.
+
+<DIV ALIGN="CENTER">
+&nbsp;<a name="figura7"><img border="0" src="images/frontera.gif" width="230" height="163"></a></DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 7</font></DIV>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font><BR>
+Una familia de curvas tiene la propiedad de que la pendiente de la
+recta tangente en el punto <IMG
+ WIDTH="40" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.gif"
+ ALT="$(x,y)$"> est&#225; dada por <IMG
+ WIDTH="14" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.gif"
+ ALT="$\frac{x}{y}$">.
+&#191; Hallar el miembro de esta familia que pasa por el punto <IMG
+ WIDTH="38" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.gif"
+ ALT="$(1,2)$">
+?
+
+<P>
+El problema de valor inicial asociado es
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\frac{dy}{dx} & = & \frac{x}{y} \\
+y(1) & = 2 \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="94" HEIGHT="48" BORDER="0"
+ SRC="img208.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{dy}{dx} &amp; = &amp; \frac{x}{y} \\
+y(1) &amp; = 2 \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Para resolver la ecuaci&#243;n diferencial debemos separar variables
+e integrar
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y dy  = x dx \Rightarrow \frac{y^2}{2}  - \frac{x^2}{2} = C
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="189" HEIGHT="41" BORDER="0"
+ SRC="img209.gif"
+ ALT="\begin{displaymath}
+y dy = x dx \Rightarrow \frac{y^2}{2} - \frac{x^2}{2} = C
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Y usando la condici&#243;n inicial <IMG
+ WIDTH="62" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$x(1)=2$"> obtenemos que <IMG
+ WIDTH="45" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.gif"
+ ALT="$C=3$">, con
+lo cual la curva buscada es <IMG
+ WIDTH="83" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.gif"
+ ALT="$y^2 - x^2 = 3$">, la cual se muestra en
+la <a href="#figura8"><font color="#000080">figura 8</font></a>.
+
+<P>
+<DIV ALIGN="CENTER">
+<FONT SIZE="+2">
+<a name="figura8">
+<img border="0" src="images/hiperbola.gif" width="153" height="193"></a></FONT>
+
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 8</font></DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table17">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b><font size="2"> <span lang="en-us">&nbsp;[ Problema de valor 
+		frontera</span><span lang="en-us">]</span></font></td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Un problema de valores en la frontera o de Dirichlet
+<A NAME="553"></A> consta de una ecuaci&#243;n diferencial
+ordinaria de orden <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> y de <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> condiciones de frontera impuestas
+sobre la funci&#243;n desconocida en <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> valores de la variable independiente.</td>
+    </tr>
+  </table>
+
+</DIV>
+
+<P>
+.Es decir
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\frac{d^n y}{d x^n} & = & f(x,y,y^{(1)}, y^{(2)}, \ldots, y^{(n-1)} ) \\
+y(x_0) & = & y_0 \\
+y(x_0) & = & y_1 \\
+y(x_1) & = & y_2 \\
+\vdots        & = & \vdots \\
+y(x_{n-1}) & = & y_{n-1} \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="288" HEIGHT="134" BORDER="0"
+ SRC="img213.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{d^n y}{d x^n} &amp; = &amp; f(x,y,y^{(1)}...
+...s &amp; = &amp; \vdots \\
+y(x_{n-1}) &amp; = &amp; y_{n-1} \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font>
+<BR>
+<P>
+Una part&#237;cula <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img190.gif"
+ ALT="$P$"> se mueve a lo largo del eje <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$"> de manera tal
+que su aceleraci&#243;n en cualquier tiempo <IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.gif"
+ ALT="$t \geq 0$"> est&#225; dada
+por <!-- MATH
+ $a(t) = 8 - 4t + t^2$
+ -->
+<IMG
+ WIDTH="124" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.gif"
+ ALT="$a(t) = 8 - 4t + t^2$">. Encuentre la posici&#243;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$x(t)$"> de la
+part&#237;cula en cualquier tiempo <IMG
+ WIDTH="9" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t$">, suponiendo que inicialmente
+la part&#237;cula est&#225; localizada en <IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img194.gif"
+ ALT="$x=1$"> y en <IMG
+ WIDTH="38" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img214.gif"
+ ALT="$t=2$"> est&#225; en
+<IMG
+ WIDTH="41" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img215.gif"
+ ALT="$x=7$">.
+
+<P>
+El problema de valores de frontera asociado es
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\frac{d^2 x}{d t^2} & = & 8 - 4t + t^2 \\
+x(0) & = & 1 \\
+x(2) & = & 7 \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="145" HEIGHT="67" BORDER="0"
+ SRC="img216.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\frac{d^2 x}{d t^2} &amp; = &amp; 8 - 4t + t^2 \\
+x(0) &amp; = &amp; 1 \\
+x(2) &amp; = &amp; 7 \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Integrando dos veces obtenemos que la posici&#243;n de la part&#237;cula
+est&#225; dada por
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3} t^3 + 4 t^2 + A t + B
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="233" HEIGHT="38" BORDER="0"
+ SRC="img217.gif"
+ ALT="\begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3} t^3 + 4 t^2 + A t + B
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Evaluando las condiciones de frontera obtenemos el siguiente sistema
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left \{
+\begin{array}{rcl}
+B & =  & 1 \\
+2 A + B & = & -5 \\
+\end{array}
+\right.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="133" HEIGHT="45" BORDER="0"
+ SRC="img218.gif"
+ ALT="\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+B &amp; = &amp; 1 \\
+2 A + B &amp; = &amp; -5 \\
+\end{array}
+\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+de donde <IMG
+ WIDTH="57" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.gif"
+ ALT="$A = -3$"> y <IMG
+ WIDTH="45" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img203.gif"
+ ALT="$B=1$">. Y as&#237; la posici&#243;n de la part&#237;cula
+en cualquier tiempo  est&#225; dada por
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3} t^3 + 4 t^2 - 3 t + 1
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="224" HEIGHT="38" BORDER="0"
+ SRC="img204.gif"
+ ALT="\begin{displaymath}
+x(t) = \frac{1}{12} t^4 - \frac{2}{3}t^3 + 4t^2 - 3t + 1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+La gr&#225;fica de la posici&#243;n <IMG
+ WIDTH="30" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$x(t)$"> se muestra en la<a href="#figura7"><font color="#000080"> figura 
+7</font></a>.
+
+<br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

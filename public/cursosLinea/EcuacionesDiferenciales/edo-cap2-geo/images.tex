@@ -1,0 +1,2751 @@
+\batchmode
+\documentclass{book}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage[spanish]{babel}
+\usepackage{graphics}
+
+%
+\providecommand{\Z}{\mbox{$ Z \hspace{-2.2mm} Z  $}}%
+\providecommand{\R}{\mbox{$ I \hspace{-1.23mm} R $\  }} 
+
+
+
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3462}%
+$\left ( 3 + y^2 \right ) \left (2 + x^2 \right ) = 24$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3465}%
+$x^^b2 + y^2 =4 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline3467}%
+$y=cx \pm 2 \sqrt  {1+ c^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+
+
+\selectlanguage{spanish}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1335}%
+$f(x,y,y^{\prime})=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1023}%
+\begin{displaymath}
+f(x) dx + g(y) dy =0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1024}%
+\begin{displaymath}
+f_1(x)g_1(y) dx - f_2(x) g_2(y) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1337}%
+$f_2(x) g_1(y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1025}%
+\begin{displaymath}
+\frac{f_1(x)}{f_2(x)} dx - \frac{g_2(y)}{g_1(y)} dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1026}%
+\begin{displaymath}
+\int \frac{f_1(x)}{f_2(x)} dx = \int  \frac{g_2(y)}{g_1(y)} dy
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1027}%
+\begin{displaymath}
+3 e^x Tan(y) dx + \left(2 - e^x \right) Sec^2(y) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1341}%
+$Tan(y) \left(2 - e^x \right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1028}%
+\begin{displaymath}
+\frac{3 e^x}{2 - e^x} dx + \frac{Sec^2(y) }{Tan(y)} dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1029}%
+\begin{displaymath}
+-3 Ln \mid2 - e^x \mid + Ln \mid Tan(y) \mid = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1030}%
+\begin{displaymath}
+\frac{Tan(y)}{\left(2 - e^x  \right)^3} = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1345}%
+$x = Ln(2)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1347}%
+$y= k \pi$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1351}%
+$k \in \mbox{$\  Z \hspace{-2.2mm} Z  $}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1353}%
+$c = + \infty$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1355}%
+$c=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1031}%
+\begin{displaymath}
+\frac{dy}{dx} = - \frac{3x + xy^2}{2y + x^2y}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1357}%
+$(2,1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1032}%
+\begin{displaymath}
+\frac{y}{3 + y^2} dy = - \frac{x}{2 + x^2} dx
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1033}%
+\begin{displaymath}
+Ln \left(3 + y^2 \right) + Ln \left( 2 + x^2 \right) = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1034}%
+\begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2  \right) = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1361}%
+$c=24$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1035}%
+\begin{displaymath}
+\left( 3 + y^2 \right) \left(2 + x^2  \right) = 24
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure42}%
+\begin{figure}
+FIGURA ----- pendiente.eps ----------
+
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1036}%
+\begin{displaymath}
+\frac{dy}{dx} = \frac{4y^2 - x^4}{4xy}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1369}%
+$y=ux$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1037}%
+\begin{displaymath}
+4y dy = \frac{4y^2 - x^4}{x} dx
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1038}%
+\begin{displaymath}
+y = ux \Rightarrow y^{\prime} = x u^{\prime} + u
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1039}%
+\begin{displaymath}
+x u^{\prime} + u = \frac{4u^2- x^2}{4u}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1040}%
+\begin{displaymath}
+\frac{du}{dx} = - \frac{x}{4u}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1041}%
+\begin{displaymath}
+2u^2 + \frac{x^2}{2} = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1042}%
+\begin{displaymath}
+2 \left( \frac{y}{x}  \right)^2 + \frac{x^2}{2} =  c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1377}%
+$f: D \subset \mbox{$\  I \hspace{-1.23mm} R $\  }^2 \rightarrow \mbox{$\  I \hspace{-1.23mm} R $\  }$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1379}%
+$n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1043}%
+\begin{displaymath}
+f(tx,ty) = t^n f(x,y)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1381}%
+$t > 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1383}%
+$(x,y) \in D$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1385}%
+$f(x,y)= \frac{1}{\sqrt{x+y}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1387}%
+$\frac{1}{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1389}%
+$f(x,y)=e{\frac{x}{y} }$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1391}%
+$f(x,y)= \frac{x^2 -
+y^2}{x^2 + y^2} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1393}%
+$f(x,y)=\frac{x}{2x+y}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1395}%
+$f(x,y)= x^2 + y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1397}%
+$f(x,y)=xy$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1399}%
+$f(x,y)=x^2-2xy+y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1401}%
+$y^{\prime}
+= f(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1403}%
+$f(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1044}%
+\begin{displaymath}
+M(x,y) dx + N(x,y) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1405}%
+$M(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1407}%
+$N(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1045}%
+\begin{displaymath}
+y^{\prime} = f(x,y)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1046}%
+\begin{displaymath}
+x u^{\prime} +  u = f(x, x u)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1047}%
+\begin{displaymath}
+x \frac{du}{dx} +  u = x^0 f(1,u)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1048}%
+\begin{displaymath}
+x \frac{du}{dx} = f(1,u) - u \Rightarrow \frac{du}{f(1,u) - u} = \frac{dx}{x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1049}%
+\begin{displaymath}
+\left(x^2 + y^2 \right) dx +  xy dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1413}%
+$M(x,y) = x^2 +
+y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1415}%
+$N(x,y) = xy$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1050}%
+\begin{displaymath}
+\begin{array}{rcl}
+M(tx,ty) & = & \left(t x  \right)^2 + \left(t y   \right)^2 = t^2 \left( x^2 + y^2 \right) = t^2 M(x,y)  \\
+N(tx,ty) & = & \left(t x \right) \left( t y \right) = t^2 \left( xy \right) = t^2 N(x,y)  \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1051}%
+\begin{displaymath}
+\begin{array}{rcl}
+\left(x^2 + \left(u x  \right)^2    \right) dx + x \left( u y \right) \left( x du + u dx  \right) & = &  0 \\
+x^2 \left( 1 + 2 u^2 \right) dx + u x^3 du & = & 0 \\
+x^3 \left(\frac{1}{x} dx + \frac{u}{1 + 2 u^2} du    \right) & = & 0 \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1052}%
+\begin{displaymath}
+\frac{1}{x} dx + \frac{u}{1 + 2 u^2} du =0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1417}%
+$x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1419}%
+$y$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1053}%
+\begin{displaymath}
+Ln \mid x \mid + \frac{1}{4} Ln \mid 1 + 2 \left(\frac{y}{x} \right)^2  \mid =  c \Rightarrow x^4 + 2 x^2 y^2 = c
+ \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1421}%
+$x=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1055}%
+\begin{displaymath}
+\frac{dy}{dx} = -\frac{M(x,y)}{N(x,y)}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1056}%
+\begin{displaymath}
+x y^{\prime} = \sqrt{x^2 - y^2 } + y
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1057}%
+\begin{displaymath}
+y^{\prime} = \sqrt{1 - \left( \frac{y}{x}  \right)^2} + \frac{y}{x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1058}%
+\begin{displaymath}
+\frac{du}{\sqrt{1- u^2}} = \frac{dx}{x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1059}%
+\begin{displaymath}
+ArcSen(u)  = Ln \mid x \mid  + Ln \mid c \mid  
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1060}%
+\begin{displaymath}
+\begin{array}{rcl}
+& \Rightarrow &  arcsen\left( \frac{y}{x}  \right) = Ln \left( cx \right) \\
+& \Rightarrow & y = Sen \left(Ln \left( cx \right) \right) \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1431}%
+$x \sqrt{1 - u^2} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1435}%
+$1
+- \frac{x^2}{y^2} =0 \Rightarrow y = \pm x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1437}%
+$f(x,y) = x Sen(\frac{y}{x})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1439}%
+$f(x,y) = \frac{y}{x^2 + 3 \sqrt{x^2 + y^2}} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1441}%
+$f(x,y) = x^2 + 5xy - y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1443}%
+$f(x,y) = \frac{Ln \left( x^2 \right) }{Ln \left( xy \right) } $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1445}%
+$\left( 2x + 3y \right) dx + \left(y - x  \right) = 0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1447}%
+$y^{\prime} = \frac{x^2-y^2}{x^2 + y^2} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1449}%
+$y^{\prime} = Sen\left( \frac{y}{x}  \right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1451}%
+$\left( x^4 + y^4 \right) dx - 2x^3 dy =0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1453}%
+$\left( \sqrt{x + y}  + \sqrt{x - y}  \right) dx + \left(\sqrt{x - y} + \sqrt{x + y}    \right) dy = 0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1455}%
+$ \left( y + \sqrt{x^2 + y^2 } \right) dx - x dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1457}%
+$\left( xy + y^2 + x^2 \right) dx - x^2 dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1461}%
+$f: D \subset \mbox{$\  I \hspace{-1.23mm} R $\  }^2 \rightarrow R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1463}%
+$f$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1469}%
+$\nabla f : D \subset \mbox{$\  I \hspace{-1.23mm} R $\  }^2
+\rightarrow \mbox{$\  I \hspace{-1.23mm} R $\  }^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1061}%
+\begin{displaymath}
+\nabla f(x,y_) = \frac{\partial f}{\partial x} \vec{i} + \frac{\partial f}{\partial y} \vec{j}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1471}%
+$f(x,y)= 2x^2 y^3 + 3xy^2 + x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1062}%
+\begin{displaymath}
+\nabla f(x,y) = \left(4 x y^3 + 3 y^2 + 1 \right) \vec{i} + \left( 6x^2y^2 + 6 x y   \right) \vec{j}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1477}%
+$F: U \subset \mbox{$\  I \hspace{-1.23mm} R $\  }^2 \rightarrow \mbox{$\  I \hspace{-1.23mm} R $\  }^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1479}%
+$F$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1487}%
+$\nabla f = F$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1491}%
+$F(x,y) = 2xy  \vec{i} + \left(x^2 - 3y^2
+\right) \vec{j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1493}%
+$f(x,y) = x^2y - y^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1503}%
+$U$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1505}%
+$xy$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1063}%
+\begin{displaymath}
+F(x,y) = M(x,y) \vec{i} + N(x,y) \vec{j}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1064}%
+\begin{displaymath}
+\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1065}%
+\begin{displaymath}
+F(x,y) = \left(4 x y^3 + 3 y^2 +1 \right) \vec{i} + \left( 6x^2y^2 + 6 x y   \right) \vec{j}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1066}%
+\begin{displaymath}
+M(x,y) = 4 x y^3 + 3 y^2 + 1 \hspace{1cm} N(x,y) =  6x^2y^2 + 6 x y 
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1067}%
+\begin{displaymath}
+\frac{\partial P}{\partial y} = 12xy^2 + 6y= \frac{\partial Q}{\partial x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1068}%
+\begin{displaymath}
+\begin{array}{rcl}
+\frac{\partial f}{\partial x} & = &   4 x y^3 + 3 y^2 + 1  \\
+\frac{\partial f}{\partial y} & = &   6x^2y^2 + 6 x y \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1069}%
+\begin{displaymath}
+\frac{\partial f}{\partial x}  =  4 x y^3 + 3 y^2 + 1 \Rightarrow f(x,y) = 2x^2y^3 + 3xy^2 + x + g(y)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1525}%
+$\frac{\partial f}{\partial y}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1070}%
+\begin{displaymath}
+6x^2 y^2 + 6xy + g^{\prime}(y) = 6x^2 y^2 + 6xy \Rightarrow g^{\prime}(y) = 0 \Rightarrow g(y) = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1527}%
+$f(x,y) = 2x^2 y^3 + 3x y^2 + x + c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1539}%
+$f(x,y)=c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1543}%
+$F(x,y)= M(x,y) \vec{i} + N(x,y)
+\vec{j} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1074}%
+\begin{displaymath}
+f_x (x,y) + f_y (x,y) y^{\prime} =  0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1553}%
+$F(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1555}%
+$f_x (x,y) = M(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1557}%
+$f_y (x,y) = N(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1075}%
+\begin{displaymath}
+\begin{array}{rl}
+\Rightarrow & M(x,y) + N(x,y) \frac{dy}{dx} = 0  \\
+\Rightarrow & M(x,y) dx + N(x,y) dy = 0 
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1076}%
+\begin{displaymath}
+\left(4 x y^3 + 3 y^2 + 1 \right) dx  + \left( 6x^2y^2 + 6 x y   \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1559}%
+$ 2x^2 y^3 + 3x y^2 + x = c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1563}%
+$F(x,y) = \left(4 x y^3 +
+6 y^2 +1 \right) \vec{i} + \left( 6x^2y^2 + 6 x y   \right)
+\vec{j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath235}%
+\begin{displaymath}
+M(x,y) dx + \left( xe^{xy} + 2xy + \frac{1}{x} \right) dy = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1077}%
+\begin{displaymath}
+\begin{array}{rcl}
+\frac{\partial M}{\partial y} & = &  \frac{\partial N}{\partial x}  \\
+& = & e^{xy} + xy e^{xy} + 2y - \frac{1}{x^2} 
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1078}%
+\begin{displaymath}
+M(x,y) = y e^{xy} + y^2 - \frac{y}{x^2} + c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1571}%
+$c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1577}%
+$k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath258}%
+\begin{displaymath}
+ \left( 2x - y Sen(xy) + k y^4 \right) dx - \left( 20 k^2 x y^3 + x Sen(xy) \right) dy = 0 
+ 
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1079}%
+\begin{displaymath}
+\begin{array}{rcl}
+\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x} \\
+-Sen(xy) - xy Sen(xy)  + 4k y^3 & = & -20 k^2 y^3 - Sen(xy) - x Sen(xy)  \\
+4ky^3 & = & -20y^3 \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1080}%
+\begin{displaymath}
+4k = -20k^2 \Rightarrow 20 k^2 + 4k = 0 \Rightarrow k=0 \wedge k = -\frac{1}{5}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1579}%
+$\left(x + y \right) \left(x - y  \right) dx + x \left(x - 2y \right)  dy =0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1581}%
+$\left(x^3 + y^3  \right) dx  + 3xy^2 dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1583}%
+$\left( 3x^2 y  + e^y \right) dx + \left( x^3 + xe^y - 2y \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1585}%
+$\left( y Ln(y) - e^{xy}   \right) dx + \left(\frac{1}{y} + x Ln(y)   \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1589}%
+$\left(y^3 + kxy^4 - 2x   \right) dx + \left(3xy^2 + 20x^2y^3  \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1591}%
+$\left(2x - y Sen(x) + ky^4 \right) dx - \left(20xy^3 + x Sen(xy)   \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1593}%
+$\left(6xy^3 + Cos(y) \right) + \left(kx^2y^2 - x Sen(y) \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1081}%
+\begin{displaymath}
+M(x,y) dx + \left(x e^{xy} + 2xy + \frac{1}{x}  \right) = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1082}%
+\begin{displaymath}
+\left( \sqrt{\frac{y}{x} } + \frac{x}{x^2 + y}  \right) dx + N(x,y) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath289}%
+\begin{displaymath}
+\frac{y}{x^2} dx + \left(y - \frac{1}{x}   \right) dy = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1083}%
+\begin{displaymath}
+\frac{\partial M}{\partial y} = \frac{1}{x^2}  = \frac{\partial N}{\partial x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1599}%
+$x^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath303}%
+\begin{displaymath}
+y dx + \left( x^2y - x \right) dy = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1601}%
+$\frac{1}{x^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1603}%
+$\mu(x,y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1085}%
+\begin{displaymath}
+\mu(x,y) \left( M(x,y) dx + N(x,y) dy  \right) = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1611}%
+$\mu(x,) = xy^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1086}%
+\begin{displaymath}
+\left(2y - 6x \right) dx + \left(3x  - \frac{4x^2}{y}   \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1087}%
+\begin{displaymath}
+\left(2xy^3 - 6x^2y^2  \right) dx + \left(3x^2y^2 - 4x^3y   \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1088}%
+\begin{displaymath}
+\frac{\partial M}{\partial y} = 6xy^2 - 12x^2y  = \frac{\partial N }{\partial x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1615}%
+$x^2y^3 - 2x^3y^2= c $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1089}%
+\begin{displaymath}
+\frac{\mu(x,y) M(x,y) }{\partial y}  = \frac{\mu(x,y) N(x,y)}{\partial x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath333}%
+\begin{displaymath}
+M \frac{\partial \mu }{\partial y} - N \frac{\partial \mu}{\partial x} = \left( \frac{\partial N}{\partial x}  - \frac{\partial M}{\partial y}   \right)
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1619}%
+$\mu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1623}%
+$\mu = \mu(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1090}%
+\begin{displaymath}
+\frac{d \mu}{d x} = \left(\frac{\frac{\partial M}{\partial y} -  \frac{\partial N}{\partial x} }{ N }   \right) \mu
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath355}%
+\begin{displaymath}
+\frac{d \mu}{ \mu} = \left(\frac{\frac{\partial M}{\partial y} -  \frac{\partial N}{\partial x} }{ N }   \right) dx
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1091}%
+\begin{displaymath}
+\frac{d \mu}{d y} = \left(\frac{\frac{\partial N}{\partial y} -  \frac{\partial M}{\partial x} }{ M }   \right) \mu
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath375}%
+\begin{displaymath}
+\frac{d \mu}{ \mu} = \left(\frac{\frac{\partial N}{\partial y} -  \frac{\partial M}{\partial x} }{ M }   \right) dy
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1092}%
+\begin{displaymath}
+\frac{  \frac{\partial M}{\partial y}  -  \frac{\partial N}{ \partial x}   }{N}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1093}%
+\begin{displaymath}
+\mu(x) = exp\left( \int \left( \frac{  \frac{\partial M}{\partial y}  -  \frac{\partial N}{ \partial x}   }{ N }  \right)  dx \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1094}%
+\begin{displaymath}
+\frac{  \frac{\partial N}{\partial x}  -  \frac{\partial M}{ \partial y}   }{ M }
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1095}%
+\begin{displaymath}
+\mu(y) = exp\left( \int \left( \frac{  \frac{\partial N}{\partial x}  -  \frac{\partial M}{ \partial y}   }{M}  \right)  dx \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1096}%
+\begin{displaymath}
+\left( 3x +2y y^2 \right) dx + \left(x +4xy + 5 y^2   \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1633}%
+$\mu(x,y)= \phi(x + y^2 )$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1635}%
+$z = x + y^2 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1097}%
+\begin{displaymath}
+\frac{\partial \mu}{\partial x } = \frac{d \mu}{\partial  z} \frac{\partial  z}{d x} = \frac{\partial \mu}{\partial z}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1098}%
+\begin{displaymath}
+\frac{\partial \mu}{\partial y} = \frac{d \mu}{\partial  z} \frac{\partial  z}{d y} = 2y \frac{\partial \mu}{\partial z}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1099}%
+\begin{displaymath}
+\left(2y M - N \right) \frac{d \mu}{d z} = \left( \frac{\partial N }{\partial x} - \frac{\partial M}{\partial y}  \right)   \mu
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1100}%
+\begin{displaymath}
+\frac{d \mu}{\mu} = \left( \frac{ \frac{\partial N }{\partial x} - \frac{\partial M}{\partial y}        }{ 2y M - N     } \right) dz
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1643}%
+$M(x,y) = 3x +2y y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1645}%
+$N(x,y)= x +4xy + 5 y^2 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1101}%
+\begin{displaymath}
+\frac{d \mu}{\mu} = \frac{1}{x + y^2} dz = \frac{1}{z} dz
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1647}%
+$\mu = z$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1649}%
+$\mu(x,y) = x + y^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1102}%
+\begin{displaymath}
+\left(3x^2 + 2xy + 4xy^2 + 2y^2 + 2y^3 + y^4  \right) dx + \left(x^2 + 4x^2y + 6xy^2 + 4xy^3 + 5y^4  \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1103}%
+\begin{displaymath}
+x^3 + x^2y + 2x^2 y^2 + 2xy^3 + xy^4 + y^5 = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1104}%
+\begin{displaymath}
+\left( xy^2 - y^3 \right) dx + \left(1 - xy^2 \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1105}%
+\begin{displaymath}
+\frac{\partial M}{\partial y} = 2xy - 3y^2  \hspace{2cm}  \frac{\partial N}{\partial x}= -y^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1106}%
+\begin{displaymath}
+g(y)  =  \frac{\frac{\partial M}{\partial y} - \frac{\partial N}{\partial x} }{M}  
+       = \frac{-y^2 - 2xy + 3y^2}{xy^2 - y^3} 
+       =  \frac{2y^2  -2xy}{y^2 \left( x - y \right)} 
+       = -\frac{2}{y} 
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1107}%
+\begin{displaymath}
+\mu(y)  = e^{ \int g(y)  dy } = e^{-2 ln(y)} = \frac{1}{y^2}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1108}%
+\begin{displaymath}
+\left( x - y  \right) dx + \left( \frac{1}{y^2} - x \right) dy  = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1109}%
+\begin{displaymath}
+\frac{x^2}{2} - \frac{1}{y} - xy = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1657}%
+$p$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1659}%
+$q$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1661}%
+$\mu(x,y)=x^p y^q$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath475}%
+\begin{displaymath}
+\left(2y^2+ 4x^2y \right)dx + \left( 4xy + 3x^3 \right)dy = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1110}%
+\begin{displaymath}
+\left( 2x^p y^{q+2} + 4x^{p+2} y^{q+1}  \right)dx + \left( 4x^{p+1} y^{q+1} + 3x^{p+3}y^q  \right) dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1111}%
+\begin{displaymath}
+2 \left( q + 2 \right)x^p y^{q+1} + 4 \left( q + 1 \right) x^{p+2} y^q =  
+4 \left( p + 1  \right) x^p y^{q+1} + 3\left( p + 3  \right) x^{p+2} y^q 
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1112}%
+\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+2 \left(q + 2 \right) & = & 4 \left( p + 1 \right)  \\
+4 \left( q + 1 \right) & = & 3 \left( p + 3 \right) \\
+\end{array} 
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1113}%
+\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+4p - 2q & = & 0 \\
+3p - 4q & = & -5 \\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1665}%
+$p=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1667}%
+$q=2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1669}%
+$\mu(x,y)=xy^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1114}%
+\begin{displaymath}
+x^2y^4 + x^4y^3 = c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1671}%
+$2xy ln(y) dx + \left(x^2 + y^2 \sqrt{y^2 + 1}   \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1673}%
+$\left(3x^2 + y  \right) dx + \left(x^2 y - x  \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1675}%
+$\left( y^2 + 2xy \right) dx - x^2 dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1677}%
+$\left(x^4 - x + y  \right) dx - xdy  = 0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1679}%
+$x^n y^m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1681}%
+$\left( 2y^2  - 6xy  \right) dx + \left(3xy - 4x^2 \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1683}%
+$\left( 12 + 5xy  \right) dx +  \left( 6 \frac{x}{y} + 2x^2   \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1685}%
+$ \frac{2y}{x} dx + \left( \frac{y^2}{x^2} -1   \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1115}%
+\begin{displaymath}
+x M(x,y) + y N(x,y) = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1117}%
+\begin{displaymath}
+\frac{dy}{dx} = \frac{2y}{x} + \frac{x^3}{y} + x Tan\left( \frac{y}{x^2} \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1687}%
+$y = xz^n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1118}%
+\begin{displaymath}
+\frac{dy}{dx} +  P(x)y = Q(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1691}%
+$P(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1693}%
+$Q(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1119}%
+\begin{displaymath}
+a_{n}(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y^{\prime} + a_0(x) y = f(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1697}%
+$a_i(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1699}%
+$a_n(x) \neq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1701}%
+$n=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1120}%
+\begin{displaymath}
+a_1(x) y^{\prime} + a_0(x)y = f(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1703}%
+$a_1(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1121}%
+\begin{displaymath}
+y^{\prime} + \frac{a_0(x)}{a_1(x)} y = \frac{f(x)}{a_1(x)}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1122}%
+\begin{displaymath}
+y^{\prime} + P(x)y  = Q(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1705}%
+$P(x) = \frac{a_0(x)}{a_1(x)} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1707}%
+$Q(x) = \frac{f(x)}{a_1(x)} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1123}%
+\begin{displaymath}
+y = e^{- \int P(x) dx} \left(\int Q(x) e^{\int P(x) dx }  dx \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1124}%
+\begin{displaymath}
+\left(P(x) y - Q(x)  \right) dx - dy = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1709}%
+$e^{\int P(x) dx} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1125}%
+\begin{displaymath}
+e^{\int P(x) dx } \frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1126}%
+\begin{displaymath}
+\frac{d \left(y e^{\int P(x) dx } \right)  }{dx} = Q(x) e^{\int P(x) dx}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1127}%
+\begin{displaymath}
+y e^{\int P(x) dx} = \int \left( Q(x) e^{\int P(x) dx} \right) dx
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1128}%
+\begin{displaymath}
+x \frac{dy}{dx} - 4y = x^6 e^x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1129}%
+\begin{displaymath}
+\frac{dy}{dx} - \frac{4}{x} y = x^5 e^x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1130}%
+\begin{displaymath}
+\mu(x)= e^{-4 \int \frac{dx}{x} } = e^{-4 Ln(x)} = \frac{1}{x^4}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1131}%
+\begin{displaymath}
+\frac{y}{x^4} = \int x e^x dx = x e^x - e^x + c
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1713}%
+$y = x^5 e^x - x^4 e^x + cx^4$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath573}%
+\begin{displaymath}
+x^ 2 y  dx + \left( y^ 2 + x^ 2 p(x)  \right) dy  = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1132}%
+\begin{displaymath}
+\frac{\partial M}{\partial y} = x^2 = \frac{\partial N}{\partial x} = 2x P(x) + x^2 P^{\prime}(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1717}%
+$P$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1133}%
+\begin{displaymath}
+x^2 = 2x P(x) + x^2 P^{\prime}(x) \Rightarrow P^{\prime}(x) + \frac{2}{x} P(x) = 1
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1134}%
+\begin{displaymath}
+P(x) = \frac{x}{3} + \frac{c}{x^2}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1723}%
+$P(x)=\frac{x}{3}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1135}%
+\begin{displaymath}
+y^{\prime} + P(x) y = Q(x) y Ln(y)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1729}%
+$u=Ln(y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1136}%
+\begin{displaymath}
+u = Ln(y) \Rightarrow u^{\prime} = \frac{y^{\prime}}{y} \Rightarrow y^{\prime} = u^{\prime} y = u^{\prime} e^{u}  
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1137}%
+\begin{displaymath}
+\begin{array}{rcl}
+y^{\prime}+ P(x) y = Q(x) y Ln(y) & \Rightarrow &  u^{\prime} e^u + P(x) e^u = Q(x) u e^u \\
+& \Rightarrow & u^{\prime} + P(x) = Q(x) u \\
+& \Rightarrow & u^{\prime} - Q(x) u = -P(x) \\
+\end{array}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1731}%
+$\left( xy + x^3 + x \right) dx  + \left( 1 + x^2  \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1733}%
+$2y dx + \left(x + 4y^2   \right) dy$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1735}%
+$\frac{dy}{dx} + y = \frac{1 - e^{-2x}}{e^x + e^{-x}} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1737}%
+$\frac{dr}{d \theta} + r Sec(\theta) =  Cos(\theta) $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1739}%
+$\left(2y Sen(x) - Tan(x)   \right) dx + \left( 1 - Cos(x)  \right) dy = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1741}%
+$xy^{\prime} + \left(1+x \right) y = e^{-x} Sen(2x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1743}%
+$x y^{\prime} + 3 = 4x
+e^{-y} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1745}%
+$y(2)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1138}%
+\begin{displaymath}
+- Sen(y) \frac{dy}{dx} + 2 Cos(y) Cos(x) = Sen^2(x) Cos(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1747}%
+$u = Cos(y)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1139}%
+\begin{displaymath}
+\frac{dy}{dx} + P(x)y = Q(x) y^n
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1753}%
+$[a,b]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1757}%
+$0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1759}%
+$1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1761}%
+$u=y^{1-n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1763}%
+$n=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath636}%
+\begin{displaymath}
+\frac{dy}{dx} + P(x) y^{1-n} = Q(x)  y^n
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1769}%
+$y^{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath646}%
+\begin{displaymath}
+y^{-n} \frac{dy}{dx} + P(x) y = Q(x)
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1771}%
+$y^{\prime}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1140}%
+\begin{displaymath}
+\frac{du}{dx} = \left(1 - n \right) y^{-n} \frac{dy}{dx}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1141}%
+\begin{displaymath}
+\frac{1}{1-n} \frac{dy}{dx} + P(x)u = Q(x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1142}%
+\begin{displaymath}
+\frac{dy}{dx} - 5y = -\frac{5}{2} x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1775}%
+$n=3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1777}%
+$P(x)=-5$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1779}%
+$Q(x)= - \frac{5x}{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1781}%
+$y^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1143}%
+\begin{displaymath}
+y^{-3} \frac{dy}{dx} - 5 y^{-2} = - \frac{5x}{2}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1783}%
+$u = y^{-2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1785}%
+$\frac{du}{dx} = -2y^{} \frac{dy}{dx}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1144}%
+\begin{displaymath}
+- \frac{1}{2} \frac{du}{dx} - 5u = - \frac{5}{2} x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1145}%
+\begin{displaymath}
+\frac{du}{dx} - 10u =  5x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1146}%
+\begin{displaymath}
+u = \frac{x}{2} - \frac{1}{20} + c e^{-10x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1147}%
+\begin{displaymath}
+\frac{1}{y^2} = \frac{x}{2} - \frac{1}{20} + c e^{-10x}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1789}%
+$y=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1148}%
+\begin{displaymath}
+xy^{\prime} + 3 = 4xe^{-y}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1793}%
+$u=e^{-y}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1149}%
+\begin{displaymath}
+u = e^{-y} \Rightarrow u^{\prime} = - e^{-y} y^{\prime} \Rightarrow y^{\prime}= -\frac{u^{\prime}}{u}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1150}%
+\begin{displaymath}
+u^{\prime} - \frac{3}{x} u = -4u^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1795}%
+$y^{\prime} - y = xy^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1797}%
+$y^2 dx + \left(xy - x^3  \right) dy = 0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1799}%
+$y^{\prime} + \frac{y}{x} = xy^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1801}%
+$xy^{\prime} + y = y^2 Ln(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1803}%
+$\frac{dy}{dx} = \frac{1}{x^5 + xy}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1805}%
+$4 \left(1 + x^2  \right) \frac{dy}{dx} = 2xy \left( y^4 - 1 \right) $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1807}%
+$x^2 \frac{dy}{dx} -2xy = 3y^4$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1809}%
+$y(1) = \frac{1}{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1811}%
+$2 \frac{dy}{dx} = \frac{y}{x} - \frac{x}{y^2} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1813}%
+$y(1)=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1151}%
+\begin{displaymath}
+x y^{\prime \prime} - 3y^{\prime} = 4x^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1815}%
+$u = y^{\prime} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1817}%
+$f(x,y,y^{\prime}, y^{\prime
+\prime})=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath757}%
+\begin{displaymath}
+g(x,y^{\prime},y^{\prime \prime})=0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1152}%
+\begin{displaymath}
+u = y^{\prime}  \Rightarrow u^{\prime} = y^{\prime \prime}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath766}%
+\begin{displaymath}
+f(x,u,u^{\prime})=0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1821}%
+$u$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1153}%
+\begin{displaymath}
+x y^{\prime \prime} - y^{\prime} = 3x^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1154}%
+\begin{displaymath}
+xu^{\prime} - u = 3x^2 \Rightarrow \frac{du}{dx} - \frac{u}{x} = 3x^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1155}%
+\begin{displaymath}
+u = \frac{du}{dx} = 3x^2 + c_1x
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1156}%
+\begin{displaymath}
+y = x^3 + \frac{c_1}{2} x^2 + c_2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath788}%
+\begin{displaymath}
+g(y,y^{\prime},y^{\prime \prime})=0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1833}%
+$y^{\prime \prime}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1157}%
+\begin{displaymath}
+y^{\prime \prime} = \frac{du}{dx} =  \frac{du}{dy} \frac{dy}{dx} = u \frac{du}{dy}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath805}%
+\begin{displaymath}
+g\left( y, u,u \frac{du}{dx} \right) = 0
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1158}%
+\begin{displaymath}
+y^{\prime \prime} + k^2 y = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1159}%
+\begin{displaymath}
+\frac{du}{dx} + k^2 y = 0 \Rightarrow u  \frac{du}{dy} + k^2 y = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1160}%
+\begin{displaymath}
+u du = -k^2 y dy \Rightarrow u^2 + k^2 y^2 = c^2_1 \Rightarrow u=y^{\prime}= \pm \sqrt{c^2_1 - k^2y^2}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1161}%
+\begin{displaymath}
+\frac{dy}{dx} = \pm \sqrt{c^2_1 - k^2 y^2} \Rightarrow \frac{dy}{\sqrt{c^2_1 - k^2y^2}} = \pm dx
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1162}%
+\begin{displaymath}
+\frac{1}{k} ArcSen\left( \frac{ky}{c_1} \right) = \pm x + c_2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1163}%
+\begin{displaymath}
+y = A Sen(kx + B)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1845}%
+$yy^{\prime \prime} + \left(y^{\prime} \right)^2 = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1847}%
+$x^2 y^{\prime \prime} = 2xy^{\prime} + \left( y^{\prime} \right)^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1849}%
+$xy^{\prime \prime} + y^{\prime} = 4x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1851}%
+$1 + \left( y^{\prime} \right)^2 + y y^{\prime \prime}=0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1853}%
+$xy^{\prime \prime \prime} + y^{\prime \prime} = 1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1855}%
+$x^2y^{\prime \prime}= x^2 + 1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1859}%
+$y^{\prime}(1)=0 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1861}%
+$y^{\prime \prime} y^{\prime} =1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1863}%
+$y(0)=5$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1865}%
+$y^{\prime}(0)=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1164}%
+\begin{displaymath}
+y^{\prime} = \left( 1 + \left( y^{\prime} \right)^2  \right)^{\frac{3}{2}}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1165}%
+\begin{displaymath}
+\frac{d^2y}{d x^2} \frac{d^2x}{d y^2} = 1
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1869}%
+$f: D \subset \mbox{$\  I \hspace{-1.23mm} R $\  }\rightarrow R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1871}%
+$(c, f(c)) \in D$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1166}%
+\begin{displaymath}
+y - f(c) = f^{\prime} (x) \left( x - c \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1875}%
+$y^{\prime} = f^{\prime}(c)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1877}%
+$f^{\prime}(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1879}%
+$g(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1883}%
+$c
+= g(y^{\prime})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1167}%
+\begin{displaymath}
+y = xy^{\prime} + g(y^{\prime})
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1168}%
+\begin{displaymath}
+y = xy^{\prime} + g\left( y^{\prime} \right)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath882}%
+\begin{displaymath}
+y = x y^{\prime} + f(y^{\prime})
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1889}%
+$f(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1891}%
+$y=cx + f(c)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1169}%
+\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+x & = & -f^{\prime}(t) \\
+y & = & -t f^{\prime}(t) +f(t)
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath895}%
+\begin{displaymath}
+y = xu + f(u)
+
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1170}%
+\begin{displaymath}
+y^{\prime} = xu^{\prime} + u + f^{\prime}(u) u^{\prime}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1171}%
+\begin{displaymath}
+u^{\prime} \left( x + f^{\prime} (u)      \right) = 0
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1897}%
+$u^{\prime} = 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1899}%
+$u = c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1907}%
+$x + f^{\prime}(u)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1909}%
+$x = -f^{\prime}(u)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1911}%
+$y = -uf^{\prime}(u)
++ f(u)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1172}%
+\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+x & = & -f^{\prime}(u) \\
+y & = & -t f^{\prime}(u) +f(u)
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1173}%
+\begin{displaymath}
+y = xy^{\prime} + 2 \sqrt{1 + t^2}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1915}%
+$y = cx \pm 2
+\sqrt{1 + t^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1917}%
+$f(t)=2 \sqrt{1 + t^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1174}%
+\begin{displaymath}
+\left \{
+\begin{array}{rcl}
+x & = & \frac{-2t}{\sqrt{1 + t^2} } \\
+y & = & \frac{2}{\sqrt{1 + t^2} }\\
+\end{array}
+\right.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1919}%
+$x^2 + y^2 = 4$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1921}%
+$y = cx
++ 2 \sqrt{1 + c^2} $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1925}%
+$x² + y^2 =4 $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figure934}%
+\begin{figure}
+
+FIGURA clairaut.eps
+
+\end{figure}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1929}%
+$y = xy^{\prime} + 1 - Ln \left( y^{\prime} \right) )$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1931}%
+$xy^{\prime} =  y + e^{y^{\prime}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1933}%
+$y= xy^{\prime} + \sqrt{1 + \left( y^{\prime} \right)^2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1935}%
+$y = xy^{\prime} - Tan \left(y^{\prime} \right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1937}%
+$y= cx -c^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1939}%
+$y = xy^{\prime} - \left( y^{\prime}
+\right)^3$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1175}%
+\begin{displaymath}
+y = y^{\prime} Tan(x)  - \left( y^{\prime} \right)^2 Sec^2 (x)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1941}%
+$u = Sen(x)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1943}%
+$f(y-xy^{\prime},y^{\prime})=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline1945}%
+$y = f(y-cx,c)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1176}%
+\begin{displaymath}
+\left( xy^{\prime} - y \right)^3 = \left( y^{\prime} \right)^2 + 5
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

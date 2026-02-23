@@ -1,0 +1,631 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Funci&oacute;n impulso unitario</TITLE>
+<META NAME="description" CONTENT="Funci&oacute;n impulso unitario">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a>&nbsp; 9&nbsp; <a href="node10.html">10</a>&nbsp;
+<a href="node11.html">11</a>&nbsp; <a href="node12.html">12</a>&nbsp;
+<a href="node13.html">13</a>&nbsp; <a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+
+<p><b><A NAME="SECTION1808859137">
+Funci&oacute;n impulso unitario</A>
+</b>
+
+</p>
+
+<P>
+Algunos sistemas mec&#225;nicos suelen estar sometidos a una fuerza externa (o a una tensi&#243;n el&#233;ctrica en el caso de los
+circutitos el&#233;ctricos) de gran magnitud, que solamente act&#250;a durante un tiempo muy corto. Por ejemplo, una descarga el&#233;trica podr&#237;a caer sobre el ala vibrante de un avi&#243;n; a un cuerpo sujeto a un resorte podr&#237;a d&#225;rsele un fuerte golpe con un martillo, una pelota (de beisbol, de golf o de tenis) inicialmente en reposo, podr&#237;a ser enviada velozmente por los aires al ser golpeada con violencia con un objeto como una bat de beisbol, un bast&#243;n de golf o una raqueta de tenis. La funci&#243;n impulso unitario puede servir como un modelo para tal fuerza.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table19">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Impulso unitario]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La funci&#243;n <!-- MATH
+ $\delta_a : [0,+\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img569.gif"
+ ALT="$ \delta_a : [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\delta_a(t - t_0) =
+\begin{cases}
+0 & \text{Si $0 \leq t \leq t_0-a$}  \\
+\frac{1}{2a} & \text{Si $t_0-a \leq t \leq t_0+a$} \\
+0 & \text{Si $t \geq t$} \\
+\end{cases}
+ 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="280" HEIGHT="85" BORDER="0"
+ SRC="img570.gif"
+ ALT="\begin{displaymath}
+\delta_a(t - t_0) =
+\begin{cases}
+0 &amp; \text{Si $0 \leq t ...
+... \leq t_0+a$} \\
+0 &amp; \text{Si $t \geq t$} \\
+\end{cases}
+\end{displaymath}">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+donde <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img352.gif"
+ ALT="$ a &gt; 0$">, <IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img571.gif"
+ ALT="$ t_0&gt;0$"> se conoce como la funci&#243;n impulso unitario. La gr&aacute;fica de la funci&oacute;n escal&oacute;n para <IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img572.gif"
+ ALT="$ a=0.5$"> y <IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img573.gif"
+ ALT="$ t_0=2$"> se muestra en la figura <a href="#1.8">1.8. </a>
+
+<P>
+Observaci&#243;n: para valores peque&#241;os de <IMG
+ WIDTH="11" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img574.gif"
+ ALT="$ a$">, se tiene que <!-- MATH
+ $\delta_a(t-t_0)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img575.gif"
+ ALT="$ \delta_a(t-t_0)$"> es una funci&#243;n constante de gran magnitud  que esta <I>activa</I> por un tiempo muy corto alrededor de <IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img576.gif"
+ ALT="$ t_0$">.
+
+<P align="center">
+<a name="1.8"><img border="0" src="images/Impulso.gif" width="281" height="190"></a><P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="lapla6"></A>
+<p>Figura 1.8</p>
+<p>&nbsp;</p>
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table20">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Area bajo la funci&#243;n impulso]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La funci&#243;n impulso unitario satisface la propiedad
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \delta_a(t-t_0) dt = 1
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="144" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img578.gif"
+ ALT="$\displaystyle \int_0^{\infty} \delta_a(t-t_0) dt = 1
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+</DIV>
+
+<P></P>
+
+<P>
+y de aqu&#237; su nombre.
+
+<P>
+<B>Demostraci&#243;n</B>
+<BR>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\int_0^{\infty} \delta_a(t-t_0) dt & = & \int_0^{t_0-a} 0 \cdot dt + \int_{t_0-a}^{t_0+a} \frac{1}{2a} \cdot dt + \int_{t_0+a}^{\infty} 0 \cdot dt \\
+&  = & 0 + \frac{2a}{2a} + 0 \\
+& = & 1  \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="114" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img579.gif"
+ ALT="$\displaystyle \int_0^{\infty} \delta_a(t-t_0) dt$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="289" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img580.gif"
+ ALT="$\displaystyle \int_0^{t_0-a} 0 \cdot dt + \int_{t_0-a}^{t_0+a} \frac{1}{2a} \cdot dt + \int_{t_0+a}^{\infty} 0 \cdot dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img581.gif"
+ ALT="$\displaystyle 0 + \frac{2a}{2a} + 0$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img582.gif"
+ ALT="$\displaystyle 1$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+En la pr&#225;ctica es conveniente trabajar con otro tipo de impulso llamado <I>funci&#243;n de Dirac<A NAME="tex2html11"
+  HREF="footnode.html#foot2692"><SUP>1.3</SUP></A></I>
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table21">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Funci&#243;n delta de Dirac]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La <I>funci&#243;n</I> delta de Dirac esta dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\lim_{a \rightarrow 0} \delta_a(t-t_0) = \delta(t-t_0)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="176" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img583.gif"
+ ALT="$\displaystyle \lim_{a \rightarrow 0} \delta_a(t-t_0) = \delta(t-t_0)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Observaci&#243;n:</B> la <I>funci&#243;n</I> delta de Dirac, no es una funci&#243;n, realmente es lo que se conoce como una funci&#243;n generalizada (o distribuci&#243;n).
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table22">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Propiedades de la <I>funci&#243;n</I> delta]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La <I>funci&#243;n</I> delta de Dirac satisface las siguientes propiedades
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\delta(t-t_0) =
+\begin{cases}
+\infty & \text{Si $t = t_0$} \\
+0 & \text{Si $t \neq t_0$} \\
+\end{cases}
+\hspace{1cm}
+\int_0^{\infty} \delta(t-t_0) dt = 1
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="364" HEIGHT="64" BORDER="0"
+ SRC="img584.gif"
+ ALT="\begin{displaymath}
+\delta(t-t_0) =
+\begin{cases}
+\infty &amp; \text{Si $t = t_0$...
+...nd{cases}
+\hspace{1cm}
+\int_0^{\infty} \delta(t-t_0) dt = 1
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+&nbsp;&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+El siguiente teorema establece la transformada de Laplace de la <B>funci&oacute;n</B> delta de Dirac.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table23">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Transformada de delta]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Para <IMG
+ WIDTH="45" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img571.gif"
+ ALT="$ t_0&gt;0$">
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{\delta(t-t_0)  \} = e^{-st_0}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="144" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img585.gif"
+ ALT="$\displaystyle {\cal L} \{\delta(t-t_0) \} = e^{-st_0}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+Para iniciar la prueba debemos escribir la funci&oacute;n impulso unitario en términos de la funci&oacute;n escal&oacute;n unitario
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\delta_a(t-t_0) = \frac{1}{2a} \left( H(t - (t_0-a)) - H(t-(t_0 + a))   \right)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="355" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img586.gif"
+ ALT="$\displaystyle \delta_a(t-t_0) = \frac{1}{2a} \left( H(t - (t_0-a)) - H(t-(t_0 + a)) \right)
+$">
+</DIV><P></P>
+
+<P>
+De donde tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \delta_a \left(t - t_0 \right) \right\} & =  &  \frac{1}{2a} {\cal L} \left\{ H(t - (t_0-a))   \right\} - \frac{1}{2a} \left\{ H(t-(t_0 + a))     \right\}  \\
+& = & \frac{1}{2a} \left( \frac{e^{-s(t_0-a)}}{s} \right) -   \frac{1}{2a} \left( \frac{e^{-s(t_0+a)}}{s} \right) \\
+& = & e^{-st_0} \left( \frac{e^{sa} - e^{-sa}}{2sa}  \right) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="100" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img587.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \delta_a \left(t - t_0 \right) \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="321" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img588.gif"
+ ALT="$\displaystyle \frac{1}{2a} {\cal L} \left\{ H(t - (t_0-a)) \right\} - \frac{1}{2a} \left\{ H(t-(t_0 + a)) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="246" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img589.gif"
+ ALT="$\displaystyle \frac{1}{2a} \left( \frac{e^{-s(t_0-a)}}{s} \right) - \frac{1}{2a} \left( \frac{e^{-s(t_0+a)}}{s} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="140" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img590.gif"
+ ALT="$\displaystyle e^{-st_0} \left( \frac{e^{sa} - e^{-sa}}{2sa} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+con lo cual
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \delta(t - t_0) \right\} & = & {\cal L} \left\{ \lim_{a \rightarrow 0} \delta_a(t- t_0) \right\} \\
+& = & \lim_{a \rightarrow 0} {\cal L} \left\{ \delta_a(t- t_0)  \right\} \\
+& = & \lim_{a \rightarrow 0} e^{-st_0} \underbrace{\left( \frac{e^{sa} - e^{-sa}}{2sa}  \right)}_{L'H \hat{o}pital} \\
+& = & e^{-st_0} \lim_{a \rightarrow 0} \frac{se^{sa} + se^{-sa}}{2s} \\
+& = & e^{-st_0}
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table18">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="91" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img591.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \delta(t - t_0) \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="132" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img592.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \lim_{a \rightarrow 0} \delta_a(t- t_0) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="126" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img593.gif"
+ ALT="$\displaystyle \lim_{a \rightarrow 0} {\cal L} \left\{ \delta_a(t- t_0) \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="168" HEIGHT="90" ALIGN="MIDDLE" BORDER="0"
+ SRC="img594.gif"
+ ALT="$\displaystyle \lim_{a \rightarrow 0} e^{-st_0} \underbrace{\left( \frac{e^{sa} - e^{-sa}}{2sa} \right)}_{L'H \hat{o}pital}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="160" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img595.gif"
+ ALT="$\displaystyle e^{-st_0} \lim_{a \rightarrow 0} \frac{se^{sa} + se^{-sa}}{2s}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="38" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img596.gif"
+ ALT="$\displaystyle e^{-st_0}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<B>Observaci&oacute;n:</B> a partir de <!-- MATH
+ ${\cal L} \left\{ \delta(t-t_0) \right\} =e^{-st_0}$
+ -->
+<IMG
+ WIDTH="147" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img597.gif"
+ ALT="$ {\cal L} \left\{ \delta(t-t_0) \right\} =e^{-st_0}$"> es razonable concluir que <!-- MATH
+ ${\cal L} \left\{ \delta(t) \right\}=1$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img598.gif"
+ ALT="$ {\cal L} \left\{ \delta(t) \right\}=1$">. Esto reafirma el hecho de que <IMG
+ WIDTH="29" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img599.gif"
+ ALT="$ \delta(t)$"> no es una funci&oacute;n ordinaria, puesto que se espera que <!-- MATH
+ ${\cal L} \{f(t) \}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $"> cuando <!-- MATH
+ $s \rightarrow \infty$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img252.gif"
+ ALT="$ s \rightarrow \infty$">.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule <!-- MATH
+ ${\cal L} \{ \delta(t-2 \pi) \}$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img600.gif"
+ ALT="$ {\cal L} \{ \delta(t-2 \pi) \}$">
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Claramente
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ \delta(t - 2 \pi) \} = e^{-2 \pi s}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="152" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img601.gif"
+ ALT="$\displaystyle {\cal L} \{ \delta(t - 2 \pi) \} = e^{-2 \pi s}
+$">
+</DIV><P></P>
+
+	<p>&nbsp;<p align="center"><br>
+&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+</BODY>
+</HTML>

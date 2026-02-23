@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Funciones peri&oacute;dicas</TITLE>
+<META NAME="description" CONTENT="Funciones peri&oacute;dicas">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00160000000000000000"></A> <A NAME="1712"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp; 
+8 <a href="node9.html">&nbsp;9</a>&nbsp; <a href="node10.html">10</a>&nbsp;
+<a href="node11.html">11</a>&nbsp; <a href="node12.html">12</a>&nbsp;
+<a href="node13.html">13</a>&nbsp; <a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+<b>&nbsp;
+</b>
+<p><b>Funciones peri&oacute;dicas</b>
+
+</p>
+
+<P>
+Es muy com&#250;n, especialmente en aplicaciones ligadas a circuitos el&#233;cticos, la presencia de una fuerza externa
+peri&#243;dica. Es usual tener voltajes en forma de ondas diente de sierra, ondas en escal&#243;n, etc. Por lo que es necesario
+calcular sus transformadas.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table18">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Transformada de una funci&#243;n peri&#243;dica]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Sea <!-- MATH
+ $f:[0,+\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$ f: [0,+\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> una funci&#243;n continua a trozos y de orden exponencial en el intervalo <!-- MATH
+ $[0,+\infty[$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$ [0,+ \infty[$">. Si
+<IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> es peri&#243;dica, con peri&#243;do <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$ T$">, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{f(t) \} = \frac{1}{1-e^{-sT}} \int_0^T e^{-st} f(t) dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="245" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img556.gif"
+ ALT="$\displaystyle {\cal L} \{f(t) \} = \frac{1}{1-e^{-sT}} \int_0^T e^{-st} f(t) dt
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&#243;n</B> 
+<BR>
+Usando la definici&#243;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{f(t) \} & = & \int_0^T e^{-st} f(t) dt +
+\int_T^{2T} \underbrace{e^{-st} f(t) dt}_{t=2T+u}  \\
+& + &
+\int_{2T}^{3T} \underbrace{e^{-st}f(t) dt}_{t=3T+u}) +
+\ldots
++  \int_{(n-1)T}^{nT} \underbrace{e^{-st} f(t) dt}_{t=nT+u}) + \ldots \\
+& = & \int_0^T e^{-st} f(t) dt + \int_0^{T} e^{-s(u+T)} \underbrace{f(u + T)}_{f(u+T)=f(u)} dt \\
+& + & \ldots + \int_0^{T} e^{-s(u+nT)} \underbrace{f(u + nT)}_{f(u + nT)=f(u)} dt + \ldots \\
+& = & \left(1 + e^{-sT} + e^{-2sT} + e^{-3sT} + \ldots   \right) \int_0^T e^{-su} f(u) du \\
+& = & \frac{1}{1 - e^{-sT}} \int_0^T e^{-su} f(u) du
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="227" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="img557.gif"
+ ALT="$\displaystyle \int_0^T e^{-st} f(t) dt +
+\int_T^{2T} \underbrace{e^{-st} f(t) dt}_{t=2T+u}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="343" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="img558.gif"
+ ALT="$\displaystyle \int_{2T}^{3T} \underbrace{e^{-st}f(t) dt}_{t=3T+u}) +
+\ldots
++ \int_{(n-1)T}^{nT} \underbrace{e^{-st} f(t) dt}_{t=nT+u}) + \ldots$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="309" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img559.gif"
+ ALT="$\displaystyle \int_0^T e^{-st} f(t) dt + \int_0^{T} e^{-s(u+T)} \underbrace{f(u + T)}_{f(u+T)=f(u)} dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img415.gif"
+ ALT="$\displaystyle +$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="282" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img560.gif"
+ ALT="$\displaystyle \ldots + \int_0^{T} e^{-s(u+nT)} \underbrace{f(u + nT)}_{f(u + nT)=f(u)} dt + \ldots$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="346" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img561.gif"
+ ALT="$\displaystyle \left(1 + e^{-sT} + e^{-2sT} + e^{-3sT} + \ldots \right) \int_0^T e^{-su} f(u) du$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="179" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img562.gif"
+ ALT="$\displaystyle \frac{1}{1 - e^{-sT}} \int_0^T e^{-su} f(u) du$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule <!-- MATH
+ ${\cal L} \{f(t) \}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $">, donde <IMG
+ WIDTH="31" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$ f(t)$"> es la funci&#243;n peri&#243;dica diente de sierra que se muestra en la figura<a href="#1.7"> 1.7.</a>
+
+<P align="center">
+<a name="1.7"><img border="0" src="images/Sierra.gif" width="231" height="156"></a><P>
+
+<DIV ALIGN="CENTER">
+
+<A NAME="sierra0"></A>
+<p>Figura 1.7</DIV>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+El peri&#243;do de esta funci&#243;n es <IMG
+ WIDTH="44" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img564.gif"
+ ALT="$ T=2$"> y su transformada esta dada por
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{f(t)  \} & = & \frac{1}{1-e^{2s}} \int_0^{2} e^{-st} f(t) dt \\
+& = & \frac{1}{1-e^{-2s}} \left( \int_0^1 te^{-st} dy + \int_1^2 (2-t) e^{-st} dt \right) \\
+& = & \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} - \frac{e^{-s}}{s} - \frac{e^{-s}}{s^2} +
+\frac{e^{-s}}{s} - \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2}  \right) \\
+& = & \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} + \frac{e^{-2s}}{s^2}  - \frac{2e^{-s}}{s^2} \right) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\displaystyle {\cal L} \{ f(t) \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="154" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img565.gif"
+ ALT="$\displaystyle \frac{1}{1-e^{2s}} \int_0^{2} e^{-st} f(t) dt$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="299" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img566.gif"
+ ALT="$\displaystyle \frac{1}{1-e^{-2s}} \left( \int_0^1 te^{-st} dy + \int_1^2 (2-t) e^{-st} dt \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="353" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img567.gif"
+ ALT="$\displaystyle \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} - \frac{e^{-s}}{s} - \fr...
+...-s}}{s^2} +
+\frac{e^{-s}}{s} - \frac{e^{-s}}{s^2} + \frac{e^{-2s}}{s^2} \right)$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="218" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img568.gif"
+ ALT="$\displaystyle \frac{1}{1-e^{-2s}} \left( \frac{1}{s^2} + \frac{e^{-2s}}{s^2} - \frac{2e^{-s}}{s^2} \right)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+	<p>&nbsp;<p align="center">&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<H1>
+<BR>
+&nbsp;</H1>
+</BODY>
+</HTML>

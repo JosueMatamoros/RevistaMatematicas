@@ -1,0 +1,588 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ecuaci&#243;n diferencial de una familia de curvas</TITLE>
+<META NAME="description" CONTENT="Ecuaci&#243;n diferencial de una familia de curvas">
+<META NAME="keywords" CONTENT="edo1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="edo1.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="cap-conceptos-basicos.gif" width="152" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./"><font color="#000080">1</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node2.html"><font color="#000080">2</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node3.html"><font color="#000080">3</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node5.html"><font color="#000080">4</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node7.html"><font color="#000080">5</font></a><font color="#000080">&nbsp;&nbsp;
+6&nbsp;&nbsp;
+</font><a href="node11.html"><font color="#000080">7</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node12.html"><font color="#000080">8</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node14.html"><font color="#000080">9</font></a><font color="#000080">&nbsp;&nbsp;
+</font><a href="node15.html"><font color="#000080">10</font></a> &nbsp;</font></p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;<b>
+<A NAME="SECTION-1940979711">
+Ecuaci&#243;n diferencial de una familia de curvas</A></b>
+
+<P>
+En esta secci&#243;n discutimos un poco acerca del proceso inverso
+que nos ocupar&#225; a lo largo del curso. Recuerde que nuestro
+objetivo principal es determinar la soluci&#243;n general de una
+ecuaci&#243;n diferencial, la cual es una familia de curvas
+<A NAME="423"></A>, sin embargo, ahora trataremos de
+determinar una ecuaci&#243;n diferencial cuya soluci&#243;n general sea
+una familia de curvas dada.
+
+<P>
+Dada una familia de curvas <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$">-param&#233;trica <!-- MATH
+ $f(x,y,c_1,c_2,
+\ldots,c_n)=0$
+ -->
+<IMG
+ WIDTH="172" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.gif"
+ ALT="$f(x,y,c_1,c_2,
+\ldots,c_n)=0$">, la idea b&#225;sica es eliminar las <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> constantes
+<IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.gif"
+ ALT="$c_i$">, para esto derivamos <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> veces la ecuaci&oacute;n de la familia y
+formamos el siguiente sistema
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+f(x,y,c_1,c_2,\ldots,c_n & = & 0 \\
+f^{(1)}(x,y,c_1,c_2,\ldots,c_n) & = & 0 \\
+f{(2)} (x,y,c_1,c_2,\ldots,c_n) & = & 0 \\
+\vdots & \vdots & \\
+f^{(n)}(x,y,c_1,c_2,\ldots, c_n) & = & 0 \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="210" HEIGHT="114" BORDER="0"
+ SRC="img160.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+f(x,y,c_1,c_2,\ldots,c_n &amp; = &amp; 0 \\
+f...
+...\
+f^{(n)}(x,y,c_1,c_2,\ldots, c_n) &amp; = &amp; 0 \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+a partir del cual podemos obtener la ecuaci&#243;n diferencial
+buscada.
+
+<p align="center">&nbsp;<p><font color="#008000">Ejemplo</font><P>
+&nbsp;<BR>
+<P>
+Determine una ecuaci&#243;n diferencial cuya soluci&#243;n general sea
+la familia de curvas
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+y=A Sen(x)+ B Cos(x)
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table16">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq11"></A>
+	<a name="1.6"><IMG
+ WIDTH="171" HEIGHT="28" BORDER="0"
+ SRC="img161.gif"
+ ALT="\begin{displaymath}
+y=A Sen(x)+ B Cos(x)
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.6)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Derivando dos veces la ecuaci&#243;n de la familia <a href="#1.6">(<font color="#000080">1.6</font>)</a>,
+obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+y^{\prime} & = & A Cos(x) - B Sen(x) \\
+y^{\prime \prime} & = & -A Sen(x) - B Cos(x) \\
+\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="214" HEIGHT="45" BORDER="0"
+ SRC="img162.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+y^{\prime} &amp; = &amp; A Cos(x) - B Sen(x) \\
+y^{\prime \prime} &amp; = &amp; -A Sen(x) - B Cos(x) \\
+\end{array}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Y observe que  <!-- MATH
+ $y^{\prime \prime} + y = 0$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$y^{\prime \prime } + y = 0$"> es la ecuaci<span lang="es-cr">&oacute;n 
+diferencial</span>&nbsp; buscada.
+
+<P>
+&nbsp;<P>
+<B>Observaci&#243;n</B> 
+<BR>
+Dada una familia de curvas <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$">-param&#233;trica, por lo general es
+f&#225;cil obtener una ecuaci&#243;n diferencial de orden mayor <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$n$"> que
+tenga a &#233;sta familia como soluci&#243;n. Por ejemplo, <!-- MATH
+ $y=c_1 + c_2
+x^3$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.gif"
+ ALT="$y=c_1 + c_2
+x^3$"> ser&#237;a una soluci&#243;n de la ecuaci&#243;n diferencial de cuarto
+orden <IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.gif"
+ ALT="$y^{(4)} = 0$">, pero por supuesto que esta no es la
+soluci&#243;n general de la ecuaci&#243;n diferencial.
+
+<P>
+Algunas veces la familia de curvas se nos presenta en forma de un
+enunciado a partir del cual debemos obtener la ecuaci&#243;n, como
+muestran los siguientes ejemplos.
+
+<p align="center">&nbsp;<p><font color="#008000">Ejemplo</font><P>
+&nbsp;Encontrar una ecuaci&#243;n diferencial cuya soluci&#243;n general sea
+la familia de c&#237;rculos con centros sobre la recta <IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.gif"
+ ALT="$y=x$"> y
+tangentes al eje <IMG
+ WIDTH="11" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$y$">.
+
+<P>
+La familia de c&#237;rculos se muestra en la<a href="#figura6"><font color="#000080"> figura 
+6</font></a>.
+Observe que por estar centrados sobre la recta <IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.gif"
+ ALT="$y=x$"> los
+c&#237;rculos tambi&#233;n deben ser tangentes al eje <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$">.
+
+<DIV ALIGN="CENTER">
+<a name="figura6">
+<img border="0" src="images/edfamilia.gif" width="247" height="254"></a></DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV>
+<DIV ALIGN="CENTER">
+<font face="Arial Narrow" size="2">Figura 6</font></DIV>
+
+<P>
+Como los c&#237;rculos est&aacute;n centrados en <IMG
+ WIDTH="46" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img166.gif"
+ ALT="$(A,A)$"> y tienen radio <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img167.gif"
+ ALT="$A$">,
+la ecuaci&#243;n de la familia  ser&#237;a
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\left(x - A  \right)^2 + \left(y - A  \right)^2 = A^2
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table17">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq12"></A>
+	<a name="1.7"><IMG
+ WIDTH="176" HEIGHT="28" BORDER="0"
+ SRC="img168.gif"
+ ALT="\begin{displaymath}
+\left(x - A \right)^2 + \left(y - A \right)^2 = A^2
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.7)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Desarrollando las f&#243;rmulas notables obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x^2 - 2Ax + A^2 + y^2 - 2Ay + A^2 = A^2
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="262" HEIGHT="27" BORDER="0"
+ SRC="img169.gif"
+ ALT="\begin{displaymath}
+x^2 - 2Ax + A^2 + y^2 - 2Ay + A^2 = A^2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Derivando impl&#237;citamente con respecto a <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$">
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+2x - 2A + 2yy^{\prime} - 2A = 0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table18">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq13"></A>
+	<a name="1.8"><IMG
+ WIDTH="172" HEIGHT="27" BORDER="0"
+ SRC="img170.gif"
+ ALT="\begin{displaymath}
+2x - 2A + 2yy^{\prime} - 2A = 0
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.8)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Despejando <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img167.gif"
+ ALT="$A$"> de la ecuaci&#243;n <a href="#1.8"><font color="#000080">1.8</font></a> y sustituy&#233;ndolo en
+el ecuaci&#243;n de la familia <A HREF="#eq:eq6"><font color="#000080">
+<a href="#1.7">1.7</a></font></A><a href="#1.7"> </a>obtenemos la ecuaci&#243;n
+diferencial buscada
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x^2 - 4xy + 4y^2 - y^{\prime} \left( 2xy - 4y^2 \right) + y^2 \left(  y^{\prime} \right)^2 = 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="319" HEIGHT="30" BORDER="0"
+ SRC="img171.gif"
+ ALT="\begin{displaymath}
+x^2 - 4xy + 4y^2 - y^{\prime} \left( 2xy - 4y^2 \right) + y^2 \left( y^{\prime} \right)^2 = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<p align="center">&nbsp;<p><font color="#008000">Ejemplo</font><P>
+&nbsp;Encontrar una ecuaci&#243;n diferencial cuya soluci&#243;n general sea
+la familia de c&#237;rculos con radio 1 y centro en <IMG
+ WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.gif"
+ ALT="$(A,B)$">.
+
+<P>
+La ecuaci&#243;n de la familia de c&#237;rculos con centro en <IMG
+ WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.gif"
+ ALT="$(A,B)$"> y
+radio 1 es
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\left(x - A \right)^2 + \left(y - B \right)^2 = 1
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table19">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq14"></A>
+	<a name="1.9"><IMG
+ WIDTH="166" HEIGHT="28" BORDER="0"
+ SRC="img173.gif"
+ ALT="\begin{displaymath}
+\left(x - A \right)^2 + \left(y - B \right)^2 = 1
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.9)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Derivando impl&iacute;citamente respecto a <IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$x$">
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+2 \left(x - A \right) + 2 \left(y - B \right) y^{\prime} =  0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table20">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq15"></A>
+	<a name="1.10"><IMG
+ WIDTH="189" HEIGHT="28" BORDER="0"
+ SRC="img174.gif"
+ ALT="\begin{displaymath}
+2 \left(x - A \right) + 2 \left(y - B \right) y^{\prime} = 0
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.10)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Despejando el t&#233;rmino <!-- MATH
+ $\left(X - A \right)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img175.gif"
+ ALT="$\left(X - A \right)$"> de la ecuaci&#243;n
+<a href="#1.10">(<font color="#000080">1.10</font>)</a> y sustituy&#233;ndolo en la ecuaci&#243;n de la familia
+<font color="#000080"><a href="#1.9">(</a></font><a href="#1.9"><font color="#000080">1.9</font>) 
+</a>obtenemos
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\left(y - B  \right)^2 \left(y^{\prime}  \right)^2 + \left(y - B \right)^2 =  1
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="201" HEIGHT="28" BORDER="0"
+ SRC="img176.gif"
+ ALT="\begin{displaymath}
+\left(y - B \right)^2 \left(y^{\prime} \right)^2 + \left(y - B \right)^2 = 1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+la cual no contiene a constante <IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img167.gif"
+ ALT="$A$">. Para eliminar la constante
+<IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.gif"
+ ALT="$B$">, despejemos el t&#233;rmino <!-- MATH
+ $\left( y - B \right)$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="$\left( y - B \right)$">
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+y - B = \pm \left(1 + \left( y^{\prime}   \right)^2  \right)^{\frac{1}{2}}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="164" HEIGHT="41" BORDER="0"
+ SRC="img179.gif"
+ ALT="\begin{displaymath}
+y - B = \pm \left(1 + \left( y^{\prime} \right)^2 \right)^{\frac{1}{2}}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+De donde, derivando impl&#237;citamente y simplificando obtenemos la
+ecuaci&#243;n diferencial deseada
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{y^{\prime \prime}}{1 + \left(y^{\prime} \right)^2} = \pm 1
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER" id="table21">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eq:eq16"></A>
+	<a name="1.11"><IMG
+ WIDTH="102" HEIGHT="47" BORDER="0"
+ SRC="img180.gif"
+ ALT="\begin{displaymath}
+\frac{y^{\prime \prime}}{1 + \left(y^{\prime} \right)^2} = \pm 1
+\end{displaymath}"></a></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1.11)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Observe que el lado derecho de la ecuaci&#243;n<a href="#1.11"> (<font color="#000080">1.11</font>)</a> es la
+f&#243;rmula de curvatura y efectivamente la curvatura de los
+c&#237;rculos es 1.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS1"><STRONG>Subsecciones</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html141"
+  HREF="node10.html">Ejercicios</A>
+</UL>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><a href="../"><font color="#000080" face="Arial Narrow" size="2"><br>
+</font></a><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+	<H1>&nbsp;</H1>
+</BODY>
+</HTML>

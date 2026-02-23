@@ -3,6 +3,7 @@
 import React from "react";
 import NavsComponent from "@/components/home/NavsComponent";
 import ArticlesList from "@/components/articles/ArticlesList";
+import CourseCard from "@/components/onlineCourses/CourseCard";
 import sinRevisionData from "@/data/materialdidactico/sinrevision.json";
 
 export default function Page() {
@@ -35,6 +36,19 @@ export default function Page() {
             useBasePath={true}
           />
         )}
+
+        {/* Mostrar aquí los cursos en línea */}
+        <div >
+          <h4 className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit text-2xl">
+            Cursos en línea
+          </h4>
+          <CourseCard
+            title="Ecuaciones Diferenciales"
+            title_en="Differential Equations"
+            authors="M.Sc. Geovanni Figueroa M."
+            link="/cursosLinea/EcuacionesDiferenciales/index.htm"
+          />
+        </div>
       </section>
     </div>
   );

@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Teoremas de traslaci&oacute;n</TITLE>
+<META NAME="description" CONTENT="Teoremas de traslaci&oacute;n">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00140000000000000000"></A> <A NAME="773"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp; 5&nbsp;
+<a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp;
+<a href="node10.html">10</a>&nbsp; <a href="node11.html">11</a>&nbsp;
+<a href="node12.html">12</a>&nbsp; <a href="node13.html">13</a>&nbsp;
+<a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;<p>&nbsp;<b>Teoremas de traslaci&oacute;n</b>
+
+</p>
+
+<P>
+No es adecuado utilizar la definici&oacute;n cada vez que se quiera calcular una transformada, por ejemplo, la integraci&oacute;n por partes involucrada al calcular <!-- MATH
+ ${\cal L} \{e^{kt}Sen(t) \}$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.gif"
+ ALT="$ {\cal L} \{e^{kt}Sen(t) \}$">, es bastante tediosa. Por esta raz&oacute;n vamos a enunciar algunos teoremas que ahorran trabajo en el c&aacute;lculo de este tipo de transformadas.
+
+<P>
+Si conocemos que <!-- MATH
+ ${\cal L} \{f(t) \}=F(s)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$ {\cal L} \{f(t) \} =F(s)$">, podemos calcular la transformada de <!-- MATH
+ ${\cal L} \{e^{kt} f(t) \}$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img301.gif"
+ ALT="$ {\cal L} \{e^{kt} f(t) \}$"> como una traslaci&oacute;n, de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> a <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ F(s-k)$">, como lo enuncia el siguiente teorema.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table19">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Primer teorema de traslaci&oacute;n]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Si <IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img89.gif"
+ ALT="$ k$"> es un n&uacute;mero real  y <!-- MATH
+ ${\cal L} \{ f(t) \}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$ {\cal L} \{ f(t) \} $"> existe, entonces
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{e^{kt} f(t)  \} = F(s-k)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="159" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.gif"
+ ALT="$\displaystyle {\cal L} \{e^{kt} f(t) \} = F(s-k)
+$">
+</DIV><P></P>
+
+<P>
+donde <!-- MATH
+ $F(s) = {\cal L} \{ f(t) \}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.gif"
+ ALT="$ F(s) = {\cal L} \{ f(t) \}$">.
+
+<P>
+<B>Forma inversa del primer teorema de traslaci&oacute;n:</B>
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+e^{kt}f(t) = {\cal L}^{-1} \left\{ F(s-k)  \right\} = {\cal L} \left\{ F(s)\bigr|_{x \rightarrow s-k}  \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="316" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.gif"
+ ALT="$\displaystyle e^{kt}f(t) = {\cal L}^{-1} \left\{ F(s-k) \right\} = {\cal L} \left\{ F(s)\bigr\vert _{x \rightarrow s-k} \right\}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<DIV ALIGN="CENTER">
+&nbsp;</DIV><P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+La prueba es inmediata apartir de la definci&oacute;n
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{e^{kt} f(t) \} = \int_0^{\infty} e^{-st} e^{kt} f(t) dt =
+\int_0^{\infty} e^{-(s-k)t} f(t) dt = F(s-k)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="454" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img306.gif"
+ ALT="$\displaystyle {\cal L} \{e^{kt} f(t) \} = \int_0^{\infty} e^{-st} e^{kt} f(t) dt =
+\int_0^{\infty} e^{-(s-k)t} f(t) dt = F(s-k)
+$">
+</DIV><P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> si consideramos a <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$ s$"> como una variable real, entonces la gr&aacute;fica de <IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ F(s-k)$"> es la misma de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> trasladada <IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.gif"
+ ALT="$ \vert k\vert$"> unidades sobre el eje <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$ s$">. Si <IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.gif"
+ ALT="$ k &gt;0$">, la gr&aacute;fica de <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$"> se desplaza <IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.gif"
+ ALT="$ \vert k\vert$"> unidades a la derecha, miéntras que, si <IMG
+ WIDTH="41" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.gif"
+ ALT="$ k&lt;0$">, la gr&aacute;fica se traslada <IMG
+ WIDTH="21" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.gif"
+ ALT="$ \vert k\vert$"> unidades a la izquierda. Para enfatizar en la traslaci&oacute;n se acostumbra escribir
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ e^{kt} f(t) \} = {\cal L} \{f(t) \}\bigr|_{s \rightarrow s-k}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="201" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.gif"
+ ALT="$\displaystyle {\cal L} \{ e^{kt} f(t) \} = {\cal L} \{f(t) \}\bigr\vert _{s \rightarrow s-k}
+$">
+</DIV><P></P>
+
+<P>
+donde <!-- MATH
+ $s \rightarrow s-k$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img310.gif"
+ ALT="$ s \rightarrow s-k$"> significa que se sustituye <IMG
+ WIDTH="10" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$ s$"> por <IMG
+ WIDTH="39" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img311.gif"
+ ALT="$ s-k$"> en <IMG
+ WIDTH="35" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.gif"
+ ALT="$ F(s)$">.
+
+<p><font color="#008000">Ejemplo</font><P>
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ e^{at} Cos(bt) \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="108" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.gif"
+ ALT="$\displaystyle {\cal L} \left\{ e^{at} Cos(bt) \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+Usando el primer teorema de traslaci&oacute;n
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ e^{at} Cos(bt) \right\} & = & {\cal L} \{ Cos(bt) \} \biggr|_{s \rightarrow s-a} \\
+& = & \frac{s}{s^2 + b^2} \biggr|_{s \rightarrow s-a} \\
+& = & \frac{s-a}{ \left( s - a \right)^2 + b^2} \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="108" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.gif"
+ ALT="$\displaystyle {\cal L} \left\{ e^{at} Cos(bt) \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="130" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.gif"
+ ALT="$\displaystyle {\cal L} \{ Cos(bt) \} \biggr\vert _{s \rightarrow s-a}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="103" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img314.gif"
+ ALT="$\displaystyle \frac{s}{s^2 + b^2} \biggr\vert _{s \rightarrow s-a}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="95" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img315.gif"
+ ALT="$\displaystyle \frac{s-a}{ \left( s - a \right)^2 + b^2}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<p><font color="#008000">Ejemplo</font><P>
+&nbsp;<BR>
+Use la forma inversa del primer teorema de traslaci&oacute;n para calcular
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{1}{\left(s-3  \right)^3} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="118" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{\left(s-3 \right)^3} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{1}{\left(s-3  \right)^3} \right\} & = & \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{\left(s-3  \right)^3} \right\} \\
+& = & \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{s^3} \biggr|_{s \rightarrow s-3} \right\} \\
+& = & \frac{1}{2} t^2e^{3t}
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="118" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{1}{\left(s-3 \right)^3} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="134" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.gif"
+ ALT="$\displaystyle \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{\left(s-3 \right)^3} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="141" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.gif"
+ ALT="$\displaystyle \frac{1}{2!} {\cal L}^{-1} \left\{ \frac{2!}{s^3} \biggr\vert _{s \rightarrow s-3} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="47" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$\displaystyle \frac{1}{2} t^2e^{3t}$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<p><font color="#008000">Ejemplo</font><P>
+&nbsp;<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L}^{-1} \left\{ \frac{s}{s^2 + 4s + 13} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="146" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4s + 13} \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Para usar la forma inversa del primer teorema de traslaci&oacute;n debemos completar el cuadrado en el denominador
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L}^{-1} \left\{ \frac{s}{s^2 + 4s + 13} \right\} & = & {\cal L}^{-1} \left\{  \frac{s}{\left( s + 2 \right)^2 + 9} \right\} \\
+& = & {\cal L}^{-1} \left\{  \frac{s + 2 -2}{ \left(s + 2  \right)^2 + 9} \right\} \\
+& = & {\cal L}^{-1} \left\{  \frac{s + 2}{ \left(s + 2  \right)^2 + 9} \right\} - 2{\cal L}^{-1} \left\{  \frac{1}{ \left(s + 2 \right)^2 + 9} \right\} \\
+& = & {\cal L}^{-1} \left\{  \frac{s}{s^2 + 9} \biggr|_{s \rightarrow s+2}   \right\} - \frac{2}{3} {\cal L}^{-1} \left\{  \frac{3}{s^2 + 9} \biggr|_{s \rightarrow s+2}    \right\}  \\
+& = & e^{-2t} Cos(3t) - \frac{2}{3} e^{-2t} Sen(3t) \\
+\end{eqnarray*}
+ -->
+<div align="center">
+<TABLE CELLPADDING="0" WIDTH="75%" id="table18">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="146" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 4s + 13} \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="145" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{\left( s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="145" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img322.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s + 2 -2}{ \left(s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="314" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img323.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s + 2}{ \left(s + 2 \right)^2 + 9} \right\} - 2{\cal L}^{-1} \left\{ \frac{1}{ \left(s + 2 \right)^2 + 9} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="332" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.gif"
+ ALT="$\displaystyle {\cal L}^{-1} \left\{ \frac{s}{s^2 + 9} \biggr\vert _{s \rightarr...
+...cal L}^{-1} \left\{ \frac{3}{s^2 + 9} \biggr\vert _{s \rightarrow s+2} \right\}$"></TD>
+</TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="200" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img325.gif"
+ ALT="$\displaystyle e^{-2t} Cos(3t) - \frac{2}{3} e^{-2t} Sen(3t)$"></TD>
+</TR>
+</TABLE></div>
+</DIV>
+<BR CLEAR="ALL">
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS1"><STRONG>Subsecciones</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html104"
+  HREF="node6.html">Funci&oacute;n escal&oacute;n</A>
+</UL>
+<p>&nbsp;<p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS0"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+	<H1>
+<BR>
+&nbsp;</H1>
+</BODY>
+</HTML>

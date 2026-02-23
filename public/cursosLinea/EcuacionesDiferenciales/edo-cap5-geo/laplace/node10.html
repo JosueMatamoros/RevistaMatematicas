@@ -1,0 +1,1618 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Funci&oacute;n Gamma</TITLE>
+<META NAME="description" CONTENT="Funci&oacute;n Gamma">
+<META NAME="keywords" CONTENT="laplace">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="laplace.css">
+
+</HEAD>
+
+<BODY topmargin="20" leftmargin="20" link="#000080" vlink="#000080" alink="#000080" >
+
+<H1><A NAME="SECTION00180000000000000000"></A> <A NAME="1900"></A>
+</H1>
+<div align="left">
+  <table border="0" width="100%" height="35" cellspacing="0" cellpadding="0" id="table10">
+    <tr>
+      <td width="100%" height="1">
+		<img border="0" src="images/Encabezado-de-capitulos.png" width="356" height="29">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#808080" id="table11">
+          <tr>
+            <td height="4">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" id="table12">
+                <tr>
+                  <td height="1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <div align="left">
+    <table border="0" width="100%" height="1" class="table13">
+      <tr>
+        <td width="191" height="1">
+		<img border="0" src="images/caps.png" width="373" height="10"></td>
+        <td width="100%" height="1">
+          <p align="right">			<font size="2" face="Arial Narrow" color="#808080">
+           |Instituto Tecnol&oacute;gico de Costa Rica|Escuela
+          de Matem&aacute;tica|
+          </font><font color="#000080" face="Arial Narrow" size="2"><a href="mailto:gfigueroam@yahoo.com.mx">M. Sc. Geovanni Figueroa M.</a></font></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p>
+<BR>
+<font size="2"><a href="./">1</a> <a href="node2.html">2</a>&nbsp;
+<a href="node3.html">3</a>&nbsp; <a href="node4.html">4</a>&nbsp;
+<a href="node5.html">5</a>&nbsp; <a href="node6.html">6</a> <a href="node7.html">&nbsp;7</a>&nbsp;
+<a href="node8.html">8</a> <a href="node9.html">&nbsp;9</a>&nbsp; 10&nbsp;
+<a href="node11.html">11</a>&nbsp; <a href="node12.html">12</a>&nbsp;
+<a href="node13.html">13</a>&nbsp; <a href="node14.html">14 </a>&nbsp;<a href="node15.html">15</a>
+<a href="node16.html">&nbsp;16</a></font>
+</p>
+
+  <center>
+  <table border="0" width="577" height="37" cellspacing="0" cellpadding="0" id="table14">
+    <tr>
+      <td width="68" height="37">
+&nbsp;
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      </td>
+  </center>
+      <td width="509" height="37">
+&nbsp;
+
+<p><b>Funci&oacute;n Gamma
+</b>
+
+</p>
+
+<P>
+Ahora estudiaremos una funci&oacute;n conocida como la funci&oacute;n gamma <IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img602.gif"
+ ALT="$ \Gamma(x)$">, la cual es de gran importacia en an&aacute;lisis y en aplicaciones. Esta funci&oacute;n se define en términos de una integral impropia, la cual no puede calcularse en términos de funciones elementales.
+
+<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table30">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>&nbsp;[Funci&oacute;n Gamma]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La funci&oacute;n <!-- MATH
+ $\Gamma: [0,\infty[ \rightarrow  \mbox{$I \hspace{-1.3mm} R$}$
+ -->
+<IMG
+ WIDTH="82" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img603.gif"
+ ALT="$ \Gamma: [0,\infty[ \rightarrow$">&nbsp; &nbsp;<IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$ \mbox{$I \hspace{-1.3mm} R$}$"><IMG
+ WIDTH="3" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$ $"> dada por
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} e^{-t} t^{x-1} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="102" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img604.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-t} t^{x-1} dt
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+se conoce como la funci&oacute;n gamma. Su gr&aacute;fica se muestra en la figura
+<a href="#1.9">1.9.
+
+</a>
+
+<P>
+&nbsp;<P align="center">
+<a name="1.9"><img border="0" src="images/Gamma.gif" width="249" height="161"></a><P>
+
+<A NAME="lapla7"></A>
+<p align="center">Figura 1.9</p>
+
+<P>
+&nbsp;<P>
+El siguiente teorema establece una de las propiedades m&aacute;s importantes de la funci&oacute;n gamma.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table31">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Recursividad de gamma]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Para toda <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$"> se tiene que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Gamma(x+1) = x \Gamma(x)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="124" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img607.gif"
+ ALT="$\displaystyle \Gamma(x+1) = x \Gamma(x)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Integrando por partes
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\Gamma(x) & = & \int_0^{\infty} e^{-t} t^{x-1} dt  \\
+& = & \underbrace{\frac{e^{-t}t^x}{x} \biggr |_0^{\infty}}_{0} + \frac{1}{x} \int_0^{\infty} e^{-t}t^x dt \\
+& = & \frac{1}{x} \Gamma(x+1) \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table16">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.gif"
+ ALT="$\displaystyle \Gamma(x)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="102" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img604.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-t} t^{x-1} dt
+$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="176" HEIGHT="86" ALIGN="MIDDLE" BORDER="0"
+ SRC="img609.gif"
+ ALT="$\displaystyle \underbrace{\frac{e^{-t}t^x}{x} \biggr \vert _0^{\infty}}_{0} + \frac{1}{x} \int_0^{\infty} e^{-t}t^x dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="75" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img610.gif"
+ ALT="$\displaystyle \frac{1}{x} \Gamma(x+1)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule <!-- MATH
+ $\Gamma\left(\frac{1}{2}\right)$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img611.gif"
+ ALT="$ \Gamma\left(\frac{1}{2}\right)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\Gamma\left( \frac{1}{2} \right) & = &  \int_0^{\infty} \underbrace{t^{-\frac{1}{2}} e^{-t}}_{u^2=t} dt\\
+& = & 2 \int_0^{\infty} e^{u^2} du  \\
+& = & \sqrt{\pi} \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table17">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="51" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img612.gif"
+ ALT="$\displaystyle \Gamma\left( \frac{1}{2} \right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="100" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img613.gif"
+ ALT="$\displaystyle \int_0^{\infty} \underbrace{t^{-\frac{1}{2}} e^{-t}}_{u^2=t} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="85" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img614.gif"
+ ALT="$\displaystyle 2 \int_0^{\infty} e^{u^2} du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img615.gif"
+ ALT="$\displaystyle \sqrt{\pi}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+El resultado anterior puede generalizarse, como muestra en el siguiente corolario.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table32">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Corolario</font>
+        </b>[Recursividad de Gamma]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, <!-- MATH
+ $p=1,2,\ldots$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img616.gif"
+ ALT="$ p=1,2,\ldots$"> y <!-- MATH
+ $n=1,2,\ldots$
+ -->
+<IMG
+ WIDTH="82" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img617.gif"
+ ALT="$ n=1,2,\ldots$"> se tiene que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Gamma(x+p) = (x+p-1)(x+p-2) \ldots x \Gamma(x)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="300" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img618.gif"
+ ALT="$\displaystyle \Gamma(x+p) = (x+p-1)(x+p-2) \ldots x \Gamma(x)
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> de los resultados anteriores obtenemos que <!-- MATH
+ $\Gamma(n+1)=n!$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img619.gif"
+ ALT="$ \Gamma(n+1)=n!$">, por esta raz&oacute;n se conoce a esta funci&oacute;n como el factorial generalizado.
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcular los valores de <!-- MATH
+ $\Gamma\left(\frac{3}{2}\right)$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img620.gif"
+ ALT="$ \Gamma\left(\frac{3}{2}\right)$">, <!-- MATH
+ $\Gamma\left(\frac{5}{2}\right)$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img621.gif"
+ ALT="$ \Gamma\left(\frac{5}{2}\right)$">, <!-- MATH
+ $\Gamma\left(-\frac{1}{2}\right)$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img622.gif"
+ ALT="$ \Gamma\left(-\frac{1}{2}\right)$">.
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>
+<BR>
+Usando la propiedad recursiva, tenemos que
+
+<P>
+
+<UL>
+<LI>Para <!-- MATH
+ $\Gamma\left( \frac{3}{2} \right)$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img620.gif"
+ ALT="$ \Gamma\left(\frac{3}{2}\right)$">:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\Gamma\left( \frac{3}{2} \right) & = & \Gamma \left(\frac{1}{2} + 1 \right) \\
+& = & \frac{1}{2} \Gamma\left( \frac{1}{2}\right) \\
+& = & \frac{\sqrt{\pi}}{2}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table18">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="51" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img623.gif"
+ ALT="$\displaystyle \Gamma\left( \frac{3}{2} \right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img624.gif"
+ ALT="$\displaystyle \Gamma \left(\frac{1}{2} + 1 \right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="63" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img625.gif"
+ ALT="$\displaystyle \frac{1}{2} \Gamma\left( \frac{1}{2}\right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="30" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img626.gif"
+ ALT="$\displaystyle \frac{\sqrt{\pi}}{2}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+</LI>
+<LI>Para <!-- MATH
+ $\Gamma\left( \frac{5}{2} \right)$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img621.gif"
+ ALT="$ \Gamma\left(\frac{5}{2}\right)$">:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\Gamma\left( \frac{5}{2} \right) & = &  \Gamma\left( \frac{3}{2} + 1 \right)   \\
+& = & \frac{3}{2} \Gamma\left( \frac{3}{2} \right) \\
+& = & \frac{3}{2} \frac{\sqrt{\pi}}{2}   \\
+& = & \frac{3 \sqrt{\pi} }{4}   \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table19">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="51" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img627.gif"
+ ALT="$\displaystyle \Gamma\left( \frac{5}{2} \right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="78" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img628.gif"
+ ALT="$\displaystyle \Gamma\left( \frac{3}{2} + 1 \right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="63" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img629.gif"
+ ALT="$\displaystyle \frac{3}{2} \Gamma\left( \frac{3}{2} \right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="42" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img630.gif"
+ ALT="$\displaystyle \frac{3}{2} \frac{\sqrt{\pi}}{2}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="38" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img631.gif"
+ ALT="$\displaystyle \frac{3 \sqrt{\pi} }{4}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+</LI>
+<LI>Para <!-- MATH
+ $\Gamma\left( -\frac{1}{2} \right)$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img622.gif"
+ ALT="$ \Gamma\left(-\frac{1}{2}\right)$">:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\Gamma\left(\frac{1}{2} \right) & = & \Gamma\left( - \frac{1}{2} + 1  \right)  \\
+\sqrt{\pi} & = & - \frac{1}{2} \Gamma\left( -\frac{1}{2} \right) \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table20">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="51" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img612.gif"
+ ALT="$\displaystyle \Gamma\left( \frac{1}{2} \right)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="91" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img632.gif"
+ ALT="$\displaystyle \Gamma\left( - \frac{1}{2} + 1 \right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img615.gif"
+ ALT="$\displaystyle \sqrt{\pi}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="87" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img633.gif"
+ ALT="$\displaystyle - \frac{1}{2} \Gamma\left( -\frac{1}{2} \right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+De donde
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Gamma\left( -\frac{1}{2} \right) = -2 \sqrt{\pi}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="128" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img634.gif"
+ ALT="$\displaystyle \Gamma\left( -\frac{1}{2} \right) = -2 \sqrt{\pi}
+$">
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;</DIV><P></P>
+
+<P>
+</LI>
+</UL>
+
+  <table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table33">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">&nbsp;Definici&oacute;n</font>
+        </b>[Funci&oacute;n Beta]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">La siguiente integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta(x,y) = \int_0^1 t^{x-1} \left( 1 - t \right)^{y-1} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="216" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img635.gif"
+ ALT="$\displaystyle \beta(x,y) = \int_0^1 t^{x-1} \left( 1 - t \right)^{y-1} dt
+$">
+</DIV><P></P>
+
+<P>
+se conoce como la funci&oacute;n beta.
+
+&nbsp;</td>
+    </tr>
+  </table>
+
+<P>
+El siguiente teorema enuncia algunas de las propiedades de la funci&oacute;n Beta.<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table34">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Propiedades de la funci&oacute;n beta]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+
+<OL>
+<LI>La funci&oacute;n <!-- MATH
+ $\beta(x,y)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img636.gif"
+ ALT="$ \beta(x,y)$"> converge para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img637.gif"
+ ALT="$ y&gt;0$">.
+
+<P>
+</LI>
+<LI><!-- MATH
+ $\beta(x,y) = \beta(y,x)$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img638.gif"
+ ALT="$ \beta(x,y) = \beta(y,x)$">.
+
+<P>
+</LI>
+<LI>Para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img637.gif"
+ ALT="$ y&gt;0$"> se tiene que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta(x,y) = 2 \int_0^{\frac{\pi}{2}} \left(Sen(t)  \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="308" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img639.gif"
+ ALT="$\displaystyle \beta(x,y) = 2 \int_0^{\frac{\pi}{2}} \left(Sen(t) \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt
+$">
+</DIV><P></P>
+
+<P>
+</LI>
+<LI>Para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img637.gif"
+ ALT="$ y&gt;0$"> se tiene que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta(x,y) = \int_0^{\infty} \frac{t^{x-1}}{\left(1 + t \right)^{x+y}} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="191" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img640.gif"
+ ALT="$\displaystyle \beta(x,y) = \int_0^{\infty} \frac{t^{x-1}}{\left(1 + t \right)^{x+y}} dt
+$">
+</DIV><P></P>
+
+<P>
+</LI>
+<LI>Para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img637.gif"
+ ALT="$ y&gt;0$"> se tiene que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="137" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img641.gif"
+ ALT="$\displaystyle \beta(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}
+$">
+</DIV>
+</LI>
+</OL>
+
+&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+	<P></p>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+
+<OL>
+<LI>Para demostrar que la integral convege, separemos la integral en dos partes
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\beta(x,y) & = & \int_0^1 t^{x-1} \left(1 - t \right)^{y-1} dt \\
+& = & \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_{\frac{1}{2}}^1 t^{x-1} \underbrace{\left(1 - t \right)^{y-1}}_{u=1-t} dt \\
+ & = & \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_0^{1} u^{y-1} \left(1 - u \right)^{x-1} dt
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table21">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img642.gif"
+ ALT="$\displaystyle \beta(x,y)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img643.gif"
+ ALT="$\displaystyle \int_0^1 t^{x-1} \left(1 - t \right)^{y-1} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="324" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img644.gif"
+ ALT="$\displaystyle \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_{\frac{1}{2}}^1 t^{x-1} \underbrace{\left(1 - t \right)^{y-1}}_{u=1-t} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="331" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img645.gif"
+ ALT="$\displaystyle \int_0^{1/2} t^{x-1} \left(1 - t \right)^{y-1} dt + \int_0^{1} u^{y-1} \left(1 - u \right)^{x-1} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+Ahora, observe que la primera integral convwerge si
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+1 - x < 1 \Rightarrow x > 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img646.gif"
+ ALT="$\displaystyle 1 - x &lt; 1 \Rightarrow x &gt; 0
+$">
+</DIV><P></P>
+
+<P>
+y de igual manera, la segunda integral converge si
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+1 - y < 1 \Rightarrow y > 0
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="130" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img647.gif"
+ ALT="$\displaystyle 1 - y &lt; 1 \Rightarrow y &gt; 0
+$">
+</DIV><P></P>
+
+<P>
+</LI>
+<LI>Para demostrar esta propiedad basta hacer un cambio de variable <IMG
+ WIDTH="67" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img648.gif"
+ ALT="$ u=1-t$">
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\beta(x,y) & = & \int_0^1 t^{x-1} \underbrace{\left( 1-t \right)^{y-1}}_{u=1-t} dt \\
+& = & \int_0^1 u^{y-1} \left(1 -u \right)^{x-1} dt \\
+& = & \beta(y,x) \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table22">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img642.gif"
+ ALT="$\displaystyle \beta(x,y)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img649.gif"
+ ALT="$\displaystyle \int_0^1 t^{x-1} \underbrace{\left( 1-t \right)^{y-1}}_{u=1-t} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="154" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img650.gif"
+ ALT="$\displaystyle \int_0^1 u^{y-1} \left(1 -u \right)^{x-1} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img651.gif"
+ ALT="$\displaystyle \beta(y,x)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+</LI>
+<LI>Haciendo el cambio de variable
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+t = Sen^2(u) \Rightarrow dt = 2 Sen(u) Cos(u) du
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="270" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img652.gif"
+ ALT="$\displaystyle t = Sen^2(u) \Rightarrow dt = 2 Sen(u) Cos(u) du
+$">
+</DIV><P></P>
+
+<P>
+tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\beta(x,y) & = & \int_0^1 t^{x-1} \underbrace{\left( 1- t \right)^{y-1}}_{t=Sen^2(u)} dt \\
+& = & \int_0^{\frac{\pi}{2}} \left( Sen^2(u) \right)^{x-1} \left(1 - Sen^2(u)  \right)^{y-1} 2 Sen(u) Cos(u) du \\
+& = & 2 \int_0^{\frac{\pi}{2}} \left(Sen(t)  \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table23">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img642.gif"
+ ALT="$\displaystyle \beta(x,y)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img653.gif"
+ ALT="$\displaystyle \int_0^1 t^{x-1} \underbrace{\left( 1- t \right)^{y-1}}_{t=Sen^2(u)} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="379" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img654.gif"
+ ALT="$\displaystyle \int_0^{\frac{\pi}{2}} \left( Sen^2(u) \right)^{x-1} \left(1 - Sen^2(u) \right)^{y-1} 2 Sen(u) Cos(u) du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="240" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img655.gif"
+ ALT="$\displaystyle 2 \int_0^{\frac{\pi}{2}} \left(Sen(t) \right)^{2x-1} \left(Cos(t) \right)^{2y-1} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+</LI>
+<LI>Haciendo el cambio de variable
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+t = \frac{u}{1 + u} \Rightarrow dt = \frac{du}{\left(1 + u \right)^2}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="190" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img656.gif"
+ ALT="$\displaystyle t = \frac{u}{1 + u} \Rightarrow dt = \frac{du}{\left(1 + u \right)^2}
+$">
+</DIV><P></P>
+
+<P>
+tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\beta(x,y) & = & \int_0^1 t^{x-1} \left(  1-t  \right)^{y-1} dt \\
+& = & \int_0^{\infty} \left( \frac{u}{1+u}  \right)^{x-1} \left( 1 - \frac{u}{1+u}  \right)^{y-1} \frac{1}{\left( 1 + u \right)^2}du \\
+& = & \int_0^{\infty} \frac{u^{x-1}}{\left( 1 + u  \right)^{x+y}} du
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table24">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img642.gif"
+ ALT="$\displaystyle \beta(x,y)$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img643.gif"
+ ALT="$\displaystyle \int_0^1 t^{x-1} \left(1 - t \right)^{y-1} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="321" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img657.gif"
+ ALT="$\displaystyle \int_0^{\infty} \left( \frac{u}{1+u} \right)^{x-1} \left( 1 - \frac{u}{1+u} \right)^{y-1} \frac{1}{\left( 1 + u \right)^2}du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="130" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img658.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{u^{x-1}}{\left( 1 + u \right)^{x+y}} du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+</LI>
+<LI>La demostraci&oacute;n de este resultado es un tanto m&aacute;s compleja y se sale de los objetivos del curso, por esta raz&oacute;n no la haremos.
+
+<P>
+</LI>
+</OL>
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule el valor de la siguiente integral
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\int_0^{\infty} \frac{t^3}{\left( 1 + t \right)^7} dt
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="106" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img659.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{t^3}{\left( 1 + t \right)^7} dt
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+Usando los resultados del teorema anterior
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\int_0^{\infty} \frac{t^3}{\left( 1 + t \right)^7} dt & = & \beta(4,3) \\
+& = &  \frac{\Gamma(3) \Gamma(4)}{\Gamma(7)} \\
+& = & \frac{12}{720} \\
+& = & \frac{1}{60} \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table25">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="106" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img659.gif"
+ ALT="$\displaystyle \int_0^{\infty} \frac{t^3}{\left( 1 + t \right)^7} dt
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img660.gif"
+ ALT="$\displaystyle \beta(4,3)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="67" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img661.gif"
+ ALT="$\displaystyle \frac{\Gamma(3) \Gamma(4)}{\Gamma(7)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="31" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img662.gif"
+ ALT="$\displaystyle \frac{12}{720}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="23" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img663.gif"
+ ALT="$\displaystyle \frac{1}{60}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+Observe que cuando <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.gif"
+ ALT="$ n$"> es muy grande es extremadamente dif&iacute;cil calcular <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.gif"
+ ALT="$ n!$">, a&uacute;n con la ayuda de logaritmos. Por ejemplo, la tarea de determinar el n&uacute;mero de posibles formas de barajar un maso de cartas podr&iacute;a tomar mucho tiempo, pues involucra el calculo de <IMG
+ WIDTH="23" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img665.gif"
+ ALT="$ 52!$">. El siguiente teorema establece que <!-- MATH
+ $(n/e)^n \sqrt{2 \pi n}$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img666.gif"
+ ALT="$ (n/e)^n \sqrt{2 \pi n}$"> es una buena aproximaci&oacute;n de <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.gif"
+ ALT="$ n!$">, cuando <IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.gif"
+ ALT="$ n$"> es muy grande.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table35">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[F&oacute;rmula de Stirling]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">
+		<p align="center">
+<IMG
+ WIDTH="150" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img667.gif"
+ ALT="$\displaystyle \lim_{n \rightarrow \infty} \frac{\left( \frac{n}{e} \right)^n \sqrt{2\pi n}}{n!} = 1
+$">
+</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Observaci&oacute;n:</B> del la f&oacute;rmula de Stirling<A NAME="tex2html14"
+  HREF="footnode.html#foot2104"><SUP>1.4</SUP></A> tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Gamma(n + 1)  \approx n^n e^{-n}\sqrt{2 \pi n}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="168" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img668.gif"
+ ALT="$\displaystyle \Gamma(n + 1) \approx n^n e^{-n}\sqrt{2 \pi n}
+$">
+</DIV><P></P>
+
+<P>
+Y por &uacute;ltimo el siguiente teorema expresa la relaci&oacute;n entre la funci&oacute;n <IMG
+ WIDTH="34" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img602.gif"
+ ALT="$ \Gamma(x)$"> y la transformada.
+
+	<P>
+&nbsp;<table border="0" width="509" height="31" cellspacing="0" cellpadding="0" id="table36">
+    <tr>
+      <td width="16" height="1" bgcolor="#FFCC00"><b><font color="#000080" size="2">&nbsp;</font>
+        </b>
+      </td>
+      <td width="483" height="1" bgcolor="#99CC33"><b><font color="#000080" size="2">
+		&nbsp;Teorema</font>
+        </b>[Transformada de <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img669.gif"
+ ALT="$ t^x$">]
+      </td>
+    </tr>
+    <tr>
+      <td width="16" height="76" bgcolor="#FFFDF0">&nbsp;</td>
+      <td width="483" height="76" bgcolor="#FFFDF0">Para <IMG
+ WIDTH="41" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.gif"
+ ALT="$ x &gt; 0$">, tenemos que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \{ t^x \} = \frac{\Gamma(x+1)}{s^{x+1}}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="128" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img670.gif"
+ ALT="$\displaystyle {\cal L} \{ t^x \} = \frac{\Gamma(x+1)}{s^{x+1}}
+$">
+</DIV>&nbsp;</td>
+    </tr>
+  </table>
+  	<P></P>
+
+<P>
+<B>Demostraci&oacute;n</B> 
+<BR>
+<P>
+Usando la definici&oacute;n de transformada y la sustituci&oacute;n <IMG
+ WIDTH="47" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img671.gif"
+ ALT="$ u=st$">, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \{ t^x \} & = & \int_0^{\infty} e^{-st} t^{x} dt \\
+& = &  \frac{1}{s} \int_0^{\infty} e^{-u} \left( \frac{u}{s} \right)^{-u} du \\
+& = & \frac{1}{s^{x+1}} \int_0^{\infty} u^x e^{-u} du \\
+& = & \frac{\Gamma(x+1)}{s^{x+1}} \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table26">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="44" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img672.gif"
+ ALT="$\displaystyle {\cal L} \{ t^x \}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="92" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img673.gif"
+ ALT="$\displaystyle \int_0^{\infty} e^{-st} t^{x} dt$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img674.gif"
+ ALT="$\displaystyle \frac{1}{s} \int_0^{\infty} e^{-u} \left( \frac{u}{s} \right)^{-u} du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="133" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img675.gif"
+ ALT="$\displaystyle \frac{1}{s^{x+1}} \int_0^{\infty} u^x e^{-u} du$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="66" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img676.gif"
+ ALT="$\displaystyle \frac{\Gamma(x+1)}{s^{x+1}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+&nbsp;<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="63" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+<P>
+Usando el teorema anterior
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \frac{1}{\sqrt{t}} \right\} & = & \frac{\Gamma(\frac{1}{2} )}{\sqrt{s}} \\
+& = & \sqrt{\frac{\pi}{s}} \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table27">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="63" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{t}} \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="39" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img677.gif"
+ ALT="$\displaystyle \frac{\Gamma(\frac{1}{2} )}{\sqrt{s}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="32" HEIGHT="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img678.gif"
+ ALT="$\displaystyle \sqrt{\frac{\pi}{s}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\cal L} \left\{ \frac{1}{\sqrt{s -2} } \right\}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="92" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img679.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{s -2} } \right\}
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+Usando el primer teorema de traslaci&oacute;n, tenemos que
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{ \frac{1}{\sqrt{s-2}} \right\} & = & e^{2t} {\cal L} \left\{ \frac{1}{\sqrt{s}} \right\} \\
+& = & \frac{e^{2t}}{\sqrt{\pi t}} \\
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table28">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="92" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img679.gif"
+ ALT="$\displaystyle {\cal L} \left\{ \frac{1}{\sqrt{s -2} } \right\}
+$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="84" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img680.gif"
+ ALT="$\displaystyle e^{2t} {\cal L} \left\{ \frac{1}{\sqrt{s}} \right\}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="35" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img681.gif"
+ ALT="$\displaystyle \frac{e^{2t}}{\sqrt{\pi t}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+<font color="#008000">Ejemplo</font> 
+<BR>
+Calcule <!-- MATH
+ ${\cal L} \left\{J_0(t)  \right\}$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img682.gif"
+ ALT="$ {\cal L} \left\{J_0(t) \right\}$"> donde <IMG
+ WIDTH="37" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img683.gif"
+ ALT="$ J_0(t)$"> es la funci&oacute;n  de Bessel de orden cero dada por la serie
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+J_0(t) =  1 - \frac{t^2}{2^2} + \frac{t^4}{2^2 4^2} - \frac{t^6}{2^2 4^2 6^2} + \cdots
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="267" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img684.gif"
+ ALT="$\displaystyle J_0(t) = 1 - \frac{t^2}{2^2} + \frac{t^4}{2^2 4^2} - \frac{t^6}{2^2 4^2 6^2} + \cdots
+$">
+</DIV><P></P>
+
+<P>
+<font color="#008000">Soluci&oacute;n</font>&nbsp; 
+<BR>
+Aplicando transformada de Laplace
+
+<P>
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+{\cal L} \left\{  J_0(t) \right\} & = & \frac{1}{s} - \frac{1}{2^2} \frac{2!}{s^3} + \frac{1}{2^2 4^2} \frac{4!}{s^5} + \frac{1}{2^2 4^2 6^2} \frac{6!}{s^7} + \cdots  \\
+& = & \frac{1}{s} \left\{ 1 -\frac{1}{2} \frac{1}{s^2} + \frac{1 \cdot 3}{2 \cdot 4}  \frac{1}{s^4} - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} \frac{1}{s^6} + \cdots \right\}  \\
+& = & \frac{1}{s} \left\{ \left( 1 + \frac{1}{s^2}  \right)^{-1/2} \right\} \\
+& = & \frac{1}{\sqrt{s^2 + 1}}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%" id="table29">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="67" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img685.gif"
+ ALT="$\displaystyle {\cal L} \left\{ J_0(t) \right\}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="271" HEIGHT="52" ALIGN="MIDDLE" BORDER="0"
+ SRC="img686.gif"
+ ALT="$\displaystyle \frac{1}{s} - \frac{1}{2^2} \frac{2!}{s^3} + \frac{1}{2^2 4^2} \frac{4!}{s^5} + \frac{1}{2^2 4^2 6^2} \frac{6!}{s^7} + \cdots$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="297" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img687.gif"
+ ALT="$\displaystyle \frac{1}{s} \left\{ 1 -\frac{1}{2} \frac{1}{s^2} + \frac{1 \cdot ...
+...} - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} \frac{1}{s^6} + \cdots \right\}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="142" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img688.gif"
+ ALT="$\displaystyle \frac{1}{s} \left\{ \left( 1 + \frac{1}{s^2} \right)^{-1/2} \right\}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="15" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="62" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img689.gif"
+ ALT="$\displaystyle \frac{1}{\sqrt{s^2 + 1}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+<B>Observaci&oacute;n:</B> en este ejemplo hemos usado que
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\frac{1}{\sqrt{x + 1}} = 1 - \frac{1}{2} x + \frac{1 \cdot 3}{2 \cdot 4} x^2 - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} x^3 + \cdots
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="320" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img690.gif"
+ ALT="$\displaystyle \frac{1}{\sqrt{x + 1}} = 1 - \frac{1}{2} x + \frac{1 \cdot 3}{2 \cdot 4} x^2 - \frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} x^3 + \cdots
+$">
+</DIV><P></P>
+
+<P>
+para <!-- MATH
+ $\left| x \right| <1$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img691.gif"
+ ALT="$ \left\vert x \right\vert &lt;1$">.
+
+	<p>&nbsp;<p align="left">&nbsp;<p align="center"><br>
+    <p>&nbsp;
+<!--Table of Child-Links-->
+<a NAME="CHILD_LINKS"></a>
+<hr size="0" color="#C0C0C0">
+
+  <center>
+
+<p align="center"><font color="#808080" face="Arial Narrow" size="2"><a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank">Revista digital Matem&aacute;tica, Educaci&oacute;n e Internet.</a></font>
+</p>
+
+</center>
+
+      </td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<H1>
+<BR>
+&nbsp;</H1>
+</BODY>
+</HTML>
