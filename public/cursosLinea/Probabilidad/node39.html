@@ -1,0 +1,461 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="6" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00640000000000000000">
+<font size="3">
+Aproximaci&#243;n Normal Binomial</font></A>
+</H1> El teorema del l&#237;mite central
+tiene
+una implicaci&#243;n adicional que tambi&#233;n resulta sorprendente. Si
+<I>S</I><SUB>n</SUB> sigue una distribuci&#243;n binomial de par&#225;metros <I>n</I> y <I>p</I>
+entonces si <I>x</I> y <I>y</I> son enteros no negativos tales que <I>x</I> &lt; <I>y</I>,
+seg&#250;n el teorema del l&#237;mite central se tiene que si <I>n</I> es
+suficientemente grande se cumple.
+<p>&nbsp;</p>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+\mathop{P}\left[ x \leq {S_n} \leq y ] \right] \longrightarrow
+\Phi\left( \frac{y-np}{\sqrt{np(1-p)}}\right)- \Phi\left(
+\frac{x-np}{\sqrt{np(1-p)}}\right).
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+P<IMG
+ width="11" height="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img359.gif"
+ ALT="$\displaystyle \left[\vphantom{ x \leq {S_n} \leq y ] }\right.$"><I>x</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <I>S</I><SUB>n</SUB> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <I>y</I><IMG
+ width="11" height="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img360.gif"
+ ALT="$\displaystyle \left.\vphantom{ x \leq {S_n} \leq y ] }\right]$"> <IMG
+ width="33" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="$\displaystyle \longrightarrow$"> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img361.gif"
+ ALT="$\displaystyle \left(\vphantom{ \frac{y-np}{\sqrt{np(1-p)}}}\right.$"><IMG
+ width="96" height="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img362.gif"
+ ALT="$\displaystyle {\frac{y-np}{\sqrt{np(1-p)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img363.gif"
+ ALT="$\displaystyle \left.\vphantom{ \frac{y-np}{\sqrt{np(1-p)}}}\right)$">  <font size="4">-
+</font> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img364.gif"
+ ALT="$\displaystyle \left(\vphantom{
+\frac{x-np}{\sqrt{np(1-p)}}}\right.$"><IMG
+ width="96" height="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.gif"
+ ALT="$\displaystyle {\frac{x-np}{\sqrt{np(1-p)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img366.gif"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{x-np}{\sqrt{np(1-p)}}}\right)$">.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.8)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Este resultado se conoce como la aproximaci&#243;n normal de la
+binomial y dado que es aproximaci&#243;n continua de una
+distribuci&#243;n discreta deben tenerse algunos cuidados adicionales.
+
+<P>
+La  mejor manera de utilizar este resultado puede obtenerse en la
+expresi&#243;n:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="NormBin"></A><!-- MATH
+ \begin{eqnarray}
+\sum_{i=x}^{y}
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle  k} \\
+          \end{array}
+        \!\!\! \right) p^k(1-p)^{n-k} = \Phi\left(
+\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}\right)- \Phi\left(
+\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}\right).
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+    <p align="center"><IMG
+ width="27" height="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img367.gif"
+ ALT="$\displaystyle \sum_{i=x}^{y}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.gif"
+ ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array}\!\!\! }\right.$"><IMG
+ width="29" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.gif"
+ ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.gif"
+ ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array}\!\!\! }\right)$"><b><I>p</I><SUP>k</SUP>(1 - <I>p</I>)<SUP>n - k</SUP> 
+    <font size="4"> =</font></b> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img368.gif"
+ ALT="$\displaystyle \left(\vphantom{
+\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}\right.$"><IMG
+ width="96" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img369.gif"
+ ALT="$\displaystyle {\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img370.gif"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}\right)$">  <font size="4"><b>-</b> </font> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img371.gif"
+ ALT="$\displaystyle \left(\vphantom{
+\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}\right.$"><IMG
+ width="96" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img372.gif"
+ ALT="$\displaystyle {\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img373.gif"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}\right)$"></p>
+  </TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.9)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+El valor 1/2 que se agrega  a cada lado se llama un factor de
+correcci&#243;n de continuidad. La raz&#243;n para agregar tal factor de
+correcci&#243;n es que si uno usa una distribuci&#243;n normal, que es
+continua, para aproximar una binomial que es discreta,  en cada
+extremo del intervalo la distribuci&#243;n discreta incluye la mitad
+de una barra que la distribuci&#243;n continua omite, por eso debe
+agregarse. Las siguientes gr&#225;ficas pueden ayudarle a comprender
+la necesidad de este factor de correcci&#243;n.
+
+<P>
+<I>Ejemplo 34</I>
+
+<P>
+Se sabe que en una ciudad el 35% de los habitantes tienen
+sobrepeso. Se eligen 500 personas, cu&#225;l es la probabilidad de
+que haya entre 200 y 300 con sobrepeso.&nbsp;
+
+<P>
+ La soluci&#243;n de este problema se obtiene por la expresi&#243;n
+ <!-- MATH
+ \begin{displaymath}
+\sum_{i=200}^{300}
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle 500}  \\
+               { \scriptstyle  k} \\
+          \end{array}
+        \!\!\! \right) (0.35)^k(0.65)^{500-k} 
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="40" height="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img374.gif"
+ ALT="$\displaystyle \sum_{i=200}^{300}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img375.gif"
+ ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 500} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right.$"><IMG
+ width="41" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img376.gif"
+ ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle 500} \\
+{ \scriptstyle k} \\
+\end{array}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img377.gif"
+ ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 500} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right)$">(0.35)<SUP>k</SUP>(0.65)<SUP>500 - k</SUP>
+</b>
+</DIV>
+ <!-- MATH
+ \begin{displaymath}
+\,\,\,\,\,\,\,\,\,\approx
+\Phi\left(
+\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}\right)-
+\Phi\left(
+\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}\right).
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img378.gif"
+ ALT="$\displaystyle \approx$"> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img379.gif"
+ ALT="$\displaystyle \left(\vphantom{
+\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right.$"><IMG
+ width="122" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img380.gif"
+ ALT="$\displaystyle {\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img381.gif"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right)$"> - <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img382.gif"
+ ALT="$\displaystyle \left(\vphantom{
+\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right.$"><IMG
+ width="122" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img383.gif"
+ ALT="$\displaystyle {\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img384.gif"
+ ALT="$\displaystyle \left.\vphantom{
+\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right)$">.</b>
+</DIV>
+
+<P>
+Usando la herramienta para c&#225;lculo de binomiales se obtiene que
+la parte izquierda es 0.008864 mientras que la parte derecha,
+usando la herramienta correspondiente es 0.0108.
+
+<P>
+Existen varios criterios para asegurar la precisi&#243;n de este tipo
+de aproximaciones. Los ejemplos abundan, por ejemplo en
+[<A
+ HREF="node43.html#Devore">5</A>] se afirma que si <b> <I>np</I>  <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$">   5</b> y <!-- MATH
+ $n(1-p) \geq 5$
+ -->
+ <b>
+<I>n</I>(1 - <I>p</I>) </b> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$">  <b>5</b> la
+aproximaci&#243;n es adecuada, en [<A
+ HREF="node43.html#Allen">2</A>]  se presenta un
+resumen de diferentes condiciones para asegurar precisi&#243;n, al
+final de cuentas lo que si es v&#225;lido es que valores de <I>p</I> muy
+cercanos a 0 o 1 hacen que las aproximaciones normales de
+binomiales no sean buenas.
+
+<P>
+En la Herramienta que se da a continuaci&#243;n el lector puede
+colocar valores de <I>n</I> y <I>p</I> y verificar por si mismo la calidad
+de la aproximaci&#243;n normal de la binomial.
+
+<P>
+<I>Ejemplo 35</I>
+
+<P>
+Dos empresas de venta de servicios telef&#243;nicos  optan
+por el mismo mercado, hay <I>n</I> clientes que seleccionan al azar
+alguna de las dos empresas. Si una de las empresas tiene
+capacidad de atender a lo sumo <I>r</I> &lt; <I>n</I> clientes entonces la
+probabilidad de que esta empresa reciba solicitudes de m&aacute;s de <I>r</I>
+clientes est&#225; dada por
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<IMG
+ width="46" height="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img385.gif"
+ ALT="$\displaystyle \sum_{k=r+1}^{n}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img386.gif"
+ ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right.$"><IMG
+ width="29" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img387.gif"
+ ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img388.gif"
+ ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right)$"><b>(.5)<SUP>k</SUP>(.5)<SUP>n - k</SUP>&nbsp; </b><IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img378.gif"
+ ALT="$\displaystyle \approx$">&nbsp; <b>1 - </b> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img389.gif"
+ ALT="$\displaystyle \left(\vphantom{\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}\right.$"><IMG
+ width="112" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img390.gif"
+ ALT="$\displaystyle {\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img391.gif"
+ ALT="$\displaystyle \left.\vphantom{\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}\right)$"> 
+&nbsp; 
+<b><br>
+= 1 -</b> <IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img392.gif"
+ ALT="$\displaystyle \left(\vphantom{ \frac{2r+1-n}{\sqrt{n}} }\right.$"><IMG
+ width="87" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img393.gif"
+ ALT="$\displaystyle {\frac{2r+1-n}{\sqrt{n}}}$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img394.gif"
+ ALT="$\displaystyle \left.\vphantom{ \frac{2r+1-n}{\sqrt{n}} }\right)$">
+</DIV>
+
+<P>
+Por ejemplo si hay 1000 clientes y una de las empresas  desea que
+el total de solicitudes sin atender no exceda el 10% entonces
+usando las herramientas disponibles  se obtiene que
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img395.gif"
+ ALT="$\displaystyle \left(\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right.$"><IMG
+ width="112" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img396.gif"
+ ALT="$\displaystyle {\frac{2r+1-1000}{\sqrt{1000}}}$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.gif"
+ ALT="$\displaystyle \left.\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right)$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$">   <b>0.9</b>,
+</DIV>
+de donde se obtiene que <I>r</I> = 520, l&#237;neas bastar&#225;n para
+satisfacer al menos el 90% de las demandas de servicio.
+
+<P>
+Si ese porcentaje se elevara y se quisiera que el porcentaje de
+solicitudes  sin atender no exceda el 1% entonces se debe
+resolver
+<!-- MATH
+ \begin{displaymath}
+\Phi\left( \frac{2r+1-1000}{\sqrt{1000}} \right) \geq 0.99,
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<IMG
+ width="17" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\displaystyle \Phi$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img395.gif"
+ ALT="$\displaystyle \left(\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right.$"><IMG
+ width="112" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img396.gif"
+ ALT="$\displaystyle {\frac{2r+1-1000}{\sqrt{1000}}}$"><IMG
+ width="18" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.gif"
+ ALT="$\displaystyle \left.\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right)$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$">   <b>0.99,</b>
+</DIV>
+usando las
+herramientas disponibles y despejando se obtiene que <I>r</I> = 537
+l&#237;neas son suficientes. Esta aproximaci&#243;n no solo es buena, es
+excelente como puede verificarse usando las herramientas para
+binomiales que se han programado.
+
+<P>
+Para estas herramientas se ha obtenido una precisi&#243;n
+sorprendente, si hici&#233;ramos el mismo an&#225;lisis pero con una
+probabilidad de 0.7 de que cada cliente elija a esta empresa;
+usando la aproximaci&#243;n normal se obtendr&#237;a que se necesitan 734
+l&#237;neas si se usa la binomial en forma directa se ve que 733
+bastan. Se invita al lector a ver el comportamiento para otros
+valores de <I>p</I>.
+
+<P>
+Como nota aparte es interesante hacer notar que el desempe&#241;o de
+estas herramientas programadas mejoran los resultados que se
+obtienen en tablas como las de [<A
+ HREF="node43.html#Feller">6</A>] adem&#225;s permiten
+una serie de exploraciones que de otra manera ser&#237;an muy complicadas.
+
+<P>
+&nbsp;
+  </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

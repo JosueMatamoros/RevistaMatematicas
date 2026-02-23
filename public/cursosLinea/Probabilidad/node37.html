@@ -1,0 +1,356 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="8" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00620000000000000000">
+<font size="3">
+Leyes de los Grandes N&#250;meros</font></A>
+</H1>
+
+<P>
+Para poner en contexto las implicaciones de este teorema es
+importante revisar las siguientes observaciones.
+
+<P>
+Dado un
+experimento con espacio muestral <IMG
+ width="17" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$ \Omega$">, para un evento
+<IMG
+ width="18" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.gif"
+ ALT="$ \Upsilon$"> se ha indicado que si se hacen <I>n</I> repeticiones del
+experimento y se nota que en esas <I>n</I> repeticiones del
+experimento ocurren <!-- MATH
+ $\Upsilon(n)$
+ -->
+<IMG
+ width="18" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.gif"
+ ALT="$ \Upsilon$">(<I>n</I>) veces el evento <IMG
+ width="18" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.gif"
+ ALT="$ \Upsilon$">,
+intuitivamente se  define la probabilidad del evento por
+<!-- MATH
+ \begin{displaymath}
+\mathop{P}[\Upsilon] = \frac{ \Upsilon(n) }{n}.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[<IMG
+ width="18" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.gif"
+ ALT="$\displaystyle \Upsilon$">] = <IMG
+ width="46" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img331.gif"
+ ALT="$\displaystyle {\frac{\Upsilon(n) }{n}}$">.</b>
+</DIV>
+
+<P>
+Sin embargo, como ya hemos apuntado antes esta definici&#243;n deja
+abiertas una serie de preguntas. Por ejemplo si aceptamos definir
+la probabilidad como el valor l&#237;mite de estos cocientes entonces
+la definici&#243;n se complica. Primero que todo, qu&#233; garantiza que
+ese l&#237;mite existe, segundo esta definici&#243;n no  es operacional
+en el sentido de que no es posible repetir infinitamente  tal
+experimento. Estudiaremos la <EM> ley de los grandes n&#250;meros
+</EM> que nos ayudar&#225; a precisar un poco mejor el sentido de
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="DefiProb"></A><!-- MATH
+ \begin{equation}
+\mathop{P}[\Upsilon] = \lim_{n\longrightarrow \infty}\frac{
+\Upsilon(n) }{n }.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+P[<IMG
+ width="18" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.gif"
+ ALT="$\displaystyle \Upsilon$">] = <IMG
+ width="48" height="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img332.gif"
+ ALT="$\displaystyle \lim_{n\longrightarrow \infty}^{}$"><IMG
+ width="46" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img331.gif"
+ ALT="$\displaystyle {\frac{\Upsilon(n) }{n}}$">.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.3)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Simplificando un poco el problema,  cada una de las repeticiones
+del experimento que se realicen en el contexto citado puede verse
+como un ensayo de Bernoulli donde el &#233;xito coincide con la
+ocurrencia de <IMG
+ width="18" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.gif"
+ ALT="$ \Upsilon$">. As&#237; el n&#250;mero de &#233;xitos <I>X</I> en los
+<I>n</I> ensayos del experimento es una variable aleatoria binomial en
+la cual la probabilidad de &#233;xito es un valor desconocido <I>p</I>.
+Para esta variable sabemos que la media es <I>np</I> y la varianza es
+<I>np</I>(1 - <I>p</I>) (<I>teorema</I> <A HREF="node27.html#MedVarBi">15</A>).
+
+<P>
+Si consideramos la variable aleatoria  <I>Y</I> = <I>X </I>/ <I>n</I> es muy sencillo
+demostrar que la esperanza de <I>Y</I> es&nbsp;<br>
+ <I>np</I>/<I>n</I> = <I>p</I> y que la varianza
+es <!-- MATH
+ $(np(1-p))/n^2 = p(1-p)/n$
+ -->
+(<I>np</I>(1 - <I>p</I>))/<I>n</I><SUP>2</SUP> = <I>p</I>(1 - <I>p</I>)/<I>n</I>.
+
+<P>
+Aplicando la desigualdad de Chebyshev a <I>Y</I> con <!-- MATH
+ $t=\epsilon$
+ -->
+<I>t</I> = <IMG
+ width="12" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.gif"
+ ALT="$ \epsilon$">
+obtenemos:
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+\mathop{P}\left[ \left|\frac{X}{n}-p \right| \geq \epsilon
+\right] \leq \frac{p(1-p)}{n\epsilon^2}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+P<IMG
+ width="15" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.gif"
+ ALT="$\displaystyle \left[\vphantom{ \left\vert\frac{X}{n}-p \right\vert \geq \epsilon
+}\right.$"><IMG
+ width="12" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.gif"
+ ALT="$\displaystyle \left\vert\vphantom{\frac{X}{n}-p }\right.$"><IMG
+ width="24" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img336.gif"
+ ALT="$\displaystyle {\frac{X}{n}}$"> - <I>p</I><IMG
+ width="12" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img337.gif"
+ ALT="$\displaystyle \left.\vphantom{\frac{X}{n}-p }\right\vert$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> <IMG
+ width="12" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\displaystyle \epsilon$"><IMG
+ width="15" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img338.gif"
+ ALT="$\displaystyle \left.\vphantom{ \left\vert\frac{X}{n}-p \right\vert \geq \epsilon
+}\right]$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="69" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.gif"
+ ALT="$\displaystyle {\frac{p(1-p)}{n\epsilon^2}}$">.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.4)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Es decir el l&#237;mite (<A HREF="node37.html#DefiProb">6.3</A>) existe o dicho en palabras
+algo m&#225;s simples dada cualquier precisi&#243;n <IMG
+ width="12" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.gif"
+ ALT="$ \epsilon$"> se puede
+encontrar un valor <I>n</I> de manera que el cociente &#233;xitos  entre
+el total de ensayos est&#233; tan cerca del valor <I>p</I> desconocido
+como queramos.
+
+<P>
+En cierta forma  esta  &#250;ltima desigualdad da legitimidad al
+proceso estad&#237;stico que se ha citado en la <I>definici&#243;n
+</I>(<a HREF="node09.html#ProbEst">10</a>), pues garantiza que el proceso descrito en esta
+definici&#243;n en realidad converge al valor de la probabilidad del
+evento.
+
+<P>
+Por supuesto que no resuelve en forma simple el problema
+operacional de saber cu&#225;l debe ser el n&#250;mero de repeticiones
+del experimento necesarias para obtener aproximaciones precisas
+de la probabilidad buscada. Se puede utilizar la desigualdad de
+Chebyshev para obtener aproximaciones del valor de <I>n</I> pero el
+teorema del l&#237;mite central, que abordaremos en la secci&#243;n
+siguiente ser&#225; de mayor utilidad en ese sentido.
+
+<P>
+Las conclusiones que se han obtenido hasta ahora se resumen en el
+siguiente teorema conocido como una forma d&#233;bil de la <EM>ley
+de los grandes n&#250;meros</EM> [<A
+ HREF="node43.html#Allen">2</A>].
+
+<P>
+<BR>
+<IMG
+ width="555" height="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img340.gif"
+ ALT="\begin{Teor}Sea $\Upsilon$\ un
+evento y $ \Upsilon(n)$\ en n\'umero de ocurrenci...
+...ciones del experimento. Entonces para todo $\epsilon
+\geq 0$\ se tiene\end{Teor}">
+<BR>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+\lim_{n\longrightarrow\infty}\mathop{P}\left[ \left|\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]\right| \geq \epsilon
+\right] = 0.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="48" height="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img332.gif"
+ ALT="$\displaystyle \lim_{n\longrightarrow \infty}^{}$">P<IMG
+ width="15" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.gif"
+ ALT="$\displaystyle \left[\vphantom{ \left\vert\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]\right\vert \geq \epsilon
+}\right.$"><IMG
+ width="12" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img342.gif"
+ ALT="$\displaystyle \left\vert\vphantom{\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]}\right.$"><IMG
+ width="46" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img331.gif"
+ ALT="$\displaystyle {\frac{\Upsilon(n) }{n}}$"> - P[<IMG
+ width="18" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.gif"
+ ALT="$\displaystyle \Upsilon$">]<IMG
+ width="12" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img343.gif"
+ ALT="$\displaystyle \left.\vphantom{\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]}\right\vert$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> <IMG
+ width="12" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\displaystyle \epsilon$"><IMG
+ width="15" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img344.gif"
+ ALT="$\displaystyle \left.\vphantom{ \left\vert\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]\right\vert \geq \epsilon
+}\right]$"> = 0.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.5)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Paralela a la la forma d&#233;bil de la ley de los grandes n&#250;meros
+existe una generalizaci&#243;n que se llama la <EM>Ley de los
+grandes N&#250;meros</EM> cuya justificaci&#243;n est&#225; fuera de los
+objetivos de este curso  [<A
+ HREF="node43.html#Feller">6</A>]  y se enuncia en el
+siguiente teorema:
+
+<P>
+<BR>
+<IMG
+ width="555" height="62" ALIGN="BOTTOM" BORDER="0"
+ SRC="img345.gif"
+ ALT="\begin{Teor}Sean $X_1,X_2,\dots X_n$\ variables aleatorias mutuamente
+independie...
+...nza $\mu=\mathop{E}[X_k]$, entonces para todo
+$\epsilon &gt; 0$\ se tiene\end{Teor}">
+<BR>
+
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+\lim_{n\longrightarrow\infty}\mathop{P}\left[ \left|\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]\right| \geq \epsilon \right] = 0.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="48" height="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img332.gif"
+ ALT="$\displaystyle \lim_{n\longrightarrow \infty}^{}$">P<IMG
+ width="15" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.gif"
+ ALT="$\displaystyle \left[\vphantom{ \left\vert\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]\right\vert \geq \epsilon }\right.$"><IMG
+ width="12" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.gif"
+ ALT="$\displaystyle \left\vert\vphantom{\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]}\right.$"><IMG
+ width="160" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.gif"
+ ALT="$\displaystyle {\frac{X_1+X_2+\dots+X_n}{n}}$"> - <IMG
+ width="15" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.gif"
+ ALT="$\displaystyle \mu$">]<IMG
+ width="12" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img350.gif"
+ ALT="$\displaystyle \left.\vphantom{\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]}\right\vert$"> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> <IMG
+ width="12" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\displaystyle \epsilon$"><IMG
+ width="15" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img351.gif"
+ ALT="$\displaystyle \left.\vphantom{ \left\vert\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]\right\vert \geq \epsilon }\right]$"> = 0.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.6)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Dicho en otras palabras la probabilidad de que el promedio
+<I>S</I><SUB>n</SUB>/<I>n</I> difiera de la esperanza menos que un <IMG
+ width="12" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.gif"
+ ALT="$ \epsilon$">
+cualquiera, tiende a uno.
+
+<P>
+&nbsp;
+  </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

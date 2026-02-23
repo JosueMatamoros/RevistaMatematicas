@@ -1,0 +1,205 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="1" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h1><a NAME="SECTION00240000000000000000"><font size="3">Distribuci&oacute;n de
+objetos indistinguibles</font></a></h1>
+<p>El problema de distribuir <i>r</i> objetos indistinguibles en <i>n</i> celdas,
+<i>r</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img25.gif" ALT="$ \leq$" width="18" height="30">
+<i>n</i>, con a lo sumo un objeto en cada celda es b&aacute;sicamente directo, ya que
+puede reducirse al problema de escoger <i>r</i> entre las <i>n</i> celdas, es
+decir&nbsp;
+<p align="center">&nbsp;<img ALIGN="MIDDLE" BORDER="0" SRC="img143.gif" ALT="$ \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle r} \\
+\end{array} \!\!\! }\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img144.gif" ALT="$ \begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle r} \\
+\end{array}$" width="29" height="60"><img ALIGN="MIDDLE" BORDER="0" SRC="img145.gif" ALT="$ \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle r} \\
+\end{array} \!\!\! }\right)$" width="19" height="64">.
+<p>El problema de poner <i>r</i> objetos en <i>n</i> celdas donde no hay
+restricci&oacute;n en el n&uacute;mero de objetos en cada celda es ligeramente diferente.
+Una manera de abordarlo que resulta sencilla es la siguiente: dados los <i>r</i>
+objetos, una manera de ubicarlos en las celdas es intercalar entre ellos <i>n</i>
+- 1 banderillas, los objetos antes de la primer banderilla, pueden ser ninguno,
+corresponden a la primera celda, los objetos entre la primera y segunda
+corresponden a los objetos en la segunda celda y as&iacute; sucesivamente. En otras
+palabras el n&uacute;mero de maneras de colocar <i>r</i> objetos indistinguibles en <i>n</i>
+celdas es:
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <!-- MATH
+ \begin{equation}
+{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n+r-1}  \\
+               { \scriptstyle  n-1} \\
+          \end{array}
+        \!\!\! \right) }.
+\end{equation}
+ -->
+  <table WIDTH="100%" ALIGN="CENTER">
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER" NOWRAP><img ALIGN="MIDDLE" BORDER="0" SRC="img146.gif" ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n+r-1} \\
+{ \scriptstyle n-1} \\
+\end{array} \!\!\! }\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img147.gif" ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle n+r-1} \\
+{ \scriptstyle n-1} \\
+\end{array}$" width="63" height="60"><img ALIGN="MIDDLE" BORDER="0" SRC="img148.gif" ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n+r-1} \\
+{ \scriptstyle n-1} \\
+\end{array} \!\!\! }\right)$" width="19" height="64">.</td>
+      <td WIDTH="10" ALIGN="RIGHT">(2.4)</td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p>Usando adecuadamente esta &uacute;ltima forma se obtiene el siguiente teorema:
+<p><br>
+<img ALIGN="BOTTOM" BORDER="0" SRC="img149.gif" ALT="\begin{Teor}El n\'umero de $r-$combinaciones con repetici\'on sobre un conjunto ...
+... { \scriptstyle r} \\
+\end{array} \!\!\! \right) . \end{displaymath}\end{Teor}" width="556" height="86"><br>
+<p>&nbsp;
+<p><i>Ejemplo 10</i>
+<p>&nbsp;
+<p>Si <i>n</i> personas se colocan aleatoriamente en <i>n</i> oficinas, ¿cu&aacute;l
+es la probabilidad de que quede exactamente una oficina vac&iacute;a?
+<p><b>Soluci&oacute;n</b>
+<p>El total de posibles ubicaciones de las <i>n</i> personas es <i>n</i><sup>n</sup>,
+pero para que exactamente una oficina quede vac&iacute;a el an&aacute;lisis debe ser
+cuidadoso. Se debe elegir una oficina para que quede vac&iacute;a lo cual puede
+hacerse de <i>n</i> formas. Luego debe elegirse otra para que quede con dos
+personas; esta puede elegirse de <i>n</i> - 1 maneras. Una vez hecho esto se
+eligen dos personas para la segunda oficina y las restantes se ubican una en
+cada una de las <i>n</i> - 2 oficinas restantes. Luego la probabilidad pedida es:
+<!-- MATH
+ \begin{displaymath}
+\frac{n(n-1)
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+               { \scriptstyle  2} \\
+          \end{array}
+        \!\!\! \right) (n-2)!}{n^n} = \frac{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle  2} \\
+          \end{array}
+        \!\!\! \right) n!}{n^n}.
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <img ALIGN="MIDDLE" BORDER="0" SRC="img150.gif" ALT="$\displaystyle {\frac{n(n-1)
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle 2} \\
+\end{array} \!\!\! \right) (n-2)!}{n^n}}$" width="169" height="116"> = <img ALIGN="MIDDLE" BORDER="0" SRC="img151.gif" ALT="$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle 2} \\
+\end{array} \!\!\! \right) n!}{n^n}}$" width="58" height="116">.
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;
+<p><i>Ejemplo 11</i>
+<p>&nbsp;
+<p>Si un arreglo binario de doce elementos contiene 8 unos y 4 ceros, ¿cu&aacute;l es
+la probabilidad de que los cuatro ceros queden juntos?
+<p><b>Soluci&oacute;n</b>
+<p>Solo hay 9 arreglos en los cuales los cuatro ceros quedan juntos, y el n&uacute;mero
+de posibles arreglos es <!-- MATH
+ $12!/(4!8!)$
+ -->
+ 12!/(4!8!), luego la probabilidad pedida es: <!-- MATH
+ \begin{displaymath}
+\frac{9}{
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle 12}  \\
+               { \scriptstyle  8} \\
+          \end{array}
+        \!\!\! \right) }.
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <img ALIGN="MIDDLE" BORDER="0" SRC="img152.gif" ALT="$\displaystyle {\frac{9}{\left( \!\!\!\begin{array}{c}
+{\scriptstyle 12} \\
+{ \scriptstyle 8} \\
+\end{array} \!\!\! \right) }}$" width="45" height="99">.
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;
+<p><i>Ejemplo 12</i>
+<p>&nbsp;
+<p>En un grupo de probabilidad hay inscritas <i>n</i> parejas (hombre, mujer)
+para hacer una tarea. El profesor decide separar todas las parejas y formar
+nuevamente <i>n</i> parejas, pero en forma totalmente aleatoria. ¿Cu&aacute;l es la
+probabilidad de que se formen las mismas parejas originales? ¿Cu&aacute;l es la
+probabilidad de que se formen s&oacute;lo parejas (hombre, mujer)?
+<p><b>Soluci&oacute;n</b>
+<p>Para que se formen las mismas parejas originales solo se necesita calcular cu&aacute;l
+es el n&uacute;mero total de parejas que se pueden formar. Si se calcula este total de
+parejas como el n&uacute;mero de permutaciones de las 2<i>n</i> personas se tiene un
+conteo redundante en los dos sentidos siguientes. Primero este conteo est&aacute;
+tomando en cuenta el orden en que las <i>n</i> parejas quedan agrupadas y
+segundo este conteo est&aacute; tomando en cuenta el orden en que se ubica cada pareja,
+por lo tanto el n&uacute;mero de posibles parejas es
+<p><!-- MATH
+ \begin{displaymath}
+\frac{(2n)!}{2^nn!}.
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <img ALIGN="MIDDLE" BORDER="0" SRC="img153.gif" ALT="$\displaystyle {\frac{(2n)!}{2^nn!}}$" width="46" height="57">.
+</div>
+<p>&nbsp;</p>
+La probabilidad solicitada en la primera parte es el inverso de este n&uacute;mero.
+<p>La segunda probabilidad pedida puede resolverse usando el mismo esquema
+anterior, y se puede razonar as&iacute;. Si los hombres est&aacute;n fijos en las posiciones
+<!-- MATH
+ $1,3,5,\dots,$
+ -->
+ 1, 3, 5,..., las mujeres se pueden ubicar en <i>n</i>! formas lo cual da todas
+las posibles maneras de hacer parejas. Luego la probabilidad pedida es: <!-- MATH
+ \begin{displaymath}
+\frac{n!}{{(2n)!}/{2^nn!} }= \frac{2^n(n!)^2}{(2n)!}.
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <img ALIGN="MIDDLE" BORDER="0" SRC="img154.gif" ALT="$\displaystyle {\frac{n!}{{(2n)!}/{2^nn!} }}$" width="88" height="56">
+  = <img ALIGN="MIDDLE" BORDER="0" SRC="img155.gif" ALT="$\displaystyle {\frac{2^n(n!)^2}{(2n)!}}$" width="62" height="60">.
+</div>
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+</BODY>
+</HTML>

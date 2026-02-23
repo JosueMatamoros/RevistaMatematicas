@@ -1,0 +1,13 @@
+<!DOCTYPE HTML><HTML><HEAD></HEAD><BODY>
+
+<p align="center">
+
+<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE="GraficaFuncionesA.class" 
+archive="GraficaFuncionesA.jar"
+archive=""
+CODEBASE="./" 
+WIDTH=400 HEIGHT=355>
+<PARAM NAME="initialExpression" VALUE="e^(1- x) + 3*x">
+</applet--> </p>
+</BODY></HTML>

@@ -1,0 +1,481 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="9" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h2><a NAME="SECTION00124000000000000000"><font size="3">Probabilidad
+Condicional</font></a></h2>
+Cuando los eventos no son independientes y ocurren en forma sucesiva la
+ocurrencia de uno de ellos puede influir en la del otro. Este tipo de
+probabilidad se llama <em>probabilidad condicional.</em>
+<p>Por ejemplo hay tres cajas <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub> y <i>c</i><sub>3</sub>
+tales que la caja <i>c</i><sub>1</sub> contiene 2 esferas azules y 2 rojas, la
+caja <i>c</i><sub>2</sub> contiene 3 esferas azules y 1 roja y la caja <i>c</i><sub>3</sub>
+contiene 2 esferas azules y 3 rojas. Si se va a extraer una esfera de una caja,
+esta esfera puede ser azul o roja; no obstante la probabilidad de que sea de uno
+u otro color depende de cual de las cajas se extrae esa esfera. De hecho los
+eventos <i>B</i> elegir una de las cajas y <i>A</i> extraer una bola azul de la
+caja seleccionada no son independientes.
+<p>La probabilidad de que un evento <i>A</i> ocurra dado que un evento <i>B</i>
+ha ocurrido se llamar&aacute; probabilidad condicional de <i>A</i> dado <i>B</i>. Se
+denotar&aacute; por <!-- MATH 
+ $\mathop{P}[A\setminus B].$ 
+ -->
+ <b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img18.gif" ALT="$ \setminus$" width="13" height="34">
+ <i>B</i>]</b>. Esta probabilidad se puede calcular recurriendo a la regla:<br>
+<div ALIGN="CENTER" style="width: 596; height: 63">
+  <a NAME="ProbCond"></a><!-- MATH 
+ \begin{eqnarray} 
+\mathop{P}[B\setminus A]=\frac{\mathop{P}[A\cap B]}{  \mathop{P}[A]} 
+\end{eqnarray} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="550">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="550">
+        <p align="center"><b>P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img48.gif" ALT="$\displaystyle {\frac{\mathop{P}[A\cap B]}{\mathop{P}[A]}}$" width="78" height="57"></b></p>
+      </td>
+      <td WIDTH="35" ALIGN="RIGHT">(1.7)</td>
+    </tr>
+  </table>
+</div>
+&nbsp;
+<p>Dos eventos <i>A</i> y <i>B</i> son independientes si se cumple: <!-- MATH 
+ \begin{displaymath} 
+\mathop{P}[B\setminus A]=\mathop{P}[B] 
+\mbox{ y  }\mathop{P}[A\setminus B]=\mathop{P}[A]. 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b>P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+  <i>A</i>] = P[<i>B</i>]</b> y <b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+  <i>B</i>] = P[<i>A</i>]</b>.
+</div>
+<p>Una manera informal de darle alguna justificaci&oacute;n a esta regla es la
+siguiente. Si en un espacio muestral conocemos de previo que ha ocurrido un
+evento, <i>B</i>, y queremos calcular la probabilidad de que ocurra otro evento <i>A</i>
+entonces, simplificando el c&aacute;lculo de la probabilidad a la raz&oacute;n: total de
+casos que verifican el evento entre el total de casos, se tiene que como ya ha
+ocurrido <i>B</i> el espacio muestral ahora puede reducirse a <i>B</i> y los
+casos que verifican el evento ya no son los elementos de <i>A</i> sino los
+elementos de <i>A</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+<i>B</i> es decir:
+<p><br>
+<div ALIGN="CENTER" style="width: 550; height: 63">
+  <!-- MATH 
+ \begin{eqnarray} 
+\mathop{P}[A\setminus B] =\frac{ \mathop{P}[A\cap B]}{ 
+\mathop{P}[B]}. 
+\end{eqnarray} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="550">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="550">
+        <p align="center"><b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img49.gif" ALT="$\displaystyle {\frac{\mathop{P}[A\cap B]}{\mathop{P}[B]}}$" width="78" height="57"></b>.</p>
+      </td>
+      <td WIDTH="33" ALIGN="RIGHT">(1.8)</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Si A y B son eventos no necesariamente independientes se tiene:<br>
+<div ALIGN="CENTER" style="width: 550; height: 40">
+  <!-- MATH 
+ \begin{eqnarray} 
+\mathop{P}[A\cap B]=\mathop{P}[A] \mathop{P}[A\setminus B]. 
+\end{eqnarray} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="587">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="545">
+        <p align="center"><b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>B</i>] = P[<i>A</i>]P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>B</i>]</b>.</p>
+      </td>
+      <td WIDTH="32" ALIGN="RIGHT">(1.9)</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Esta regla se generaliza en el siguiente sentido. Si <!-- MATH 
+ $A_1,A_2,\dots,A_n$ 
+ -->
+ <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub>,..., <i>A</i><sub>n</sub> son
+eventos entonces la probabilidad de la ocurrencia del evento compuesto <i>A</i><sub>1</sub>
+y <i>A</i><sub>2</sub> y ... y <i>A</i><sub>n</sub>, es decir todos los eventos,
+cumple :
+<p><br>
+<div ALIGN="CENTER" style="width: 515; height: 74">
+  <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P} [ A_1\cap A_2 \cap\dots\cap A_{n-1} \cap A_n] = \\ 
+\mathop{P}[A_1] 
+ \mathop{P}[A_2\setminus A_1]  \mathop{P}[A_3\setminus (A_1\cap A_2)] 
+ \dots\\ 
+ \mathop{P} [A_n \setminus (A_1\cap A_2  \cap\dots\cap A_{n-1})]. 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="183">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="center" width="554">
+        <p align="center"><b>P[<i>A</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>2</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        ... <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>n - 1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>n</sub>] =</b></p>
+      </td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="center" width="550">
+        <p align="right"><b>P[<i>A</i><sub>1</sub>]P[<i>A</i><sub>2</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i><sub>1</sub>]P[<i>A</i><sub>3</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        (<i>A</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>2</sub>)]...P[<i>A</i><sub>n</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        (<i>A</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>2</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        ... <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>n - 1</sub>)]</b>.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p><i>Ejemplo 4</i>
+<p>Suponga que se lanzan un par de dados. Calcule la probabilidad de que ocurran
+cualquiera de los siguiente eventos. <i>A</i> : el primero de los dados cae
+impar, <i>B</i> : el segundo cae impar y <i>C</i> : la suma de ambas caras es
+impar.
+<p><b>Soluci&oacute;n</b>
+<p>No es dif&iacute;cil comprobar las siguientes probabilidades:<br>
+<div ALIGN="CENTER" style="width: 550; height: 212">
+  <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[A] = \frac{1}{2} & 
+\mathop{P}[B] =\frac{1}{2}\\ 
+\mathop{P}[A\setminus B] = \frac{1}{2} & 
+\mathop{P}[B\setminus A] = \frac{1}{2}\\ 
+\mathop{P}[C] = \frac{1}{2} & 
+\mathop{P}[C\setminus A] = \frac{1}{2}\\ 
+\mathop{P}[C\setminus B] = \frac{1}{2}& 
+\mathop{P}[A \cap B \cap C] = 0 \\ 
+\mathop{P}[A]\mathop{P}[B]\mathop{P}[C] = \frac{1}{8} 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="260">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="260"><b>P[<i>A</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+      <td width="30"><b>&nbsp;</b></td>
+      <td ALIGN="LEFT" NOWRAP width="260"><b>P[<i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="260"><b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+      <td width="30"><b>&nbsp;</b></td>
+      <td ALIGN="LEFT" NOWRAP width="260"><b>P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="260"><b>P[<i>C</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+      <td width="30"><b>&nbsp;</b></td>
+      <td ALIGN="LEFT" NOWRAP width="260"><b>P[<i>C</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="260"><b>P[<i>C</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"></b></td>
+      <td width="30"><b>&nbsp;</b></td>
+      <td ALIGN="LEFT" NOWRAP width="260"><b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>C</i>] = 0</b></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT" width="260"><b>P[<i>A</i>]P[<i>B</i>]P[<i>C</i>]
+        = <img ALIGN="MIDDLE" BORDER="0" SRC="img51.gif" ALT="$\displaystyle {\textstyle\frac{1}{8}}$" width="15" height="38"></b></td>
+    </tr>
+  </table>
+</div>
+<p>Se tiene que los pares de eventos <i>A</i>, <i>C</i> y <i>B</i>, <i>C</i> son
+independientes, pero <i>A</i>, <i>B</i> y <i>C</i> no lo son.
+<p>&nbsp;
+<p><i>Ejemplo 5</i>
+<p>Un carpintero tiene tornillos en dos cajas una azul y otra roja. &Eacute;l toma al
+azar tonillos de cualquiera de las dos cajas, pero la caja azul est&aacute; un poco m&aacute;s
+cerca por lo que toma tornillos de ella dos de cada tres veces. La caja azul
+contiene cuatro tornillos de 15 mm y cinco de 20 mm y la caja roja contiene seis
+de 15 mm y dos de 20 mm.
+<ol>
+  <li>Si en las dos siguientes b&uacute;squedas de tornillo el carpintero toma un
+    tornillo de cada caja cu&aacute;l es la probabilidad de que ambos sean del mismo
+    tipo.</li>
+  <li>Si el carpintero necesita dos tornillos y los toma en forma sucesiva de
+    alguna de la cajas cu&aacute;l es la probabilidad de que los dos sean del mismo
+    tipo</li>
+</ol>
+<p><b>Soluci&oacute;n</b>
+<ol>
+  <li>Sea <i>A</i> el evento: toma un tornillo de 15 mm de cada caja y <i>B</i>
+    el evento: toma un tornillo de 20 mm de cada caja.
+    <p>El evento A no es simple de hecho, es el evento compuesto <!-- MATH 
+ $A_1\cap A_2$ 
+ -->
+    <b><i>A</i><sub>1</sub> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+    <i>A</i><sub>2</sub> </b>donde <i>A</i><sub>1</sub> es toma un tornillo de
+    15 mm de la caja 1 y <i>A</i><sub>2</sub> es toma un tornillo de 15 mm de la
+    caja 2, eventos independientes. <!-- MATH 
+ \begin{displaymath} 
+\mathop{P}[A]=\mathop{P}[A_1\cap A_2]= 
+\mathop{P}[A_1]\mathop{P}[A_2]=\frac{4}{9}\frac{6}{8}=\frac{1}{3}. 
+\end{displaymath} 
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>P[<i>A</i>] = P[<i>A</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+      <i>A</i><sub>2</sub>] = P[<i>A</i><sub>1</sub>]P[<i>A</i><sub>2</sub>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img52.gif" ALT="$\displaystyle {\textstyle\frac{4}{9}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img53.gif" ALT="$\displaystyle {\textstyle\frac{6}{8}}$" width="15" height="38">
+      = <img ALIGN="MIDDLE" BORDER="0" SRC="img54.gif" ALT="$\displaystyle {\textstyle\frac{1}{3}}$" width="15" height="38"></b>.
+    </div>
+    <p>&nbsp;</p>
+    Similarmente. <!-- MATH 
+ \begin{displaymath} 
+\mathop{P}[B]=\frac{5}{9}\frac{2}{8}=\frac{10}{72} 
+\end{displaymath} 
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>P[<i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img55.gif" ALT="$\displaystyle {\textstyle\frac{5}{9}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img56.gif" ALT="$\displaystyle {\textstyle\frac{2}{8}}$" width="15" height="38">
+      = <img ALIGN="MIDDLE" BORDER="0" SRC="img57.gif" ALT="$\displaystyle {\textstyle\frac{10}{72}}$" width="22" height="38"></b>
+    </div>
+    <p>&nbsp;</p>
+    <p>Como <i>A</i> y <i>B</i> son excluyentes la probabilidad pedida es:
+    <p><!-- MATH 
+ \begin{displaymath} 
+\mathop{P}[A\cup B]=\mathop{P}[A]+\mathop{P}[B]= 
+\frac{1}{3}+\frac{10}{72}=\frac{34}{72}. 
+\end{displaymath} 
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      <i>B</i>] = P[<i>A</i>] + P[<i>B</i>] = <img ALIGN="MIDDLE" BORDER="0" SRC="img54.gif" ALT="$\displaystyle {\textstyle\frac{1}{3}}$" width="15" height="38">
+      + <img ALIGN="MIDDLE" BORDER="0" SRC="img57.gif" ALT="$\displaystyle {\textstyle\frac{10}{72}}$" width="22" height="38">
+      = <img ALIGN="MIDDLE" BORDER="0" SRC="img58.gif" ALT="$\displaystyle {\textstyle\frac{34}{72}}$" width="22" height="38"></b>.
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</li>
+  <li>En este caso el evento pedido puede descomponerse como sigue. Sea <i>M</i>
+    el evento toma los tornillos de la caja azul y <i>N</i> toma los tornillos
+    de la caja roja. Sean <i>P</i><sub>1</sub> el primer tornillo es de 15 mm, <i>P</i><sub>2</sub>
+    el segundo tornillo es de 15 mm, <i>Q</i><sub>1</sub> el primer tornillo es
+    de 20 mm y <i>Q</i><sub>2</sub> el segundo tornillo es de 20 mm. La
+    probabilidad buscada es: <em>elegir de la caja azul y tomar 2 tornillos
+    iguales o elegir de la caja roja y tomar 2 tornillos iguales</em>
+    <p><br>
+    </p>
+    <div ALIGN="CENTER" style="width: 519; height: 171">
+      <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[\{(P1\cap P_2) \cup (Q_1\cap Q_2)\}\cap M\} \cup 
+\{(P1\cap P_2) \cup (Q_1\cap Q_2)\}\cap N\}]=  \\ 
+    \mathop{P}[M]\mathop{P}[\{(P1\cap P_2) \cup Q_1\cap Q_2\}\setminus M] +\\ 
+\mathop{P}[N]\mathop{P}[\{(P1\cap P_2) \cup Q_1\cap Q_2\}\setminus N] = \\ 
+\frac{2}{3}\left(\frac{4}{9}\frac{3}{8}+\frac{5}{9}\frac{4}{8} 
+\right)+ 
+\frac{1}{3}\left(\frac{6}{8}\frac{5}{7}+\frac{2}{8}\frac{1}{7}\right) 
+= \frac{92}{189}. 
+\end{eqnarray*} 
+ -->
+      <table CELLPADDING="0" ALIGN="CENTER" WIDTH="550">
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center" width="550"><b>P[{(<i>P</i>1 <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>P</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            (<i>Q</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>Q</i><sub>2</sub>)} <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>M</i>} <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            {(<i>P</i>1 <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>P</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            (<i>Q</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>Q</i><sub>2</sub>)} <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>N</i>}]&nbsp;</b></td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center" width="541">
+            <p align="center"><b>= P[<i>M</i>]P[{(<i>P</i>1 <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>P</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            <i>Q</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>Q</i><sub>2</sub>} <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+            <i>M</i>] + P[<i>N</i>]P[{(<i>P</i>1 <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>P</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            <i>Q</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>Q</i><sub>2</sub>} <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+            <i>N</i>]</b></p>
+          </td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center" width="541"><b>= P[<i>N</i>]P[{(<i>P</i>1 <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>P</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            <i>Q</i><sub>1</sub> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>Q</i><sub>2</sub>} <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+            <i>N</i>]</b></td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center" width="541"><b>= <img ALIGN="MIDDLE" BORDER="0" SRC="img59.gif" ALT="$\displaystyle {\textstyle\frac{2}{3}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img60.gif" ALT="$\displaystyle \left(\vphantom{\frac{4}{9}\frac{3}{8}+\frac{5}{9}\frac{4}{8} 
+}\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img52.gif" ALT="$\displaystyle {\textstyle\frac{4}{9}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img61.gif" ALT="$\displaystyle {\textstyle\frac{3}{8}}$" width="15" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img55.gif" ALT="$\displaystyle {\textstyle\frac{5}{9}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img62.gif" ALT="$\displaystyle {\textstyle\frac{4}{8}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img63.gif" ALT="$\displaystyle \left.\vphantom{\frac{4}{9}\frac{3}{8}+\frac{5}{9}\frac{4}{8} 
+}\right)$" width="18" height="55"> + <img ALIGN="MIDDLE" BORDER="0" SRC="img54.gif" ALT="$\displaystyle {\textstyle\frac{1}{3}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img64.gif" ALT="$\displaystyle \left(\vphantom{\frac{6}{8}\frac{5}{7}+\frac{2}{8}\frac{1}{7}}\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img53.gif" ALT="$\displaystyle {\textstyle\frac{6}{8}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img65.gif" ALT="$\displaystyle {\textstyle\frac{5}{7}}$" width="15" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img56.gif" ALT="$\displaystyle {\textstyle\frac{2}{8}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img66.gif" ALT="$\displaystyle {\textstyle\frac{1}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img67.gif" ALT="$\displaystyle \left.\vphantom{\frac{6}{8}\frac{5}{7}+\frac{2}{8}\frac{1}{7}}\right)$" width="18" height="55">
+            = <img ALIGN="MIDDLE" BORDER="0" SRC="img68.gif" ALT="$\displaystyle {\textstyle\frac{92}{189}}$" width="29" height="38">.</b></td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;</li>
+</ol>
+<p><i>Ejemplo 6</i>
+<p>&nbsp;
+<p>El siguiente ejemplo resulta interesante porque adem&aacute;s de ser un problema en
+cierta forma cl&aacute;sico de las probabilidades nos muestra que eventualmente
+nuestra intuici&oacute;n en probabilidades debe ser mucho m&aacute;s cautelosa. Nos
+referiremos al mismo como el problema de los cumplea&ntilde;os y aparece en buena
+parte de los libros de probabilidad.
+<p>Suponga que hay <i>n</i> estudiantes en un sal&oacute;n de clase, ninguno nacido en
+29 de febrero, y que el a&ntilde;o en el que estamos no es bisiesto.
+<p>Por el principio del palomar cualquiera sabe que si <i>n</i> &gt; 365,
+entonces al menos dos personas tienen la misma fecha de cumplea&ntilde;os; en el
+sentido que cumplen el mismo d&iacute;a del mismo mes. Supongamos que <!-- MATH 
+ $2\leq n<365,$ 
+ -->
+ 2 <img ALIGN="MIDDLE" BORDER="0" SRC="img25.gif" ALT="$ \leq$" width="18" height="30">
+<i>n</i> &lt; 365, y demos respuesta a las preguntas siguientes:
+<ul>
+  <li>Cu&aacute;l es la probabilidad, <i>C</i>, de que al menos dos personas tengan la
+    misma fecha de cumplea&ntilde;os.</li>
+  <li>Cu&aacute;l es el m&iacute;nimo valor de <i>n</i> para que esta probabilidad sea mayor
+    que 0.5.</li>
+</ul>
+<p><b>Soluci&oacute;n</b>
+<p>Hay en total 365<sup>n</sup> posibilidades para que ocurran los cumplea&ntilde;os
+de los <i>n</i> estudiantes. La probabilidad de que dos personas cumplan en la
+misma fecha es el complemento de que todos cumplan en d&iacute;as diferentes del a&ntilde;o.
+Tomando 1 para el primero de enero y 365 para el 31 de diciembre se tiene que la
+probabilidad del evento <i>E</i>: ning&uacute;n par de personas cumplan el mismo d&iacute;a
+es:
+<p><br>
+<div ALIGN="CENTER">
+  <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[E]  & = & \frac{(365)(364)\dots(365-n+1)}{365^n}\\ 
+         & = & \left(1-\frac{1}{365}\right)\left(1-\frac{2}{365}\right) 
+\dots\left(1-\frac{n-1}{365}\right). 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>P[<i>E</i>]</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img69.gif" ALT="$\displaystyle {\frac{(365)(364)\dots(365-n+1)}{365^n}}$" width="215" height="57"></b></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img70.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{1}{365}}\right.$" width="18" height="55">1
+        - <img ALIGN="MIDDLE" BORDER="0" SRC="img71.gif" ALT="$\displaystyle {\textstyle\frac{1}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img72.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{1}{365}}\right)$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img73.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{2}{365}}\right.$" width="18" height="55">1
+        - <img ALIGN="MIDDLE" BORDER="0" SRC="img74.gif" ALT="$\displaystyle {\textstyle\frac{2}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img75.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{2}{365}}\right)$" width="18" height="55">...<img ALIGN="MIDDLE" BORDER="0" SRC="img76.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{n-1}{365}}\right.$" width="18" height="55">1
+        - <img ALIGN="MIDDLE" BORDER="0" SRC="img77.gif" ALT="$\displaystyle {\frac{n-1}{365}}$" width="49" height="54"><img ALIGN="MIDDLE" BORDER="0" SRC="img78.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{n-1}{365}}\right)$" width="18" height="55">.</b></td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>La probabilidad solicitada es <!-- MATH 
+ \begin{displaymath} 
+\mathop{P}[C]=1- 
+\left(1-\frac{1}{365}\right)\left(1-\frac{2}{365}\right) 
+\dots\left(1-\frac{n-1}{365}\right). 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b>P[<i>C</i>] = 1 - <img ALIGN="MIDDLE" BORDER="0" SRC="img70.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{1}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img71.gif" ALT="$\displaystyle {\textstyle\frac{1}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img72.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{1}{365}}\right)$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img73.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{2}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img74.gif" ALT="$\displaystyle {\textstyle\frac{2}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img75.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{2}{365}}\right)$" width="18" height="55">...<img ALIGN="MIDDLE" BORDER="0" SRC="img76.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{n-1}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img77.gif" ALT="$\displaystyle {\frac{n-1}{365}}$" width="49" height="54"></b><img ALIGN="MIDDLE" BORDER="0" SRC="img78.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{n-1}{365}}\right)$" width="18" height="55">.
+</div>
+<p>&nbsp;</p>
+<p>La segunda pregunta se responde resolviendo la desigualdad <!-- MATH 
+ \begin{displaymath} 
+1- \left(1-\frac{1}{365}\right)\left(1-\frac{2}{365}\right) 
+\dots\left(1-\frac{n-1}{365}\right) \geq 0.5, 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b>1 - <img ALIGN="MIDDLE" BORDER="0" SRC="img70.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{1}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img71.gif" ALT="$\displaystyle {\textstyle\frac{1}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img72.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{1}{365}}\right)$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img73.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{2}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img74.gif" ALT="$\displaystyle {\textstyle\frac{2}{365}}$" width="29" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img75.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{2}{365}}\right)$" width="18" height="55">...<img ALIGN="MIDDLE" BORDER="0" SRC="img76.gif" ALT="$\displaystyle \left(\vphantom{1-\frac{n-1}{365}}\right.$" width="18" height="55">1
+  - <img ALIGN="MIDDLE" BORDER="0" SRC="img77.gif" ALT="$\displaystyle {\frac{n-1}{365}}$" width="49" height="54"><img ALIGN="MIDDLE" BORDER="0" SRC="img78.gif" ALT="$\displaystyle \left.\vphantom{1-\frac{n-1}{365}}\right)$" width="18" height="55">
+  <img ALIGN="MIDDLE" BORDER="0" SRC="img79.gif" ALT="$\displaystyle \geq$" width="18" height="30">
+  0.5</b>,
+</div>
+<p>&nbsp;</p>
+por ejemplo se pueden tabular algunos valores y obtener la respuesta.
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <table CELLPADDING="3" BORDER="1">
+    <tr>
+      <td ALIGN="LEFT"><i>n</i></td>
+      <td ALIGN="LEFT"><!-- MATH
+ $\mathop{P}[C]$
+ -->
+        P[<i>C</i>]</td>
+    </tr>
+    <tr>
+      <td ALIGN="LEFT">15</td>
+      <td ALIGN="LEFT">0.253</td>
+    </tr>
+    <tr>
+      <td ALIGN="LEFT">25</td>
+      <td ALIGN="LEFT">0.568</td>
+    </tr>
+    <tr>
+      <td ALIGN="LEFT">30</td>
+      <td ALIGN="LEFT">0.706</td>
+    </tr>
+    <tr>
+      <td ALIGN="LEFT">40</td>
+      <td ALIGN="LEFT">0.891</td>
+    </tr>
+  </table>
+</div>
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>

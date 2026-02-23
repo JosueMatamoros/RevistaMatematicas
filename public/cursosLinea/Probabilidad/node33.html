@@ -1,0 +1,436 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    function AbrirVentana() {
+      MiVentana=window.open("","Herramientas","width=400 , height=390"); 
+      MiVentana.document.write("<html><head><title>Herramientas</title></head><body>"       
+                               +"<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE='DistrGammaGraf.class' archive='DistrGammaGraf.jar'  CODEBASE='./' WIDTH='385' HEIGHT='372'" 
+                               +"ALIGN='CENTER'></applet-->"
+                               +"</BODY></HTML>");
+     MiVentana.window.document.close();                               
+                               
+    }
+  </SCRIPT>
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="24" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00520000000000000000">
+<font size="3">
+Las distribuciones Gamma</font></A>
+</H1>
+
+<P>
+Muchas  veces, a&#250;n cuando una variable aleatoria  no siga una
+distribuci&#243;n normal es posible que su comportamiento pueda ser
+modelado  con distribuciones que siguen comportamientos
+similares a una normal pero de manera sesgada.
+
+<P>
+Antes de poder estudiar este tipo de distribuciones se hace
+necesario definir una funci&#243;n sumamente importante en el
+estudio de diversos problemas en matem&#225;tica.
+
+<P>
+<BR>
+<IMG
+ width="367" height="57" ALIGN="BOTTOM" BORDER="0"
+ SRC="img292.gif"
+ ALT="\begin{Def}Se define la funci\'on $\Gamma(\alpha)$\ por:
+\begin{displaymath}\Gamma(\alpha)=\int_0^{\infty}x^{\alpha -1} e^{-x}\,dx. \end{displaymath}\end{Def}">
+<BR>
+
+<P>
+Por Ejemplo:
+
+<P>
+ <BR>
+<IMG
+ width="425" height="51" ALIGN="BOTTOM" BORDER="0"
+ SRC="img293.gif"
+ ALT="\begin{truco}
+\begin{displaymath}\Gamma(1)=\int_0^{\infty} e^{-x}\,dx = \lim_{M \longrightarrow
+\infty } -e^{-x}\vert _0^M = 1. \end{displaymath} \end{truco}">
+<BR>
+
+<P>
+Otra propiedad importante se obtiene de aplicar  a <!-- MATH
+ ${\displaystyle \Gamma(\alpha+1)}$
+ -->
+<IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.gif"
+ ALT="$\displaystyle \Gamma$">(<IMG
+ width="16" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$\displaystyle \alpha$">+1) las partes <!-- MATH
+ ${\displaystyle dv =
+x^{\alpha} dx }$
+ -->
+<I>dv</I>=<I>x</I><SUP><IMG
+ width="13" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img295.gif"
+ ALT="$\scriptstyle \alpha$"></SUP><I>dx</I> y <!-- MATH
+ $u = e^{-x}$
+ -->
+<I>u</I> = <I>e</I><SUP>-x</SUP>, para obtener:
+
+<P>
+<IMG
+ width="533" height="51" ALIGN="BOTTOM" BORDER="0"
+ SRC="img296.gif"
+ ALT="\begin{truco}\begin{displaymath}\Gamma(\alpha+1)=\int_0^{\infty}x^{\alpha} e^{-x...
+...M +
+\int_0^{\infty}\alpha x^{\alpha -1} e^{-x}\,dx
+\end{displaymath}\end{truco}">
+<BR>
+
+<P>
+Con un poco de paciencia y  regla
+ de L'Hopital  se puede  demostrar que el primer l&#237;mite en la &#250;ltima
+ expresi&#243;n es 0 mientras que la segunda integral es <!-- MATH
+ $\alpha\Gamma(\alpha).$
+ -->
+<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"><IMG
+ width="15" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.gif"
+ ALT="$ \Gamma$">(<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$">).
+
+<P>
+Con esto la funci&#243;n gamma cumple con la
+ propiedad
+ <!-- MATH
+ $\Gamma(\alpha+1) = (\alpha)\Gamma(\alpha)$
+ -->
+ <b><IMG
+ width="15" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.gif"
+ ALT="$ \Gamma$">(<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"> + 1) = (<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$">)<IMG
+ width="15" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.gif"
+ ALT="$ \Gamma$">(<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$">)</b> y de all&#237; si <I>n</I> es entero
+ <!-- MATH
+ $\Gamma(n)=(n-1)!$
+ -->
+ <b>
+<IMG
+ width="15" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.gif"
+ ALT="$ \Gamma$">(<I>n</I>) = (<I>n</I> - 1)!</b>.
+
+<P>
+Tambi&#233;n, usando algunos argumentos de c&#225;lculo en varias
+variables se puede calcular  que <!-- MATH
+ $\Gamma(\frac{1}{2})=
+\sqrt{\pi}.$
+ -->
+<IMG
+ width="15" height="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.gif"
+ ALT="$ \Gamma$">(<IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img299.gif"
+ ALT="$ {\frac{1}{2}}$">) = <IMG
+ width="30" height="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.gif"
+ ALT="$ \sqrt{\pi}$">.
+
+<P>
+Aparte de un reducido n&#250;mero de argumentos el c&#225;lculo  de
+valores de la funci&#243;n gamma debe hacerse utilizando m&#233;todos
+num&#233;ricos [<A
+ HREF="node43.html#Besset">3</A>,<A
+ HREF="node43.html#Abramowitz">1</A>]. Para hacer estos c&#225;lculos
+se provee una herramienta, que ha sido programada acorde con
+[<A
+ HREF="node43.html#Press">9</A>].
+
+<P>
+<BR>
+<IMG
+ width="555" height="109" ALIGN="BOTTOM" BORDER="0"
+ SRC="img301.gif"
+ ALT="\begin{Def}Si $X$\ es una variable aleatoria continua entonces se diremos
+que $X...
+...mbox {En cualquier otro caso}
+\end{array}\right.. \end{displaymath}\par\end{Def}">
+<BR>
+
+<P>
+El par&#225;metro <IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"> puede verse como un par&#225;metro de
+forma pues su modificaci&#243;n altera la forma de la  distribuci&#243;n
+mientras que <IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$"> funciona como un par&#225;metro de escala.
+
+<P>
+Invitamos al lector que revise la versi&#243;n electr&#243;nica de
+estas notas  a utilizar el graficador para distribuciones gamma y
+verificar algunas de las formas variando los par&#225;metros.
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;
+<div align="center">
+  <center>
+  <table border="0" height="23">
+    <tr>
+      <td height="23" valign="bottom"><img border="0" src="images/node231.gif" width="29" height="12">
+        <input name="B1" onclick="AbrirVentana()" type="button" value="Gr&aacute;ficas Distr. Gamma" style="color: #99FFCC; font-weight: bold; font-family: Calisto MT; background-color: #306898">
+        <img border="0" src="images/node232.gif" width="16" height="16"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<P>
+&nbsp;
+
+<P>
+Si en una distribuci&#243;n  gamma <IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$"> = 1 se dice que es una
+distribuci&#243;n gamma est&#225;ndar.
+
+<P>
+Para una variable  aleatoria continua, <I>X</I>, con distribuci&#243;n de
+probabilidad gamma de par&#225;metros <IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"> y <IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$">, aplicando
+un cambio de variable <I>u</I> = <I>y </I>/<IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$"> se tiene que la funci&#243;n de
+distribuci&#243;n de probabilidad para <I>X</I> cumple:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="GammInco"></A><!-- MATH
+ \begin{eqnarray}
+P([X\leq x]) &=&
+\int_0^{x} \frac{y^{\alpha -1}e^{-y/\beta}} {\Gamma(\alpha)
+\beta^\alpha}\,dy \\\nonumber & =& \int_0^{x/\beta}
+\frac{u^{\alpha -1}e^{-u}} {\Gamma(\alpha)}\,du \\\nonumber & =
+&F(x/\beta;\alpha)
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b><I>P</I>([<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <I>x</I>])</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="29" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.gif"
+ ALT="$\displaystyle \int_{0}^{x}$"><IMG
+ width="86" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.gif"
+ ALT="$\displaystyle {\frac{y^{\alpha -1}e^{-y/\beta}}{\Gamma(\alpha)
+\beta^\alpha}}$">&nbsp;d<I>y</I></b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.2)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="44" height="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.gif"
+ ALT="$\displaystyle \int_{0}^{x/\beta}$"><IMG
+ width="72" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img306.gif"
+ ALT="$\displaystyle {\frac{u^{\alpha -1}e^{-u}}{\Gamma(\alpha)}}$">&nbsp;d<I>u</I></b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><I>F</I>(<I>x </I>/<IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.gif"
+ ALT="$\displaystyle \beta$">;<IMG
+ width="16" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$\displaystyle \alpha$">)</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+Esta &#250;ltima funci&#243;n se conoce como la funci&#243;n <EM>gamma
+incompleta</EM>.
+
+<P>
+<BR>
+<A NAME="MediGamm"></A><IMG
+ width="554" height="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img308.gif"
+ ALT="\begin{Teor}Si $X$\ es una variable aleatoria Gamma con par\'ametros
+$\alpha, \beta,$\ se cumple que:
+\end{Teor}">
+<BR>
+
+<UL>
+<LI><!-- MATH
+ $\mathop{E}[X] = {\alpha}{\beta}$
+ --><b>
+E[<I>X</I>] = <IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"><IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$">
+  </b>
+</LI>
+<LI><!-- MATH
+ $\mathop{Var}[X]= {\alpha}{\beta^2}$
+ --><b>
+Var[<I>X</I>] = <IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"><IMG
+ width="23" height="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.gif"
+ ALT="$ \beta^{2}_{}$">
+  </b>
+</LI>
+</UL>
+
+<P>
+<I>Ejemplo 28</I>
+
+<P>
+Suponga que el tiempo de reacci&#243;n para iniciar el frenado
+ante una emergencia, en la poblaci&#243;n de cierta edad sigue una
+distribuci&#243;n Gamma con media de .5 segundo y varianza de .1
+segundo cuadrado.
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Dado que la esperanza es .5 y la varianza .1 se obtiene que
+<!-- MATH
+ $\alpha=5/2$
+ -->
+ <b>
+<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$">  = 5/2</b> y <!-- MATH
+ $\beta= 1/5$
+ -->
+ <b>
+<IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$">  = 1/5</b><P>
+En ese caso, si quisi&#233;ramos calcular la probabilidad  de que la
+respuesta de frenado en una situaci&#243;n de emergencia sea inferior
+a .72 segundos usando la expresi&#243;n (<A HREF="node33.html#GammInco">5.2</A>) se tiene que
+<!-- MATH
+ \begin{displaymath}
+\mathop{P}[X\leq 7.2] = F(.72/.2,2.5)= F(3.6,2.5)
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 7.2] = <I>F</I>(.72/.2, 2.5) = <I>F</I>(3.6, 2.5)</b>
+</DIV>
+
+<P>
+
+<P>
+<I>Ejemplo 29</I>
+
+<P>
+Suponga que el tiempo utilizado por una persona preparando un
+tipo particular de informe sigue una distribuci&#243;n gamma con
+media de 20 minutos y varianza 80 minutos cuadrados.
+
+<P>
+Aplicando  el <I>teorema</I>(<A HREF="node33.html#MediGamm">19</A>)  se  obtiene que
+<IMG
+ width="16" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.gif"
+ ALT="$ \alpha$"> = 5 y <IMG
+ width="15" height="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.gif"
+ ALT="$ \beta$"> = 4
+
+<P>
+Para determinar la probabilidad de que una persona elegida al
+azar tarde menos de 24 minutos preparando el informe debe
+resolverse
+<!-- MATH
+ \begin{displaymath}
+\mathop{P}[X\leq 24] = F(24/4,5)=   F(6,5) =.715
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 24] = <I>F</I>(24/4, 5) = <I>F</I>(6, 5) = 0.715</b>
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+  </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

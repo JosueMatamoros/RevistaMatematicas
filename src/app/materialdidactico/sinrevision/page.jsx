@@ -48,6 +48,12 @@ export default function Page() {
             authors="M.Sc. Geovanni Figueroa M."
             link="/cursosLinea/EcuacionesDiferenciales/index.htm"
           />
+          <CourseCard
+            title="Probabilidades"
+            title_en="Probability"
+            authors="M. Sc. Walter Mora Flores, M. Sc. Mario Marín Sánchez"
+            link="/cursosLinea/Probabilidad/index.htm"
+          />
         </div>
       </section>
     </div>

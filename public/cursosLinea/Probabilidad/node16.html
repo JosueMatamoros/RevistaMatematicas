@@ -1,0 +1,252 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="1" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h1><a NAME="SECTION00220000000000000000"><font size="3">Permutaciones de un
+Conjunto</font></a></h1>
+Una permutaci&oacute;n de los elementos de un conjunto es un ordenamiento lineal de
+sus elementos, por ejemplo si <!-- MATH 
+ $A=\{a_1,a_2,a_3 \}$ 
+ -->
+ <i>A</i> = {<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>3</sub>}
+entonces las permutaciones de <i>A</i> son las siguientes: <!-- MATH 
+ \begin{displaymath} 
+\begin{array}{cc} 
+a_1,a_2,a_3 & a_1,a_3,a_2\\ 
+a_2,a_1,a_3 & a_2,a_3,a_1\\ 
+a_3,a_1,a_2 & a_3,a_2,a_1 
+\end{array} 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <table>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>3</sub></td>
+      <td width="50"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub>, <i>a</i><sub>3</sub>, <i>a</i><sub>2</sub></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub>, <i>a</i><sub>1</sub>, <i>a</i><sub>3</sub></td>
+      <td align="center"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub>, <i>a</i><sub>3</sub>, <i>a</i><sub>1</sub></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>3</sub>, <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub></td>
+      <td align="center"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>3</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>1</sub></td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p>De manera similar una <i>r</i> -permutaci&oacute;n de <i>r</i> elementos de un
+conjunto es un ordenamiento de <i>r</i> de los elementos del conjunto. Por
+ejemplo si <!-- MATH 
+ $A=\{a_1,a_2,a_3,a_4 \}$ 
+ -->
+ <i>A</i> = {<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>3</sub>, <i>a</i><sub>4</sub>}
+entonces las 2-permutaciones de <i>A</i> son: <!-- MATH 
+ \begin{displaymath} 
+\begin{array}{cccc} 
+a_1,a_2 & a_2,a_1 & a_1,a_3 & a_3,a_1 \\ 
+a_1,a_4 & a_4,a_1 &a_2,a_3  &a_3,a_2 \\ 
+a_2,a_4& a_4,a_2 & a_3,a_4&a_4,a_3 
+\end{array} 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <table>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub>, <i>a</i><sub>2</sub></td>
+      <td width="40"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub>, <i>a</i><sub>1</sub></td>
+      <td width="40"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub>, <i>a</i><sub>3</sub></td>
+      <td width="40"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>3</sub>, <i>a</i><sub>1</sub></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub>, <i>a</i><sub>4</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>4</sub>, <i>a</i><sub>1</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub>, <i>a</i><sub>3</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>3</sub>, <i>a</i><sub>2</sub></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub>, <i>a</i><sub>4</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>4</sub>, <i>a</i><sub>2</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>3</sub>, <i>a</i><sub>4</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>4</sub>, <i>a</i><sub>3</sub></td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p>Para determinar el n&uacute;mero de <i>r</i> -permutaciones de los elementos en un
+conjunto con <i>n</i> elementos se puede recurrir a la regla del producto. Esto
+pues el proceso de elegir <i>r</i> elementos en un orden espec&iacute;fico puede
+reducirse a elegir un primer elemento entre <i>n</i>, luego elegir un segundo
+elemento entre los <i>n</i> - 1 que quedan , y as&iacute; hasta elegir el <i>r</i> -ésimo
+elemento entre los <i>n</i> - <i>r</i> + 1 restantes. Luego por el principio del
+producto, (<a HREF="#RegPro">2.2</a>), hay <!-- MATH 
+ $n(n-1)(n-2)\dots(n-r+1)$ 
+ -->
+ <i>n</i>(<i>n</i> - 1)(<i>n</i> - 2)...(<i>n</i> - <i>r</i> + 1) maneras de
+elegir <i>r</i> elementos en forma ordenada, de un conjunto con <i>n</i>
+elementos. Esto nos permite establecer el siguiente teorema:
+<p><br>
+<a NAME="Per"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img130.gif" ALT="\begin{Teor}El n\'umero de r-permutaciones de elementos tomados de un conjunto c... 
+...begin{displaymath}\mathop{P}(n,r)=\frac{n!}{(n-r)!}. \end{displaymath}\end{Teor}" width="556" height="80"><br>
+<p>Este teorema merece una explicaci&oacute;n especial en el caso de que <i>r</i> = 0.
+El n&uacute;mero de 0-permutaciones, es decir arreglos ordenados con ning&uacute;n elemento
+se toma como 1. S&oacute;lo hay una forma de elegir 0-permutaciones, no eligiendo ning&uacute;n
+elemento.
+<p>Este problema de la permutaciones tiene algunas variantes que se abordan a
+continuaci&oacute;n.
+<p>Considérese el problema de hacer una <i>r</i> -permutaci&oacute;n de elementos
+dentro de una estructura que no necesariamente es un conjunto, por ejemplo una
+estructura que contenga elementos pero se admite que los elementos pueden
+aparecer m&aacute;s de una vez. Por ejemplo analizar cu&aacute;ntos <em>anagramas</em>,
+reordenamientos de las letras que forman una palabra, se pueden obtener de la
+palabra <em>ama</em>.
+<p>Para resolver este tipo de problema lo m&aacute;s pr&aacute;ctico es asumir que en
+realidad todos los elementos son distintos y realizar el conteo seg&uacute;n el
+teorema <a HREF="#Per">5</a>, una vez hecho esto eliminar los casos que se hayan
+contado de m&aacute;s. Inicialmente <em>ama</em> tiene tres letras pero una es
+repetida. Podemos asumir que son tres letras: <!-- MATH 
+ $\{a_1,m,a_2\}$ 
+ -->
+ {<i>a</i><sub>1</sub>, <i>m</i>, <i>a</i><sub>2</sub>} y en ese casos los
+posibles anagramas son 6: <!-- MATH 
+ \begin{displaymath} 
+\begin{array}{cc} 
+a_1ma_2 & a_1a_2m\\ 
+a_2a_1m & a_2ma_1\\ 
+ma_1a_2 & ma_1a_2, 
+\end{array} 
+\end{displaymath} 
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <table>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub><i>ma</i><sub>2</sub></td>
+      <td width="50"></td>
+      <td ALIGN="CENTER"><i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>m</i></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub><i>a</i><sub>1</sub><i>m</i></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>a</i><sub>2</sub><i>ma</i><sub>1</sub></td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER"><i>ma</i><sub>1</sub><i>a</i><sub>2</sub></td>
+      <td></td>
+      <td ALIGN="CENTER"><i>ma</i><sub>2</sub><i>a</i><sub>1</sub>,</td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+no obstante, dado que a<sub>1</sub> y a<sub>2</sub> son en realidad la misma
+letra, todo anagrama est&aacute; dos veces, as&iacute; que el total posible debe dividirse
+por dos; y quedan tres anagramas.
+<p>En general la soluci&oacute;n de este tipo de problema es as&iacute;. Si una estructura
+contiene <i>r</i> elementos repetidos, <!-- MATH
+ $k_1,k_2, \dots,
+k_r$
+ -->
+ <i>k</i><sub>1</sub>, <i>k</i><sub>2</sub>,..., <i>k</i><sub>r</sub> veces,
+respectivamente entonces para calcular el tipo de permutaciones distintas que se
+pueden construir primero se calcula el n&uacute;mero de permutaciones asumiendo que
+todos los elementos son distintos, es decir <!-- MATH
+ $(k_1+k_2+ \dots+ k_r)!$
+ -->
+ (<i>k</i><sub>1</sub> + <i>k</i><sub>2</sub> + ... + <i>k</i><sub>r</sub>)!
+permutaciones. Luego se procede a analizar y excluir los casos repetidos. Un
+elemento que aparezca <i>k</i><sub>j</sub> veces ocupa <i>k</i><sub>j</sub>
+posiciones dentro de la permutaci&oacute;n, como se consider&oacute; que los <i>k</i><sub>j</sub>
+elementos son diferentes entonces hay <i>k</i><sub>j</sub>! posibles acomodos de
+esos elementos que se contaron como diferentes pero que en realidad corresponden
+con una &uacute;nica permutaci&oacute;n; por lo tanto para eliminar los elementos contados
+de m&aacute;s producidos por este elemento el n&uacute;mero total debe dividirse entre <i>k</i><sub>j</sub>!,
+y as&iacute; para cada uno de los elementos.
+<p><br>
+<a NAME="PerObjRe"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img131.gif" ALT="\begin{Teor}El n\'umero de permutaciones que se pueden obtener con $r$\ elemento...
+...}\frac{(k_1+k_2+ \dots+ k_r)!}{k_1!k_2! \dots! k_r!}.\end{displaymath}\end{Teor}" width="555" height="79"><br>
+<p>&nbsp;
+<p><i>Ejemplo 9</i>
+<p>&nbsp;
+<p>Se van a repartir 3 rosas, 5 dalias y 2 margaritas entre 10 se&ntilde;oras,
+determine el n&uacute;mero de maneras de hacer esta distribuci&oacute;n si cada se&ntilde;ora debe
+recibir al menos una flor.
+<p><b>Soluci&oacute;n</b>
+<p>Como hay igual n&uacute;mero de flores que de se&ntilde;oras cada una recibe una flor, y
+el problema se reduce a calcular el n&uacute;mero de permutaciones posibles. El n&uacute;mero
+de maneras de distribuir estas flores es <!-- MATH
+ \begin{displaymath}
+\frac{10!}{5!3!2!}=2520.
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b><img ALIGN="MIDDLE" BORDER="0" SRC="img132.gif" ALT="$\displaystyle {\frac{10!}{5!3!2!}}$" width="49" height="56">
+  = 2520.</b>
+</div>
+<p>&nbsp;</p>
+<p>Otro tipo de problema de distribuci&oacute;n relacionado con permutaciones tiene
+que ver con los posibles ordenamientos de <i>r</i> elementos que se pueden hacer
+de un conjunto de <i>n</i> elementos si se admite la repetici&oacute;n, en este caso
+el asunto se resuelve recurriendo a la regla del producto. El problema se reduce
+a elegir un elemento para la primera posici&oacute;n, para la segunda hasta llegar a
+la posici&oacute;n <i>r</i>. Como cada una de estas escogencias puede hacerse de <i>n</i>
+formas, se tiene el siguiente resultado
+<p><br>
+<a NAME="PerRep"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img133.gif" ALT="\begin{Teor}El n\'umero de r-permutaciones con repetici\'on, sobre un
+conjunto con $n$\ elementos es $n^r$.
+\end{Teor}" width="556" height="38"><br>
+<p>Este mismo esquema permite resolver la distribuci&oacute;n de <i>k</i> objetos
+distintos en <i>n</i> celdas, donde cada celda puede contener cualquier n&uacute;mero
+de objetos. Esto pues al final de cuentas este problema se reduce a elegir una
+celda para poner el primer objeto, y luego elegir con posibilidad de repetici&oacute;n
+otra celda para el segundo y as&iacute; hasta colocar todos los objetos.
+<p>Note que los objetos, en este caso no llevan un orden particular en las
+celdas. Si el orden en el cual se distribuyen los objetos dentro de las celdas
+debe tenerse en cuenta entonces el total de maneras cambia.
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>

@@ -1,0 +1,247 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="9" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h2><a NAME="SECTION00122000000000000000"><font size="3">Reglas para el C&aacute;lculo
+de Probabilidades</font></a></h2>
+<p>Cuando en un experimento aleatorio se conocen las probabilidades de los
+eventos simples, es decir las probabilidades de cada uno de los elementos del
+espacio muestral, se pueden calcular las probabilidades de eventos compuestos y
+de algunos eventos relacionados utilizando una serie de reglas b&aacute;sicas.
+<p>El c&aacute;lculo de probabilidades se basa principalmente en la aplicaci&oacute;n de
+estas reglas b&aacute;sicas. El siguiente teorema, [<a HREF="node43.html#Allen">2</a>],
+define una serie de propiedades que cumple una medida de probabilidad.
+<p><br>
+<a NAME="PropBas"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img39.gif" ALT="\begin{Teor}Si $\mathop{P}$\ es una medida de probabilidad definida sobre
+una familia de eventos $\cal F$\ sobre un espacio muestral
+$\Omega$. Entonces
+\end{Teor}" width="555" height="39">
+<ol>
+  <li><b><!-- MATH
+ $\mathop{P}[\emptyset]= 0.$
+ -->
+    P[<img ALIGN="MIDDLE" BORDER="0" SRC="img5.gif" ALT="$ \emptyset$" width="13" height="34">]
+    = 0.</b></li>
+  <li><b><!-- MATH
+ $\mathop{P}[A]= 1-\mathop{P}[\sim A].$
+ -->
+    P[<i>A</i>] = 1 - P[ <img ALIGN="BOTTOM" BORDER="0" SRC="img15.gif" ALT="$ \sim$" width="18" height="16">
+    <i>A</i>].</b></li>
+  <li>Para cualesquiera eventos<b> <!-- MATH
+ $A, B \,\,\,\mathop{P}[A\cup B]= \mathop{P}[A]+\mathop{P}[ B]-
+\mathop{P}[A\cap B]$
+ -->
+    <i>A</i>, <i>B</i>&nbsp;&nbsp;&nbsp;P[<i>A</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img14.gif" ALT="$ \cup$" width="16" height="16">
+    <i>B</i>] = P[<i>A</i>] + P[<i>B</i>] - P[<i>A</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+    <i>B</i>].</b></li>
+  <li>Para cualesquiera eventos<b> <i>A</i>, <i>B</i>. Si <!-- MATH
+ $A\subset B$
+ -->
+    <i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img10.gif" ALT="$ \subset$" width="18" height="30">
+    <i>B</i> implica <!-- MATH
+ $\mathop{P}[A]
+<\mathop{P}[B].$
+ -->
+    P[<i>A</i>] &lt; P[<i>B</i>].</b></li>
+</ol>
+<p>Demostraci&oacute;n y discusi&oacute;n de algunos casos.
+<ol>
+  <li>Esta propiedad se obtiene en forma inmediata pues si <!-- MATH
+ $\mathop{P}[\emptyset]= r > 0$
+ -->
+    <b>P[<img ALIGN="MIDDLE" BORDER="0" SRC="img5.gif" ALT="$ \emptyset$" width="13" height="34">]
+    = <i>r</i> &gt; 0</b> se tiene que <!-- MATH
+ \begin{displaymath}
+\mathop{P}[\Omega] = \mathop{P}[\Omega \cup \emptyset] =
+\mathop{P}[\Omega]+\mathop{P}[\emptyset]=1+r  > 1,
+\end{displaymath}
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>P[<img ALIGN="MIDDLE" BORDER="0" SRC="img12.gif" ALT="$\displaystyle \Omega$" width="17" height="32">]
+      = P[<img ALIGN="MIDDLE" BORDER="0" SRC="img12.gif" ALT="$\displaystyle \Omega$" width="17" height="32">
+      <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      <img ALIGN="MIDDLE" BORDER="0" SRC="img40.gif" ALT="$\displaystyle \emptyset$" width="13" height="34">]
+      = P[<img ALIGN="MIDDLE" BORDER="0" SRC="img12.gif" ALT="$\displaystyle \Omega$" width="17" height="32">]
+      + P[<img ALIGN="MIDDLE" BORDER="0" SRC="img40.gif" ALT="$\displaystyle \emptyset$" width="13" height="34">]
+      = 1 + <i>r</i> &gt; 1</b>,
+    </div>
+    <p>&nbsp;</p>
+    lo cual contradice la propiedad 2 del <i>axioma</i> <a HREF="#FuncProb">2</a>.
+    En otras palabras <!-- MATH
+ $\mathop{P}[\emptyset]= 0.$
+ -->
+    <b>P[<img ALIGN="MIDDLE" BORDER="0" SRC="img5.gif" ALT="$ \emptyset$" width="13" height="34">]
+    = 0</b>.</li>
+  <li>Esta propiedad también se obtiene en forma sencilla de: <!-- MATH
+ \begin{displaymath}
+1=\mathop{P}[\Omega]= \mathop{P}[A\cup \sim A] =
+\mathop{P}[A]+\mathop{P}[\sim A].
+\end{displaymath}
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>1 = P[<img ALIGN="MIDDLE" BORDER="0" SRC="img12.gif" ALT="$\displaystyle \Omega$" width="17" height="32">]
+      = P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+      <i>A</i>] = P[<i>A</i>] + P[ <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+      <i>A</i>]</b>.
+    </div>
+    <p>&nbsp;</p>
+    <p>Si <i>A</i> es un evento sobre un espacio muestral <img ALIGN="BOTTOM" BORDER="0" SRC="img9.gif" ALT="$ \Omega$" width="17" height="15">
+    entonces el evento <em>no ocurre</em> <i>A</i> se denota por <img ALIGN="BOTTOM" BORDER="0" SRC="img15.gif" ALT="$ \sim$" width="18" height="16">
+    <i><b>A</b></i>.
+    <p>&nbsp;</li>
+  <li>Esta propiedad se demuestra usando propiedades de conjuntos. Lo primero es
+    notar que&nbsp;<br>
+    <i><b>A</b></i> <b><img ALIGN="BOTTOM" BORDER="0" SRC="img14.gif" ALT="$ \cup$" width="16" height="16">
+    <i>B</i> </b>es una uni&oacute;n de eventos excluyentes:&nbsp;
+    <p><!-- MATH
+ \begin{displaymath}
+A \cup B = (A\cap B) \cup (\sim A \cap B) \cup  (A \cap \sim B),
+\end{displaymath}
+ -->
+    </p>
+    <div ALIGN="CENTER">
+      <b><i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      <i>B</i> = (<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+      <i>B</i>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      ( <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+      <i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+      <i>B</i>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+      (<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+      <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+      <i>B</i>)</b>,
+    </div>
+    <p>por lo tanto,
+    <p>&nbsp;
+    <div ALIGN="CENTER" style="width: 494; height: 38">
+      <a NAME="uno"></a><!-- MATH
+ \begin{equation}
+\mathop{P}[A \cup B] = \mathop{P}[(A\cap B)]+
+\mathop{P}[  (\sim A \cap B)] +  \mathop{P}[(A \cap \sim B)],
+\end{equation}
+ -->
+      <table WIDTH="550" ALIGN="CENTER">
+        <tr VALIGN="MIDDLE">
+          <td ALIGN="CENTER" NOWRAP><b>P[<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+            <i>B</i>] = P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)] + P[( <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)] + P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>B</i>)]</b>,</td>
+          <td WIDTH="10" ALIGN="RIGHT">(1.2)</td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;
+    <p>por otro lado los eventos <!-- MATH
+ $A\cap\sim B$
+ -->
+    <b><i>A</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+    <img ALIGN="BOTTOM" BORDER="0" SRC="img15.gif" ALT="$ \sim$" width="18" height="16">
+    <i>B</i> </b>y <b><i>A</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+    <i>B</i> </b>son excluyentes y su uni&oacute;n es <i>A</i>, as&iacute;:</p>
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER" style="width: 400; height: 38">
+      <a NAME="dos"></a><!-- MATH
+ \begin{equation}
+\mathop{P}[A] = \mathop{P}[(A\cap B)]+
+\mathop{P}[( A \cap \sim B)],
+\end{equation}
+ -->
+      <table WIDTH="500" ALIGN="CENTER">
+        <tr VALIGN="MIDDLE">
+          <td ALIGN="CENTER" NOWRAP width="500"><b>P[<i>A</i>] = P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)] + P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>B</i>)]</b>,</td>
+          <td WIDTH="36" ALIGN="RIGHT">(1.3)</td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;
+    <p>similarmente:</p>
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER" style="width: 550; height: 38">
+      <a NAME="tres"></a><!-- MATH
+ \begin{equation}
+\mathop{P}[B] = \mathop{P}[(A\cap B)]+
+\mathop{P}[( \sim A \cap  B)],
+\end{equation}
+ -->
+      <table WIDTH="100%" ALIGN="CENTER">
+        <tr VALIGN="MIDDLE">
+          <td ALIGN="CENTER" NOWRAP><b>P[<i>B</i>] = P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)] + P[( <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)]</b>,</td>
+          <td WIDTH="10" ALIGN="RIGHT">(1.4)</td>
+        </tr>
+      </table>
+    </div>
+    <p>&nbsp;
+    <p>sumando término a término (<a HREF="#dos">1.3</a>) y (<a HREF="#tres">1.4</a>)
+    se obtiene:
+    <p>&nbsp;
+    <div ALIGN="CENTER" style="width: 482; height: 38">
+      <a NAME="cuatro"></a><!-- MATH
+ \begin{equation}
+\mathop{P}[A]+[\mathop{P}[B]= 2\mathop{P}[(A\cap B)]+
+\mathop{P}[(A \cap \sim B)]+\mathop{P}[(\sim A \cap
+B)].
+\end{equation}
+ -->
+      <table WIDTH="550" ALIGN="CENTER" height="36">
+        <tr VALIGN="MIDDLE">
+          <td ALIGN="CENTER" NOWRAP width="500" height="32"><b>P[<i>A</i>] + P[<i>B</i>]
+            = 2P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)] + P[(<i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>B</i>)] + P[( <img ALIGN="MIDDLE" BORDER="0" SRC="img11.gif" ALT="$\displaystyle \sim$" width="18" height="30">
+            <i>A</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+            <i>B</i>)]</b>.</td>
+          <td WIDTH="44" ALIGN="RIGHT" height="32">(1.5)</td>
+        </tr>
+      </table>
+    </div>
+    <p>&nbsp;
+    <p>Restando (<a HREF="#cuatro">1.5</a>) y (<a HREF="#uno">1.2</a>) se
+    obtiene el resultado.
+    <p>&nbsp;</li>
+  <li>Esta propiedad se deja como ejercicio para el lector.</li>
+</ol>
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>

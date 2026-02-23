@@ -1,0 +1,423 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    function AbrirVentana() {
+      MiVentana=open("","Herramientas","width=480 , height=150"); 
+      MiVentana.document.write("<html><head><title>Herramientas</title></head><body>"       
+                               +"<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE='Binomiales.class' archive='Binomiales.jar' CODE='./' WIDTH='443' HEIGHT='133' ALIGN='CENTER'></applet-->"
+                               +"</BODY></HTML>");
+      MiVentana.window.document.close();
+    }
+  </SCRIPT>
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="10" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=52>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00410000000000000000">
+<font size="3">
+Distribuci&#243;n de Probabilidad Binomial.</font></A>
+</H1>
+
+<P>
+Existen
+diversos experimentos para los cuales el espacio muestral
+solamente
+ admite dos valores, pueden ser cualitativos, se cumple o no se cumple
+alguna condici&#243;n o cuantitativos 0 o 1. No hay diferencia y para
+efectos de la distribuci&#243;n basta con que los
+consideremos como   &#233;xito y fallo, con valores asignados de 1 y 0,
+respectivamente.
+
+<P>
+Cuando un experimento como &#233;ste se ejecuta una sola vez se dice
+que es un ensayo  tipo <EM>Bernoulli</EM>, la variable aleatoria solo
+toma dos valores que corresponden con <!-- MATH
+ $X(\mbox{\'exito})=1$
+ -->
+ <b>
+<I>X</I>(&#233;xito) = 1</b> y
+<!-- MATH
+ $X({\mbox fallo})=0$
+ -->
+ <b>
+<I>X</I>(f<I>allo</I>) = 0</b> y la distribuci&#243;n de probabilidad
+tambi&#233;n es bastante simplificada con valores&nbsp;&nbsp; <b><I>f</I><SUB>X</SUB>(1) = <I>p</I></b>, y
+<!-- MATH
+ $f_X(0)= 1-p.$
+ -->
+&nbsp;
+ <b>
+<I><br>
+f</I><SUB>X</SUB>(0) = 1 - <I>p</I></b>.
+
+<P>
+Dado  un experimento  que consiste de una secuencia de <I>n</I> ensayos
+independientes
+tipo Bernoulli, donde la probabilidad, <I>p</I>, de &#233;xito no cambia entre
+ ensayo y ensayo   del experimento. Si la variable aleatoria
+ que interesa cuantificar es
+el n&#250;mero de &#233;xitos en los <I>n</I> ensayos, la variable recibe el nombre de
+<EM>Binomial.</EM>
+
+<P>
+Por ejemplo  se lanza una moneda el aire en 8  ocasiones y se toma
+como variable aleatoria el n&#250;mero de veces que cae corona, o se
+registran los pr&#243;ximos 100 nacimientos en un hospital y se toma
+como variable aleatoria el n&#250;mero de mujeres que nacen.
+
+<P>
+<BR>
+<IMG
+ width="578" height="309" ALIGN="BOTTOM" BORDER="0"
+ SRC="img246.gif"
+ ALT="\begin{Def}Un experimento se clasifica como Binomial si cumple las
+siguientes pr...
+...\'umero de \'exitos obtenidos en
+los $n$\ intentos.
+\end{enumerate}\par\end{Def}">
+<BR>
+
+<P>
+En una variable binomial se tienen por par&#225;metros
+la probabilidad de &#233;xito en cada ensayo, <I>p</I>, y el  total  de
+ejecuciones, <I>n</I>, y como variable  aleatoria <I>X</I>, el n&#250;mero
+de &#233;xitos digamos <I>x</I>. La distribuci&#243;n de probabilidad  la
+ denotaremos por <!-- MATH
+ $\mathop{b}(x;n,p).$
+ -->
+b(<I>x</I>;<I>n</I>, <I>p</I>). Para la distribuci&#243;n de
+probabilidad
+acumulada usamos la notaci&#243;n  <!-- MATH
+ $\mathop{B}(x;n,p).$
+ -->
+B(<I>x</I>;<I>n</I>, <I>p</I>).
+
+<P>
+<BR>
+<IMG
+ width="556" height="288" ALIGN="BOTTOM" BORDER="0"
+ SRC="img247.gif"
+ ALT="\begin{Teor}Si $X$\ es una variable aleatoria discreta que sigue una distribuci\...
+... \geq n $\ }\\
+\end{array} \right.. \end{displaymath}\end{enumerate}\end{Teor}">
+<BR>
+La demostraci&#243;n de la
+ primera de las aseveraciones hechas en el teorema resulta directa, pues
+puede haber desde ninguno hasta, a lo
+sumo, <I>n</I> &#233;xitos.
+
+<P>
+La segunda parte resulta de que la  ocurrencia de exactamente
+<I>x</I> &#233;xitos es la conjunci&#243;n de que en <I><b>x</b></I> cualesquiera de los
+ensayos ocurra &#233;xito y en los<b> <I>n</I> - <I>x</I> </b> restantes ocurra fallo, de acuerdo con la
+ley del producto la probabilidad es de <!-- MATH
+ $p^x(1-p)^{n-x}$
+ -->
+ <b>
+<I>p</I><SUP>x</SUP>(1 - <I>p</I>)<SUP>n - x</SUP></b>. Como no importa cuales
+<I>x</I> de los ensayos resulten en &#233;xito entonces debe de contarse todas
+las posibles maneras de elegir <I>x</I> ensayos entre los <I>n</I>.
+
+<P>
+La tercera parte es simplemente una adaptaci&#243;n de la definici&#243;n de
+la funci&#243;n de probabilidad acumulada.
+
+<P>
+Vale la pena destacar que este
+tipo de c&#225;lculos es bastante laborioso, no obstante se dispone
+de tablas que resumen algunos de los valores m&#225;s frecuentes.
+Mejor a&#250;n en la versi&#243;n electr&#243;nica de estas notas se da una
+barra de herramientas que  permiten  realizar en forma directa
+ los c&#225;lculos, que involucren binomiales.
+
+<P>
+&nbsp;
+  <center>
+  <table border="0" height="23">
+    <tr>
+      <td height="23" valign="bottom"><img border="0" src="images/node231.gif" width="29" height="12">
+        <input name="B1" onclick="AbrirVentana()" type="button" value="Calc. Distr. Binomial" style="color: #99FFCC; font-weight: bold; font-family: Calisto MT; background-color: #306898">
+        <img border="0" src="images/node232.gif" width="16" height="16"></td>
+    </tr>
+  </table>
+  </center>
+
+<P>
+&nbsp;
+
+<P>
+<I>Ejemplo 19</I>
+
+<P>
+Veinte palomas vuelan hacia 3 nidos. Cada una de ellas se
+ubicar&#225; en forma aleatoria en alguno de los nidos, adem&#225;s una
+paloma se ubica en  forma independiente de lo que hicieron o
+har&#225;n las otras. Calcule las siguientes probabilidades.
+
+<OL>
+<LI>Exactamente 4 palomas se ubican en el primer nido.
+</LI>
+<LI>A lo sumo cuatro palomas se ubican en el primer nido.
+</LI>
+<LI>Al menos cuatro palomas se ubican en el primer nido.
+</LI>
+</OL>
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Dadas las condiciones indicadas, el arribo de cada paloma a
+alg&#250;n nido es un ensayo de Bernoulli donde &#233;xito es que la
+paloma se ubique en el nido 1 y fracaso es que no lo haga. La
+probabilidad de &#233;xito es 1/3 y la variable aleatoria que
+indica el n&#250;mero de palomas que quedan ubicadas en el primer
+nido sigue una distribuci&#243;n tipo binomial:
+<!-- MATH
+ $\mathop{b}(x;20,1/3)$
+ -->
+b(<I>x</I>;20, 1/3), y las respuestas a los problemas son
+<DIV ALIGN="CENTER">
+<ol>
+  <li>
+    <p align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    P[<I>X</I> = 4] = b(4;20, 1/3).</b></li>
+</ol>
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp; A lo sumo cuatro palomas significa ninguna, una,  dos, tres o
+cuatro es decir: <!-- MATH
+ \begin{displaymath}
+\mathop{b}(0;20,1/3)+\mathop{b}(1;20,1/3)+\mathop{b}(2;20,1/3)+
+\mathop{b}(3;20,1/3)+\mathop{b}(4;20,1/3),
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+b(0;20, 1/3) + b(1;20, 1/3) + b(2;20, 1/3) + b(3;20, 1/3) + b(4;20, 1/3),</b>
+</DIV>
+por lo tanto:
+<!-- MATH
+ \begin{displaymath}
+\mathop{P}[X\leq 4] = \mathop{B}(4;20,1/3).
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 4] = B(4;20, 1/3).</b>
+</DIV>
+<p align="left">&nbsp;&nbsp;&nbsp; 3.&nbsp; Al menos cuatro puede verse como el complemento
+de a lo sumo tres, por tanto la&nbsp; la respuesta es&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- MATH
+ \begin{displaymath}
+\displaystyle{1-\mathop{P}[X \leq 3] = 1- \mathop{B}(4;20,1/3)}.
+\end{displaymath}
+ -->
+</p>
+<DIV ALIGN="CENTER">
+<b>1 - P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 3]=1-B(4;20, 1/3).</b>
+</DIV>
+
+<P>
+<I>Ejemplo 20</I>
+
+<P>
+Suponga que el 20 por ciento de  los componentes fabricados
+por una planta no pasan un control de calidad. Cu&#225;l es la
+probabilidad de que en una muestra de 15  componentes
+consecutivos a lo sumo 8 no pasen la prueba.
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Este es un experimento de tipo binomial, que tiene 15
+repeticiones del mismo experimento, con una probabilidad de
+&#233;xito de 0.2. Si <I>Y</I> es la variable aleatoria que indica el
+n&#250;mero de componentes defectuosos, interesa calcular el valor
+de la expresi&#243;n:
+
+<P>
+&nbsp;
+<DIV ALIGN="CENTER">
+<b>
+<I>P</I>[<I>Y</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 8] = <IMG
+ width="29" height="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.gif"
+ ALT="$\displaystyle \sum_{k=0}^{8}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img249.gif"
+ ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 15} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right.$"><IMG
+ width="34" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.gif"
+ ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle 15} \\
+{ \scriptstyle k} \\
+\end{array}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.gif"
+ ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 15} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right)$">(0.2)<SUP>k</SUP>(0.8)<SUP>15 - k</SUP> = <I>B</I>(8;15, 0.2),</b>
+</DIV>
+recurriendo a  tablas o a la barra de herramientas se obtiene  que
+la probabilidad del evento indicado es 0.9992.
+
+<P>
+Sobre ese mismo ejemplo:
+
+<UL>
+<LI>La probabilidad que exactamente 8 componentes no pasen la prueba:
+<!-- MATH
+ \begin{displaymath}
+b(8,15,0.2) = B(8,15,0.2)-B(7,15,0.2) = 0.9992-0.9958.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<I>&nbsp;</I></b>
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<I>b</I>(8, 15, 0.2) = <I>B</I>(8, 15, 0.2) - <I>B</I>(7, 15, 0.2) = 0.9992 - 0.9958.</b>
+</DIV>
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+</LI>
+<LI>la probabilidad que fallen al menos 8 es:&nbsp;
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<I>P</I>[<I>Y</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 8] = 1 - <I>P</I>[<I>Y</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 7] = 1 - <I>B</I>(7, 15.0.2) = 1 - 0.9958.</b>
+</DIV>
+</LI>
+</UL>
+
+<P>
+Algunas veces se acepta que un experimento se porta como un
+binomial, aunque cumpla en forma parcial las reglas citadas en la
+definici&#243;n. Por ejemplo en problemas de elecci&#243;n sin
+reposici&#243;n la probabilidad de cada experimento est&#225;
+influenciada por los resultados de los anteriores.  No obstante
+cuando el n&#250;mero de intentos es relativamente peque&#241;o
+respecto al espacio muestral el comportamiento de la variable
+aleatoria puede aproximarse  como si fuera binomial.
+
+<P>
+<I>Ejemplo 21</I>
+
+<P>
+Suponga que en una ciudad viven un mill&#243;n de personas de los
+cuales s&#243;lo  800000 son  nativos de la ciudad. Si se toma una
+muestra de 10 ciudadanos al azar cual es la probabilidad de que a
+lo sumo  dos de ellos no sean nativos.
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Si bien la secuencia de 10 experimentos consecutivos  de escoger
+un ciudadano y que no sea nativo tienen probabilidades diferentes
+tambi&#233;n es cierto que estas probabilidades pr&#225;cticamente  son
+iguales, en un caso como este podemos asumir que el
+comportamiento de la variable aleatoria  <I>Y</I> que indica el
+n&#250;mero de  no nativos en la muestra se aproxima por una
+binomial. As&#237; la probabilidad solicitada es:&nbsp;
+
+<P>
+ <!-- MATH
+ \begin{displaymath}
+P[Y\leq 2]= \sum_{k=0}^2
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 10}  \\
+               { \scriptstyle  k} \\
+          \end{array}
+        \!\!\! \right)  (0.2)^k(0.8)^{10-k}
+  = B(2;10,0.2),
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<I><b>P</b></I><b>[</b><I><b>Y</b></I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$">  <b>2] = </b> <IMG
+ width="29" height="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img252.gif"
+ ALT="$\displaystyle \sum_{k=0}^{2}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img253.gif"
+ ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 10} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right.$"><IMG
+ width="34" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.gif"
+ ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle 10} \\
+{ \scriptstyle k} \\
+\end{array}$"><IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img255.gif"
+ ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle 10} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right)$">(<b>0.2)<SUP>k</SUP>(0.8)<SUP>10 - k</SUP> = <I>B</I>(2;10,
+0.2)</b>,
+</DIV>
+recurriendo a tablas se obtiene  que la probabilidad del evento
+indicado es <b> 0.6778.</b>
+  <p>&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>

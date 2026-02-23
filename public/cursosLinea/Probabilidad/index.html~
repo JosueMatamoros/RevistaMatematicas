@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>Probabilidad</title>
+
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="description" content="FW4 FP HTML">
+
+
+<script language="JavaScript1.2" src="fw_menu.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Gilbert Davis -->
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function loadImages() {
+if (document.layers) {
+document.hidepage.visibility = 'hidden';
+}
+else {
+document.all.hidepage.style.visibility = 'hidden';
+   }
+}
+//  End -->
+</script>
+
+
+
+<script language="JavaScript">
+function opw(text,menu,opc){                           
+   nw= window.open("",opc);
+   nw.document.write("<html><head></head>"
+   +"<frameset rows='84,*' framespacing='0' border='0' frameborder='0'>"
+   +"<frame name='banner' scrolling='no' noresize target='contents' src='SubProbaHeaderNew.htm'>"
+   +"<frameset cols='148,*'>"
+   +"<frame name='contents' target='main' src='"+menu+"'>"
+   +"<frame name='main'  src='"+text+"' scrolling='auto' target='_self'>"
+   +"</frameset>"
+   +"<noframes><body></body></noframes></frameset></html>"
+   );                            
+}
+</script>
+
+
+</head>
+
+<body bgcolor="#ffffff" onload="loadImages() " topmargin="0" leftmargin="0">
+
+
+<div id="hidepage" style="position: absolute; left: -5; top: 8; background-color: #FFFFFF; layer-background-color: #FFFFCC; height: 286; width: 900"> 
+ <center>
+ <p> </p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Cargando ...&nbsp; curso de Probabilidad. </p>
+ </center>
+</div>
+
+
+
+
+<layer left="0" top="0">
+<script language="JavaScript">
+<!-- hide this script from non-javascript-enabled browsers
+
+function MM_displayStatusMsg(msgStr)  { //v3.0
+	status=msgStr; document.MM_returnValue = true;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function fwLoadMenus() {
+  window.fw_menu_0 = new Menu("root",221,19,"Arial, Helvetica, sans-serif",12,"#cccccc","#000000","#336666","#ffffcc");
+   fw_menu_0.addMenuItem("Herramientas de Experimentaci&oacute;n","mw1=window.open('HExperimentacion.html','','width=250, height=152, resizable, scrollbars=yes'); mw1.moveTo(0,0); ");
+  fw_menu_0.addMenuItem("Herramientas de Graficaci&oacute;n","mw2=window.open('Hgraficacion.html','','width=600, height=152, resizable, scrollbars=yes'); mw2.moveTo(0,0); ");
+  fw_menu_0.addMenuItem("Herramientas de C&aacute;lculo","mw3=window.open('Hcalculo.html','','width=250, height=152, resizable, scrollbars=yes'); mw3.moveTo(0,0); ");
+   fw_menu_0.bgImageUp="topImagesNew/fwmenu1_221x19_up.gif";
+   fw_menu_0.bgImageOver="topImagesNew/fwmenu1_221x19_over.gif";
+   fw_menu_0.fontWeight="bold";
+   fw_menu_0.hideOnMouseOut=true;
+  window.fw_menu_1 = new Menu("root",158,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#333333","#339999","#cccc99");
+  
+ fw_menu_1.addMenuItem("Distribuci&oacute;n Normal","opw('node31.html','menu30.html','_top');");
+  fw_menu_1.addMenuItem("Distribuci&oacute;n Gamma","opw('node33.html','menu30.html','_top');");
+  fw_menu_1.addMenuItem("Distribuci&oacute;n Exponencial","opw('node34.html','menu30.html','_top');");
+  
+   fw_menu_1.hideOnMouseOut=true;
+   
+  window.fw_menu_2 = new Menu("root",226,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#000000","#339999","#cccc99");
+  
+fw_menu_2.addMenuItem("Conceptos Preliminares","opw('node02.html','menu01.html','_top');");
+  fw_menu_2.addMenuItem("Medidas de Probabilidad","opw('node08.html','menu01.html','_top');");
+  fw_menu_2.addMenuItem("Probabilidad Total y Regla de Bayes","opw('node13.html','menu01.html','_top');");
+
+  
+   fw_menu_2.hideOnMouseOut=true;
+  window.fw_menu_3 = new Menu("root",239,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#333333","#339999","#cccc99");
+ fw_menu_3.addMenuItem("Reglas B&aacute;sicas","opw('node15.html','menu14.html','_top');");
+  fw_menu_3.addMenuItem("Permutaciones de un Conjunto","opw('node16.html','menu14.html','_top');");
+  fw_menu_3.addMenuItem("Combinaciones","opw('node17.html','menu14.html','_top');");
+  fw_menu_3.addMenuItem("Distribuci&oacute;n de Objetos Indistinguibles","opw('node18.html','menu14.html','_top');");
+  fw_menu_3.addMenuItem("Propiedades Importantes","opw('node19.html','menu14.html','_top');");
+   fw_menu_3.hideOnMouseOut=true;
+  window.fw_menu_4 = new Menu("root",215,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#333333","#339999","#cccc99");
+  
+ fw_menu_4.addMenuItem("Preliminares","opw('node21.html','menu20.html','_top');");
+  fw_menu_4.addMenuItem("Definiciones B&aacute;sicas","opw('node22.html','menu20.html','_top');");
+  fw_menu_4.addMenuItem("Par&aacute;metros en una Distribuci&oacute;n","opw('node23.html','menu20.html','_top');");
+  fw_menu_4.addMenuItem("Funci&oacute;n Generadora de Momentos","opw('node24.html','menu20.html','_top');");
+  
+   fw_menu_4.hideOnMouseOut=true;
+   
+  window.fw_menu_5 = new Menu("root",183,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#333333","#339999","#cccc99");
+  
+  fw_menu_5.addMenuItem("Distribuci&oacute;n  Binomial","opw('node26.html','menu25.html','_top');");
+  fw_menu_5.addMenuItem("Distribuci&oacute;n de Poisson","opw('node28.html','menu25.html','_top');");
+  fw_menu_5.addMenuItem("Distribuci&oacute;n Hip&eacute;rgeom&eacute;trica","opw('node29.html','menu25.html''_top');");
+
+  
+   fw_menu_5.hideOnMouseOut=true;
+  window.fw_menu_6 = new Menu("root",243,17,"Verdana, Arial, Helvetica, sans-serif",10,"#000000","#000000","#339999","#cccc99");
+  fw_menu_6.addMenuItem("Desigualdades de Markov y Chebyshev","opw('node36.html','menu35.html','_top');");
+  fw_menu_6.addMenuItem("Leyes de los Grandes N&uacute;meros","opw('node37.html','menu35.html','_top');");
+  fw_menu_6.addMenuItem("Teorema de L&iacute;mite Central","opw('node38.html','menu35.html','_top');");
+  fw_menu_6.addMenuItem("Aproximaci&oacute;n Normal Binomial","opw('node39.html','menu35.html','_top');");
+  fw_menu_6.addMenuItem("Estimadores","opw('node40.html','menu35.html','_top');");
+  fw_menu_6.addMenuItem("Algunos Ejemplos","opw('node41.html','menu35.html','_top');");
+   fw_menu_6.hideOnMouseOut=true;
+
+  fw_menu_6.writeMenus();
+} // fwLoadMenus()
+
+// stop hiding -->
+</script>
+<script language="JavaScript1.2">fwLoadMenus();</script>
+<table border="0" cellpadding="0" cellspacing="0" width="826" align="center">
+<!-- fwtable fwsrc="MenuPrincipalCorto.png" fwbase="indexnew.jpg" fwstyle="FrontPage" fwdocid = "664814708" fwnested=""0" -->
+  <script language="JavaScript">
+  <!-- hide 
+  if (document.images) {
+  indexnew_r2_c16_f2 = new Image(177 ,23); indexnew_r2_c16_f2.src = "topImagesNew/indexnew_r2_c16_f2.jpg";
+  indexnew_r2_c16_f1 = new Image(177 ,23); indexnew_r2_c16_f1.src = "topImagesNew/indexnew_r2_c16.jpg";
+  indexnew_r5_c10_f2 = new Image(69 ,18); indexnew_r5_c10_f2.src = "topImagesNew/indexnew_r5_c10_f2.jpg";
+  indexnew_r5_c10_f1 = new Image(69 ,18); indexnew_r5_c10_f1.src = "topImagesNew/indexnew_r5_c10.jpg";
+  indexnew_r6_c2_f2 = new Image(51 ,18); indexnew_r6_c2_f2.src = "topImagesNew/indexnew_r6_c2_f2.jpg";
+  indexnew_r6_c2_f1 = new Image(51 ,18); indexnew_r6_c2_f1.src = "topImagesNew/indexnew_r6_c2.jpg";
+  indexnew_r6_c4_f2 = new Image(64 ,8); indexnew_r6_c4_f2.src = "topImagesNew/indexnew_r6_c4_f2.jpg";
+  indexnew_r6_c4_f1 = new Image(64 ,8); indexnew_r6_c4_f1.src = "topImagesNew/indexnew_r6_c4.jpg";
+  indexnew_r6_c6_f2 = new Image(75 ,18); indexnew_r6_c6_f2.src = "topImagesNew/indexnew_r6_c6_f2.jpg";
+  indexnew_r6_c6_f1 = new Image(75 ,18); indexnew_r6_c6_f1.src = "topImagesNew/indexnew_r6_c6.jpg";
+  indexnew_r6_c8_f2 = new Image(69 ,18); indexnew_r6_c8_f2.src = "topImagesNew/indexnew_r6_c8_f2.jpg";
+  indexnew_r6_c8_f1 = new Image(69 ,18); indexnew_r6_c8_f1.src = "topImagesNew/indexnew_r6_c8.jpg";
+  indexnew_r6_c12_f2 = new Image(67 ,18); indexnew_r6_c12_f2.src = "topImagesNew/indexnew_r6_c12_f2.jpg";
+  indexnew_r6_c12_f1 = new Image(67 ,18); indexnew_r6_c12_f1.src = "topImagesNew/indexnew_r6_c12.jpg";
+  indexnew_r6_c14_f2 = new Image(49 ,8); indexnew_r6_c14_f2.src = "topImagesNew/indexnew_r6_c14_f2.jpg";
+  indexnew_r6_c14_f1 = new Image(49 ,8); indexnew_r6_c14_f1.src = "topImagesNew/indexnew_r6_c14.jpg";
+  indexnew_r6_c18_f2 = new Image(37 ,19); indexnew_r6_c18_f2.src = "topImagesNew/indexnew_r6_c18_f2.jpg";
+  indexnew_r6_c18_f1 = new Image(37 ,19); indexnew_r6_c18_f1.src = "topImagesNew/indexnew_r6_c18.jpg";
+  indexnew_r6_c20_f2 = new Image(38 ,9); indexnew_r6_c20_f2.src = "topImagesNew/indexnew_r6_c20_f2.jpg";
+  indexnew_r6_c20_f1 = new Image(38 ,9); indexnew_r6_c20_f1.src = "topImagesNew/indexnew_r6_c20.jpg";
+  }
+  // stop hiding -->
+  </script>
+  <tr>
+   <td><img src="topImagesNew/spacer.gif" width="22" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="51" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="24" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="64" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="24" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="75" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="26" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="69" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="27" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="69" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="25" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="67" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="27" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="49" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="28" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="54" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="28" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="37" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="20" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="38" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="2" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+
+  <tr>
+   <td colspan="21"><img name="indexnew_r1_c1" src="topImagesNew/indexnew_r1_c1.jpg" width="826" height="15" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="15" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="3" colspan="15"><img name="indexnew_r2_c1" src="topImagesNew/indexnew_r2_c1.jpg" width="647" height="34" border="0"></td>
+   <td colspan="5"><a href="www.itcr.ac.cr/carreras/matematica/" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('indexnew_r2_c16','','topImagesNew/indexnew_r2_c16_f2.jpg',1);" ><img name="indexnew_r2_c16" src="topImagesNew/indexnew_r2_c16.jpg" width="177" height="23" border="0"></a></td>
+   <td rowspan="11"><img name="indexnew_r2_c21" src="topImagesNew/indexnew_r2_c21.jpg" width="2" height="65" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="23" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="5"><img name="indexnew_r3_c16" src="topImagesNew/indexnew_r3_c16.jpg" width="177" height="10" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="10" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="8"><a href="#" 
+   
+   onMouseOut="FW_startTimeout();"  onMouseOver="window.FW_showMenu(window.fw_menu_0,574,2);MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');return document.MM_returnValue" ><img name="indexnew_r4_c16" src="topImagesNew/indexnew_r4_c16.jpg" width="54" height="24" border="0"></a></td>
+   <td rowspan="2" colspan="4"><img name="indexnew_r4_c17" src="topImagesNew/indexnew_r4_c17.jpg" width="123" height="2" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="9"><img name="indexnew_r5_c1" src="topImagesNew/indexnew_r5_c1.jpg" width="382" height="1" border="0"></td>
+   <td rowspan="4"><a href="#" onClick="opw('node30.html','menu30.html','_top')" 
+   
+   
+   onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');window.FW_showMenu(window.fw_menu_1,382,72);MM_swapImage('indexnew_r5_c10','','topImagesNew/indexnew_r5_c10_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r5_c10" src="topImagesNew/indexnew_r5_c10.jpg" width="69" height="18" border="0"></a></td>
+   <td colspan="5"><img name="indexnew_r5_c11" src="topImagesNew/indexnew_r5_c11.jpg" width="196" height="1" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="7"><img name="indexnew_r6_c1" src="topImagesNew/indexnew_r6_c1.jpg" width="22" height="30" border="0"></td>
+   <td rowspan="4"><a href="#" onClick="opw('node01.html','menu01.html','_top')" 
+   
+   
+   onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');window.FW_showMenu(window.fw_menu_2,21,72);MM_swapImage('indexnew_r6_c2','','topImagesNew/indexnew_r6_c2_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c2" src="topImagesNew/indexnew_r6_c2.jpg" width="51" height="18" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c3" src="topImagesNew/indexnew_r6_c3.jpg" width="24" height="30" border="0"></td>
+   <td><a href="#" onClick="opw('node14.html','menu14.html','_top')"
+   
+   
+   onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="window.FW_showMenu(window.fw_menu_3,98,72);MM_swapImage('indexnew_r6_c4','','topImagesNew/indexnew_r6_c4_f2.jpg',1);" ><img name="indexnew_r6_c4" src="topImagesNew/indexnew_r6_c4.jpg" width="64" height="8" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c5" src="topImagesNew/indexnew_r6_c5.jpg" width="24" height="30" border="0"></td>
+   <td rowspan="4"><a href="#" onClick="opw('node20.html','menu20.html','_top')" 
+   
+   onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');window.FW_showMenu(window.fw_menu_4,186,72);MM_swapImage('indexnew_r6_c6','','topImagesNew/indexnew_r6_c6_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c6" src="topImagesNew/indexnew_r6_c6.jpg" width="75" height="18" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c7" src="topImagesNew/indexnew_r6_c7.jpg" width="26" height="30" border="0"></td>
+   <td rowspan="4"><a href="#" onClick="opw('node25.html','menu25.html','_top')"
+   
+
+ onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');window.FW_showMenu(window.fw_menu_5,287,72);MM_swapImage('indexnew_r6_c8','','topImagesNew/indexnew_r6_c8_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c8" src="topImagesNew/indexnew_r6_c8.jpg" width="69" height="18" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c9" src="topImagesNew/indexnew_r6_c9.jpg" width="27" height="30" border="0"></td>
+   <td rowspan="7"><img name="indexnew_r6_c11" src="topImagesNew/indexnew_r6_c11.jpg" width="25" height="30" border="0"></td>
+   <td rowspan="4"><a href="#" onClick="opw('node35.html','menu35.html','_top')"    
+   
+   onMouseOut="MM_swapImgRestore();FW_startTimeout();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');window.FW_showMenu(window.fw_menu_6,476,72);MM_swapImage('indexnew_r6_c12','','topImagesNew/indexnew_r6_c12_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c12" src="topImagesNew/indexnew_r6_c12.jpg" width="67" height="18" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c13" src="topImagesNew/indexnew_r6_c13.jpg" width="27" height="30" border="0"></td>
+   <td><a href="#" onClick="opw('examenes.html','menuExamen.html','_top')"   
+   
+   onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');MM_swapImage('indexnew_r6_c14','','topImagesNew/indexnew_r6_c14_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c14" src="topImagesNew/indexnew_r6_c14.jpg" width="49" height="8" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c15" src="topImagesNew/indexnew_r6_c15.jpg" width="28" height="30" border="0"></td>
+   <td rowspan="7"><img name="indexnew_r6_c17" src="topImagesNew/indexnew_r6_c17.jpg" width="28" height="30" border="0"></td>
+   <td rowspan="5"><a  href="#" onClick="opw('node42.html','blancaHg.htm','_top')"
+   
+   
+   
+   onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');MM_swapImage('indexnew_r6_c18','','topImagesNew/indexnew_r6_c18_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c18" src="topImagesNew/indexnew_r6_c18.jpg" width="37" height="19" border="0"></a></td>
+   <td rowspan="7"><img name="indexnew_r6_c19" src="topImagesNew/indexnew_r6_c19.jpg" width="20" height="30" border="0"></td>
+   <td rowspan="2"><a href="#" onClick="opw('autores.html','blancaHg.htm','_top')" 
+   
+   onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_displayStatusMsg('Instituto Tecnol�gico de Costa Rica');MM_swapImage('indexnew_r6_c20','','topImagesNew/indexnew_r6_c20_f2.jpg',1);return document.MM_returnValue" ><img name="indexnew_r6_c20" src="topImagesNew/indexnew_r6_c20.jpg" width="38" height="9" border="0"></a></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="8" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="6"><img name="indexnew_r7_c4" src="topImagesNew/indexnew_r7_c4.jpg" width="64" height="22" border="0"></td>
+   <td rowspan="6"><img name="indexnew_r7_c14" src="topImagesNew/indexnew_r7_c14.jpg" width="49" height="22" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="5"><img name="indexnew_r8_c20" src="topImagesNew/indexnew_r8_c20.jpg" width="38" height="21" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="8" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="4"><img name="indexnew_r9_c10" src="topImagesNew/indexnew_r9_c10.jpg" width="69" height="13" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="3"><img name="indexnew_r10_c2" src="topImagesNew/indexnew_r10_c2.jpg" width="51" height="12" border="0"></td>
+   <td rowspan="3"><img name="indexnew_r10_c6" src="topImagesNew/indexnew_r10_c6.jpg" width="75" height="12" border="0"></td>
+   <td rowspan="3"><img name="indexnew_r10_c8" src="topImagesNew/indexnew_r10_c8.jpg" width="69" height="12" border="0"></td>
+   <td rowspan="3"><img name="indexnew_r10_c12" src="topImagesNew/indexnew_r10_c12.jpg" width="67" height="12" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="2"><img name="indexnew_r11_c18" src="topImagesNew/indexnew_r11_c18.jpg" width="37" height="11" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="3" border="0"></td>
+  </tr>
+  <tr>
+   <td><img name="indexnew_r12_c16" src="topImagesNew/indexnew_r12_c16.jpg" width="54" height="8" border="0"></td>
+   <td><img src="topImagesNew/spacer.gif" width="1" height="8" border="0"></td>
+  </tr>
+
+
+</table>
+
+</layer>
+<p><br>
+</p>
+<div align="center">
+  <center>
+  <table border="0" width="676" height="105" cellspacing="0" bgcolor="#389CA0">
+    <tr>
+      <td width="719" height="105">
+<div align="center">
+  <table border="0" width="715" height="99" bgcolor="#FFFFFF">
+    <tr>
+      <td width="937" height="42" colspan="3">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td width="937" height="45" colspan="3">
+        <p align="center">&nbsp; <img border="0" src="topImagesNew/TituloPrincipalNew.gif" width="271" height="33">
+      </td>
+    </tr>
+    <tr>
+      <td width="84" height="32">
+        <p align="center">
+&nbsp;
+      </td>
+      <td width="355" height="32">
+<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE="image3dcube.class" WIDTH="247" HEIGHT="170">
+  <param name="background" value="FFFFFF">
+  <param name="shadowcolor" value="FFFFFF">
+  <param name="textcolor" value="000000">
+  <param name="spotlight" value="no">
+  <param name="showlightbutton" value="no">
+  <param name="sleeptime" value="20">
+  <param name="target" value="_new">
+  <param name="anglestep" value="1">
+  <param name="mouseresponse" value="8">
+  <param name="zoomspeed" value="5">
+  <param name="image0" value="images/img0new.gif">
+  <param name="image1" value="images/img1new.gif">
+  <param name="image2" value="images/img2new.gif">
+  <param name="image3" value="images/img3new.gif">
+  <param name="image4" value="images/img0new.gif">
+  <param name="image5" value="images/img2new.gif">
+  <param name="url0" value="https://tec.ac.cr/revistamate/">
+  <param name="url1" value="https://tec.ac.cr/revistamate/">
+  <param name="url2" value="https://tec.ac.cr/revistamate/">
+  <param name="url3" value="http://https://tec.ac.cr/revistamate/">
+  <param name="url4" value="https://tec.ac.cr/revistamate/">
+  <param name="url5" value="https://tec.ac.cr/revistamate/">
+</applet-->
+        &nbsp;
+      </td>
+      <td width="437" height="32">
+        <img border="0" src="topImagesNew/teoriaPNGnew.gif" width="306" height="232">
+      </td>
+    </tr>
+    <tr>
+      <td width="937" height="18" colspan="3">
+        <p align="center">&nbsp;
+        <img border="0" src="Images/Esc.gif" width="165" height="27">
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

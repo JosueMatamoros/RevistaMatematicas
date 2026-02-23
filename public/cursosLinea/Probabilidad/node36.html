@@ -1,0 +1,546 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="5" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00610000000000000000">
+ <font size="3">
+ Desigualdades de Markov y  Chebyshev</font> </A>
+</H1> Si <I>X</I> es una
+variable aleatoria discreta con rango <I>R</I><SUB>X</SUB> entonces es
+sencillo deducir  la siguiente secuencia de desigualdades:
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\mathop{E}(X) & = & \sum_{R_X} x \mathop{P[X=x]}\\
+   & = & \sum_{x < t} x \mathop{P[X=x]}+\sum_{x \geq t}
+   x\mathop{P[X=x]}\\
+   & \geq & \sum_{x\geq t } x\mathop{P[X=x]}\\
+   & \geq & \sum_{x\geq t } t\mathop{P[X=x]}\\
+   &=& t\mathop{P[X \geq t]}
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>E(<I>X</I>)</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="27" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img314.gif"
+ ALT="$\displaystyle \sum_{R_X}^{}$"><I>x</I>P[X = x]</b></TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="27" height="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img315.gif"
+ ALT="$\displaystyle \sum_{x &lt; t}^{}$"><I>x</I>P[X = x] + <IMG
+ width="27" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.gif"
+ ALT="$\displaystyle \sum_{x \geq t}^{}$"><I>x</I>P[X = x]</b></TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b><IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"></b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="27" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.gif"
+ ALT="$\displaystyle \sum_{x \geq t}^{}$"><I>x</I>P[X = x]</b></TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b><IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"></b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="27" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.gif"
+ ALT="$\displaystyle \sum_{x \geq t}^{}$"><I>t</I>P[X = x]</b></TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><I>t</I>P[X <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> t]</b></TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+Este an&#225;lisis, que  se puede hacer en forma equivalente para
+distribuciones continuas da lugar al siguiente teorema conocido
+como la desigualdad de Markov [<A
+ HREF="node43.html#Allen">2</A>].
+
+<P>
+<BR>
+<IMG
+ width="555" height="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img317.gif"
+ ALT="\begin{Teor}Si $X$\ es una variable aleatoria, cuya esperanza es $
+\mathop{E}(X),$\ para la cual $\mathop{P}[X&lt;0]=0$\ se cumple la
+desigualdad \end{Teor}">
+<BR>
+
+<DIV ALIGN="CENTER"><A NAME="Markov"></A><!-- MATH
+ \begin{equation}
+\mathop{P[X \geq t]} \leq \frac{\mathop{E}(X)}{t}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<p align="center"><b>
+P[X <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> t] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="52" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.gif"
+ ALT="$\displaystyle {\frac{\mathop{E}(X)}{t}}$">
+</b></p>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.1)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Esta desigualdad permite hacer aproximaciones vagas acerca del
+comportamiento de variables aleatorias tomando en cuenta
+&#250;nicamente  la esperanza. Veamos el siguiente ejemplo.
+
+<P>
+<I>Ejemplo 30</I>
+
+<P>
+En una caja hay 10 bolillas rojas y 6 negras. Se extraen con
+remplazo 8 bolillas y se registra el n&#250;mero de bolillas rojas
+extra&#237;das.
+
+<P>
+<I>X</I> sigue una distribuci&#243;n binomial <!-- MATH
+ $\mathop{b}(x;8,10/16)$
+ -->
+b(<I>x</I>;8, 10/16) y
+usando  la herramienta para binomiales,  es simple verificar por
+ejemplo que <!-- MATH
+ $\mathop{P}[X \geq 6]= 1-\mathop{P}[X \leq 5] =
+0.3697$
+ -->
+P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$"> 6] = 1 - P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$ \leq$"> 5] = 0.3697.
+
+<P>
+Utilizando la desigualdad de Markov se obtiene que <!-- MATH
+ $\mathop{P[X
+\geq 6]}\leq 5/6 = 0,8333.$
+ -->
+P[X <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$"> 6] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$ \leq$"> 5/6 = 0, 8333.
+
+<P>
+Comparando estos dos valores nos damos cuenta que la cota que se
+obtiene por la desigualdad de Markov no necesariamente es buena.
+
+<P>
+Es importante notar que si en la desigualdad (<A HREF="node36.html#Markov">6.1</A>)
+utilizamos <!-- MATH
+ $t= n \mu_X$
+ -->
+ <b>
+<I>t</I> = <I>n</I></b><IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$ \mu_{X}^{}$"> obtenemos
+<!-- MATH
+ \begin{displaymath}
+\mathop{P[X \geq n \mu_X]} \leq \frac{1}{n}
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+P[X <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> n<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="19" height="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.gif"
+ ALT="$\displaystyle {\frac{1}{n}}$">
+</b>
+</DIV>
+
+<P>
+Es decir la probabilidad de que los valores de una variable
+aleatoria est&#233;n a m&#225;s de <I>n</I> veces la media es menor a 1/<I>n</I>.
+
+<P>
+Si adem&#225;s de la media o esperanza se conoce la varianza entonces
+existe la posibilidad de hacer acotaciones  con un poco m&#225;s de
+precisi&#243;n. Supongamos que <I>X</I> es una variable aleatoria con
+esperanza <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$ \mu_{X}^{}$"> y varianza <!-- MATH
+ $\sigma^2_X$
+ -->
+<IMG
+ width="27" height="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.gif"
+ ALT="$ \sigma^{2}_{X}$"> Si consideramos la
+variable aleatoria <!-- MATH
+ $(X-\mu_X)^2,$
+ -->
+ <b>(<I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$ \mu_{X}^{}$">)<SUP>2</SUP></b>, aplicando  la desigualdad de
+Markov a esta variable, cuya esperanza es precisamente
+<!-- MATH
+ $\sigma^2_X$
+ -->
+<IMG
+ width="27" height="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.gif"
+ ALT="$ \sigma^{2}_{X}$"> (<A HREF="node23.html#EspeDis">3.9</A>),  se obtiene
+<!-- MATH
+ \begin{displaymath}
+\mathop{P}[(X-\mu_X)^2 \geq t^2 ] \leq \frac{\sigma^2_X}{t^2}
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+P[(<I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> <I>t</I><SUP>2</SUP>] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="31" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img322.gif"
+ ALT="$\displaystyle {\frac{\sigma^2_X}{t^2}}$">
+</b>
+</DIV>
+
+<P>
+Dado que <!-- MATH
+ $(X-\mu_X)^2 \geq t^2$
+ -->
+ <b>(<I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$ \mu_{X}^{}$">)<SUP>2</SUP> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$"> <I>t</I><SUP>2</SUP> </b> es equivalente a <!-- MATH
+ $|X-\mu_X| \geq
+t$
+ -->
+ <b>| <I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.gif"
+ ALT="$ \mu_{X}^{}$">| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$ \geq$"> <I>t</I> </b> se obtiene el teorema conocido  como la desigualdad
+ de <EM>Chebyshev.</EM> <BR>
+
+<P>
+<IMG
+ width="554" height="41" ALIGN="BOTTOM" BORDER="0"
+ SRC="img323.gif"
+ ALT="\begin{Teor}Si $X$\ es una
+variable aleatoria con media $\mu_X $\ y varianza $\sigma^2_X$.
+Entonces para cualquier valor $t&gt;0$\ se tiene \end{Teor}">
+<BR>
+
+<DIV ALIGN="CENTER"><A NAME="Chebyshev"></A><!-- MATH
+ \begin{equation}
+\mathop{P}[|X-\mu_X)| \geq t ] \leq \frac{\sigma^2_X}{t^2}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+P[| <I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> <I>t</I>] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="31" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img322.gif"
+ ALT="$\displaystyle {\frac{\sigma^2_X}{t^2}}$">
+</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.2)</TD></TR>
+</TABLE></DIV>
+
+<P>
+La desigualdad de Chebyshev permite acotar la probabilidad de que
+los valores de la distribuci&#243;n queden alrededor de la  media.
+Estas
+ aproximaciones no necesariamente son buenas, no obstante mejorar
+ los resultados que se pueden obtener con esta desigualdad
+ implicar&#237;a restringir mucho las hip&#243;tesis iniciales, como se ver&#225;
+ en un ejemplo posterior.
+
+<P>
+<I>Ejemplo 31</I>
+
+<P>
+Una persona puede digitar un texto en un tiempo que sigue una
+ distribuci&#243;n con media 50 minutos y desviaci&#243;n 10 minutos.
+ Para estimar una cota para la probabilidad de que esta persona
+ tarde entre 30 y 50 minutos se puede recurrir a la desigualdad de
+ Chebyshev y se obtiene
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[30 <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> T <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 70] = 1 - P[| <I>X</I> - 50| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 20] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 1 - <IMG
+ width="29" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.gif"
+ ALT="$\displaystyle {\textstyle\frac{100}{400}}$"> = <IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img325.gif"
+ ALT="$\displaystyle {\textstyle\frac{3}{4}}$">
+</b>
+</DIV>
+
+<P>
+A&#250;n cuando este tipo de estimaciones pueden resultar innecesarias
+ cuando se dispone de la distribuci&#243;n de probabilidad el ejemplo
+ siguiente sirve para comparar los resultados que se obtienen usando la
+ de la desigualdad (<A HREF="node36.html#Chebyshev">6.2</A>).
+
+<P>
+<I>Ejemplo 32</I>
+
+<P>
+El tiempo que tarda un computador en resolver un problema
+  sigue una   distribuci&#243;n exponencial   con media 2 minutos. Para estimar
+  la probabilidad  que el tiempo de soluci&#243;n de  un problema  al
+  azar est&#233; entre 0 y 6 minutos si utilizamos la desigualdad
+  de Chebyshev obtenemos
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[0 <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> T <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> 6] = 1 - P[| <I>X</I> - 2| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 4] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 1 - <IMG
+ width="22" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.gif"
+ ALT="$\displaystyle {\textstyle\frac{4}{16}}$"> = .75</b>
+</DIV>
+
+<P>
+Es decir con la desigualdad de Chebyshev obtenemos que la
+ probabilidad de que el tiempo est&#233; entre 0 y 6 minutos es
+ superior a 0.75.
+
+<P>
+Si usamos la distribuci&#243;n en forma directa obtenemos que:
+<!-- MATH
+ \begin{displaymath}
+\mathop{P[0 \leq T  \leq 6]}= \int_{0}^{6}
+\frac{e^{-x/2}}{2} \,dx = 1-e^{-3} = 0.95
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>P[0 <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$">  T <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$">  6] = <IMG
+ width="28" height="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img327.gif"
+ ALT="$\displaystyle \int_{0}^{6}$"><IMG
+ width="49" height="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img328.gif"
+ ALT="$\displaystyle {\frac{e^{-x/2}}{2}}$">&nbsp;d<I>x</I>  = 1 - <I>e</I><SUP>-3</SUP> 
+= 0.95</b>
+</DIV>
+
+<P>
+Lo que  nos indica que las cotas que se obtienen de la
+desigualdad de Chebyshev pueden no ser muy buenas, no obstante
+como veremos no es tan f&#225;cil mejorar las cotas que se obtienen
+con esta desigualdad sin imponer restricciones adicionales.
+
+<P>
+El siguiente ejemplo, [<A
+ HREF="node43.html#Allen">2</A>], es ilustrativo en ese sentido.
+
+<P>
+<I>Ejemplo 33</I>
+
+<P>
+Sea <I>X</I> una variable aleatoria discreta cuya distribuci&#243;n
+de probabilidad se da en la siguiente tabla:
+<BR>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER">&nbsp;</TD>
+<TD ALIGN="CENTER"><I>x</I><SUB>1</SUB> = - 2</TD>
+<TD ALIGN="CENTER"><I>x</I><SUB>2</SUB> = 0</TD>
+<TD ALIGN="CENTER"><I>x</I><SUB>3</SUB> = 2</TD>
+</TR>
+<TR><TD ALIGN="CENTER">&nbsp;</TD>
+<TD ALIGN="CENTER"><!-- MATH
+ $\mathop{P}[X=x_1]= 1/8$
+ -->
+P[<I>X</I> = <I>x</I><SUB>1</SUB>] = 1/8</TD>
+<TD ALIGN="CENTER"><!-- MATH
+ $\mathop{P}[X=x_2]= 3/4$
+ -->
+P[<I>X</I> = <I>x</I><SUB>2</SUB>] = 3/4</TD>
+<TD ALIGN="CENTER"><!-- MATH
+ $\mathop{P}[X=x_3]= 1/8$
+ -->
+P[<I>X</I> = <I>x</I><SUB>3</SUB>] = 1/8</TD>
+</TR>
+</TABLE>
+<BR>
+Es muy sencillo verificar que <!-- MATH
+ $\mathop{E}[X]= 0$
+ -->
+E[<I>X</I>] = 0 y que
+<!-- MATH
+ $\mathop{VAR}[X]= 1$
+ -->
+VAR[<I>X</I>] = 1
+
+<P>
+Si aplicamos la desigualdad de Chebyshev obtenemos que
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[| <I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 2] <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\displaystyle \leq$"> <IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{4}}$">
+</b>
+</DIV>
+
+<P>
+que en este coincide con el valor pues
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+P[| <I>X</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">| <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \geq$"> 2] = P[<I>X</I> = 2] + P[<I>X</I> = - 2] = <IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{8}}$"> + <IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{8}}$"> = <IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{4}}$">
+</b>
+</DIV>
+
+<P>
+Este ejemplo indica que a&#250;n cuando las cotas obtenidas de la
+desigualdad (<A HREF="node36.html#Chebyshev">6.2</A>) no siempre son buenas  a veces son
+exactas.
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

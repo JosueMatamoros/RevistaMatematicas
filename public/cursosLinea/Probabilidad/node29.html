@@ -1,0 +1,361 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    function AbrirVentana() {
+      MiVentana=open("","Herramientas","width=455 , height=195"); 
+      MiVentana.document.write("<html><head><title>Herramientas</title></head><body>"       
+                               +"<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE='Hipergeometrica.class' archive='Hipergeometrica.jar' CODEBASE='./'" 
+                               +"WIDTH='438' HEIGHT='180' ALIGN='CENTER'></applet-->"
+                               +"</BODY></HTML>");
+    }
+  </SCRIPT>
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="6" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<!--Navigation Panel-->
+<BR>
+<!--End of Navigation Panel--><A NAME="SECTION00430000000000000000"><b>
+Distribuci&#243;n de probabilidad Hipergeom&#233;trica</b></A>
+
+<P>
+<BR>
+<IMG
+ width="557" height="266" ALIGN="BOTTOM" BORDER="0"
+ SRC="img267.gif"
+ ALT="\begin{Def}Un Experimento se clasifica como Hipergeom\'etrico si cumple
+las sigu...
+...\ es el n\'umero de \'exitos obtenidos
+en la muestra.
+\end{itemize}\par\end{Def}">
+<BR>
+
+<P>
+Los tipos de aplicaciones en los cuales la distribuci&#243;n es
+hipergeom&#233;trica son muy similares a aquellos donde se aplica la
+binomial. Una  manera de entender la diferencia entre ambas es
+analizando el esquema con que se lleva a cabo el muestreo.
+Mientras que en la distribuci&#243;n binomial el muestreo se
+ realiza con reemplazo de cada art&#237;culo, despu&#233;s de observarse, en la
+hipergeom&#233;trica  el muestreo se lleva a cabo sin reemplazo.
+
+<P>
+Por ejemplo de un naipe se desea extraer una muestra de 5 cartas
+y calcular la probabilidad de obtener 3 cartas rojas. En este
+caso se deben muestrear 5 objetos, para cada objeto se considera
+como &#233;xito el hecho que la carta sea roja y como fracaso que sea
+negra, hay 26 &#233;xitos en  la poblaci&#243;n, toda muestra de 5
+cartas tiene la misma probabilidad de ser elegida.
+
+<P>
+El conjunto de valores posibles <I>x</I> para la variable aleatoria en
+un experimento hipergeom&#233;trico est&#225; restringido por dos
+condiciones importantes, la primera de ellas es que en la muestra
+puede haber a lo sumo <!-- MATH
+ $\min\{ n,M \}$
+ -->
+min{<I>n</I>, <I>M</I>} &#233;xitos mientras que  al
+menos hay  <!-- MATH
+ $\max\{0, n-(N-M)\}$
+ -->
+ <b>max{0, <I>n</I> - (<I>N</I> - <I>M</I>)}</b> &#233;xitos.
+
+<P>
+La distribuci&#243;n de probabilidad <!-- MATH
+ $h(x;n,M,N)$
+ -->
+ <b>
+<I>h</I>(<I>x</I>;<I>n</I>, <I>M</I>, <I>N</I>)</b> depende de:
+
+<UL>
+<LI>el tama&#241;o de la muestra <I><b>n</b></I>,
+</LI>
+<LI>el tama&#241;o del conjunto sobre el cual se toman los objetos
+<I><b>N</b></I>,
+</LI>
+<LI>y el n&#250;mero de &#233;xitos, <I><b>M</b></I>, en el conjunto sobre el que se hace el muestreo.
+</LI>
+</UL>
+
+<P>
+El c&#225;lculo de la distribuci&#243;n de probabilidad para un valor
+<I>x</I> de los posibles de la variable aleatoria se puede hacer de
+manera simple  pues  la probabilidad <!-- MATH
+ $\mathop{P}[X=x]$
+ -->
+ <b>P[<I>X</I> = <I>x</I>]</b> puede
+reducirse a un problema de conteo. Se eligen <I>x</I> de los <I><b>M</b></I>
+&#233;xitos y se eligen <b> <I>n</I> - <I>x</I> </b> de los <b> <I>N</I> - <I>M</I> </b> que no son &#233;xitos, y se
+divide entre el total de posibles maneras de escoger los <I>x</I>
+elementos de los <I>N</I>. Esto conduce a la expresi&#243;n:
+
+<P>
+&nbsp;
+<DIV ALIGN="CENTER"><A NAME="hiper"></A><!-- MATH
+ \begin{eqnarray}
+h(x;n,M,N) =\frac{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle M}  \\
+               { \scriptstyle  x} \\
+          \end{array}
+        \!\!\! \right)
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle N-M}  \\
+               { \scriptstyle  n-x} \\
+          \end{array}
+        \!\!\! \right) }{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle N}  \\
+               { \scriptstyle  n} \\
+          \end{array}
+        \!\!\! \right) }.
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">
+    <p align="center"><b><I>h</I>(<I>x</I>;<I>n</I>, <I>M</I>, <I>N</I>)</b>
+    <b> =</b> <IMG
+ width="110" height="116" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.gif"
+ ALT="$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+{\scriptstyle M} \\
+{ \scri...
+...ray}{c}
+{\scriptstyle N} \\
+{ \scriptstyle n} \\
+\end{array}\!\!\! \right) }}$">.</p>
+  </TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(4.2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+<BR>
+<IMG
+ width="555" height="280" ALIGN="BOTTOM" BORDER="0"
+ SRC="img269.gif"
+ ALT="\begin{Teor}Si $X$\ sigue una distribuci\'on hipergeom\'etrica, con las
+condicio...
+...1}\right) \frac{M}{N}
+\left(1-\frac{M}{N}\right).\end{displaymath}\par\end{Teor}">
+<BR>
+
+<P align="center">Los c&aacute;lculos que se necesitan para la distribuci&oacute;n hipergeométrica se
+pueden hacer recurriendo a la herramienta adjunta.
+<p align="center"><img border="0" src="images/node231.gif" width="29" height="12">
+        <input name="B1" onclick="AbrirVentana()" type="button" value="Distr. Hipergeométrica" style="color: #99FFCC; font-weight: bold; font-family: Calisto MT; background-color: #306898">
+        <img border="0" src="images/node232.gif" width="16" height="16"></p>
+<P>&nbsp;
+
+<P>
+<I>Ejemplo 24</I>
+
+<P>
+Un equipo de trabajo de 5 personas se va a seleccionar de entre
+cinco hombres y tres mujeres. Si la variable aleatoria es el
+n&#250;mero de hombres en el equipo, ¿cu&#225;l es la distribuci&#243;n de
+probabilidad asociada?
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Los posibles valores de esta variable aleatoria
+son 2, 3, 4 y 5 y las probabilidades son:
+
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<I>h</I>(<I>x</I>;5, 5, 8) =</b> <IMG
+ width="21" height="103" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.gif"
+ ALT="$\displaystyle \left\{\vphantom{ \begin{array}{r@{\quad:\quad}l}
+{10}/{56} &amp; \mb...
+... \mbox{Para } x = 4 \\
+{1}/{56} &amp; \mbox{Para } x = 5 \\
+\end{array}}\right.$"><IMG
+ width="187" height="103" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.gif"
+ ALT="$\displaystyle \begin{array}{r@{\quad:\quad}l}
+{10}/{56} &amp; \mbox{Para } x = 2 \\...
+...}/{56} &amp; \mbox{Para } x = 4 \\
+{1}/{56} &amp; \mbox{Para } x = 5 \\
+\end{array}$">,
+</DIV>
+
+<P>
+El lector puede verificar que la media para esta distribuci&#243;n
+es 176/56.
+
+<P>
+<I>Ejemplo 25</I>
+
+<P>
+De una poblaci&#243;n  de 500 animales se capturan 200,  se marcan
+y se sueltan para  que vuelvan a mezclarse con el resto de la
+poblaci&#243;n.
+
+<P>
+La probabilidad de que en una muestra de 20 animales capturados o
+recapturados haya 4 o menos
+ marcados se puede calcular por
+ <!-- MATH
+ \begin{displaymath}
+\frac{
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle 200}  \\
+               { \scriptstyle  0} \\
+          \end{array}
+        \!\!\! \right)
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  20} \\
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  1} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  10} \\
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  2} \\
+          \end{array}
+        \!\!\! \right) 
+
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  18} \\
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  3} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  17} \\
+          \end{array}
+        \!\!\! \right) +
+
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  4} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  16} \\
+          \end{array}
+        \!\!\! \right) }{ 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 500}  \\
+               { \scriptstyle  20} \\
+          \end{array}
+        \!\!\! \right) }.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<IMG
+ width="471" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.gif"
+ ALT="$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+{\scriptstyle 200} \\
+{ ...
+...{\scriptstyle 500} \\
+{ \scriptstyle 20} \\
+\end{array} \!\!\! \right) }}$">.
+</DIV>
+
+<P>
+Mientras tanto la probabilidad de que aparezcan 3 o m&#225;s animales
+marcados en una captura o recaptura de 20 es:
+<!-- MATH
+ \begin{displaymath}
+1-\frac{
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle 200}  \\
+               { \scriptstyle  0} \\
+          \end{array}
+        \!\!\! \right)
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  20} \\
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  1} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  19} \\
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\
+               { \scriptstyle  2} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\
+               { \scriptstyle  18} \\
+          \end{array}
+        \!\!\! \right) } {
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 500}  \\
+               { \scriptstyle  20} \\
+          \end{array}
+        \!\!\! \right) }. 
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>1 - <IMG
+ width="471" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.gif"
+ ALT="$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+{\scriptstyle 200} \\
+{ ...
+...{\scriptstyle 500} \\
+{ \scriptstyle 20} \\
+\end{array} \!\!\! \right) }}$">.</b>
+</DIV><P>&nbsp;</P>
+
+<P>&nbsp;</P>
+
+  </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

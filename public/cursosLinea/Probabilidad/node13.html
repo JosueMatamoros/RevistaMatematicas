@@ -1,0 +1,493 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="9" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h1><a NAME="SECTION00130000000000000000"><font size="3">Probabilidad Total y
+Regla de Bayes</font></a></h1>
+<p>Si revisamos de nuevo el ejemplo del carpintero y los tornillos podemos notar
+como caracter&iacute;stica importante en ese experimento que est&aacute; constituido de dos
+estados: Primero se debe elegir una caja y una vez hecho esto se debe sacar un
+tornillo de la misma. Hay algunas preguntas que plantearse respecto a este
+experimento que podr&iacute;an resultar diferentes a lo que hemos explorado hasta
+ahora.
+<p>Por ejemplo ¿Cu&aacute;l es la probabilidad <i>S</i> de sacar un tornillo de 20
+mm.?&nbsp; Si se sac&oacute; un tornillo de 20 mm., ¿cu&aacute;l es la probabilidad de que
+se haya escogido de la caja azul?
+<p>El esquema para abordar este par de preguntas nos permitir&aacute;n iniciar el
+estudio de los temas <em>probabilidad total</em> y <em>Teorema de Bayes</em>,
+que son los &uacute;ltimos temas de este cap&iacute;tulo.
+<p>Para resolver el primero de los dos problemas propuestos es importante tener
+en cuenta que hay dos alternativas para obtener un tornillo de 20 mm. A saber
+elegir en el primer estado la caja azul y sacar un tornillo de 20 mm o bien
+elegir en el primer estado la caja roja y sacar un tornillo de 20 mm. Si <i>M</i>
+es el evento toma el tornillo de la caja azul y <i>N</i> toma el tornillo de la
+caja roja. Y <i>S</i> es el tornillo es de 20 mm se tiene<br>
+<div ALIGN="CENTER">
+  <!-- MATH
+ \begin{eqnarray*}
+\mathop{P}[S]&=&\mathop{P}[(M \cap S)\cup (N \cap S) ]\\
+&=&
+\mathop{P}[M \cap S]+ \mathop{P}[N \cap S]\\
+& =&\mathop{P}[M]\mathop{P}[S\setminus M]
++ \mathop{P}[N]\mathop{P}[S\setminus N] \\
+&=&
+\frac{2}{3}\frac{5}{9}+\frac{1}{3}\frac{2}{8}\\
+&=&\frac{48}{108}.
+\end{eqnarray*}
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>P[<i>S</i>]</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[(<i>M</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>S</i>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+        (<i>N</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>S</i>)]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[<i>M</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>S</i>] + P[<i>N</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>S</i>]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[<i>M</i>]P[<i>S</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>M</i>] + P[<i>N</i>]P[<i>S</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>N</i>]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img59.gif" ALT="$\displaystyle {\textstyle\frac{2}{3}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img55.gif" ALT="$\displaystyle {\textstyle\frac{5}{9}}$" width="15" height="38">
+        + <img ALIGN="MIDDLE" BORDER="0" SRC="img54.gif" ALT="$\displaystyle {\textstyle\frac{1}{3}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img56.gif" ALT="$\displaystyle {\textstyle\frac{2}{8}}$" width="15" height="38"></b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img80.gif" ALT="$\displaystyle {\textstyle\frac{48}{108}}$" width="29" height="38">.</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Para resolver este tipo de problemas necesitamos establecer algunas
+definiciones y resultados importantes.
+<p>&nbsp;
+<p>Si <!-- MATH
+ $A_1,A_2,\dots,A_n$
+ -->
+ <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub>,..., <i>A</i><sub>n</sub> son
+eventos tales que:
+<p>&nbsp;
+<ul>
+  <li><!-- MATH
+ $A_i \cap A_j = \emptyset$
+ -->
+    <b><i>A</i><sub>i</sub> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+    <i>A</i><sub>j</sub> =</b> <img ALIGN="MIDDLE" BORDER="0" SRC="img5.gif" ALT="$ \emptyset$" width="13" height="34">
+    siempre que <i>i</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img36.gif" ALT="$ \neq$" width="18" height="32">
+    <i>j</i>.</li>
+  <li><!-- MATH
+ $\mathop{P}[A_i] > 0, i=1,2,\dots,n.$
+ -->
+    <b>P[<i>A</i><sub>i</sub>] &gt; 0, <i>i</i> = 1, 2,..., <i>n</i></b>.</li>
+  <li><!-- MATH
+ $\bigcup_{i=1}^n A_i = \Omega.$
+ -->
+    <b><img ALIGN="MIDDLE" BORDER="0" SRC="img81.gif" ALT="$ \bigcup_{i=1}^{n}$" width="40" height="33"><i>A</i><sub>i</sub>
+    = <img ALIGN="BOTTOM" BORDER="0" SRC="img9.gif" ALT="$ \Omega$" width="17" height="15">.</b></li>
+</ul>
+Se dice que <!-- MATH 
+ $A_1,A_2,\dots,A_n$ 
+ -->
+ <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub>,..., <i>A</i><sub>n</sub> forman una
+partici&oacute;n del espacio <img ALIGN="BOTTOM" BORDER="0" SRC="img9.gif" ALT="$ \Omega$" width="17" height="15">.
+<p>Cuando un experimento consiste de la realizaci&oacute;n de dos etapas y es tal que
+la primera puede descomponerse en <!-- MATH 
+ $A_1,A_2,\dots,A_n$ 
+ -->
+ <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub>,..., <i>A</i><sub>n</sub> eventos,
+entonces la ocurrencia de cualquier evento <i>B</i> en la segunda etapa s&oacute;lo
+puede darse en forma conjunta con alguno de los eventos de la primera etapa. Es
+decir el evento <i>B</i> se descompone en la forma <!-- MATH 
+ $B= (B\cap A_1) \cup 
+(B\cap A_2) \cup \dots (B\cap A_n)$ 
+ -->
+ <b><i>B</i> = (<i>B</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+ <i>A</i><sub>1</sub>) <img ALIGN="BOTTOM" BORDER="0" SRC="img14.gif" ALT="$ \cup$" width="16" height="16">
+ (<i>B</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+ <i>A</i><sub>2</sub>) <img ALIGN="BOTTOM" BORDER="0" SRC="img14.gif" ALT="$ \cup$" width="16" height="16">
+ ...(<i>B</i> <img ALIGN="BOTTOM" BORDER="0" SRC="img17.gif" ALT="$ \cap$" width="16" height="16">
+ <i>A</i><sub>n</sub>)</b>. Si se tiene adem&aacute;s que <!-- MATH 
+ $A_1,A_2,\dots,A_n$ 
+ -->
+ <i>A</i><sub>1</sub>, <i>A</i><sub>2</sub>,..., <i>A</i><sub>n</sub> forman una
+partici&oacute;n del espacio muestral en la primera etapa entonces los eventos en la
+descomposici&oacute;n anterior son independientes y obtenemos el siguiente teorema:
+<p><br>
+<a NAME="ProbTot"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img82.gif" ALT="\begin{Teor}Si $A_1,A_2,\dots,A_n$\ forman una partici\'on del espacio 
+$\Omega$\ y si $B$\ es cualquier evento entonces: 
+\end{Teor}" width="554" height="39"><br>
+<br>
+<div ALIGN="CENTER">
+  <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[B] &=&  \mathop{P}[(B\cap A_1) \cup (B\cap A_2) \cup \dots (B\cap A_n)] \\ 
+&=& \mathop{P}[B\cap A_1]+ 
+\mathop{P}[B\cap A_2]+\dots+\mathop{P}[B\cap A_n] \\ 
+&=& \mathop{P}[A_1]\mathop{P}[B\setminus A_1]+\mathop{P}[A_2]\mathop{P}[B\setminus A_2]+ 
+\dots + \mathop{P}[A_n]\mathop{P}[B\setminus A_n]\\\nonumber 
+&=& \sum_{i=1}^n \mathop{P}[A_i]\mathop{P}[B\setminus A_i]. 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>P[<i>B</i>]</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[(<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>1</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+        (<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>2</sub>) <img ALIGN="MIDDLE" BORDER="0" SRC="img34.gif" ALT="$\displaystyle \cup$" width="16" height="30">
+        ...(<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>n</sub>)]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>1</sub>] + P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>2</sub>] + ... + P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img41.gif" ALT="$\displaystyle \cap$" width="16" height="30">
+        <i>A</i><sub>n</sub>]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>P[<i>A</i><sub>1</sub>]P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i><sub>1</sub>] + P[<i>A</i><sub>2</sub>]P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i><sub>2</sub>] + ... + P[<i>A</i><sub>n</sub>]P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i><sub>n</sub>]</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img83.gif" ALT="$\displaystyle \sum_{i=1}^{n}$" width="27" height="62">P[<i>A</i><sub>i</sub>]P[<i>B</i>
+        <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>A</i><sub>i</sub>].</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>El segundo de los problemas planteados se resuelve haciendo uso de
+probabilidades condicionales, interesa conocer la probabilidad condicional
+siguiente:
+<p>Si el resultado final de la elecci&oacute;n es un tornillo de 20 mm., ¿cu&aacute;l es la
+probabilidad de que se haya extra&iacute;do de la caja azul?
+<p>Utilizando la representaci&oacute;n de eventos del primer ejemplo y utilizando la f&oacute;rmula
+<a HREF="#ProbCond">1.7</a> y el <i>teorema</i> <a HREF="#ProbTot">3</a>
+obtenemos:<br>
+<div ALIGN="CENTER">
+  <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[M\setminus S] &=& 
+\frac{\mathop{P}[M\cap S]}{\mathop{P}[S]}\\ 
+   & = & \frac{\mathop{P}[M\cap S]}{\mathop{P}[M]\mathop{P}[S\setminus M] 
++ \mathop{P}[N]\mathop{P}[S\setminus N] }\\ 
+&=& \frac{5}{6}. 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>P[<i>M</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        <i>S</i>]</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img84.gif" ALT="$\displaystyle {\frac{\mathop{P}[M\cap S]}{\mathop{P}[S]}}$" width="81" height="57"></b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img85.gif" ALT="$\displaystyle {\frac{\mathop{P}[M\cap S]}{\mathop{P}[M]\mathop{P}[S\setminus M] 
++ \mathop{P}[N]\mathop{P}[S\setminus N] }}$" width="254" height="57"></b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img86.gif" ALT="$\displaystyle {\textstyle\frac{5}{6}}$" width="15" height="38">.</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Este tipo de deducciones propias de experimentos con dos estados y que
+implica el c&aacute;lculo de la probabilidad de que ocurra alg&uacute;n conjunto de
+condiciones o circunstancias del primer estado dado que ocurre un evento del
+segundo estado se resuelven recurriendo al siguiente teorema, conocido como <em>f&oacute;rmula
+de Bayes</em><i>:</i>
+<p><br>
+<a NAME="Bayes"></a><img ALIGN="BOTTOM" BORDER="0" SRC="img87.gif" ALT="\begin{Teor} 
+Si un experimento consiste de dos estados tal que la secuencia de e... 
+...sum_{i=1}^n 
+\mathop{P}[A_i]\mathop{P}[B\setminus A_i]}. 
+\end{eqnarray}\end{Teor}" width="557" height="194"><br>
+<p>&nbsp;
+<p><i>Ejemplo 7</i>
+<p>&nbsp;
+<p>Una caja <i>A</i> contiene tres bolas blancas y cuatro negras. Otra caja, <i>B</i>,
+contiene dos bolas blancas y tres negras. Se extraen bolas, una a una, en forma
+aleatoria y sin reemplazo.
+<ul>
+  <li>Si las dos bolas son elegidas de <i>A,</i> ¿cu&aacute;l es la probabilidad de
+    que ambas sean negras?
+    <p>&nbsp;</li>
+  <li>Si se eligen dos bolas, una de cada caja, ¿cu&aacute;l es la probabilidad de
+    que no sean del mismo color?
+    <p>&nbsp;</li>
+  <li>Si se elige una caja al azar y se extraen dos bolas al azar, ¿cu&aacute;l es la
+    probabilidad de que sean del mismo color?
+    <p>&nbsp;</li>
+  <li>Si se elige una de las cajas al azar se extraen dos bolas y son de colores
+    distintos, ¿cu&aacute;l es la probabilidad de que se hayan extra&iacute;do de la caja <i>B</i>?</li>
+</ul>
+<p><b>Soluci&oacute;n</b>
+<p>&nbsp;
+<ul>
+  <li>Si se saca la primer bola de la caja <i>A</i> y la segunda de la misma
+    caja la probabilidad de que ambas sean negras es: <!-- MATH 
+ \begin{displaymath} 
+\frac{4}{7}\frac{3}{6}. 
+\end{displaymath} 
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <img ALIGN="MIDDLE" BORDER="0" SRC="img88.gif" ALT="$\displaystyle {\textstyle\frac{4}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img89.gif" ALT="$\displaystyle {\textstyle\frac{3}{6}}$" width="15" height="38">.
+    </div>
+    <p>&nbsp;</p>
+  </li>
+  <li>Una manera de hacerlo es por complemento, extraer dos bolas de distinto
+    color es el complemento de extraerlas del mismo color. La probabilidad de
+    extraerlas del mismo color es sacar la primera negra y la segunda negra o la
+    primera blanca y la segunda blanca, por lo tanto la probabilidad pedida es: <!-- MATH 
+ \begin{displaymath} 
+1- \left(\frac{4}{7}\frac{3}{5}+ \frac{3}{7}\frac{2}{5} \right). 
+\end{displaymath} 
+ -->
+    <p>&nbsp;</p>
+    <div ALIGN="CENTER">
+      <b>1 - <img ALIGN="MIDDLE" BORDER="0" SRC="img90.gif" ALT="$\displaystyle \left(\vphantom{\frac{4}{7}\frac{3}{5}+ \frac{3}{7}\frac{2}{5} }\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img88.gif" ALT="$\displaystyle {\textstyle\frac{4}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img91.gif" ALT="$\displaystyle {\textstyle\frac{3}{5}}$" width="15" height="38">
+      + <img ALIGN="MIDDLE" BORDER="0" SRC="img29.gif" ALT="$\displaystyle {\textstyle\frac{3}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img92.gif" ALT="$\displaystyle {\textstyle\frac{2}{5}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img93.gif" ALT="$\displaystyle \left.\vphantom{\frac{4}{7}\frac{3}{5}+ \frac{3}{7}\frac{2}{5} }\right)$" width="18" height="55">.</b>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</li>
+  <li>El evento se descompone en elegir la caja <i>A</i> y extraer dos blancas o
+    dos negras o bien elegir caja <i>B</i> y extraer dos blancas o dos negras.<br>
+    <div ALIGN="CENTER">
+      <!-- MATH 
+ \begin{eqnarray*} 
+\frac{1}{2}\left(\frac{3}{7}\frac{2}{6}+ \frac{4}{7}\frac{3}{6} 
+\right)+ \frac{1}{2}\left(\frac{2}{5}\frac{1}{4}+ 
+\frac{3}{5}\frac{2}{4} \right) & = 
+\\ 
+\frac{1}{2}\left(\frac{6}{42}+ \frac{12}{42} \right)+ 
+\frac{1}{2}\left(\frac{2}{20}+ \frac{6}{20} \right)& 
+=&\frac{29}{70}. 
+\end{eqnarray*} 
+ -->
+      <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center"><b><img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img94.gif" ALT="$\displaystyle \left(\vphantom{\frac{3}{7}\frac{2}{6}+ \frac{4}{7}\frac{3}{6} 
+}\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img29.gif" ALT="$\displaystyle {\textstyle\frac{3}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img95.gif" ALT="$\displaystyle {\textstyle\frac{2}{6}}$" width="15" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img88.gif" ALT="$\displaystyle {\textstyle\frac{4}{7}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img89.gif" ALT="$\displaystyle {\textstyle\frac{3}{6}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img96.gif" ALT="$\displaystyle \left.\vphantom{\frac{3}{7}\frac{2}{6}+ \frac{4}{7}\frac{3}{6} 
+}\right)$" width="18" height="55"> + <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img97.gif" ALT="$\displaystyle \left(\vphantom{\frac{2}{5}\frac{1}{4}+ 
+\frac{3}{5}\frac{2}{4} }\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img92.gif" ALT="$\displaystyle {\textstyle\frac{2}{5}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img98.gif" ALT="$\displaystyle {\textstyle\frac{1}{4}}$" width="15" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img91.gif" ALT="$\displaystyle {\textstyle\frac{3}{5}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img99.gif" ALT="$\displaystyle {\textstyle\frac{2}{4}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img100.gif" ALT="$\displaystyle \left.\vphantom{\frac{2}{5}\frac{1}{4}+ 
+\frac{3}{5}\frac{2}{4} }\right)$" width="18" height="55"></b></td>
+          <td><b>&nbsp;</b></td>
+          <td ALIGN="LEFT" NOWRAP><b>=</b></td>
+          <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="center"><b>&nbsp;= <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img101.gif" ALT="$\displaystyle \left(\vphantom{\frac{6}{42}+ \frac{12}{42} }\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img102.gif" ALT="$\displaystyle {\textstyle\frac{6}{42}}$" width="22" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img103.gif" ALT="$\displaystyle {\textstyle\frac{12}{42}}$" width="22" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img104.gif" ALT="$\displaystyle \left.\vphantom{\frac{6}{42}+ \frac{12}{42} }\right)$" width="18" height="55">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img50.gif" ALT="$\displaystyle {\textstyle\frac{1}{2}}$" width="15" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img105.gif" ALT="$\displaystyle \left(\vphantom{\frac{2}{20}+ \frac{6}{20} }\right.$" width="18" height="55"><img ALIGN="MIDDLE" BORDER="0" SRC="img106.gif" ALT="$\displaystyle {\textstyle\frac{2}{20}}$" width="22" height="38">
+            + <img ALIGN="MIDDLE" BORDER="0" SRC="img107.gif" ALT="$\displaystyle {\textstyle\frac{6}{20}}$" width="22" height="38"><img ALIGN="MIDDLE" BORDER="0" SRC="img108.gif" ALT="$\displaystyle \left.\vphantom{\frac{2}{20}+ \frac{6}{20} }\right)$" width="18" height="55">
+            = <img ALIGN="MIDDLE" BORDER="0" SRC="img109.gif" ALT="$\displaystyle {\textstyle\frac{29}{70}}$" width="22" height="38"></b></td>
+          <td WIDTH="10" ALIGN="CENTER" NOWRAP></td>
+          <td ALIGN="LEFT" NOWRAP><b>.</b></td>
+          <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <br CLEAR="ALL">
+    <p>&nbsp;</p>
+    <p>&nbsp;</li>
+  <li>La probabilidad <i>C</i> de extraer las dos bolas de igual color esta
+    calculada para el caso anterior.<br>
+    <div ALIGN="CENTER">
+      <!-- MATH 
+ \begin{eqnarray*} 
+\mathop{P}[B \setminus 
+C] & = & \frac{\mathop{P}[B \cap C]}{\mathop{P}[C]}\\& = & \frac{1/5 
+}{29/70}\\&=&\frac{14}{29}. 
+\end{eqnarray*} 
+ -->
+      <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="RIGHT"><b>P[<i>B</i> <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+            <i>C</i>]</b></td>
+          <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+          <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img110.gif" ALT="$\displaystyle {\frac{\mathop{P}[B \cap C]}{\mathop{P}[C]}}$" width="79" height="57"></b></td>
+          <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+          <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+          <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img111.gif" ALT="$\displaystyle {\frac{1/5 
+}{29/70}}$" width="52" height="57"></b></td>
+          <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+        </tr>
+        <tr VALIGN="MIDDLE">
+          <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+          <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+          <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img112.gif" ALT="$\displaystyle {\textstyle\frac{14}{29}}$" width="22" height="38">.</b></td>
+          <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <br CLEAR="ALL">
+    <p>&nbsp;</p>
+    <p>&nbsp;</li>
+</ul>
+Una aplicaci&oacute;n interesante de la f&oacute;rmula de Bayes tiene que ver con el an&aacute;lisis
+de confiabilidad de ciertos test realizados para detectar la presencia de
+enfermedades. El problema es b&aacute;sicamente el siguiente: Una persona puede sufrir
+de una enfermedad y se practica un test para saber si tiene o no la enfermedad.
+La exactitud del test se mide a través de dos valores probabil&iacute;sticos.
+<p>El primero de ellos se llama la <em>sensibilidad,</em> que es la probabilidad
+de que una persona que este enferma de positivo en el test. <!-- MATH
+ \begin{displaymath}
+\rho = \mathop{P}[\mbox{TestPositivo}\setminus\mbox{EstaEnfermo}].
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b><img ALIGN="MIDDLE" BORDER="0" SRC="img113.gif" ALT="$\displaystyle \rho$" width="13" height="30">
+  = P[TestPositivo <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+  EstaEnfermo]</b>.
+</div>
+<p>&nbsp;</p>
+<p>El otro valor se llama <em>especificidad</em> y es la probabilidad de que una
+persona no enferma tenga un diagn&oacute;stico correcto. <!-- MATH
+ \begin{displaymath}
+\theta = \mathop{P}[\mbox{TestNegativo}\setminus\mbox{NoEstaEnfermo}].
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b><img ALIGN="MIDDLE" BORDER="0" SRC="img114.gif" ALT="$\displaystyle \theta$" width="13" height="32">
+  = P[TestNegativo <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+  NoEstaEnfermo]</b>.
+</div>
+<p>&nbsp;</p>
+<p>Lo normal es que ambos valores sean muy cercanos a la unidad.
+<p>Conociendo la incidencia de la enfermedad, sobre alguna poblaci&oacute;n, se puede
+calcular la probabilidad de que una persona que haya dado positivo en el diagn&oacute;stico
+no sufra de la enfermedad. Si se sabe que en la poblaci&oacute;n la probabilidad de
+que una persona elegida al azar este enferma es <img ALIGN="BOTTOM" BORDER="0" SRC="img115.gif" ALT="$ \tau$" width="14" height="16">
+entonces usando las f&oacute;rmulas de Bayes se tiene<br>
+<div ALIGN="CENTER">
+  <!-- MATH
+ \begin{eqnarray*}
+\mathop{P}[\mbox{NoEstaEnfermo}\setminus\mbox{ TestPositivo}]&=&
+\frac{\mathop{P}[\mbox{TestPositivo}\cap\mbox{NoEstaEnfermo}] }{\mathop{P}[\mbox{TestPositivo}] } \\
+ &= &\frac{(1-\tau)(1-\theta)}{\tau\rho+(1-\tau)(1-\theta)}.
+\end{eqnarray*}
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>P[NoEstaEnfermo <img ALIGN="MIDDLE" BORDER="0" SRC="img13.gif" ALT="$\displaystyle \setminus$" width="13" height="34">
+        TestPositivo]</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img116.gif" ALT="$\displaystyle {\frac{\mathop{P}[\mbox{TestPositivo}\cap\mbox{NoEstaEnfermo}] }{\mathop{P}[\mbox{TestPositivo}] }}$" width="265" height="57"></b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img117.gif" ALT="$\displaystyle {\frac{(1-\tau)(1-\theta)}{\tau\rho+(1-\tau)(1-\theta)}}$" width="154" height="57">.</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Por ejemplo, [<a HREF="node43.html#Allen">2</a>], existe un test llamado
+ELISA que se utiliza para verificar sangre donada en una problaci&oacute;n en la cual
+la probabilidad de que un individuo tenga los anticuerpos de SIDA es de 0.0001.
+Suponga que este test tiene una sensibilidad <!-- MATH
+ $\rho = 0.977$
+ -->
+ <img ALIGN="MIDDLE" BORDER="0" SRC="img118.gif" ALT="$ \rho$" width="13" height="30">
+= 0.977 y una especificidad <!-- MATH
+ $\theta = 0.926.$
+ -->
+ <img ALIGN="BOTTOM" BORDER="0" SRC="img119.gif" ALT="$ \theta$" width="13" height="16">
+= 0.926.
+<p>Por ejemplo la probabilidad de que una muestra que contenga los anticuerpos
+de un diagn&oacute;stico de que s&iacute; tiene los anticuerpos es: <!-- MATH
+ \begin{displaymath}
+\frac {(0.0001)(0.977)}{(0.0001)(0.977)+(0.9999)(0.074)}= 0.001319
+\end{displaymath}
+ -->
+<p>&nbsp;</p>
+<div ALIGN="CENTER">
+  <b><img ALIGN="MIDDLE" BORDER="0" SRC="img120.gif" ALT="$\displaystyle {\frac{(0.0001)(0.977)}{(0.0001)(0.977)+(0.9999)(0.074)}}$" width="260" height="57">
+  = 0.001319</b>
+</div>
+<p>&nbsp;</p>
+<p>Este test resulta deficiente, de hecho clasifica como positivos muchos casos
+que no tienen los anticuerpos.
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>

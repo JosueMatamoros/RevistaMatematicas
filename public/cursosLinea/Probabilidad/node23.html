@@ -1,0 +1,951 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    function AbrirVentana() {
+      MiVentana=open("","Herramientas","width=455 , height=370"); 
+      MiVentana.document.write("<html><head><title>Herramientas</title></head><body>"       
+                               +"<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet CODE='MediaVarianza.class' archive='MediaVarianza.jar' CODEBASE='./'" 
+                               +"WIDTH='438' HEIGHT='313' ALIGN='CENTER'></applet-->"
+                               +"</BODY></HTML>");
+    }
+  </SCRIPT>
+
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" 
+  alink="#000080"  
+   >
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="7" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+
+<H1><A NAME="SECTION00330000000000000000">
+<font size="3">
+Par&#225;metros en una Distribuci&#243;n</font></A><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+</H1>
+
+
+<P>
+Cada vez que se logre determinar una distribuci&#243;n existen  dos mediciones
+asociadas con ella que son sumamente importantes:
+la <EM>media</EM> y la <EM>varianza.</EM>
+
+<P>
+La media o esperanza, como se llama a veces, en alguna
+forma es una medida
+de localizaci&#243;n de los datos, mientras la varianza es una medida
+de dispersi&#243;n de
+los datos. En las distribuciones te&#243;ricas, este par de medidas las
+caracterizan
+en forma absoluta y en el caso de las distribuciones que no se ajusten a un
+patr&#243;n conocido constituyen el punto de partida para poder estudiarlas
+ en forma adecuada.
+
+<P>
+<BR>
+<IMG
+ width="555" height="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img207.gif"
+ ALT="\begin{Def}
+Si $X$\ es una variable aleatoria se define la media o la
+esperanza de $X$\ por \end{Def}">
+<BR>
+
+<P>
+a. Si <I>X</I> es discreta con rango
+<!-- MATH
+ $R_X=\{x_1,x_2,x_3,\dots\}$
+ -->
+<I>R</I><SUB>X</SUB> = {<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>, <I>x</I><SUB>3</SUB>,...} se
+definen la media o esperanza de <I>X</I> por
+<DIV ALIGN="CENTER"><A NAME="EspeDisc"></A><!-- MATH
+ \begin{equation}
+\mu_X = \sum_{x_i \in R_X} x_i f_X(x_i),
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">  = <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>x</I><SUB>i</SUB><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>),</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.5)</TD></TR>
+</TABLE></DIV>
+con la condici&#243;n  de que
+ <!-- MATH
+ \begin{displaymath}
+\sum_{x_i \in R_X} |x_i| f_X(x_i) < \infty.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">| <I>x</I><SUB>i</SUB>| <I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) &lt; <IMG
+ width="22" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$\displaystyle \infty$">.</b>
+</DIV>
+
+<P>
+b. Mientras si <I>X</I> es continua.
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+\mu_X = \int_{-\infty}^{\infty} x f_X(x)\,dx,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">  = <IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$"><I>xf</I><SUB>X</SUB>(<I>x</I>)&nbsp;d<I>x</I>,</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.6)</TD></TR>
+</TABLE></DIV>
+con la condici&#243;n  de que
+ <!-- MATH
+ \begin{displaymath}
+\int_{-\infty}^{\infty} |x| f_X(x)\,dx < \infty.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$">| <I>x</I>| <I>f</I><SUB>X</SUB>(<I>x</I>)&nbsp;d<I>x</I> &lt; <IMG
+ width="22" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$\displaystyle \infty$">.</b>
+</DIV>
+
+<P>
+La condici&#243;n que se impone se conoce como
+  convergencia  absoluta [<A
+ HREF="node43.html#Kitchen">8</A>] y se hace necesaria
+para evitar que el reordenamiento de las sumas pueda producir valores
+diferentes para la esperanza. De hecho en cada una de las definiciones
+que sea  necesario se indicar&#225;.
+
+<P>
+Note que la media, es una generalizaci&#243;n del concepto de promedio
+ aritm&#233;tico. Por ejemplo si
+<I>X</I> es una variable aleatoria discreta tal que todos los valores en su rango tienen
+la misma probabilidad entonces:
+<!-- MATH
+ \begin{displaymath}
+\mu_X = \frac{\sum_{i=1}^{n} x_i}{n}.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">   = <IMG
+ width="66" height="57" ALIGN="MIDDLE" BORDER="0"
+ SRC="img211.gif"
+ ALT="$\displaystyle {\frac{\sum_{i=1}^{n} x_i}{n}}$">.</b>
+</DIV>
+
+<P>
+En realidad la media o esperanza es un promedio ponderado y cuantifica el
+<EM>valor esperado</EM> para una variable aleatoria.
+
+<P>
+<I>Ejemplo 16</I>
+
+<P>Sea <I>X</I> la variable aleatoria del ejemplo <A HREF="node22.html#Boli">13</A>. En ese
+caso el valor de la esperanza es:
+<!-- MATH
+ \begin{displaymath}
+\mu_X = 1(\frac{4}{7})+2(\frac{2}{7})+3(\frac{4}{35})+4(\frac{1}{35}) =
+\frac{76}{35},
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">   = 1(<IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$\displaystyle {\textstyle\frac{4}{7}}$">) + 2(<IMG
+ width="15" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.gif"
+ ALT="$\displaystyle {\textstyle\frac{2}{7}}$">) + 3(<IMG
+ width="22" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img213.gif"
+ ALT="$\displaystyle {\textstyle\frac{4}{35}}$">) + 4(<IMG
+ width="22" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img214.gif"
+ ALT="$\displaystyle {\textstyle\frac{1}{35}}$">) = <IMG
+ width="22" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.gif"
+ ALT="$\displaystyle {\textstyle\frac{76}{35}}$">,</b>
+</DIV>
+
+<P>
+significa que en promedio deber&#225;n hacerse 2.27 intentos antes de
+obtener la bolilla roja.
+
+<P>
+Por ejemplo para la distribuci&#243;n exponencial  de par&#225;metro
+<IMG
+ width="15" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img203.gif"
+ ALT="$ \lambda$">, (<A HREF="node22.html#DistExpo">3.2</A>),  usando un poco de integraci&#243;n por
+partes y regla de L'H&#244;pital, se tiene que: <BR>
+<img border="0" src="img216.gif" width="408" height="224">
+<BR>
+
+<P>
+Existen ejemplos de
+variables aleatorias con distribuciones de probabilidad bien definidas
+y que no tienen media. Se invita al lector a verificar que si <I>X</I> es una
+variable aleatoria tal que
+<!-- MATH
+ \begin{displaymath}
+f_X(2^k)= \mathop{P}[X=2^k] = 1/2^k, k=0,1,\dots
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<I>f</I><SUB>X</SUB>(2<SUP>k</SUP>) = P[<I>X</I> = 2<SUP>k</SUP>] = 1/2<SUP>k</SUP>, <I>k</I> = 0, 1,...</b>
+</DIV>&nbsp;
+<p>
+entonces la distribuci&#243;n de  probabilidad est&#225; bien definida pero
+no existe la esperanza.</p>
+
+<P>
+<I>Ejemplo 17</I>
+
+<P>
+Un sistema de administraci&#243;n de ox&#237;geno esta formado por dos
+bombas id&#233;nticas. Estas bombas operan en forma independiente, y
+tienen una esperanza de funcionamiento continuo que es
+exponencial con media 20 horas. El sistema de bombeo falla
+solamente si ambas bombas fallan. Cu&#225;l es la probabilidad de
+que el sistema funcione durante 15 horas.
+
+<P>
+<B>Soluci&#243;n</B>
+
+<P>
+Como la media es 20 horas entonces el par&#225;metro de la
+distribuci&#243;n es <!-- MATH
+ $\lambda = 1/20.$
+ -->
+<IMG
+ width="15" height="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img203.gif"
+ ALT="$ \lambda$"> = 1/20. Acorde con (<A HREF="node22.html#EXPO">3.4</A>) la
+probabilidad de que una bomba falle antes de las  15 horas es
+<!-- MATH
+ $1-e^{-15/20},$
+ -->
+1 - <I>e</I><SUP>-15/20</SUP>, as&#237; que la probabilidad de que el sistema falle
+antes de las 15 horas es <!-- MATH
+ $\mathop{P}[X \leq 15]=(1-e^{-15/20})^2$
+ -->
+P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$ \leq$"> 15] = (1 - <I>e</I><SUP>-15/20</SUP>)<SUP>2</SUP> y la probabilidad de que el sistema trabaje en forma continua
+por m&#225;s 15 horas es de <!-- MATH
+ $1-\mathop{P}[X \leq 15] = 1-(1-
+e^{-15/20})^2.$
+ -->
+ 1 - P[<I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$ \leq$"> 15] = 1 - (1 - <I>e</I><SUP>-15/20</SUP>)<SUP>2</SUP>.
+
+<P>
+Tambi&#233;n es posible calcular la esperanza de una funci&#243;n
+aplicada a los valores de la variable aleatoria.
+
+<P>
+<BR>
+<IMG
+ width="554" height="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img217.gif"
+ ALT="\begin{Def}si $h(x)$\ es una funci\'on real y $X$\ es una variable
+aleatoria se tiene que
+\end{Def}">
+
+<P>
+<BR>
+a. Si <I>X</I> es discreta
+<DIV ALIGN="CENTER"><A NAME="EspHDisc"></A><!-- MATH
+ \begin{equation}
+\mu_h(X) = \sum_{x_i \in R_X} h(x_i) f_X(x_i),
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="24" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.gif"
+ ALT="$\displaystyle \mu_{h}^{}$">(<I>X</I>) = <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>h</I>(<I>x</I><SUB>i</SUB>)<I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>),</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.7)</TD></TR>
+</TABLE></DIV>
+con la condici&#243;n  de que
+ <!-- MATH
+ \begin{displaymath}
+\sum_{x_i \in R_X} |h(x_i)| f_X(x_i) < \infty.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">| <I>h</I>(<I>x</I><SUB>i</SUB>)| <I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) &lt; <IMG
+ width="22" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$\displaystyle \infty$">.</b>
+</DIV>
+Mientras que para <I>X</I> continua se tiene
+<DIV ALIGN="CENTER"><A NAME="EspHCon"></A><!-- MATH
+ \begin{equation}
+\mu_{h(X)} = \int_{-\infty}^{\infty} h(x) f_X(x)\,dx,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="46" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img219.gif"
+ ALT="$\displaystyle \mu_{h(X)}^{}$">  = <IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$"><I>h</I>(<I>x</I>)<I>f</I><SUB>X</SUB>(<I>x</I>)&nbsp;d<I>x</I>,</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.8)</TD></TR>
+</TABLE></DIV>
+con la condici&#243;n  de que
+ <!-- MATH
+ \begin{displaymath}
+\int_{-\infty}^{\infty}  |h(x_i)| f_X(x_i) \,dx        < \infty.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$">| <I>h</I>(<I>x</I><SUB>i</SUB>)| <I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>)&nbsp;d<I>x</I> &lt; <IMG
+ width="22" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$\displaystyle \infty$">.</b>
+</DIV>
+
+<P>
+Para calcular la varianza de una variable aleatoria se necesita
+antes conocer la media de <I>X</I>. <BR>
+
+<P>
+<IMG
+ width="554" height="62" ALIGN="BOTTOM" BORDER="0"
+ SRC="img220.gif"
+ ALT="\begin{Def}Si $X$\ es una variable
+aleatoria con distribuci\'on de probabilidad ...
+..._X$\ se define la varianza de $X$\ como la esperanza de
+$(X-\mu_X)^2$. \end{Def}">
+<BR>
+
+<P>
+a. Si <I>X</I> es discreta:
+<DIV ALIGN="CENTER"><A NAME="EspeDis"></A><!-- MATH
+ \begin{equation}
+\sigma_{X}^{2}= \mu_{(X-\mu_X)^2} = \sum_{x_i \in R_X}
+(x_i-\mu_X)^2 f_X(x_i),
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="27" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.gif"
+ ALT="$\displaystyle \sigma_{X}^{2}$">  = <IMG
+ width="75" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$\displaystyle \mu_{(X-\mu_X)^2}^{}$"> = <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">(<I>x</I><SUB>i</SUB> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>),</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.9)</TD></TR>
+</TABLE></DIV>
+
+<P>
+b. Si es continua
+
+<DIV ALIGN="CENTER"><A NAME="EspeCon"></A><!-- MATH
+ \begin{equation}
+\sigma_{X}^{2} = \mu_{(X-\mu_X)^2} =
+\int_{-\infty}^{\infty}(x-\mu_X)^2 f_X(x)\,dx.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP>
+<b>
+<IMG
+ width="27" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.gif"
+ ALT="$\displaystyle \sigma_{X}^{2}$">  = <IMG
+ width="75" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$\displaystyle \mu_{(X-\mu_X)^2}^{}$"> = <IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$">(<I>x</I> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I>)&nbsp;d<I>x</I>.</b>
+</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(3.10)</TD></TR>
+</TABLE></DIV>
+
+<P>
+Invitamos al lector a verificar en la tabla adjunta posibles
+distribuciones de probabilidad  discretas y analizar los valores
+de la esperanza y de la varianza. En esta tabla puede introducir
+valores para la variable y las probabilidades respectivas y ver
+el comportamiento de la media y la varianza.
+
+<P>
+&nbsp;
+<div align="center">
+  <center>
+  <table border="0" height="23">
+    <tr>
+      <td height="23" valign="bottom"><img border="0" src="images/node231.gif" width="29" height="12">
+        <input name="B1" onclick="AbrirVentana()" type="button" value="MediaVarianza" style="color: #99FFCC; font-weight: bold; font-family: Calisto MT; background-color: #306898">
+        <img border="0" src="images/node232.gif" width="16" height="16"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+<P>
+<!-------------------- BEGIN COPYING THE HTML HERE ------------------->
+<script language="JavaScript">
+<!-- hide this script from non-javascript-enabled browsers
+
+/* Functions that finds images. */
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+/* Functions that swaps down images. */
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+// stop hiding -->
+</script>
+
+<!--The following section is an image or HTML table which reassembles the sliced image in a browser.-->
+<!--------------------------- STOP COPYING THE HTML HERE --------------------------->
+
+
+
+
+<P>
+La siguiente es una propiedad importante de la varianza. Seg&#250;n
+la definici&#243;n de esperanza, en el caso discreto se tiene
+<BR>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\sigma_{X}^{2}&=& \mu_{(X-\mu_X)^2} \\
+&=& \sum_{x_i \in R_X} (x_i-\mu_X)^2 f_X(x_i)\\
+&=& \sum_{x_i \in R_X} (x_i^2-2x_i\mu_X +\mu_X ^2) f_X(x_i)\\
+&=& \sum_{x_i \in R_X} x_i^2f_X(x_i)-\sum_{x_i \in R_X} 2x_i\mu_Xf_X(x_i) +
+\sum_{x_i \in R_X}(\mu_X)^2 f_X(x_i)\\
+&=& \sum_{x_i \in R_X} x_i^2f_X(x_i)-2\mu_X\sum_{x_i \in R_X} x_if_X(x_i) +
+\mu_X ^2\sum_{x_i \in R_X} f_X(x_i)\\
+ &=&\mu_{X^2} - 2 \mu_X\mu_X+ \mu_X ^2 = \mu_{X^2} - (\mu_X)^2.
+\end{eqnarray*}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b><IMG
+ width="27" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.gif"
+ ALT="$\displaystyle \sigma_{X}^{2}$"></b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="75" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$\displaystyle \mu_{(X-\mu_X)^2}^{}$"></b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">(<I>x</I><SUB>i</SUB> - <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>)</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">(<I>x</I><SUB>i</SUB><SUP>2</SUP> - 2<I>x</I><SUB>i</SUB><IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"> + <IMG
+ width="28" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$\displaystyle \mu_{X}^{2}$">)<I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>)</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>x</I><SUB>i</SUB><SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) - <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">2<I>x</I><SUB>i</SUB><IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) + <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$">(<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>)</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>x</I><SUB>i</SUB><SUP>2</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) - 2<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>x</I><SUB>i</SUB><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>) + <IMG
+ width="28" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$\displaystyle \mu_{X}^{2}$"><IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>)</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></TD>
+<TD ALIGN="LEFT" NOWRAP><b><IMG
+ width="35" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$\displaystyle \mu_{X^2}^{}$">  - 2<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"><IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"> + <IMG
+ width="28" height="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$\displaystyle \mu_{X}^{2}$"> = <IMG
+ width="35" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$\displaystyle \mu_{X^2}^{}$"> - (<IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">)<SUP>2</SUP>.</b></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+De hecho no es dif&#237;cil verificar que esta propiedad tambi&#233;n se
+cumple en el caso continuo.
+
+<P>
+<BR>
+<A NAME="VariCuad"></A><IMG
+ width="554" height="40" ALIGN="BOTTOM" BORDER="0"
+ SRC="img225.gif"
+ ALT="\begin{Lem}Si $X$\ es una variable aleatoria cuya media y varianza
+existen se tiene que
+$\mathop{VAR}(X) = \mathop{E}(X^2)-(\mathop{E}(X)^2$.
+\end{Lem}">
+<BR>
+
+<P>
+Se llamar&#225; momento de orden <I>k</I> a la esperanza de <I>X</I><SUP>k</SUP>. Es decir
+el momento de orden <I>k</I> para la variable aleatoria  discreta <I>X</I> es
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\mathop{E}(X^k) = \sum_{x_i \in R_X} x_i^kf_X(x_i),
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+E(<I>X</I><SUP>k</SUP>) = <IMG
+ width="47" height="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.gif"
+ ALT="$\displaystyle \sum_{x_i \in R_X}^{}$"><I>x</I><SUB>i</SUB><SUP>k</SUP><I>f</I><SUB>X</SUB>(<I>x</I><SUB>i</SUB>),</b>
+</DIV>
+mientras que para una continua es
+<!-- MATH
+ \begin{displaymath}
+\mathop{E}(X^k) = \int_{-\infty }^{\infty} x^k f_X(x)\, dx.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+<b>
+E(<I>X</I><SUP>k</SUP>) = <IMG
+ width="38" height="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\displaystyle \int_{-\infty}^{\infty}$"><I>x</I><SUP>k</SUP><I>f</I><SUB>X</SUB>(<I>x</I>)&nbsp;d<I>x</I>.</b>
+</DIV>
+
+<P>
+<I>Ejemplo 18</I>
+
+<P>
+Sea <I>X</I> una variable aleatoria continua con distribuci&#243;n de probabilidad
+dada por
+<!-- MATH
+ \begin{displaymath}
+f(x)= \left\{ \begin{array}{ll}
+\frac{k}{x^2} & \mbox{ si $ 1 \leq x \leq 15 $}\\
+            0  &  \mbox{en otro caso.}
+          \end{array}
+        \right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<b>
+<I>f</I> (<I>x</I>) = <IMG
+ width="19" height="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.gif"
+ ALT="$\displaystyle \left\{\vphantom{ \begin{array}{ll}
+\frac{k}{x^2} &amp; \mbox{ si $ 1 \leq x \leq 15 $}\\
+0 &amp; \mbox{en otro caso.}
+\end{array} }\right.$"><IMG
+ width="160" height="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.gif"
+ ALT="$\displaystyle \begin{array}{ll}
+\frac{k}{x^2} &amp; \mbox{ si $ 1 \leq x \leq 15 $}\\
+0 &amp; \mbox{en otro caso.}
+\end{array}$">
+</b>
+</DIV>
+
+<OL>
+<LI>Determine el valor de <I>k</I>.
+</LI>
+<LI>Calcule <!-- MATH
+ $P([-2<X\leq5])$
+ -->
+  <b>
+<I>P</I>([- 2 &lt; <I>X</I> <IMG
+ width="18" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$ \leq$">  5])</b>.
+</LI>
+<LI>Calcule <!-- MATH
+ $\mathop{VAR}(X)$
+ -->
+VAR(<I>X</I>).
+</LI>
+</OL>
+<B>Soluci&#243;n </B>
+
+<OL>
+<LI>Dado que
+<BR>
+<IMG
+ width="431" height="76" ALIGN="BOTTOM" BORDER="0"
+ SRC="img228.gif"
+ ALT="\begin{truco}
+\begin{displaymath}\int_{-\infty}^\infty \frac{k}{x^2}\,dx = \frac...
+...}{1}= \frac{14k}{15} \end{displaymath} $k$\ debe ser
+$\frac{15}{14}$.\end{truco}">
+</LI>
+<li>
+<BR>
+<IMG
+ width="529" height="54" ALIGN="BOTTOM" BORDER="0"
+ SRC="img229.gif"
+ ALT="\begin{truco}\begin{displaymath}P([-2&lt;X\leq5])=\int_{1}^{5} \frac{15}{14 x^2}\,d...
+...rac{15}{4}
+\left(-\frac{1}{5}+1\right)=\frac{6}{7}.\end{displaymath}\end{truco}">
+</li>
+<LI>
+<BR>
+<IMG
+ width="539" height="148" ALIGN="BOTTOM" BORDER="0"
+ SRC="img230.gif"
+ ALT="\begin{truco}\begin{displaymath}\mathop{E}(X)=\int_{1}^{15} x \frac{15}{14 x^2}\...
+...ght)^2 =
+\left(\frac{15}{14} \ln(15)\right)^2 - 15. \end{displaymath}\end{truco}">
+<BR>
+</LI>
+</OL>
+
+<P>
+Finalizamos esta secci&#243;n enunciando un  teorema que resume las
+propiedades fundamentales de la esperanza.
+
+<P>
+<BR>
+<A NAME="PropMedi"></A><IMG
+ width="555" height="39" ALIGN="BOTTOM" BORDER="0"
+ SRC="img231.gif"
+ ALT="\begin{Teor}Si $X$\ y $Y$\ son variables aleatorias y $c$\ es una constante. Se cumplen
+las siguientes afirmaciones.
+\end{Teor}">
+<BR>
+
+<OL>
+<LI>El valor esperado de una variable aleatoria constante es
+la misma constante.
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="22" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.gif"
+ ALT="$\displaystyle \mu_{c}^{}$">   = <I>c</I>.</b>
+</DIV>
+</LI>
+<LI>El valor esperado de una variable aleatoria multiplicada
+por una constante es la constante por  el valor esperado de la
+variable.<!-- MATH
+ \begin{displaymath}
+\mu_{(cX)} = c\mu_X.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="44" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.gif"
+ ALT="$\displaystyle \mu_{(cX)}^{}$">   = <I>c</I><IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$">.</b>
+</DIV>
+</LI>
+<LI>El valor esperado de una suma de
+dos  variables aleatorias es la suma de los valores esperados de
+las variables.<!-- MATH
+ \begin{displaymath}
+\mu_{X+Y} = \mu_X+\mu_Y.
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+<IMG
+ width="49" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.gif"
+ ALT="$\displaystyle \mu_{X+Y}^{}$">   = <IMG
+ width="28" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle \mu_{X}^{}$"> + <IMG
+ width="27" height="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$\displaystyle \mu_{Y}^{}$">.</b>
+</DIV>
+</LI>
+</OL>
+Las pruebas de las dos primeras propiedades  son bastante
+sencillas, y para demostrar la tercera se requiere estudiar
+algunos conceptos que no se han explorado hasta ahora. El lector
+interesado en la justificaci&#243;n de estos resultados puede
+consultar [<A
+ HREF="node43.html#Allen">2</A>].
+
+<P>
+<BR>
+<A NAME="PropVari"></A><IMG
+ width="555" height="58" ALIGN="BOTTOM" BORDER="0"
+ SRC="img236.gif"
+ ALT="\begin{Teor}Si $X$\ y $Y$\ son variables aleatorias independientes cuyas varianz...
+...sten
+y $c$\ es una constante. Se cumplen
+las siguientes afirmaciones.
+\end{Teor}">
+<BR>
+
+<P>
+las siguientes afirmaciones.
+
+<OL>
+<LI>La varianza  de una variable aleatoria constante es
+cero.
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+VAR(<I>c</I>) = 0.</b>
+</DIV>
+
+<P>
+</LI>
+<LI>La varianza de una variable aleatoria multiplicada
+por una constante es la constante por  la varianza  de la
+variable.<!-- MATH
+ \begin{displaymath}
+\mathop{VAR}{(cX)} = c^2\mathop{VAR}(X).
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+VAR(<I>cX</I>) = <I>c</I><SUP>2</SUP>VAR(<I>X</I>).</b>
+</DIV>
+</LI>
+<LI>La varianza de una suma de
+dos  variables aleatorias es la suma de las varianzas de las
+variables.<!-- MATH
+ \begin{displaymath}
+\mathop{VAR}{(X+Y)} =
+\mathop{VAR}(X)+\mathop{VAR}(Y).
+\end{displaymath}
+ -->
+<DIV ALIGN="CENTER">
+&nbsp;
+</DIV>
+<DIV ALIGN="CENTER">
+<b>
+VAR(<I>X</I>+<I>Y</I>) = VAR(<I>X</I>) + VAR(<I>Y</I>).</b>
+</DIV>
+</LI>
+</OL>
+
+<P>
+Nuevamente la demostraci&#243;n de los apartados (1.) y (2.) es
+bastante directa a partir de la definici&#243;n y la demostraci&#243;n
+de (3.) es un poco m&#225;s delicada. El lector interesado puede
+verla en  [<A
+ HREF="node43.html#Allen">2</A>].
+
+<P>
+&nbsp;
+
+  </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

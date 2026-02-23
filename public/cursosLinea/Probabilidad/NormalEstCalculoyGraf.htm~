@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>New Page 1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId></HEAD>
+<BODY>
+<P align=center> </P>
+<P align=center><FONT face="Courier New" color=#0000c0 size=3>
+<p>Los navegadores ya no brindan soporte para applets de java, este applet se ha deshabilitado</p>
+<!--applet  code="NormalEstandarGraf.class" 
+         archive= "NormalEstandarGraf.jar"
+         codeBase="./" 
+         align=center width=331 height=307>
+</applet--> 
+</FONT></P>
+</BODY></HTML>

@@ -1,0 +1,3574 @@
+\batchmode
+\documentclass[11pt]{report}
+\RequirePackage{ifthen}
+
+
+
+%
+\providecommand{\Pro}[1]{\mathop{P}[#1]}
+\newtheorem{Def}{{\sf Definici\'on}}%
+\providecommand{\ed}{\begin{theorem_type}[Def][Def][][][][]
+}%
+\providecommand{\td}{\end{theorem_type}
+}
+\newtheorem{Prop}{{\sf Proposici\'on}}%
+\providecommand{\ep}{\begin{theorem_type}[Prop][Prop][][][][]
+}%
+\providecommand{\tp}{\end{theorem_type}
+}
+\newtheorem{Cor}{{\sf Corolario}}%
+\providecommand{\ecor}{\begin{theorem_type}[Cor][Cor][][][][]
+}%
+\providecommand{\tcor}{\end{theorem_type}
+}\newtheorem{truco}{{}}%
+\providecommand{\etru}{\begin{theorem_type}[truco][truco][][][][]
+}%
+\providecommand{\ttru}{\end{theorem_type}
+}
+\newtheorem{Lem}{{\sf Lema}}%
+\providecommand{\el}{\begin{theorem_type}[Lem][Lem][][][][]
+}%
+\providecommand{\tl}{\end{theorem_type}
+}
+\newtheorem{Teor}{{\sf Teorema}}%
+\providecommand{\et}{\begin{theorem_type}[Teor][Teor][][][][]
+}%
+\providecommand{\ft}{\end{theorem_type}
+}
+\newtheorem{Axio}{{\sf Axioma}}%
+\providecommand{\ea}{\begin{theorem_type}[Axio][Axio][][][][]
+}%
+\providecommand{\ta}{\end{theorem_type}
+}
+\newtheorem{Prin}{{\sf Principio}}%
+\providecommand{\epr}{\begin{theorem_type}[Prin][Prin][][][][]
+}%
+\providecommand{\tpr}{\end{theorem_type}
+}
+%
+\providecommand{\sii}{\mbox{$ \; \Longleftrightarrow \; $}}%
+\providecommand{\impl}{\mbox{$ \; \Longrightarrow \; $}}%
+\providecommand{\1}{\'{\i}}%
+\providecommand{\elige}[2]{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle #1}  \\
+               { \scriptstyle  #2} \\
+          \end{array}
+        \!\!\! \right) }\setlength{\parindent}{0cm}
+\newtheorem{Principio}{\sf Principio}
+\author{Mario Mar\'{\i}n S\'anchez \\Walter Mora Flores \\
+Escuela de Matem\'aticas}%% Declares the author's name.
+
+\newcounter{Ejemplo}\alph{Ejemplo} \setcounter{Ejemplo}{1}%
+\providecommand{\ee}{ Ejemplo \arabic{Ejemplo}\addtocounter{Ejemplo}{1}}
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Chi}{\textrm{X}}
+\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\Alpha}{\textrm{A}}
+\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\omicron}{\textrm{o}}
+\providecommand{\Rho}{\textrm{R}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Iota}{\textrm{J}}
+\providecommand{\Kappa}{\textrm{K}}
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+\newcounter{Def}
+\newcounter{Prop}
+\newcounter{Cor}
+\newcounter{truco}
+\newcounter{Lem}
+\newcounter{Teor}
+\newcounter{Axio}
+\newcounter{Prin}
+\newcounter{Principio}
+\newcounter{Ejemplo}
+\setcounter{Ejemplo}{1}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6948}%
+$ \in$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Prin844}%
+\begin{Prin}Si $\mathop{R}$\  es  cualquier predicado y $ t $\  es un tipo
+que caracteriza un universo $\Omega$\  hay un conjunto $\{x:t |
+\mathop{R}x\}. $\  \end{Prin}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Prin847}%
+\begin{Prin}
+\begin{displaymath}A=B \mbox{$ \; \Longleftrightarrow \; $}(\forall x:t\;\;\; x\in A \mbox{$ \; \Longleftrightarrow \; $}x \in B). \end{displaymath}
+\end{Prin}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Def851}%
+\begin{Def}Decimos que un conjunto $A$\  es subconjunto del conjunto B si
+ \begin{displaymath} A \subset B \mbox{$ \; \Longleftrightarrow \; $}\forall x \in A \mbox{$ \; \Longrightarrow \; $}x\in B.\end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6955}%
+$ \emptyset$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def855}%
+\begin{Def}
+ Si $A$\  y $B$\  son conjuntos  se define el conjunto
+ uni\'on de $A$\  con $B$\  por:
+\par\begin{displaymath}
+A \cup B=\{x|x \in A \vee x  \in B\}.
+  \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def857}%
+\begin{Def}
+ Si $A$\  y $B$\  son conjuntos  se define el conjunto
+intersecci\'on de $A$\  con $B$\  por:
+\par\begin{displaymath}
+A \cap B=\{x|x \in A \wedge x  \in B\}.
+  \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def859}%
+\begin{Def}
+ Si $A$\  y $B$\  son conjuntos  se define el conjunto
+diferencia de $A$\  con $B$\  por:
+\begin{displaymath}A \setminus B=\{x|x \in A \wedge x  \notin B\}.
+  \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6957}%
+$ \Omega$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6959}%
+$ \subset$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6965}%
+$\displaystyle \sim$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6966}%
+$\displaystyle \Omega$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay6967}%
+$\displaystyle \setminus$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6969}%
+$ \cup$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6982}%
+$ \sim$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6984}%
+$ \subseteq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6987}%
+$ \cap$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7029}%
+$ \setminus$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Def861}%
+\begin{Def}
+ Si $\Omega$\  es un conjunto de define el conjunto partes de $\Omega$\  por
+\begin{displaymath} \mathop{P}(\Omega)= \left \{ A | A \subset \Omega\right \}. \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Def864}%
+\begin{Def}Si $x,$\   $y$\  son elementos se define el par ordenado $xy$\  por
+\begin{displaymath}(x,y)=\left \{\{x,\{x,y\}\right\}. \end{displaymath}
+\par\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def866}%
+\begin{Def}
+\par Si $A$\  y $B$\  son conjuntos, de define el conjunto producto
+\par de $A$\  y $B$\  por
+\begin{displaymath}A\times B =\left\{ (x,y), | x \in A \,
+\wedge\, y \in B \right\}.  \end{displaymath} \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Def868}%
+\begin{Def}Un conjunto $A$\  se dice finito, con cardinalidad $|A|=n$\  si existe alg\'un
+ alguna funci\'on biyectiva $f:\{1,2,\dots,n\} \longrightarrow A.$En otro caso  se dice infinito.
+ \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def870}%
+\begin{Def}
+Un conjunto $A$\  es contable si es finito o bien infinito pero existe una
+biyecci\'on entre \'el y el conjunto de los naturales.
+\par\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7054}%
+$ \Rightarrow$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7055}%
+$ \leq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Def873}%
+\begin{Def}
+Si un experimento aleatorio es repetido una cantidad grande de veces, $n$,
+ la
+frecuencia relativa de ocurrencias del evento E entre el n\'umero
+de repeticiones, es decir $n_E/n,$\  tender\'a a estabilizarse a un
+valor constante denotado por $\mathop{P}[E],$ el cual se llamar\'a
+la  probabilidad de $E$.
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def875}%
+\begin{Def}
+\par Si un experimento aleatorio puede tener $n$\  resultados que pueden
+ocurrir igualmente cada uno de ellos y que son mutuamente
+exclusivos entre ellos, entonces  si $n_E$\  es el n\'u\-me\-ro de
+resultados que cumplen un predicado que caracteriza a un evento
+$E$\   entonces la probabilidad de $E$\  es la raz\'on $n_E/n$\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7072}%
+$\displaystyle {\textstyle\frac{5}{36}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7075}%
+$\displaystyle {\textstyle\frac{3}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7079}%
+$ \cal {F}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7099}%
+$ \bigcup_{i=1}^{\infty}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7101}%
+$ \sigma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7106}%
+$ \bigcap_{i=1}^{\infty}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7129}%
+$\displaystyle \cup$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7134}%
+$ \forall$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7135}%
+$ \neq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7137}%
+$\displaystyle \bigcup_{n=1}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7138}%
+$\displaystyle \sum_{n=1}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Teor890}%
+\begin{Teor}Si $\mathop{P}$\  es una medida de probabilidad definida sobre
+una familia de eventos $\cal F$\  sobre un espacio muestral
+$\Omega$. Entonces
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7157}%
+$\displaystyle \emptyset$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7177}%
+$\displaystyle \cap$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{Teor893}%
+\begin{Teor}(Regla del Producto)
+Si $A$\  y $B$\  son eventos independientes entonces se cumple
+\begin{displaymath}\mathop{P}[(A \cap  B)]=\mathop{P}[A]\mathop{P}[B].  \end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7232}%
+$\displaystyle \overline{D_1}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7234}%
+$\displaystyle \overline{D_2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7237}%
+$\displaystyle \overline{D_N}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7253}%
+$\displaystyle {\frac{\ln 0.1}{\ln{(1-p)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7272}%
+$\displaystyle {\frac{\mathop{P}[A\cap B]}{\mathop{P}[A]}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7288}%
+$\displaystyle {\frac{\mathop{P}[A\cap B]}{\mathop{P}[B]}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7318}%
+$\displaystyle {\textstyle\frac{1}{2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7339}%
+$\displaystyle {\textstyle\frac{1}{8}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7352}%
+$\displaystyle {\textstyle\frac{4}{9}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7353}%
+$\displaystyle {\textstyle\frac{6}{8}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7354}%
+$\displaystyle {\textstyle\frac{1}{3}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7356}%
+$\displaystyle {\textstyle\frac{5}{9}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7357}%
+$\displaystyle {\textstyle\frac{2}{8}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7358}%
+$\displaystyle {\textstyle\frac{10}{72}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7365}%
+$\displaystyle {\textstyle\frac{34}{72}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7394}%
+$\displaystyle {\textstyle\frac{2}{3}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7395}%
+$\displaystyle \left(\vphantom{\frac{4}{9}\frac{3}{8}+\frac{5}{9}\frac{4}{8}
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7397}%
+$\displaystyle {\textstyle\frac{3}{8}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7399}%
+$\displaystyle {\textstyle\frac{4}{8}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7400}%
+$\displaystyle \left.\vphantom{\frac{4}{9}\frac{3}{8}+\frac{5}{9}\frac{4}{8}
+}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7402}%
+$\displaystyle \left(\vphantom{\frac{6}{8}\frac{5}{7}+\frac{2}{8}\frac{1}{7}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7404}%
+$\displaystyle {\textstyle\frac{5}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7406}%
+$\displaystyle {\textstyle\frac{1}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7407}%
+$\displaystyle \left.\vphantom{\frac{6}{8}\frac{5}{7}+\frac{2}{8}\frac{1}{7}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7408}%
+$\displaystyle {\textstyle\frac{92}{189}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7419}%
+$ \lambda_{1}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7420}%
+$ \lambda_{2}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7421}%
+$ \lambda_{n}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7427}%
+$\displaystyle {\frac{(365)(364)\dots(365-n+1)}{365^n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7430}%
+$\displaystyle \left(\vphantom{1-\frac{1}{365}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7431}%
+$\displaystyle {\textstyle\frac{1}{365}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7432}%
+$\displaystyle \left.\vphantom{1-\frac{1}{365}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7433}%
+$\displaystyle \left(\vphantom{1-\frac{2}{365}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7434}%
+$\displaystyle {\textstyle\frac{2}{365}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7435}%
+$\displaystyle \left.\vphantom{1-\frac{2}{365}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7436}%
+$\displaystyle \left(\vphantom{1-\frac{n-1}{365}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7437}%
+$\displaystyle {\frac{n-1}{365}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7438}%
+$\displaystyle \left.\vphantom{1-\frac{n-1}{365}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7459}%
+$\displaystyle \geq$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7500}%
+$\displaystyle {\textstyle\frac{48}{108}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7509}%
+$ \bigcup_{i=1}^{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor932}%
+\begin{Teor}Si $A_1,A_2,\dots,A_n$\  forman una partici\'on del espacio
+$\Omega$\  y si $B$\  es cualquier evento entonces:
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7545}%
+$\displaystyle \sum_{i=1}^{n}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7552}%
+$\displaystyle {\frac{\mathop{P}[M\cap S]}{\mathop{P}[S]}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7555}%
+$\displaystyle {\frac{\mathop{P}[M\cap S]}{\mathop{P}[M]\mathop{P}[S\setminus M]
++ \mathop{P}[N]\mathop{P}[S\setminus N] }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7558}%
+$\displaystyle {\textstyle\frac{5}{6}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor935}%
+\begin{Teor}
+Si un experimento consiste de dos estados tal que la secuencia de eventos
+ $A_1,A_2,\dots
+A_n$\   forman una partici\'on del espacio muestral del primer
+evento. Si $B$\  es un evento del segundo estado del experimento
+entonces, la probabilidad de que ocurra cualquiera de los eventos
+$A_k$\  dado que ocurre el evento $B$\  es
+\begin{eqnarray}
+\mathop{P}[A_k\setminus B]&=& \frac{\mathop{P}[(A_k \cap
+B)]}{\mathop{P}[B] }\\\nonumber
+&=&\frac{\mathop{P}[A_k]\mathop{P}[B\setminus A_k]} {\sum_{i=1}^n
+\mathop{P}[A_i]\mathop{P}[B\setminus A_i]}.
+\end{eqnarray}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7565}%
+$\displaystyle {\textstyle\frac{4}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7566}%
+$\displaystyle {\textstyle\frac{3}{5}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7568}%
+$\displaystyle \left(\vphantom{\frac{4}{7}\frac{3}{5}+ \frac{3}{7}\frac{2}{5} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7572}%
+$\displaystyle {\textstyle\frac{2}{5}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7573}%
+$\displaystyle \left.\vphantom{\frac{4}{7}\frac{3}{5}+ \frac{3}{7}\frac{2}{5} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7579}%
+$\displaystyle \left(\vphantom{\frac{3}{7}\frac{2}{6}+ \frac{4}{7}\frac{3}{6}
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7581}%
+$\displaystyle {\textstyle\frac{2}{6}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7583}%
+$\displaystyle {\textstyle\frac{3}{6}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7584}%
+$\displaystyle \left.\vphantom{\frac{3}{7}\frac{2}{6}+ \frac{4}{7}\frac{3}{6}
+}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7586}%
+$\displaystyle \left(\vphantom{\frac{2}{5}\frac{1}{4}+
+\frac{3}{5}\frac{2}{4} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7588}%
+$\displaystyle {\textstyle\frac{1}{4}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7590}%
+$\displaystyle {\textstyle\frac{2}{4}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7591}%
+$\displaystyle \left.\vphantom{\frac{2}{5}\frac{1}{4}+
+\frac{3}{5}\frac{2}{4} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7595}%
+$\displaystyle \left(\vphantom{\frac{6}{42}+ \frac{12}{42} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7596}%
+$\displaystyle {\textstyle\frac{6}{42}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7597}%
+$\displaystyle {\textstyle\frac{12}{42}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7598}%
+$\displaystyle \left.\vphantom{\frac{6}{42}+ \frac{12}{42} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7600}%
+$\displaystyle \left(\vphantom{\frac{2}{20}+ \frac{6}{20} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7601}%
+$\displaystyle {\textstyle\frac{2}{20}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7602}%
+$\displaystyle {\textstyle\frac{6}{20}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7603}%
+$\displaystyle \left.\vphantom{\frac{2}{20}+ \frac{6}{20} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7606}%
+$\displaystyle {\textstyle\frac{29}{70}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7613}%
+$\displaystyle {\frac{\mathop{P}[B \cap C]}{\mathop{P}[C]}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7616}%
+$\displaystyle {\frac{1/5
+}{29/70}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7619}%
+$\displaystyle {\textstyle\frac{14}{29}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7621}%
+$\displaystyle \rho$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7624}%
+$\displaystyle \theta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7627}%
+$ \tau$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7633}%
+$\displaystyle {\frac{\mathop{P}[\mbox{TestPositivo}\cap\mbox{NoEstaEnfermo}] }{\mathop{P}[\mbox{TestPositivo}] }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7636}%
+$\displaystyle {\frac{(1-\tau)(1-\theta)}{\tau\rho+(1-\tau)(1-\theta)}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7638}%
+$ \rho$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7640}%
+$ \theta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7642}%
+$\displaystyle {\frac{(0.0001)(0.977)}{(0.0001)(0.977)+(0.9999)(0.074)}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7650}%
+$\displaystyle \forall$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7651}%
+$\displaystyle \leq$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7655}%
+$\displaystyle \mbox{$ \; \Longrightarrow \; $}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7656}%
+$\displaystyle \left|\vphantom{ \bigcup_{i=1}^n A_i }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7657}%
+$\displaystyle \bigcup_{i=1}^{n}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7658}%
+$\displaystyle \left.\vphantom{ \bigcup_{i=1}^n A_i }\right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7665}%
+$\displaystyle \left|\vphantom{ A_1\times A_2\times \dots \times A_n }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7666}%
+$\displaystyle \left.\vphantom{ A_1\times A_2\times \dots \times A_n }\right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7667}%
+$\displaystyle \prod_{i=1}^{n}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Teor2157}%
+\begin{Teor}El n\'umero de r-permutaciones de elementos  tomados de un  conjunto con
+$n$\  elementos es
+\begin{displaymath}\mathop{P}(n,r)=\frac{n!}{(n-r)!}. \end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor2162}%
+\begin{Teor}El n\'umero de permutaciones que se pueden obtener con $r$\  elementos,
+repetidos $k_1,k_2,\dots,k_r$\  veces, respectivamente es:
+\begin{displaymath}\frac{(k_1+k_2+ \dots+ k_r)!}{k_1!k_2! \dots! k_r!}.\end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7770}%
+$\displaystyle {\frac{10!}{5!3!2!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor2167}%
+\begin{Teor}El n\'umero de r-permutaciones con repetici\'on, sobre un
+conjunto con $n$\  elementos es $n^r$.
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Teor2170}%
+\begin{Teor}El n\'umero de r-combinaciones sobre un conjunto de $r$\  elementos es
+\begin{displaymath}{ 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle  r} \\
+          \end{array}
+        \!\!\! \right) }= \frac{n!}{r!(n-r)!}. \end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7790}%
+$\displaystyle \sum_{i=0}^{n}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7791}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  i} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7792}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  i} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7793}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  i} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7797}%
+$ {\frac{n!}{k!(n-k)!}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7799}%
+$ \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7800}%
+$ \begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7801}%
+$ \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7813}%
+$ \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  r} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7814}%
+$ \begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  r} \\ 
+          \end{array}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline7815}%
+$ \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  r} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7823}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n+r-1}  \\ 
+               { \scriptstyle  n-1} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7824}%
+$\displaystyle \begin{array}{c}
+               {\scriptstyle n+r-1}  \\ 
+               { \scriptstyle  n-1} \\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7825}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n+r-1}  \\ 
+               { \scriptstyle  n-1} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor2198}%
+\begin{Teor}El n\'umero de $r-$combinaciones con repetici\'on sobre un conjunto con
+$n$\  elementos es
+\begin{displaymath} 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n+r-1}  \\
+               { \scriptstyle  r} \\
+          \end{array}
+        \!\!\! \right) . \end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7834}%
+$\displaystyle {\frac{n(n-1)
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  2} \\ 
+          \end{array}
+        \!\!\! \right) (n-2)!}{n^n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7835}%
+$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  2} \\ 
+          \end{array}
+        \!\!\! \right) n!}{n^n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7838}%
+$\displaystyle {\frac{9}{\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 12}  \\ 
+               { \scriptstyle  8} \\ 
+          \end{array}
+        \!\!\! \right) }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7844}%
+$\displaystyle {\frac{(2n)!}{2^nn!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7848}%
+$\displaystyle {\frac{n!}{{(2n)!}/{2^nn!} }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7849}%
+$\displaystyle {\frac{2^n(n!)^2}{(2n)!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Teor2233}%
+\begin{Teor}
+Los valores:
+\begin{enumerate}
+\item El n\'umero de soluciones enteras de la ecuaci\'on $x_1+x_2+\dots+x_n=r,$donde  $x_i \geq 0\,\,\,\forall\,\, (1 \leq i \leq n),$\item el n\'umero de $r-$\  combinaciones con repetici\'on sobre un conjunto de
+tama\~no n,
+\item el n\'umero de maneras de distribuir $r$\  objetos indistinguibles en
+$n$\  contenedores indistinguibles,
+\end{enumerate}
+\par son iguales.
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor2235}%
+\begin{Teor}
+Los coeficientes binomiales cumplen las siguientes propiedades
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7853}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  r} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7854}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  r} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7855}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  r} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7858}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  n-r} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7859}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  n-r} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7860}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  n-r} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7867}%
+$\displaystyle {\frac{n}{r}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7868}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r-1} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7869}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r-1} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7870}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r-1} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7877}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7878}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7879}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-1}  \\
+{ \scriptstyle  r} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7887}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  k} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7888}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  k} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7889}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n}  \\
+{ \scriptstyle  k} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7895}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-k}  \\
+{ \scriptstyle  r-k} \\
+\end{array}
+\!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7896}%
+$\displaystyle \begin{array}{c}
+{\scriptstyle n-k}  \\
+{ \scriptstyle  r-k} \\
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7897}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n-k}  \\
+{ \scriptstyle  r-k} \\
+\end{array}
+\!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def3307}%
+\begin{Def}Si $\Omega $\  es el espacio muestral para un experimento aleatorio
+ entonces
+una variable aleatoria $X$\  es una funci\'on del espacio muestral al
+ conjunto de
+los reales.
+\begin{displaymath} X:\Omega \longrightarrow \Re.  \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7907}%
+$\displaystyle \longrightarrow$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7908}%
+$\displaystyle \Re$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7912}%
+$\displaystyle \in$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7914}%
+$\displaystyle \sum_{x \in   \mathop{Rango}(X)}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7919}%
+$\displaystyle \epsilon$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7923}%
+$\displaystyle \wedge$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7942}%
+$\displaystyle \left\{\vphantom{ \begin{array}{lcr}
+X(roja)   &=  &1  \\  X(verde-roja)  & = &2 \\ 
+X(verde-verde-roja) &= & 3 \\  X(verde-verde-verde-roja) &=& 4
+\end{array} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7943}%
+$\displaystyle \begin{array}{lcr}
+X(roja)   &=  &1  \\  X(verde-roja)  & = &2 \\ 
+X(verde-verde-roja) &= & 3 \\  X(verde-verde-verde-roja) &=& 4
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7945}%
+$\displaystyle \left\{\vphantom{ \begin{array}{lcl}
+f_X(1)  & = & \frac{4}{7} \\  \\  f_X(2) & = & \frac{3}{7}\,  \frac{4}{6}\\ \\ 
+f_X(3) & = &  \frac{3}{7}\,\frac{2}{6}\,\frac{4}{5} \\ \\  f_X(4)& =&
+\frac{3}{7}\,\frac{2}{6}\, \frac{1}{5}\,\frac{4}{4}
+\end{array} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7946}%
+$\displaystyle \begin{array}{lcl}
+f_X(1)  & = & \frac{4}{7} \\  \\  f_X(2) & = & \frac{3}{7}\,  \frac{4}{6}\\ \\ 
+f_X(3) & = &  \frac{3}{7}\,\frac{2}{6}\,\frac{4}{5} \\ \\  f_X(4)& =&
+\frac{3}{7}\,\frac{2}{6}\, \frac{1}{5}\,\frac{4}{4}
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7957}%
+$\displaystyle {\textstyle\frac{4}{6}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7958}%
+$\displaystyle {\textstyle\frac{6}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def3315}%
+\begin{Def}Si $X$\  es una variable aleatoria discreta  con rango \newline
+$\mathop{R}=\{x_0,x_1,x_2,\dots \}$\  entonces se define la
+funci\'on de distribuci\'on de masa o  distribuci\'on acumulada
+para $X$\  por:
+\par\begin{displaymath}F_X(x)=\mathop{P}[X \leq x]= \left\{ \begin{array}{ll}
+            0  & \mbox{ si } x < x_0 \\
+            \sum_{i=0}^r f_{X})(x_i)  &  \mbox{si $x_r \leq x < x_{r+1}.$}\\
+          \end{array}
+        \right. \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7962}%
+$\displaystyle \left\{\vphantom{ \begin{array}{ll}
+            0  & \mbox{ si $ x  0 $}\\ 
+            {4}/{7}  & \mbox{ si $ x = 1 $}\\ 
+            {6}/{7}  & \mbox{ si $ x =  2 $}\\ 
+            {34}/{45} & \mbox{ si $ x =3  $}\\ 
+             1  & \mbox{ si $ x \geq 4 $}\\ 
+          \end{array}
+        }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7963}%
+$\displaystyle \begin{array}{ll}
+            0  & \mbox{ si $ x  0 $}\\ 
+            {4}/{7}  & \mbox{ si $ x = 1 $}\\ 
+            {6}/{7}  & \mbox{ si $ x =  2 $}\\ 
+            {34}/{45} & \mbox{ si $ x =3  $}\\ 
+             1  & \mbox{ si $ x \geq 4 $}\\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7972}%
+$\displaystyle \left\{\vphantom{ \begin{array}{ll}
+            (\frac{5}{6})^{x-1}(\frac{1}{6})  & \mbox{ si $ x=1,2\dots  $}\\ 
+           0  & \mbox{en cualquier otro caso.}\\ 
+          \end{array}
+        }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7973}%
+$\displaystyle \begin{array}{ll}
+            (\frac{5}{6})^{x-1}(\frac{1}{6})  & \mbox{ si $ x=1,2\dots  $}\\ 
+           0  & \mbox{en cualquier otro caso.}\\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7977}%
+$\displaystyle \left\{\vphantom{ \begin{array}{ll}
+0 & \mbox{ si $ x < 1  $}\\
+\sum_{i=1}^n \left(\frac{5}{6} \right)^{i-1}
+\left(\frac{1}{6}\right)  =
+1-\frac{5^n}{6^n} & \mbox{ si $ n \leq x  < n+1.  $}
+\end{array}
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay7978}%
+$\displaystyle \begin{array}{ll}
+0 & \mbox{ si $ x < 1  $}\\
+\sum_{i=1}^n \left(\frac{5}{6} \right)^{i-1}
+\left(\frac{1}{6}\right)  =
+1-\frac{5^n}{6^n} & \mbox{ si $ n \leq x  < n+1.  $}
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8005}%
+$\displaystyle \int_{a}^{b}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8007}%
+$\displaystyle \int_{-\infty}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8010}%
+$\displaystyle \int_{-\infty}^{x}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8020}%
+$\displaystyle \alpha$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8021}%
+$\displaystyle \left\{\vphantom{ \begin{array}{r@{\quad:\quad}l}
+\lambda e^{-\lambda x}& \mbox{Para } x >0 \\ 
+0 & \mbox {En cualquier otro caso}
+\end{array}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8022}%
+$\displaystyle \begin{array}{r@{\quad:\quad}l}
+\lambda e^{-\lambda x}& \mbox{Para } x >0 \\ 
+0 & \mbox {En cualquier otro caso}
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8025}%
+$ \lambda$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8027}%
+$\displaystyle \lambda$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8028}%
+$\displaystyle \left\{\vphantom{ \begin{array}{c@{\quad:\quad}l}
+0 & \mbox{Para  } x < 0 \\ 
+1-e^{-\lambda x} & \mbox {Para } x \geq 0
+\end{array}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8029}%
+$\displaystyle \begin{array}{c@{\quad:\quad}l}
+0 & \mbox{Para  } x < 0 \\ 
+1-e^{-\lambda x} & \mbox {Para } x \geq 0
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def3327}%
+\begin{Def}
+Si $X$\  es una variable aleatoria se define la media o la
+esperanza de $X$\  por \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8039}%
+$\displaystyle \mu_{X}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8040}%
+$\displaystyle \sum_{x_i \in R_X}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8043}%
+$\displaystyle \infty$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8054}%
+$\displaystyle {\frac{\sum_{i=1}^{n} x_i}{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8059}%
+$\displaystyle {\textstyle\frac{2}{7}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8060}%
+$\displaystyle {\textstyle\frac{4}{35}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8061}%
+$\displaystyle {\textstyle\frac{1}{35}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8062}%
+$\displaystyle {\textstyle\frac{76}{35}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3332}%
+\begin{truco}
+\begin{eqnarray*}
+\mu_X  & = & \int_{0}^{\infty} x\lambda e^{-\lambda x} \,dx \\
+       & = & \lambda \int_{0}^{\infty} x e^{-\lambda x} \,dx \\
+       & = &  \left( -xe^{-\lambda x}\right)|_0^{\infty}
+- \int_{0}^{\infty} e^{-\lambda x} \,dx \\
+     & = &   -xe^{-\lambda x}
+-\frac{ e^{-\lambda x}}{\lambda}|_0^{\infty}\\
+& = & \frac{1}{\lambda}.
+\end{eqnarray*}
+\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlfigureA{Def3339}%
+\begin{Def}si $h(x)$\  es una funci\'on real  y $X$\  es una variable
+aleatoria se tiene que
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8076}%
+$\displaystyle \mu_{h}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8083}%
+$\displaystyle \mu_{h(X)}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def3341}%
+\begin{Def}Si $X$\  es una variable
+aleatoria  con distribuci\'on de probabilidad $f_X,$\  y media
+$\mu_X$\  se define la varianza de $X$\  como la esperanza de
+$(X-\mu_X)^2$. \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8091}%
+$\displaystyle \sigma_{X}^{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8092}%
+$\displaystyle \mu_{(X-\mu_X)^2}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8114}%
+$\displaystyle \mu_{X}^{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8131}%
+$\displaystyle \mu_{X^2}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Lem3344}%
+\begin{Lem}Si $X$\  es una variable aleatoria cuya media  y varianza
+existen se tiene que
+ $\mathop{VAR}(X) = \mathop{E}(X^2)-(\mathop{E}(X)^2$.
+\end{Lem}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8147}%
+$\displaystyle \left\{\vphantom{ \begin{array}{ll}
+            \frac{k}{x^2} & \mbox{ si $ 1 \leq x \leq 15 $}\\ 
+            0  &  \mbox{en otro caso.}
+          \end{array}
+        }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8148}%
+$\displaystyle \begin{array}{ll}
+            \frac{k}{x^2} & \mbox{ si $ 1 \leq x \leq 15 $}\\ 
+            0  &  \mbox{en otro caso.}
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3349}%
+\begin{truco}
+\begin{displaymath}\int_{-\infty}^\infty \frac{k}{x^2}\,dx = \frac{-k}{x}|_{-1}^{15} = \
+\frac{-k}{15}-\frac{-k}{1}= \frac{14k}{15} \end{displaymath} $k$\  debe ser
+$\frac{15}{14}$.\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3351}%
+\begin{truco}\begin{displaymath}P([-2<X\leq5])=\int_{1}^{5} \frac{15}{14 x^2}\,dx =
+\int_{1}^{5} \frac{15}{14 x^2}\,dx =\frac{15}{4}
+    \left(-\frac{1}{5}+1\right)=\frac{6}{7}.\end{displaymath}\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3353}%
+\begin{truco}\begin{displaymath} \mathop{E}(X)=\int_{1}^{15} x \frac{15}{14 x^2}\,dx =
+\int_{1}^{15} \frac{15}{14 x}\,dx = \frac{15}{14} (\ln(15)-\ln(1)) =
+ \frac{15}{14} \ln(15), \end{displaymath}
+\begin{displaymath}\mathop{E}(X^2)=\int_{1}^{15} x^2 \frac{15}{14 x^2}\,dx =
+\int_{1}^{15} \frac{15}{14}\,dx = 15,\end{displaymath}
+\begin{displaymath}\mathop{VAR}(X)=\mathop{E}(X^2)-\left(\mathop{E}(X)\right)^2 =
+\left(\frac{15}{14} \ln(15)\right)^2 - 15. \end{displaymath}\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor3355}%
+\begin{Teor}Si $X$\  y $Y$\  son variables aleatorias y $c$\  es una constante. Se cumplen
+las siguientes afirmaciones.
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8154}%
+$\displaystyle \mu_{c}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8156}%
+$\displaystyle \mu_{(cX)}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8159}%
+$\displaystyle \mu_{X+Y}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8161}%
+$\displaystyle \mu_{Y}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor3357}%
+\begin{Teor}Si $X$\  y $Y$\  son variables aleatorias independientes cuyas varianzas existen
+y $c$\  es una constante. Se cumplen
+las siguientes afirmaciones.
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8179}%
+$\displaystyle \sum_{i=0}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8183}%
+$\displaystyle \left\{\vphantom{\sum_{k=0}^{\infty} (tx_i)^k/k!  }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8184}%
+$\displaystyle \sum_{k=0}^{\infty}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8185}%
+$\displaystyle \left.\vphantom{\sum_{k=0}^{\infty} (tx_i)^k/k!  }\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8189}%
+$\displaystyle \left\{\vphantom{\sum_{k=0}^{\infty} t^k x_i^k/k!
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8191}%
+$\displaystyle \left.\vphantom{\sum_{k=0}^{\infty} t^k x_i^k/k!
+}\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8195}%
+$\displaystyle {\frac{t^k}{k!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8196}%
+$\displaystyle \left\{\vphantom{\sum_{i=0}^{\infty} {x^i}{f_X(x_i)}
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8198}%
+$\displaystyle \left.\vphantom{\sum_{i=0}^{\infty} {x^i}{f_X(x_i)}
+}\right\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def3362}%
+\begin{Def}Un experimento se clasifica como Binomial si cumple las
+siguientes propiedades:
+\begin{enumerate}
+\item El experimento consiste de $n$\  repeticiones de otro experimento(intentos).
+\par\item  Cada uno de los intentos es id\'entico y puede resultar en uno de dos
+posibles resultados, \'exito $E$\  con probabilidad $p$\  o fracaso
+$F$\  con probabilidad $1-p$. Esta probabilidad se mantiene
+constante entre repeticiones.
+\par\item Las repeticiones de los intentos son independientes, esto es el resultado
+de una de las pruebas no incide sobre el resultado de las otras.
+\par\item La variable aleatoria observada $X$\  es el n\'umero de \'exitos obtenidos en
+los $n$\  intentos.
+\end{enumerate}
+\par\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor3364}%
+\begin{Teor}Si $X$\  es una variable aleatoria discreta que sigue una distribuci\'on
+de
+probabilidad Binomial de par\'ametros $n$\  y $p$\  entonces se tiene:
+\begin{enumerate}
+\item
+$\mathop{Rango} X = \left\{0,1,2,\dots,n \right\},$\item \begin{displaymath}\mathop{b}(x;n,p)= \left\{ \begin{array}{ll}
+            
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle  x} \\
+          \end{array}
+        \!\!\! \right)  p^x(1-p)^{n-x}  & \mbox{ si $ x=0,1,2\dots,n $}\\
+           0  & \mbox{en cualquier otro caso}\\
+          \end{array}
+        \right., \end{displaymath}
+\item
+\begin{displaymath}\mathop{B}(x;n,p)= \left\{ \begin{array}{ll}
+   0 & \mbox{ si $ x < 1 $}\\
+             \sum_{i=0}^r 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle   i} \\
+          \end{array}
+        \!\!\! \right)  p^i(1-p)^{n-i}  &
+\mbox{ si $r\leq x < r+1 $}\\
+           1  & \mbox{ si $ x \geq  n $\  }\\
+          \end{array}
+        \right.. \end{displaymath}
+\end{enumerate}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8249}%
+$\displaystyle \sum_{k=0}^{8}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8250}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 15}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8251}%
+$\displaystyle \begin{array}{c}
+               {\scriptstyle 15}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8252}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 15}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8260}%
+$\displaystyle \sum_{k=0}^{2}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8261}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 10}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8262}%
+$\displaystyle \begin{array}{c}
+               {\scriptstyle 10}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8263}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 10}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsubsection}
+{\newpage\clearpage
+\lthtmlfigureA{Teor3399}%
+\begin{Teor}Si $X$\  sigue una distribuci\'on binomial de par\'ametros
+$n,p$\  entonces:
+\par\begin{displaymath}\mu_X = np \mbox{ y  } \mathop{VAR}(X)=np(1-p). \end{displaymath}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8279}%
+$\displaystyle {\frac{{\lambda}^x e^{-\lambda}}{x!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8282}%
+$ \geq$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8284}%
+$\displaystyle \sum^{\infty}_{i=0}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8285}%
+$\displaystyle {\frac{x^i}{i!}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3405}%
+\begin{truco}
+ \begin{displaymath}\sum_{i=0}^{\infty} \mathop{p}(i;\lambda)=\sum_{i=0}^{\infty} \frac{{\lambda}^i e^{-\lambda}}{i!} =
+e^{-\lambda} \sum_{i=0}^{\infty} \frac{ {\lambda}^i }{i!}=
+e^{-\lambda}e^{\lambda}=1,
+  \end{displaymath}
+\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8291}%
+$\displaystyle {\frac{e^{-1.5}(1.5)^0}{0}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3410}%
+\begin{truco}
+\begin{eqnarray*}
+\mu_X & = & \sum_{i=0}^{\infty}i \frac{ {\lambda}^i }{i!} e^{-\lambda}\\
+ &=& e^{-\lambda} \sum_{i=1}^{\infty} \frac{ {\lambda}^i }{(i-1)!} \\
+ &=& e^{-\lambda}\sum_{i=0}^{\infty} \frac{ {\lambda}^{i+1} }{(i)!} \\
+ &=& e^{-\lambda} \lambda\sum_{i=0}^{\infty} \frac{ {\lambda}^{i}
+ }{(i)!}\\
+ &=& e^{-\lambda} \lambda e^{\lambda}\\& = &\lambda.
+\end{eqnarray*}
+\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco3412}%
+\begin{truco}
+\begin{displaymath}m_{X}(t)= \sum_{k=0}^{\infty}\frac{\lambda^k e^{-\lambda}}{k!}e^{tk} =
+ e^{-\lambda}\sum_{k=0}^{\infty}\frac{(\lambda e^{t})^k }{k!} =
+ e^{\lambda (e^{t}-1)} \end{displaymath}
+\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8296}%
+$ \lambda^{2}_{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor3414}%
+\begin{Teor}Para una variable aleatoria Poisson  se cumple  $\mu_X =
+\lambda $\  y $ \sigma_X^2 = \lambda$\  \end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def4411}%
+\begin{Def}Un Experimento se clasifica como Hipergeom\'etrico si cumple
+las siguientes propiedades:
+\begin{itemize}
+\par\item La poblaci\'on o conjunto donde debe llevarse a cabo el muestreo consta
+de $N$\  objetos.
+ \item  Cada objeto puede caracterizarse \'exito $E$\  o fracaso $F$. Hay $M$\'exitos en la poblaci\'on.
+\par\item Se saca una muestra de $n$\  objetos de forma tal que sea igualmente
+probable que se obtenga cada muestra.
+\item La variable aleatoria observada $Y$\  es el n\'umero de \'exitos obtenidos
+en  la muestra.
+\end{itemize}
+\par\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8320}%
+$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+{\scriptstyle M}  \\
+{ \scriptstyle  x} \\
+\end{array}
+\!\!\! \right)
+\left( \!\!\!\begin{array}{c}
+{\scriptstyle N-M}  \\
+{ \scriptstyle  n-x} \\
+\end{array}
+\!\!\! \right) }{\left( \!\!\!\begin{array}{c}
+{\scriptstyle N}  \\
+{ \scriptstyle  n} \\
+\end{array}
+\!\!\! \right) }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor4429}%
+\begin{Teor}Si $X$\  sigue una distribuci\'on hipergeom\'etrica, con las
+condiciones descritas se cumplen:
+\par (a.)\begin{displaymath} h(x;n,M,N) =\frac{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle M}  \\
+               { \scriptstyle  x} \\
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle N-M}  \\
+               { \scriptstyle  n-x} \\
+          \end{array}
+        \!\!\! \right) }{
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle N}  \\
+               { \scriptstyle  n} \\
+          \end{array}
+        \!\!\! \right) }.\end{displaymath}
+\par (b.) \begin{displaymath}\mathop{E}[X]= n \frac{M}{N},\end{displaymath}
+ \begin{displaymath}\mathop{VAR}[X]=n
+\left(\frac{N-n}{N-1}\right) \frac{M}{N}
+\left(1-\frac{M}{N}\right).\end{displaymath}
+\par\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8324}%
+$\displaystyle \left\{\vphantom{ \begin{array}{r@{\quad:\quad}l}
+{10}/{56} & \mbox{Para } x = 2 \\ 
+{30}/{56} & \mbox{Para } x = 3 \\ 
+{15}/{56} & \mbox{Para } x = 4 \\ 
+{1}/{56} & \mbox{Para } x = 5 \\ 
+\end{array}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8325}%
+$\displaystyle \begin{array}{r@{\quad:\quad}l}
+{10}/{56} & \mbox{Para } x = 2 \\ 
+{30}/{56} & \mbox{Para } x = 3 \\ 
+{15}/{56} & \mbox{Para } x = 4 \\ 
+{1}/{56} & \mbox{Para } x = 5 \\ 
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8328}%
+$\displaystyle {\frac{\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\ 
+               { \scriptstyle  0} \\ 
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\ 
+               { \scriptstyle  20} \\ 
+          \end{array}
+        \!\!\! \right) +
+
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\ 
+               { \scriptstyle  1} \\ 
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\ 
+               { \scriptstyle  10} \\ 
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\ 
+               { \scriptstyle  2} \\ 
+          \end{array}
+        \!\!\! \right) 
+
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\ 
+               { \scriptstyle  18} \\ 
+          \end{array}
+        \!\!\! \right) +
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\ 
+               { \scriptstyle  3} \\ 
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\ 
+               { \scriptstyle  17} \\ 
+          \end{array}
+        \!\!\! \right) +
+
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 200}  \\ 
+               { \scriptstyle  4} \\ 
+          \end{array}
+        \!\!\! \right) 
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 300}  \\ 
+               { \scriptstyle  16} \\ 
+          \end{array}
+        \!\!\! \right) }{\left( \!\!\!\begin{array}{c}
+               {\scriptstyle 500}  \\ 
+               { \scriptstyle  20} \\ 
+          \end{array}
+        \!\!\! \right) }}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def4783}%
+\begin{Def}Una variable aleatoria $X$\  sigue una distribuci\'on normal con
+par\'ametros  $\mu$\  y $\sigma$,  lo que denotamos por $X$\  es
+$\mathop{N(\mu,\sigma^2)}$, si la funci\'on de densidad de
+probabilidad tiene la forma.
+\par\begin{displaymath} f_X(x) =
+\frac{1}{\sqrt{2\pi}\sigma} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+\;\;\;\; \mbox{ Para } -\infty \leq x \leq \infty. \end{displaymath} \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8334}%
+$ \mu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8341}%
+$\displaystyle {\frac{1}{\sqrt{2\pi}\sigma}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8343}%
+$\scriptstyle {\frac{-(t-\mu)^2}{2\sigma^2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Def4786}%
+\begin{Def}Una variable aleatoria $X$\  sigue una distribuci\'on normal
+est\'andar si la funci\'on de densidad de probabilidad tiene la
+forma.
+\par\begin{displaymath} \varphi(x) =
+\frac{1}{\sqrt{2\pi}} e^{\frac{-x^2}{2}} \;\;\;\; \mbox{ Para }
+-\infty \leq x \leq \infty. \end{displaymath} \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8345}%
+$\displaystyle \Phi$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8347}%
+$\displaystyle {\frac{1}{\sqrt{2\pi}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8349}%
+$\scriptstyle {\frac{-t^2}{2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8352}%
+$ \Phi$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8364}%
+$\displaystyle \omega$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8365}%
+$\displaystyle {\frac{t-\mu}{\sigma}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8370}%
+$\scriptstyle {\frac{-(x-\mu)^2}{2\sigma^2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8374}%
+$\displaystyle \int_{-\infty}^{\frac{x-\mu}{\sigma}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8375}%
+$\scriptstyle {\frac{-\omega^2}{2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8377}%
+$\displaystyle {\frac{x-\mu}{\sigma}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor4789}%
+\begin{Teor}Si $X$\  sigue una distribuci\'on de probabilidad normal con
+media $\mu$\  y desviaci\'on est\'andar $\sigma$\  entonces
+\begin{equation}\mathop{P}[X\leq x]  = \Phi( \frac{x-\mu}{\sigma})
+\end{equation}
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8384}%
+$\displaystyle {\frac{70-75}{10}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8394}%
+$\displaystyle {\frac{X-50}{10}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8396}%
+$\displaystyle {\frac{r-50}{10}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def5078}%
+\begin{Def}Se define la funci\'on $\Gamma(\alpha)$\  por:
+\begin{displaymath}\Gamma(\alpha)=\int_0^{\infty}x^{\alpha -1} e^{-x}\,dx. \end{displaymath}
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco5080}%
+\begin{truco}
+\begin{displaymath}\Gamma(1)=\int_0^{\infty} e^{-x}\,dx = \lim_{M \longrightarrow
+\infty } -e^{-x}|_0^M = 1. \end{displaymath} \end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8403}%
+$\displaystyle \Gamma$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8406}%
+$\scriptstyle \alpha$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{truco5082}%
+\begin{truco}\begin{displaymath}\Gamma(\alpha+1)=\int_0^{\infty}x^{\alpha} \exp{-x}\,dx =
+ \lim_{M \longrightarrow \infty }-\alpha x^{\alpha-1}e^{-x}|_0^M +
+\int_0^{\infty}\alpha x^{\alpha -1} e^{-x}\,dx
+ \end{displaymath}
+\end{truco}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8409}%
+$ \alpha$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8410}%
+$ \Gamma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8423}%
+$ {\frac{1}{2}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8424}%
+$ \sqrt{\pi}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8430}%
+$ \beta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8433}%
+$\displaystyle \beta$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8434}%
+$\displaystyle \left\{\vphantom{ \begin{array}{r@{\quad:\quad}l}
+\frac{1}{\beta^{\alpha} \Gamma(\alpha)} x^{\alpha-1}e^{-x/\beta}& \mbox{Para } x \geq 0 \\ 
+0 & \mbox {En cualquier otro caso}
+\end{array}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8435}%
+$\displaystyle \begin{array}{r@{\quad:\quad}l}
+\frac{1}{\beta^{\alpha} \Gamma(\alpha)} x^{\alpha-1}e^{-x/\beta}& \mbox{Para } x \geq 0 \\ 
+0 & \mbox {En cualquier otro caso}
+\end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8455}%
+$\displaystyle \int_{0}^{x}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8456}%
+$\displaystyle {\frac{y^{\alpha -1}e^{-y/\beta}}{\Gamma(\alpha)
+\beta^\alpha}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8459}%
+$\displaystyle \int_{0}^{x/\beta}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8460}%
+$\displaystyle {\frac{u^{\alpha -1}e^{-u}}{\Gamma(\alpha)}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5086}%
+\begin{Teor}Si $X$\  es una variable aleatoria Gamma con par\'ametros
+$\alpha, \beta,$\  se cumple que:
+  \end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8466}%
+$ \mu_{X}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8471}%
+$ \beta^{2}_{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+\addtocounter{Ejemplo}{1}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def5094}%
+\begin{Def}Si una variable aleatoria continua $X$\  tiene una
+distribuci\'on de probabilidad de la forma
+\begin{displaymath} f(x;\alpha) = \left\{ \begin{array}{r@{\quad:\quad}l}
+\lambda e^{-\lambda x}& \mbox{Para } \lambda >0 \\
+0 & \mbox {En cualquier otro caso}
+\end{array}\right.,  \end{displaymath}
+\par se dice que la variable $X$\  sigue una distribuci\'on de tipo
+exponencial. \end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8497}%
+$\displaystyle \sum_{R_X}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8500}%
+$\displaystyle \sum_{x < t}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8501}%
+$\displaystyle \sum_{x\geq t}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5609}%
+\begin{Teor}Si $X$\  es una variable aleatoria,  cuya esperanza es $
+\mathop{E}(X),$\   para la cual $\mathop{P}[X<0]=0$\   se cumple la
+desigualdad  \end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8516}%
+$\displaystyle {\frac{\mathop{E}(X)}{t}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8531}%
+$\displaystyle {\frac{1}{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8538}%
+$ \sigma^{2}_{X}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8547}%
+$\displaystyle {\frac{\sigma^2_X}{t^2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5615}%
+\begin{Teor}Si $X$\  es una
+variable aleatoria con media $\mu_X $\  y varianza $\sigma^2_X$.
+Entonces para cualquier valor $t>0$\  se tiene  \end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8564}%
+$\displaystyle {\textstyle\frac{100}{400}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8565}%
+$\displaystyle {\textstyle\frac{3}{4}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8571}%
+$\displaystyle {\textstyle\frac{4}{16}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8575}%
+$\displaystyle \int_{2}^{6}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8576}%
+$\displaystyle {\frac{e^{-x/2}}{2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8609}%
+$ \Upsilon$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8617}%
+$\displaystyle \Upsilon$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8618}%
+$\displaystyle {\frac{\Upsilon(n) }{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8621}%
+$\displaystyle \lim_{n\longrightarrow \infty}^{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8636}%
+$ \epsilon$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8638}%
+$\displaystyle \left[\vphantom{ \left|\frac{X}{n}-p \right| \geq \epsilon
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8639}%
+$\displaystyle \left|\vphantom{\frac{X}{n}-p }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8640}%
+$\displaystyle {\frac{X}{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8641}%
+$\displaystyle \left.\vphantom{\frac{X}{n}-p }\right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8644}%
+$\displaystyle \left.\vphantom{ \left|\frac{X}{n}-p \right| \geq \epsilon
+}\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8646}%
+$\displaystyle {\frac{p(1-p)}{n\epsilon^2}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5634}%
+\begin{Teor}Sea $\Upsilon$\  un
+evento y $ \Upsilon(n)$\  en n\'umero de ocurrencias del evento en
+$n$\  repeticiones del experimento. Entonces para todo $\epsilon
+\geq 0$\  se tiene\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8654}%
+$\displaystyle \left[\vphantom{ \left|\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]\right| \geq \epsilon
+}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8655}%
+$\displaystyle \left|\vphantom{\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8658}%
+$\displaystyle \left.\vphantom{\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]}\right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8661}%
+$\displaystyle \left.\vphantom{ \left|\frac{
+\Upsilon(n)}{n}-\mathop{P}[\Upsilon ]\right| \geq \epsilon
+}\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Teor5636}%
+\begin{Teor}Sean $X_1,X_2,\dots X_n$\  variables aleatorias mutuamente
+independientes y todas siguiendo la  misma distribuci\'on. Si
+existe la esperanza $\mu=\mathop{E}[X_k]$, entonces para todo
+$\epsilon > 0$\  se tiene\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8665}%
+$\displaystyle \left[\vphantom{ \left|\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]\right| \geq \epsilon }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8666}%
+$\displaystyle \left|\vphantom{\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8667}%
+$\displaystyle {\frac{X_1+X_2+\dots+X_n}{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8668}%
+$\displaystyle \mu$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8669}%
+$\displaystyle \left.\vphantom{\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]}\right|$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8672}%
+$\displaystyle \left.\vphantom{ \left|\frac{
+X_1+X_2+\dots+X_n}{n}-\mu ]\right| \geq \epsilon }\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5640}%
+\begin{Teor}Sean $X_1,X_2,\dots X_n$\  variables aleatorias mutuamente
+independientes y todas siguiendo la  misma distribuci\'on. Si
+existen la esperanza $\mu=\mathop{E}[X_k]$\  y la varianza
+$\sigma^2=\mathop{Var}[X_k].$\  Entonces para   $S_n =
+X_1+X_2+\dots+X_n $\   y $x < y $\  se tiene
+\end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8678}%
+$\displaystyle \left[\vphantom{ x\leq
+\frac{S_n-n\mu }{\sigma\sqrt{n}}\leq y ] }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8680}%
+$\displaystyle {\frac{S_n-n\mu }{\sigma\sqrt{n}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8682}%
+$\displaystyle \left.\vphantom{ x\leq
+\frac{S_n-n\mu }{\sigma\sqrt{n}}\leq y ] }\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8690}%
+$ \mu^{2}_{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8700}%
+$\displaystyle \left[\vphantom{ x \leq {S_n} \leq y ] }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8703}%
+$\displaystyle \left.\vphantom{ x \leq {S_n} \leq y ] }\right]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8706}%
+$\displaystyle \left(\vphantom{ \frac{y-np}{\sqrt{np(1-p)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8707}%
+$\displaystyle {\frac{y-np}{\sqrt{np(1-p)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8708}%
+$\displaystyle \left.\vphantom{ \frac{y-np}{\sqrt{np(1-p)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8710}%
+$\displaystyle \left(\vphantom{
+\frac{x-np}{\sqrt{np(1-p)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8711}%
+$\displaystyle {\frac{x-np}{\sqrt{np(1-p)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8712}%
+$\displaystyle \left.\vphantom{
+\frac{x-np}{\sqrt{np(1-p)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8715}%
+$\displaystyle \sum_{i=x}^{y}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8720}%
+$\displaystyle \left(\vphantom{
+\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8721}%
+$\displaystyle {\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8722}%
+$\displaystyle \left.\vphantom{
+\frac{y-np+\frac{1}{2}}{\sqrt{np(1-p)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8724}%
+$\displaystyle \left(\vphantom{
+\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8725}%
+$\displaystyle {\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8726}%
+$\displaystyle \left.\vphantom{
+\frac{x-np-\frac{1}{2}}{\sqrt{np(1-p)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8729}%
+$\displaystyle \sum_{i=200}^{300}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8730}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 500}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8731}%
+$\displaystyle \begin{array}{c}
+               {\scriptstyle 500}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8732}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle 500}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8734}%
+$\displaystyle \approx$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8736}%
+$\displaystyle \left(\vphantom{
+\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8737}%
+$\displaystyle {\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8738}%
+$\displaystyle \left.\vphantom{
+\frac{300-175+\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8740}%
+$\displaystyle \left(\vphantom{
+\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8741}%
+$\displaystyle {\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8742}%
+$\displaystyle \left.\vphantom{
+\frac{200-175-\frac{1}{2}}{\sqrt{500(.35)(.65)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8756}%
+$\displaystyle \sum_{k=r+1}^{n}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8757}%
+$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8758}%
+$\displaystyle \begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8759}%
+$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\ 
+               { \scriptstyle  k} \\ 
+          \end{array}
+        \!\!\! }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8762}%
+$\displaystyle \left(\vphantom{\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8763}%
+$\displaystyle {\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8764}%
+$\displaystyle \left.\vphantom{\frac{r+1-\frac{n}{2}-\frac{1}{2}}{\sqrt{n/4}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8766}%
+$\displaystyle \left(\vphantom{ \frac{2r+1-n}{\sqrt{n}} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8767}%
+$\displaystyle {\frac{2r+1-n}{\sqrt{n}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8768}%
+$\displaystyle \left.\vphantom{ \frac{2r+1-n}{\sqrt{n}} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8771}%
+$\displaystyle \left(\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8772}%
+$\displaystyle {\frac{2r+1-1000}{\sqrt{1000}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8773}%
+$\displaystyle \left.\vphantom{ \frac{2r+1-1000}{\sqrt{1000}} }\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{Def5669}%
+\begin{Def}Se dice que las variables aleatorias $X_1,X_1,\dots,X_n$forman una muestra aleatoria de tama\~no $n$\  si son independientes
+dos a dos y todas siguen la misma distribuci\'on de probabilidad
+\end{Def}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8787}%
+$ \hat{\kappa}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8789}%
+$ \kappa$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8793}%
+$ \overline{X}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8797}%
+$\displaystyle \overline{X}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8802}%
+$\displaystyle {\frac{1}{n-1}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8814}%
+$ \sigma_{X}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{Teor5673}%
+\begin{Teor}Sea $X_1,X_1,\dots,X_n.$\  una muestra aleatoria  de tama\~no
+$n$\  sobre una poblaci\'on que sigue una distribuci\'on dada por
+una variable aleatoria $X$\  con media $\mu$\  y varianza $\sigma^2.$Entonces se tiene: \end{Teor}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8819}%
+$\displaystyle \sigma^{2}_{}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8822}%
+$\displaystyle {\frac{\sigma^2}{n}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8825}%
+$\displaystyle {\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8831}%
+$ \sqrt{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8845}%
+$\displaystyle \left(\vphantom{\frac{1000-600+.5}{\sqrt{1000(0.6)(0.4)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8846}%
+$\displaystyle {\frac{1000-600+.5}{\sqrt{1000(0.6)(0.4)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8847}%
+$\displaystyle \left.\vphantom{\frac{1000-600+.5}{\sqrt{1000(0.6)(0.4)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8849}%
+$\displaystyle \left(\vphantom{\frac{615-600-.5
+}{ \sqrt{1000(0.6)(0.4)}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8850}%
+$\displaystyle {\frac{615-600-.5
+}{\sqrt{1000(0.6)(0.4)}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8851}%
+$\displaystyle \left.\vphantom{\frac{615-600-.5
+}{ \sqrt{1000(0.6)(0.4)}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8858}%
+$ \sqrt{50}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8863}%
+$\displaystyle \left(\vphantom{\frac{3.8-4}{0.2121}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8864}%
+$\displaystyle {\frac{3.8-4}{0.2121}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8865}%
+$\displaystyle \left.\vphantom{\frac{3.8-4}{0.2121}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8867}%
+$\displaystyle \left(\vphantom{\frac{3.5-4}{
+0.2121}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8868}%
+$\displaystyle {\frac{3.5-4}{0.2121}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8869}%
+$\displaystyle \left.\vphantom{\frac{3.5-4}{
+0.2121}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8873}%
+$\displaystyle \left(\vphantom{\frac{4000-4400}{ 30
+\sqrt{10}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8874}%
+$\displaystyle {\frac{4000-4400}{30
+\sqrt{10}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8875}%
+$\displaystyle \left.\vphantom{\frac{4000-4400}{ 30
+\sqrt{10}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8880}%
+$\displaystyle \left(\vphantom{\frac{4000-4100}{ 30 \sqrt{10}}}\right.$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8881}%
+$\displaystyle {\frac{4000-4100}{30 \sqrt{10}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8882}%
+$\displaystyle \left.\vphantom{\frac{4000-4100}{ 30 \sqrt{10}}}\right)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8886}%
+$ \sqrt{5}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8889}%
+$\displaystyle {\frac{c-30}{0.5\sqrt{5}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8891}%
+$ {\frac{c-30}{0.5\sqrt{5}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\addtocounter{Ejemplo}{1}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8895}%
+$ {\frac{\sigma}{\sqrt{n}}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8896}%
+$ {\frac{1}{3}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8904}%
+$\displaystyle \overline{x}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8915}%
+$\displaystyle {\frac{\overline{x}-5}{0.33333}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline8917}%
+$ \overline{x}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8922}%
+$\displaystyle {\frac{300-320}{3\sqrt{40}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8926}%
+$\displaystyle {\frac{7.5-8}{3/\sqrt{40}}}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

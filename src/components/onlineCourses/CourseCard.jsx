@@ -19,7 +19,7 @@ export default function CourseCard({
   return (
     <Card
       onClick={handleCardClick}
-      className="group border-l-4 hover:shadow-lg bg-gray-50 transition-all duration-300 hover:border-l-tec-blue-secondary cursor-pointer"
+      className="group border-l-4 hover:shadow-lg bg-gray-50 transition-all duration-300 hover:border-l-tec-blue-secondary mb-6 cursor-pointer"
     >
       <CardBody>
         <Typography

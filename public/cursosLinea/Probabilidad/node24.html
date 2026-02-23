@@ -1,0 +1,144 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="1" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<h1><a NAME="SECTION00340000000000000000"><font size="3">Funci&oacute;n Generadora de
+Momentos</font></a></h1>
+<p>Si <i>X</i> es una variable aleatoria se llama funci&oacute;n generadora de
+momentos a la esperanza de <i>e</i><sup>tX</sup> y se denota por <i>m</i><sub>X</sub>(<i>t</i>)
+<p>&nbsp;
+<div ALIGN="CENTER">
+  <a NAME="GeneMom"></a><!-- MATH
+ \begin{eqnarray}
+m_{X}(t)= \mathop{E}(e^{tX}).
+\end{eqnarray}
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT">
+        <p align="center"><b><i>m</i><sub>X</sub>(<i>t</i>) = E(<i>e</i><sup>tX</sup>).</b></p>
+      </td>
+      <td WIDTH="10" ALIGN="RIGHT">(3.11)</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+Las siguientes l&iacute;neas ayudar&aacute;n a entender el porqué de este nombre.
+Supongamos que <i>X</i> es una variable aleatoria que toma valores <!-- MATH 
+ $0,1,2,\dots,$ 
+ -->
+ 0, 1, 2,..., entonces
+<p>&nbsp;
+<div ALIGN="CENTER">
+  <!-- MATH 
+ \begin{eqnarray*} 
+m_X(t) &= &\mathop{E}(e^{tX})\\ 
+& = & \sum_{i=0}^{\infty}e^{tx_i}f_X(x_i)\\ 
+ & = &\sum_{i=0}^{\infty} \left\{\sum_{k=0}^{\infty} (tx_i)^k/k!  \right\}f_X(x_i)\\ 
+& = & \sum_{i=0}^{\infty} \left\{\sum_{k=0}^{\infty} t^k x_i^k/k! 
+\right\}f_X(x_i)  \\ 
+& = & \sum_{k=0}^{\infty} \frac{ t^k}{k!} 
+\left\{\sum_{i=0}^{\infty} {x^i}{f_X(x_i)} 
+ \right\}\\ 
+& = & \sum_{k=0}^{\infty} \frac{ t^k}{k!} \mathop{E}(X^k). 
+\end{eqnarray*} 
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b><i>m</i><sub>X</sub>(<i>t</i>)</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b>E(<i>e</i><sup>tX</sup>)</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img237.gif" ALT="$\displaystyle \sum_{i=0}^{\infty}$" width="27" height="62"><i>e</i><sup>tx<sub>i</sub></sup><i>f</i><sub>X</sub>(<i>x</i><sub>i</sub>)</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img237.gif" ALT="$\displaystyle \sum_{i=0}^{\infty}$" width="27" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img238.gif" ALT="$\displaystyle \left\{\vphantom{\sum_{k=0}^{\infty} (tx_i)^k/k! }\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img239.gif" ALT="$\displaystyle \sum_{k=0}^{\infty}$" width="29" height="62">(<i>tx</i><sub>i</sub>)<sup>k</sup>/<i>k</i>!<img ALIGN="MIDDLE" BORDER="0" SRC="img240.gif" ALT="$\displaystyle \left.\vphantom{\sum_{k=0}^{\infty} (tx_i)^k/k! }\right\}$" width="19" height="64"><i>f</i><sub>X</sub>(<i>x</i><sub>i</sub>)</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img237.gif" ALT="$\displaystyle \sum_{i=0}^{\infty}$" width="27" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img241.gif" ALT="$\displaystyle \left\{\vphantom{\sum_{k=0}^{\infty} t^k x_i^k/k! 
+}\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img239.gif" ALT="$\displaystyle \sum_{k=0}^{\infty}$" width="29" height="62"><i>t</i><sup>k</sup><i>x</i><sub>i</sub><sup>k</sup>/<i>k</i>!<img ALIGN="MIDDLE" BORDER="0" SRC="img242.gif" ALT="$\displaystyle \left.\vphantom{\sum_{k=0}^{\infty} t^k x_i^k/k! 
+}\right\}$" width="19" height="64"><i>f</i><sub>X</sub>(<i>x</i><sub>i</sub>)</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img239.gif" ALT="$\displaystyle \sum_{k=0}^{\infty}$" width="29" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img243.gif" ALT="$\displaystyle {\frac{t^k}{k!}}$" width="23" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img244.gif" ALT="$\displaystyle \left\{\vphantom{\sum_{i=0}^{\infty} {x^i}{f_X(x_i)} 
+}\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img237.gif" ALT="$\displaystyle \sum_{i=0}^{\infty}$" width="27" height="62"><i>x</i><sup>i</sup><i>f</i><sub>X</sub>(<i>x</i><sub>i</sub>)<img ALIGN="MIDDLE" BORDER="0" SRC="img245.gif" ALT="$\displaystyle \left.\vphantom{\sum_{i=0}^{\infty} {x^i}{f_X(x_i)} 
+}\right\}$" width="19" height="64"></b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT"><b>&nbsp;</b></td>
+      <td WIDTH="10" ALIGN="CENTER" NOWRAP><b>=</b></td>
+      <td ALIGN="LEFT" NOWRAP><b><img ALIGN="MIDDLE" BORDER="0" SRC="img239.gif" ALT="$\displaystyle \sum_{k=0}^{\infty}$" width="29" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img243.gif" ALT="$\displaystyle {\frac{t^k}{k!}}$" width="23" height="62">E(<i>X</i><sup>k</sup>).</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+Esta deducci&oacute;n utiliza una propiedad importante de las sumatorias que en
+general no es v&aacute;lida y es el intercambio de las sumatorias que se hace. Si el
+lector es paciente puede expandir cada una de las sumas y verificar que es
+posible el reordenamiento practicado.
+<p>Como notar&aacute; esta &uacute;ltima serie tiene como parte de sus coeficientes los
+momentos de orden <i>k</i>, de hecho es bastante sencillo demostrar el siguiente
+lema
+<p>Si <i>X</i> es una variable aleatoria con funci&oacute;n generadora de momentos <i>m</i><sub>X</sub>(<i>t</i>)
+se tiene que
+<p>&nbsp;
+<div ALIGN="CENTER">
+  <!-- MATH
+ \begin{equation}
+m^{(n)}_X(0) = \mathop{E}(X^n).
+\end{equation}
+ -->
+  <table WIDTH="100%" ALIGN="CENTER">
+    <tr VALIGN="MIDDLE">
+      <td ALIGN="CENTER" NOWRAP><b><i>m</i><sup>(n)</sup><sub>X</sub>(0) = E(<i>X</i><sup>n</sup>).</b></td>
+      <td WIDTH="10" ALIGN="RIGHT">(3.12)</td>
+    </tr>
+  </table>
+</div>
+<p>Es decir si tenemos la funci&oacute;n generadora de momentos basta con derivarla <i>n</i>
+veces y evaluar en 0 para obtener el momento de orden <i>n</i>.
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+</BODY>
+</HTML>

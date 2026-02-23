@@ -1,0 +1,115 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 4.0">
+<TITLE>pag1 descripcion General</TITLE>
+<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<META NAME="Template" CONTENT="C:\ARCHIVOS DE PROGRAMA\MICROSOFT OFFICE\OFFICE\html.dot">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+<base target="_self">
+
+
+
+
+</HEAD>
+<BODY LINK="#000080" VLINK="#000080" topmargin="30" leftmargin="10" alink="#000080">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=100%>
+<TR>
+<TD WIDTH="1" VALIGN="TOP" BGCOLOR="#ffffff" HEIGHT=1>
+&nbsp;</TD>
+<TD WIDTH="100%" VALIGN="TOP" BGCOLOR="#ffffff">
+<!--Navigation Panel-->
+<!--End of Navigation Panel-->
+<a NAME="SECTION00230000000000000000"><b>Combinaciones</b></a>
+<p>A diferencia de una permutaci&oacute;n, en la cual el orden es importante, en una <i>r</i>
+-combinaci&oacute;n el orden de los elementos no es importante. Una <i>r</i> -combinaci&oacute;n
+sobre un conjunto <i>A</i> con <i>n</i> elementos es un subconjunto de <i>A</i>
+con <i>r</i> elementos.
+<p>Existe un relaci&oacute;n directa entre permutaciones y combinaciones, de hecho
+cada <i>r</i> -combinaci&oacute;n da lugar a <i>r</i>! <i>r</i> -permutaciones. Como
+conocemos el n&uacute;mero de <i>r</i>-permutaciones (<i>teorema</i>  <a HREF="node16.html#Per">5</a>)
+entonces se tiene el siguiente teorema.
+<p><br>
+<img ALIGN="BOTTOM" BORDER="0" SRC="img134.gif" ALT="\begin{Teor}El n\'umero de r-combinaciones sobre un conjunto de $r$\ elementos e...
+...
+\end{array} \!\!\! \right) }= \frac{n!}{r!(n-r)!}. \end{displaymath}\end{Teor}" width="555" height="83"><br>
+<p>Este &uacute;ltimo valor se conoce cono coeficiente binomial pues con alguna
+cantidad de esfuerzo es posible demostrar que:<br>
+<div ALIGN="CENTER">
+  <a NAME="BinNew"></a><!-- MATH
+ \begin{eqnarray}
+(a+b)^n=\sum_{i=0}^n {
+\left( \!\!\!\begin{array}{c}
+               {\scriptstyle n}  \\
+               { \scriptstyle  i} \\
+          \end{array}
+        \!\!\! \right) } a^{n-i}b^i.
+\end{eqnarray}
+ -->
+  <table CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+    <tr VALIGN="MIDDLE">
+      <td NOWRAP ALIGN="RIGHT">
+        <p align="center"><b>(<i>a</i> + <i>b</i>)<sup>n</sup> = <img ALIGN="MIDDLE" BORDER="0" SRC="img135.gif" ALT="$\displaystyle \sum_{i=0}^{n}$" width="27" height="62"><img ALIGN="MIDDLE" BORDER="0" SRC="img136.gif" ALT="$\displaystyle \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle i} \\
+\end{array}\!\!\! }\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img137.gif" ALT="$\displaystyle \begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle i} \\
+\end{array}$" width="29" height="60"><img ALIGN="MIDDLE" BORDER="0" SRC="img138.gif" ALT="$\displaystyle \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle i} \\
+\end{array}\!\!\! }\right)$" width="19" height="64"><i>a</i><sup>n - i</sup><i>b</i><sup>i</sup>.</b></p>
+      </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td WIDTH="10" ALIGN="RIGHT">(2.3)</td>
+    </tr>
+  </table>
+</div>
+<br CLEAR="ALL">
+<p>&nbsp;</p>
+<p>Muchos problemas de conteo pueden resolverse recurriendo a problemas
+diferentes pero con la misma soluci&oacute;n.
+<p>Por ejemplo considere una estructura que solo tiene 2 elementos repetidos,
+uno <i>k</i> veces y el otro <i>n</i> - <i>k</i> veces. El n&uacute;mero de
+permutaciones de los elementos en esta estructura es <!-- MATH
+ $\frac{n!}{k!(n-k)!}$
+ -->
+ <img ALIGN="MIDDLE" BORDER="0" SRC="img139.gif" ALT="$ {\frac{n!}{k!(n-k)!}}$" width="60" height="39">
+que es exactamente&nbsp;&nbsp;
+<p align="center"><img ALIGN="MIDDLE" BORDER="0" SRC="img140.gif" ALT="$ \left(\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right.$" width="19" height="64"><img ALIGN="MIDDLE" BORDER="0" SRC="img141.gif" ALT="$ \begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array}$" width="29" height="60"><img ALIGN="MIDDLE" BORDER="0" SRC="img142.gif" ALT="$ \left.\vphantom{ \!\!\!\begin{array}{c}
+{\scriptstyle n} \\
+{ \scriptstyle k} \\
+\end{array} \!\!\! }\right)$" width="19" height="64">.&nbsp;
+<p>Esto en realidad no resulta complejo, pues hacer las permutaciones indicadas
+es equivalente al siguiente problema, dado el conjunto <!-- MATH
+ $\{1,2,\dots,n\}$
+ -->
+ {1, 2,..., <i>n</i>} elegir subconjuntos de tama&ntilde;o <i>k</i> que correpondan a
+las posiciones en donde se van a ubicar los <i>k</i> elementos Una &uacute;ltima forma
+se discutir&aacute; en estas notas, no sin advertir que con las herramientas
+discutidas es posible abordar problemas diversos que no se han discutido en
+estas notas.
+
+<P>
+&nbsp;
+
+<P>
+&nbsp;</TD>
+</TR>
+</TABLE>
+  
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY>
+</HTML>
