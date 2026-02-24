@@ -45,7 +45,7 @@ export default function Page() {
         {books.length > 0 && (
           <>
             <Typography variant="h4" className="font-display mb-4 font-bold border-b-2 border-tec-red-primary w-fit">
-              Libros
+              Folletos
             </Typography>
             <div className="flex flex-col gap-6 mb-10">
               {books.map((book) => (
