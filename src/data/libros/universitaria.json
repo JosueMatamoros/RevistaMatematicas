@@ -77,7 +77,7 @@
       "criptografia",
       "simetria"
     ],
-    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet, 26(2)</i>. Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
+    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet, 26</i>(2). Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
   },
   "fundamentos-de-matematica-2025": {
     "coverImage": "/libros/universitaria/analisis/fundamentos-de-matematica-2025/portada.webp",
@@ -160,7 +160,7 @@
     "keywords_en": ["Foundations of Mathematics"],
     "abstract_pt": "Este livro é dedicado aos fundamentos da matemática, uma disciplina que não apenas sustenta todas as ciências naturais, mas também constitui a base do nosso raciocínio lógico cotidiano. Ao longo destas páginas, realiza-se uma exploração rigorosa de conceitos essenciais, como as demonstrações de implicações, o conjunto dos números reais, o conjunto dos números complexos e o tratamento de expressões e equações algébricas. Nosso objetivo é oferecer uma introdução acessível a esses temas, garantindo que o leitor desenvolva uma compreensão profunda e uma apreciação pela estrutura lógica da matemática. Cada capítulo foi cuidadosamente estruturado para oferecer uma exposição progressiva dos temas, acompanhada de exemplos que ilustram tanto as aplicações práticas quanto os aspectos teóricos dos conceitos tratados. Este texto foi projetado tanto para estudantes que estão iniciando seus estudos matemáticos quanto para aqueles que desejam consolidar e aprofundar seus conhecimentos. Foram incluídos exercícios projetados para que o leitor aplique o que aprendeu, promovendo assim uma aprendizagem ativa e reflexiva. Estamos confiantes de que este livro se tornará um recurso valioso para compreender os princípios fundamentais do pensamento matemático e uma ferramenta essencial para quem se dedica ao estudo sério desta disciplina.",
     "keywords_pt": ["Fundamentos de Matemática"],
-    "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. <i>Revista Digital: Matemática, Educación e Internet, 26(1)</i>. Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
+    "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. <i>Revista Digital: Matemática, Educación e Internet, 26</i>(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
   },
   "latex-2021": {
     "coverImage": "/libros/universitaria/otros/latex-2021/portada.webp",
