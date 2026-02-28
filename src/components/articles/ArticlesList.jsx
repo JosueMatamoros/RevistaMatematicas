@@ -18,7 +18,7 @@ export default function ArticlesList({
   articles = [],
   books = [],
   sections = [],
-  basePath = null, // null = usa slug directo, string = usa basePath/slug
+  basePath = null,
   noPadding = false,
   useBasePath = false
 }) {
@@ -27,9 +27,7 @@ export default function ArticlesList({
   // Construye la ruta según basePath
   const buildRoute = (slug) => {
     if (!slug) return null;
-    // Si no hay basePath, usar la ruta del slug directamente (comportamiento original)
     if (!basePath) return `/${slug}`;
-    // Si hay basePath, combinarlo con el slug
     return `${basePath}/${slug}`;
   };
 
@@ -131,21 +129,50 @@ export default function ArticlesList({
     return (
       <div className={noPadding ? "" : "container mx-auto px-4 py-4"}>
         {sections.map((section, idx) => (
-          <div key={idx} className="mb-8">
+          <div key={idx} className="mb-12">
+            {/* Título de sección principal */}
             {section.sectionTitle && (
               <Typography
                 variant="h4"
-                className="font-display mb-6 font-bold border-b-2 border-tec-red-primary w-fit"
+                className="font-display mb-6 font-bold border-b-2 border-tec-red-primary pb-2 w-fit text-tec-blue-primary"
               >
                 {section.sectionTitle}
               </Typography>
             )}
-            <div className="space-y-6">
-              {section.articles?.map((article) => renderArticle(article))}
-            </div>
+
+            {/* Artículos de la sección principal */}
+            {section.articles && section.articles.length > 0 && (
+              <div className="space-y-6 mb-8">
+                {section.articles.map((article) => renderArticle(article))}
+              </div>
+            )}
+
+            {/* Subsecciones - SIN INDENTACIÓN */}
+            {section.subsections && section.subsections.length > 0 && (
+              <div>
+                {section.subsections.map((subsection, subIdx) => (
+                  <div key={subIdx} className="mb-6">
+                    {/* Título de subsección - mismo estilo que sección pero sin borde rojo */}
+                    {subsection.subsectionTitle && (
+                      <Typography
+                        variant="h5"
+                        className="font-display mb-6 font-semibold text-tec-blue-primary border-b border-gray-300 pb-2 w-fit"
+                      >
+                        {subsection.subsectionTitle}
+                      </Typography>
+                    )}
+                    {/* Artículos de subsección - MISMA ALINEACIÓN */}
+                    <div className="space-y-6">
+                      {subsection.articles?.map((article) => renderArticle(article))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
 
+        {/* Libros */}
         {books.length > 0 && (
           <div className="mb-8 mt-8">
             <Typography variant="h4" className="font-display mb-2 font-bold">

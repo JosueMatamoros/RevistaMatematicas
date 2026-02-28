@@ -35,7 +35,7 @@
             "received": "1 noviembre 2023",
             "accepted": "15 mayo 2024",
             "abstract_es": "La propuesta didáctica se centra en enseñar a los estudiantes cómo calcular intervalos de confianza para un promedio a partir de datos muestrales, utilizando técnicas como la distribución t de Student o la distribución normal estándar. Además, se utiliza el software Fathom para analizar datos de ejercicios reales, como los censos realizados por el Instituto Nacional de Estadística y Censos (INEC), mostrando los cálculos tanto con fórmulas y tablas estadísticas como con apoyo tecnológico. Se enfatiza la interpretación de resultados y la toma de decisiones basadas en datos, así como la validación de procedimientos mediante diferentes métodos de cálculo.",
-            "abstract_en": "The teaching proposal focuses on helping students learn how to calculate confidence intervals for a population mean using sample data, applying techniques such as Student’s t distribution or the standard normal distribution. Additionally, Fathom software is used to analyze real data, including census data from the National Institute of Statistics and Censuses (INEC), presenting calculations both manually and with technological support. Emphasis is placed on interpreting results, making data-based decisions, and validating procedures through different calculation methods.",
+            "abstract_en": "The teaching proposal focuses on helping students learn how to calculate confidence intervals for a population mean using sample data, applying techniques such as Student's t distribution or the standard normal distribution. Additionally, Fathom software is used to analyze real data, including census data from the National Institute of Statistics and Censuses (INEC), presenting calculations both manually and with technological support. Emphasis is placed on interpreting results, making data-based decisions, and validating procedures through different calculation methods.",
             "abstract_pt": "A proposta didática concentra-se em ensinar aos estudantes como calcular intervalos de confiança para a média de uma população a partir de dados amostrais, utilizando técnicas como a distribuição t de Student ou a distribuição normal padrão. Além disso, utiliza-se o software Fathom para analisar dados de exercícios reais, como os censos realizados pelo Instituto Nacional de Estatística e Censos (INEC), apresentando os cálculos tanto por meio de fórmulas e tabelas estatísticas quanto com o apoio tecnológico. Dá-se ênfase à interpretação dos resultados, à tomada de decisões baseada em dados e à validação dos procedimentos por diferentes métodos de cálculo.",
             "keywords_es": [
               "intervalo de confianza",
@@ -110,7 +110,7 @@
               }
             ],
             "category": "",
-            "slug": "Ensenanza_Primaria/Renova_I_Ciclo",
+            "slug": "Primaria/Renova_I_Ciclo",
             "pdf": "/materialNoRevisado/primaria/Renova_I_Ciclo.pdf",
             "abstract_es": "Este libro recopila un conjunto de actividades didácticas diseñadas para el I Ciclo de la educación primaria, desarrolladas en el marco del Proyecto RENOVA del Instituto Tecnológico de Costa Rica. Las propuestas abarcan áreas como números, geometría, medidas y estadística, integrando el entorno cotidiano, el juego y el uso de recursos manipulativos como estrategias para fortalecer el aprendizaje matemático. Cada actividad incluye orientaciones para la persona docente, materiales requeridos y sugerencias metodológicas que promueven la participación activa, el trabajo colaborativo y el desarrollo de actitudes positivas hacia las matemáticas.",
             "abstract_en": "This book compiles a set of didactic activities designed for the first cycle of primary education, developed within the RENOVA Project of the Technological Institute of Costa Rica. The proposals cover areas such as numbers, geometry, measurement, and statistics, integrating everyday contexts, games, and manipulative resources as strategies to strengthen mathematical learning. Each activity includes guidance for teachers, required materials, and methodological suggestions that promote active participation, collaborative work, and the development of positive attitudes toward mathematics.",
@@ -143,6 +143,618 @@
               "aprendizagem ativa"
             ],
             "citation": "Acuña Chacón, R., Agüero Calvo, E., Meza Cascante, L. G., Monge Madriz, C., & Solís Palma, A. (Proyecto RENOVA). Actividades de Educación Matemática para Primaria. I Ciclo. Instituto Tecnológico de Costa Rica."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Enseñanza Secundaria",
+        "articles": [
+          {
+            "id": 1,
+            "title": "Apoyo didáctico para prueba FARO del tema de función lineal y cuadrática",
+            "title_en": "Didactic Support for the FARO Test on Linear and Quadratic Functions",
+            "authors": [
+              {
+                "name": "Jennany Ortiz Mata",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              },
+              {
+                "name": "Robin Sequeira Solano",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              }
+            ],
+            "published": "2021-11-01",
+            "slug": "Secundaria/Apoyo_FARO_Funcion_Lineal_Cuadratica",
+            "pdf": "/materialNoRevisado/secundaria/Apoyo_FARO_Funcion_Lineal_Cuadratica.pdf",
+            "abstract_es": "Este material didáctico fue elaborado como apoyo para la preparación de la prueba FARO en el área de funciones lineales y cuadráticas. El documento presenta una síntesis teórica de los conceptos fundamentales, incluyendo pendiente, criterio de la función lineal, concavidad, discriminante, vértice, eje de simetría, intervalos de crecimiento y ámbito de funciones cuadráticas. Además, incorpora ejercicios de selección única con sus respectivas soluciones detalladas, orientados al desarrollo de habilidades establecidas por el Ministerio de Educación Pública para la educación secundaria.",
+            "abstract_en": "This didactic material was developed to support preparation for the FARO test in the topics of linear and quadratic functions. The document presents a theoretical synthesis of fundamental concepts, including slope, linear function criteria, concavity, discriminant, vertex, axis of symmetry, growth intervals, and range of quadratic functions. It also includes multiple-choice exercises with detailed solutions aimed at developing the skills established by the Ministry of Public Education for secondary education.",
+            "abstract_pt": "Este material didático foi elaborado como apoio para a preparação da prova FARO nos temas de funções lineares e quadráticas. O documento apresenta uma síntese teórica dos conceitos fundamentais, incluindo inclinação, critério da função linear, concavidade, discriminante, vértice, eixo de simetria, intervalos de crescimento e domínio de funções quadráticas. Além disso, inclui exercícios de múltipla escolha com suas respectivas soluções detalhadas, orientados ao desenvolvimento das habilidades estabelecidas pelo Ministério da Educação Pública para o ensino secundário.",
+            "keywords_es": [
+              "función lineal",
+              "función cuadrática",
+              "prueba FARO",
+              "educación secundaria",
+              "pendiente",
+              "vértice",
+              "discriminante"
+            ],
+            "keywords_en": [
+              "linear function",
+              "quadratic function",
+              "FARO test",
+              "secondary education",
+              "slope",
+              "vertex",
+              "discriminant"
+            ],
+            "keywords_pt": [
+              "função linear",
+              "função quadrática",
+              "prova FARO",
+              "ensino secundário",
+              "inclinação",
+              "vértice",
+              "discriminante"
+            ],
+            "citation": "Sequeira, R., y Ortiz, J. (2021). Apoyo didáctico para prueba FARO del tema de función lineal y cuadrática."
+          },
+          {
+            "id": 2,
+            "title": "Actividades para el día de la matemática (2020)",
+            "title_en": "Mathematics Day Activities",
+            "authors": [
+              {
+                "name": "Jennany Ortiz Mata",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              },
+              {
+                "name": "Robin Sequeira Solano",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              }
+            ],
+            "published": "2021-03-01",
+            "slug": "Secundaria/Actividades_dia_de_la_matematica",
+            "pdf": "/materialNoRevisado/secundaria/Actividades_dia_de_la_matematica.pdf",
+            "abstract_es": "Este material presenta una serie de actividades diseñadas para la celebración del Día de las Matemáticas en el contexto de educación secundaria. Las propuestas incluyen dinámicas grupales, resolución de problemas, juegos matemáticos y retos lógicos que buscan fortalecer el pensamiento crítico, la creatividad y el trabajo colaborativo. El objetivo principal es promover una actitud positiva hacia la matemática mediante experiencias participativas que integran razonamiento, comunicación y análisis.",
+            "abstract_en": "This material presents a set of activities designed to celebrate Mathematics Day in a secondary education context. The proposals include group dynamics, problem-solving tasks, mathematical games, and logical challenges aimed at strengthening critical thinking, creativity, and collaborative work. The main objective is to promote a positive attitude toward mathematics through participatory experiences that integrate reasoning, communication, and analytical skills.",
+            "abstract_pt": "Este material apresenta um conjunto de atividades destinadas à celebração do Dia da Matemática no contexto do ensino secundário. As propostas incluem dinâmicas em grupo, resolução de problemas, jogos matemáticos e desafios lógicos que buscam fortalecer o pensamento crítico, a criatividade e o trabalho colaborativo. O objetivo principal é promover uma atitude positiva em relação à matemática por meio de experiências participativas que integram raciocínio, comunicação e análise.",
+            "keywords_es": [
+              "Día de las Matemáticas",
+              "educación secundaria",
+              "actividades matemáticas",
+              "resolución de problemas",
+              "pensamiento lógico",
+              "trabajo colaborativo"
+            ],
+            "keywords_en": [
+              "Mathematics Day",
+              "secondary education",
+              "mathematical activities",
+              "problem solving",
+              "logical thinking",
+              "collaborative work"
+            ],
+            "keywords_pt": [
+              "Dia da Matemática",
+              "ensino secundário",
+              "atividades matemáticas",
+              "resolução de problemas",
+              "pensamento lógico",
+              "trabalho colaborativo"
+            ],
+            "citation": "Ortiz Mata, J., & Sequeira Solano, R. (2021). Mathematics Day Activities. Instituto Tecnológico de Costa Rica."
+          },
+          {
+            "id": 3,
+            "title": "Repaso Habilidades. Geometría y Relaciones y Álgebra",
+            "title_en": "Skills Review. Geometry, Relations and Algebra",
+            "authors": [
+              {
+                "name": "Jennany Ortiz Mata",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              },
+              {
+                "name": "Robin Sequeira Solano",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
+              }
+            ],
+            "published": "2021-07-01",
+            "slug": "Secundaria/Repaso_Habilidades_Geometria_Relaciones_Algebra",
+            "pdf": "/materialNoRevisado/secundaria/Repaso_Habilidades_Geometria_Relaciones_Algebra.pdf",
+            "abstract_es": "Este material presenta un repaso de habilidades matemáticas centradas en los temas de geometría, relaciones y álgebra para estudiantes de educación secundaria. Incluye ejercicios orientados al fortalecimiento del razonamiento geométrico, la interpretación de relaciones funcionales y el manejo de expresiones algebraicas, promoviendo la consolidación de competencias necesarias para la resolución de problemas y la preparación académica.",
+            "abstract_en": "This material provides a review of mathematical skills focused on geometry, relations, and algebra for secondary education students. It includes exercises aimed at strengthening geometric reasoning, interpreting functional relationships, and working with algebraic expressions, promoting the consolidation of competencies required for problem solving and academic preparation.",
+            "abstract_pt": "Este material apresenta uma revisão de habilidades matemáticas centradas nos temas de geometria, relações e álgebra para estudantes do ensino secundário. Inclui exercícios destinados ao fortalecimento do raciocínio geométrico, à interpretação de relações funcionais e ao manejo de expressões algébricas, promovendo a consolidação de competências necessárias para a resolução de problemas e a preparação acadêmica.",
+            "keywords_es": [
+              "geometría",
+              "relaciones",
+              "álgebra",
+              "educación secundaria",
+              "habilidades matemáticas",
+              "resolución de problemas"
+            ],
+            "keywords_en": [
+              "geometry",
+              "relations",
+              "algebra",
+              "secondary education",
+              "mathematical skills",
+              "problem solving"
+            ],
+            "keywords_pt": [
+              "geometria",
+              "relações",
+              "álgebra",
+              "ensino secundário",
+              "habilidades matemáticas",
+              "resolução de problemas"
+            ],
+            "citation": "Ortiz Mata, J., & Sequeira Solano, R. (2021). Repaso Habilidades. Geometría y Relaciones y Álgebra. Instituto Tecnológico de Costa Rica."
+          }
+        ],
+        "subsections": [
+          {
+            "subsectionTitle": "Ligas a materiales en internet",
+            "articles": [
+              {
+                "id": 4,
+                "title": "Links para trabajar habilidades en sétimo año Matemática",
+                "title_en": "Links to Develop Skills in Seventh Grade Mathematics",
+                "authors": [
+                  {
+                    "name": "Zuleyka Suárez Valdés-Ayala",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Erlane Mora Navarro",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Bryan Ramírez Obando",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Gustavo Núñez Morales",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Melissa Luna Fonseca",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "journal": "Revista Digital Matemática, Educación e Internet",
+                "published": "2020-08-01",
+                "subsection": "Setimo",
+                "slug": "Secundaria/Ligas/Links_matematica_septimo",
+                "pdf": "/materialNoRevisado/secundaria/Ligas/Links_matematica_septimo.pdf",
+                "abstract_es": "Este artículo presenta una recopilación organizada de enlaces digitales para el desarrollo de habilidades matemáticas en estudiantes de sétimo año. Los recursos están estructurados según los ejes temáticos del programa oficial e incluyen materiales para números, estadística, probabilidad, relaciones y álgebra, así como geometría. El documento surge como respuesta a la necesidad de apoyo educativo en contextos de virtualidad, ofreciendo herramientas para docentes y estudiantes.",
+                "abstract_en": "This article presents an organized compilation of digital links designed to support the development of mathematical skills in seventh-grade students. The resources are structured according to the official curriculum and include materials on numbers, statistics, probability, relations and algebra, as well as geometry. The document emerged as a response to the need for educational support in virtual learning contexts, providing tools for both teachers and students.",
+                "abstract_pt": "Este artigo apresenta uma compilação organizada de links digitais para o desenvolvimento de habilidades matemáticas em estudantes do sétimo ano. Os recursos estão estruturados de acordo com o currículo oficial e incluem materiais sobre números, estatística, probabilidade, relações e álgebra, bem como geometria. O documento surge como resposta à necessidade de apoio educacional em contextos de ensino virtual, oferecendo ferramentas para docentes e estudantes.",
+                "keywords_es": [
+                  "sétimo año",
+                  "matemática",
+                  "recursos digitales",
+                  "educación secundaria",
+                  "habilidades matemáticas",
+                  "enseñanza virtual"
+                ],
+                "keywords_en": [
+                  "seventh grade",
+                  "mathematics",
+                  "digital resources",
+                  "secondary education",
+                  "mathematical skills",
+                  "virtual learning"
+                ],
+                "keywords_pt": [
+                  "sétimo ano",
+                  "matemática",
+                  "recursos digitais",
+                  "ensino secundário",
+                  "habilidades matemáticas",
+                  "ensino virtual"
+                ],
+                "citation": "Suárez Valdés-Ayala, Z., Mora Navarro, E., Ramírez Obando, B., Núñez Morales, G., & Luna Fonseca, M. (2020). Links para trabajar habilidades en sétimo año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+              },
+              {
+                "id": 5,
+                "title": "Links para trabajar habilidades en octavo año Matemática",
+                "title_en": "Links to Develop Skills in Eighth Grade Mathematics",
+                "authors": [
+                  {
+                    "name": "Zuleyka Suárez Valdés-Ayala",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Lucía Fernández Cordero",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Fernanda Mata Coto",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Viviana Solano Sánchez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Siony Ulloa Araya",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "journal": "Revista Digital Matemática, Educación e Internet",
+                "published": "2020-08-01",
+                "slug": "Secundaria/Ligas/Links_matematica_octavo",
+                "pdf": "/materialNoRevisado/secundaria/Ligas/Links_matematica_octavo.pdf",
+                "abstract_es": "Este artículo presenta una recopilación organizada de enlaces digitales para el desarrollo de habilidades matemáticas en estudiantes de octavo año. Los recursos están estructurados según los ejes temáticos del programa oficial e incluyen materiales para números, geometría, relaciones y álgebra, estadística y probabilidad. El documento surge como respuesta a la necesidad de apoyo educativo durante la pandemia de COVID-19, ofreciendo herramientas digitales para docentes y estudiantes en contextos de virtualidad.",
+                "abstract_en": "This article presents an organized compilation of digital links designed to support the development of mathematical skills in eighth-grade students. The resources are structured according to the official curriculum and include materials on numbers, geometry, relations and algebra, statistics, and probability. The document emerged as a response to the need for educational support during the COVID-19 pandemic, providing digital tools for both teachers and students in virtual learning contexts.",
+                "abstract_pt": "Este artigo apresenta uma compilação organizada de links digitais para o desenvolvimento de habilidades matemáticas em estudantes do oitavo ano. Os recursos estão estruturados de acordo com o currículo oficial e incluem materiais sobre números, geometria, relações e álgebra, estatística e probabilidade. O documento surge como resposta à necessidade de apoio educacional durante a pandemia de COVID-19, oferecendo ferramentas digitais para docentes e estudantes em contextos de ensino virtual.",
+                "keywords_es": [
+                  "octavo año",
+                  "matemática",
+                  "recursos digitales",
+                  "educación secundaria",
+                  "habilidades matemáticas",
+                  "enseñanza virtual",
+                  "COVID-19"
+                ],
+                "keywords_en": [
+                  "eighth grade",
+                  "mathematics",
+                  "digital resources",
+                  "secondary education",
+                  "mathematical skills",
+                  "virtual learning",
+                  "COVID-19"
+                ],
+                "keywords_pt": [
+                  "oitavo ano",
+                  "matemática",
+                  "recursos digitais",
+                  "ensino secundário",
+                  "habilidades matemáticas",
+                  "ensino virtual",
+                  "COVID-19"
+                ],
+                "citation": "Suárez Valdés-Ayala, Z., Fernández Cordero, L., Mata Coto, F., Solano Sánchez, V., & Ulloa Araya, S. (2020). Links para trabajar habilidades en octavo año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+              },
+              {
+                "id": 6,
+                "title": "Links para trabajar habilidades en noveno año Matemática",
+                "title_en": "Links to Develop Skills in Ninth Grade Mathematics",
+                "authors": [
+                  {
+                    "name": "Zuleyka Suárez Valdés-Ayala",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Julissa Bosque Chaves",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Rebeca Chaves Morales",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Jeremy Flores Bonilla",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Verónica Segura Siles",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Rodiney Soto Castro",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "journal": "Revista Digital Matemática, Educación e Internet",
+                "published": "2020-08-01",
+                "slug": "Secundaria/Ligas/Links_matematica_noveno",
+                "pdf": "/materialNoRevisado/secundaria/Ligas/Links_matematica_noveno.pdf",
+                "abstract_es": "Este artículo presenta una recopilación organizada de enlaces digitales para el desarrollo de habilidades matemáticas en estudiantes de noveno año. Los recursos están estructurados según los ejes temáticos del programa oficial e incluyen materiales para números, geometría, relaciones y álgebra, estadística y probabilidad. El documento surge como respuesta a la necesidad de apoyo educativo durante la pandemia de COVID-19, ofreciendo herramientas digitales para docentes y estudiantes en contextos de virtualidad.",
+                "abstract_en": "This article presents an organized compilation of digital links designed to support the development of mathematical skills in ninth-grade students. The resources are structured according to the official curriculum and include materials on numbers, geometry, relations and algebra, statistics, and probability. The document emerged as a response to the need for educational support during the COVID-19 pandemic, providing digital tools for both teachers and students in virtual learning contexts.",
+                "abstract_pt": "Este artigo apresenta uma compilação organizada de links digitais para o desenvolvimento de habilidades matemáticas em estudantes do nono ano. Os recursos estão estruturados de acordo com o currículo oficial e incluem materiais sobre números, geometria, relações e álgebra, estatística e probabilidade. O documento surge como resposta à necessidade de apoio educacional durante a pandemia de COVID-19, oferecendo ferramentas digitais para docentes e estudantes em contextos de ensino virtual.",
+                "keywords_es": [
+                  "noveno año",
+                  "matemática",
+                  "recursos digitales",
+                  "educación secundaria",
+                  "habilidades matemáticas",
+                  "enseñanza virtual",
+                  "COVID-19"
+                ],
+                "keywords_en": [
+                  "ninth grade",
+                  "mathematics",
+                  "digital resources",
+                  "secondary education",
+                  "mathematical skills",
+                  "virtual learning",
+                  "COVID-19"
+                ],
+                "keywords_pt": [
+                  "nono ano",
+                  "matemática",
+                  "recursos digitais",
+                  "ensino secundário",
+                  "habilidades matemáticas",
+                  "ensino virtual",
+                  "COVID-19"
+                ],
+                "citation": "Suárez Valdés-Ayala, Z., Bosque Chaves, J., Chaves Morales, R., Flores Bonilla, J., Segura Siles, V., & Soto Castro, R. (2020). Links para trabajar habilidades en noveno año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+              },
+              {
+                "id": 7,
+                "title": "Videos tutoriales para trabajar algunas habilidades de sétimo, octavo y noveno año",
+                "title_en": "Video Tutorials for Seventh, Eighth and Ninth Grade Mathematics Skills",
+                "authors": [
+                  {
+                    "name": "Zuleyka Suárez Valdés-Ayala",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Bryan Ramírez Obando",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Gustavo Núñez Morales",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Melissa Luna Fonseca",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Erlane Mora Navarro",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Viviana Solano Sánchez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Lucía Fernández Cordero",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "María Fernanda Mata Coto",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Siony Ulloa Araya",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Rodiney Soto Castro",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Verónica Segura Siles",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Julissa Bosque Chaves",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "journal": "Revista Digital Matemática, Educación e Internet",
+                "published": "2020-08-01",
+                "slug": "Secundaria/Ligas/Videos_tutoriales_7mo_8vo_9no",
+                "pdf": "/materialNoRevisado/secundaria/Ligas/Videos_tutoriales_7mo_8vo_9no.pdf",
+                "abstract_es": "Este material presenta una colección de videos tutoriales elaborados por estudiantes de práctica docente de la Escuela de Matemática del Instituto Tecnológico de Costa Rica. Los videos abordan habilidades matemáticas para sétimo, octavo y noveno año según el programa vigente del Ministerio de Educación Pública. El documento surge como respuesta a la pandemia de COVID-19 y la necesidad de replantear la enseñanza de matemáticas en contextos de educación virtual, ofreciendo material audiovisual didáctico producido localmente.",
+                "abstract_en": "This material presents a collection of video tutorials created by pre-service teachers from the School of Mathematics at the Technological Institute of Costa Rica. The videos cover mathematical skills for seventh, eighth, and ninth grades according to the current curriculum of the Ministry of Public Education. The document emerged as a response to the COVID-19 pandemic and the need to rethink mathematics teaching in virtual education contexts, offering locally produced educational audiovisual material.",
+                "abstract_pt": "Este material apresenta uma coleção de vídeos tutoriais elaborados por estudantes em prática docente da Escola de Matemática do Instituto Tecnológico da Costa Rica. Os vídeos abordam habilidades matemáticas para o sétimo, oitavo e nono anos de acordo com o programa vigente do Ministério da Educação Pública. O documento surge como resposta à pandemia de COVID-19 e à necessidade de replanejar o ensino de matemática em contextos de educação virtual, oferecendo material audiovisual didático produzido localmente.",
+                "keywords_es": [
+                  "videos tutoriales",
+                  "sétimo año",
+                  "octavo año",
+                  "noveno año",
+                  "matemática",
+                  "educación secundaria",
+                  "enseñanza virtual",
+                  "COVID-19"
+                ],
+                "keywords_en": [
+                  "video tutorials",
+                  "seventh grade",
+                  "eighth grade",
+                  "ninth grade",
+                  "mathematics",
+                  "secondary education",
+                  "virtual learning",
+                  "COVID-19"
+                ],
+                "keywords_pt": [
+                  "vídeos tutoriais",
+                  "sétimo ano",
+                  "oitavo ano",
+                  "nono ano",
+                  "matemática",
+                  "ensino secundário",
+                  "ensino virtual",
+                  "COVID-19"
+                ],
+                "citation": "Suárez Valdés-Ayala, Z., Ramírez Obando, B., Núñez Morales, G., Luna Fonseca, M., Mora Navarro, E., Solano Sánchez, V., Fernández Cordero, L., Mata Coto, M. F., Ulloa Araya, S., Soto Castro, R., Segura Siles, V., & Bosque Chaves, J. (2020). Videos tutoriales para trabajar algunas habilidades de sétimo, octavo y noveno año. Revista Digital Matemática, Educación e Internet, 21(1)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Enseñanza universitaria",
+        "subsections": [
+          {
+            "subsectionTitle": "Apuntes:",
+            "articles": [
+              {
+                "id": 1,
+                "title": "Apuntes de Matemática General",
+                "title_en": "General Mathematics Notes",
+                "authors": [
+                  {
+                    "name": "Walter Mora Flores",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/Apuntes_Matematica_General",
+                "pdf": "/materialNoRevisado/universidad/Apuntes_Matematica_General.pdf",
+                "abstract_es": "Este libro presenta una compilación de apuntes y ejercicios para el curso de Matemática General del Instituto Tecnológico de Costa Rica. El material abarca temas fundamentales de matemática universitaria incluyendo números reales, funciones, límites, derivadas y sus aplicaciones. El documento está diseñado como material de apoyo para estudiantes de ingeniería y carreras afines, con énfasis en la comprensión conceptual y la resolución de problemas.",
+                "abstract_en": "This book presents a compilation of notes and exercises for the General Mathematics course at the Technological Institute of Costa Rica. The material covers fundamental topics in university mathematics including real numbers, functions, limits, derivatives, and their applications. The document is designed as support material for engineering students and related careers, with emphasis on conceptual understanding and problem-solving.",
+                "abstract_pt": "Este livro apresenta uma compilação de apontamentos e exercícios para o curso de Matemática Geral do Instituto Tecnológico da Costa Rica. O material abrange tópicos fundamentais de matemática universitária, incluindo números reais, funções, limites, derivadas e suas aplicações. O documento foi projetado como material de apoio para estudantes de engenharia e carreiras afins, com ênfase na compreensão conceitual e na resolução de problemas.",
+                "keywords_es": [
+                  "matemática general",
+                  "cálculo",
+                  "funciones",
+                  "límites",
+                  "derivadas",
+                  "educación universitaria",
+                  "ingeniería"
+                ],
+                "keywords_en": [
+                  "general mathematics",
+                  "calculus",
+                  "functions",
+                  "limits",
+                  "derivatives",
+                  "higher education",
+                  "engineering"
+                ],
+                "keywords_pt": [
+                  "matemática geral",
+                  "cálculo",
+                  "funções",
+                  "limites",
+                  "derivadas",
+                  "educação universitária",
+                  "engenharia"
+                ],
+                "citation": "Mora Flores, W. (2018). Apuntes de Matemática General. Instituto Tecnológico de Costa Rica."
+              }
+            ]
+          },
+          {
+            "subsectionTitle": "Prácticas:",
+            "articles": [
+              {
+                "id": 1,
+                "title": "Matemática Básica para Administración. Prácticas semanales",
+                "title_en": "Basic Mathematics for Administration. Weekly Practice Sessions",
+                "authors": [
+                  {
+                    "name": "Walter Mora Flores",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/MBA_Practicas_Semanales",
+                "pdf": "/materialNoRevisado/universidad/MBA_Practicas_Semanales.pdf",
+                "abstract_es": "Este documento contiene una serie de prácticas semanales diseñadas para el curso de Matemática Básica para Administración del Instituto Tecnológico de Costa Rica. El material abarca 16 semanas de ejercicios que incluyen temas como álgebra básica, funciones, matemática financiera, sistemas de ecuaciones y aplicaciones en contextos administrativos. Cada práctica está estructurada para reforzar los conceptos vistos en clase mediante la resolución de problemas aplicados al área de administración.",
+                "abstract_en": "This document contains a series of weekly practice sessions designed for the Basic Mathematics for Administration course at the Technological Institute of Costa Rica. The material covers 16 weeks of exercises including topics such as basic algebra, functions, financial mathematics, systems of equations, and applications in administrative contexts. Each practice session is structured to reinforce concepts covered in class through problem-solving applied to the administration field.",
+                "abstract_pt": "Este documento contém uma série de práticas semanais projetadas para o curso de Matemática Básica para Administração do Instituto Tecnológico da Costa Rica. O material abrange 16 semanas de exercícios que incluem tópicos como álgebra básica, funções, matemática financeira, sistemas de equações e aplicações em contextos administrativos. Cada prática está estruturada para reforçar os conceitos vistos em aula mediante a resolução de problemas aplicados à área de administração.",
+                "keywords_es": [
+                  "matemática básica",
+                  "administración",
+                  "prácticas",
+                  "matemática financiera",
+                  "funciones",
+                  "álgebra",
+                  "educación universitaria"
+                ],
+                "keywords_en": [
+                  "basic mathematics",
+                  "administration",
+                  "practice sessions",
+                  "financial mathematics",
+                  "functions",
+                  "algebra",
+                  "higher education"
+                ],
+                "keywords_pt": [
+                  "matemática básica",
+                  "administração",
+                  "práticas",
+                  "matemática financeira",
+                  "funções",
+                  "álgebra",
+                  "educação universitária"
+                ],
+                "citation": "Mora Flores, W. (2018). Matemática Básica para Administración. Prácticas semanales. Instituto Tecnológico de Costa Rica."
+              }
+
+            ]
           }
         ]
       }

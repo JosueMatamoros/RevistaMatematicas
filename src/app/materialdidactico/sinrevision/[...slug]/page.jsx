@@ -3,12 +3,24 @@ import ArticlePage from "@/components/articles/ArticlePage";
 import NavsComponent from "@/components/home/NavsComponent";
 import sinRevisionData from "@/data/materialdidactico/sinrevision.json";
 
+// Recopilar todos los artículos (secciones principales Y subsecciones)
 const allArticles = (sinRevisionData.articulos?.sections || []).reduce((acc, section) => {
+  // Artículos de la sección principal
   (section.articles || []).forEach((article) => {
     if (article.slug) {
       acc[article.slug] = article;
     }
   });
+
+  // Artículos de las subsecciones
+  (section.subsections || []).forEach((subsection) => {
+    (subsection.articles || []).forEach((article) => {
+      if (article.slug) {
+        acc[article.slug] = article;
+      }
+    });
+  });
+
   return acc;
 }, {});
 

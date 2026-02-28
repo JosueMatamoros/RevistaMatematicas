@@ -292,7 +292,8 @@ A continuación, se muestra un esqueleto con las etiquetas que deben incluirse y
         "Lista de palavras-chave equivalentes em português."
       ],
 
-      "citation": "Formato completo de citación oficial del artículo, normalmente siguiendo el estilo APA. Debe incluir autores, fecha, título, revista, volumen, número y DOI."
+      "citation": "Formato completo de citación oficial del artículo, normalmente siguiendo el estilo APA. Debe incluir autores, fecha, título, revista, volumen, número y DOI.
+      la seccion de la revista debe de ir en este formato <i>Revista Digital: Matemática, Educación e Internet, 25</i>(2). las equetas <i> deben de ir en esté mismo formato para que sean reconocidas por mi componente (La etiqueta de inicio '<i>' es diferente a la de cierre '</i>')"
     }
   ]
 }
