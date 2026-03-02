@@ -158,13 +158,13 @@
                 "name": "Jennany Ortiz Mata",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica",
-                "orcid": ""
+                "orcid": "https://orcid.org/0009-0002-0001-1191"
               },
               {
                 "name": "Robin Sequeira Solano",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica",
-                "orcid": ""
+                "orcid": "https://orcid.org/0009-0000-4808-8353"
               }
             ],
             "published": "2021-11-01",
@@ -208,16 +208,34 @@
             "title_en": "Mathematics Day Activities",
             "authors": [
               {
-                "name": "Jennany Ortiz Mata",
-                "university": "Instituto Tecnológico de Costa Rica",
-                "location": "Costa Rica",
-                "orcid": ""
+                "name": "Zuleyka Suárez Valdés-Ayala (coordinadora)"
               },
               {
-                "name": "Robin Sequeira Solano",
-                "university": "Instituto Tecnológico de Costa Rica",
-                "location": "Costa Rica",
-                "orcid": ""
+                "name": "Rodiney Soto Castro"
+              },
+              {
+                "name": "Melissa Luna Fonseca"
+              },
+              {
+                "name": "Fernanda Mata Coto"
+              },
+              {
+                "name": "Gustavo Nuñez Morales"
+              },
+              {
+                "name": "Verónica Segura Siles"
+              },
+              {
+                "name": "Julissa Bosque Chaves"
+              },
+              {
+                "name": "Viviana Solano Sánchez"
+              },
+              {
+                "name": "Siony Ulloa Araya"
+              },
+              {
+                "name": "Lucía Fernández Cordero"
               }
             ],
             "published": "2021-03-01",
@@ -250,25 +268,16 @@
               "pensamento lógico",
               "trabalho colaborativo"
             ],
-            "citation": "Ortiz Mata, J., & Sequeira Solano, R. (2021). Mathematics Day Activities. Instituto Tecnológico de Costa Rica."
+            "citation": "Suárez, Z., Soto, R., Luna, M., Mata, F., Núñez, G., Segura, V., … Fernández, L. (2020). Actividades para el día de la matemática. Revista Digital matemática, educación e internet. Vol. 21, No 1. Agosto 2020-Febrero 2021."
           },
           {
             "id": 3,
             "title": "Repaso Habilidades. Geometría y Relaciones y Álgebra",
             "title_en": "Skills Review. Geometry, Relations and Algebra",
             "authors": [
-              {
-                "name": "Jennany Ortiz Mata",
-                "university": "Instituto Tecnológico de Costa Rica",
-                "location": "Costa Rica",
-                "orcid": ""
-              },
-              {
-                "name": "Robin Sequeira Solano",
-                "university": "Instituto Tecnológico de Costa Rica",
-                "location": "Costa Rica",
-                "orcid": ""
-              }
+              { "name": "Richard Camacho Zamora" },
+              { "name": "Michelle Chinchilla Chinchilla" },
+              { "name": "Zuleyka Suarez Valdés-Ayala" }
             ],
             "published": "2021-07-01",
             "slug": "Secundaria/Repaso_Habilidades_Geometria_Relaciones_Algebra",
@@ -300,7 +309,7 @@
               "habilidades matemáticas",
               "resolução de problemas"
             ],
-            "citation": "Ortiz Mata, J., & Sequeira Solano, R. (2021). Repaso Habilidades. Geometría y Relaciones y Álgebra. Instituto Tecnológico de Costa Rica."
+            "citation": "Richard Camacho Zamora, Michelle Chinchilla Chinchilla y Zuleyka Suárez-Valdés Ayala. Repaso de habilidades décimo año. Geometría, Relaciones y Álgebra. Revista Digital Matemática, Educación e Internet. Vol 20, No 2. Marzo-Agosto, 2020."
           }
         ],
         "subsections": [
@@ -345,7 +354,6 @@
                 ],
                 "journal": "Revista Digital Matemática, Educación e Internet",
                 "published": "2020-08-01",
-                "subsection": "Setimo",
                 "slug": "Secundaria/Ligas/Links_matematica_septimo",
                 "pdf": "/materialNoRevisado/secundaria/Ligas/Links_matematica_septimo.pdf",
                 "abstract_es": "Este artículo presenta una recopilación organizada de enlaces digitales para el desarrollo de habilidades matemáticas en estudiantes de sétimo año. Los recursos están estructurados según los ejes temáticos del programa oficial e incluyen materiales para números, estadística, probabilidad, relaciones y álgebra, así como geometría. El documento surge como respuesta a la necesidad de apoyo educativo en contextos de virtualidad, ofreciendo herramientas para docentes y estudiantes.",
@@ -375,7 +383,7 @@
                   "habilidades matemáticas",
                   "ensino virtual"
                 ],
-                "citation": "Suárez Valdés-Ayala, Z., Mora Navarro, E., Ramírez Obando, B., Núñez Morales, G., & Luna Fonseca, M. (2020). Links para trabajar habilidades en sétimo año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+                "citation": "Suárez, Z., Mora, E., Ramírez, B., Núñez, G. & Luna, M. (2020). Links para trabajar habilidades en sétimo año. Matemática. Revista Digital matemática, educación e internet. Vol. 21, No 1. Agosto 2020-Febrero 2021"
               },
               {
                 "id": 5,
@@ -447,7 +455,7 @@
                   "ensino virtual",
                   "COVID-19"
                 ],
-                "citation": "Suárez Valdés-Ayala, Z., Fernández Cordero, L., Mata Coto, F., Solano Sánchez, V., & Ulloa Araya, S. (2020). Links para trabajar habilidades en octavo año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+                "citation": "Suárez, Z., Fernández, L., Mata,F., Solano, V. & Ulloa, S.. (2020). Links para trabajar habilidades en octavo año. Matemática. Revista Digital matemática, educación e internet. Vol. 21, No 1. Agosto 2020-Febrero 2021"
               },
               {
                 "id": 6,
@@ -525,7 +533,7 @@
                   "ensino virtual",
                   "COVID-19"
                 ],
-                "citation": "Suárez Valdés-Ayala, Z., Bosque Chaves, J., Chaves Morales, R., Flores Bonilla, J., Segura Siles, V., & Soto Castro, R. (2020). Links para trabajar habilidades en noveno año Matemática. Revista Digital Matemática, Educación e Internet, 21(1)."
+                "citation": "Suárez, Z., Bosque, J. Chaves, R., Flores, J., Segura, V. & Soto, R. (2020). Links para trabajar habilidades en noveno año. Matemática. Revista Digital matemática, educación e internet. Vol. 21, No 1. Agosto 2020-Febrero 2021."
               },
               {
                 "id": 7,
@@ -660,7 +668,91 @@
                 "title_en": "General Mathematics Notes",
                 "authors": [
                   {
-                    "name": "Walter Mora Flores",
+                    "name": "Walter Mora Flores (Coordinador)",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                  },
+                  {
+                    "name": "Alex Borbón",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Cristian Páez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Mario Marín",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Felix Núñez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Evelyn Agüero",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Sandra Schmidt",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Jeffry Chavarría",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Juan José Fallas",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Rosario Alvarez Z.",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Marieth Villalobos J.",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Alejandra Araya Q.",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Jessica Chacón P.",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Marianella Abarca",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Pablo García",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
                     "orcid": ""
@@ -715,7 +807,7 @@
                     "name": "Walter Mora Flores",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   }
                 ],
                 "published": "2018",
@@ -762,7 +854,7 @@
                     "name": "Reiman Acuña Chacón",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-0094-3282"
                   }
                 ],
                 "published": "2019",
@@ -824,7 +916,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                     "orcid": "https://orcid.org/0009-0008-8770-3417"
                   }
                 ],
                 "published": "2018",
@@ -880,7 +972,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                     "orcid": "https://orcid.org/0009-0008-8770-3417"
                   },
                   {
                     "name": "Alex Borbón",
@@ -984,7 +1076,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                     "orcid": "https://orcid.org/0009-0008-8770-3417"
                   }
                 ],
                 "published": "2018",
@@ -1034,7 +1126,7 @@
                     "name": "Walter Mora Flores",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                     "orcid": "https://orcid.org/0009-0008-8770-3417"
                   },
                   {
                     "name": "Cristian Páez Páez",
