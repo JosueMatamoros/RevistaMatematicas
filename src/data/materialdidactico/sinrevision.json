@@ -752,8 +752,374 @@
                   "educação universitária"
                 ],
                 "citation": "Mora Flores, W. (2018). Matemática Básica para Administración. Prácticas semanales. Instituto Tecnológico de Costa Rica."
+              },
+              {
+                "id": 2,
+                "title": "Matemática General (preguntas semanales)",
+                "title_en": "General Mathematics (Weekly Questions)",
+                "authors": [
+                  {
+                    "name": "Reiman Acuña Chacón",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2019",
+                "slug": "Universidad/MG_Preguntas_Semanales",
+                "pdf": "/materialNoRevisado/universidad/MG_Preguntas_Semanales.pdf",
+                "abstract_es": "Esta práctica es una edición de ejercicios para la cátedra de Matemática General durante el primer semestre de 2019, pensada como apoyo para la creación de preguntas conceptuales o de calentamiento dentro de la metodología de Instrucción entre pares.",
+                "abstract_en": "This document is an edited collection of exercises for the General Mathematics course during the first semester of 2019, intended to support the creation of conceptual or warm-up questions within the peer instruction methodology.",
+                "abstract_pt": "Este documento é uma edição de exercícios para a disciplina de Matemática Geral durante o primeiro semestre de 2019, pensada como apoio à criação de perguntas conceituais ou de aquecimento dentro da metodologia de instrução entre pares.",
+                "keywords_es": [
+                  "matemática general",
+                  "ejercicios semanales",
+                  "preguntas conceptuales",
+                  "instrucción entre pares",
+                  "números reales",
+                  "expresiones algebraicas",
+                  "ecuaciones",
+                  "inecuaciones",
+                  "funciones",
+                  "trigonometría",
+                  "funciones exponenciales",
+                  "funciones logarítmicas"
+                ],
+                "keywords_en": [
+                  "general mathematics",
+                  "weekly exercises",
+                  "conceptual questions",
+                  "peer instruction",
+                  "real numbers",
+                  "algebraic expressions",
+                  "equations",
+                  "inequalities",
+                  "functions",
+                  "trigonometry",
+                  "exponential functions",
+                  "logarithmic functions"
+                ],
+                "keywords_pt": [
+                  "matemática geral",
+                  "exercícios semanais",
+                  "perguntas conceituais",
+                  "instrução entre pares",
+                  "números reais",
+                  "expressões algébricas",
+                  "equações",
+                  "inequações",
+                  "funções",
+                  "trigonometria",
+                  "funções exponenciais",
+                  "funções logarítmicas"
+                ],
+                "citation": "Acuña Chacón Reiman (ed.). “Ejercicios Semanales Matemática General. Preguntas Conceptuales” Revista digital, Matemática, Educación e Internet. https://tecdigital.tec.ac.cr/revistamatematica/Libros/practicas/"
+              },
+              {
+                "id": 3,
+                "title": "Cálculo Diferencial e Integral: Práctica de Curso",
+                "title_en": "Differential and Integral Calculus: Course Practice",
+                "authors": [
+                  {
+                    "name": "Walter Mora",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/CDI_Practica_Curso",
+                "pdf": "/materialNoRevisado/universidad/CDI_Practica_Curso.pdf",
+                "abstract_es": "Este documento reúne una selección de apuntes y prácticas del curso de Cálculo Diferencial e Integral, orientado al área de computación. El material incluye ejercicios y desarrollo teórico sobre límites, continuidad, derivadas, aplicaciones de la derivada, integración, integral de Riemann y el Teorema Fundamental del Cálculo.",
+                "abstract_en": "This document compiles notes and practice exercises for the Differential and Integral Calculus course, oriented toward computing. The material includes theoretical development and exercises on limits, continuity, derivatives, applications of derivatives, integration, the Riemann integral, and the Fundamental Theorem of Calculus.",
+                "abstract_pt": "Este documento reúne apontamentos e práticas do curso de Cálculo Diferencial e Integral, orientado para a área de computação. O material inclui desenvolvimento teórico e exercícios sobre limites, continuidade, derivadas, aplicações da derivada, integração, integral de Riemann e o Teorema Fundamental do Cálculo.",
+                "keywords_es": [
+                  "cálculo diferencial",
+                  "cálculo integral",
+                  "límites",
+                  "continuidad",
+                  "derivadas",
+                  "regla de la cadena",
+                  "aplicaciones de la derivada",
+                  "integral de Riemann",
+                  "teorema fundamental del cálculo",
+                  "educación universitaria"
+                ],
+                "keywords_en": [
+                  "differential calculus",
+                  "integral calculus",
+                  "limits",
+                  "continuity",
+                  "derivatives",
+                  "chain rule",
+                  "applications of derivatives",
+                  "Riemann integral",
+                  "fundamental theorem of calculus",
+                  "higher education"
+                ],
+                "keywords_pt": [
+                  "cálculo diferencial",
+                  "cálculo integral",
+                  "limites",
+                  "continuidade",
+                  "derivadas",
+                  "regra da cadeia",
+                  "aplicações da derivada",
+                  "integral de Riemann",
+                  "teorema fundamental do cálculo",
+                  "educação universitária"
+                ],
+                "citation": "Mora, W. “Apuntes y prácticas del curso de Cálculo. Selección de ejercicios.” Revista digital, Matemática, Educación e Internet. https://tecdigital.tec.ac.cr/servicios/revistamatematica/Libros/practicas/"
+              },
+              {
+                "id": 3,
+                "title": "Cálculo Superior: Práctica de curso",
+                "title_en": "Advanced Calculus: Course Practice",
+                "authors": [
+                  {
+                    "name": "Walter Mora",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Alex Borbón",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Angie Solís",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Juan José Fallas",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Jeffry Chavarría",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Jorge Monge",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "José Luis Espinoza",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Gilberto Vargas",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Alcides Astorga",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Alejandra Jiménez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Edgar Ávila",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/Practicas/Calculo_Superior_Practica_de_curso",
+                "pdf": "/materialNoRevisado/universidad/Calculo_Superior_Practica_de_curso_2018.pdf",
+                "abstract_es": "Este documento presenta una selección de ejercicios correspondientes al curso de Cálculo Superior del Instituto Tecnológico de Costa Rica. El material incluye problemas sobre superficies y sólidos en el espacio, derivadas parciales, optimización, planos tangentes, rectas normales e integrales múltiples. Además, incorpora ejercicios provenientes de exámenes parciales y extraordinarios, con el propósito de fortalecer el razonamiento matemático y apoyar la preparación académica en cursos avanzados de ingeniería y ciencias.",
+                "abstract_en": "This document presents a selection of exercises corresponding to the Advanced Calculus course at the Technological Institute of Costa Rica. The material includes problems on surfaces and solids in space, partial derivatives, optimization, tangent planes, normal lines, and multiple integrals. It also incorporates problems from midterm and extraordinary exams, aiming to strengthen mathematical reasoning and support academic preparation in advanced engineering and science courses.",
+                "abstract_pt": "Este documento apresenta uma seleção de exercícios correspondentes ao curso de Cálculo Superior do Instituto Tecnológico da Costa Rica. O material inclui problemas sobre superfícies e sólidos no espaço, derivadas parciais, otimização, planos tangentes, retas normais e integrais múltiplas. Além disso, incorpora exercícios provenientes de provas parciais e extraordinárias, com o objetivo de fortalecer o raciocínio matemático e apoiar a preparação acadêmica em cursos avançados de engenharia e ciências.",
+                "keywords_es": [
+                  "cálculo superior",
+                  "derivadas parciales",
+                  "integrales múltiples",
+                  "optimización",
+                  "superficies",
+                  "educación universitaria"
+                ],
+                "keywords_en": [
+                  "advanced calculus",
+                  "partial derivatives",
+                  "multiple integrals",
+                  "optimization",
+                  "surfaces",
+                  "higher education"
+                ],
+                "keywords_pt": [
+                  "cálculo superior",
+                  "derivadas parciais",
+                  "integrais múltiplas",
+                  "otimização",
+                  "superfícies",
+                  "educação universitária"
+                ],
+                "citation": "W. Mora et al. Práctica del curso Cálculo Superior. Selección de ejercicios. Revista digital, Matemática, Educación e Internet."
+              },
+              {
+                "id": 4,
+                "title": "Cálculo para Computación I: Práctica de Curso",
+                "title_en": "Calculus for Computing I: Course Practice",
+                "authors": [
+                  {
+                    "name": "Walter Mora",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/Practicas/Calculo_Computacion_I_Practica_de_curso",
+                "pdf": "/materialNoRevisado/universidad/Calculo_Computacion_I_Practica_de_curso.pdf",
+                "abstract_es": "Este documento corresponde a los apuntes y prácticas del curso MA-1404 Cálculo del Instituto Tecnológico de Costa Rica, orientado a estudiantes del área de computación. Incluye una selección de ejercicios con respuestas que abordan límites, derivadas, aplicaciones de la derivada, optimización, integral definida, integral de Riemann y cálculo de áreas. El material está diseñado como apoyo académico para reforzar la comprensión teórica y la resolución de problemas.",
+                "abstract_en": "This document contains the notes and practice exercises for the MA-1404 Calculus course at the Technological Institute of Costa Rica, oriented toward computing students. It includes a selection of exercises with solutions covering limits, derivatives, applications of derivatives, optimization, definite integrals, the Riemann integral, and area computation. The material is intended as academic support to strengthen theoretical understanding and problem-solving skills.",
+                "abstract_pt": "Este documento corresponde aos apontamentos e práticas do curso MA-1404 Cálculo do Instituto Tecnológico da Costa Rica, orientado a estudantes da área de computação. Inclui uma seleção de exercícios com respostas que abordam limites, derivadas, aplicações da derivada, otimização, integral definida, integral de Riemann e cálculo de áreas. O material foi concebido como apoio acadêmico para reforçar a compreensão teórica e a resolução de problemas.",
+                "keywords_es": [
+                  "cálculo",
+                  "cálculo para computación",
+                  "límites",
+                  "derivadas",
+                  "optimización",
+                  "integral definida",
+                  "integral de Riemann",
+                  "educación universitaria"
+                ],
+                "keywords_en": [
+                  "calculus",
+                  "calculus for computing",
+                  "limits",
+                  "derivatives",
+                  "optimization",
+                  "definite integral",
+                  "Riemann integral",
+                  "higher education"
+                ],
+                "keywords_pt": [
+                  "cálculo",
+                  "cálculo para computação",
+                  "limites",
+                  "derivadas",
+                  "otimização",
+                  "integral definida",
+                  "integral de Riemann",
+                  "educação universitária"
+                ],
+                "citation": "Mora, W. (2018). Apuntes y prácticas del curso MA-1404 Cálculo. Selección de ejercicios con respuestas. Instituto Tecnológico de Costa Rica."
+              },
+              {
+                "id": 5,
+                "title": "Álgebra Lineal y Cálculo I para Computación: Prácticas",
+                "title_en": "Linear Algebra and Calculus I for Computing: Practice Sessions",
+                "authors": [
+                  {
+                    "name": "Walter Mora Flores",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Cristian Páez Páez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Manuel Alfaro",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Erick Chacón",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Bryan Rodríguez",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  },
+                  {
+                    "name": "Randy Wynta",
+                    "university": "Instituto Tecnológico de Costa Rica",
+                    "location": "Costa Rica",
+                    "orcid": ""
+                  }
+                ],
+                "published": "2018",
+                "slug": "Universidad/Practicas/ALC_I_Computacion_Practicas",
+                "pdf": "/materialNoRevisado/universidad/ALC_I_Computacion_Practicas.pdf",
+                "abstract_es": "Este documento presenta una serie de prácticas semanales correspondientes al curso de Álgebra Lineal y Cálculo I para Computación del Instituto Tecnológico de Costa Rica. El material abarca temas fundamentales como sistemas de ecuaciones lineales, operaciones con matrices, determinantes, espacios vectoriales, transformaciones lineales, valores y vectores propios, límites, continuidad, derivadas y sus aplicaciones. Cada práctica incluye ejercicios diseñados para reforzar los conceptos teóricos mediante la resolución de problemas aplicados al área de computación.",
+                "abstract_en": "This document presents a series of weekly practice sessions corresponding to the Linear Algebra and Calculus I for Computing course at the Technological Institute of Costa Rica. The material covers fundamental topics such as systems of linear equations, matrix operations, determinants, vector spaces, linear transformations, eigenvalues and eigenvectors, limits, continuity, derivatives, and their applications. Each practice session includes exercises designed to reinforce theoretical concepts through applied problem-solving in the computing field.",
+                "abstract_pt": "Este documento apresenta uma série de práticas semanais correspondentes ao curso de Álgebra Linear e Cálculo I para Computação do Instituto Tecnológico da Costa Rica. O material abrange temas fundamentais como sistemas de equações lineares, operações com matrizes, determinantes, espaços vetoriais, transformações lineares, valores e vetores próprios, limites, continuidade, derivadas e suas aplicações. Cada prática inclui exercícios projetados para reforçar os conceitos teóricos mediante a resolução de problemas aplicados à área de computação.",
+                "keywords_es": [
+                  "álgebra lineal",
+                  "cálculo diferencial",
+                  "computación",
+                  "sistemas de ecuaciones lineales",
+                  "matrices",
+                  "determinantes",
+                  "espacios vectoriales",
+                  "transformaciones lineales",
+                  "valores propios",
+                  "vectores propios",
+                  "límites",
+                  "derivadas",
+                  "educación universitaria"
+                ],
+                "keywords_en": [
+                  "linear algebra",
+                  "differential calculus",
+                  "computing",
+                  "systems of linear equations",
+                  "matrices",
+                  "determinants",
+                  "vector spaces",
+                  "linear transformations",
+                  "eigenvalues",
+                  "eigenvectors",
+                  "limits",
+                  "derivatives",
+                  "higher education"
+                ],
+                "keywords_pt": [
+                  "álgebra linear",
+                  "cálculo diferencial",
+                  "computação",
+                  "sistemas de equações lineares",
+                  "matrizes",
+                  "determinantes",
+                  "espaços vetoriais",
+                  "transformações lineares",
+                  "valores próprios",
+                  "vetores próprios",
+                  "limites",
+                  "derivadas",
+                  "educação universitária"
+                ],
+                "citation": "W. Mora et al. Práctica del curso Álgebra Lineal para Computación. Selección de ejercicios. Revista digital, Matemática, Educación e Internet"
               }
-
             ]
           }
         ]
