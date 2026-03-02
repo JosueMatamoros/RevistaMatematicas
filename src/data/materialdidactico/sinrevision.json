@@ -208,7 +208,11 @@
             "title_en": "Mathematics Day Activities",
             "authors": [
               {
-                "name": "Zuleyka Suárez Valdés-Ayala (coordinadora)"
+                "name": "Zuleyka Suárez Valdés-Ayala",
+                "email": "zsuarez@itcr.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-1822-4825",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
               },
               {
                 "name": "Rodiney Soto Castro"
@@ -217,25 +221,43 @@
                 "name": "Melissa Luna Fonseca"
               },
               {
-                "name": "Fernanda Mata Coto"
+                "name": "Fernanda Mata Coto",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               },
               {
                 "name": "Gustavo Nuñez Morales"
               },
               {
-                "name": "Verónica Segura Siles"
+                "name": "Verónica Segura Siles",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               },
               {
-                "name": "Julissa Bosque Chaves"
+                "name": "Julissa Bosque Chaves",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               },
               {
-                "name": "Viviana Solano Sánchez"
+                "name": "Viviana Solano Sánchez",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               },
               {
-                "name": "Siony Ulloa Araya"
+                "name": "Siony Ulloa Araya",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               },
               {
-                "name": "Lucía Fernández Cordero"
+                "name": "Lucía Fernández Cordero",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": ""
               }
             ],
             "published": "2021-03-01",
@@ -277,7 +299,13 @@
             "authors": [
               { "name": "Richard Camacho Zamora" },
               { "name": "Michelle Chinchilla Chinchilla" },
-              { "name": "Zuleyka Suarez Valdés-Ayala" }
+              {
+                "name": "Zuleyka Suárez Valdés-Ayala",
+                "email": "zsuarez@itcr.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-1822-4825",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
+              }
             ],
             "published": "2021-07-01",
             "slug": "Secundaria/Repaso_Habilidades_Geometria_Relaciones_Algebra",
@@ -325,7 +353,7 @@
                     "name": "Zuleyka Suárez Valdés-Ayala",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-1822-4825"
                   },
                   {
                     "name": "Erlane Mora Navarro",
@@ -335,9 +363,10 @@
                   },
                   {
                     "name": "Bryan Ramírez Obando",
+                    "email": "bramirez9122@gmail.com",
+                    "orcid": "https://orcid.org/0009-0008-0340-6096",
                     "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
-                    "orcid": ""
+                    "location": "Cartago, Costa Rica"
                   },
                   {
                     "name": "Gustavo Núñez Morales",
@@ -394,7 +423,7 @@
                     "name": "Zuleyka Suárez Valdés-Ayala",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-1822-4825"
                   },
                   {
                     "name": "Lucía Fernández Cordero",
@@ -466,7 +495,7 @@
                     "name": "Zuleyka Suárez Valdés-Ayala",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-1822-4825"
                   },
                   {
                     "name": "Julissa Bosque Chaves",
@@ -544,13 +573,14 @@
                     "name": "Zuleyka Suárez Valdés-Ayala",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-1822-4825"
                   },
                   {
                     "name": "Bryan Ramírez Obando",
+                    "email": "bramirez9122@gmail.com",
+                    "orcid": "https://orcid.org/0009-0008-0340-6096",
                     "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
-                    "orcid": ""
+                    "location": "Cartago, Costa Rica"
                   },
                   {
                     "name": "Gustavo Núñez Morales",
@@ -671,7 +701,7 @@
                     "name": "Walter Mora Flores (Coordinador)",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   },
                   {
                     "name": "Alex Borbón",
@@ -916,7 +946,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   }
                 ],
                 "published": "2018",
@@ -972,7 +1002,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   },
                   {
                     "name": "Alex Borbón",
@@ -1076,7 +1106,7 @@
                     "name": "Walter Mora",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   }
                 ],
                 "published": "2018",
@@ -1126,7 +1156,7 @@
                     "name": "Walter Mora Flores",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                     "orcid": "https://orcid.org/0009-0008-8770-3417"
+                    "orcid": "https://orcid.org/0009-0008-8770-3417"
                   },
                   {
                     "name": "Cristian Páez Páez",
