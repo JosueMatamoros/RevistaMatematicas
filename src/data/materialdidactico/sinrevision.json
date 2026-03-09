@@ -18,14 +18,14 @@
                 "email": "griselda123@estudiantec.cr",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica",
-                "orcid": ""
+                "orcid": "https://orcid.org/0009-0004-7967-2092"
               },
               {
                 "name": "Marco Salazar Vega",
                 "email": "marcosavega@estudiantec.cr",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica",
-                "orcid": ""
+                "orcid": "https://orcid.org/0009-0005-0504-8112"
               }
             ],
             "category": "",
@@ -107,6 +107,13 @@
                 "orcid": "https://orcid.org/0000-0002-8508-6151",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica"
+              },
+              {
+                "name": "Zuleyka Suárez Valdés-Ayala",
+                "email": "zsuarez@itcr.ac.cr",
+                "orcid": "https://orcid.org/0000-0002-1822-4825",
+                "university": "Instituto Tecnológico de Costa Rica",
+                "location": "Costa Rica"
               }
             ],
             "category": "",
@@ -142,7 +149,7 @@
               "estatística",
               "aprendizagem ativa"
             ],
-            "citation": "Acuña Chacón, R., Agüero Calvo, E., Meza Cascante, L. G., Monge Madriz, C., & Solís Palma, A. (Proyecto RENOVA). Actividades de Educación Matemática para Primaria. I Ciclo. Instituto Tecnológico de Costa Rica."
+            "citation": "Acuña-Chacón, R., Agüero-Calvo, E., Meza-Cascante, L.G., Monge-Madriz, C., Solís-Palma, A., Suárez-Valdéz-Ayala, Z. (2022). Actividades de educación matemática para primaria. I ciclo. Proyecto Renova. Instituto Tecnológico de Costa Rica"
           }
         ]
       },
@@ -156,13 +163,13 @@
             "authors": [
               {
                 "name": "Jennany Ortiz Mata",
-                "university": "Instituto Tecnológico de Costa Rica",
+                "university": "Fidélitas University: San José, CR",
                 "location": "Costa Rica",
                 "orcid": "https://orcid.org/0009-0002-0001-1191"
               },
               {
                 "name": "Robin Sequeira Solano",
-                "university": "Instituto Tecnológico de Costa Rica",
+                "university": "ULACIT: San José, CR",
                 "location": "Costa Rica",
                 "orcid": "https://orcid.org/0009-0000-4808-8353"
               }
@@ -224,10 +231,13 @@
                 "name": "Fernanda Mata Coto",
                 "university": "Instituto Tecnológico de Costa Rica",
                 "location": "Costa Rica",
-                "orcid": ""
+                "orcid": "https://orcid.org/0009-0006-7423-0687"
               },
               {
-                "name": "Gustavo Nuñez Morales"
+                "name": "Gustavo Nuñez Morales",
+                "university": "Universidad de Costa Rica",
+                "location": "Costa Rica",
+                "orcid": "https://orcid.org/0000-0002-7124-2125"
               },
               {
                 "name": "Verónica Segura Siles",
@@ -237,8 +247,6 @@
               },
               {
                 "name": "Julissa Bosque Chaves",
-                "university": "Instituto Tecnológico de Costa Rica",
-                "location": "Costa Rica",
                 "orcid": ""
               },
               {
@@ -356,10 +364,7 @@
                     "orcid": "https://orcid.org/0000-0002-1822-4825"
                   },
                   {
-                    "name": "Erlane Mora Navarro",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
-                    "orcid": ""
+                    "name": "Erlane Mora Navarro"
                   },
                   {
                     "name": "Bryan Ramírez Obando",
@@ -370,9 +375,9 @@
                   },
                   {
                     "name": "Gustavo Núñez Morales",
-                    "university": "Instituto Tecnológico de Costa Rica",
+                    "university": "Universidad de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-7124-2125"
                   },
                   {
                     "name": "Melissa Luna Fonseca",
@@ -435,7 +440,7 @@
                     "name": "Fernanda Mata Coto",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0009-0006-7423-0687"
                   },
                   {
                     "name": "Viviana Solano Sánchez",
@@ -499,8 +504,6 @@
                   },
                   {
                     "name": "Julissa Bosque Chaves",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
@@ -584,62 +587,46 @@
                   },
                   {
                     "name": "Gustavo Núñez Morales",
-                    "university": "Instituto Tecnológico de Costa Rica",
+                    "university": "Universidad de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-7124-2125"
                   },
                   {
                     "name": "Melissa Luna Fonseca",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Erlane Mora Navarro",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Viviana Solano Sánchez",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Lucía Fernández Cordero",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
-                    "name": "María Fernanda Mata Coto",
+                    "name": "Fernanda Mata Coto",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0009-0006-7423-0687"
                   },
                   {
                     "name": "Siony Ulloa Araya",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Rodiney Soto Castro",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Verónica Segura Siles",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Julissa Bosque Chaves",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   }
                 ],
@@ -705,86 +692,65 @@
                   },
                   {
                     "name": "Alex Borbón",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Cristian Páez",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Mario Marín",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Felix Núñez",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
-                    "name": "Evelyn Agüero",
+                    "name": "Evelyn Agüero Calvo",
+                    "email": "evaguero@itcr.ac.cr",
                     "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
-                    "orcid": ""
+                    "location": "Cartago, Costa Rica",
+                    "orcid": "https://orcid.org/0000-0002-8703-061X"
                   },
                   {
                     "name": "Sandra Schmidt",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Jeffry Chavarría",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-8943-4475"
                   },
                   {
                     "name": "Juan José Fallas",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-8566-4177"
                   },
                   {
                     "name": "Rosario Alvarez Z.",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Marieth Villalobos J.",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Alejandra Araya Q.",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Jessica Chacón P.",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Marianella Abarca",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Pablo García",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   }
                 ],
@@ -1006,62 +972,53 @@
                   },
                   {
                     "name": "Alex Borbón",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
-                    "name": "Angie Solís",
+                    "name": "Angie Solís Palma",
+                    "email": "ansolis@tec.ac.cr",
+                    "orcid": "https://orcid.org/0000-0002-8508-6151",
                     "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
-                    "orcid": ""
+                    "location": "Costa Rica"
                   },
                   {
                     "name": "Juan José Fallas",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-8566-4177"
                   },
                   {
                     "name": "Jeffry Chavarría",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-8943-4475"
                   },
                   {
                     "name": "Jorge Monge",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0002-1651-3543"
                   },
                   {
                     "name": "José Luis Espinoza",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Gilberto Vargas",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Alcides Astorga",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Alejandra Jiménez",
-                    "university": "Instituto Tecnológico de Costa Rica",
+                    "university": "Universidad Nacional de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0009-0006-9248-2511"
                   },
                   {
                     "name": "Edgar Ávila",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   }
                 ],
@@ -1160,32 +1117,24 @@
                   },
                   {
                     "name": "Cristian Páez Páez",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Manuel Alfaro",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Erick Chacón",
                     "university": "Instituto Tecnológico de Costa Rica",
                     "location": "Costa Rica",
-                    "orcid": ""
+                    "orcid": "https://orcid.org/0000-0001-6469-2024"
                   },
                   {
                     "name": "Bryan Rodríguez",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   },
                   {
                     "name": "Randy Wynta",
-                    "university": "Instituto Tecnológico de Costa Rica",
-                    "location": "Costa Rica",
                     "orcid": ""
                   }
                 ],
