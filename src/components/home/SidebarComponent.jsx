@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Link from "next/link";
 import SearchBar from "../common/SearchBar";
 import IndexingCards from "./IndexingCards";
 
@@ -81,9 +82,12 @@ export default function SidebarComponent({ isOpen, setIsOpen }) {
               </p>
 
               <div className="p-2 border-t">
-                <button className="w-full bg-tec-red-primary text-white font-bold py-2 rounded-md hover:bg-tec-red-primary/90 transform transition-transform duration-200 hover:scale-105">
+                <Link
+                  href="/paginasgenerales/suscripcion"
+                  className="block w-full bg-tec-red-primary text-white font-bold py-2 rounded-md hover:bg-tec-red-primary/90 transform transition-transform duration-200 hover:scale-105 text-center"
+                >
                   Suscribirse
-                </button>
+                </Link>
               </div>
 
               <IndexingCards />
