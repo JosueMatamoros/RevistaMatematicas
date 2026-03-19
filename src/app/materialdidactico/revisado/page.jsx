@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Typography } from "@material-tailwind/react";
 import BooksList from "@/components/books/BooksList";
 import ArticlesList from "@/components/articles/ArticlesList";
 import NavsComponent from "@/components/home/NavsComponent";
@@ -26,27 +25,32 @@ export default function Page() {
             Material Didáctico Revisado
           </h1>
           <p className="text-gray-500 text-lg font-light max-w-3xl mx-auto">
-            Material didáctico que ha sido sometido a un proceso de revisión por pares académicos
-            en la revista <span className="font-semibold text-tec-blue-secondary">Matemática, Educación e Internet</span>.
+            Material didáctico que ha sido sometido a un proceso de revisión por
+            pares académicos en la revista{" "}
+            <span className="font-semibold text-tec-blue-secondary">
+              Matemática, Educación e Internet
+            </span>
+            .
           </p>
         </div>
 
         {/* Sección de Artículos */}
-        {articleSections.length > 0 && articleSections.some(s => s.articles?.length > 0) && (
-          <ArticlesList
-            sections={articleSections}
-            basePath="/materialdidactico/revisado"
-            noPadding
-            useBasePath={true}
-          />
-        )}
+        {articleSections.length > 0 &&
+          articleSections.some((s) => s.articles?.length > 0) && (
+            <ArticlesList
+              sections={articleSections}
+              basePath="/materialdidactico/revisado"
+              noPadding
+              useBasePath={true}
+            />
+          )}
 
         {/* Sección de Libros */}
         {books.length > 0 && (
           <>
-            <Typography variant="h4" className="font-display mb-4 font-bold border-b-2 border-tec-red-primary w-fit">
+            <h4 className="font-display mb-4 font-bold border-b-2 border-tec-red-primary w-fit">
               Folletos
-            </Typography>
+            </h4>
             <div className="flex flex-col gap-6 mb-10">
               {books.map((book) => (
                 <BooksList
