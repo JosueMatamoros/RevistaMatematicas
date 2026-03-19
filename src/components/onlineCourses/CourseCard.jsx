@@ -3,6 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
+import { withBasePath } from "@/lib/basePath";
 
 export default function CourseCard({
   title = "Cursos en línea",
@@ -11,9 +12,17 @@ export default function CourseCard({
   link
 }) {
   const router = useRouter();
+  const targetLink = withBasePath(link);
 
   const handleCardClick = () => {
-    if (link) router.push(link);
+    if (!targetLink) return;
+
+    if (targetLink.endsWith(".htm") || targetLink.endsWith(".html")) {
+      window.location.assign(targetLink);
+      return;
+    }
+
+    router.push(targetLink);
   };
 
   return (
