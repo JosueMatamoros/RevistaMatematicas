@@ -1,0 +1,404 @@
+{
+  "issueTitle": "Volumen 24, Número 1, Agosto 2023 - Febrero 2024",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Uma visualização da sequência de Jacobsthal com o aporte do GeoGebra",
+      "title_en": "A visualization of the Jacobsthal sequence with the contribution of GeoGebra",
+      "volume": 24,
+      "number": 1,
+      "language": "pt",
+      "published": "",
+      "authors": [
+        {
+          "name": "Carla Patrícia Souza Rodrigues Pinheiro",
+          "email": "carla.patricia62@aluno.ifce.edu.br",
+          "university": "Secretaria de Educação do Ceará",
+          "department": "",
+          "location": "Brasil",
+          "orcid": "https://orcid.org/0000-0003-0766-8647"
+        },
+        {
+          "name": "Francisco Régis Vieira Alves",
+          "email": "fregis@ifce.edu.br",
+          "university": "Instituto Federal de Educação, Ciências e Tecnologia do Ceará",
+          "department": "",
+          "location": "Brasil",
+          "orcid": "https://orcid.org/0000-0003-3710-1561"
+        },
+        {
+          "name": "Daniel Brandão Menezes",
+          "email": "brandaomenezes@hotmail.com",
+          "university": "Universidade Estadual do Ceará",
+          "department": "",
+          "location": "Brasil",
+          "orcid": "https://orcid.org/0000-0002-5930-7969"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N1_2023/Souza",
+      "pdf": "/Articulos/V24/N1_2023/Souza/V24_n1_Souza.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6686",
+      "received": "2 agosto 2022",
+      "accepted": "30 marzo 2023",
+      "abstract_es": "En Brasil, según las investigaciones, existen pocos trabajos sobre la sucesión de Jacobsthal en los cursos de grado, lo que motivó este trabajo, dada la intrigante particularidad de su definición. Por lo tanto, el objetivo de este trabajo es investigar una propuesta didáctica que permita la comprensión de la sucesión de Jacobsthal a través de una visualización geométrica apoyada por el software GeoGebra. Para su estructuración, la metodología utilizada fue la Ingeniería Didáctica, en sus dos primeras fases —análisis preliminar y análisis a priori— bajo la perspectiva de la Teoría de las Situaciones Didácticas, que es una teoría de la enseñanza. Como resultado, se obtuvo una visualización bidimensional y tridimensional a partir de la construcción de mosaicos y prismas relacionados con los números de Jacobsthal.",
+      "abstract_en": "In Brazil, according to research, there are few works on the Jacobsthal sequence in undergraduate courses, and this motivated this work, given the intriguing particularity of its definition. Therefore, the objective of this work is to investigate a didactic proposal that enables the understanding of the Jacobsthal sequence through a geometric visualization supported by the GeoGebra software. For its structuring, the methodology used was Didactic Engineering, in its first two phases – preliminary analysis and a priori analysis – with the perspective of the Theory of Didactic Situations, which is a theory of teaching. As a result, we have two-dimensional and three-dimensional visualization, from the construction of tiles and prisms relating to the Jacobsthal numbers.",
+      "abstract_pt": "No Brasil, de acordo com as pesquisas, são escassos os trabalhos sobre a sequência de Jacobsthal, nos cursos de licenciatura, e isso motivou a realização deste trabalho, dada a particularidade intrigante de sua definição. Diante disso, o objetivo deste trabalho é investigar uma proposta didática que viabilize a compreensão da sequência de Jacobsthal por meio de uma visualização geométrica com arrimo do software GeoGebra. Para sua estruturação, a metodologia utilizada foi a Engenharia Didática, em suas duas primeiras fases – análises preliminares e análise a priori – com a perspectiva da Teoria das Situações Didáticas, que é uma teoria de ensino. Como resultado, temos visualização bidimensional e tridimensional, a partir da construção de ladrilhos e prismas relacionando com os números de Jacobsthal.",
+      "keywords_es": [
+        "sucesión de Jacobsthal",
+        "GeoGebra",
+        "Ingeniería Didáctica",
+        "Teoría de las Situaciones Didácticas"
+      ],
+      "keywords_en": [
+        "Jacobsthal sequence",
+        "GeoGebra",
+        "Didactic Engineering",
+        "Theory of Didactic Situations"
+      ],
+      "keywords_pt": [
+        "sequência de Jacobsthal",
+        "GeoGebra",
+        "Engenharia Didática",
+        "Teoria das Situações Didáticas"
+      ],
+      "citation": "Souza Rodrigues Pinheiro, C. P., Vieira Alves, F. R., & Brandão Menezes, D. (2023). Uma visualização da sequência de Jacobsthal com o aporte do GeoGebra. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6686"
+    },
+    {
+      "id": 2,
+      "title": "Implementación de recursos educativos digitales, una revisión sistemática desde la enseñanza del Cálculo Diferencial",
+      "title_en": "Implementing Digital Educational Resources: a Systematic Review From a Differential Calculus Teaching Perspective",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "María Fernanda Mora Casasola",
+          "email": "fercan.fernanda@gmail.com",
+          "university": "Universidad Latinoamericana de Ciencia y Tecnología",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-7748-3026"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N1_2023/Mora",
+      "pdf": "/Articulos/V24/N1_2023/Mora/V24_n1_Mora.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6709",
+      "received": "1 setiembre 2022",
+      "accepted": "15 abril 2023",
+      "abstract_es": "El uso de recursos educativos digitales en el proceso de enseñanza y aprendizaje del Cálculo Diferencial es cada vez más frecuente. Esta implementación se presenta como una alternativa para la construcción de aprendizajes innovadores y significativos de las diversas temáticas. Este análisis consiste en una revisión sistemática para conocer cuáles son los recursos educativos digitales que han sido utilizados en los últimos cinco años en cálculo diferencial y la justificación de tal uso. Para el estudio, se consultaron tres repositorios en los que fueron seleccionados treinta artículos en total. Entre los resultados, se destaca la creciente sistematización de experiencias relacionadas con este tema y la importancia de la incorporación de estos recursos como un medio para romper con los paradigmas tradicionales que predominan en la enseñanza del cálculo. A partir de la revisión, a nivel general se considera importante que les sea provean los recursos económicos necesarios para que las instituciones educativas adquieran los equipos adecuados para docentes y estudiantes, que se promueva la formación de profesores en el uso de estos recursos y por último, que la implementación de tales recursos sea adecuada a las necesidades de aprendizaje de los estudiantes.",
+      "abstract_en": "The use of digital educational resources in the teaching and learning process of Differential Calculus is increasingly frequent. This implementation is an alternative for the construction of meaningful learning of various topics, as well as for the reduction of high dropout rates. This analysis consists of a systematic review to know what digital educational resources have been used in the past five years in differential calculus and the justification for such use. For the study, three repositories were consulted, in which thirty articles in total were selected. The results include the growing systematization of experiences related to this topic, and the importance of incorporating these resources as a way to break with the traditional paradigms that prevail in the teaching of calculus. Based on the review, it is generally important for educational institutions to acquire appropriate equipment for both teachers and students, to promote teacher training in the use of these resources, and to make implementation appropriate to the students’ learning needs.",
+      "abstract_pt": "O uso de recursos educativos digitais no processo de ensino e aprendizagem do Cálculo Diferencial é cada vez mais frequente. Esta implementação apresenta-se como uma alternativa para a construção de aprendizagens inovadoras e significativas das diversas temáticas. Esta análise consiste em uma revisão sistemática para conhecer quais são os recursos educativos digitais que têm sido utilizados nos últimos cinco anos em cálculo diferencial e a justificativa de tal uso. Para o estudo, foram consultados três repositórios nos quais foram selecionados trinta artigos no total. Entre os resultados, destaca-se a crescente sistematização de experiências relacionadas com este tema e a importância da incorporação destes recursos como um meio para quebrar os paradigmas tradicionais que predominam no ensino do cálculo. A partir da revisão, em nível geral, considera-se importante que sejam fornecidos os recursos econômicos necessários para que as instituições educativas adquiram os equipamentos adequados para docentes e estudantes, que se promova a formação de professores no uso destes recursos e, por último, que a implementação de tais recursos seja adequada às necessidades de aprendizagem dos estudantes.",
+      "keywords_es": [
+        "recursos digitales",
+        "educación superior",
+        "cálculo",
+        "enseñanza"
+      ],
+      "keywords_en": [
+        "digital resources",
+        "higher education",
+        "calculus",
+        "teaching"
+      ],
+      "keywords_pt": [
+        "recursos digitais",
+        "ensino superior",
+        "cálculo",
+        "ensino"
+      ],
+      "citation": "Mora-Casasola, M. F. (2023). Implementación de recursos educativos digitales, una revisión sistemática desde la enseñanza del Cálculo Diferencial. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6709"
+    },
+    {
+      "id": 3,
+      "title": "Principios matemáticos, nutricionales y didácticos del uso de ecuaciones 3 × 3 con Excel en la formulación de alimentos balanceados y de raciones para animales",
+      "title_en": "Mathematical, nutritional and didactical principles of using 3 × 3 equations with Excel for the formulation of balanced feeds and rations for animals",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Angel Arturo Santana Pérez",
+          "email": "santana@udg.co.cu",
+          "university": "Universidad de Granma",
+          "department": "",
+          "location": "Granma, Cuba",
+          "orcid": "https://orcid.org/0000-0002-3503-9162"
+        },
+        {
+          "name": "Carlos Zamora Regueiro",
+          "email": "czamorar@udg.co.cu",
+          "university": "Universidad de Granma",
+          "department": "",
+          "location": "Granma, Cuba",
+          "orcid": "https://orcid.org/0000-0002-7563-5823"
+        },
+        {
+          "name": "Roisbel Aroche Ginarte",
+          "email": "rarocheg@udg.co.cu",
+          "university": "Universidad de Granma",
+          "department": "",
+          "location": "Granma, Cuba",
+          "orcid": "https://orcid.org/0000-0002-3940-1026"
+        },
+        {
+          "name": "Danis Manuel Verdecia Acosta",
+          "email": "dverdecia@udg.co.cu",
+          "university": "Universidad de Granma",
+          "department": "",
+          "location": "Granma, Cuba",
+          "orcid": "https://orcid.org/0000-0002-4505-4438"
+        },
+        {
+          "name": "Jorge Luis Ramírez de la Ribera",
+          "email": "jramirezrivera@udg.co.cu",
+          "university": "Universidad de Granma",
+          "department": "",
+          "location": "Granma, Cuba",
+          "orcid": "https://orcid.org/0000-0002-0956-0245"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N1_2023/Santana",
+      "pdf": "/Articulos/V24/N1_2023/Santana/V24_n1_Santana.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6777",
+      "received": "18 marzo 2022",
+      "accepted": "22 mayo 2023",
+      "abstract_es": "El empleo de diferentes métodos matemáticos en la formulación de raciones y de alimentos balanceados para animales exige el dominio simultáneo de principios matemáticos, de nutrición animal y también de habilidades didácticas para su enseñanza en las instituciones donde se estudian carreras agropecuarias. El presente artículo tiene como objetivo mostrar cómo integrar tales pericias, específicamente en el uso de ecuaciones 3 × 3 y motivar el uso del Excel para todos estos fines. Desde el punto de vista nutricional se describe cómo considerar las particularidades del valor nutritivo de cada alimento en el planteamiento de las ecuaciones iniciales para lograr los ajustes de las cantidades y/o proporciones de tres nutrientes aportados por ellos a los respectivos requerimientos nutricionales de los animales. Matemáticamente se muestran las posibilidades de estos sistemas de ecuaciones 3 × 3 y del uso correcto de las unidades de medida para resolver problemas de formulación de dietas animales, cómo plantearlos e implementarlos en Excel por los profesionales vinculados a la alimentación de los animales. Didácticamente se hace un aporte importante pues se muestran dos ejemplos de problemas prácticos y reales para que sean usados en la enseñanza de los sistemas de ecuaciones 3 × 3 en otros tipos de enseñanza también.",
+      "abstract_en": "The use of different mathematical methods during the process of animal ration and concentrates formulation demands integral skills on animal nutrition, mathematics and didactical abilities during teaching of such methods at the institutions where agricultural careers are taught. This article aims to demonstrate how to integrate such capabilities, specifically on the use of 3 × 3 equations and to motivate using Excel for that purpose. From the nutritional point of view, it is described how to consider the exactitudes on the nutritive value of each feed in 3 × 3 system of equations in order to fit the amount and/or proportion of three nutrients to their animal requirements. It was also demonstrated the mathematical possibilities of 3 × 3 system of equations to solve diet formulation for animals, how to formulate them with Excel by those dealing with animal feeding. Didactically, it was noticeable that two examples of real and practical problems for teaching 3 × 3 systems of equations were given.",
+      "abstract_pt": "O emprego de diferentes métodos matemáticos na formulação de rações e de alimentos balanceados para animais exige o domínio simultâneo de princípios matemáticos, de nutrição animal e também de habilidades didáticas para o seu ensino nas instituições onde se estudam cursos agropecuários. O presente artigo tem como objetivo mostrar como integrar tais competências, especificamente no uso de equações 3 × 3, e motivar o uso do Excel para todos esses fins. Do ponto de vista nutricional, descreve-se como considerar as particularidades do valor nutritivo de cada alimento na elaboração das equações iniciais para alcançar os ajustes das quantidades e/ou proporções de três nutrientes fornecidos por eles aos respectivos requerimentos nutricionais dos animais. Matematicamente, mostram-se as possibilidades desses sistemas de equações 3 × 3 e do uso correto das unidades de medida para resolver problemas de formulação de dietas animais, bem como a forma de elaborá-los e implementá-los no Excel pelos profissionais vinculados à alimentação animal. Didaticamente, faz-se uma contribuição importante, pois são apresentados dois exemplos de problemas práticos e reais para que sejam utilizados no ensino dos sistemas de equações 3 × 3 também em outros níveis de ensino.",
+      "keywords_es": [
+        "Sistemas de ecuaciones 3x3",
+        "matrices",
+        "alimentación animal"
+      ],
+      "keywords_en": [
+        "3 × 3 system of equations",
+        "matrix",
+        "animal feeding"
+      ],
+      "keywords_pt": [
+        "Sistemas de equações 3 × 3",
+        "matrizes",
+        "alimentação animal"
+      ],
+      "citation": "Santana Pérez, A. A., Zamora Regueiro, C., Aroche Ginarte, R., Verdecia Acosta, D. M., & Ramírez de la Ribera, J. L. (2023). Principios matemáticos, nutricionales y didácticos del uso de ecuaciones 3 × 3 con Excel en la formulación de alimentos balanceados y de raciones para animales. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6777"
+    },
+    {
+      "id": 4,
+      "title": "Estudio de la ansiedad matemática en estudiantes de precálculo matriculados en el I Cuatrimestre 2022 bajo modalidad educativa mixta",
+      "title_en": "Study of mathematical anxiety in precalculus students enrolled in the first quarter of 2022 under mixed educational modality",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Didier Alberto Castro Méndez",
+          "email": "dcastro@ulacit.ac.cr",
+          "university": "Universidad Latinoamericana de Ciencia y Tecnología",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-4464-8541"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N1_2023/Castro",
+      "pdf": "/Articulos/V24/N1_2023/Castro/V24_n1_Castro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6797",
+      "received": "26 setiembre 2022",
+      "accepted": "23 mayo 2023",
+      "abstract_es": "La presente investigación muestra los resultados del nivel de ansiedad matemática en estudiantes del curso de precálculo de la Universidad Latinoamericana de Ciencia y Tecnología (ULACIT). La muestra estuvo constituida por 237 estudiantes matriculados en el primer cuatrimestre del 2022 bajo modalidad educativa mixta (cursos ofertados de manera presencial y virtual) esto por los protocolos establecidos ante la alerta sanitaria originada por la COVID 19. La ansiedad matemática es un estado afectivo donde existe la carencia de estabilidad y comodidad que presenta un individuo ante situaciones donde se relacione la matemática (Pérez–Tyteca et al., 2013). Con ello, se planteó la pregunta de investigación ¿Cuál es el nivel de ansiedad matemática que muestran los estudiantes de precálculo en el primer cuatrimestre del 2022? A su vez, tuvo como objetivo estudiar el nivel de ansiedad matemática de los estudiantes de precálculo matriculados dicho periodo lectivo, así como analizar las diferencias significativas según sexo y modalidad de estudio. Los resultados obtenidos no muestran diferencias estadísticamente significativas en el nivel de ansiedad matemática en relación con el sexo, pero sí con relación a la modalidad educativa donde los estudiantes virtuales presentan mayor ansiedad matemática.",
+      "abstract_en": "This research shows the results of the level of mathematical anxiety in students of the precalculus course at the Latin American University of Science and Technology (ULACIT). The sample was constituted by 237 students enrolled in the first quarter of 2022 under mixed educational modality (courses offered in person and virtually) due to the protocols established before the health alert originated by COVID 19. Mathematical anxiety is an affective state where there is a lack of stability and comfort presented by an individual in situations where mathematics is related (Pérez-Tyteca et al., 2013). With this, the research question was posed: What is the level of mathematical anxiety shown by precalculus students in the first quarter of 2022? In turn, the objective was to study the level of mathematical anxiety of precalculus students enrolled in that academic period, as well as to analyze the significant differences according to sex and mode of study. The results obtained do not show statistically significant differences in the level of mathematical anxiety in relation to sex, but they do show significant differences in relation to the educational modality where virtual students present greater mathematical anxiety.",
+      "abstract_pt": "A presente investigação mostra os resultados do nível de ansiedade matemática em estudantes do curso de pré-cálculo da Universidade Latino-Americana de Ciência e Tecnologia (ULACIT). A amostra foi constituída por 237 estudantes matriculados no primeiro quadrimestre de 2022 sob a modalidade educativa mista (cursos ofertados de maneira presencial e virtual), devido aos protocolos estabelecidos perante a alerta sanitária originada pela COVID-19. A ansiedade matemática é um estado afetivo onde existe a carência de estabilidade e conforto que um indivíduo apresenta diante de situações relacionadas à matemática (Pérez–Tyteca et al., 2013). Com isso, levantou-se a pergunta de investigação: Qual é o nível de ansiedade matemática que os estudantes de pré-cálculo apresentam no primeiro quadrimestre de 2022? Por sua vez, o objetivo foi estudar o nível de ansiedade matemática dos estudantes de pré-cálculo matriculados no referido período letivo, bem como analisar as diferenças significativas segundo sexo e modalidade de estudo. Os resultados obtidos não mostram diferenças estatisticamente significativas no nível de ansiedade matemática em relação ao sexo, mas sim em relação à modalidade educativa, onde os estudantes virtuais apresentam maior ansiedade matemática.",
+      "keywords_es": [
+        "Ansiedad matemática",
+        "COVID 19",
+        "Matemática educativa",
+        "Precálculo"
+      ],
+      "keywords_en": [
+        "Mathematics anxiety",
+        "COVID 19",
+        "Educational mathematics",
+        "Precalculus"
+      ],
+      "keywords_pt": [
+        "Ansiedade matemática",
+        "COVID-19",
+        "Matemática educativa",
+        "Pré-cálculo"
+      ],
+      "citation": "Castro Méndez, D. A. (2023). Estudio de la ansiedad matemática en estudiantes de precálculo matriculados en el I Cuatrimestre 2022 bajo modalidad educativa mixta. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6797"
+    },
+    {
+      "id": 5,
+      "title": "Un proyecto para fortalecer la enseñanza de las Matemáticas a nivel bachillerato en tiempos del Covid-19",
+      "title_en": "A project to strengthen the teaching of Mathematics at the high school level in times of Covid-19",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José de Jesús Camacho Medina",
+          "email": "pepe9mx@yahoo.com.mx",
+          "university": "Sociedad Científica Fresnillense A.C.",
+          "department": "",
+          "location": "Fresnillo, Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0002-1172-0797"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N1_2023/Camacho",
+      "pdf": "/Articulos/V24/N1_2023/Camacho/V24_n1_Camacho.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6828",
+      "received": "20 julio 2022",
+      "accepted": "30 junio 2023",
+      "abstract_es": "La pandemia del Covid-19 trajo consigo un cambio radical en el mundo en lo que concierne a la educación. El sector educativo se vio en la necesidad de adaptarse a un esquema de enseñanza virtual, en ese sentido, surge un nuevo reto para los docentes de Matemáticas. El presente trabajo se fundamenta en la experiencia de un profesor de bachillerato originario de la ciudad de Fresnillo, Zacatecas, México; el cual explora una solución al reto de fortalecer y complementar el estudio de las matemáticas en un modelo de aprendizaje a distancia. Se propone un proyecto basado en la creación e implementación de material didáctico audiovisual cuya funcionalidad se viene evaluando desde el mes de agosto de 2020. ",
+      "abstract_en": "The Covid-19 pandemic brought with it a radical change in the world as far as education is concerned. The educational sector saw the need to adapt a virtual teaching scheme, in this sense; a new challenge arises for Mathematics teachers. This work is based on the experience of a high school teacher from the city of Fresnillo, Zacatecas, Mexico who explores a solution to the challenge of strengthening and complementing the study of mathematics in a distance learning model. A project based on the creation and implementation of audiovisual didactic material is proposed whose functionality has been evaluated since August 2020.",
+      "abstract_pt": "A pandemia da Covid-19 trouxe consigo uma mudança radical no mundo no que diz respeito à educação. O setor educativo viu-se na necessidade de adaptar-se a um esquema de ensino virtual; nesse sentido, surge um novo desafio para os docentes de Matemática. O presente trabalho fundamenta-se na experiência de um professor de ensino médio, originário da cidade de Fresnillo, Zacatecas, México, o qual explora uma solução ao desafio de fortalecer e complementar o estudo das matemáticas em um modelo de aprendizagem a distância. Propõe-se um projeto baseado na criação e implementação de material didático audiovisual, cuja funcionalidade vem sendo avaliada desde o mês de agosto de 2020.",
+      "keywords_es": [
+        "Matemática educativa",
+        "educación virtual",
+        "estrategias tecnológicas",
+        "proyecto didáctico remoto",
+        "Covid-19"
+      ],
+      "keywords_en": [
+        "educational Mathematics",
+        "virtual education",
+        "technological strategies",
+        "remote didactic project",
+        "Covid-19"
+      ],
+      "keywords_pt": [
+        "Educação Matemática",
+        "educação virtual",
+        "estratégias tecnológicas",
+        "projeto didático remoto",
+        "Covid-19"
+      ],
+      "citation": "Camacho Medina, J. J. (2023). Un proyecto para fortalecer la enseñanza de las Matemáticas a nivel bachillerato en tiempos del Covid-19. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6828"
+    },
+    {
+      "id": 6,
+      "title": "Generación de código para la elaboración de preguntas tipo cloze en Moodle usando Wolfram Mathematica",
+      "title_en": "Code generation for creating cloze questions in Moodle using Wolfram Mathematica",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Enrique Vílchez Quesada",
+          "email": "enrique.vilchez.quesada@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-2571-5729"
+        },
+        {
+          "name": "Juan Félix Ávila Herrera",
+          "email": "delagarita@gmail.com",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V24/N1_2023/Vilchez",
+      "pdf": "/Articulos/V24/N1_2023/Vilchez/V24_n1_Vilchez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6680",
+      "received": "26 octubre 2022",
+      "accepted": "2 marzo 2023",
+      "abstract_es": "El presente trabajo comparte el uso de un paquete de software elaborado por los autores mediante el uso de Wolfram Language para la generación automática de código, con el objetivo de diseñar preguntas incrustadas (cloze) en plataformas de aprendizaje Moodle. El paquete ha sido llamado por sus creadores “Incrustada” y éste integra la posibilidad de convertir expresiones a código LaTeX de Moodle, generar respuestas desplegadas, respuestas de falso y verdadero, de selección única y múltiple con y sin código LaTeX, generar preguntas con respuesta corta donde hay o no una distinción entre mayúsculas y minúsculas, preguntas de respuesta corta de tipo numérico (estáticas) y tablas HTML con respuestas desplegadas, de complete o una combinación entre ambas.",
+      "abstract_en": "This paper shares the use of a software package developed by the authors using Wolfram Language for automatic code generation with the aim of designing embedded questions (cloze) in learning platforms Moodle. The package has been called “Incrustada” by its creators and it integrates the ability to convert expressions to Moodle LaTeX code, generate displayed responses, true and false responses, single select and multiple with and without LaTeX code, generate case-sensitive or case-insensitive short-answer questions, numeric short-answer questions (statics), and HTML tables with displayed answers, full answers, or a combination of both.",
+      "abstract_pt": "Este trabalho apresenta o uso de um pacote de software elaborado pelos autores por meio da Wolfram Language para a geração automática de código, com o objetivo de projetar questões incorporadas (cloze) em plataformas de aprendizagem Moodle. O pacote foi denominado “Incrustada” por seus criadores e integra a possibilidade de converter expressões em código LaTeX do Moodle, gerar respostas em lista suspensa, respostas de verdadeiro e falso, de seleção única e múltipla com e sem código LaTeX, gerar questões de resposta curta com ou sem distinção entre letras maiúsculas e minúsculas, questões de resposta curta de tipo numérico (estáticas) e tabelas HTML com respostas em lista suspensa, de completar ou uma combinação entre ambas.",
+      "keywords_es": [
+        "cloze",
+        "Moodle",
+        "Wolfram Mathematica",
+        "paquete",
+        "código",
+        "preguntas"
+      ],
+      "keywords_en": [
+        "cloze",
+        "Moodle",
+        "Wolfram Mathematica",
+        "package",
+        "code",
+        "questions"
+      ],
+      "keywords_pt": [
+        "cloze",
+        "Moodle",
+        "Wolfram Mathematica",
+        "pacote",
+        "código",
+        "perguntas"
+      ],
+      "citation": "Vílchez Quesada, E., & Ávila Herrera, J. F. (2023). Generación de código para la elaboración de preguntas tipo cloze en Moodle usando Wolfram Mathematica. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6680"
+    },
+    {
+      "id": 7,
+      "title": "Interactividad en tareas matemáticas con GeoGebra",
+      "title_en": "Interactivity in mathematical tasks with GeoGebra",
+      "volume": 24,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Adriana Favieri",
+          "email": "afavieri@unlam.edu.ar",
+          "university": "Universidad Nacional de La Matanza",
+          "department": "",
+          "location": "San Justo, Argentina",
+          "orcid": "https://orcid.org/0000-0002-6707-9089"
+        },
+        {
+          "name": "Betina Williner",
+          "email": "bwilliner@unlam.edu.ar",
+          "university": "Universidad Nacional de La Matanza",
+          "department": "",
+          "location": "San Justo, Argentina",
+          "orcid": "https://orcid.org/0000-0001-9650-5019"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V24/N1_2023/Favieri",
+      "pdf": "/Articulos/V24/N1_2023/Favieri/V24_n1_Favieri.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i1.6707",
+      "received": "8 noviembre 2022",
+      "accepted": "1 abril 2023",
+      "abstract_es": "Se presenta el diseño de tareas de matemáticas con uso del software GeoGebra para la enseñanza de Análisis Matemático I, en carreras de ingeniería. El objetivo principal es lograr que el alumno use el software sin la orientación del docente. Se intenta que el estudiante ante un problema, ejercicio o concepto teórico, por sí mismo (sin una guía del profesor) realice acciones con GeoGebra que le permitan resolver ese ejercicio o comprender mejor ese concepto. Así se considera necesario emplear el software de manera gradual en las clases para incorporar tanto conceptos propios de la asignatura como su uso. Se delimitaron aspectos teóricos sobre el diseño poniendo énfasis en la interacción GeoGebra-alumno, lo que permitió categorizarlas. Se incluyen ejemplos detallados de cada una de ellas. Se concluye con algunas consideraciones sobre las tareas diseñadas, la conveniencia de contar con una categorización acorde a la interacción del alumno con el software, la manera crítica de usarlo para lograr que los alumnos también adquieran habilidades vinculadas a justificaciones, fundamentaciones y desarrollos analíticos. ",
+      "abstract_en": "GeoGebra software is used to design mathematical tasks for Mathematical Analysis I classes in engineering. An important goal is to get students to use the software without teacher guidance. Students are expected to use GeoGebra independently (without teacher guidance) to solve a problem, perform an exercise, or better understand a theoretical concept. In order to integrate both the concepts of the subject and the use of the software, it is considered necessary to use the software gradually in the classroom. Theoretical aspects of the design were narrowed down, focusing on the interaction between GeoGebra and the students. As a result, mathematical tasks were categorized. Each example is explained in detail. The conclusion refers to some considerations about the designed tasks, the appropriateness of the categorization according to the students’ interaction with the software, and the critical way to use them to ensure that students also acquire skills in reasoning, foundations, and analytical development.",
+      "abstract_pt": "Apresenta-se o design de tarefas de matemática com o uso do software GeoGebra para o ensino de Análise Matemática I em cursos de engenharia. O objetivo principal é fazer com que o aluno utilize o software sem a orientação do docente. Pretende-se que o estudante, diante de um problema, exercício ou conceito teórico, por si mesmo (sem um guia do professor), realize ações com o GeoGebra que permitam resolver esse exercício ou compreender melhor esse conceito. Assim, considera-se necessário empregar o software de maneira gradual nas aulas para incorporar tanto conceitos próprios da disciplina quanto o seu uso. Delimitaram-se aspectos teóricos sobre o design, enfatizando a interação GeoGebra-aluno, o que permitiu categorizá-las. Incluem-se exemplos detalhados de cada uma delas. Conclui-se com algumas considerações sobre as tarefas projetadas, a conveniência de contar com uma categorização condizente com a interação do aluno com o software e a maneira crítica de utilizá-lo para fazer com que os alunos também adquiram habilidades vinculadas a justificativas, fundamentações e desenvolvimentos analíticos.",
+      "keywords_es": [
+        "GeoGebra",
+        "interactividad",
+        "tareas matemáticas",
+        "Análisis Matemático I"
+      ],
+      "keywords_en": [
+        "GeoGebra",
+        "interactivity",
+        "math tasks",
+        "Calculus I"
+      ],
+      "keywords_pt": [
+        "GeoGebra",
+        "interatividade",
+        "tarefas matemáticas",
+        "Análise Matemática I"
+      ],
+      "citation": "Favieri, A., & Williner, B. (2023). Interactividad en tareas matemáticas con GeoGebra. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(1). https://doi.org/10.18845/rdmei.v24i1.6707"
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "issueTitle": "Volumen 24, Número 2, Marzo 2024 - Agosto 2024",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Prácticas evaluativas de docentes de matemática costarricenses",
+      "title_en": "Assessment Practices in Costa Rican Mathematics Teachers",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Elizabeth Díaz Gutiérrez",
+          "email": "elizabeth.diaz@ucr.ac.cr",
+          "university": "Universidad de Costa Rica, Sede del Sur",
+          "department": "",
+          "location": "Golfito, Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-1852-6599"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N2_2024/Diaz",
+      "pdf": "/Articulos/V24/N2_2024/Diaz/V24_n2_Diaz.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6902",
+      "received": "22 de marzo de 2023",
+      "accepted": "22 de junio de 2023",
+      "abstract_es": "Hace más de una década, en Costa Rica se realizó una reforma educativa que incluyó los Programas de Estudio de Matemática, en estos, la resolución de problemas se concibe como la punta de lanza que debe guiar la mediación pedagógica. La investigación surge por la necesidad de conocer, analizar y comprender las prácticas evaluativas de las personas docentes, a la luz del marco teórico de la propuesta curricular. Este es un estudio cualitativo, donde desde el método fenomenológico se busca un acercamiento a la realidad de las personas participantes y su accionar diario en el campo. Para la recolección de datos se acudió a personas expertas en el área, material documental, docentes de matemática y su respectivo estudiantado.",
+      "abstract_en": "Over a decade ago, an educational reform was carried out in Costa Rica that included Mathematics Curricula. Problem solving was conceived as the spearhead that should guide pedagogical mediation. The research arises from the need to know, analyze and understand teachers’ assessment practices in light of the theoretical framework of the curricular proposal. This is a qualitative study that seeks, from the phenomenological method; an approach to the reality of the participating people and their daily actions in the field. For data collection were consulted experts in the area, material was documented, and Mathematics teachers and their respective students were included.",
+      "abstract_pt": "Há mais de uma década, na Costa Rica foi realizada uma reforma educacional que incluiu os Programas de Estudo de Matemática; nestes, a resolução de problemas é concebida como a ponta de lança que deve orientar a mediação pedagógica. A pesquisa surge da necessidade de conhecer, analisar e compreender as práticas avaliativas das pessoas docentes, à luz do marco teórico da proposta curricular. Trata-se de um estudo qualitativo, no qual, a partir do método fenomenológico, busca-se uma aproximação com a realidade das pessoas participantes e com sua atuação cotidiana no campo. Para a coleta de dados, recorreu-se a pessoas especialistas na área, material documental, docentes de matemática e seu respectivo estudantado.",
+      "keywords_es": [
+        "Prácticas evaluativas",
+        "resolución de problemas matemáticos",
+        "medios de evaluación",
+        "roles en la evaluación de los aprendizajes"
+      ],
+      "keywords_en": [
+        "Assessment Practices",
+        "solving mathematical problems",
+        "means of assessment",
+        "roles in the assessment of learning"
+      ],
+      "keywords_pt": [
+        "Práticas avaliativas",
+        "resolução de problemas matemáticos",
+        "meios de avaliação",
+        "papéis na avaliação das aprendizagens"
+      ],
+      "citation": "Díaz Gutiérrez, E. (2024). Prácticas evaluativas de docentes de matemática costarricenses. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6902"
+    },
+    {
+      "id": 2,
+      "title": "Sólidos de revolución y TIC en la educación. Evaluación de una propuesta para su enseñanza",
+      "title_en": "Solids of revolution and ICT in education. Evaluation of a proposal for teaching",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Fabiola Delgado Navarro",
+          "email": "fdelgado@uned.ac.cr",
+          "university": "Universidad Estatal a Distancia",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-9635-0811"
+        },
+        {
+          "name": "Luis Diego Cascante Víquez",
+          "email": "luis.cascante@ufide.ac.cr",
+          "university": "Universidad Fidélitas",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-8715-1925"
+        },
+        {
+          "name": "Jeremías Ramírez Jiménez",
+          "email": "jeremias.ramirez.jimenez@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-6608-791X"
+        },
+        {
+          "name": "Rebeca Solís Ortega",
+          "email": "rsolis@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-3065-8386"
+        },
+        {
+          "name": "José Andrey Zamora-Araya",
+          "email": "jzamo@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-6050-5850"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N2_2024/Delgado",
+      "pdf": "/Articulos/V24/N2_2024/Delgado/V24_n2_Delgado.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6916",
+      "received": "30 noviembre de 2022",
+      "accepted": "15 Agosto 2023",
+      "abstract_es": "En este artículo se presenta el diseño y evaluación de una propuesta educativa virtual para el aprendizaje de sólidos de revolución. La propuesta incluyó recursos como videos, prácticas en línea, material de apoyo y un taller para explicar el uso de la plataforma Schoology, GeoGebra y calculadora científica. La efectividad de la propuesta se determinó por medio de un cuasi-experimento cuya variable respuesta fue la puntuación obtenida en el tema de sólidos de revolución. También se aplicó una encuesta a las personas del grupo experimental para conocer su percepción sobre la calidad y pertinencia de la propuesta. Los resultados indican que la propuesta educativa virtual tuvo un efecto positivo tanto en el rendimiento académico, (81.25 puntos en el grupo experimental y 59.4 puntos en el control) como en la percepción del uso de los recursos educativos (90% los recomendaron). En conclusión, el uso de TIC mejoró el rendimiento académico y generó percepciones positivas entre el estudiantado, promoviendo de esta manera un mayor aprendizaje de los contenidos, el cual también puede combinar la enseñanza presencial con el uso de recursos educativos abiertos disponibles en línea.",
+      "abstract_en": "This paper presents the design and assessment of a virtual educational proposal for learning solids of revolution. The proposal included resources such as videos, online practices, support material, and a workshop to explain the use of the Schoology platform, GeoGebra, and a scientific calculator. The effectiveness of the proposal was determined by a quasi-experiment whose response variable was the score obtained in the topic of solids of revolution. A survey was also applied to students in the experimental group to find out their perception of the quality and relevance of the proposal. The results indicate that the virtual educational proposal had a positive effect both on academic performance (81.25 points experimental group and 59.4 points control group) and on the perception of the use of educational resources (90% recommended them). In conclusion, the use of ICT improved academic performance and generated positive perceptions among the student body, thus promoting greater learning of the contents, which can also combine face-to-face teaching with the use of open educational resources available online.",
+      "abstract_pt": "Neste artigo apresenta-se o desenho e a avaliação de uma proposta educativa virtual para a aprendizagem de sólidos de revolução. A proposta incluiu recursos como vídeos, práticas on-line, material de apoio e um workshop para explicar o uso da plataforma Schoology, GeoGebra e da calculadora científica. A efetividade da proposta foi determinada por meio de um quase-experimento cuja variável resposta foi a pontuação obtida no tema de sólidos de revolução. Também se aplicou um questionário às pessoas do grupo experimental para conhecer sua percepção sobre a qualidade e pertinência da proposta. Os resultados indicam que a proposta educativa virtual teve um efeito positivo tanto no rendimento acadêmico (81,25 pontos no grupo experimental e 59,4 pontos no grupo controle) quanto na percepção do uso dos recursos educativos (90% os recomendaram). Em conclusão, o uso de TIC melhorou o rendimento acadêmico e gerou percepções positivas entre o estudantado, promovendo dessa maneira uma maior aprendizagem dos conteúdos, a qual também pode combinar o ensino presencial com o uso de recursos educativos abertos disponíveis on-line.",
+      "keywords_es": [
+        "investigación educativa",
+        "tecnologías de la información y de la comunicación",
+        "enseñanza a distancia",
+        "matemática"
+      ],
+      "keywords_en": [
+        "educational research",
+        "information and communication technologies",
+        "distance education",
+        "mathematics"
+      ],
+      "keywords_pt": [
+        "pesquisa educacional",
+        "tecnologias da informação e da comunicação",
+        "ensino a distância",
+        "matemática"
+      ],
+      "citation": "Delgado Navarro, F., Cascante Víquez, L. D., Ramírez Jiménez, J., Solís Ortega, R., & Zamora Araya, J. A. (2024). Sólidos de revolución y TIC en la educación. Evaluación de una propuesta para su enseñanza. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6916"
+    },
+    {
+      "id": 3,
+      "title": "Aportes de investigaciones cognitivas a la elaboración de hipermedia para el aprendizaje geométrico",
+      "title_en": "Cognitive research contributions to the development of mathematical hypermedia for geometry learning",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Javier Lugo",
+          "email": "jlugo@unlam.edu.ar",
+          "university": "Universidad Nacional de La Matanza",
+          "department": "",
+          "location": "Buenos Aires, Argentina",
+          "orcid": "https://orcid.org/0009-0006-9325-1061"
+        },
+        {
+          "name": "Marcela Falsetti",
+          "email": "mfalsetti@unlam.edu.ar",
+          "university": "Universidad Nacional de La Matanza; Universidad Nacional de General Sarmiento",
+          "department": "",
+          "location": "Buenos Aires, Argentina",
+          "orcid": "https://orcid.org/0000-0002-2373-5558"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N2_2024/Lugo",
+      "pdf": "/Articulos/V24/N2_2024/Lugo/V24_n2_Lugo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6917",
+      "received": "23 febrero 2023",
+      "accepted": "15 setiembre 2023",
+      "abstract_es": "En este trabajo se presentan criterios teóricos, basados en investigaciones psico-cognitivas, para construir un dispositivo hipermedia orientado al aprendizaje y la comprensión de contenidos de Geometría Analítica en el nivel universitario. Se integran la Teoría Cognitiva del Aprendizaje Multimedia (Mayer, 2005, 2009) y sus principios de diseño para materiales hipermedia, junto con criterios específicos que han sido establecidos para favorecer la comprensión en Matemática (Sierpinska, 1994). Además, se muestra una implementación de los criterios de diseño en un dispositivo hipermedia, evidenciando cómo estos fueron incorporados. Finalmente, se propone una reflexión sobre la producción de un material hipermedia para el aprendizaje de la Matemática.",
+      "abstract_en": "This paper presents theoretical criteria, based on psycho-cognitive research, to build a hypermedia device oriented to the learning and understanding of Analytic Geometry contents at the university level. The Cognitive Theory of Multimedia Learning (Mayer, 2005, 2009) and its design principles for hypermedia materials are integrated together with specific criteria that have been established to favor understanding in Mathematics (Sierpinska, 1994). In addition, an implementation of the design criteria in a hypermedia device is shown, evidencing how they were incorporated. Finally, a reflection on the production of a hypermedia material for mathematics learning is proposed.",
+      "abstract_pt": "Neste trabalho apresentam-se critérios teóricos, baseados em pesquisas psico-cognitivas, para a construção de um dispositivo hipermídia orientado à aprendizagem e à compreensão de conteúdos de Geometria Analítica no nível universitário. Integram-se a Teoria Cognitiva da Aprendizagem Multimídia (Mayer, 2005, 2009) e seus princípios de design para materiais hipermídia, juntamente com critérios específicos que foram estabelecidos para favorecer a compreensão em Matemática (Sierpinska, 1994). Além disso, apresenta-se uma implementação dos critérios de design em um dispositivo hipermídia, evidenciando como estes foram incorporados. Finalmente, propõe-se uma reflexão sobre a produção de um material hipermídia para a aprendizagem da Matemática.",
+      "keywords_es": [
+        "Teoría de la comprensión matemática",
+        "teoría cognitiva del aprendizaje multimedia",
+        "dispositivo didáctico hipermedia",
+        "aprendizaje de la Geometría Analítica",
+        "matemática universitaria"
+      ],
+      "keywords_en": [
+        "Theory of mathematical understanding",
+        "cognitive theory of multimedia learning",
+        "hypermedia didactic device",
+        "learning Analytic Geometry",
+        "university mathematics"
+      ],
+      "keywords_pt": [
+        "Teoria da compreensão matemática",
+        "teoria cognitiva da aprendizagem multimídia",
+        "dispositivo didático hipermídia",
+        "aprendizagem da Geometria Analítica",
+        "matemática universitária"
+      ],
+      "citation": "Lugo, J., & Falsetti, M. (2024). Aportes de investigaciones cognitivas a la elaboración de hipermedia para el aprendizaje geométrico. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6917"
+    },
+    {
+      "id": 4,
+      "title": "Parametrizando ejercicios con Python y LaTeX: una novedosa estrategia para generación de materiales de enseñanza y evaluación en matemáticas",
+      "title_en": "Parameterizing exercises with Python and LaTeX: a novel strategy for generating teaching and assessment materials in mathematics",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jorge Arroyo Hernández",
+          "email": "jorge.arroyo.hernandez@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-3890-5011"
+        },
+        {
+          "name": "Federico Mora Mora",
+          "email": "federico.mora.mora@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-4244-3737"
+        },
+        {
+          "name": "Eithel Eduardo Trigueros Rodríguez",
+          "email": "eithel.trigueros.rodriguez@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Sarapiquí, Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-4961-898X"
+        },
+        {
+          "name": "Karen Porras Lizano",
+          "email": "karen.porras.lizano@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-6572-2640"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V24/N2_2024/Arroyo",
+      "pdf": "/Articulos/V24/N2_2024/Arroyo/V24_n2_Arroyo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6932",
+      "received": "1 noviembre de 2022",
+      "accepted": "30 setiembre 2023",
+      "abstract_es": "En este artículo se presenta una propuesta novedosa para su uso en docencia, que consiste en la construcción de ejercicios generados a partir de una estructura base con parámetros pseudoaleatorios, de manera que al sustituirlos con valores particulares en rangos predeterminados se obtengan múltiples versiones. La elaboración y digitalización de los ítems se apoya en el lenguaje de programación Python y sus bibliotecas Sympy y Numpy; los cuales permiten automatizar la generación de los ejercicios, sus soluciones y los archivos LaTeX. Estos últimos compilados de manera masiva. Entre los principales aportes de este desarrollo se destacan: los listados de ítems de dificultad similar personalizados con retroalimentación para cada estudiante y ahorro de tiempo en horas de docencia.",
+      "abstract_en": "This article presents a novel approach to teaching by generating exercises from a structured base with pseudorandom parameters. By substituting values with individuals in predetermined ranges, multiple versions of exercises can be obtained. The elements are elaborated and digitized using the Python programming language and its Sympy and Numpy libraries, which automate the generation of exercises, their solutions, and the LaTeX files. These files can then be compiled massively. One of the main contributions of this development is the creation of personalized lists of elements of similar difficulty, each with feedback for individual students. This approach also saves time in teaching hours.",
+      "abstract_pt": "Neste artigo apresenta-se uma proposta inovadora para seu uso na docência, que consiste na construção de exercícios gerados a partir de uma estrutura base com parâmetros pseudoaleatórios, de modo que, ao substituí-los por valores particulares dentro de intervalos predeterminados, obtenham-se múltiplas versões. A elaboração e digitalização dos itens apoia-se na linguagem de programação Python e em suas bibliotecas Sympy e Numpy, as quais permitem automatizar a geração dos exercícios, de suas soluções e dos arquivos LaTeX, estes últimos compilados de maneira massiva. Entre as principais contribuições deste desenvolvimento destacam-se: listagens de itens de dificuldade semelhante personalizadas com retroalimentação para cada estudante e economia de tempo em horas de docência.",
+      "keywords_es": [
+        "Python",
+        "LaTeX",
+        "Ejercicios parametrizados",
+        "Evaluación y enseñanza de las matemáticas"
+      ],
+      "keywords_en": [
+        "Python",
+        "Latex",
+        "Parameterizing exercises",
+        "Evaluation and teaching of the Mathematics"
+      ],
+      "keywords_pt": [
+        "Python",
+        "LaTeX",
+        "exercícios parametrizados",
+        "avaliação e ensino da matemática"
+      ],
+      "citation": "Arroyo Hernández, J., Mora Mora, F., Trigueros Rodríguez, E., & Porras Lizano, K. (2024). Parametrizando ejercicios con Python y LaTeX: una novedosa estrategia para generación de materiales de enseñanza y evaluación en matemáticas. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6932"
+    },
+    {
+      "id": 5,
+      "title": "Caracterización elemental con elipses tangentes a una recta y un círculo de la envolvente convexa de un cierto par de círculos",
+      "title_en": "Elementary characterization with ellipses tangent to a line and a circle of the convex hull of a certain pair of circles.",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Benjamín A. Itzá-Ortíz",
+          "email": "itza@uaeh.edu.mx",
+          "university": "Universidad Autónoma del Estado de Hidalgo",
+          "department": "",
+          "location": "Hidalgo, México",
+          "orcid": "https://orcid.org/0000-0002-6189-3266"
+        },
+        {
+          "name": "Erika E. Rodríguez-Torres",
+          "email": "erikart@uaeh.edu.mx",
+          "university": "Universidad Autónoma del Estado de Hidalgo",
+          "department": "",
+          "location": "Hidalgo, México",
+          "orcid": "https://orcid.org/0000-0002-7738-1863"
+        },
+        {
+          "name": "Margarita Tetlalmatzi-Montiel",
+          "email": "tmontiel@uaeh.edu.mx",
+          "university": "Universidad Autónoma del Estado de Hidalgo",
+          "department": "",
+          "location": "Hidalgo, México",
+          "orcid": "https://orcid.org/0000-0003-3659-1538"
+        }
+      ],
+      "category": "Temas de matemáticas",
+      "slug": "Articulos/V24/N2_2024/Itza",
+      "pdf": "/Articulos/V24/N2_2024/Itza/V24_n2_Itza.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6885",
+      "received": "3 de junio de 2023",
+      "accepted": "5 de Agosto de 2023",
+      "abstract_es": "En este trabajo se presenta una caracterización de la envolvente convexa de los círculos (x − 1)² + y² = 1/4 y (x + 1)² + y² = 1/4 por medio de la unión de las elipses x² + 5y² − 4xy = 1/4, x² + 5y² + 4xy = 1/4 y la familia de las elipses centradas en el origen que, en cuatro puntos diferentes, son tangentes a dichos círculos y a los bordes superior e inferior de la envolvente convexa, empleando geometría analítica y derivación implícita.",
+      "abstract_en": "In this work is given a characterization of the convex hull of the circles (x − 1)² + y² = 1/4 and (x + 1)² + y² = 1/4 through the union of the ellipses x² + 5y² − 4xy = 1/4, x² + 5y² + 4xy = 1/4, and the family of the ellipses centered at the origin that, at four different points, are tangent to these circles and to the upper and lower edges of the convex hull, using analytic geometry and implicit derivation.",
+      "abstract_pt": "Neste trabalho apresenta-se uma caracterização da envolvente convexa dos círculos (x − 1)² + y² = 1/4 e (x + 1)² + y² = 1/4 por meio da união das elipses x² + 5y² − 4xy = 1/4, x² + 5y² + 4xy = 1/4 e da família de elipses centradas na origem que, em quatro pontos distintos, são tangentes a esses círculos e às bordas superior e inferior da envolvente convexa, empregando geometria analítica e derivação implícita.",
+      "keywords_es": [
+        "Envolvente convexa",
+        "elipses",
+        "geometría analítica"
+      ],
+      "keywords_en": [
+        "Convex hull",
+        "ellipses",
+        "analytic geometry"
+      ],
+      "keywords_pt": [
+        "Invólucro convexo",
+        "elipses",
+        "geometria analítica"
+      ],
+      "citation": "Itza-Ortíz, B. A., Rodríguez-Torres, E. E., & Tetlalmatzi Montiel, M. (2024). Caracterización elemental con elipses tangentes a una recta y un círculo de la envolvente convexa de un cierto par de círculos. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6885"
+    },
+    {
+      "id": 6,
+      "title": "Introducción a la visualización de datos con ggplot2",
+      "title_en": "Introduction to data visualization with ggplot2",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Katalina Oviedo Rodríguez",
+          "email": "katalina.oviedo.rodriguez@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-8869-4067"
+        },
+        {
+          "name": "Byron Jiménez Oviedo",
+          "email": "byron.jimenez.oviedo@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5585-8739"
+        },
+        {
+          "name": "Eduardo Aguilar Fernández",
+          "email": "eduardo.aguilar.fernandez@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-7864-2391"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V24/N2_2024/Oviedo",
+      "pdf": "/Articulos/V24/N2_2024/Oviedo/V24_n2_Oviedo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.6914",
+      "received": "2 mayo de 2023",
+      "accepted": "20 agosto 2023",
+      "abstract_es": "En este documento se presenta una recopilación de los principales códigos del paquete ggplot2 de R para representar información de forma gráfica. Los gráficos que aquí se exponen son los que usualmente se estudian en cursos básicos de estadística descriptiva en la educación superior. El objetivo principal es que esta recopilación sirva de guía para que tanto estudiantes como profesores puedan consultar de una manera más sintetizada algunos de los códigos y ambientes que existen para visualizar información de forma gráfica en ggplot2. Las bases de datos utilizadas son de libre acceso y se pueden descargar en R. En este documento se incluyen los enlaces a las mismas, lo que permite que el lector pueda replicar los códigos con estas bases para una mejor comprensión. Se asume que el lector posee un conocimiento básico del lenguaje R y de estadística descriptiva.",
+      "abstract_en": "This document presents a compilation of the main codes of the ggplot2 package of R to present information graphically. The graphs presented here are those that are usually studied in basic descriptive statistics courses in higher education. The main objective is that this collection serves as a guide so that both students and teachers can consult in a more synthesized way some of the codes and environments that exist to visualize information graphically in ggplot2. The databases used are freely accessible and can be downloaded at R. This document includes links to them, which allows the reader to replicate the codes with these databases for a better understanding. It is assumed that the reader has a basic understanding of R language and descriptive statistics.",
+      "abstract_pt": "Neste documento apresenta-se uma compilação dos principais códigos do pacote ggplot2 do R para representar informações de forma gráfica. Os gráficos aqui apresentados são aqueles que usualmente se estudam em cursos básicos de estatística descritiva no ensino superior. O objetivo principal é que esta compilação sirva como guia para que tanto estudantes quanto professores possam consultar, de maneira mais sintetizada, alguns dos códigos e ambientes existentes para visualizar informações graficamente no ggplot2. As bases de dados utilizadas são de livre acesso e podem ser baixadas no R. Neste documento incluem-se os links para as mesmas, o que permite que o leitor possa reproduzir os códigos com essas bases para uma melhor compreensão. Assume-se que o leitor possui conhecimento básico da linguagem R e de estatística descritiva.",
+      "keywords_es": [
+        "Visualización",
+        "datos",
+        "gráficos estadísticos",
+        "ggplot2",
+        "R"
+      ],
+      "keywords_en": [
+        "Visualization",
+        "data",
+        "statistical graphs",
+        "ggplot2",
+        "R"
+      ],
+      "keywords_pt": [
+        "Visualização",
+        "dados",
+        "gráficos estatísticos",
+        "ggplot2",
+        "R"
+      ],
+      "citation": "Oviedo Rodríguez, K., Jiménez Oviedo, B., & Aguilar Fernández, E. (2024). Introducción a la visualización de datos con ggplot2. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.6914"
+    },
+    {
+      "id": 7,
+      "title": "Los paquetes deSolve y phaseR para la resolución numérica de Ecuaciones Diferenciales Ordinarias con R",
+      "title_en": "The deSolve and phaseR packages for numerical resolution of Ordinary Differential Equations with R",
+      "volume": 24,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Saulo Mosquera López",
+          "email": "samolo@udenar.edu.co",
+          "university": "Universidad de Nariño",
+          "department": "",
+          "location": "Nariño, Colombia",
+          "orcid": "https://orcid.org/0000-0002-5932-5446"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V24/N2_2024/Mosquera",
+      "pdf": "/Articulos/V24/N2_2024/Mosquera/V24_n2_Mosquera.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v24i2.7000",
+      "received": "18 junio de 2023",
+      "accepted": "15 noviembre 2023",
+      "abstract_es": "En el lenguaje R se han desarrollado paquetes específicos que posibilitan el tratamiento numérico de problemas de valor inicial para ecuaciones y sistemas de ecuaciones diferenciales. En particular, el paquete deSolve permite, entre otros, la solución numérica y gráfica de problemas de valor inicial para ecuaciones diferenciales ordinarias y el paquete phaseR el análisis cualitativo de sistemas autónomos de ecuaciones diferenciales ordinarias, en una y dos dimensiones. El propósito de este artículo es el de ilustrar el uso del paquete deSolve con una modificación de la ecuación logística y el sistema de Chen y el paquete phaseR con un modelo que generaliza la ley de Hooke.",
+      "abstract_en": "In the R language, specific packages have been developed that enable the numerical treatment of initial value problems for equations and systems of differential equations. In particular, the deSolve package allows, among others, the numerical and graphical solution of initial value problems for ordinary differential equations and the phaseR package the qualitative analysis of Autonomous Systems of ordinary differential equations, in a and two dimensions. The purpose of this article is to illustrate the use of the deSolve package with a modification of the logistic equation and Chen’s system and the phaseR package with a model that generalizes Hooke’s law.",
+      "abstract_pt": "Na linguagem R foram desenvolvidos pacotes específicos que possibilitam o tratamento numérico de problemas de valor inicial para equações e sistemas de equações diferenciais. Em particular, o pacote deSolve permite, entre outros, a solução numérica e gráfica de problemas de valor inicial para equações diferenciais ordinárias, e o pacote phaseR a análise qualitativa de sistemas autônomos de equações diferenciais ordinárias, em uma e duas dimensões. O propósito deste artigo é ilustrar o uso do pacote deSolve com uma modificação da equação logística e o sistema de Chen, e do pacote phaseR com um modelo que generaliza a lei de Hooke.",
+      "keywords_es": [
+        "Problemas de valor inicial",
+        "deSolve",
+        "phaseR",
+        "solución numérica",
+        "estabilidad",
+        "plano fase"
+      ],
+      "keywords_en": [
+        "Initial value problems",
+        "deSolve",
+        "phaseR",
+        "numerical solution",
+        "stability",
+        "phase plane"
+      ],
+      "keywords_pt": [
+        "Problemas de valor inicial",
+        "deSolve",
+        "phaseR",
+        "solução numérica",
+        "estabilidade",
+        "plano de fase"
+      ],
+      "citation": "Mosquera López, S. (2024). Los paquetes deSolve y phaseR para la resolución numérica de Ecuaciones Diferenciales Ordinarias con R. <i>Revista Digital: Matemática, Educación e Internet, 24</i>(2). https://doi.org/10.18845/rdmei.v24i2.7000"
+    }
+  ]
+}
