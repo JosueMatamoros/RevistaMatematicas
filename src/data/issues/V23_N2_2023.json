@@ -1,0 +1,320 @@
+{
+  "issueTitle": "Volumen 23, Número 2, Marzo 2023 - Agosto 2023",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Sobre la infinitud de los primos extendidos de Germain: un nuevo enfoque",
+      "title_en": "On the infinity of Germain’s extended prime numbers: a novel approach",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N2_2023/Miramontes",
+      "pdf": "/Articulos/V23/N2_2023/Miramontes/V23_n2_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6347",
+      "received": "22 enero 2022",
+      "accepted": "1 setiembre 2022",
+      "abstract_es": "La conjetura sobre la infinitud de los primos de Germain, es decir, aquellos que “si p es primo, 2p + 1 también es primo“, se trata en este trabajo siguiendo un enfoque novedoso. Primero se observa que hay un número infinito de números p que no son primos de Germain. Por lo tanto, si la cantidad de primos de Germain es infinita, no hay una biyección con todos los números primos. Sin embargo, en este trabajo se muestra que haciendo una extensión a la definición de Germain, sí se obtiene esa biyección. Para lograrlo, se extiende la definición de “2p + 1” a “kp + (k - 1), con k = 2”, los cuales serán definidos como primos extendidos de Germain. Eso nos permite plantear, entre otras, la conjetura de que existe un número infinito de primos extendidos de Germain y su biyección al conjunto infinito de los números primos. La última conjetura plantea que, en la forma kp + (k - 1), ningún primo p queda fuera de la categoría de ser primo de Germain. ",
+      "abstract_en": "The conjecture about the infinity of Germain primes, that is, those that “if p is prime, 2p + 1 is also prime“, is treated in this work following a novel approach. We first observe that there is an infinite number of primes p that are not Germain primes. Therefore, if the number of Germain primes is infinite, there is no bijection with all primes. However, in this work it is shown that by making an extension to Germain’s definition, this bijection is obtained. To achieve this, the definition of “2p + 1” is extended to “kp + (k - 1), with k = 2”, which will be defined as extended Germain primes. This allows us to pose, among others, the conjecture that there is an infinite number of extended Germain primes and their bijection to the infinite set of prime numbers. The last conjecture states that, in the form kp + (k - 1), no prime p falls outside the category of being a Germain prime.",
+      "abstract_pt": "A conjetura sobre a infinitude dos primos de Sophie Germain, ou seja, aqueles que “se p é primo, 2p + 1 também é primo“, é tratada neste trabalho seguindo uma abordagem inovadora. Primeiro, observa-se que há um número infinito de números p que não são primos de Germain. Portanto, se a quantidade de primos de Germain é infinita, não existe uma bijeção com todos os números primos. No entanto, neste trabalho mostra-se que, ao fazer uma extensão da definição de Germain, obtém-se essa bijeção. Para alcançá-la, estende-se a definição de “2p + 1” para “kp + (k - 1), com k = 2”, os quais serão definidos como primos estendidos de Germain. Isso permite-nos propor, entre outras, a conjetura de que existe um número infinito de primos estendidos de Germain e a sua bijeção com o conjunto infinito dos números primos. A última conjetura propõe que, na forma kp + (k - 1), nenhum primo p fica de fora da categoria de ser primo de Germain.",
+      "keywords_es": [
+        "números primos",
+        "primos de Germain",
+        "infinitud de números primos"
+      ],
+      "keywords_en": [
+        "prime numbers",
+        "Germain primes",
+        "infinity of prime numbers"
+      ],
+      "keywords_pt": [
+        "números primos",
+        "primos de Germain",
+        "infinitude de números primos"
+      ],
+      "citation": "Miramontes de León, G. (2023). Sobre la infinitud de los primos extendidos de Germain: un nuevo enfoque. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6347"
+    },
+    {
+      "id": 2,
+      "title": "Propuesta de evaluación aplicada al tema de Curvas y Superficies en el Espacio bajo el contexto de la virtualización por la pandemia de la COVID-19 en un curso de Geometría Analítica para la Enseñanza de la Matemática",
+      "title_en": "Evaluation Proposal for the Topic of Curves and Surfaces in Space in the Context of Virtualization during COVID-19 Pandemic in a Course of Analytical Geometry for the Teaching of Mathematics",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jesús Rodríguez Rodríguez",
+          "email": "jesus.rodriguez@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-9889-9530"
+        },
+        {
+          "name": "Eduardo Alonso Arias Navarro",
+          "email": "eduardo.arias_n@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-8293-7686"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N2_2023/Rodriguez",
+      "pdf": "/Articulos/V23/N2_2023/Rodriguez/V23_n2_Rodriguez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6622",
+      "received": "23 marzo 2022",
+      "accepted": "10 diciembre 2022",
+      "abstract_es": "En la siguiente investigación educativa se presentan los resultados obtenidos a partir de una propuesta de evaluación en el tema de superficies y curvas en el espacio mediante la construcción de modelos tridimensionales para las piezas de un tablero de ajedrez con superficies cuádricas en un curso de Geometría Analítica para la carrera de Enseñanza de la Matemática de la Sede de Occidente de la Universidad de Costa Rica como parte de una estrategia didáctica adaptada al nuevo enfoque del modelo educativo de virtualización por lo acontecido con la declaratoria del COVID-19. Este estudio responde a una investigación experimental implementada por una prueba conceptual aplicada como pretest y postest para validar la propuesta bajo modelos de aprendizaje como el factor de Bao & Redish así como el método dicotómico de Rasch. Además, se implementó un cuestionario para validar aspectos representativos expuestos por los estudiantes del curso que fueron esenciales para el proceso investigativo.",
+      "abstract_en": "In this educational research, the results obtained from an evaluation proposal on the subject of surfaces and curves in space are presented through the construction of three-dimensional models for chessboard pieces with quadric surfaces in an Analytical Geometry course for the mathematics teaching major at Sede de Occidente, University of Costa Rica as part of a didactic strategy in virtue of the adoption of virtual learning in the context of COVID-19. This study responds to an experimental investigation implemented by means of a conceptual test applied as pretest and posttest to validate the proposal under learning models such as the Bao & Redish factor as well as the Rasch dichotomous method. In addition, a questionnaire was implemented to validate salient aspects submitted by the students of the course who were of paramount importance in this investigative process.",
+      "abstract_pt": "Na seguinte investigação educativa, apresentam-se os resultados obtidos a partir de uma proposta de avaliação no tema de superfícies e curvas no espaço, mediante a construção de modelos tridimensionais para as peças de um tabuleiro de xadrez com superfícies quádricas, em um curso de Geometria Analítica para a licenciatura em Ensino da Matemática da Sede do Ocidente da Universidade da Costa Rica, como parte de uma estratégia didática adaptada ao novo enfoque do modelo educativo de virtualização devido à declaração da COVID-19. Este estudo responde a uma investigação experimental implementada por um teste conceitual aplicado como pré-teste e pós-teste para validar a proposta sob modelos de aprendizagem como o fator de Bao & Redish, bem como o método dicotômico de Rasch. Além disso, implementou-se um questionário para validar aspectos representativos expostos pelos estudantes do curso que foram essenciais para o processo investigativo.",
+      "keywords_es": [
+        "Geometría Analítica",
+        "COVID-19",
+        "virtualización",
+        "evaluación",
+        "curvas y superficies"
+      ],
+      "keywords_en": [
+        "Analytical Geometry",
+        "COVID-19",
+        "virtualization",
+        "evaluation",
+        "curves and surfaces"
+      ],
+      "keywords_pt": [
+        "Geometria Analítica",
+        "COVID-19",
+        "virtualização",
+        "avaliação",
+        "curvas e superfícies"
+      ],
+      "citation": "Rodríguez Rodríguez, J., & Arias Navarro, E. A. (2023). Propuesta de evaluación aplicada al tema de Curvas y Superficies en el Espacio bajo el contexto de la virtualización por la pandemia de la COVID-19 en un curso de Geometría Analítica para la Enseñanza de la Matemática. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6622"
+    },
+    {
+      "id": 3,
+      "title": "Sesgos en la resolución de tareas probabilísticas por estudiantes costarricenses de educación primaria",
+      "title_en": "Biases in probabilistic tasks solving by Costa Rican primary school students",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Luis A. Hernández-Solís",
+          "email": "lhernandez@uned.ac.cr",
+          "university": "Universidad Estatal a Distancia",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-2956-8102"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N2_2023/Hernandez",
+      "pdf": "/Articulos/V23/N2_2023/Hernandez/V23_n2_Hernandez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6368",
+      "received": "14 febrero 2022",
+      "accepted": "5 setiembre 2022",
+      "abstract_es": "Este estudio expone algunos sesgos y creencias subjetivas encontradas en las respuestas a tres tareas probabilísticas en una muestra de estudiantes de sexto curso de educación primaria costarricense. Se presenta el porcentaje de respuestas correctas a cada ítem y de elección de diferentes distractores, y se muestran algunas similitudes y diferencias con los resultados obtenidos en estudios previos. El análisis de las estrategias de resolución revela la presencia del sesgo de equiprobabilidad, enfoque en el resultado, recencia positiva y negativa, creencia en factores físicos que influyen en la probabilidad y consideración de poca diferencia entre casos favorables y posibles como equiprobabilidad. ",
+      "abstract_en": "This study presents some biases and subjective beliefs found in the responses to three probabilistic tasks in a sample of Costa Rican 6th grade primary school students. The percentage of correct responses to each item and the choice of different distractors are presented, and some similarities and differences with the results obtained in previous studies are shown. The analysis of the resolution strategies reveals the presence of equiprobability bias, outcome approach, positive and negative recency, belief in physical factors that influence probability, and consideration of little difference between favourable and possible cases as equiprobability.",
+      "abstract_pt": "Este estudo expõe alguns vieses e crenças subjetivas encontrados nas respostas a três tarefas probabilísticas em uma amostra de estudantes do sexto ano do ensino fundamental costarriquenho. Apresenta-se a porcentagem de respostas corretas para cada item e de escolha de diferentes distratores, e mostram-se algumas semelhanças e diferenças em relação aos resultados obtidos em estudos anteriores. A análise das estratégias de resolução revela a presença do viés de equiprobabilidade, foco no resultado, recência positiva e negativa, crença em fatores físicos que influenciam a probabilidade e a consideração de pouca diferença entre casos favoráveis e possíveis como equiprobabilidade.",
+      "keywords_es": [
+        "tareas de probabilidad",
+        "sesgos de razonamiento",
+        "evaluación",
+        "educación primaria"
+      ],
+      "keywords_en": [
+        "probability tasks",
+        "reasoning biases",
+        "assessment",
+        "primary education"
+      ],
+      "keywords_pt": [
+        "tarefas de probabilidade",
+        "vieses de raciocínio",
+        "avaliação",
+        "ensino fundamental"
+      ],
+      "citation": "Hernández-Solís, L. A. (2023). Sesgos en la resolución de tareas probabilísticas por estudiantes costarricenses de educación primaria. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6368"
+    },
+    {
+      "id": 4,
+      "title": "Perfil y test vocacional para las carreras de Computadores, Agrícola y Enseñanza de la Matemática",
+      "title_en": "Vocational profile and test for Computer, Agricultural and Mathematics Teaching majors",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Alejandra Alfaro-Barquero",
+          "email": "alealfaro@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-8901-7129"
+        },
+        {
+          "name": "Sonia Chinchilla-Brenes",
+          "email": "schinchilla@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-1100-2568"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N2_2023/Alfaro",
+      "pdf": "/Articulos/V23/N2_2023/Alfaro/V23_n2_Alfaro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6595",
+      "received": "27 julio 2022",
+      "accepted": "25 octubre 2022",
+      "abstract_es": "La investigación buscó diseñar y evaluar una prueba de preferencias vocacionales para las carreras de Ingeniería en Computadores, Ingeniería Agrícola y Enseñanza de la Matemática con Entornos Tecnológicos del Instituto Tecnológico de Costa Rica (ITCR). Participaron 13 docentes (15.4% mujeres, 84.6% hombres) y 435 estudiantes con edad promedio de 20.74 años (63.2% hombres y 36.8% mujeres). Se elaboró el perfil vocacional por disciplina, el cual fue revisado y validado por expertos. El documento resultante sirvió de base para elaborar el instrumento vocacional. Posteriormente, se evaluaron las propiedades psicométricas del mismo mediante análisis factorial, obteniendo indicadores de ajuste adecuados. La prueba incluyó una escala de habilidades generales e intereses, así como una escala de tareas por carrera. Se evidenció la existencia de perfiles vocacionales para cada disciplina y quienes mostraron mayor afinidad con el perfil de su carrera evidenciaron mayor satisfacción vocacional.",
+      "abstract_en": "This research aimed at designing and validating a vocational preference test for three majors at Costa Rica Institute of Technology (ITCR): Computer Engineering, Agricultural Engineering, and Mathematics Teaching in Technological Environments. The sample consisted of 13 educators (15.4% female and 84.6% male) and 435 students with an average age of 20.74 years (63.2% male and 36.8% female). A vocational profile by discipline was prepared, reviewed and validated by experts. The resulting document served as the basis for the vocational instrument. Subsequently, its psychometric properties were evaluated through factor analysis, obtaining adequate goodness-of-fit indicators. The test included a general skills and interests scale as well as a career task scale. The existence of vocational profiles for each discipline was demonstrated and those participants who showed greater affinity with the profile of their major also showed greater vocational satisfaction.",
+      "abstract_pt": "A investigação buscou projetar e avaliar um teste de preferências vocacionais para os cursos de Engenharia de Computadores, Engenharia Agrícola e Ensino da Matemática com Ambientes Tecnológicos do Instituto Tecnológico de Costa Rica (ITCR). Participaram 13 docentes (15,4% mulheres, 84,6% homens) e 435 estudantes com idade média de 20,74 anos (63,2% homens e 36,8% mulheres). Elaborou-se o perfil vocacional por disciplina, o qual foi revisado e validado por especialistas. O documento resultante serviu de base para elaborar o instrumento vocacional. Posteriormente, avaliaram-se as propriedades psicométricas do mesmo mediante análise fatorial, obtendo indicadores de ajuste adequados. O teste incluiu uma escala de habilidades gerais e interesses, bem como uma escala de tarefas por curso. Evidenciou-se a existência de perfis vocacionais para cada disciplina, e aqueles que mostraram maior afinidade com o perfil do seu curso evidenciaram maior satisfação vocacional.",
+      "keywords_es": [
+        "interés",
+        "habilidad",
+        "enseñanza superior",
+        "elección de profesión",
+        "orientación profesional"
+      ],
+      "keywords_en": [
+        "interests",
+        "ability",
+        "adult education",
+        "career choice",
+        "vocational guidance"
+      ],
+      "keywords_pt": [
+        "interesse",
+        "habilidade",
+        "ensino superior",
+        "escolha da profissão",
+        "orientação profissional"
+      ],
+      "citation": "Alfaro-Barquero, A., & Chinchilla-Brenes, S. (2023). Perfil y test vocacional para las carreras de Computadores, Agrícola y Enseñanza de la Matemática. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6595"
+    },
+    {
+      "id": 5,
+      "title": "Análisis psicométricos de ítems de una prueba diagnóstico sobre estadística descriptiva utilizando el modelo de Rasch",
+      "title_en": "Psychometric Analysis of Diagnosis Test Items Using the Rasch Model",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Ma. Eugenia Canut Díaz Velarde",
+          "email": "marucanut@gmail.com",
+          "university": "FES Acatlán-UNAM",
+          "department": "",
+          "location": "México, CDMX",
+          "orcid": "https://orcid.org/0000-0001-7764-8997"
+        },
+        {
+          "name": "Ingrid Torres-Ramos",
+          "email": "ingrid-tr@ciencias.unam.mx",
+          "university": "FES Acatlán-UNAM",
+          "department": "",
+          "location": "México, CDMX",
+          "orcid": "https://orcid.org/0000-00002-6864-6719"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N2_2023/Canut",
+      "pdf": "/Articulos/V23/N2_2023/Canut/V23_n2_Canut.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6586",
+      "received": "2 mayo 2022",
+      "accepted": "5 diciembre 2022",
+      "abstract_es": "Este trabajo presenta la construcción de un banco de ítems que permita aplicar y evaluar de manera precisa y equilibrada aptitudes cognitivas (conceptos, razonamiento, identificación y análisis) específicas del dominio de la asignatura de probabilidad y estadística de la licenciatura de ingeniería civil en una universidad pública. Se invitó a tres profesores como expertos del área de estudio para validar el contenido de los ítems propuestos. Se aplicó un cuestionario de 34 ítems a una muestra de 167 alumnos de tercer semestre, donde las respuestas se codificaron dicotómicamente. Los análisis realizados incluyen la confiabilidad y validez del cuestionario, la verificación de la unidimensionalidad mediante análisis exploratorio y la evaluación de la habilidad de los alumnos y la dificultad del ítem analizado por el modelo de Rasch. Dentro de los resultados obtenidos, se eliminaron los ítems que no cumplían con la discriminación ni con el modelo, permaneciendo 10 ítems. El índice de separación de los ítems fue de 4.35 y la fiabilidad de los ítems de 0.95, considerados adecuados, mientras que los índices de separación de las personas (1.06) y su fiabilidad (0.53) resultaron bajos, lo que sugiere mejorar las estrategias de enseñanza. ",
+      "abstract_en": "The aim of this study is to construct an item bank that allows applying and evaluating cognitive abilities (concepts, reasoning, identification, and analysis) related to the domain of probability and statistics in the civil engineering degree at a public university. Three professors were invited as experts to validate the content of the proposed items. A 34-item questionnaire was applied to a sample of 167 third-semester students whose responses were coded dichotomously. The analyses included reliability and validity of the questionnaire, verification of unidimensionality through exploratory analysis, and evaluation of student ability and item difficulty using the Rasch model. Items that did not meet discrimination or model requirements were removed, leaving 10 items. The item separation index was 4.35 and item reliability was 0.95, which are considered adequate. However, the person separation index (1.06) and reliability (0.53) were low, indicating the need to improve teaching strategies.",
+      "abstract_pt": "Este trabalho apresenta a construção de um banco de itens que permite aplicar e avaliar, de maneira precisa e equilibrada, aptidões cognitivas (conceitos, raciocínio, identificação e análise) específicas do domínio da disciplina de Probabilidade e Estatística da graduação em Engenharia Civil em uma universidade pública. Convidaram-se três professores, especialistas na área de estudo, para validar o conteúdo dos itens propostos. Aplicou-se um questionário de 34 itens a uma amostra de 167 alunos do terceiro semestre, cujas respostas foram codificadas de forma dicotômica. As análises realizadas incluem a confiabilidade e a validade do questionário, a verificação da unidimensionalidade mediante análise exploratória e a avaliação da habilidade dos alunos e da dificuldade do item, analisadas pelo modelo de Rasch. Entre os resultados obtidos, foram eliminados os itens que não cumpriam com a discriminação nem com o modelo, restando 10 itens. O índice de separação dos itens foi de 4,35 e a confiabilidade dos itens de 0,95, considerados adequados, enquanto os índices de separação das pessoas (1,06) e sua confiabilidade (0,53) resultaram baixos, o que sugere a melhoria das estratégias de ensino.",
+      "keywords_es": [
+        "Modelo de Rasch",
+        "Teoría Clásica del Test",
+        "Teoría de la Respuesta al Ítem",
+        "Winstep"
+      ],
+      "keywords_en": [
+        "Rasch Model",
+        "Classical Test Theory",
+        "Item Response Theory",
+        "Winsteps"
+      ],
+      "keywords_pt": [
+        "Modelo de Rasch",
+        "Teoria Clássica dos Testes",
+        "Teoria de Resposta ao Item",
+        "Winsteps"
+      ],
+      "citation": "Canut Díaz Velarde, M. E., & Torres-Ramos, I. (2023). Análisis psicométricos de ítems de una prueba diagnóstico sobre estadística descriptiva utilizando el modelo de Rasch. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6586"
+    },
+    {
+      "id": 6,
+      "title": "Descripción de algunos métodos de solución de ecuaciones algebraicas de tercer y cuarto grado en una variable: una reseña histórica",
+      "title_en": "Description of Some Methods of Solving Third and Fourth Degree Algebraic Equations in One Variable: a historical review",
+      "volume": 23,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Héctor Barrantes González",
+          "email": "hector.barrantes@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-7941-5759"
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V23/N2_2023/Barrantes",
+      "pdf": "/Articulos/V23/N2_2023/Barrantes/V23_n2_Barrantes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i2.6554",
+      "received": "19 abril 2021",
+      "accepted": "6 octubre 2022",
+      "abstract_es": "El objetivo del presente trabajo es realizar una exposición detallada de la resolución por radicales de las ecuaciones de grado tres y cuatro en una variable, utilizando diversos métodos. En el caso de la ecuación de tercer grado, se describen los métodos de Niccolo Fontana (Tartaglia) y Girolamo Cardano, quienes fueron los que dieron la solución de dicha ecuación, con coeficientes positivos. También se analiza la ecuación general de tercer grado, es decir, con coeficientes reales y se detalla el método para hallar todas las soluciones reales y complejas. Se describe además el método de François Viète, para un caso particular de la ecuación de grado tres. Para la ecuación de cuarto grado con coeficientes reales, se describen los métodos de Ludovico Ferrari y el método de René Descartes. Además, se ilustran los métodos con ejemplos detallados.",
+      "abstract_en": "The aim of the present work is to make a detailed exposition of the solution by radicals of equations of degree three and four in one variable, using different methods. In the case of the third degree equation, the methods of Niccolo Fontana (Tartaglia) and Girolamo Cardano are described, who were the ones who gave the solution of this equation, with positive coefficients. The general equation of third degree equation, i.e. with real coefficients, is also given and the method for finding all the real and complex solutions is detailed. The method of François Viète, for a particular case of the equation of degree three, is also described. For the fourth degree equation with real coefficients, the method of Ludovico Ferrari and the method of René Descartes are described. In addition, the methods are illustrated with detailed examples.",
+      "abstract_pt": "O objetivo do presente trabalho é realizar uma exposição detalhada da resolução por radicais das equações de grau três e quatro em uma variável, utilizando diversos métodos. No caso da equação de terceiro grau, descrevem-se os métodos de Niccolo Fontana (Tartaglia) e Girolamo Cardano, que foram os que apresentaram a solução da referida equação com coeficientes positivos. Também se analisa a equação geral de terceiro grau, ou seja, com coeficientes reais, e detalha-se o método para encontrar todas as soluções reais e complexas. Descreve-se, além disso, o método de François Viète para um caso particular da equação de grau três. Para a equação de quarto grau com coeficientes reais, descrevem-se os métodos de Ludovico Ferrari e o método de René Descartes. Além disso, os métodos são ilustrados com exemplos detalhados.",
+      "keywords_es": [
+        "ecuación de grado tres",
+        "ecuación de grado cuatro",
+        "Tartaglia",
+        "Cardano",
+        "Ferrari",
+        "Descartes"
+      ],
+      "keywords_en": [
+        "third degree equation",
+        "fourth degree equation",
+        "Tartaglia",
+        "Cardano",
+        "Ferrari",
+        "Descartes"
+      ],
+      "keywords_pt": [
+        "equação de terceiro grau",
+        "equação de quarto grau",
+        "Tartaglia",
+        "Cardano",
+        "Ferrari",
+        "Descartes"
+      ],
+      "citation": "Barrantes González, H. (2023). Descripción de algunos métodos de solución de ecuaciones algebraicas de tercer y cuarto grado en una variable: una reseña histórica. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(2). https://doi.org/10.18845/rdmei.v23i2.6554"
+    }
+  ]
+}
