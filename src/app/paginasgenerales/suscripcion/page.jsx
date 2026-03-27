@@ -32,7 +32,7 @@ export default function SuscripcionPage() {
           <div className="h-1.5 bg-tec-red-primary w-full" />
 
           <form
-            action="https://formsubmit.co/1002matamoros@gmail.com"
+            action="https://formsubmit.co/RevistaDigitalMatematica@itcr.ac.cr"
             method="POST"
             className="p-8 space-y-6"
           >
