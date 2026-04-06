@@ -40,21 +40,12 @@ export const metadata = {
     title: "Digital Journal: Mathematics, Education and Internet",
     description:
       "Open-access academic publication by the Costa Rica Institute of Technology, dedicated to disseminating scientific articles in mathematics and education since 2000.",
-    images: [
-      {
-        url: "/og-social.png",
-        width: 512,
-        height: 128,
-        alt: "Digital Journal: Mathematics, Education and Internet",
-      },
-    ],
   },
   twitter: {
     card: "summary",
     title: "Digital Journal: Mathematics, Education and Internet",
     description:
       "Open-access academic publication by TEC dedicated to scientific articles in mathematics and education.",
-    images: ["/og-social.png"],
   },
 };
 
