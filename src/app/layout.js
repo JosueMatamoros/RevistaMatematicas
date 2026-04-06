@@ -3,58 +3,58 @@ import FooterComponent from "@/components/home/FooterComponent";
 import HeaderComponent from "@/components/home/HeaderComponent";
 import { inter, poppins, sourceSans } from "./fonts";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://revistas.tec.ac.cr/matematica";
+const siteOrigin = process.env.NEXT_PUBLIC_SITE_URL || "https://tecdigital.tec.ac.cr";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/servicios/revistamatematica";
+const siteUrl = `${siteOrigin}${basePath}`;
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Revista Digital Matemática, Educación e Internet",
-    template: "%s | Revista Digital Matemática",
+    default: "Digital Journal: Mathematics, Education and Internet",
+    template: "%s | Digital Journal Mathematics",
   },
   description:
-    "Revista Digital: Matemática, Educación e Internet — publicación académica del Tecnológico de Costa Rica dedicada a la difusión de artículos científicos en matemática y educación.",
+    "Digital Journal: Mathematics, Education and Internet — open-access academic publication by the Costa Rica Institute of Technology (TEC), dedicated to disseminating scientific articles in mathematics and education.",
   keywords: [
-    "matemática",
-    "educación matemática",
-    "revista científica",
+    "mathematics",
+    "mathematics education",
+    "scientific journal",
     "TEC",
-    "Tecnológico de Costa Rica",
-    "internet",
-    "artículos académicos",
+    "Costa Rica Institute of Technology",
+    "open access",
+    "academic articles",
   ],
-  authors: [{ name: "Tecnológico de Costa Rica" }],
-  creator: "Tecnológico de Costa Rica",
-  publisher: "Tecnológico de Costa Rica",
+  authors: [{ name: "Costa Rica Institute of Technology" }],
+  creator: "Costa Rica Institute of Technology",
+  publisher: "Costa Rica Institute of Technology",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
     type: "website",
-    locale: "es_CR",
+    locale: "en_US",
+    alternateLocale: "es_CR",
     url: siteUrl,
-    siteName: "Revista Digital Matemática, Educación e Internet",
-    title: "Revista Digital Matemática, Educación e Internet",
+    siteName: "Digital Journal: Mathematics, Education and Internet",
+    title: "Digital Journal: Mathematics, Education and Internet",
     description:
-      "Publicación académica del Tecnológico de Costa Rica dedicada a la difusión de artículos científicos en matemática y educación.",
+      "Open-access academic publication by the Costa Rica Institute of Technology, dedicated to disseminating scientific articles in mathematics and education since 2000.",
     images: [
       {
-        url: "/og-image.png",
-        width: 120,
-        height: 135,
-        alt: "Logo Revista Digital Matemática",
+        url: "/og-social.png",
+        width: 512,
+        height: 128,
+        alt: "Digital Journal: Mathematics, Education and Internet",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Revista Digital Matemática, Educación e Internet",
+    title: "Digital Journal: Mathematics, Education and Internet",
     description:
-      "Publicación académica del TEC dedicada a artículos científicos en matemática y educación.",
-    images: ["/og-image.png"],
-  },
-  icons: {
-    icon: "/og-image.png",
+      "Open-access academic publication by TEC dedicated to scientific articles in mathematics and education.",
+    images: ["/og-social.png"],
   },
 };
 
