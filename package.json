@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "diff": "node scripts/build-diff.js"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",

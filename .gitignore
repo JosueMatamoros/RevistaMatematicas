@@ -39,3 +39,10 @@ package-lock.json
 next-env.d.ts
 
 *.zip
+
+# deploy tools
+.build-checksums.json
+upload-list.txt
+
+
+.claude/
