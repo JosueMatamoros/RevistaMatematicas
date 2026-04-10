@@ -1,0 +1,86 @@
+/* ==================== CONTENEDORES PRINCIPALES ==================== */
+.caja-principal {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Para centrar */
+}
+
+.imagen {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto; /* Mantener proporciones */
+}
+
+/* ==================== CAJAS DE INTERFAZ ==================== */
+.micaja, .interseccion-caja {
+    border: 1px solid lightgray;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin: 20px auto;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.micaja {
+    width: 590px;
+}
+
+.interseccion-caja {
+    max-width: 600px;
+}
+
+/* ==================== ELEMENTOS DE CONTROL ==================== */
+.controls {
+    text-align: center;
+    margin: 15px 0;
+    white-space: nowrap;
+}
+
+.controls > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.controls input {
+    width: 72px;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.controls span {
+    font-size: 24px;
+}
+
+/* ==================== CANVAS ==================== */
+canvas {
+    border: 1px solid #ccc;
+    background: white;
+    display: block;
+    margin: 0 auto;
+}
+
+#canvasIntersect {
+    /* Estilos específicos si son necesarios */
+}
+
+/* ==================== TÍTULOS ==================== */
+.titulo {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}

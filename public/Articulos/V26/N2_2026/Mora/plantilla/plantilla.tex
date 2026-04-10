@@ -1,0 +1,1006 @@
+
+%% ----------------------------
+%%  Make4ht: Plantilla para traducir LaTeX a html e insertar actividades interactivas con JavaScript
+%% ----------------------------
+
+%% PDFLaTeX se compila como usual.
+
+
+%% .: Make4ht  Compilar en terminal .:
+
+% make4ht  --utf8 -c config.cfg  -f html5   -d SitioWeb  plantilla.tex "mathml,svg,Gin-dim"
+
+
+
+\documentclass[fleqn,oneside]{article}
+\input{Paquetes/WebPreambuloyEntornos.tex}
+% incluya en este archivo sus comandos.
+\input{Paquetes/ComandosdelUsuario.tex}
+
+
+\title{\fhvb{16}{Crear una  Web Interactica con LaTeX (usando Make4ht e IA)}}
+\author{\fvnp{Walter Mora Flores}\\ \fvn{make4ht, html y ccs}}
+\date{} % Elimina la fecha
+
+%% ------ Importante -----------------------
+%% 1.:  El código que carga archivos .css y archivos .js está en el archivo config.cfg
+%% 2.:  Requiere MikteX o TexLive o MacTeX *2025* o más
+%% 3.:  La compilación óptima: use Linux (Ubuntu por ejemplo)
+%%-------------------------------------------
+
+% make4ht  --utf8  -c config.cfg  -f html5   -d SitioWeb  plantilla.tex "mathml,svg,Gin-dim"
+
+%% 4.: Es usual, después de compilar con PDFLATEX y luego Make4ht que aparezca un error debido al .aux.  Ignórelo, en la segunda compilación desaparece
+%%-------------------------------------------
+
+
+
+
+\begin{document}%-
+%%-- Cosas de formato
+\def\contentsname{Contenido}
+\def\refname{Bibliografía}    % Para documentos clase "article"
+\def\bibname{Bibliografía}    % Para documentos clase "report" o "book"
+\def\tablename{Tabla}
+\def\figurename{Figura}
+\thispagestyle{plain} % Usa 'plain' para mantener numeración sin encabezado
+\parindent=0mm
+%%--
+
+\maketitle
+\solopdf{\tableofcontents} % automático: solo compila para pdf
+\solomk{\cejilla{Contenido}{\tableofcontents}}  % automático: solo compila make4ht
+
+
+
+
+\begin{resumen}
+Este documento presenta una  plantilla  configurada para convertir documentos LaTeX en páginas web interactivas utilizando  Make4ht. Se abordan temas como la configuración de Make4ht, la conversión de entornos complejos a imágenes SVG, y con la asistencia de la IA, la inclusión de actividades interactivas con HTML, JavaScript y CSS, y la integración de elementos multimedia como applets de GeoGebra y videos de YouTube. El enfoque bimodal permite generar tanto PDF como HTML, aprovechando las ventajas de cada formato: el PDF para impresión y citación formal, y el HTML para accesibilidad e interactividad en dispositivos digitales.
+\end{resumen}
+
+\palabrasclave{Palabras clave: Make4ht, LaTeX, HTML, interactividad, JavaScript, IA} contenido interactivo). \\
+
+
+\label{sec:introduccion}
+\section{Introducción}
+Un documento \tt{.tex} se puede compilar de varias maneras. En nuestro caso, necesitamos una salida bimodal: un documento PDF y un documento HTML (para añadir contenido interactivo).
+
+El formato HTML ofrece accesibilidad, interactividad y un mayor alcance en el entorno digital actual. Generar el HTML desde un archivo LaTeX  permite aplicar revisiones y/o modificaciones al archivo \tt{.tex} sin necesidad de tener que volver a editar manualmente la salida HTML.\\
+
+Mientras el formato PDF es ideal para impresión y citación formal, el HTML se adapta a cualquier dispositivo y permite integrar elementos dinámicos como visualizaciones, actividades interactivas y contenido multimedia. Este enfoque promueve la ciencia abierta y la educación digital al hacer el contenido más flexible y accesible.\\
+
+
+
+ \fvnp{Paquetes soportados.} Podemos agregar paquetes y comandos personales, en el archivo \tt{ComandosdelUsuario.tex} que está en la carpeta "Paquetes".   Make4ht soporta una lista amplia de paquetes esenciales: Incluye los paquetes que usualmente usamos, solo debe mantener los comandos personales "simples".
+
+\fvnp{Paquetes no soportados.} Hay varios paquetes como
+\tt {Nicematrix, Polynomial, hhline}, etc. que no son soportados por Make4ht.
+Si tenemos código con  paquetes no soportados, como veremos más abajo, usamos el comando \lstinline+\solopdf{...}+ para que Make4ht los ignore y,
+en el \tt{.html}, se pueden incluir imágenes o podemos usar código equivalente (simplificado) en \tt{.tex}, que sea
+soportado por Make4ht y usar el comando \lstinline+\solomk{...}+ (Make4ht lo compila pero PDFLaTeX lo ignora),
+o insertar directamente un equivalente en código  HTML, con el comando \lstinline+\insertarhtml{...}+.
+Use la IA como asistente, es buena idea.
+
+ \subsection{Compilar esta plantilla} Make4ht  ofrece varias opciones de compilación a través de un archivo de configuración y/o con opciones entre comillas. En este documento mayormente compilamos
+ \tt{en la terminal}, la línea de compilación se muestra en la el código \ref{code2}
+
+ %
+ \bigskip\begin{lstlisting}[caption={Compilar en terminal}, label={code2}]
+ make4ht  --utf8 -c config.cfg  -f html5   -d SitioWeb  plantilla.tex "mathml,mathjax,svg,Gin-dim"
+ % opción limpiar:  agregar -m clean (y quitar después)
+ % opción debug:    agregar -a debug
+ \end{lstlisting}
+
+
+
+ \subsection{Entorno \tt{minipage}}  La práctica usual de colocar un \tt{minipage} al lado de otro \tt{minpage} está configurado en el archivo \tt{config.cfg} (porque necesitamos manejar de manera correcta las dimensiones de cada \tt{minipage}). En la versión más reciente de Make4ht (2026) ya viene configurado internamente.
+
+Es conveniente, para que Make4ht traduzca bien, usar el formato que se muestra en la Figura \ref{fminipage} y en código \ref{codeminipage}
+
+\begin{center}
+\input{images/minipage.tex}
+\captionof{figure}{Entorno \tt{minipage}}\label{fminipage}
+\end{center}
+
+%
+\bigskip\begin{lstlisting}[caption={Editar entorno minipage},label={codeminipage}]
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.x\textwidth}
+		% Contenido 1...
+	\end{minipage}\hfill\begin{minipage}{0.y\textwidth}
+		% Contenido 2...
+	\end{minipage}
+\end{minipage}
+\end{lstlisting}
+
+
+
+\bigskip
+\textbf{Ejemplo.} En el código \ref{codeminipagetf} se muestra cómo colocar, en un entorno \tt{minipage},  texto a la izquierda y una figura a la derecha,  con  \lstinline+\captionof{figure}+. Agregamos un par de líneas horizontales con \lstinline+\linea+ (definida en el preámbulo, correcta para PDFLaTeX y Make4ht).
+
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Minipage con texto y figura},label={codeminipagetf}]
+\linea
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.6\textwidth}
+	\vspace{-2\baselineskip} % solo aplica para pdf
+	El espacio Euclidiano es  $\R^2$, con  la métrica
+	\[
+	ds^2=dx^2+dy^2
+	\]
+	En este modelo, la distancia más corta entre dos puntos
+	es una línea recta
+	\end{minipage}\hfill\begin{minipage}{0.35\textwidth}
+	\begin{center}
+	\includegraphics{images/fig3.png}\captionof{figure}{Camino más corto}
+	\end{center}
+	\end{minipage}
+\end{minipage}
+\linea
+\end{lstlisting}
+%
+
+\bigskip
+\linea
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.6\textwidth}
+		 \vspace{-2\baselineskip} % solo aplica para pdf
+		El espacio Euclidiano es  $\R^2$, con  la métrica
+		\[
+		ds^2=dx^2+dy^2
+		\]
+		En este modelo, la distancia más corta entre dos puntos es una línea recta
+	\end{minipage}\hfill\begin{minipage}{0.35\textwidth}
+		\begin{center}
+		\includegraphics{images/fig3.png}\captionof{figure}{Camino más corto}
+		\end{center}
+	\end{minipage}
+\end{minipage}
+\linea
+
+
+\subsection{Matrices, ecuaciones y arreglos} Make4ht traduce estos entornos sin problema. Entornos demasiado complejos, posiblemente sea mejor, insertarlos en el HTML como una imagen SVG, como se indica en  el apéndice \ref{tosvg}, o generar el equivalente HTML con IA, si se pudiera.
+
+
+El código completo de  algunos ejemplos,  se puede ver en el archivo \tt{plantilla.tex}
+
+\be
+\item El código \ref{codeequnderb} muestra un ejemplo  del entorno \tt{equation}  con \tt{underbrace}
+
+
+\bigskip\begin{lstlisting}[caption={\tt{equation} con \tt{underbrace}},label={codeequnderb}]
+\begin{equation}
+  \norm{f - L}_{\infty} = \overbrace{\abs{\frac{K_2}{2}}}^{\mathclap{\text{worst $f''(x)$ }}}\underbrace{\left(\frac{h}{2}\right)^2}_{\mathclap{\text{worst (b - a)}}}
+\end{equation}
+\end{lstlisting}
+
+
+\begin{equation}
+	\norm{f - L}_{\infty} = \overbrace{\abs{\frac{K_2}{2}}}^{\mathclap{\text{worst $f''(x)$ }}}\underbrace{\left(\frac{h}{2}\right)^2}_{\mathclap{\text{worst (b - a)}}}
+\end{equation}
+
+
+\item[$\bullet$]  El código \ref{codeeqcases} muestra un ejemplo  del entorno \tt{equation}  con \tt{cases}\\
+
+
+%
+\bigskip\begin{lstlisting}[caption={\tt{equation} y \tt{cases}},label={codeeqcases}]
+\begin{equation}\label{eq:cases}
+S_{i,t}=
+\begin{cases}
+ \begin{cases}
+  [x_{i,t}=X^*, r_{i,t}=1] & \text{if  $\max\{X_{i,t}\}=X^*$} \\
+  [x_{i,t}=\max\{X_{i,t}\}, r_{i,t}=0] & \text{if $\max\{X_{i,t}\} \neq X^*$}
+ \end{cases}
+  &\text{if $\sum_{i=1}^I u_{i,t-1}= \theta^{t-2} X^*$}\\
+ \begin{cases}
+  [x_{i,t}=1, r_{i,t}=1] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\}=1$} \\
+  [x_{i,t}=\min\{X_{i,t}\}, r_{i,t}=0] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\} \neq 1$}
+ \end{cases}
+ &\text{otherwise}
+ \end{cases}
+\end{equation}
+\end{lstlisting}
+%
+
+\bigskip
+\begin{equation}\label{eq:cases}
+	S_{i,t}=
+	\begin{cases}
+		\begin{cases}
+			[x_{i,t}=X^*, r_{i,t}=1] & \text{if  $\max\{X_{i,t}\}=X^*$} \\
+			[x_{i,t}=\max\{X_{i,t}\}, r_{i,t}=0] & \text{if $\max\{X_{i,t}\} \neq X^*$}
+		\end{cases}
+		&\text{if $\sum_{i=1}^I u_{i,t-1}= \theta^{t-2} X^*$}\\
+		\begin{cases}
+			[x_{i,t}=1, r_{i,t}=1] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\}=1$} \\
+			[x_{i,t}=\min\{X_{i,t}\}, r_{i,t}=0] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\} \neq 1$}
+		\end{cases}
+		&\text{otherwise}
+	\end{cases}
+\end{equation}
+
+
+\bigskip
+Hacemos referencia a los entornos en la manera usual.\\
+
+El código: \lstinline+En la ecuación \ref{eq:cases}, o el formato  \eqref{eq:cases}, se tiene que ...+ produce:
+En la ecuación \ref{eq:cases}, o el formato  \eqref{eq:cases}, se tiene que ...\\
+
+
+
+\item[$\bullet$] Entorno \tt{equation} con \tt{array}\\
+\begin{equation*}
+	{\underbrace{
+			\mspace{3mu}
+			\left(\begin{array}{c} b_1 \\ b_2 \\ b_3 \\ \vdots \\ b_n \end{array}\right)
+			\mspace{3mu}
+		}_{\textstyle\mathstrut\boldsymbol{b}}} =
+	{\underbrace{
+			\left(\begin{array}{*{5}{c}}
+				s_{11} & s_{12} & s_{13} & \dots & s_{1n} \\
+				s_{21} & s_{22} & s_{23} & \dots & s_{2n} \\
+				s_{31} & s_{32} & s_{33} & \dots & s_{3n} \\
+				\vdots & \vdots & \vdots & \ddots& \vdots \\
+				s_{n1} & \dots  & \dots  & \dots & s_{nn}
+			\end{array}\right)
+		}_{\textstyle\mathstrut\boldsymbol {S}}}
+	\mspace{3mu}\cdot
+	{\underbrace{
+			\mspace{3mu}
+			\left(\begin{array}{c} a_1 \\ a_2 \\ a_3 \\ \vdots \\ a_n \end{array}\right)
+			\mspace{3mu}
+		}_{\textstyle\mathstrut\boldsymbol{a}}}
+\end{equation*}
+
+\item[$\bullet$] Entorno \tt{pmatrix} con \tt{block}\\
+
+\[
+\underbrace{
+	\begin{pmatrix}
+		1 & \smash[b]{\underbrace{1 \cdots 1}_{k}} \\
+		&& 1 & \smash[b]{\underbrace{1 \cdots 1}_{k}} \\
+		&&&& \ddots \\
+		&&&&& 1 & \underbrace{1 \cdots 1}_{k}
+	\end{pmatrix}
+}_{T}
+\]
+
+\ee
+
+
+\subsection{Listas de ejercicios}\label{listaejercicios} El documento \tt{plantilla.tex} usa el paquete \tt{exsheets} para manejar listas de ejercicios al compilar con PDFLaTeX. En el preámbulo podremos ver el código que muestra \ref{codeexs}
+
+
+\bigskip\begin{lstlisting}[caption={Habilitar \tt{exsheets} para PDFLaTeX},label={codeexs}]
+\ifdefined\HCode % Paquete de ejercicios exsheets,no soportado por Make4ht
+\else % compila PDFLatex
+\usepackage[counter-format=se.qu,counter-within=section]{exsheets}
+\DeclareTranslation{english}{exsheets-exercise-name}{\textcolor{tverde}{Ejercicio}}
+\DeclareTranslation{english}{exsheets-question-name}{\textcolor{tverde}{Pregunta}}
+ \DeclareTranslation{english}{exsheets-solution-name}{\textcolor{tverde}{Solución}}
+\SetupExSheets{
+	question/pre-body-hook = {\normalfont},
+	solution/pre-hook = {\par\medskip},
+}
+\fi
+\end{lstlisting}
+
+
+Cuando compilamos con Make4ht, usamos el mismo código que en PDFLaTeX, solo que en el preámbulo se han definido los comandos para que PDFLaTeX lo interprete de una forma y Make4ht de otra, de tal manera que tengamos listas de ejercicios en ambos ambientes usando el mismo código.
+
+\be
+\item \lstinline+\hejersol{}{}+. Este comando lo ignora PDFLaTeX y Make4ht lo convierte en un enunciado con un botón Ver/Ocultar, para ver la respuesta en el renglón que sigue.
+
+\item \lstinline+\ejersol{}{}+.
+
+Este comando funciona para PDFLaTeX y Make4ht. PDFLaTeX lo convierte en un ejercicio normal y, para ver las soluciones,  se pone al final del documento
+
+\lstinline+\solopdf{ \section*{Respuestas} \printsolutions }{} +
+\ee
+
+
+Si compilamos con  Make4ht, \lstinline+\ejersol{}{}+ se convierte en  \lstinline+\hejersol{}{}+.
+La idea es que a veces, un mismo ejercicio tiene un enunciado en el PDF, digamos con una figura fija por ejemplo, mientras que el enunciado en HTML no necesita la figura porque viene con otra cosa, por ejemplo un script.
+
+
+\textbf{Ejemplo.} En el código \ref{codelejer} se muestra una lista de ejercicios. La salida en PDF corresponde al formato del paquete \tt{exsheets}, la salida en HTML es una lista de enunciados con un botón para ver/ocultar la respuesta. La \tt{plantilla.tex} contiene el código para insertar el script que gobierna el botón y su acción.
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Lista de ejercicios},label={codelejer}]
+% Ejercicio 1:
+\hejersol{Resuelve para $x$: $\frac{2}{3}x + 5 = 10$}{La solución es $x = \frac{15}{2}$}\\
+% Ejercicio 2:
+\ejersol{Calcula el área de un cuadrado de lado 3 cm}{$9\ \text{cm}^2$}\\
+% Ejercicio 3:
+\ejersol{Deriva $f(x) = 3x^2 + 2x - 1$}{$f'(x) = 6x + 2$}\\
+% Ejercicio 4:
+\ejersol{Simplifica $\sin^2 \theta + \cos^2 \theta$}{$1$}\\
+% Ejercicio 5:  Solo PDFLaTeX
+\solopdf{\ejersol{Calcula la velocidad final si $v_0=10\,m/s$,
+        $a=2\,m/s^2$ y $t=3\,s$}{$16\,m/s$}
+        }\\
+% Ejercicio 6: Solo Make4ht
+\solomk{\hejersol{Encuentra la energía cinética de un objeto de 5 kg
+           moviéndose a 4 m/s}{$40\,J$}
+        }\\
+% Ejercicio 7:  Solo Make4ht
+\hejersol{Halla la corriente si $V=12\,V$ y $R=4\,\Omega$}{$3\,A$}\\
+
+% Al finaldel documento: \solopdf{ \section*{Respuestas} \printsolutions }{}
+\end{lstlisting}
+
+\solopdf{En la Figura \ref{desplegable} podemos ver el desplegable con la solucón en el HTML}
+
+
+% Ejercicio 1: Álgebra
+\ejersol{Resuelve la ecuación $\frac{2}{3}x + 5 = 10$
+}{La solución es $x = \frac{15}{2}$}
+
+\solopdf{
+\includegraphics[width=1\textwidth]{images/botonVerOcultar.png}
+\captionof{figure}{Desplegable HTML,  para ejercicio y solución}\label{desplegable}
+}
+
+% Ejercicio 2: Geometría
+\ejersol{Calcular el área de un cuadrado de lado 3 cm}{$9\ \text{cm}^2$}
+
+% Ejercicio 3: Cálculo
+\ejersol{Derivar $f(x) = 3x^2 + 2x - 1$}{$f'(x) = 6x + 2$}
+
+% Ejercicio 4: Trigonometría
+\ejersol{Simplificar $\sin^2 \theta + \cos^2 \theta$}{$1$}
+
+% 1. Cinemática: Solo PDFLaTeX
+\solopdf{\ejersol{Calcula la velocidad final si $v_0=10\,m/s$, $a=2\,m/s^2$ y $t=3\,s$}{$16\,m/s$}
+}
+
+% 2. Energía: Solo Make4ht
+\solomk{ \ejersol{Encuentra la energía cinética de un objeto de 5 kg moviéndose a 4 m/s}{$40\,J$} }
+
+% 3. Electricidad: Solo Make4ht
+\hejersol{Halla la corriente si $V=12\,V$ y $R=4\,\Omega$}{$3\,A$}
+
+\subsection{Tabla de contenidos: Ver/Ocultar} La tabla de contenidos en el PDF
+se obtiene con \lstinline+\tableofcontents+. Make4ht compila \lstinline+\tableofcontents+ y genera una tabla de contenidos adecuada para el HTML.\\
+
+La plantilla incluye un botón \lstinline+\cejilla{#1}{#2}+ que abre y cierra una ventana (un "desplegable"). Lo podemos usar, entre muchas cosas, para desplegar  el "Contenido" en la \tt{plantilla.html}. Se requiere un script \tt{cejilla.js} y un archivo \tt{cejilla.css} que ya están en las carpetas CSS  y JS. El código \ref{codebtc} muestra la manera de habilitar el botón. \solopdf{ La Figura \ref{fig:codebtc} es una vista de cómo se ve en el HTML}.
+
+
+\bigskip\begin{lstlisting}[caption={plantilla.tex},label={codebtc}]
+\begin{document}
+\maketitle
+\solopdf{\tableofcontents} % Genera la tabla de contenidos
+% Desplegable de propósito general
+\solomk{\cejilla{Tabla de contenidos}{\tableofcontents}}
+\end{lstlisting}
+
+\solopdf{\begin{center}
+\wref{RevistaDigital_V25_n2_2025_Mora.html\#ancla-botonTablaContenidos}{
+ \includegraphics[width=\textwidth]{images/botontcontenidos.png}}
+ \captionof{figure}{Botón para desplegar la tabla de contenidos}\label{fig:codebtc}
+\end{center}
+}
+
+
+\solomk{
+\cejilla{Tabla de contenidos}{%
+   \tableofcontents
+}}
+
+
+\section{Entornos definición, teorema, ejemplo, etc.}
+La plantilla tiene varios entornos ya configurados para que compilen bien con Make4ht.
+Agregar nuevos entornos posiblemente requiera agregar nuevo código al archivo de configuración \tt{config.cfg} (ver sección \ref{sec:configurarmake4ht}). Lo recomendable es usar los modelos que ya están en este archivo. Si usa IA para configurar algún nuevo entorno, lo mejor es indicarle que genere  código siguiendo esos modelos ya probados y avalados por la documentacion más reciente.
+
+Para el PDF d ela plantilla, las cosas de  dise\~no  de cada entorno, como bordes, color, color de fondo, etc. se puede modificar en \tt{WebPreambuloyEntornos.tex}.
+
+Modificar el dise\~no de cada entorno, para la salida HTML,
+requiere modificar entre otras cosas, el  \lstinline+\Css{...}+ del entorno en el  archivo \tt{config.cfg}. Por ejemplo, el código \ref{codeedef} muestra parte  del dise\~no del entorno para las definiciones (además se debe controlar los cierres de etiquetas y los entornos \tt{minipage} dentro de las definiciones).
+
+
+\bigskip\begin{lstlisting}[caption={Parte del dise\~no para el entorno "definicion" (ya implementado).},label={codeedef}]
+% Archivo config.cfg
+\Css{% No dejar renglones en blanco y "escapar" \# y \%
+ .definicion {
+   background-color: rgb(251, 251, 250);
+   border-left: 4pt solid rgb(255, 20, 147);
+   margin: 20pt 0;
+   padding: 0pt 4pt 0 4pt;
+   overflow: auto;
+   clear: both;
+	}
+  .definicion-title {
+   color: rgb(255, 20, 147);
+   font-weight: bold;
+   margin-bottom: 0.5em;
+   display: block;
+}																									\end{lstlisting}
+
+
+
+A continuación tenemos una lista de entornos con ejemplos.
+
+\be % Entornos
+\item Definiciones. El código \ref{codeudef}  muestra el formato general de una definición.
+
+%
+\bigskip\begin{lstlisting}[caption={Una definición},label={codeudef}]
+\label{def:defi1}
+\begin{definicion}[nombre-opcional]
+ Contenido...
+\end{definicion}
+\end{lstlisting}
+%
+
+\bigskip
+$\bullet$\; Una definción con nombre.\\
+
+\label{def:defi1}
+\begin{definicion}[Envoltura Convexa]
+Sea $S \subset \mathbb{R}^n$  un conjunto de puntos. La {\it envoltura convexa} de $S$, denotada por
+ $\text{Conv}(S)$, es el conjunto convexo más pequeño que contiene a $S$. Formalmente:
+
+\[
+\text{Conv}(S) = \left\{ \sum_{i=1}^{k} \lambda_i x_i \;\middle|\; x_i \in S,\; \lambda_i \geq 0,\; \sum_{i=1}^{k} \lambda_i = 1,\; k \in \mathbb{N} \right\}
+\]
+
+Es decir, \( \text{Conv}(S) \) está formado por todas las combinaciones convexas finitas de puntos de $ S $.
+\end{definicion}
+%
+
+\bigskip
+Bien, ahora podemos hacer referencia con usual con  \lstinline+\ref+: En la Definición \ref{def:defi1}...\\
+
+\bigskip
+%-----------------------------------------------------------------------------
+\solomk{
+	\begin{minipage}[t]{1.0\textwidth}
+	\begin{minipage}{0.65\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+		El punto \( P = (3,1) \) está dentro del triángulo pues:
+		\[
+		P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+		\]
+		Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+	\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+	\begin{center}
+	\includegraphics[scale=0.6]{images/fig2.svg}\captionof{figure}{
+		$\triangle ABC$}\label{ej:ejemplo20}
+		\end{center}
+	\end{minipage}
+\end{minipage}
+}
+\insertarhtml{<hr style="height:1px;border-width:0;color:gray;background-color:gray">}
+
+%-----------------------------------------------------------------------------
+
+
+\bigskip
+$\bullet$\; Una definición con \tt{minipage} y una nota \lstinline+\footnote{...}+
+
+\bigskip
+\solopdf{% PDFLaTeX->pdf
+\begin{definicion}[Modelo para Geometría Hipérbolica]
+	\begin{minipage}[t]{1.0\textwidth}
+		\begin{minipage}{0.65\textwidth}
+Un modelo para la geometría hiperbólica es el \tt{semiplano superior}
+\[
+\mathbb{H} = \left\{ (x, y) \in \mathbb{R}^2 \,\middle|\, y > 0 \right\}
+\]
+equipado con la métrica
+\[
+ds^2 = \frac{dx^2 + dy^2}{y^2}.
+\]
+
+Al conjunto $\mathbb{H}$ se le llama \tt{semiplano superior de Poincaré}.
+\footnote{En honor al gran matemático francés que lo descubrió.}
+		\end{minipage}\hfill\begin{minipage}{0.32\textwidth}
+		\centering
+			\includegraphics[scale=0.4]{images/paralelasPoincare.pdf}
+			\captionof{figure}{Rectas paralelas}\label{ej:ejemplo1}
+		\end{minipage}
+	\end{minipage}
+\end{definicion}
+}
+\solomk{% Make4ht -> html
+\begin{definicion}[Modelo para Geometría Hipérbolica]
+	\begin{minipage}[t]{1.0\textwidth}
+		\begin{minipage}{0.65\textwidth}
+Un modelo para la geometría hiperbólica es el \tt{semiplano superior}
+\[
+\mathbb{H} = \left\{ (x, y) \in \mathbb{R}^2 \,\middle|\, y > 0 \right\}
+\]
+equipado con la métrica
+\[
+ds^2 = \frac{dx^2 + dy^2}{y^2}. \tag{C}
+\]
+
+Al conjunto $\mathbb{H}$ se le llama \tt{semiplano superior de Poincaré}.\footnote{En honor al gran matemático francés que lo descubrió.}
+		\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+		\centering
+			\includegraphics{images/paralelasPoincare.svg}
+			\captionof{figure}{Rectas paralelas}\label{ej:ejemplo1}
+		\end{minipage}
+	\end{minipage}
+\end{definicion}
+}
+
+
+\bigskip
+\item Teoremas. El código \ref{codeuteo}  muestra el formato general de un teorema.\\
+
+%
+\bigskip\begin{lstlisting}[caption={Un teorema},label={codeuteo}]
+\label{teo:teo1}
+\begin{teorema}[nombre-opcional]
+		Contenido...
+\end{teorema}
+\end{lstlisting}
+%
+
+\bigskip
+$\bullet$\; Teorema con nombre.\\
+
+
+\label{teo:teo1}
+\begin{teorema}[Parametrización de un triángulo]
+Sean $A,B,C \in \R^2$ no colineales entonces existen $t,s,w$ únicos tales que
+$$\triangle ABC=
+\{t A + s B + w C,
+\quad \text{donde } t,s,w\geq 0, \quad
+t+s+w = 1\}
+$$
+\end{teorema}
+
+\bigskip
+$\bullet$\; El código \ref{codeuteodem} muestra un teorema con demostración. Usamos  un entorno \tt{caja} que ya está configurado. Es una caja simple, con fondo blanco pero tiene atributos bien definidos en la configuración para la  traducción a HTML.\\
+
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Un teorema con demostración},label={codeuteodem}]
+\label{teo:teo2}
+\begin{teorema}[La recta es el camino más corto]
+...
+\begin{caja}[Demostración.]
+...
+\end{caja}
+\end{teorema}
+\end{lstlisting}
+
+
+\bigskip
+\label{teo:teo2}
+\begin{teorema}[La recta es el camino más corto]
+En el plano euclidiano $\mathbb{R}^2$ con la métrica usual, el camino más corto entre dos puntos $A$ y $B$ es el segmento de recta que los une.
+%
+\begin{caja}[Demostración]
+Sea \(x\) un número real arbitrario.
+Sea $\gamma(t) = (x(t), y(t))$ una curva suave que une dos puntos $A$ y $B$ en el intervalo $[a, b]$. Su longitud es:
+\[
+L[\gamma] = \int_a^b \sqrt{x'(t)^2 + y'(t)^2}\, dt.
+\]
+
+Aplicamos la desigualdad de Cauchy–Schwarz:
+\[
+L[\gamma] \geq \sqrt{(x(b) - x(a))^2 + (y(b) - y(a))^2},
+\]
+con igualdad si y solo si $\gamma'(t)$ es constante y paralelo al vector $B - A$, es decir, si $\gamma$ es una recta.
+
+Por lo tanto, la longitud mínima se alcanza exactamente cuando $\gamma$ es el segmento de recta entre $A$ y $B$.\hfill\qedsymbol
+\end{caja}
+%
+\end{teorema}
+
+
+
+\bigskip
+En el HTML También podemos usar el comando \lstinline+\cejilla{demostracion}{...}+ para ocultar latdemostración con en una ventana desplegable, como se muestra en el código \ref{codeuteodemb}
+
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Un teorema y demostración desplegable},label={codeuteodemb}]
+\solomk{
+\label{teo:teo2}
+\begin{teorema}[La recta es el camino más corto]
+En el plano euclidiano $\mathbb{R}^2$
+...
+\end{teorema}
+% Desplegable
+\cejilla{Demostración}{
+\begin{caja}
+Sea \(x\) un número real arbitrario.
+...
+\end{caja}
+}%cejilla
+}%solomk
+\end{lstlisting}
+
+
+\bigskip
+\solomk{
+\label{teo:teo2a}
+\begin{teorema}[La recta es el camino más corto]
+En el plano euclidiano $\mathbb{R}^2$ con la métrica usual, el camino más corto entre dos puntos $A$ y $B$ es el segmento de recta que los une.
+\end{teorema}
+\cejilla{Demostración}{
+\begin{caja}
+Sea \(x\) un número real arbitrario.
+Sea $\gamma(t) = (x(t), y(t))$ una curva suave que une dos puntos $A$ y $B$ en el intervalo $[a, b]$. Su longitud es:
+\[
+L[\gamma] = \int_a^b \sqrt{x'(t)^2 + y'(t)^2}\, dt.
+\]
+
+Aplicamos la desigualdad de Cauchy–Schwarz:
+\[
+L[\gamma] \geq \sqrt{(x(b) - x(a))^2 + (y(b) - y(a))^2},
+\]
+con igualdad si y solo si $\gamma'(t)$ es constante y paralelo al vector $B - A$, es decir, si $\gamma$ es una recta.
+
+Por lo tanto, la longitud mínima se alcanza exactamente cuando $\gamma$ es el segmento de recta entre $A$ y $B$.\hfill\qedsymbol
+\end{caja}
+}
+}%%solomk
+
+
+
+\bigskip
+ \item El código \ref{codeuej}  muestra el formato general de un  ejemplo ilustrativo.
+
+\bigskip
+  \bigskip\begin{lstlisting}[caption={Un ejemplo},label={codeuej}]
+\label{ej:ejemplo1}
+\begin{ejemplo}[nombre-opcional]
+ % Enunciado
+\end{ejemplo}
+\end{lstlisting}
+
+
+\bigskip
+\textbf{Ejemplo:} El código,  \ref{codeuejsol} muestra un ejemplo con un entorno \tt{minipage}\\
+
+ \bigskip\begin{lstlisting}[caption={Un ejemplo con solución},label={codeuejsol}]
+\solopdf{ % PDFLaTeX -> pdf
+\label{ej:ejemplo1}
+\begin{ejemplo}[Punto dentro del triángulo]
+   \begin{minipage}{0.7\textwidth}
+	  Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+        ...
+   \end{minipage}\hfill\begin{minipage}{0.2\textwidth}
+       ...
+    \includegraphics[scale=0.7]{images/fig2.pdf}
+  \end{minipage}
+\end{ejemplo}
+ }
+ \solomk{  % Make4ht -> html
+\label{ej:ejemplo1}
+\begin{ejemplo}[Punto dentro del triángulo]
+   \begin{minipage}{0.7\textwidth}
+	  Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+        ...
+   \end{minipage}\hfill\begin{minipage}{0.2\textwidth}
+       ...
+   \includegraphics[scale=0.7]{images/fig2.svg}
+   \end{minipage}
+   \end{ejemplo}
+\end{ejemplo}
+}
+ \end{lstlisting}
+
+
+  \bigskip
+   \solopdf{ %pdf
+  	\label{ej:ejemplo1}
+  	\begin{ejemplo}[Punto dentro del triángulo]
+  		\begin{minipage}{0.65\textwidth}
+  		Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+ 		El punto \( P = (3,1) \) está dentro del triángulo $\triangle ABC$ pues, como este triágulo es un conjunto comvexo y
+  			\[
+  			P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+  			\]
+  			 entonces se concluye que \( P \in \text{Conv}\{A,B,C\} =\triangle ABC \).
+  		\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+  			\centering\includegraphics{images/fig2.pdf}\captionof{figure}{
+  				\(\triangle ABC\) y \(P\)}\label{fig:ejemplo2}
+  		\end{minipage}
+  	\end{ejemplo}
+ %
+ }
+ \solomk{  % html---------------------------------
+ %
+ 	\label{ej:ejemplo1}
+  	\begin{ejemplo}[Punto dentro del triángulo]
+  	\begin{minipage}{1.0\textwidth}
+  		\begin{minipage}{0.65\textwidth}
+  		Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+ 		El punto \( P = (3,1) \) está dentro del triángulo $\triangle ABC$ pues, como este triágulo es un conjunto comvexo y
+  			\[
+  			P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+  			\]
+  			 entonces se concluye que \( P \in \text{Conv}\{A,B,C\} =\triangle ABC \).
+  		\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+  			\begin{center}\includegraphics{images/fig2.svg}\captionof{figure}{
+  				\(\triangle ABC\) y \(P\)}\label{fig:ejemplo2}
+  				\end{center}
+  		\end{minipage}
+	\end{minipage}
+  	\end{ejemplo}
+ } %html---------------------------------
+
+
+ \bigskip
+También podemos editar un ejemplo con solución, usando el entorno \lstinline+\begin{caja}[Solución]+.\\
+
+
+\begin{ejemplo}[Punto fuera del triángulo]%
+		Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \). Sea \( P = (3,4) \).
+		Verifique que \( P \) está fuera del triángulo \( \triangle ABC \).\\
+%solucion
+\begin{caja}[Solución]
+		Resolviendo el sistema \(3\times 3\)
+		\[
+		P = t A + s B + w C,\quad t + s + w = 1,
+		\]
+		obtenemos la única solución \( t=-1, \, s=2,\, w=0 \), y como uno de los coeficientes es negativo,
+		\( P \notin \text{Conv}\{A,B,C\} =\triangle ABC\). \hfill \qedsymbol
+\end{caja}
+\end{ejemplo}
+ \ee % Fin entornos
+
+ \bigskip
+En esta plantilla se han definido más entornos. El dise\~no se puede modoficar tanto en el archivo \tt{WebPreambuloyEntornos.tex}(paraPDFLaTeX) como en el archivo de configuración \tt{config.cfg} (para Make4ht). La lista de entornos es\\
+
+
+
+    \begin{enumerate}
+        \item \lstinline+\ObjetivoGeneral{...}+
+        \item \lstinline+\ObjetivosEspecificos{...}+
+        \item \lstinline+\resumen{...}+
+        \item \lstinline+\palabrasclave{...}+
+        \item \lstinline+\abstract{...}+
+        \item \lstinline+\keywords{...}+
+        \item \lstinline+\begin{definicion}...\end{definicion}+
+        \item \lstinline+\begin{teorema}...\end{teorema}+
+        \item \lstinline+\begin{ejemplo}...\end{ejemplo}+
+        \item \lstinline+\begin{corolario}...\end{corolario}+
+        \item \lstinline+\begin{proposicion}...\end{proposicion}+
+        \item \lstinline+\begin{lema}...\end{lema}+
+        \item \lstinline+\begin{caja}...\end{caja}+
+        \item \lstinline+\begin{axioma}...\end{axioma}+
+        \item \lstinline+\begin{actividad}...\end{actividad}+
+        \item \lstinline+\begin{notahistorica}...\end{notahistorica}+
+        \item \lstinline+\begin{problema}...\end{problema}+
+        \item \lstinline+\begin{ejercicio}...\end{ejercicio}+
+        \item \lstinline+\begin{proyecto}...\end{proyecto}+
+        \item \lstinline+\begin{aplicacion}...\end{aplicacion}+
+    \end{enumerate}
+
+
+
+
+    \subsection{Un problema de optimización: Ejercicio y respuesta.}
+
+El área $A$ del trapecio isósceles inscrito en la parte superior de una circunferencia de ecuación $x^2+y^2=16$ se puede escribir en función de la base menor, de longitud $2a$:
+
+\[
+A(a) = \frac{(B + b) \cdot h}{2} = \frac{(8 + 2a) \cdot \sqrt{16 - a^2}}{2}
+\]
+
+Si $a=0$, tendríamos un triángulo de área $8ul^2$. Si nos interesa el valor de $a$ para que el trapecio tenga área máxima, debemos resolver $A'(a)=0$ y, formalmente, verificar que se trata de un máximo global.\\
+
+\solopdf{%PDFLaTeX-> pdf
+En la  Figura \ref{optrapecio} se ilustra la situación.\\
+}
+
+
+\solomk{
+% Make4ht->html
+En el siguiente script podemos, con el deslizador, hacer que $a$ tome los  valores permitidos, es decir, $a\in[0,4]$. En la tabal podemos ver como varía el área y en el gráfico de la derecha vemos que hay un valor de $a$ en que el área es máxima. Y queremos calculor el valor exacto de $a$ en el que el área del trapecio es máxima.
+}
+
+El código \ref{code1popt} muestra como insertar en el HTML la página \tt{.html} completa.\\
+
+
+\bigskip\begin{lstlisting}[caption={Problema de optimización},label={code1popt}]
+\solomk{
+\VentanayAbrirVentanaIndependiente
+  {trapecioOptimizacion.html}  % #1 URL
+  {800}                                % #2 ancho iframe (px)
+  {500}                                % #3 alto iframe (px)
+  {70}                                 % #4 ancho popup (%)
+  {80}                                 % #5 alto popup (%)
+  {Problema de  optimización}                 % #6 título
+  {Puedes interactuar aquí o abrirla en ventana aparte}  % #7
+  }%solomk
+\end{lstlisting}
+
+\solomk{
+ \HCode{<div class="opt-trap-container" id="ancla-proboptimizacion">}
+ \VentanayAbrirVentanaIndependiente
+  {trapecioOptimizacion.html}  % #1 URL
+  {800}                                % #2 ancho iframe (px)
+  {500}                                % #3 alto iframe (px)
+  {70}                                 % #4 ancho popup (%)
+  {80}                                 % #5 alto popup (%)
+  {P}                 % #6 título
+  {Puedes interactuar aquí o abrirla en ventana aparte}  % #7
+ \HCode{</div>}
+ }
+
+
+  \bigskip
+\solopdf{ %PdfLaTeX->pdf
+En el HTML tendríamos algo como lo que muestra la Figura \ref{optrapecio}
+\begin{center}
+\wref{RevistaDigital_V25_n2_2025_Mora.html\#ancla-proboptimizacion}{\includegraphics[scale=0.55]{images/scriptopttrapecio.pdf}}¨
+\captionof{figure}{Script en \tt{plantilla.html}}\label{optrapecio}
+\end{center}
+}
+
+
+\subsubsection{Ejemplos.}
+
+\fvnp{Distribución Normal.} El código \ref{codedngeog} muestra como insertar un applet de Geogebra para visualizar el cálculo de áreas en la \href{https://www.geogebra.org/m/rZ7NHCsS}{Distribución Normal}.\\
+
+\solopdf{%PDFLaTeX -> pdf
+En el documento \tt{plantilla.html} aparece el botón para abrir o cerrar la ventana, con el applet de Geogebra, como se muestra en la Figura \ref{scriptdistribNormal}
+\begin{center}
+\wref{RevistaDigital_V25_n2_2025_Mora.html\#ancla-dngeogebra}{\includegraphics[scale=0.4]{images/scriptdistribNormal.pdf}}
+\captionof{figure}{Script en \tt{plantilla.html}}\label{scriptdistribNormal}
+\end{center}
+}
+
+ \bigskip\begin{lstlisting}[caption={Distribución Normal},label={codedngeog}]
+\solomk{
+\cejilla{Geogebra: Distribución Normal}{
+\insertarhtml{%
+    <iframe scrolling="no" title="Distribución Normal" src="https://www.geogebra.org/material/iframe/id/rZ7NHCsS/width/1366/height/609/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="402px" style="border:0px;"></iframe>
+}
+}%insertarhtml
+}%solomk
+ \end{lstlisting}
+\solomk{
+\cejilla{Geogebra: Distribución Normal}{
+\insertarhtml{% ventana1
+        <iframe scrolling="no" title="Distribución Normal" src="https://www.geogebra.org/material/iframe/id/rZ7NHCsS/width/1366/height/609/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="402px" style="border:0px;"></iframe>
+}
+}%insertarhtml
+}%solomk
+
+
+
+
+
+
+\bigskip
+\fvnp{Tabla de Frecuencias.} Este es otro ejemplo que tomamos de la página de \href{https://www.geogebra.org/materials}{Recursos}. Es un applet de Geogebra con una actividad interactiva con \href{https://www.geogebra.org/m/kOdi0K5V}{tablas de frecuencias} para el  tema de Estadística.\\
+
+El código \ref{codegeotfrec} muestra como insertar en el HTML
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Tabla de frecuencias},label={codegeotfrec}]
+\solomk{
+\cejilla{Geogebra: Tabla de frecuencias}{
+\insertarhtml{% ventana1
+  <iframe scrolling="no" title="Tabla de frecuencias" src="https://www.geogebra.org/material/iframe/id/sxG0ihm3/width/900/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/true/ld/false/sdz/false/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
+}
+}%insertarhtml
+}%solomk
+\end{lstlisting}
+
+
+\solomk{
+\cejilla{Geogebra: Tabla de frecuencias}{
+\insertarhtml{% ventana1
+  <iframe scrolling="no" title="Tabla de frecuencias" src="https://www.geogebra.org/material/iframe/id/sxG0ihm3/width/900/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/true/ld/false/sdz/false/ctl/false" width="800px" height="400px" style="border:0px;"> </iframe>
+}
+}%insertarhtml
+}%solomk
+
+
+
+\subsection{Incrustar videos}
+De manera similar a como incrustamos applets de Geogebra, también incrustamos videos de YouTube, u otra fuente, en la salida HTML de nuestro documento \tt{.tex}. Usamos el mismo comando \lstinline+\cejilla{}{}+.\\
+
+En el video de YouTube que nos interesa, hacemos click en "Compartir" y hacemos click en "Incrustar" y tomamos el código
+\lstinline+<iframe ...>...</iframe>+ y lo insertamos en nuestro HTML.
+
+\subsubsection*{Ejemplo.} \fvnp{El determinante | Esencia del álgebra lineal, capítulo 5.} El canal \href{https://youtube.com/@3blue1brownespanol?si=KPplnrHalBSjb1pB}{3Blue1Brown} tiene como meta usar animaciones para aclarar y motivar temas complejos. Hemos elegido para este ejemplo, el \href{https://youtu.be/yt3eoYvGel0?si=2izQPKrVWe4IvgPM}{capítulo 5} sobre determinantes.\\
+
+El video lo podemos incluir en el HTML con nuestro comando \lstinline+\cejilla{}{}+ o podemos pedir a la IA un archivo \tt{.html} "responsivo" y con otras facetas adecuadas para celular, en este caso usamos el comado \lstinline+\VentanayAbrirVentanaIndependiente+\\
+
+
+En el primer caso, el Código \ref{codevyoutube} muestra como insertar el video en el HTML
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={El determinante: Video de YouTube},label={codevyoutube}]
+% Esto no abre desde  una PC, debe estar en un sitio web
+\insertarhtml{
+\solomk{
+\cejilla{Video: Determinantes}{
+\insertarhtml{
+<iframe width="560" height="315"
+  src="https://www.youtube-nocookie.com/embed/yt3eoYvGel0"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+}
+}%cejilla
+}%solomk
+\end{lstlisting}
+
+
+\solomk{
+\cejilla{Video: Determinantes}{
+\insertarhtml{
+<iframe width="560" height="315"
+  src="https://www.youtube-nocookie.com/embed/yt3eoYvGel0"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+}
+}%cejilla
+}%solomk
+
+\bigskip
+La otra opción se muestra en el  Código \ref{codeVideoB} \\
+
+\bigskip
+\bigskip\begin{lstlisting}[caption={Video sobre determinantes},label={codeVideoB}]
+\solomk{
+\VentanayAbrirVentanaIndependiente
+  {Determinantes.html}  % #1 URL
+  {800}                                % #2 ancho iframe (px)
+  {500}                                % #3 alto iframe (px)
+  {70}                                 % #4 ancho popup (%)
+  {80}                                 % #5 alto popup (%)
+  {Video: Determinantes}                 % #6 título
+  {Puedes interactuar aquí o abrirla en ventana aparte}  % #7
+  }%solomk
+\end{lstlisting}
+
+\bigskip
+\solomk{
+\VentanayAbrirVentanaIndependiente
+  {Determinantes.html}  % #1 URL
+  {800}                                % #2 ancho iframe (px)
+  {500}                                % #3 alto iframe (px)
+  {70}                                 % #4 ancho popup (%)
+  {80}                                 % #5 alto popup (%)
+  {Determinantes}                 % #6 título
+  {Puedes interactuar aquí o abrirla en ventana aparte}  % #7
+  }%solomk
+
+%
+\begin{thebibliography}{9}
+
+	\bibitem{bootstrap}
+	BootstrapMade. (2023). \textit{BootstrapMade: Free and premium Bootstrap templates}. BootstrapMade. \url{https://bootstrapmade.com/}
+
+	\bibitem{bmake4ht}
+	Hoftich, M. (2024). \textit{TeX4ht Documentation by TeX4ht Project}. \url{https://www.kodymirus.cz/tex4ht-doc/tex4ht-doc.html}
+
+	\bibitem{denlinger}
+	Denlinger, C. G. (2010). \textit{Elements of real analysis}. Jones \& Bartlett Publishers.
+
+
+
+\end{thebibliography}
+
+%
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  font-family: sans-serif;
+}
+.tabla-valores svg {
+  background: #fff;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+.tabla-valores {
+  width: 300px;
+  margin-left: 20px;
+}
+.tabla-valores table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+.tabla-valores th, .tabla-valores td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+circle:hover {
+  filter: url(#blur);
+}

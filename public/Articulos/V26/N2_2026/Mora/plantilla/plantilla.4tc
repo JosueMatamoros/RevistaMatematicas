@@ -1,0 +1,40 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contenido}}{3}\relax 
+\doTocEntry\tocsection{1.}{\csname a:TocLink\endcsname{1}{x1-20001.}{QQ2-1-2}{Introducción}}{3}\relax 
+\doTocEntry\tocsubsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Compilar esta plantilla}}{4}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-3002}{}{\numberline {1}Compilar en terminal}}{4}\relax 
+\doTocEntry\tocsubsection{1.2}{\csname a:TocLink\endcsname{1}{x1-40001.2}{QQ2-1-5}{Entorno \textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {minipage}}}}}{4}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-4001r1}{}{\ignorespaces Entorno \textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {minipage}}}}}{figure}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-4003}{}{\numberline {2}Editar entorno minipage}}{4}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-4012}{}{\numberline {3}Minipage con texto y figura}}{5}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-4030r2}{}{\ignorespaces Camino más corto}}{figure}\relax 
+\doTocEntry\tocsubsection{1.3}{\csname a:TocLink\endcsname{1}{x1-50001.3}{QQ2-1-10}{Matrices, ecuaciones y arreglos}}{5}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-5003}{}{\numberline {4}\textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {equation}}} con \textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {underbrace}}}}}{5}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-5009}{}{\numberline {5}\textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {equation}}} y \textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {cases}}}}}{6}\relax 
+\doTocEntry\tocsubsection{1.4}{\csname a:TocLink\endcsname{1}{x1-60001.4}{QQ2-1-13}{Listas de ejercicios}}{7}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-6002}{}{\numberline {6}Habilitar \textcolor {tverde}{{\fontfamily  {phv}\fontsize  {10}{1}\selectfont  {exsheets}}} para PDFLaTeX}}{7}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-6017}{}{\numberline {7}Lista de ejercicios}}{8}\relax 
+\doTocEntry\tocsubsection{1.5}{\csname a:TocLink\endcsname{1}{x1-70001.5}{QQ2-1-16}{Tabla de contenidos: Ver/Ocultar}}{8}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-7002}{}{\numberline {8}plantilla.tex}}{8}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-18}{Contenido}}{8}\relax 
+\doTocEntry\tocsection{2.}{\csname a:TocLink\endcsname{1}{x1-90002.}{QQ2-1-19}{Entornos definición, teorema, ejemplo, etc.}}{9}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9002}{}{\numberline {9}Parte del dise\~no para el entorno "definicion" (ya implementado).}}{9}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9021}{}{\numberline {10}Una definición}}{9}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-9027r3}{}{\ignorespaces  $\triangle ABC$}}{figure}\relax 
+\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-9032r4}{}{\ignorespaces Rectas paralelas}}{figure}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9035}{}{\numberline {11}Un teorema}}{11}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9042}{}{\numberline {12}Un teorema con demostración}}{12}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9052}{}{\numberline {13}Un teorema y demostración desplegable}}{13}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9070}{}{\numberline {14}Un ejemplo}}{14}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-9076}{}{\numberline {15}Un ejemplo con solución}}{14}\relax 
+\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-9104r5}{}{\ignorespaces  \(\triangle ABC\) y \(P\)}}{figure}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-100002.1}{QQ2-1-30}{Un problema de optimización: Ejercicio y respuesta.}}{17}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-10002}{}{\numberline {16}Problema de optimización}}{17}\relax 
+\doTocEntry\tocsubsubsection{2.11}{\csname a:TocLink\endcsname{1}{x1-110002.11}{QQ2-1-32}{Ejemplos.}}{17}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-11002}{}{\numberline {17}Distribución Normal}}{17}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-11012}{}{\numberline {18}Tabla de frecuencias}}{18}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-120002.2}{QQ2-1-35}{Incrustar videos}}{18}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-13000}{QQ2-1-36}{Ejemplo.}}{18}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-13002}{}{\numberline {19}El determinante: Video de YouTube}}{18}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-13018}{}{\numberline {20}Video sobre determinantes}}{19}\relax 
+\doTocEntry\tocsection{3.}{\csname a:TocLink\endcsname{1}{x1-140003.}{QQ2-1-39}{Bibliografía}}{19}\relax 

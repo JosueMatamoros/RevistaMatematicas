@@ -1,0 +1,56 @@
+
+
+%%--
+%%-- Compilar en terminal para make4ht
+%%- Opción 1.
+%make4ht -c config.cfg -a debug -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+%
+%%- Opción 2.
+%   Mantener dimensión figuras  por porentaje de la página por ejemplo: width=0.3textwidht
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-percent"
+%
+%%- Opción 3.
+%   Usual: escala bien figura en su tamano original
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+% make4ht  -c configP3.cfg -u -f html5 doc.tex "mathml,mathjax,svg,Gin-dim"
+
+
+
+\documentclass[fleqn,oneside]{article}
+\input{Paquetes/WebPreambuloyEntornos.tex}
+% incluya en este archivo sus comandos. Observe las recomendaciones sobre make4ht
+\input{Paquetes/ComandosdelUsuario.tex}
+
+
+\title{\fhvb{16}{Una Web Interactica desde un documento LaTeX (con Make4ht y Asistida por IA)}}
+\author{\fhv{11}{Walter Mora Flores}\\ \fhv{10}{make4ht,html y ccs}}
+\date{} % Elimina la fecha
+
+% Definición del entorno "tosvg" para extraer y compilar en imagen (dummy en este caso)
+\newenvironment{tosvg}{}{}%{código al comenzar}{código al terminar}
+% Al final del documento, se llama al script de forma inmediata
+% \AtEndDocument{%
+% 	\immediate\write18{ltximg --latex --extrenv 'tosvg' --skipenv 'tikzpicture' --svg --noprew
+% 	--imgdir IMG -o test-out \jobname.tex > BBB.txt}%
+% }
+
+
+
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}
+\boldsymbol{\mathcal{F}}^{i} =
+\begin{bNiceMatrix}[margin,nullify-dots]
+    \ff_{1\,1} & \Cdots & \ff_{1\,\varpi} & \ff_{1\,(\varpi+1)} & \Cdots & \ff_{1\,\eta} \\
+    \Vdots & \Ddots & \Vdots & \Vdots & & \Vdots \\
+    \ff_{\varpi\,1} & \Cdots & \ff_{\varpi\,\varpi} & \ff_{\varpi\,(\varpi+1)} & \Cdots & \ff_{\varpi\,\eta} \\
+    \noalign{\kern2mm}
+    \ff_{(\varpi+1)\,1} & \Cdots & \ff_{(\varpi+1)\,\varpi} & \ff_{(\varpi+1)\,(\varpi+1)} & \Cdots & \ff_{(\varpi+1)\,\eta} \\
+    \Vdots & & \Vdots & \Vdots & \Ddots & \Vdots \\
+    \ff_{\eta\,1} & \Cdots & \ff_{\eta\,\varpi} & \ff_{\eta\,(\varpi+1)} & \Cdots & \ff_{\eta\,\eta}
+\CodeAfter
+  \SubMatrix[{1-1}{3-3}][slim,extra-height=-1mm,xshift=1mm]
+  \OverBrace{1-1}{3-3}{\scriptstyle\mathcal{F}_N^i}[shorten,yshift=1mm]
+\end{bNiceMatrix}
+\end{equation*}
+\end{document}

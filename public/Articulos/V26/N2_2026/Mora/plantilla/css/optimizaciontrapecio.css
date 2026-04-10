@@ -1,0 +1,125 @@
+/* ESTILOS PRINCIPALES DEL WIDGET */.trapecio-widget {
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 1em;
+    --color-primario: #2c3e50;
+    --color-secundario: #d32f2f;
+    --color-fondo: #f9f9f9;
+    --color-borde: #ddd;
+}
+
+.trapecio-widget h2 {
+    text-align: center;
+    color: var(--color-primario);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.trapecio-widget h3 {
+    color: var(--color-primario);
+    margin-top: 0;
+}
+
+/* CONTENEDORES - Reducidos en 20% */
+.trapecio-widget .container {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVO para pantallas pequeñas */
+@media (max-width: 900px) {
+    .trapecio-widget .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.trapecio-widget .panel {
+    border: 1px solid var(--color-borde);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* GRÁFICOS - Altura reducida en 20% (de 400px a 320px) */
+.trapecio-widget .graph-container {
+    width: 100%;
+    height: 320px; /* Reducción del 20% */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* TABLA - Reducción de padding y márgenes */
+.trapecio-widget table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px; /* Reducido */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 0.9em; /* Texto ligeramente más pequeño */
+}
+
+.trapecio-widget th, 
+.trapecio-widget td {
+    border: 1px solid var(--color-borde);
+    padding: 6px 8px; /* Reducido (original 10px) */
+    text-align: center;
+}
+
+/* LOADING (sin cambios necesarios) */
+.trapecio-widget .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--color-secundario);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.trapecio-widget .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--color-secundario);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin-right: 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* SLIDER (sin cambios necesarios) */
+.trapecio-widget .slider-container {
+    margin: 20px 0; /* Ligera reducción */
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ESTILOS D3 (sin cambios necesarios) */
+.trapecio-widget .grid-line {
+    stroke: #e0e0e0;
+    stroke-width: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.trapecio-widget .axis path {
+    stroke: #333;
+    stroke-width: 1.2;
+    fill: none;
+}
+
+.trapecio-widget .axis text {
+    font-family: Arial;
+    font-size: 11px;
+    fill: #333;
+}

@@ -1,0 +1,107 @@
+/* ═══════════════════════════════════════════════════════════
+   CEJILLA - Sistema de pestañas colapsables
+   Compatible con el diseño TEC del curso de Probabilidad
+   ═══════════════════════════════════════════════════════════ */
+/* cejilla.css - Estilos para el botón desplegable */
+.cejilla-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 1.1rem;
+    background: none;
+    border: 1px solid var(--tec-rule, #d4cfc9);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--tec-accent, #1a4f8a);
+    text-align: left;
+    transition: background 0.2s, border-color 0.2s;
+    margin: 0.5rem 0;
+}
+
+.cejilla-toggle:hover {
+    background: rgba(26, 79, 138, 0.07);
+    border-color: var(--tec-gold, #c8922a);
+}
+
+.cejilla-icon {
+    display: inline-block;
+    transition: transform 0.22s;
+    font-size: 0.6rem;
+}
+
+.cejilla-toggle[aria-expanded="true"] .cejilla-icon {
+    transform: rotate(90deg);
+}
+
+.cejilla-content {
+    margin: 0 0 1rem 0;
+    padding: 1rem 1.1rem 1.2rem;
+    border: 1px solid var(--tec-rule, #d4cfc9);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background: var(--tec-info-bg, #eef3fb);
+    transition: all 0.2s ease;
+}
+
+.cejilla-content[hidden] {
+    display: none;
+}
+
+/* Estilos para el contenido interno */
+.cejilla-content h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--tec-gold, #c8922a);
+    margin: 0 0 0.65rem 0;
+}
+
+.cejilla-content h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0.5rem 0;
+    color: var(--tec-ink, #0d1117);
+}
+
+.cejilla-content p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.cejilla-content ul, 
+.cejilla-content ol {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+}
+
+.cejilla-content li {
+    margin: 0.25rem 0;
+    line-height: 1.6;
+}
+
+.cejilla-content .math {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+}
+
+/* Estilos para modo oscuro (si existe) */
+@media (prefers-color-scheme: dark) {
+    .cejilla-toggle {
+        --tec-rule: #1e2d3d;
+        --tec-accent: #4a9ade;
+        --tec-gold: #e8b84b;
+    }
+    
+    .cejilla-content {
+        --tec-rule: #1e2d3d;
+        --tec-info-bg: #0f2035;
+        --tec-ink: #e4dfd8;
+        --tec-gold: #e8b84b;
+    }
+}

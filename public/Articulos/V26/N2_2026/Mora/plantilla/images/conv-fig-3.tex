@@ -1,0 +1,64 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%Preámbulos de las figuras
+
+%--------------------------------------------
+\usepackage{polynom}
+%--------------------------------------------
+\usepackage{nicematrix,tikz}
+\usetikzlibrary{fit}
+%--------------------------------------------
+\usepackage[table, svgnames]{xcolor}
+\usepackage{hhline, booktabs}
+%--------------------------------------------
+\usepackage{amsmath,gensymb}
+\usetikzlibrary{matrix,positioning,calc}
+\definecolor{COLOR1}{HTML}{6B99B9}
+\definecolor{COLOR2}{HTML}{DD9CC4}
+\tikzset{
+    M/.style={
+        matrix of math nodes,
+        nodes={draw=none,anchor=center,minimum size=1.75em},
+        nodes in empty cells,
+    }
+}
+%Drawing code nesting in definition with parameters
+\def\Det[color #1 size #2 line #3]#4#5{
+    \draw[line width=#3,draw=#1, opacity=0.7]
+    let \p1 = ($(#5)-(#4)$), % To access cartesian coordinates x, and y.
+        \n2 = {atan2(\x1,\y1)}, % to get the angle of the line betwen #5 to #4
+    in
+    (#5.center)
+        ++(90-\n2+90:#2/2)
+        arc (90-\n2+90:90-\n2+90-180:#2/2)
+        -- ($(#4.center)+(90-\n2-90:#2/2)$)
+        arc (90-\n2-90:90-\n2-90-180:#2/2)
+        -- cycle;
+}
+%--------------------------------------------
+\usepackage{amssymb}
+\newcommand{\ff}{\mathtt{f}}
+%--------------------------------------------
+\newcolumntype{A}{>{\columncolor{red!20}}c}
+\newcolumntype{B}{>{\columncolor{blue!20}}c}
+
+%%------------------------------------------------------------------------
+
+
+\pagestyle{empty}
+\begin{document}
+\setlength\extrarowheight{2pt}
+\setlength{\arrayrulewidth}{0.6pt}
+\arrayrulecolor{Gainsboro!50!Lavender}
+\begin{tabular}{>{\columncolor{Gainsboro!50!Lavender}}l|!{\color{RoyalBlue}\vrule width 0.6pt}c|c|c!{\color{RoyalBlue}\vrule width 0.6pt}}
+\rowcolor{Gainsboro!50!Lavender} \multicolumn{1}{c!{\hspace{\dimexpr\doublerulesep + \arrayrulewidth}}}{\cellcolor{PapayaWhip}} & \multicolumn{1}{!{\hspace{-\arrayrulewidth}}c}{headline1} & \multicolumn{1}{c}{headline2} &\multicolumn{1}{c}{ headline3} \\\addlinespace[0.5ex]
+\hhline{-|>{\arrayrulecolor{RoyalBlue}}|---|}
+row1 & a & b & c \\
+\hhline{>{\arrayrulecolor{Gainsboro!50!Lavender}}-|>{\arrayrulecolor{RoyalBlue}}|---|}
+  row2 & d & e & f \\
+\hhline{>{\arrayrulecolor{Gainsboro!50!Lavender}}-|>{\arrayrulecolor{RoyalBlue}}|---|}
+ row3 & g & h & i \\
+\hhline{>{\arrayrulecolor{Gainsboro!50!Lavender}}-|>{\arrayrulecolor{RoyalBlue}}|---|}
+\end{tabular}
+\end{document}

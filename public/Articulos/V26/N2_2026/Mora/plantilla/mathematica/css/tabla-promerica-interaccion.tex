@@ -1,0 +1,25 @@
+\ifdefined\HCode
+\AtEndDocument{%
+  \HCode{%
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        d3.selectAll(".tabla-promerica tbody tr").each(function() {
+          const row = d3.select(this);
+          const original = window.getComputedStyle(this).backgroundColor;
+          row.attr("data-original-color", original);
+        });
+
+        d3.selectAll(".tabla-promerica tbody tr")
+          .on("mouseover", function() {
+            d3.select(this).style("background-color", "#ffeaa7");
+          })
+          .on("mouseout", function() {
+            const original = d3.select(this).attr("data-original-color");
+            d3.select(this).style("background-color", original);
+          });
+      });
+    </script>
+  }%
+}
+\fi
+

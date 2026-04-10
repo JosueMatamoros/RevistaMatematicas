@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema de Optimización - Área de Trapecio</title>
+    <link rel="stylesheet" href="css/Roptimizaciontrapecio.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #6c757d;
+            font-weight: 400;
+        }
+
+        .subtitle a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .subtitle a:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            .subtitle {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Problema de Optimización</h1>
+        <p class="subtitle">
+            <a href="https://www.tec.ac.cr" target="_blank" rel="noopener">Instituto Tecnológico de Costa Rica</a>
+            <br>
+            <a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank" rel="noopener">Revista  Matemática, Educación e Internet</a>
+        </p>
+    </header>
+
+    <main>
+        <div class="opt-trap-container" id="ancla-proboptimizacion">
+            <div id="opt-trap-loading" class="opt-trap-loading">
+                <div class="opt-trap-spinner"></div>
+                <span>Cargando visualización...</span>
+            </div>
+            <div id="opt-trap-app" class="opt-trap-app">
+                <h2 class="opt-trap-title">Área de un trapecio inscrito en un semicírculo</h2>
+                <div class="opt-trap-flex-container">
+                    <div id="opt-trap-trapezoid-panel" class="opt-trap-panel opt-trap-trapezoid-panel">
+                        <h3>Interacción Gráfica</h3>
+                        <div class="opt-trap-slider-container">
+                            <div class="opt-trap-slider-label">Valor de <strong>a</strong>: <span id="opt-trap-a-value">1.00</span></div>
+                            <input type="range" id="opt-trap-a-slider" min="0.1" max="4" step="0.01" value="1" class="opt-trap-slider">
+                        </div>
+                        <div id="opt-trap-trapezoid-graph" class="opt-trap-graph-container"></div>
+                    </div>
+                    <div id="opt-trap-values-panel" class="opt-trap-panel opt-trap-values-panel">
+                        <h3>Historial de Valores</h3>
+                        <div id="opt-trap-values-table" class="opt-trap-table-container"></div>
+                    </div>
+                    <div id="opt-trap-area-panel" class="opt-trap-panel opt-trap-area-panel">
+                        <h3>Relación Área vs. 'a'</h3>
+                        <div id="opt-trap-area-graph" class="opt-trap-graph-container opt-trap-area-graph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/Roptimizaciontrapecio.js" defer></script>
+</body>
+</html>

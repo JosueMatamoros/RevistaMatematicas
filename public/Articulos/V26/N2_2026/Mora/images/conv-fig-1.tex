@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{polynom}
+\usepackage{nicematrix,tikz}
+\usetikzlibrary{fit}
+\newcommand{\ff}{\mathtt{f}}
+
+\pagestyle{empty}
+\begin{document}
+%<- polynom NO requiere entorno matemático
+\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
+\end{document}

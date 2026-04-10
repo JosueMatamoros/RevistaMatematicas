@@ -1,0 +1,113 @@
+% Comandos personalizados
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\grad}{^{\circ}}
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\IQ}{\mathbb{Q}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IC}{\mathbb{C}}
+\newcommand{\bt}{\begin{tabular}}
+\newcommand{\et}{\end{tabular}}
+\newcommand{\dd}[2]{\dfrac{d #1}{d #2}\;}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\raya}{\rule{2cm}{0.01cm}\\}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sen}{\mathop{\rm sen}\nolimits}
+\newcommand{\senh}{\mathop{\rm senh}\nolimits}
+\newcommand{\arcsen}{\mathop{\rm arcsen}\nolimits}
+\newcommand{\arcsec}{\mathop{\rm arcsec}\nolimits}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\lbe}{\begin{enumerate}[leftmargin=\parindent,align=left,labelwidth=\parindent,labelsep=1pt]}
+\newcommand{\p}[1]{$\,#1\,$}
+\newcommand{\gfrac}{\dfrac}
+\newcommand{\dpr}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\dep}[2]{\,\dfrac{\partial #1}{\partial #2}\,}
+\newcommand{\bv}[1]{\left.#1\right|}% uso \bv{}_P
+\newcommand{\es}{\,\in\,}
+\newcommand{\esp}{\bigskip}
+%
+%% logo-link  para  imagen  para saltar a una actividad interactiva en el html
+\newcommand{\wref}[2]{%
+  \begin{tikzpicture}
+    \node[inner sep=0pt] (img) at (0,0) {#2};
+    \node[anchor=north east, scale=0.7, xshift=-5pt, yshift=5pt] at (img.north east)
+    {%
+      \href{#1}{%
+        \textcolor{blue}{%
+          \begin{tabular}{r@{}p{5pt}}
+            {\Large\faLink} &
+            \begin{tabular}{@{}l@{}}
+              \textbf{Ir al} \\[-2.5pt]
+              \textbf{HTML}
+            \end{tabular}
+          \end{tabular}%
+        }%
+      }%
+    };% ← Cierre del contenido del \node (todas las llaves cerradas)
+  \end{tikzpicture}%
+}
+
+%%-------------------------------------------------------------------------
+%%       Pruebas: Paquetes no soportados por Make4ht, opciones para html
+%%       Solo para este documento
+%%-------------------------------------------------------------------------
+\ifdefined\HCode\else
+\usepackage{polynom}
+\usepackage{hhline}
+\usepackage{nicematrix}
+\usetikzlibrary{decorations.pathreplacing}
+\fi
+\usepackage{makecell}
+%%-------------------------------------------------------------------------
+\usepackage{calc}
+\newlength{\maxmin}
+\setlength{\maxmin}{\widthof{$\max$}-\widthof{$\min$}}
+%%-------------------------------------------------------------------------
+\tikzset{>=latex} % for LaTeX arrow head
+%\usepackage{xcolor}
+\newcommand{\wred}[1]{{\textcolor{magenta}{#1}}}
+\newcommand{\rr}[1]{{\textcolor{magenta}{#1}}}
+\colorlet{myblue}{black!40!blue}
+\colorlet{myred}{black!40!red}
+%%-------------------------------------------------------------------------
+\newcommand{\block}[1]{
+	\underbrace{1 \cdots 1}_{#1}
+}
+%%-------------------------------------------------------------------------
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\vlg}{!{\color{lightgray}\vrule}}
+\newcommand{\hlg}{\arrayrulecolor{lightgray}\hline}
+\newcommand{\no}{\bs{\;\neg \;}}
+\newcommand{\y}{\bs{\;\wedge\;}}
+\newcommand{\oo}{\bs{\;\vee\;}}
+\newcommand{\eqv}{\;\bs{\;\;\equiv}\;\;}
+\newcommand{\fl}{\bs{\rightarrow}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%%-------------------------------------------------------------------------
+\newcommand{\ff}{\mathtt{f}}
+%%-------------------------------------------------------------------------
+\newcolumntype{A}{>{\columncolor{red!20}}c}
+\newcolumntype{B}{>{\columncolor{blue!20}}c}
+%%-------------------------------------------------------------------------
+\newcommand{\sys}[2]{\left\{\begin{array}{#1}
+#2
+ \end{array}\right.}
+\newcommand{\warr}[2]{\begin{array}{#1}
+#2
+ \end{array}}
+ \definecolor{azulF}{rgb}{.0,.0,.3}
+\newcommand{\azulf}{\color{azulF}}
+%^\usepackage[d]{esvect}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\paren}[1]{\left(#1\right)}
+%%--------------------------------------------------------------------------
