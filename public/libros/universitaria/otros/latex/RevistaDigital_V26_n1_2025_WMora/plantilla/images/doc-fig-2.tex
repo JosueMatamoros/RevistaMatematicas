@@ -1,0 +1,57 @@
+
+
+%%--
+%%-- Compilar en terminal para make4ht
+%%- Opción 1.
+%make4ht -c config.cfg -a debug -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+%
+%%- Opción 2.
+%   Mantener dimensión figuras  por porentaje de la página por ejemplo: width=0.3textwidht
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-percent"
+%
+%%- Opción 3.
+%   Usual: escala bien figura en su tamano original
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+% make4ht  -c configP3.cfg -u -f html5 doc.tex "mathml,mathjax,svg,Gin-dim"
+
+
+
+\documentclass[fleqn,oneside]{article}
+\input{Paquetes/WebPreambuloyEntornos.tex}
+% incluya en este archivo sus comandos. Observe las recomendaciones sobre make4ht
+\input{Paquetes/ComandosdelUsuario.tex}
+
+
+\title{\fhvb{16}{Una Web Interactica desde un documento LaTeX (con Make4ht y Asistida por IA)}}
+\author{\fhv{11}{Walter Mora Flores}\\ \fhv{10}{make4ht,html y ccs}}
+\date{} % Elimina la fecha
+
+% Definición del entorno "tosvg" para extraer y compilar en imagen (dummy en este caso)
+\newenvironment{tosvg}{}{}%{código al comenzar}{código al terminar}
+% Al final del documento, se llama al script de forma inmediata
+% \AtEndDocument{%
+% 	\immediate\write18{ltximg --latex --extrenv 'tosvg' --skipenv 'tikzpicture' --svg --noprew
+% 	--imgdir IMG -o test-out \jobname.tex > BBB.txt}%
+% }
+
+
+
+\pagestyle{empty}
+\begin{document}
+\setlength{\extrarowheight}{2pt}
+\begin{NiceTabular}
+   [hvlines-except-borders,rules={width=1.5pt,color=white}]
+   {*{5}{X[c]}}
+\CodeBefore
+    \columncolor{red!20}{1,3,5}
+    \columncolor{blue!20}{2,4}
+    \rowcolor[opacity=0.5]{black}{1}
+\Body
+    \RowStyle[color=white]{\bfseries}
+    Subject & Dry & Ovulation date & Oiliest & Poor barrier \\
+    \bfseries 2007 &  8, 36 & 14 & 22 & 26 \\
+    \cellcolor{nocolor}
+    \RowStyle{\bfseries}
+    & I - DR & II - OP & III - OL & IV - PB \\
+\end{NiceTabular}
+\end{document}

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graficador 3D — z = f(x,y)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Plotly para la superficie 3D -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <!-- math.js para evaluar f(x,y) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.3/math.min.js"></script>
+
+  <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  GRAFICADOR 3D  z = f(x,y)  — prefijo .g3-                 ║
+    ║  Motor: Plotly.js (WebGL surface)                           ║
+    ║  Evaluador: math.js                                         ║
+    ╚══════════════════════════════════════════════════════════════╝
+  -->
+  <style>
+    /* ── reset dentro del widget ── */
+    .g3-widget *, .g3-widget *::before, .g3-widget *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+    }
+
+    /* ── widget raíz ── */
+    .g3-widget {
+      --g3-bg:      #1a3a52;
+      --g3-darker:  #0f2233;
+      --g3-mid:     #1e4560;
+      --g3-lt:      #2a5a7a;
+      --g3-teal:    #b0ffff;
+      --g3-gold:    #c8922a;
+      --g3-gold-lt: #e8b84b;
+      --g3-accent:  #fdb851;
+      --g3-error:   #ff6b6b;
+      --g3-ink:     #0d1117;
+
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: #fff;
+      background: var(--g3-bg);
+      border-radius: 8px;
+      box-shadow: 0 6px 40px rgba(0,0,0,.32);
+      overflow: hidden;
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      border: 2px solid var(--g3-darker);
+      animation: g3-pop .32s ease both;
+    }
+    @keyframes g3-pop {
+      from { opacity:0; transform:translateY(8px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
+    /* ── header ── */
+    .g3-header {
+      background: var(--g3-darker);
+      padding: .65rem 1.2rem;
+      border-bottom: 1px solid var(--g3-lt);
+      display: flex; align-items: baseline; gap: .75rem;
+    }
+    .g3-header h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem; font-weight: 400; color: var(--g3-teal);
+    }
+    .g3-header span {
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--g3-gold-lt);
+    }
+
+    /* ── área Plotly ── */
+    .g3-plot-wrap {
+      position: relative; width: 100%;
+      background: #ffffff;
+      border-bottom: 1px solid var(--g3-lt);
+    }
+    #g3-plot {
+      width: 100%; height: 420px;
+    }
+
+    /* overlay "sin gráfico" */
+    .g3-empty {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 8px;
+      pointer-events: none; transition: opacity .35s;
+    }
+    .g3-empty-icon { font-size: 3rem; opacity: .12; }
+    .g3-empty p {
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      letter-spacing: .06em; color: rgba(26,58,82,.35);
+    }
+
+    /* ── panel ── */
+    .g3-panel {
+      background: var(--g3-bg);
+      padding: .75rem 1.1rem;
+      border-top: 1px solid var(--g3-lt);
+      display: flex; flex-direction: column; gap: .6rem;
+    }
+
+    /* fila expresión */
+    .g3-input-row {
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .g3-fn-label {
+      font-family: 'DM Mono', monospace; font-size: .82rem;
+      color: var(--g3-teal); white-space: nowrap; flex-shrink: 0;
+    }
+    .g3-expr {
+      flex: 1; padding: .38rem .6rem;
+      font-family: 'DM Mono', monospace; font-size: .88rem;
+      color: var(--g3-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      transition: border-color .15s;
+    }
+    .g3-expr:focus  { border-color: var(--g3-accent); }
+    .g3-expr.g3-err { border-color: var(--g3-error); color: #8a0000; }
+
+    /* botones */
+    .g3-btn-row { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+
+    .g3-btn {
+      padding: .38rem .9rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem; font-weight: 700;
+      color: #002800; background: var(--g3-accent);
+      border: none; border-radius: 3px; cursor: pointer;
+      transition: background .14s, transform .08s;
+    }
+    .g3-btn:hover  { background: #fec96a; }
+    .g3-btn:active { transform: scale(.96); }
+    .g3-btn.clr    { background: #2a3a4a; color: var(--g3-teal); border: 1px solid #3a5a7a; }
+    .g3-btn.clr:hover  { background: #3a5a7a; }
+    .g3-btn.help   { background: var(--g3-lt); color: var(--g3-teal); border: 1px solid #3a7aaa; }
+    .g3-btn.help:hover { background: #3a7aaa; }
+    .g3-btn.exp-png { background: #2e6e4a; color: #fff; }
+    .g3-btn.exp-png:hover { background: #3a8a5c; }
+
+    /* select */
+    .g3-select {
+      padding: .32rem .5rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem;
+      color: var(--g3-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px;
+      outline: none; cursor: pointer; transition: border-color .15s;
+    }
+    .g3-select:focus { border-color: var(--g3-accent); }
+
+    /* sliders */
+    .g3-scale-row { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+    .g3-scale-field { display: flex; align-items: center; gap: .45rem; }
+    .g3-scale-lbl { font-family: 'DM Mono', monospace; font-size: .62rem; color: rgba(176,255,255,.5); white-space: nowrap; }
+    .g3-slider    { flex: 1; accent-color: var(--g3-accent); }
+    .g3-scale-val { font-family: 'DM Mono', monospace; font-size: .7rem; color: var(--g3-gold-lt); min-width: 1.8rem; text-align: right; }
+
+    /* rangos xy */
+    .g3-range-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+    }
+    .g3-range-field { display: flex; flex-direction: column; gap: .2rem; }
+    .g3-range-lbl { font-family: 'DM Mono', monospace; font-size: .62rem; color: rgba(176,255,255,.5); }
+    .g3-num {
+      padding: .3rem .45rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem;
+      color: var(--g3-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      width: 100%; transition: border-color .15s;
+    }
+    .g3-num:focus { border-color: var(--g3-accent); }
+
+    /* separador */
+    .g3-sep { border: none; border-top: 1px solid rgba(176,255,255,.12); margin: .05rem 0; }
+
+    /* etiqueta de fila */
+    .g3-row-label {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      color: rgba(176,255,255,.45); white-space: nowrap; letter-spacing: .06em;
+    }
+
+    /* ejemplos chips */
+    .g3-chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .g3-chip {
+      background: rgba(200,146,42,.13);
+      border: 1px solid rgba(200,146,42,.35);
+      color: var(--g3-gold-lt);
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      padding: .18rem .55rem; border-radius: 20px;
+      cursor: pointer; transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .g3-chip:hover { background: rgba(200,146,42,.28); color: var(--g3-accent); }
+
+    /* mensaje error */
+    .g3-msg {
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: var(--g3-error); min-height: .85rem; letter-spacing: .04em;
+    }
+
+    /* ── panel ayuda ── */
+    .g3-help-panel {
+      display: none;
+      background: var(--g3-darker); border-top: 1px solid var(--g3-lt);
+      padding: .7rem 1.1rem; max-height: 240px; overflow-y: auto;
+    }
+    .g3-help-panel.open { display: block; }
+    .g3-help-panel h3 {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--g3-gold-lt); margin-bottom: .4rem; margin-top: .55rem;
+    }
+    .g3-help-panel h3:first-child { margin-top: 0; }
+    .g3-help-panel table { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: .68rem; }
+    .g3-help-panel td { padding: .1rem .5rem; vertical-align: top; color: rgba(176,255,255,.75); }
+    .g3-help-panel td:first-child { color: var(--g3-teal); width: 40%; }
+
+    /* ── footer widget ── */
+    .g3-footer {
+      padding: .38rem 1.2rem; border-top: 1px solid var(--g3-darker);
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .1em; color: rgba(176,255,255,.25); text-align: right;
+    }
+
+    /* checkbox inline */
+    .g3-chk-row {
+      display: flex; align-items: center; gap: .5rem;
+      font-family: 'DM Mono', monospace; font-size: .72rem;
+      color: rgba(176,255,255,.6); cursor: pointer;
+    }
+    input[type="checkbox"] { accent-color: var(--g3-accent); cursor: pointer; }
+
+    /* loading spinner sobre plot */
+    .g3-loading {
+      position: absolute; inset: 0; background: rgba(255,255,255,0.82);
+      display: none; align-items: center; justify-content: center;
+      font-family: 'DM Mono', monospace; font-size: .78rem; color: #1a3a52;
+      letter-spacing: .1em; pointer-events: none;
+    }
+    .g3-loading.show { display: flex; }
+  </style>
+
+  <!-- ── TEC PAGE STYLES ── -->
+  <style>
+    :root {
+      --tec-bg:      #f0ede8;
+      --tec-ink:     #0d1117;
+      --tec-accent:  #1a4f8a;
+      --tec-gold:    #c8922a;
+      --tec-gold-lt: #e8b84b;
+      --tec-rule:    #d4cfc9;
+      --tec-muted:   #7a7269;
+      --tec-info-bg: #eef3fb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --tec-bg:      #0d1117;
+        --tec-ink:     #e4dfd8;
+        --tec-accent:  #4a9ade;
+        --tec-rule:    #1e2d3d;
+        --tec-muted:   #8a8279;
+        --tec-info-bg: #0f2035;
+      }
+    }
+    html { font-size: 16px; }
+    body {
+      margin: 0;
+      background: var(--tec-bg);
+      color: var(--tec-ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem; line-height: 1.6;
+      min-height: 100vh; padding: 1.5rem 0 2rem;
+    }
+    .tec-page {
+      max-width: 880px; margin: 0 auto; padding: 0 1.25rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+    .tec-header { border-bottom: 2px solid var(--tec-gold); padding-bottom: .75rem; }
+    .tec-eyebrow {
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      letter-spacing: .2em; text-transform: uppercase; color: var(--tec-muted); margin: 0 0 .2rem;
+    }
+    .tec-course-title {
+      font-family: 'DM Serif Display', serif; font-size: 1.5rem;
+      font-weight: 400; margin: 0; line-height: 1.2; color: var(--tec-ink);
+    }
+    .tec-course-link {
+      color: var(--tec-accent); text-decoration: none;
+      border-bottom: 1px solid transparent; transition: border-color .2s;
+    }
+    .tec-course-link:hover { border-bottom-color: var(--tec-accent); }
+    .tec-info {
+      background: var(--tec-info-bg); border: 1px solid var(--tec-rule);
+      border-radius: 6px; overflow: hidden;
+    }
+    .tec-info-toggle {
+      width: 100%; padding: .75rem 1.1rem; background: none; border: none;
+      cursor: pointer; display: flex; align-items: center; gap: .55rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--tec-accent); text-align: left;
+      transition: background .2s;
+    }
+    .tec-info-toggle:hover { background: rgba(26,79,138,.07); }
+    .tec-info-icon { display: inline-block; transition: transform .22s; font-size: .6rem; }
+    .tec-info-toggle[aria-expanded="true"] .tec-info-icon { transform: rotate(90deg); }
+    .tec-info-body {
+      padding: 1rem 1.1rem 1.2rem; border-top: 1px solid var(--tec-rule);
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem;
+    }
+    @media (max-width: 640px) { .tec-info-body { grid-template-columns: 1fr; } }
+    [hidden] { display: none !important; }
+    .tec-info-body h3 {
+      font-family: 'DM Mono', monospace; font-size: .66rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--tec-gold); margin: 0 0 .45rem;
+    }
+    .tec-info-body p, .tec-info-body li {
+      font-size: .88rem; color: var(--tec-ink); line-height: 1.65;
+    }
+    .tec-info-body ol, .tec-info-body ul { padding-left: 1.1rem; margin: 0; }
+    .tec-info-body li { margin-bottom: .3rem; }
+    .home-footer {
+      border-top: 1px solid var(--tec-rule); padding: .85rem 0;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: .5rem;
+      font-family: 'DM Mono', monospace; font-size: .72rem; letter-spacing: .08em;
+    }
+    .footer-brand { color: var(--tec-muted); text-transform: uppercase; }
+    .footer-link  { color: var(--tec-accent); text-decoration: none; transition: color .2s; }
+    .footer-link:hover { color: var(--tec-gold-lt); }
+    @media (max-width: 720px) {
+      body { padding: 0.75rem 0 1.5rem; }
+      .tec-page { padding: 0 0.75rem; gap: 1rem; }
+      .tec-course-title { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="tec-page" role="main">
+
+  <header class="tec-header" role="banner">
+    <p class="tec-eyebrow">Instituto Tecnológico de Costa Rica · Escuela de Matemática</p>
+    <h1 class="tec-course-title">
+      <a class="tec-course-link"
+         href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/"
+         target="_blank">
+        Cálculo Diferencial e Integral (2026)
+      </a>
+    </h1>
+  </header>
+
+  <!-- instrucciones -->
+  <section class="tec-info" aria-label="Información de la herramienta">
+    <button class="tec-info-toggle" id="info-toggle" aria-expanded="false" aria-controls="info-g3">
+      <span class="tec-info-icon">▶</span>
+      Instrucciones y ejemplos
+    </button>
+    <div class="tec-info-body" id="info-g3" hidden>
+      <div>
+        <h3>Propósito</h3>
+        <p>Graficador de superficies definidas explícitamente por <strong>z = f(x, y)</strong>.
+           Permite visualizar superficies cuádricas, paraboloides, ondas, gaussianas y más,
+           con rotación y zoom interactivos mediante Plotly.js.</p>
+      </div>
+      <div>
+        <h3>Cómo usar</h3>
+        <ol>
+          <li>Ingrese la expresión f(x, y) en el campo <em>z =</em>.</li>
+          <li>Defina los rangos [xₘᵢₙ, xₘₐₓ] y [yₘᵢₙ, yₘₐₓ].</li>
+          <li>Ajuste resolución, paleta y opciones.</li>
+          <li>Presione <strong>Graficar</strong> (o Enter).</li>
+          <li>Rote con clic+arrastre; zoom con la rueda.</li>
+          <li>Exporte la imagen con ⬇ PNG.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Ejemplos sugeridos</h3>
+        <ul>
+          <li><code>sin(sqrt(x^2+y^2))</code> — sombrero mexicano</li>
+          <li><code>x^2 - y^2</code> — silla de montar</li>
+          <li><code>exp(-(x^2+y^2)/4)</code> — campana gaussiana</li>
+          <li><code>sin(x)*cos(y)</code> — ondas cruzadas</li>
+          <li><code>sqrt(x^2+y^2)</code> — cono</li>
+          <li><code>(sqrt(x^2+y^2)-2)^2</code> — torus seccionado</li>
+          <li><code>1/(x^2+y^2+0.3)</code> — singularidad suavizada</li>
+          <li><code>sin(x^2+y^2)</code> — ondas circulares</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WIDGET 3D
+  ══════════════════════════════════════ -->
+  <div class="g3-widget" id="g3-widget">
+
+    <div class="g3-header">
+      <h2>Graficador 3D de Superficies</h2>
+      <span>z = f(x,y) · Plotly.js + math.js</span>
+    </div>
+
+    <!-- área de la gráfica Plotly -->
+    <div class="g3-plot-wrap">
+      <div id="g3-plot"></div>
+      <div class="g3-empty" id="g3-empty">
+        <div class="g3-empty-icon">🗻</div>
+        <p>Ingrese z = f(x,y) y presione Graficar</p>
+      </div>
+      <div class="g3-loading" id="g3-loading">calculando…</div>
+    </div>
+
+    <!-- panel de control -->
+    <div class="g3-panel">
+
+      <!-- expresión -->
+      <div class="g3-input-row">
+        <span class="g3-fn-label">z =</span>
+        <input class="g3-expr" id="g3-expr" type="text"
+               value="sin(sqrt(x^2+y^2))"
+               autocomplete="off" spellcheck="false"
+               placeholder="ej: sin(x)*cos(y), x^2-y^2, exp(-(x^2+y^2)/4)">
+      </div>
+
+      <!-- ejemplos -->
+      <div class="g3-chips" id="g3-chips"></div>
+
+      <hr class="g3-sep">
+
+      <!-- rangos x, y -->
+      <div class="g3-btn-row" style="align-items:center; gap:.3rem; flex-wrap:wrap;">
+        <span class="g3-row-label">Rango x:</span>
+        <input class="g3-num" id="g3-xmin" type="number" value="-6" step="0.5" style="width:62px">
+        <span class="g3-row-label">a</span>
+        <input class="g3-num" id="g3-xmax" type="number" value="6"  step="0.5" style="width:62px">
+        <span class="g3-row-label" style="margin-left:.6rem;">Rango y:</span>
+        <input class="g3-num" id="g3-ymin" type="number" value="-6" step="0.5" style="width:62px">
+        <span class="g3-row-label">a</span>
+        <input class="g3-num" id="g3-ymax" type="number" value="6"  step="0.5" style="width:62px">
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- resolución y paleta -->
+      <div class="g3-scale-row">
+        <div class="g3-scale-field">
+          <span class="g3-scale-lbl">Resolución</span>
+          <input class="g3-slider" id="g3-res" type="range" min="15" max="100" value="55">
+          <span class="g3-scale-val" id="g3-res-v">55</span>
+        </div>
+        <div class="g3-scale-field" style="gap:.45rem;">
+          <span class="g3-scale-lbl">Paleta</span>
+          <select class="g3-select" id="g3-palette">
+            <option value="Viridis"  selected>Viridis</option>
+            <option value="Plasma">Plasma</option>
+            <option value="Turbo">Turbo</option>
+            <option value="RdBu">RdBu (div.)</option>
+            <option value="Hot">Hot</option>
+            <option value="Electric">Electric</option>
+            <option value="Cividis">Cividis</option>
+            <option value="Jet">Jet</option>
+          </select>
+        </div>
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- rango z + primer octante -->
+      <div class="g3-btn-row" style="align-items:flex-end; gap:.35rem; flex-wrap:wrap;">
+        <span class="g3-row-label" style="align-self:center;">Clip z:</span>
+        <div class="g3-range-field">
+          <span class="g3-range-lbl">z mín</span>
+          <input class="g3-num" id="g3-zclipmin" type="number" step="0.5"
+                 placeholder="−∞" style="width:62px;">
+        </div>
+        <div class="g3-range-field">
+          <span class="g3-range-lbl">z máx</span>
+          <input class="g3-num" id="g3-zclipmax" type="number" step="0.5"
+                 placeholder="+∞" style="width:62px;">
+        </div>
+        <label class="g3-chk-row" style="margin-left:.4rem; align-self:center;">
+          <input type="checkbox" id="g3-octante"> primer octante
+        </label>
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- opciones -->
+      <div class="g3-btn-row" style="flex-wrap:wrap; gap:.7rem;">
+        <span class="g3-row-label">Opciones:</span>
+        <label class="g3-chk-row">
+          <input type="checkbox" id="g3-wire"> malla sup.
+        </label>
+        <label class="g3-chk-row">
+          <input type="checkbox" id="g3-contour"> curvas z=c
+        </label>
+        <label class="g3-chk-row">
+          <input type="checkbox" id="g3-axes" checked> ejes XYZ
+        </label>
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- plano: un solo campo de texto -->
+      <div>
+        <div class="g3-btn-row" style="align-items:center; gap:.5rem; margin-bottom:.3rem;">
+          <span class="g3-row-label">Plano:</span>
+          <label class="g3-chk-row">
+            <input type="checkbox" id="g3-plane"> mostrar
+          </label>
+        </div>
+        <input class="g3-expr" id="g3-plane-expr" type="text"
+               placeholder="x + 2y − z = 1  ó  1, 2, −1, 1"
+               autocomplete="off" spellcheck="false">
+        <div id="g3-plane-preview"
+             style="font-family:'DM Mono',monospace;font-size:.68rem;
+                    color:#1a8c2e;min-height:.9rem;margin-top:.25rem;
+                    letter-spacing:.03em;"></div>
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- punto (a,b,c) -->
+      <div class="g3-btn-row" style="align-items:center; gap:.4rem; flex-wrap:wrap;">
+        <span class="g3-row-label">Punto:</span>
+        <input class="g3-expr" id="g3-punto" type="text"
+               style="max-width:150px; flex:none;"
+               placeholder="(a, b, c)"
+               autocomplete="off" spellcheck="false">
+        <span class="g3-row-label" style="font-size:.6rem;">separar con , o ;</span>
+      </div>
+
+      <hr class="g3-sep">
+
+      <!-- botones -->
+      <div class="g3-btn-row">
+        <button class="g3-btn"     id="g3-btn-plot">▶ Graficar</button>
+        <button class="g3-btn clr" id="g3-btn-clr" >⊘ Limpiar</button>
+        <button class="g3-btn exp-png" id="g3-btn-png">⬇ PNG</button>
+        <button class="g3-btn help"    id="g3-btn-help">? Ayuda</button>
+      </div>
+
+      <!-- mensaje error -->
+      <div class="g3-msg" id="g3-msg"></div>
+
+    </div><!-- /panel -->
+
+    <!-- panel ayuda -->
+    <div class="g3-help-panel" id="g3-help">
+      <h3>Sintaxis de f(x,y)</h3>
+      <table>
+        <tr><td>x, y</td><td>variables del plano</td></tr>
+        <tr><td>+ − * / ^</td><td>aritmética; potencia: x^2</td></tr>
+        <tr><td>sin cos tan</td><td>trigonométricas</td></tr>
+        <tr><td>asin acos atan</td><td>inversas trigonométricas</td></tr>
+        <tr><td>sinh cosh tanh</td><td>hiperbólicas</td></tr>
+        <tr><td>log(x) / log(x,b)</td><td>logaritmo natural / base b</td></tr>
+        <tr><td>sqrt(x) / abs(x)</td><td>raíz cuadrada / valor absoluto</td></tr>
+        <tr><td>exp(x)</td><td>exponencial e^x</td></tr>
+        <tr><td>pi, e</td><td>constantes matemáticas</td></tr>
+      </table>
+      <h3>Ejemplos de superficies</h3>
+      <table>
+        <tr><td>x^2 + y^2</td><td>paraboloide elíptico</td></tr>
+        <tr><td>x^2 - y^2</td><td>paraboloide hiperbólico (silla)</td></tr>
+        <tr><td>sqrt(x^2 + y^2)</td><td>cono</td></tr>
+        <tr><td>exp(-(x^2+y^2)/4)</td><td>campana gaussiana</td></tr>
+        <tr><td>sin(sqrt(x^2+y^2))</td><td>sombrero mexicano</td></tr>
+        <tr><td>(sqrt(x^2+y^2)-2)^2</td><td>torus (sección z≥0)</td></tr>
+        <tr><td>sin(x)*cos(y)</td><td>ondas cruzadas</td></tr>
+        <tr><td>sin(x^2+y^2)</td><td>ondas circulares</td></tr>
+      </table>
+      <h3>Interacción con Plotly</h3>
+      <table>
+        <tr><td>Clic + arrastre</td><td>rotar la superficie</td></tr>
+        <tr><td>Rueda del ratón</td><td>zoom</td></tr>
+        <tr><td>Clic derecho + arrastre</td><td>paneo</td></tr>
+        <tr><td>Doble clic</td><td>restablecer vista</td></tr>
+      </table>
+    </div>
+
+    <div class="g3-footer">Graficador 3D — Revista Matemática, Educación e Internet · ITCR</div>
+
+  </div><!-- /g3-widget -->
+
+  <footer class="home-footer">
+    <span class="footer-brand">ITCR · Escuela de Matemática · 2026</span>
+    <a class="footer-link"
+       href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/"
+       target="_blank">Revista Matemática, Educación e Internet</a>
+  </footer>
+
+</div><!-- /tec-page -->
+
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════════
+   makeXYgrid(xmin,xmax,ymin,ymax,nx,ny)
+   Una sola traza scatter3d con segmentos separados por NaN.
+   Dibuja una cuadrícula gris claro en el plano REAL z = 0.
+   ══════════════════════════════════════════════════════════════════ */
+function makeXYgrid(xmin,xmax,ymin,ymax,nx,ny){
+  var xs=linspace(xmin,xmax,nx+1);
+  var ys=linspace(ymin,ymax,ny+1);
+  var gx=[],gy=[],gz=[];
+  xs.forEach(function(x){          /* líneas || al eje Y */
+    gx.push(x,x,null); gy.push(ymin,ymax,null); gz.push(0,0,null);
+  });
+  ys.forEach(function(y){          /* líneas || al eje X */
+    gx.push(xmin,xmax,null); gy.push(y,y,null); gz.push(0,0,null);
+  });
+  return {
+    type:'scatter3d', mode:'lines',
+    x:gx, y:gy, z:gz,
+    line:{ color:'rgba(130,130,130,0.30)', width:1 },
+    showlegend:false, hoverinfo:'none', name:'grid-xy'
+  };
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   makeAxis(dim, rng, zRng)
+   Línea + flecha V + etiqueta.
+   • Eje X: flecha en plano XY  (spread en ±Y, z=0)
+   • Eje Y: flecha en plano XY  (spread en ±X, z=0)
+   • Eje Z: flecha en plano XZ  (spread en ±X, y=0)
+   Así las flechas nunca quedan enterradas bajo la superficie.
+   ══════════════════════════════════════════════════════════════════ */
+function makeAxis(dim, rng, zRng){
+  var COLS = { x:'#cc2222', y:'#1a8c2e', z:'#1a4fcc' };
+  var col  = COLS[dim];
+  var xa,ya,za, vx,vy,vz, lblX,lblY,lblZ;
+
+  if (dim==='x'){
+    var span = rng[1]-rng[0];
+    var b=Math.max(span*0.07,0.15), s=b*0.5;
+    xa=[rng[0],rng[1]]; ya=[0,0]; za=[0,0];
+    /* V en plano XY: spread en ±Y */
+    vx=[rng[1]-b, rng[1], rng[1]-b];
+    vy=[-s,       0,       s      ];
+    vz=[0,        0,       0      ];
+    lblX=rng[1]+span*0.11; lblY=0; lblZ=0;
+
+  } else if (dim==='y'){
+    var span = rng[1]-rng[0];
+    var b=Math.max(span*0.07,0.15), s=b*0.5;
+    xa=[0,0]; ya=[rng[0],rng[1]]; za=[0,0];
+    /* V en plano XY: spread en ±X */
+    vx=[-s,       0,       s      ];
+    vy=[rng[1]-b, rng[1], rng[1]-b];
+    vz=[0,        0,       0      ];
+    lblX=0; lblY=rng[1]+span*0.11; lblZ=0;
+
+  } else { /* z */
+    var span = zRng[1]-zRng[0];
+    var b=Math.max(span*0.07,0.15), s=b*0.5;
+    xa=[0,0]; ya=[0,0]; za=[zRng[0],zRng[1]];
+    /* V en plano XZ: spread en ±X */
+    vx=[-s,        0, s       ];
+    vy=[0,         0, 0       ];
+    vz=[zRng[1]-b, zRng[1], zRng[1]-b];
+    lblX=0; lblY=0; lblZ=zRng[1]+span*0.13;
+  }
+
+  var line={
+    type:'scatter3d', mode:'lines',
+    x:xa, y:ya, z:za,
+    line:{ color:col, width:3 },
+    showlegend:false, hoverinfo:'none', name:'eje-'+dim
+  };
+  var arrow={
+    type:'scatter3d', mode:'lines',
+    x:vx, y:vy, z:vz,
+    line:{ color:col, width:4 },
+    showlegend:false, hoverinfo:'none', name:'flecha-'+dim
+  };
+  var lbl={
+    type:'scatter3d', mode:'text',
+    x:[lblX], y:[lblY], z:[lblZ],
+    text:['<b>'+dim.toUpperCase()+'</b>'],
+    textfont:{ color:col, size:14, family:'DM Sans, sans-serif' },
+    showlegend:false, hoverinfo:'none', name:'lbl-'+dim
+  };
+  return [line, arrow, lbl];
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   axStyle(title, showGrid)
+   showGrid siempre false — la cuadrícula real la dibujan makeXYgrid.
+   Sin planos, sin ticks, sin números.
+   ══════════════════════════════════════════════════════════════════ */
+function axStyle(title){
+  return {
+    title:{ text:title, font:{ size:12, color:'#334', family:'DM Sans, sans-serif' } },
+    showgrid:       false,
+    showbackground: false,
+    zeroline:       false,
+    showspikes:     false,
+    showticklabels: false,
+    showline:       true,
+    linecolor:      'rgba(0,0,0,0)',
+    linewidth:      1
+  };
+}
+
+/* ── Ejemplos ──────────────────────────────────────────────────── */
+var EXAMPLES = [
+  { label:'sombrero',    expr:'sin(sqrt(x^2+y^2))',        xr:[-8,8],   yr:[-8,8]  },
+  { label:'silla',       expr:'x^2 - y^2',                 xr:[-3,3],   yr:[-3,3]  },
+  { label:'gaussiana',   expr:'exp(-(x^2+y^2)/4)',         xr:[-5,5],   yr:[-5,5]  },
+  { label:'sin·cos',     expr:'sin(x)*cos(y)',             xr:[-4,4],   yr:[-4,4]  },
+  { label:'cono',        expr:'sqrt(x^2+y^2)',             xr:[-4,4],   yr:[-4,4]  },
+  { label:'paraboloide', expr:'x^2 + y^2',                 xr:[-3,3],   yr:[-3,3]  },
+  { label:'torus z',     expr:'(sqrt(x^2+y^2)-2)^2',      xr:[-4,4],   yr:[-4,4]  },
+  { label:'ondas circ.', expr:'sin(x^2+y^2)',              xr:[-4,4],   yr:[-4,4]  },
+  { label:'1/(r²+c)',    expr:'1/(x^2+y^2+0.3)',           xr:[-4,4],   yr:[-4,4]  },
+  { label:'sin+cos',     expr:'sin(x)+cos(y)',             xr:[-5,5],   yr:[-5,5]  },
+];
+
+var chipsWrap = document.getElementById('g3-chips');
+EXAMPLES.forEach(function(e){
+  var chip = document.createElement('button');
+  chip.className = 'g3-chip';
+  chip.textContent = e.label;
+  chip.title = 'z = ' + e.expr;
+  chip.addEventListener('click', function(){
+    document.getElementById('g3-expr').value = e.expr;
+    document.getElementById('g3-xmin').value = e.xr[0];
+    document.getElementById('g3-xmax').value = e.xr[1];
+    document.getElementById('g3-ymin').value = e.yr[0];
+    document.getElementById('g3-ymax').value = e.yr[1];
+    graficar();
+  });
+  chipsWrap.appendChild(chip);
+});
+
+/* ── Slider resolución: actualiza label + re-renderiza al soltar ── */
+var slRes  = document.getElementById('g3-res');
+var slResV = document.getElementById('g3-res-v');
+var resDebounce;
+slRes.addEventListener('input', function(){
+  slResV.textContent = slRes.value;
+  clearTimeout(resDebounce);
+  resDebounce = setTimeout(function(){
+    if (plotRendered) graficar();
+  }, 350);                     /* re-renderiza 350 ms después de soltar */
+});
+
+/* ── Utilidades ─────────────────────────────────────────────────── */
+function linspace(a, b, n){
+  var arr = [], step = (b-a)/(n-1);
+  for (var i=0; i<n; i++) arr.push(a + i*step);
+  return arr;
+}
+
+function setMsg(txt){
+  document.getElementById('g3-msg').textContent = txt || '';
+}
+
+function setExprError(on){
+  document.getElementById('g3-expr').classList.toggle('g3-err', on);
+}
+
+/* ── Traza de un eje (scatter3d) ─────────────────────────────────
+   Dibuja la semilínea negativa (gris) y positiva (color) + etiqueta
+   en el extremo positivo. Pasan por el origen (0,0,0).
+*/
+function makeAxis(dim, rng, zRng){
+  /* rng para X e Y viene de [xmin,xmax] / [ymin,ymax]
+     para Z usamos el rango real de datos */
+  var neg, pos, label;
+  var cx=['#e05252','#52b052','#5287e0'];  /* rojo, verde, azul */
+  var idx = {x:0, y:1, z:2}[dim];
+  var col = cx[idx];
+
+  /* segmento completo: neg → 0 → pos */
+  var xa=[],ya=[],za=[];
+  if (dim==='x'){
+    xa=[rng[0],0,rng[1]]; ya=[0,0,0]; za=[0,0,0];
+    label={x:rng[1]*1.08, y:0, z:0, text:'<b>X</b>'};
+  } else if (dim==='y'){
+    xa=[0,0,0]; ya=[rng[0],0,rng[1]]; za=[0,0,0];
+    label={x:0, y:rng[1]*1.08, z:0, text:'<b>Y</b>'};
+  } else {
+    xa=[0,0,0]; ya=[0,0,0]; za=[zRng[0],0,zRng[1]];
+    label={x:0, y:0, z:zRng[1]*1.12, text:'<b>Z</b>'};
+  }
+
+  var line = {
+    type:'scatter3d', mode:'lines',
+    x:xa, y:ya, z:za,
+    line:{ color:col, width:4 },
+    showlegend:false, hoverinfo:'none',
+    name:'eje-'+dim
+  };
+
+  var tip = {
+    type:'scatter3d', mode:'text',
+    x:[label.x], y:[label.y], z:[label.z],
+    text:[label.text],
+    textfont:{ color:col, size:13, family:'DM Sans, sans-serif' },
+    showlegend:false, hoverinfo:'none',
+    name:'label-'+dim
+  };
+
+  return [line, tip];
+}
+
+/* ── axStyle: configuración de ejes Plotly ─────────────────────── */
+function axStyle(title, dark){
+  if (dark){
+    return {
+      title:{ text:title, font:{ size:11, color:'#7ececa', family:'DM Sans, sans-serif' } },
+      gridcolor: 'rgba(42,90,122,0.35)',
+      zerolinecolor: 'rgba(200,146,42,0.30)',
+      backgroundcolor: 'rgba(15,34,51,0.55)',
+      showbackground: true,
+      tickfont:{ size:9, color:'#7a9aaa', family:'DM Mono, monospace' }
+    };
+  } else {
+    /* para exportación blanca */
+    return {
+      title:{ text:title, font:{ size:11, color:'#334', family:'DM Sans, sans-serif' } },
+      gridcolor: 'rgba(0,0,0,0.12)',
+      zerolinecolor: 'rgba(0,0,0,0.25)',
+      backgroundcolor: 'rgba(240,240,240,0.55)',
+      showbackground: true,
+      tickfont:{ size:9, color:'#445', family:'DM Mono, monospace' }
+    };
+  }
+}
+
+/* ── Estado global ───────────────────────────────────────────────── */
+var plotRendered = false;
+var lastTraces   = [];   /* guardamos las trazas para re-usar en PNG */
+var lastLayout   = {};
+
+/* ══════════════════════════════════════════════════════════════════
+   marchingSquares(xs, ys, vals, level)
+   vals[j][i] = valor en (xs[i], ys[j]).  Devuelve {x,y} con null
+   como separador de segmentos.  Usado para curvas de nivel y para
+   la intersección plano-superficie.
+   ══════════════════════════════════════════════════════════════════ */
+function marchingSquares(xs, ys, vals, level){
+  var N=xs.length, M=ys.length;
+  var rx=[], ry=[];
+  for(var j=0;j<M-1;j++){
+    for(var i=0;i<N-1;i++){
+      var v00=vals[j][i],   v10=vals[j][i+1];
+      var v01=vals[j+1][i], v11=vals[j+1][i+1];
+      if(v00===null||v10===null||v01===null||v11===null) continue;
+      var pts=[];
+      function edge(za,zb,xa,xb,ya,yb){
+        if((za-level)*(zb-level)<0){
+          var t=(level-za)/(zb-za);
+          pts.push([xa+t*(xb-xa), ya+t*(yb-ya)]);
+        }
+      }
+      edge(v00,v10, xs[i],xs[i+1], ys[j],ys[j]);
+      edge(v10,v11, xs[i+1],xs[i+1], ys[j],ys[j+1]);
+      edge(v01,v11, xs[i],xs[i+1], ys[j+1],ys[j+1]);
+      edge(v00,v01, xs[i],xs[i], ys[j],ys[j+1]);
+      if(pts.length>=2){
+        rx.push(pts[0][0], pts[1][0], null);
+        ry.push(pts[0][1], pts[1][1], null);
+      }
+    }
+  }
+  return {x:rx, y:ry};
+}
+
+/* ── Curvas de nivel z=c proyectadas en el plano z=0 ── */
+function makeContoursTrace(xs, ys, zs, zMin, zMax, nLev){
+  var levels=linspace(zMin+(zMax-zMin)*0.05, zMax-(zMax-zMin)*0.05, nLev);
+  var allX=[], allY=[], allZ=[];
+  levels.forEach(function(lv){
+    var seg=marchingSquares(xs, ys, zs, lv);
+    for(var k=0;k<seg.x.length;k++){
+      allX.push(seg.x[k]); allY.push(seg.y[k]);
+      allZ.push(seg.x[k]===null ? null : 0);
+    }
+  });
+  return {
+    type:'scatter3d', mode:'lines',
+    x:allX, y:allY, z:allZ,
+    line:{ color:'rgba(30,80,200,0.65)', width:2 },
+    showlegend:false, hoverinfo:'none', name:'curvas-z'
+  };
+}
+
+/* ── Plano ax+by+cz=d como mesh3d (sin heredar iluminación) ── */
+function makePlaneTrace(xmin,xmax,ymin,ymax, zRMin,zRMax, a,b,c,d){
+  var res=12;
+  var X=[],Y=[],Z=[],I=[],J=[],K=[];
+
+  function buildMesh(xArr,yArr,zFn){
+    for(var jj=0;jj<yArr.length;jj++)
+      for(var ii=0;ii<xArr.length;ii++){
+        var zv=zFn(xArr[ii],yArr[jj]);
+        X.push(xArr[ii]); Y.push(yArr[jj]); Z.push(zv);
+      }
+    var R=xArr.length;
+    for(var jj=0;jj<yArr.length-1;jj++)
+      for(var ii=0;ii<R-1;ii++){
+        var idx=jj*R+ii;
+        I.push(idx);   J.push(idx+1);   K.push(idx+R);
+        I.push(idx+1); J.push(idx+R+1); K.push(idx+R);
+      }
+  }
+
+  if(Math.abs(c)>1e-10){
+    buildMesh(linspace(xmin,xmax,res), linspace(ymin,ymax,res),
+              function(xi,yi){ return (d-a*xi-b*yi)/c; });
+  } else {
+    var norm=Math.sqrt(a*a+b*b);
+    if(norm<1e-10) return null;
+    var dx=-b/norm, dy=a/norm;
+    var x0=a*d/(a*a+b*b), y0=b*d/(a*a+b*b);
+    var corners=[[xmin,ymin],[xmax,ymin],[xmin,ymax],[xmax,ymax]];
+    var tvs=corners.map(function(q){ return (q[0]-x0)*dx+(q[1]-y0)*dy; });
+    var tmin=Math.min.apply(null,tvs), tmax=Math.max.apply(null,tvs);
+    var ts=linspace(tmin,tmax,res), zr=linspace(zRMin,zRMax,res);
+    for(var jj=0;jj<zr.length;jj++)
+      for(var ii=0;ii<ts.length;ii++){
+        X.push(x0+ts[ii]*dx); Y.push(y0+ts[ii]*dy); Z.push(zr[jj]);
+      }
+    var R=ts.length;
+    for(var jj=0;jj<zr.length-1;jj++)
+      for(var ii=0;ii<R-1;ii++){
+        var idx=jj*R+ii;
+        I.push(idx);   J.push(idx+1);   K.push(idx+R);
+        I.push(idx+1); J.push(idx+R+1); K.push(idx+R);
+      }
+  }
+  return {
+    type:'mesh3d', x:X, y:Y, z:Z, i:I, j:J, k:K,
+    color:'#22bb66', opacity:0.42,
+    flatshading:false,
+    lighting:{ ambient:0.95, diffuse:0.05, specular:0, roughness:1, fresnel:0 },
+    lightposition:{ x:0, y:0, z:1e5 },
+    showlegend:false, hoverinfo:'none', name:'plano'
+  };
+}
+
+/* ── parsePlaneExpr: acepta "ax+by+cz=d" o "a,b,c,d" ──────────
+   Formatos soportados:
+     "1, 2, -1, 3"        → [1, 2, -1, 3]
+     "x + 2y - z = 3"     → [1, 2, -1, 3]
+     "2x - 3z = 0"        → [2, 0, -3, 0]
+     "-y + z = 1"         → [0,-1, 1, 1]
+   ─────────────────────────────────────────────────────────────── */
+function parsePlaneExpr(s){
+  s = s.replace(/−/g,'-').trim();   /* normalizar guion largo */
+
+  /* Formato 1: cuatro números separados por comas/punto y coma/espacios */
+  var parts = s.replace(/=/g,' ').trim().split(/[\s,;]+/).filter(Boolean);
+  if(parts.length===4){
+    var ns=parts.map(Number);
+    if(!ns.some(isNaN)) return ns;
+  }
+
+  /* Formato 2: ecuación "lhs = d" */
+  var eqIdx=s.indexOf('=');
+  if(eqIdx<0) return null;
+  var lhs=s.substring(0,eqIdx).trim();
+  var dd=parseFloat(s.substring(eqIdx+1).trim());
+  if(isNaN(dd)) return null;
+
+  function coef(v){
+    /* captura el coeficiente de x, y, z en la expresión lhs */
+    var re=new RegExp('([+\\-]?\\s*\\d*\\.?\\d*)\\s*\\*?\\s*'+v,'i');
+    var m=lhs.match(re);
+    if(!m) return 0;
+    var c=m[1].replace(/\s/g,'');
+    if(c===''||c==='+') return 1;
+    if(c==='-') return -1;
+    var n=parseFloat(c);
+    return isNaN(n)?0:n;
+  }
+  return [coef('x'), coef('y'), coef('z'), dd];
+}
+
+/* ── fmtPlane: formatea [a,b,c,d] como ecuación legible ── */
+function fmtPlane(p){
+  var terms=[];
+  var names=['x','y','z'];
+  for(var i=0;i<3;i++){
+    if(p[i]===0) continue;
+    var c=p[i]===1?'':p[i]===-1?'-':String(p[i]);
+    terms.push(c+names[i]);
+  }
+  if(!terms.length) return '0 = '+p[3];
+  return terms.join(' + ').replace(/\+ -/g,'− ')+' = '+p[3];
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   chainSegments(segs)
+   segs = [{x0,y0,x1,y1}, …]  (segmentos sin orden de marchingSquares)
+   Devuelve polilíneas ordenadas: array de arrays de [x,y].
+   Algoritmo: busca el vecino más cercano a cada extremo; tolerancia ε.
+   ══════════════════════════════════════════════════════════════════ */
+function chainSegments(segs){
+  if(!segs.length) return [];
+  var used = new Array(segs.length).fill(false);
+  var chains = [];
+  var EPS2 = 1e-10;
+
+  function dist2(ax,ay,bx,by){ return (ax-bx)*(ax-bx)+(ay-by)*(ay-by); }
+
+  for(var s=0; s<segs.length; s++){
+    if(used[s]) continue;
+    /* iniciar nueva cadena con este segmento */
+    var chain=[[segs[s].x0,segs[s].y0],[segs[s].x1,segs[s].y1]];
+    used[s]=true;
+    /* extender hacia el frente */
+    var extended=true;
+    while(extended){
+      extended=false;
+      var tail=chain[chain.length-1];
+      var best=-1, bd=Infinity, rev=false;
+      for(var k=0;k<segs.length;k++){
+        if(used[k]) continue;
+        var d0=dist2(tail[0],tail[1],segs[k].x0,segs[k].y0);
+        var d1=dist2(tail[0],tail[1],segs[k].x1,segs[k].y1);
+        if(d0<bd){ bd=d0; best=k; rev=false; }
+        if(d1<bd){ bd=d1; best=k; rev=true;  }
+      }
+      if(best>=0 && bd<EPS2){
+        used[best]=true; extended=true;
+        chain.push(rev?[segs[best].x0,segs[best].y0]
+                      :[segs[best].x1,segs[best].y1]);
+      }
+    }
+    /* extender hacia atrás */
+    extended=true;
+    while(extended){
+      extended=false;
+      var head=chain[0];
+      var best=-1, bd=Infinity, rev=false;
+      for(var k=0;k<segs.length;k++){
+        if(used[k]) continue;
+        var d0=dist2(head[0],head[1],segs[k].x0,segs[k].y0);
+        var d1=dist2(head[0],head[1],segs[k].x1,segs[k].y1);
+        if(d0<bd){ bd=d0; best=k; rev=true;  }
+        if(d1<bd){ bd=d1; best=k; rev=false; }
+      }
+      if(best>=0 && bd<EPS2){
+        used[best]=true; extended=true;
+        chain.unshift(rev?[segs[best].x1,segs[best].y1]
+                         :[segs[best].x0,segs[best].y0]);
+      }
+    }
+    chains.push(chain);
+  }
+  return chains;
+}
+
+/* ── marchingSquaresSegs: igual que marchingSquares pero devuelve
+   array de {x0,y0,x1,y1} en vez de listas con null ── */
+function marchingSquaresSegs(xs, ys, vals, level){
+  var N=xs.length, M=ys.length;
+  var segs=[];
+  for(var j=0;j<M-1;j++){
+    for(var i=0;i<N-1;i++){
+      var v00=vals[j][i],   v10=vals[j][i+1];
+      var v01=vals[j+1][i], v11=vals[j+1][i+1];
+      if(v00===null||v10===null||v01===null||v11===null) continue;
+      var pts=[];
+      function edge(za,zb,xa,xb,ya,yb){
+        if((za-level)*(zb-level)<0){
+          var t=(level-za)/(zb-za);
+          pts.push([xa+t*(xb-xa), ya+t*(yb-ya)]);
+        }
+      }
+      edge(v00,v10, xs[i],xs[i+1], ys[j],ys[j]);
+      edge(v10,v11, xs[i+1],xs[i+1], ys[j],ys[j+1]);
+      edge(v01,v11, xs[i],xs[i+1], ys[j+1],ys[j+1]);
+      edge(v00,v01, xs[i],xs[i], ys[j],ys[j+1]);
+      if(pts.length>=2) segs.push({x0:pts[0][0],y0:pts[0][1],x1:pts[1][0],y1:pts[1][1]});
+    }
+  }
+  return segs;
+}
+
+/* ── Intersección plano ax+by+cz=d con z=f(x,y) ──────────────────
+   g(x,y) = ax + by + c·f(x,y) − d = 0
+   1. Marching squares sobre g → segmentos en XY
+   2. Encadenar en polilíneas ordenadas (chainSegments)
+   3. Elevar cada punto a z=f(x,y) → curva en la superficie
+   4. Proyectar en z=0 → sombra en el plano XY
+   ─────────────────────────────────────────────────────────────── */
+function makeIntersectionTrace(xs, ys, zs, compiled, a, b, c, d){
+  /* grilla de g(x,y) */
+  var M=ys.length, N=xs.length, gs=[];
+  for(var j=0;j<M;j++){
+    var row=[];
+    for(var i=0;i<N;i++){
+      if(zs[j][i]===null){ row.push(null); continue; }
+      row.push(a*xs[i] + b*ys[j] + c*zs[j][i] - d);
+    }
+    gs.push(row);
+  }
+
+  var rawSegs = marchingSquaresSegs(xs, ys, gs, 0);
+  var chains  = chainSegments(rawSegs);
+
+  /* construir trazas: segmentos separados por null entre cadenas */
+  var cx=[],cy=[],cz=[];   /* curva sobre la sup. */
+  var px=[],py=[],pz=[];   /* proyección en z=0   */
+
+  chains.forEach(function(ch, idx){
+    if(idx>0){ cx.push(null);cy.push(null);cz.push(null);
+               px.push(null);py.push(null);pz.push(null); }
+    ch.forEach(function(pt){
+      var ex=pt[0], ey=pt[1], ez=null;
+      try{ var v=compiled.evaluate({x:ex,y:ey});
+           if(isFinite(v)) ez=v; }catch(e){}
+      cx.push(ex); cy.push(ey); cz.push(ez);
+      px.push(ex); py.push(ey); pz.push(0);
+    });
+  });
+
+  var traceOnSurf={
+    type:'scatter3d', mode:'lines',
+    x:cx, y:cy, z:cz,
+    line:{ color:'#d04000', width:5 },
+    showlegend:false, hoverinfo:'none', name:'intersec-sup'
+  };
+  var traceOnXY={
+    type:'scatter3d', mode:'lines',
+    x:px, y:py, z:pz,
+    line:{ color:'rgba(200,90,0,0.45)', width:2, dash:'dot' },
+    showlegend:false, hoverinfo:'none', name:'intersec-xy'
+  };
+  return [traceOnSurf, traceOnXY];
+}
+
+/* ── parsePunto: acepta (a,b,c) o (a;b;c) con o sin paréntesis ── */
+function parsePunto(s){
+  s = s.replace(/[()[\]{}]/g,'').trim();
+  var parts = s.split(/[,;]+/).map(function(p){ return p.trim(); });
+  if (parts.length !== 3) return null;
+  var nums = parts.map(Number);
+  if (nums.some(isNaN)) return null;
+  return nums;   /* [a, b, c] */
+}
+
+/* ── Graficar ───────────────────────────────────────────────────── */
+function graficar(){
+  setMsg('');
+  setExprError(false);
+
+  var exprStr = document.getElementById('g3-expr').value.trim();
+  if (!exprStr){ setMsg('Ingrese una expresión f(x,y).'); setExprError(true); return; }
+
+  var xmin = parseFloat(document.getElementById('g3-xmin').value);
+  var xmax = parseFloat(document.getElementById('g3-xmax').value);
+  var ymin = parseFloat(document.getElementById('g3-ymin').value);
+  var ymax = parseFloat(document.getElementById('g3-ymax').value);
+
+  if (xmin >= xmax){ setMsg('Error: xₘᵢₙ debe ser menor que xₘₐₓ.'); return; }
+  if (ymin >= ymax){ setMsg('Error: yₘᵢₙ debe ser menor que yₘₐₓ.'); return; }
+
+  var N       = parseInt(slRes.value, 10);
+  var palette = document.getElementById('g3-palette').value;
+  var wire    = document.getElementById('g3-wire').checked;
+  var contour = document.getElementById('g3-contour').checked;
+  var showAxes= document.getElementById('g3-axes').checked;
+  var octante = document.getElementById('g3-octante').checked;
+
+  /* z-clip */
+  var zClipMinRaw = document.getElementById('g3-zclipmin').value.trim();
+  var zClipMaxRaw = document.getElementById('g3-zclipmax').value.trim();
+  var zClipMin = zClipMinRaw !== '' ? parseFloat(zClipMinRaw) : -Infinity;
+  var zClipMax = zClipMaxRaw !== '' ? parseFloat(zClipMaxRaw) : Infinity;
+  if(octante) zClipMin = Math.max(zClipMin, 0);
+
+  /* primer octante: forzar xmin,ymin ≥ 0 */
+  var xminEff = octante ? Math.max(0, xmin) : xmin;
+  var yminEff = octante ? Math.max(0, ymin) : ymin;
+
+  /* compilar expresión */
+  var compiled;
+  try {
+    compiled = math.compile(exprStr);
+  } catch(err){
+    setMsg('Sintaxis: ' + err.message.split('\n')[0]);
+    setExprError(true); return;
+  }
+
+  /* mostrar loading */
+  document.getElementById('g3-loading').classList.add('show');
+
+  setTimeout(function(){
+    var xs = linspace(xminEff, xmax, N);
+    var ys = linspace(yminEff, ymax, N);
+    var zs = [];
+    var zMin = Infinity, zMax = -Infinity;
+
+    try {
+      for (var j=0; j<N; j++){
+        var row = [];
+        for (var i=0; i<N; i++){
+          var val = compiled.evaluate({ x: xs[i], y: ys[j] });
+          if (isFinite(val) && val >= zClipMin && val <= zClipMax){
+            row.push(val);
+            if (val < zMin) zMin = val;
+            if (val > zMax) zMax = val;
+          } else {
+            row.push(null);
+          }
+        }
+        zs.push(row);
+      }
+    } catch(err){
+      document.getElementById('g3-loading').classList.remove('show');
+      setMsg('Error al evaluar: ' + err.message.split('\n')[0]);
+      setExprError(true); return;
+    }
+
+    /* si no hay datos finitos */
+    if (!isFinite(zMin)){ zMin = -1; zMax = 1; }
+
+    /* ── contornos sobre la superficie (solo malla, si está activo) ── */
+    var contours3d = {
+      x:{ show: wire, color:'rgba(40,40,40,0.18)', width:1 },
+      y:{ show: wire, color:'rgba(40,40,40,0.18)', width:1 },
+      z:{ show: false }
+    };
+
+    /* ── traza superficie ── */
+    var traceSurf = {
+      type: 'surface',
+      x: xs, y: ys, z: zs,
+      colorscale: palette,
+      contours: contours3d,
+      opacity: 0.92,
+      lighting:{ ambient:0.55, diffuse:0.8, specular:0.25, roughness:0.4, fresnel:0.2 },
+      showscale: true,
+      colorbar:{
+        thickness:13, len:0.55,
+        tickfont:{ color:'#334', size:9, family:'DM Mono, monospace' },
+        outlinecolor:'rgba(0,0,0,0.18)',
+        bgcolor:'rgba(255,255,255,0.7)'
+      },
+      name: 'z = ' + exprStr
+    };
+
+    /* ── trazas ── */
+    var traces = [traceSurf];
+
+    /* curvas de nivel z=c proyectadas en z=0 (marching squares) */
+    if(contour) traces.push(makeContoursTrace(xs, ys, zs, zMin, zMax, 12));
+
+    /* cuadrícula XY en z=0 */
+    var nGrid = Math.round(Math.min(Math.max((xmax-xmin)*1.5, 8), 14));
+    traces.push(makeXYgrid(xmin,xmax,ymin,ymax, nGrid, nGrid));
+
+    /* ejes */
+    if (showAxes){
+      var zRng = [zMin, zMax];
+      traces = traces.concat(
+        makeAxis('x', [xmin,xmax], zRng),
+        makeAxis('y', [ymin,ymax], zRng),
+        makeAxis('z', [xmin,xmax], zRng)
+      );
+    }
+
+    /* plano ax+by+cz=d + intersección */
+    var showPlane = document.getElementById('g3-plane').checked;
+    if(showPlane){
+      var planeStr = document.getElementById('g3-plane-expr').value.trim();
+      var pp = parsePlaneExpr(planeStr);
+      if(pp && (pp[0]!==0||pp[1]!==0||pp[2]!==0)){
+        var pa=pp[0], pb=pp[1], pc=pp[2], pd=pp[3];
+        var zPad2 = Math.max((zMax-zMin)*0.08, 0.2);
+        var pt=makePlaneTrace(xminEff,xmax,yminEff,ymax,
+                              Math.min(0,zMin)-zPad2, zMax+zPad2,
+                              pa,pb,pc,pd);
+        if(pt) traces.push(pt);
+        traces = traces.concat(makeIntersectionTrace(xs,ys,zs,compiled,pa,pb,pc,pd));
+      }
+    }
+
+    /* ── punto (a,b,c) si está definido ── */
+    var ptStr = document.getElementById('g3-punto').value.trim();
+    if (ptStr){
+      var pt = parsePunto(ptStr);
+      if (pt){
+        var pz = pt[2];
+        traces.push({
+          type:'scatter3d', mode:'lines',
+          x:[pt[0],pt[0]], y:[pt[1],pt[1]], z:[0, pz],
+          line:{ color:'#333', width:2, dash:'dot' },
+          showlegend:false, hoverinfo:'none', name:'pt-line'
+        });
+        traces.push({
+          type:'scatter3d', mode:'markers+text',
+          x:[pt[0]], y:[pt[1]], z:[pz],
+          marker:{ size:6, color:'#c00', symbol:'circle',
+                   line:{ color:'#800', width:1 } },
+          text:['('+pt[0]+', '+pt[1]+', '+pt[2]+')'],
+          textposition:'top center',
+          textfont:{ size:11, color:'#800', family:'DM Mono, monospace' },
+          showlegend:false, hoverinfo:'text', name:'punto'
+        });
+        traces.push({
+          type:'scatter3d', mode:'markers',
+          x:[pt[0]], y:[pt[1]], z:[0],
+          marker:{ size:4, color:'#888', symbol:'circle-open',
+                   line:{ color:'#888', width:1.5 } },
+          showlegend:false, hoverinfo:'none', name:'pt-proj'
+        });
+      }
+    }
+
+    /* z range: siempre incluye 0 para que la malla XY sea visible */
+    var zPad = Math.max((zMax-zMin)*0.08, 0.2);
+    var zRangeMin = Math.min(0, zMin) - zPad;
+    var zRangeMax = zMax + zPad;
+
+    /* ── layout fondo blanco ── */
+    var layout = {
+      paper_bgcolor: '#ffffff',
+      plot_bgcolor:  '#ffffff',
+      margin:{ t:36, b:8, l:8, r:8 },
+      scene:{
+        bgcolor: '#ffffff',
+        xaxis: axStyle('x'),
+        yaxis: axStyle('y'),
+        zaxis: Object.assign(axStyle('z'), { range:[zRangeMin, zRangeMax] }),
+        camera:{ eye:{ x:1.45, y:1.45, z:0.95 } },
+        aspectmode: 'auto'
+      },
+      font:{ family:'DM Sans, sans-serif', color:'#334' },
+      title:{
+        text: 'z = ' + exprStr,
+        font:{ family:'DM Mono, monospace', size:12, color:'#1a3a52' },
+        x:0.5, xanchor:'center', y:0.99
+      }
+    };
+
+    var config = {
+      responsive: true,
+      displayModeBar: true,
+      modeBarButtonsToRemove:['sendDataToCloud','lasso2d','select2d','resetCameraLastSave3d'],
+      displaylogo: false
+    };
+
+    /* ocultar overlay vacío */
+    var emptyEl = document.getElementById('g3-empty');
+    emptyEl.style.opacity = '0';
+    setTimeout(function(){ emptyEl.style.display='none'; }, 350);
+
+    if (plotRendered){
+      Plotly.react('g3-plot', traces, layout, config);
+    } else {
+      Plotly.newPlot('g3-plot', traces, layout, config);
+      plotRendered = true;
+    }
+
+    /* guardar trazas y zRng para exportar PNG */
+    lastTraces = traces;
+    lastLayout = layout;
+
+    document.getElementById('g3-loading').classList.remove('show');
+
+  }, 30);
+}
+
+/* ── Limpiar ────────────────────────────────────────────────────── */
+function limpiar(){
+  Plotly.purge('g3-plot');
+  plotRendered = false;
+  lastTraces = []; lastLayout = {};
+  var emptyEl = document.getElementById('g3-empty');
+  emptyEl.style.display = 'flex';
+  setTimeout(function(){ emptyEl.style.opacity = '1'; }, 10);
+  document.getElementById('g3-expr').value = '';
+  setMsg(''); setExprError(false);
+}
+
+/* ── Exportar PNG (fondo ya es blanco) ─────────────────────────── */
+function exportPNG(){
+  if (!plotRendered){ setMsg('Primero genere una gráfica.'); return; }
+  setMsg('Generando PNG…');
+  Plotly.toImage('g3-plot', {
+    format:'png', filename:'superficie3D',
+    width:1400, height:1000, scale:2
+  }).then(function(dataUrl){
+    var a = document.createElement('a');
+    a.download = 'superficie3D.png';
+    a.href = dataUrl;
+    a.click();
+    setMsg('');
+  }).catch(function(err){
+    setMsg('Error al exportar: ' + err.message);
+  });
+}
+
+/* ── Ayuda ──────────────────────────────────────────────────────── */
+document.getElementById('g3-btn-help').addEventListener('click', function(){
+  document.getElementById('g3-help').classList.toggle('open');
+});
+
+/* ── Eventos ────────────────────────────────────────────────────── */
+document.getElementById('g3-btn-plot').addEventListener('click', graficar);
+document.getElementById('g3-btn-clr' ).addEventListener('click', limpiar);
+document.getElementById('g3-btn-png' ).addEventListener('click', exportPNG);
+document.getElementById('g3-expr').addEventListener('keydown', function(e){
+  if (e.key === 'Enter') graficar();
+});
+/* re-renderizar al cambiar paleta, checkboxes */
+['g3-palette','g3-wire','g3-contour','g3-axes','g3-plane','g3-octante'].forEach(function(id){
+  document.getElementById(id).addEventListener('change', function(){
+    if (plotRendered) graficar();
+  });
+});
+/* punto, z-clip con debounce */
+var inputDebounce;
+['g3-punto','g3-zclipmin','g3-zclipmax'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', function(){
+    clearTimeout(inputDebounce);
+    inputDebounce = setTimeout(function(){ if(plotRendered) graficar(); }, 350);
+  });
+});
+/* plano: live preview + re-render */
+var planeDebounce;
+document.getElementById('g3-plane-expr').addEventListener('input', function(){
+  var pp = parsePlaneExpr(this.value.trim());
+  var prev = document.getElementById('g3-plane-preview');
+  if(pp){ prev.textContent = fmtPlane(pp); prev.style.color='#1a8c2e'; }
+  else   { prev.textContent = this.value.trim()?'formato: x+2y−z=1  ó  1,2,−1,1':''; prev.style.color='#999'; }
+  clearTimeout(planeDebounce);
+  planeDebounce = setTimeout(function(){
+    if(plotRendered && document.getElementById('g3-plane').checked) graficar();
+  }, 450);
+});
+
+/* ── panel TEC info toggle ──────────────────────────────────────── */
+document.getElementById('info-toggle').addEventListener('click', function(){
+  var exp = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', String(!exp));
+  var body = document.getElementById('info-g3');
+  if (body) body.hidden = exp;
+});
+
+/* ── Render inicial ─────────────────────────────────────────────── */
+window.addEventListener('load', function(){
+  setTimeout(graficar, 500);
+});
+
+}());
+</script>
+
+<footer style="text-align:center;padding:10px;color:#555555;">
+  <img src="images/logocc.png" alt="Creative Commons" style="vertical-align:middle;margin-right:8px;">
+  Licencia Creative Commons: Atribución-NoComercial-SinDerivadas CC BY-NC-ND, Abril 2026.
+</footer>
+</body>
+</html>

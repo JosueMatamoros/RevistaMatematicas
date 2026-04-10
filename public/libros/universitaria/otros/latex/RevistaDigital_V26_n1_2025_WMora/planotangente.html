@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano tangente</title>
+    <link rel="stylesheet" href="css/planotangente.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #6c757d;
+            font-weight: 400;
+        }
+
+        .subtitle a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .subtitle a:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            .subtitle {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Plano tangente</h1>
+        <p class="subtitle">
+            <a href="https://www.tec.ac.cr" target="_blank" rel="noopener">Instituto Tecnológico de Costa Rica</a>
+            <br>
+            <a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/" target="_blank" rel="noopener">Revista  Matemática, Educación e Internet</a>
+        </p>
+    </header>
+    
+<div class="planotangente-widget">
+   <div id="plot3d"></div>
+   <div id="plot2d-container">
+   <div id="controls">
+   <label><input type="checkbox" id="toggleTangents" checked> Mostrar rectas tangentes</label>
+   </div>
+   <div id="coords">Coordenadas: (1.05, 0.68, 0.00)</div>
+   <div id="plot2d-wrapper">
+  <canvas id="plot2d"></canvas>
+  </div></div></div>
+<script src="js/planotangente.js" defer></script>
+
+   
+</body>
+</html>

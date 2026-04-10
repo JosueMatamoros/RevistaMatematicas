@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\contentsline {schapter}{\hspace {6em}{\color {azulF}{\fontfamily {phv}\fontsize {9}{10}\selectfont Prol\'ogo}} \hskip 2em\relax }{\es@scroman {i}}{Doc-Start}
+\contentsline {section}{\numberline {\thesection }Requisitos para compilar}{2}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Dimensiones}{2}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Plantilla general}{2}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Entornos}{2}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Paquetes habilitados en esta plantilla}{3}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Entornos sin cajas}{4}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Entornos con cajas}{4}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Cambiar los colores en el pre\'ambulo}{9}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Cajas y cajas simples}{9}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Notas y vocabulario}{10}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Listas de enumeraci\'on adicionales}{10}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }C\'odigo de programas en color}{11}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }El entorno tabular}{11}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Tablas con el paquete TIKZ}{11}{section.0\c@section }
+\contentsline {subsection}{\numberline {\thesubsection }Tablas con tcolorbox y tabularx}{12}{subsection.0\c@section .0\c@subsection }
+\contentsline {section}{\numberline {\thesection }Gr\'aficos}{12}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Listas de ejercicios}{13}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Caja para listas de ejercicios}{14}{section.0\c@section }
+\contentsline {section}{\numberline {\thesection }Entorno bibliograf\IeC {\'\i }a}{15}{section.0\c@section }
+\contentsline {section}{\color {azulF} Bibliograf\IeC {\'\i }a}{16}{lstnumber.-39.12}
+\contentsline {section}{Soluciones del Cap\'{\i }tulo 4}{16}{lstnumber.-39.12}
+\contentsfinish 

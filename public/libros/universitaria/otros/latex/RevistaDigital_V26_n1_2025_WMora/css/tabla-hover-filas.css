@@ -1,0 +1,49 @@
+/* === ESTILO FUERTEMENTE ENCAPSULADO === */
+.tabla-hover-filas table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.tabla-hover-filas caption {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.tabla-hover-filas th,
+.tabla-hover-filas td {
+  border: 1px solid #4682B4;
+  padding: 0.3em;
+}
+
+/* Colores personalizados */
+.tabla-hover-filas thead tr:first-child {
+  background-color: #336699;
+  color: white;
+}
+
+.tabla-hover-filas .highlight {
+  background-color: #f5f5dc; /* tono claro */
+  font-weight: bold;
+}
+
+/* Rayado de filas */
+.tabla-hover-filas .rowgray {
+  background-color: #f0f0f0;
+}
+
+/* Efecto hover */
+.tabla-hover-filas tbody tr:hover {
+  background-color: #f8c5e5 !important;
+  transition: background-color 0.2s ease-in-out;
+}
+.tabla-hover-filas tr.rowgray:hover {
+  background-color: #f8c5e5 !important;
+}
+
+

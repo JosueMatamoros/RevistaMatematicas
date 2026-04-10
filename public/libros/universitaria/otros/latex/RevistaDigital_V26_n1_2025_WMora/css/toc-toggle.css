@@ -1,0 +1,95 @@
+/* Estilo ultra suave y minimalista */
+:root {
+  --tverde: #176B3B;
+  --fondo: #FFFCF5; /* Gris-amarillo ultra suave (casi blanco) */
+  --borde: #EAE5DC;
+  --hover: #F0F0F0; /* Gris casi imperceptible para hover */
+}
+
+.toc-btn {
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  padding: 8px 15px;
+  cursor: pointer;
+  margin: 1em 0;
+  font-size: 0.9em;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+}
+
+.toc-btn:hover {
+  background: var(--hover);
+  border-color: #D5D5D5;
+  /* Eliminamos el bold y color verde en hover */
+}
+
+/* Triángulo relleno sutil */
+.toc-btn::after {
+  content: "";
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #999; /* Gris en lugar de verde */
+  transition: all 0.3s ease;
+}
+
+.toc-btn.collapsed::after {
+  border-top: none;
+  border-bottom: 6px solid #999;
+}
+
+#toc-container {
+  display: none;
+  background: var(--fondo);
+  padding: 1.2em;
+  margin: 0.5em 0 1.5em;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+}
+
+#toc-container.visible {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Lista de contenidos ultra discreta */
+#toc-container ul {
+  list-style: none;
+  padding-left: 0.8em;
+  margin: 0;
+}
+
+#toc-container li {
+  padding: 5px 0;
+  position: relative;
+}
+
+#toc-container li::before {
+  content: "•";
+  color: #CCC; /* Viñetas grises */
+  position: absolute;
+  left: -0.8em;
+  font-size: 0.9em;
+}
+
+#toc-container a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.88em;
+  transition: color 0.3s ease;
+}
+
+#toc-container a:hover {
+  color: #444; /* Solo un gris ligeramente más oscuro */
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matemáticas Universitarias</title>
+
+<style>
+:root{
+  --azulgris:#2f4f5f;
+  --azulgris-oscuro:#243c48;
+  --texto:#222;
+}
+
+body{
+  margin:0;
+  font-family: Georgia, "Times New Roman", serif;
+  color:var(--texto);
+}
+
+/* ===== ENCABEZADO ===== */
+.header{
+  padding:15px 20px 5px 20px;
+}
+
+.titulo-linea{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.logo{
+  width:60px;
+  height:60px;
+  flex-shrink:0;
+}
+
+.titulo{
+  font-size:2.2em;
+  font-weight:bold;
+}
+
+.subtitulo{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:1.1em;
+  margin-left:75px;
+  margin-top:5px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  background:var(--azulgris);
+  color:white;
+  padding:8px 15px;
+}
+
+/* fila principal */
+.nav-main{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* lado izquierdo */
+.nav-left{
+  font-weight:bold;
+  font-size:1.05em;
+}
+
+/* botones escritorio */
+.nav-right{
+  display:flex;
+  gap:10px;
+}
+
+/* botones */
+.btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.6);
+  color:white;
+  padding:5px 10px;
+  font-size:0.85em;
+  cursor:pointer;
+  border-radius:3px;
+  transition:all 0.2s ease;
+}
+
+.btn:hover{
+  background:var(--azulgris-oscuro);
+}
+
+/* ===== HAMBURGUESA ===== */
+.menu-toggle{
+  display:none;
+  font-size:1.4em;
+  cursor:pointer;
+}
+
+/* acordeón */
+.nav-accordion{
+  max-height:0;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  transition:max-height 0.3s ease;
+  margin-top:8px;
+}
+
+/* ===== VISOR ===== */
+.viewer{
+  width:100%;
+  height:calc(100vh - 160px);
+  border:none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px){
+
+  .titulo{
+    font-size:1.5em;
+  }
+
+  .subtitulo{
+    margin-left:0;
+  }
+
+  /* ocultar botones normales */
+  .nav-right{
+    display:none;
+  }
+
+  /* mostrar hamburguesa */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* acordeón visible */
+  .nav-accordion.active{
+    max-height:200px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== ENCABEZADO ===== -->
+<div class="header">
+  <div class="titulo-linea">
+
+    <svg class="logo" viewBox="0 0 100 100">
+      <polygon points="10,90 50,10 90,90" fill="#2f4f5f"/>
+      <text x="50" y="70" text-anchor="middle" fill="white" font-size="22">π</text>
+    </svg>
+
+    <div class="titulo">Matemáticas Universitarias</div>
+  </div>
+
+  <div class="subtitulo">Walter Mora-Flores</div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+
+  <div class="nav-main">
+    <div class="nav-left">Contenido</div>
+
+    <div class="nav-right">
+      <button class="btn" onclick="cargar('anterior.html')">Anterior</button>
+      <button class="btn" onclick="cargar('index.html')">Inicio</button>
+      <button class="btn" onclick="cargar('siguiente.html')">Siguiente</button>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- acordeón móvil -->
+  <div id="accordion" class="nav-accordion">
+    <button class="btn" onclick="cargar('anterior.html')">Anterior</button>
+    <button class="btn" onclick="cargar('index.html')">Inicio</button>
+    <button class="btn" onclick="cargar('siguiente.html')">Siguiente</button>
+  </div>
+
+</div>
+
+<!-- ===== VISOR ===== -->
+<iframe id="visor" class="viewer" src="index.html"></iframe>
+
+<script>
+function cargar(pagina){
+  document.getElementById("visor").src = pagina;
+}
+
+function toggleMenu(){
+  const acc = document.getElementById("accordion");
+  acc.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graficador de Funciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- math.js para evaluar expresiones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.3/math.min.js"></script>
+
+  <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  GRAFICADOR DE FUNCIONES — prefijo .gf-                     ║
+    ║  Hasta 10 funciones simultáneas con colores distintos       ║
+    ║  Evaluador: math.js (reemplaza JEP)                         ║
+    ╚══════════════════════════════════════════════════════════════╝
+  -->
+  <style>
+    .gf-widget *, .gf-widget *::before, .gf-widget *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+    }
+
+    .gf-widget {
+      --gf-bg:      #1a3a52;
+      --gf-darker:  #0f2233;
+      --gf-mid:     #1e4560;
+      --gf-lt:      #2a5a7a;
+      --gf-teal:    #b0ffff;
+      --gf-gold:    #c8922a;
+      --gf-gold-lt: #e8b84b;
+      --gf-accent:  #fdb851;   /* naranja-amarillo del botón original */
+      --gf-error:   #ff6b6b;
+      --gf-ink:     #0d1117;
+      --gf-axis:    rgba(187,187,187,.7);
+      --gf-grid:    rgba(220,220,220,.18);
+
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: #fff;
+      background: var(--gf-bg);
+      border-radius: 8px;
+      box-shadow: 0 6px 40px rgba(0,0,0,.32);
+      overflow: hidden;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      border: 2px solid var(--gf-darker);
+    }
+
+    /* ── header ── */
+    .gf-header {
+      background: var(--gf-darker);
+      padding: .65rem 1.2rem;
+      border-bottom: 1px solid var(--gf-lt);
+      display: flex; align-items: baseline; gap: .75rem;
+    }
+    .gf-header h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem; font-weight: 400; color: var(--gf-teal);
+    }
+    .gf-header span {
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--gf-gold-lt);
+    }
+
+    /* ── canvas ── */
+    .gf-canvas-wrap {
+      position: relative; width: 100%; aspect-ratio: 16/9;
+      background: #fff; cursor: crosshair;
+    }
+    .gf-canvas { display: block; width: 100%; height: 100%; }
+
+    /* coordenadas flotantes */
+    .gf-coords {
+      position: absolute; top: 6px; right: 8px;
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      color: #1a3a52; background: rgba(255,255,255,.82);
+      padding: .18rem .5rem; border-radius: 3px;
+      pointer-events: none; opacity: 0;
+      transition: opacity .15s;
+    }
+    .gf-canvas-wrap:hover .gf-coords { opacity: 1; }
+
+    /* ── panel de control ── */
+    .gf-panel {
+      background: var(--gf-bg);
+      padding: .75rem 1.1rem;
+      border-top: 1px solid var(--gf-lt);
+      display: flex; flex-direction: column; gap: .6rem;
+    }
+
+    /* fila de entrada */
+    .gf-input-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto;
+      gap: .45rem; align-items: center;
+    }
+    @media (max-width: 520px) {
+      .gf-input-row { grid-template-columns: 1fr 1fr; }
+      .gf-input-row .gf-expr { grid-column: 1 / -1; }
+    }
+
+    .gf-expr {
+      width: 100%; padding: .38rem .6rem;
+      font-family: 'DM Mono', monospace; font-size: .88rem;
+      color: var(--gf-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      transition: border-color .15s;
+    }
+    .gf-expr:focus   { border-color: var(--gf-accent); }
+    .gf-expr.gf-err  { border-color: var(--gf-error); color: #8a0000; }
+
+    .gf-range-lbl {
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: rgba(176,255,255,.55); white-space: nowrap;
+    }
+
+    .gf-range-in {
+      width: 62px; padding: .38rem .45rem;
+      font-family: 'DM Mono', monospace; font-size: .82rem;
+      color: var(--gf-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      text-align: center; transition: border-color .15s;
+    }
+    .gf-range-in:focus { border-color: var(--gf-accent); }
+    .gf-range-in.gf-err { border-color: var(--gf-error); }
+
+    /* botones */
+    .gf-btn-row { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+
+    .gf-btn {
+      padding: .38rem .9rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem; font-weight: 700;
+      color: #002800; background: var(--gf-accent);
+      border: none; border-radius: 3px; cursor: pointer;
+      transition: background .14s, transform .08s;
+    }
+    .gf-btn:hover  { background: #fec96a; }
+    .gf-btn:active { transform: scale(.96); }
+    .gf-btn.del    { background: #d43030; color: #fff; }
+    .gf-btn.del:hover { background: #e85050; }
+    .gf-btn.help   { background: var(--gf-lt); color: var(--gf-teal); border: 1px solid #3a7aaa; }
+    .gf-btn.help:hover { background: #3a7aaa; }
+    .gf-btn.clr    { background: #2a3a4a; color: var(--gf-teal); border: 1px solid #3a5a7a; }
+    .gf-btn.clr:hover  { background: #3a5a7a; }
+
+    /* escalas */
+    .gf-scale-row { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+    .gf-scale-field { display: flex; align-items: center; gap: .45rem; }
+    .gf-scale-lbl { font-family: 'DM Mono', monospace; font-size: .62rem; color: rgba(176,255,255,.5); white-space: nowrap; }
+    .gf-slider    { flex: 1; accent-color: var(--gf-accent); }
+    .gf-scale-val { font-family: 'DM Mono', monospace; font-size: .7rem; color: var(--gf-gold-lt); min-width: 1.8rem; text-align: right; }
+
+    /* lista de funciones graficadas */
+    .gf-fn-list { display: flex; flex-direction: column; gap: .25rem; }
+    .gf-fn-item {
+      display: flex; align-items: center; gap: .5rem;
+      font-family: 'DM Mono', monospace; font-size: .72rem;
+    }
+    .gf-fn-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .gf-fn-expr { color: rgba(176,255,255,.8); }
+
+    /* mensaje error */
+    .gf-msg {
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: var(--gf-error); min-height: .85rem; letter-spacing: .04em;
+    }
+
+    /* ── panel ayuda ── */
+    .gf-help-panel {
+      display: none;
+      background: var(--gf-darker); border-top: 1px solid var(--gf-lt);
+      padding: .7rem 1.1rem; max-height: 220px; overflow-y: auto;
+    }
+    .gf-help-panel.open { display: block; }
+    .gf-help-panel h3 {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--gf-gold-lt); margin-bottom: .4rem;
+    }
+    .gf-help-panel table { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: .68rem; }
+    .gf-help-panel td { padding: .1rem .5rem; vertical-align: top; color: rgba(176,255,255,.75); }
+    .gf-help-panel td:first-child { color: var(--gf-teal); width: 30%; }
+
+    /* ── footer ── */
+    .gf-footer {
+      padding: .38rem 1.2rem; border-top: 1px solid var(--gf-darker);
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .1em; color: rgba(176,255,255,.25); text-align: right;
+    }
+
+    /* botones export */
+    .gf-btn.exp-png { background: #2e6e4a; color: #fff; }
+    .gf-btn.exp-png:hover { background: #3a8a5c; }
+    .gf-btn.exp-pdf { background: #6e2e2e; color: #fff; }
+    .gf-btn.exp-pdf:hover { background: #8a3a3a; }
+    .gf-btn.exp-svg { background: #3a3a8a; color: #fff; }
+    .gf-btn.exp-svg:hover { background: #5050aa; }
+    .gf-btn.reset-pan { background: #4a4a2e; color: #e8d87a; border: 1px solid #7a7a3a; }
+    .gf-btn.reset-pan:hover { background: #6a6a3a; }
+    .gf-btn.addpt { background: #2a5a4a; color: #b0ffdd; border: 1px solid #3a8a6a; }
+    .gf-btn.addpt:hover { background: #3a7a5a; }
+    .gf-btn.delpt:hover { background: #7a3a5a; }
+
+    .gf-select {
+      padding: .32rem .5rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem;
+      color: var(--gf-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      cursor: pointer; transition: border-color .15s;
+    }
+    .gf-select:focus { border-color: var(--gf-accent); }
+
+    .gf-row-label {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      color: rgba(176,255,255,.45); white-space: nowrap; letter-spacing: .06em;
+    }
+    .gf-section-sep {
+      border: none; border-top: 1px solid rgba(176,255,255,.12); margin: .1rem 0;
+    }
+
+    @keyframes gf-pop { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .gf-widget { animation: gf-pop .32s ease both; }
+  </style>
+<!-- ── TEC PAGE STYLES ── -->
+<style>
+:root {
+  --tec-bg:      #f0ede8;
+  --tec-ink:     #0d1117;
+  --tec-accent:  #1a4f8a;
+  --tec-gold:    #c8922a;
+  --tec-gold-lt: #e8b84b;
+  --tec-rule:    #d4cfc9;
+  --tec-muted:   #7a7269;
+  --tec-info-bg: #eef3fb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tec-bg:      #0d1117;
+    --tec-ink:     #e4dfd8;
+    --tec-accent:  #4a9ade;
+    --tec-gold-lt: #e8b84b;
+    --tec-rule:    #1e2d3d;
+    --tec-muted:   #8a8279;
+    --tec-info-bg: #0f2035;
+  }
+}
+html { font-size: 16px; }
+body {
+  margin: 0;
+  background: var(--tec-bg);
+  color: var(--tec-ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 1.5rem 0 2rem;
+}
+.tec-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.tec-header { border-bottom: 2px solid var(--tec-gold); padding-bottom: .75rem; }
+.tec-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: .7rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--tec-muted); margin: 0 0 .2rem;
+}
+.tec-course-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem; font-weight: 400; margin: 0; line-height: 1.2;
+  color: var(--tec-ink);
+}
+.tec-course-link {
+  color: var(--tec-accent); text-decoration: none;
+  border-bottom: 1px solid transparent; transition: border-color .2s;
+}
+.tec-course-link:hover { border-bottom-color: var(--tec-accent); }
+.tec-info {
+  background: var(--tec-info-bg); border: 1px solid var(--tec-rule);
+  border-radius: 6px; overflow: hidden;
+}
+.tec-info-toggle {
+  width: 100%; padding: .75rem 1.1rem; background: none; border: none;
+  cursor: pointer; display: flex; align-items: center; gap: .55rem;
+  font-family: 'DM Mono', monospace; font-size: .78rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--tec-accent); text-align: left;
+  transition: background .2s;
+}
+.tec-info-toggle:hover { background: rgba(26,79,138,.07); }
+.tec-info-icon { display: inline-block; transition: transform .22s; font-size: .6rem; }
+.tec-info-toggle[aria-expanded="true"] .tec-info-icon { transform: rotate(90deg); }
+.tec-info-body {
+  padding: 1rem 1.1rem 1.2rem; border-top: 1px solid var(--tec-rule);
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem;
+}
+@media (max-width: 640px) { .tec-info-body { grid-template-columns: 1fr; } }
+[hidden] { display: none !important; }
+
+.tec-info-body h3 {
+  font-family: 'DM Mono', monospace; font-size: .66rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--tec-gold); margin: 0 0 .45rem;
+}
+.tec-info-body p, .tec-info-body li { font-size: .88rem; color: var(--tec-ink); line-height: 1.65; }
+.tec-info-body ol, .tec-info-body ul { padding-left: 1.1rem; margin: 0; }
+.tec-info-body li { margin-bottom: .3rem; }
+.home-footer {
+  border-top: 1px solid var(--tec-rule); padding: .85rem 0;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: .5rem;
+  font-family: 'DM Mono', monospace; font-size: .72rem; letter-spacing: .08em;
+}
+.footer-brand { color: var(--tec-muted); text-transform: uppercase; }
+.footer-link { color: var(--tec-accent); text-decoration: none; transition: color .2s; }
+.footer-link:hover { color: var(--tec-gold-lt); }
+</style>
+
+<style id="tec-mobile">
+/* ── responsive mobile ── */
+@media (max-width: 720px) {
+  body { padding: 0.75rem 0 1.5rem; }
+  .tec-page { padding: 0 0.75rem; gap: 1rem; }
+  .tec-course-title { font-size: 1rem; }
+}
+/* ── scroll en panel de instrucciones ── */
+.tec-info-body {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 640px) {
+  .tec-info-body { overflow-x: hidden; overflow-y: auto; max-height: 60vh; }
+}
+/* ── scroll en el widget / script area ── */
+.tec-page > div[class*="-widget"],
+.tec-page > div[class*="-card"],
+.tec-page > div[class$="-wrap"],
+.tec-page > .widget-outer {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+/* contenedor genérico del widget cuando no tiene clase scrollable */
+.tec-widget-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="tec-page" role="main">
+<header class="tec-header" role="banner">
+  <p class="tec-eyebrow">Instituto Tecnológico de Costa Rica</p>
+  <h1 class="tec-course-title">
+    <a class="tec-course-link" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/" target="_blank">
+      Edición de Textos Científicos La<span style="position:relative;top:-.12em;font-size:.82em;">T</span>e<span style="position:relative;top:.1em;font-size:.82em;">X</span> (2026)
+    </a>
+  </h1>
+</header>
+
+<section class="tec-info" aria-label="Información de la herramienta">
+  <button class="tec-info-toggle" aria-expanded="false" aria-controls="info-graficafuncionesv">
+    <span class="tec-info-icon">▶</span>
+    Instrucciones y experimentos
+  </button>
+  <div class="tec-info-body" id="info-graficafuncionesv" hidden>
+    <div><h3>Propósito</h3><p>Graficador de funciones matemáticas generales para visualizar densidades de probabilidad, funciones de distribución acumulada o cualquier función relevante en el estudio de probabilidad.</p></div>
+    <div><h3>Cómo usar</h3><ol>
+        <li>Ingrese la expresión f(x) en la sintaxis matemática indicada.</li>
+        <li>Defina el rango del eje x (mínimo y máximo).</li>
+        <li>Ajuste el rango del eje y si es necesario.</li>
+        <li>Presione Graficar para visualizar.</li>
+    </ol></div>
+    <div><h3>Experimentos sugeridos</h3><ul>
+        <li>Grafica la densidad normal: exp(−x²/2)/sqrt(2*pi) en [−4,4].</li>
+        <li>Grafica la CDF exponencial: 1−exp(−x) en [0,6].</li>
+        <li>Compara f(x)=x² con g(x)=sqrt(x) en [0,2].</li>
+    </ul></div>
+  </div>
+</section>
+
+<div class="gf-widget" id="gf-widget-1">
+
+  <div class="gf-header">
+    <h2>Graficador de Funciones</h2>
+    <span>hasta 10 funciones · math.js</span>
+  </div>
+
+  <!-- canvas -->
+  <div class="gf-canvas-wrap" id="gf-wrap-1">
+    <canvas class="gf-canvas" id="gf-cv-1"></canvas>
+    <div class="gf-coords" id="gf-coords-1"></div>
+  </div>
+
+  <!-- panel de control -->
+  <div class="gf-panel">
+
+    <!-- fila expresión + intervalo -->
+    <div class="gf-input-row">
+      <input class="gf-expr" id="gf-expr-1" type="text"
+             value="abs(x*sin(x))-4" autocomplete="off"
+             placeholder="f(x) — ej: sin(x), x^2-3, ...">
+      <span class="gf-range-lbl">x ∈ [</span>
+      <input class="gf-range-in" id="gf-xmin-1" type="text" value="-15" inputmode="decimal" autocomplete="off">
+      <span class="gf-range-lbl">,</span>
+      <input class="gf-range-in" id="gf-xmax-1" type="text" value="15" inputmode="decimal" autocomplete="off">
+      <span class="gf-range-lbl">]</span>
+    </div>
+
+    <!-- botones principales -->
+    <div class="gf-btn-row">
+      <button class="gf-btn" id="gf-plot-1">▶ Graficar</button>
+      <button class="gf-btn del" id="gf-del-1">✕ Borrar última</button>
+      <button class="gf-btn clr" id="gf-clr-1">⊘ Borrar todo</button>
+      <button class="gf-btn help" id="gf-help-1">? Ayuda</button>
+    </div>
+
+    <hr class="gf-section-sep">
+
+    <!-- fila grosor + pan reset -->
+    <div class="gf-btn-row" style="align-items:center;">
+      <span class="gf-row-label">Grosor:</span>
+      <select class="gf-select" id="gf-lw-1">
+        <option value="1">1 px</option>
+        <option value="2" selected>2 px</option>
+        <option value="3">3 px</option>
+      </select>
+      <button class="gf-btn reset-pan" id="gf-reset-1" title="Restablecer posición del gráfico">⌖ Centrar</button>
+    </div>
+
+    <hr class="gf-section-sep">
+
+    <!-- exportar -->
+    <div class="gf-btn-row" style="align-items:center;">
+      <span class="gf-row-label">Exportar:</span>
+      <button class="gf-btn exp-png" id="gf-exp-png-1">⬇ PNG</button>
+      <button class="gf-btn exp-svg" id="gf-exp-svg-1">⬇ SVG</button>
+      <button class="gf-btn exp-pdf" id="gf-exp-pdf-1">⬇ PDF</button>
+    </div>
+
+    <hr class="gf-section-sep">
+
+    <!-- puntos -->
+    <div class="gf-btn-row" style="align-items:center; flex-wrap:wrap;">
+      <span class="gf-row-label">Punto:</span>
+      <input class="gf-expr" id="gf-punto-1" type="text"
+             style="max-width:130px;" placeholder="(a,b) o (a;b)"
+             autocomplete="off">
+      <button class="gf-btn addpt" id="gf-addpt-1">● Agregar</button>
+      <button class="gf-btn delpt" id="gf-delpt-1">✕ Quitar</button>
+    </div>
+
+    <!-- escalas -->
+    <div class="gf-scale-row">
+      <div class="gf-scale-field">
+        <span class="gf-scale-lbl">Escala X</span>
+        <input class="gf-slider" id="gf-sx-1" type="range" min="5" max="80" value="30" step="1">
+        <span class="gf-scale-val" id="gf-sxv-1">30</span>
+      </div>
+      <div class="gf-scale-field">
+        <span class="gf-scale-lbl">Escala Y</span>
+        <input class="gf-slider" id="gf-sy-1" type="range" min="5" max="80" value="30" step="1">
+        <span class="gf-scale-val" id="gf-syv-1">30</span>
+      </div>
+    </div>
+
+    <!-- lista de funciones -->
+    <div class="gf-fn-list" id="gf-fnlist-1"></div>
+
+    <!-- mensaje -->
+    <div class="gf-msg" id="gf-msg-1"></div>
+
+  </div>
+
+  <!-- ayuda -->
+  <div class="gf-help-panel" id="gf-help-panel-1">
+    <h3>Comandos disponibles</h3>
+    <table>
+      <tr><td>+ − * / ^ %</td><td>aritmética básica; potencia: x^2</td></tr>
+      <tr><td>sin cos tan</td><td>trigonométricas: sin(x^2)</td></tr>
+      <tr><td>asin acos atan</td><td>inversas trig: atan(x-3)</td></tr>
+      <tr><td>sinh cosh tanh</td><td>hiperbólicas: cosh(1/x)</td></tr>
+      <tr><td>asinh acosh atanh</td><td>inversas hiperbólicas</td></tr>
+      <tr><td>log(x) / log(x,b)</td><td>log natural / base b: log(100,10)=2</td></tr>
+      <tr><td>log10(x)</td><td>logaritmo base 10</td></tr>
+      <tr><td>sqrt(x) / abs(x)</td><td>raíz cuadrada / valor absoluto</td></tr>
+      <tr><td>exp(x)</td><td>e^x</td></tr>
+      <tr><td>floor ceil round</td><td>redondeo</td></tr>
+      <tr><td>pi, e</td><td>constantes: pi, e</td></tr>
+      <tr><td>random()</td><td>número aleatorio [0,1)</td></tr>
+    </table>
+    <h3 style="margin-top:.5rem;">Operadores lógicos (retornan 0 ó 1)</h3>
+    <table>
+      <tr><td>== != &gt; &lt; &gt;= &lt;=</td><td>comparación: x&gt;2</td></tr>
+      <tr><td>! and or</td><td>lógicos: and(x&gt;0, x&lt;5)</td></tr>
+    </table>
+    <h3 style="margin-top:.5rem;">Nota</h3>
+    <table>
+      <tr><td colspan="2">Escribir -x^2 se interpreta como -(x^2). Para elevar -x al cuadrado: (-x)^2.</td></tr>
+      <tr><td colspan="2">Click o arrastre en la gráfica para ver coordenadas.</td></tr>
+    </table>
+  </div>
+
+  <div class="gf-footer">
+    <a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/materialdidactico/sinrevision/"
+       target="_blank" style="color:inherit;text-decoration:none;">
+      Tec · Revista Matemática, Educación e Internet
+    </a>
+  </div>
+
+</div>
+
+<footer class="home-footer">
+  <span class="footer-brand">Edición LaTeX — Tec</span>
+  <a class="footer-link" href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/" target="_blank">Revista Matemática, Educación e Internet</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* paleta cgraf — colores de \definecolor{cgrafN} en LaTeX */
+  var COLORS = [
+    'rgb(35,101,224)',   /* cgraf1  azul intenso   */
+    'rgb(165,103,0)',    /* cgraf2  café            */
+    'rgb(255,191,0)',    /* cgraf3  amarillo        */
+    'rgb(235,98,53)',    /* cgraf4  rojo-anaranjado */
+    'rgb(142,124,195)',  /* cgraf5  morado          */
+    'rgb(237,125,49)',   /* cgraf6  naranja         */
+    'rgb(147,178,195)',  /* cgraf7  azul claro      */
+    'rgb(116,179,54)',   /* cgraf8  verde           */
+    'rgb(204,102,194)',  /* cgraf9  magenta         */
+    'rgb(162,166,0)',    /* cgraf10 verde oliva     */
+    'rgb(226,85,54)',    /* cgraf11 rojo            */
+    'rgb(96,126,205)',   /* cgraf12 azul medio      */
+    'rgb(240,150,17)',   /* cgraf13 naranja oscuro  */
+    'rgb(188,91,128)',   /* cgraf14 rosado          */
+    'rgb(71,182,109)'    /* cgraf15 verde claro     */
+  ];
+
+  var MAX_FNS = 10;
+
+  /* ══════════════════════════════════════
+     WIDGET
+  ══════════════════════════════════════ */
+  function GrafWidget(wid){
+    var elExpr   = document.getElementById('gf-expr-'       + wid);
+    var elXmin   = document.getElementById('gf-xmin-'       + wid);
+    var elXmax   = document.getElementById('gf-xmax-'       + wid);
+    var btnPlot  = document.getElementById('gf-plot-'       + wid);
+    var btnDel   = document.getElementById('gf-del-'        + wid);
+    var btnClr   = document.getElementById('gf-clr-'        + wid);
+    var btnHelp  = document.getElementById('gf-help-'       + wid);
+    var slSx     = document.getElementById('gf-sx-'         + wid);
+    var slSy     = document.getElementById('gf-sy-'         + wid);
+    var slSxV    = document.getElementById('gf-sxv-'        + wid);
+    var slSyV    = document.getElementById('gf-syv-'        + wid);
+    var elFnList = document.getElementById('gf-fnlist-'     + wid);
+    var elMsg    = document.getElementById('gf-msg-'        + wid);
+    var helpPanel= document.getElementById('gf-help-panel-' + wid);
+    var canvas   = document.getElementById('gf-cv-'         + wid);
+    var wrap     = document.getElementById('gf-wrap-'       + wid);
+    var elCoords = document.getElementById('gf-coords-'     + wid);
+    var ctx      = canvas.getContext('2d');
+
+    /* ── estado ── */
+    var fns = [];      /* [{expr, xmin, xmax, color, compiled}] */
+    var escX = 30, escY = 30;
+    var lineW = 2;     /* grosor de línea en px */
+
+    /* pan (traslación con ratón) */
+    var panX = 0, panY = 0;          /* desplazamiento en px de canvas */
+    var panning = false, panSX, panSY, panX0, panY0;
+
+    /* puntos marcados */
+    var puntos = [];   /* [{x, y}] */
+
+    /* ── compilar expresión con math.js ── */
+    function compile(expr){
+      try {
+        var node = math.compile(expr);
+        /* test con x=1 */
+        node.evaluate({ x: 1 });
+        return node;
+      } catch(e){
+        return null;
+      }
+    }
+
+    function evalFn(compiled, x){
+      try {
+        var v = compiled.evaluate({ x: x });
+        if (typeof v === 'object' && v.im !== undefined) {
+          /* número complejo — solo tomar parte real si im≈0 */
+          return Math.abs(v.im) < 1e-10 ? v.re : NaN;
+        }
+        return typeof v === 'number' ? v : NaN;
+      } catch(e){ return NaN; }
+    }
+
+    /* ── dibujar canvas ── */
+    function draw(){
+      var dpr = window.devicePixelRatio || 1;
+      var W   = canvas.offsetWidth  || 600;
+      var H   = canvas.offsetHeight || 337;
+      canvas.width  = W * dpr;
+      canvas.height = H * dpr;
+      ctx.scale(dpr, dpr);
+
+      /* origen con pan aplicado */
+      var x0 = W / 2 + panX, y0 = H / 2 + panY;
+
+      /* fondo */
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, W, H);
+
+      /* grilla tenue */
+      ctx.strokeStyle = 'rgba(220,220,220,.8)';
+      ctx.lineWidth = 1;
+      var stepX = escX, stepY = escY;
+
+      /* grilla: calcular primera línea visible desde el origen desplazado */
+      var startGX = x0 % stepX;
+      for (var gx = startGX; gx < W; gx += stepX){
+        ctx.beginPath(); ctx.moveTo(gx,0); ctx.lineTo(gx,H); ctx.stroke();
+      }
+      var startGY = y0 % stepY;
+      for (var gy = startGY; gy < H; gy += stepY){
+        ctx.beginPath(); ctx.moveTo(0,gy); ctx.lineTo(W,gy); ctx.stroke();
+      }
+
+      /* ejes */
+      ctx.strokeStyle = 'rgba(187,187,187,.9)';
+      ctx.lineWidth = 1.5;
+      if (x0 >= 0 && x0 <= W){
+        ctx.beginPath(); ctx.moveTo(x0,8); ctx.lineTo(x0,H-8); ctx.stroke();
+      }
+      if (y0 >= 0 && y0 <= H){
+        ctx.beginPath(); ctx.moveTo(8,y0); ctx.lineTo(W-8,y0); ctx.stroke();
+      }
+
+      /* marcas en ejes */
+      ctx.strokeStyle = 'rgba(120,120,120,.8)';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'rgba(80,80,80,.7)';
+      ctx.font = '9px DM Mono,monospace';
+      ctx.textAlign = 'center';
+
+      /* marcas eje X: recorrer hacia ambos lados desde el origen */
+      for (var i = stepX; x0+i < W+stepX || x0-i > -stepX; i += stepX){
+        var lbl = Math.round(i/escX * 100)/100;
+        if (x0+i >= 0 && x0+i <= W){
+          ctx.beginPath(); ctx.moveTo(x0+i,y0-3); ctx.lineTo(x0+i,y0+3); ctx.stroke();
+          ctx.fillText(lbl,  x0+i, y0+12);
+        }
+        if (x0-i >= 0 && x0-i <= W){
+          ctx.beginPath(); ctx.moveTo(x0-i,y0-3); ctx.lineTo(x0-i,y0+3); ctx.stroke();
+          ctx.fillText(-lbl, x0-i, y0+12);
+        }
+      }
+      ctx.textAlign = 'right';
+      for (var j = stepY; y0+j < H+stepY || y0-j > -stepY; j += stepY){
+        var lbl2 = Math.round(j/escY * 100)/100;
+        if (y0-j >= 0 && y0-j <= H){
+          ctx.beginPath(); ctx.moveTo(x0-3,y0-j); ctx.lineTo(x0+3,y0-j); ctx.stroke();
+          ctx.fillText(lbl2,  x0-5, y0-j+3);
+        }
+        if (y0+j >= 0 && y0+j <= H){
+          ctx.beginPath(); ctx.moveTo(x0-3,y0+j); ctx.lineTo(x0+3,y0+j); ctx.stroke();
+          ctx.fillText(-lbl2, x0-5, y0+j+3);
+        }
+      }
+
+      /* graficar cada función */
+      fns.forEach(function(fn){
+        if (!fn.compiled) return;
+        var xmin = fn.xmin, xmax = fn.xmax;
+        var NPTS = Math.max(600, Math.round((xmax - xmin) * escX * 4));
+        var dx   = (xmax - xmin) / NPTS;
+
+        ctx.strokeStyle = fn.color;
+        ctx.lineWidth   = lineW;
+        ctx.lineJoin    = 'round';
+        ctx.beginPath();
+
+        var prevY = null, penDown = false;
+        for (var i = 0; i <= NPTS; i++){
+          var xv = xmin + i * dx;
+          var yv = evalFn(fn.compiled, xv);
+
+          var cx = x0 + xv * escX;
+          var cy = y0 - yv * escY;
+
+          if (!isFinite(yv) || isNaN(yv)){
+            penDown = false; prevY = null; continue;
+          }
+
+          if (prevY !== null && Math.abs(cy - prevY) > H * 1.5){
+            penDown = false;
+          }
+
+          if (!penDown){ ctx.moveTo(cx, cy); penDown = true; }
+          else ctx.lineTo(cx, cy);
+          prevY = cy;
+        }
+        ctx.stroke();
+      });
+
+      /* puntos marcados */
+      puntos.forEach(function(p){
+        var cx = x0 + p.x * escX;
+        var cy = y0 - p.y * escY;
+        var r  = lineW + 2;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, 2*Math.PI);
+        ctx.fillStyle = '#000';
+        ctx.fill();
+      });
+    }
+
+    /* ── coordenadas al mover el mouse ── */
+    function getCoords(e){
+      var rect = canvas.getBoundingClientRect();
+      var W    = canvas.offsetWidth;
+      var H    = canvas.offsetHeight;
+      var mx   = (e.clientX - rect.left);
+      var my   = (e.clientY - rect.top);
+      var x0   = W / 2 + panX, y0 = H / 2 + panY;
+      var xv   = (mx - x0) / escX;
+      var yv   = (y0 - my) / escY;
+      return { x: Math.round(xv*1000)/1000, y: Math.round(yv*1000)/1000 };
+    }
+
+    /* ── pan con ratón ── */
+    wrap.addEventListener('mousedown', function(e){
+      panning = true;
+      panSX   = e.clientX; panSY = e.clientY;
+      panX0   = panX;      panY0 = panY;
+      wrap.style.cursor = 'grabbing';
+    });
+    window.addEventListener('mousemove', function(e){
+      if (panning){
+        panX = panX0 + (e.clientX - panSX);
+        panY = panY0 + (e.clientY - panSY);
+        elCoords.textContent = '';
+        draw();
+      } else {
+        var c = getCoords(e);
+        if (wrap.matches(':hover'))
+          elCoords.textContent = '(' + c.x + ' ; ' + c.y + ')';
+      }
+    });
+    window.addEventListener('mouseup', function(){
+      panning = false;
+      wrap.style.cursor = 'crosshair';
+    });
+
+    /* pan táctil */
+    var tpan = false, tSX, tSY, tpX0, tpY0;
+    wrap.addEventListener('touchstart', function(e){
+      if (e.touches.length === 1){
+        tpan = true;
+        tSX = e.touches[0].clientX; tSY = e.touches[0].clientY;
+        tpX0 = panX; tpY0 = panY;
+        e.preventDefault();
+      }
+    }, {passive:false});
+    wrap.addEventListener('touchmove', function(e){
+      if (tpan && e.touches.length === 1){
+        panX = tpX0 + (e.touches[0].clientX - tSX);
+        panY = tpY0 + (e.touches[0].clientY - tSY);
+        draw(); e.preventDefault();
+      }
+    }, {passive:false});
+    wrap.addEventListener('touchend', function(){ tpan = false; });
+
+    /* resetear pan */
+    function resetPan(){ panX = 0; panY = 0; draw(); }
+
+    /* ── actualizar lista visual ── */
+    function updateFnList(){
+      elFnList.innerHTML = '';
+      fns.forEach(function(fn, i){
+        var item = document.createElement('div');
+        item.className = 'gf-fn-item';
+        var dot = document.createElement('span');
+        dot.className = 'gf-fn-dot';
+        dot.style.background = fn.color;
+        var expr = document.createElement('span');
+        expr.className = 'gf-fn-expr';
+        expr.textContent = (i+1) + '. f(x) = ' + fn.expr +
+          '   x ∈ [' + fn.xmin + ', ' + fn.xmax + ']';
+        item.appendChild(dot);
+        item.appendChild(expr);
+        elFnList.appendChild(item);
+      });
+    }
+
+    /* ── graficar ── */
+    function graficar(){
+      elMsg.textContent = '';
+      elExpr.classList.remove('gf-err');
+      elXmin.classList.remove('gf-err');
+      elXmax.classList.remove('gf-err');
+
+      var expr = elExpr.value.trim();
+      var xmin = parseFloat(elXmin.value);
+      var xmax = parseFloat(elXmax.value);
+
+      if (!expr){ elMsg.textContent = 'Ingrese una expresión.'; return; }
+      if (isNaN(xmin) || isNaN(xmax)){
+        elXmin.classList.add('gf-err'); elXmax.classList.add('gf-err');
+        elMsg.textContent = 'Intervalo no válido.'; return;
+      }
+      if (xmax <= xmin){
+        elXmin.classList.add('gf-err'); elXmax.classList.add('gf-err');
+        elMsg.textContent = 'Debe ser xmin < xmax.'; return;
+      }
+
+      var compiled = compile(expr);
+      if (!compiled){
+        elExpr.classList.add('gf-err');
+        elMsg.textContent = 'La función digitada es incorrecta.'; return;
+      }
+
+      if (fns.length >= MAX_FNS){
+        elMsg.textContent = 'Máximo ' + MAX_FNS + ' funciones simultáneas.'; return;
+      }
+
+      fns.push({
+        expr: expr, xmin: xmin, xmax: xmax,
+        color: COLORS[fns.length % COLORS.length],
+        compiled: compiled
+      });
+
+      updateFnList();
+      draw();
+    }
+
+    /* ── borrar última ── */
+    function borrarUltima(){
+      if (fns.length > 0){ fns.pop(); updateFnList(); draw(); }
+    }
+
+    /* ── borrar todo ── */
+    function borrarTodo(){
+      fns = []; puntos = []; updateFnList(); draw();
+    }
+
+    /* ── agregar punto ── */
+    function agregarPunto(){
+      var raw = document.getElementById('gf-punto-'+wid).value.trim();
+      /* aceptar (a,b) o (a;b) o a,b o a;b */
+      raw = raw.replace(/[()]/g, '');
+      var parts = raw.split(/[,;]/);
+      if (parts.length !== 2){
+        elMsg.textContent = 'Punto: usar (a,b) o (a;b).'; return;
+      }
+      var px = parseFloat(parts[0].trim().replace(',','.'));
+      var py = parseFloat(parts[1].trim().replace(',','.'));
+      if (isNaN(px) || isNaN(py)){
+        elMsg.textContent = 'Coordenadas del punto no válidas.'; return;
+      }
+      puntos.push({x:px, y:py});
+      elMsg.textContent = '';
+      draw();
+    }
+
+    /* ── borrar último punto ── */
+    function borrarPunto(){
+      if (puntos.length > 0){ puntos.pop(); draw(); }
+    }
+
+    /* ── exportar gráfico ── */
+    function exportar(fmt){
+      var W = canvas.offsetWidth, H = canvas.offsetHeight;
+      if (fmt === 'png'){
+        var link = document.createElement('a');
+        link.download = 'grafico.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } else if (fmt === 'pdf'){
+        /* usar print del navegador solo con el canvas */
+        var dataURL = canvas.toDataURL('image/png');
+        var win = window.open('','_blank');
+        win.document.write(
+          '<html><head><title>Gráfico</title>'
+          +'<style>@page{margin:1cm}body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh}'
+          +'img{max-width:100%;max-height:100%}</style>'
+          +'<script>window.onload=function(){window.print();window.close()}<\/script>'
+          +'</head><body><img src="'+dataURL+'"></body></html>'
+        );
+        win.document.close();
+      } else if (fmt === 'svg'){
+        /* construir SVG a partir de los datos actuales */
+        var svgLines = [];
+        svgLines.push('<svg xmlns="http://www.w3.org/2000/svg" width="'+W+'" height="'+H+'">');
+        svgLines.push('<rect width="'+W+'" height="'+H+'" fill="white"/>');
+        var x0 = W/2 + panX, y0 = H/2 + panY;
+
+        /* grilla */
+        for (var gx = x0 % escX; gx < W; gx += escX)
+          svgLines.push('<line x1="'+gx+'" y1="0" x2="'+gx+'" y2="'+H+'" stroke="rgba(220,220,220,.8)" stroke-width="1"/>');
+        for (var gy = y0 % escY; gy < H; gy += escY)
+          svgLines.push('<line x1="0" y1="'+gy+'" x2="'+W+'" y2="'+gy+'" stroke="rgba(220,220,220,.8)" stroke-width="1"/>');
+
+        /* ejes */
+        svgLines.push('<line x1="'+x0+'" y1="8" x2="'+x0+'" y2="'+(H-8)+'" stroke="rgba(187,187,187,.9)" stroke-width="1.5"/>');
+        svgLines.push('<line x1="8" y1="'+y0+'" x2="'+(W-8)+'" y2="'+y0+'" stroke="rgba(187,187,187,.9)" stroke-width="1.5"/>');
+
+        /* funciones */
+        fns.forEach(function(fn){
+          if (!fn.compiled) return;
+          var pts = [];
+          var NPTS = Math.max(400, Math.round((fn.xmax-fn.xmin)*escX*2));
+          var dx = (fn.xmax-fn.xmin)/NPTS;
+          var seg = []; /* segmentos de polilínea */
+          var cur = [];
+          for (var i=0;i<=NPTS;i++){
+            var xv = fn.xmin + i*dx;
+            var yv = evalFn(fn.compiled, xv);
+            if (!isFinite(yv)||isNaN(yv)){ if(cur.length>1)seg.push(cur); cur=[]; continue; }
+            var cx = x0+xv*escX, cy = y0-yv*escY;
+            if(cur.length>0 && Math.abs(cy-(cur[cur.length-1][1]))>H*1.5){ if(cur.length>1)seg.push(cur); cur=[]; }
+            cur.push([cx,cy]);
+          }
+          if(cur.length>1)seg.push(cur);
+          seg.forEach(function(s){
+            var d = 'M'+s.map(function(p){return p[0].toFixed(2)+','+p[1].toFixed(2);}).join('L');
+            svgLines.push('<path d="'+d+'" stroke="'+fn.color+'" stroke-width="'+lineW+'" fill="none" stroke-linejoin="round"/>');
+          });
+        });
+
+        /* puntos */
+        puntos.forEach(function(p){
+          var cx=(x0+p.x*escX).toFixed(2), cy=(y0-p.y*escY).toFixed(2);
+          svgLines.push('<circle cx="'+cx+'" cy="'+cy+'" r="'+(lineW+2)+'" fill="black"/>');
+        });
+
+        svgLines.push('</svg>');
+        var blob = new Blob([svgLines.join('\n')], {type:'image/svg+xml'});
+        var link = document.createElement('a');
+        link.download = 'grafico.svg';
+        link.href = URL.createObjectURL(blob);
+        link.click();
+      }
+    }
+
+    /* ── escalas ── */
+    slSx.addEventListener('input', function(){
+      escX = parseInt(slSx.value, 10);
+      slSxV.textContent = escX;
+      draw();
+    });
+    slSy.addEventListener('input', function(){
+      escY = parseInt(slSy.value, 10);
+      slSyV.textContent = escY;
+      draw();
+    });
+
+    /* ── grosor ── */
+    var selGrosor = document.getElementById('gf-lw-' + wid);
+    if (selGrosor) selGrosor.addEventListener('change', function(){
+      lineW = parseInt(this.value, 10);
+      draw();
+    });
+
+    /* ── eventos ── */
+    btnPlot.addEventListener('click', graficar);
+    btnDel.addEventListener('click',  borrarUltima);
+    btnClr.addEventListener('click',  borrarTodo);
+    btnHelp.addEventListener('click', function(){ helpPanel.classList.toggle('open'); });
+
+    /* botones export */
+    var btnPng = document.getElementById('gf-exp-png-'+wid);
+    var btnPdf = document.getElementById('gf-exp-pdf-'+wid);
+    var btnSvg = document.getElementById('gf-exp-svg-'+wid);
+    if (btnPng) btnPng.addEventListener('click', function(){ exportar('png'); });
+    if (btnPdf) btnPdf.addEventListener('click', function(){ exportar('pdf'); });
+    if (btnSvg) btnSvg.addEventListener('click', function(){ exportar('svg'); });
+
+    /* reset pan */
+    var btnReset = document.getElementById('gf-reset-'+wid);
+    if (btnReset) btnReset.addEventListener('click', resetPan);
+
+    /* puntos */
+    var btnAddPt = document.getElementById('gf-addpt-'+wid);
+    var btnDelPt = document.getElementById('gf-delpt-'+wid);
+    if (btnAddPt) btnAddPt.addEventListener('click', agregarPunto);
+    if (btnDelPt) btnDelPt.addEventListener('click', borrarPunto);
+    var elPuntoIn = document.getElementById('gf-punto-'+wid);
+    if (elPuntoIn) elPuntoIn.addEventListener('keydown', function(e){ if(e.key==='Enter') agregarPunto(); });
+
+    elExpr.addEventListener('keydown', function(e){ if(e.key === 'Enter') graficar(); });
+
+    if (window.ResizeObserver){
+      new ResizeObserver(draw).observe(canvas);
+    }
+
+    /* estado inicial: graficar la función de ejemplo */
+    draw();
+    setTimeout(graficar, 200); /* esperar a math.js */
+  }
+
+  /* ── arrancar cuando math.js esté listo ── */
+  function initAll(){
+    if (typeof math === 'undefined'){ setTimeout(initAll, 80); return; }
+    document.querySelectorAll('[id^="gf-widget-"]').forEach(function(el){
+      new GrafWidget(el.id.replace('gf-widget-',''));
+    });
+  }
+
+  window.GF_init = initAll;
+  if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+
+}());
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.tec-info-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      if (body) body.hidden = expanded;
+    });
+  });
+}());
+</script>
+</body>
+</html>

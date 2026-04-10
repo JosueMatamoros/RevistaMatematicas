@@ -1,0 +1,28 @@
+    .int-intervalos-container {
+      font-family: sans-serif;
+      background: #fff;
+      padding: 20px;
+      margin: 0;
+    }
+    .int-intervalos-contenedor {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .int-intervalos-resultado {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .int-intervalos-resultado input {
+      width: 120px;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+    }
+    .int-intervalos-op {
+      font-size: 18px;
+    }

@@ -1,0 +1,48 @@
+\PassOptionsToPackage{inactive}{pst-pdf}%
+\AtBeginDocument{%
+\RequirePackage[inactive]{pst-pdf}%
+\RequirePackage[pdftex,active,tightpage]{preview}%
+\renewcommand\PreviewBbAdjust{-60pt -60pt 60pt 60pt}}%
+\documentclass{article}
+\usepackage{polynom}
+\usepackage{nicematrix,tikz}
+\usetikzlibrary{fit}
+\newcommand{\ff}{\mathtt{f}}
+
+\pagestyle{empty}
+\begin{document}
+% Genera test-fig1.svg
+\begin{preview}
+
+%<- polynom NO requiere entorno matemático
+\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
+
+\end{preview}
+
+
+
+\hrulefill
+\bigskip
+% Genera test-fig2.svg
+\begin{preview}
+
+\begin{equation*}
+\boldsymbol{\mathcal{F}}^{i} =
+\begin{bNiceMatrix}[margin,nullify-dots]
+    \ff_{1\,1} & \Cdots & \ff_{1\,\varpi} & \ff_{1\,(\varpi+1)} & \Cdots & \ff_{1\,\eta} \\
+    \Vdots & \Ddots & \Vdots & \Vdots & & \Vdots \\
+    \ff_{\varpi\,1} & \Cdots & \ff_{\varpi\,\varpi} & \ff_{\varpi\,(\varpi+1)} & \Cdots & \ff_{\varpi\,\eta} \\
+    \noalign{\kern2mm}
+    \ff_{(\varpi+1)\,1} & \Cdots & \ff_{(\varpi+1)\,\varpi} & \ff_{(\varpi+1)\,(\varpi+1)} & \Cdots & \ff_{(\varpi+1)\,\eta} \\
+    \Vdots & & \Vdots & \Vdots & \Ddots & \Vdots \\
+    \ff_{\eta\,1} & \Cdots & \ff_{\eta\,\varpi} & \ff_{\eta\,(\varpi+1)} & \Cdots & \ff_{\eta\,\eta}
+\CodeAfter
+  \SubMatrix[{1-1}{3-3}][slim,extra-height=-1mm,xshift=1mm]
+  \OverBrace{1-1}{3-3}{\scriptstyle\mathcal{F}_N^i}[shorten,yshift=1mm]
+\end{bNiceMatrix}
+\end{equation*}
+
+\end{preview}
+
+...
+\end{document}

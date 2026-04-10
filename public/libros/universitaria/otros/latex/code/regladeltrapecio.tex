@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{xintexpr}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Con 8 decimales para mejor visualización
+\newcommand{\miintegral}[2]{%
+	\xintthefloatexpr[8]
+	add(exp(-(i*#1/#2)^2), i=1..(#2-1)) * (#1/#2) + 
+	(exp(0) + exp(-(#1)^2)) * (#1/(2*#2))
+	\relax
+}
+\newcommand{\errorabs}[3]{%
+	\xintthefloatexpr[10]
+	abs(#1 - \miintegral{#2}{#3})
+	\relax
+}
+\begin{document}
+	
+\section{Regla del trapecio con el paquete \texttt{xintexpr}}	
+Definimos la función $f(x) = \displaystyle\int_0^x e^{-t^2} dt$, usando la regla del trapecio	$n=20$ pasos de integración\\
+
+\bigskip	
+\textbf{Convergencia de la regla del trapecio}\\
+\begin{tabular}{cccccc}
+	\toprule
+	$x$ & $n=6$ & $n=8$ & $n=10$ & $n=12$ & $n=14$ \\ \midrule
+	0.5 & \miintegral{0.5}{6} & \miintegral{0.5}{8} & \miintegral{0.5}{10} & \miintegral{0.5}{12} & \miintegral{0.5}{14} \\
+	1.0 & \miintegral{1.0}{6} & \miintegral{1.0}{8} & \miintegral{1.0}{10} & \miintegral{1.0}{12} & \miintegral{1.0}{14} \\
+	1.5 & \miintegral{1.5}{6} & \miintegral{1.5}{8} & \miintegral{1.5}{10} & \miintegral{1.5}{12} & \miintegral{1.5}{14} \\ \bottomrule
+\end{tabular}
+
+\bigskip
+\textbf{Errores aproximados respecto al valor de referencia $f(0.5)=0.46128100641279246$}\\
+
+\begin{tabular}{cS[table-format=1.2e-2]}
+	\toprule
+	$n$ & \multicolumn{1}{c}{Error absoluto ($x=0.5$)} \\ \midrule
+	6 & \errorabs{0.46128100641279246}{0.5}{6} \\
+	8 & \errorabs{0.46128100641279246}{0.5}{8} \\
+	10 & \errorabs{0.46128100641279246}{0.5}{10} \\
+	12 & \errorabs{0.46128100641279246}{0.5}{12} \\
+	14 & \errorabs{0.46128100641279246}{0.5}{14} \\ \bottomrule
+\end{tabular}
+	
+\bigskip	
+\textbf{Resumen de la sintaxis usada con el paquete \texttt{xintexpr}}
+	
+	\begin{enumerate}
+		\item \verb+\xintthefloatexpr+: inicia la evaluación de una expresión en punto flotante
+		\item \verb+\relax+: termina la expresión (alternativa: \verb+\xintendexpr+)
+		\item \verb+add(expr, variable = inicio .. fin)+: suma iterativa
+		\item \verb+exp(x)+: función exponencial $e^x$
+		\item \verb+i*#1/20+: operaciones aritméticas básicas
+	\end{enumerate}
+	
+\end{document}
+
+\documentclass{article}
+\usepackage{xintexpr}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Con 8 decimales para mejor visualización
+\newcommand{\miintegral}[2]{%
+	\xintthefloatexpr[8]
+	add(exp(-(i*#1/#2)^2), i=1..(#2-1)) * (#1/#2) + 
+	(exp(0) + exp(-(#1)^2)) * (#1/(2*#2))
+	\relax
+}
+
+\begin{document}
+	
+	\section{Convergencia de la regla del trapecio}
+	
+	\begin{tabular}{cccccc}
+		\toprule
+		$x$ & $n=6$ & $n=8$ & $n=10$ & $n=12$ & $n=14$ \\ \midrule
+		0.5 & \miintegral{0.5}{6} & \miintegral{0.5}{8} & \miintegral{0.5}{10} & \miintegral{0.5}{12} & \miintegral{0.5}{14} \\
+		1.0 & \miintegral{1.0}{6} & \miintegral{1.0}{8} & \miintegral{1.0}{10} & \miintegral{1.0}{12} & \miintegral{1.0}{14} \\
+		1.5 & \miintegral{1.5}{6} & \miintegral{1.5}{8} & \miintegral{1.5}{10} & \miintegral{1.5}{12} & \miintegral{1.5}{14} \\ \bottomrule
+	\end{tabular}
+	
+	\subsection*{Errores aproximados respecto al valor de referencia ($x=0.5$, ref = 0.5204998778)}
+	
+\begin{tabular}{cS[table-format=1.2e-2]}
+	\toprule
+	$n$ & \multicolumn{1}{c}{Error absoluto ($x=0.5$)} \\ \midrule
+	6 & \errorabs{0.46128100641279246}{0.5}{6} \\
+	8 & \errorabs{0.46128100641279246}{0.5}{8} \\
+	10 & \errorabs{0.46128100641279246}{0.5}{10} \\
+	12 & \errorabs{0.46128100641279246}{0.5}{12} \\
+	14 & \errorabs{0.46128100641279246}{0.5}{14} \\ \bottomrule
+\end{tabular}
+	
+\end{document}

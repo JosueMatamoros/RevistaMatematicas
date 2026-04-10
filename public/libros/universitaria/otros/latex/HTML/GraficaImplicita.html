@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graficador de Funciones Implícitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- math.js para evaluar f(x,y) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.3/math.min.js"></script>
+<script src="js/marchingsquares.js"></script>
+  <!--
+    MarchingSquares — en wimate.org cambiar por:
+    <script src="js/marchingsquares.js"></script>
+    API: https://github.com/RaumZeit/MarchingSquares.js/
+  
+  <script src="https://unpkg.com/marchingsquares@1.3.3/marchingsquares.js"></script>
+  -->
+
+  <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  GRAFICADOR IMPLÍCITO f(x,y)=0  — prefijo .gi-             ║
+    ║  Algoritmo: Marching Squares (MarchingSquares.js)           ║
+    ║  Hasta 10 curvas · pan · export PNG/SVG/PDF · puntos        ║
+    ╚══════════════════════════════════════════════════════════════╝
+  -->
+  <style>
+    /* ── reset dentro del widget ── */
+    .gi-widget *, .gi-widget *::before, .gi-widget *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+    }
+
+    /* ── widget raíz ── */
+    .gi-widget {
+      --gi-bg:      #1a3a52;
+      --gi-darker:  #0f2233;
+      --gi-mid:     #1e4560;
+      --gi-lt:      #2a5a7a;
+      --gi-teal:    #b0ffff;
+      --gi-gold:    #c8922a;
+      --gi-gold-lt: #e8b84b;
+      --gi-accent:  #fdb851;
+      --gi-error:   #ff6b6b;
+      --gi-ink:     #0d1117;
+
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: #fff;
+      background: var(--gi-bg);
+      border-radius: 8px;
+      box-shadow: 0 6px 40px rgba(0,0,0,.32);
+      overflow: hidden;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      border: 2px solid var(--gi-darker);
+      animation: gi-pop .32s ease both;
+    }
+    @keyframes gi-pop {
+      from { opacity:0; transform:translateY(8px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
+    /* ── header ── */
+    .gi-header {
+      background: var(--gi-darker);
+      padding: .65rem 1.2rem;
+      border-bottom: 1px solid var(--gi-lt);
+      display: flex; align-items: baseline; gap: .75rem;
+    }
+    .gi-header h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem; font-weight: 400; color: var(--gi-teal);
+    }
+    .gi-header span {
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--gi-gold-lt);
+    }
+
+    /* ── canvas ── */
+    .gi-canvas-wrap {
+      position: relative; width: 100%; aspect-ratio: 16/9;
+      background: #fff; cursor: crosshair; user-select: none;
+    }
+    .gi-canvas { display: block; width: 100%; height: 100%; }
+
+    /* indicador de cálculo */
+    .gi-computing {
+      position: absolute; top: 6px; left: 8px;
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: #fff; background: rgba(26,58,82,.85);
+      padding: .18rem .55rem; border-radius: 3px;
+      pointer-events: none; opacity: 0;
+      transition: opacity .1s;
+    }
+    .gi-computing.show { opacity: 1; }
+
+    /* coordenadas */
+    .gi-coords {
+      position: absolute; top: 6px; right: 8px;
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      color: #1a3a52; background: rgba(255,255,255,.82);
+      padding: .18rem .5rem; border-radius: 3px;
+      pointer-events: none; opacity: 0;
+      transition: opacity .15s;
+    }
+    .gi-canvas-wrap:hover .gi-coords { opacity: 1; }
+
+    /* ── panel ── */
+    .gi-panel {
+      background: var(--gi-bg);
+      padding: .75rem 1.1rem;
+      border-top: 1px solid var(--gi-lt);
+      display: flex; flex-direction: column; gap: .6rem;
+    }
+
+    /* fila input expresión */
+    .gi-input-row {
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .gi-fn-label {
+      font-family: 'DM Mono', monospace; font-size: .82rem;
+      color: var(--gi-teal); white-space: nowrap; flex-shrink: 0;
+    }
+    .gi-expr {
+      flex: 1; padding: .38rem .6rem;
+      font-family: 'DM Mono', monospace; font-size: .88rem;
+      color: var(--gi-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px; outline: none;
+      transition: border-color .15s;
+    }
+    .gi-expr:focus  { border-color: var(--gi-accent); }
+    .gi-expr.gi-err { border-color: var(--gi-error); color: #8a0000; }
+
+    /* botones */
+    .gi-btn-row { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+
+    .gi-btn {
+      padding: .38rem .9rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem; font-weight: 700;
+      color: #002800; background: var(--gi-accent);
+      border: none; border-radius: 3px; cursor: pointer;
+      transition: background .14s, transform .08s;
+    }
+    .gi-btn:hover  { background: #fec96a; }
+    .gi-btn:active { transform: scale(.96); }
+    .gi-btn.del    { background: #d43030; color: #fff; }
+    .gi-btn.del:hover { background: #e85050; }
+    .gi-btn.help   { background: var(--gi-lt); color: var(--gi-teal); border: 1px solid #3a7aaa; }
+    .gi-btn.help:hover { background: #3a7aaa; }
+    .gi-btn.clr    { background: #2a3a4a; color: var(--gi-teal); border: 1px solid #3a5a7a; }
+    .gi-btn.clr:hover  { background: #3a5a7a; }
+    .gi-btn.exp-png { background: #2e6e4a; color: #fff; }
+    .gi-btn.exp-png:hover { background: #3a8a5c; }
+    .gi-btn.exp-pdf { background: #6e2e2e; color: #fff; }
+    .gi-btn.exp-pdf:hover { background: #8a3a3a; }
+    .gi-btn.exp-svg { background: #3a3a8a; color: #fff; }
+    .gi-btn.exp-svg:hover { background: #5050aa; }
+    .gi-btn.reset-pan { background: #4a4a2e; color: #e8d87a; border: 1px solid #7a7a3a; }
+    .gi-btn.reset-pan:hover { background: #6a6a3a; }
+    .gi-btn.addpt { background: #2a5a4a; color: #b0ffdd; border: 1px solid #3a8a6a; }
+    .gi-btn.addpt:hover { background: #3a7a5a; }
+    .gi-btn.delpt { background: #5a2a3a; color: #ffb0c8; border: 1px solid #8a3a5a; }
+    .gi-btn.delpt:hover { background: #7a3a5a; }
+
+    /* select grosor */
+    .gi-select {
+      padding: .32rem .5rem;
+      font-family: 'DM Mono', monospace; font-size: .78rem;
+      color: var(--gi-ink); background: #fff;
+      border: 2px solid transparent; border-radius: 3px;
+      outline: none; cursor: pointer; transition: border-color .15s;
+    }
+    .gi-select:focus { border-color: var(--gi-accent); }
+
+    /* escalas */
+    .gi-scale-row { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+    .gi-scale-field { display: flex; align-items: center; gap: .45rem; }
+    .gi-scale-lbl { font-family: 'DM Mono', monospace; font-size: .62rem; color: rgba(176,255,255,.5); white-space: nowrap; }
+    .gi-slider    { flex: 1; accent-color: var(--gi-accent); }
+    .gi-scale-val { font-family: 'DM Mono', monospace; font-size: .7rem; color: var(--gi-gold-lt); min-width: 1.8rem; text-align: right; }
+
+    /* separador */
+    .gi-sep { border: none; border-top: 1px solid rgba(176,255,255,.12); margin: .05rem 0; }
+
+    /* etiqueta de fila */
+    .gi-row-label {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      color: rgba(176,255,255,.45); white-space: nowrap; letter-spacing: .06em;
+    }
+
+    /* lista de funciones */
+    .gi-fn-list { display: flex; flex-direction: column; gap: .25rem; }
+    .gi-fn-item {
+      display: flex; align-items: center; gap: .5rem;
+      font-family: 'DM Mono', monospace; font-size: .72rem;
+    }
+    .gi-fn-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .gi-fn-expr { color: rgba(176,255,255,.8); }
+
+    /* mensaje */
+    .gi-msg {
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: var(--gi-error); min-height: .85rem; letter-spacing: .04em;
+    }
+
+    /* ── panel ayuda ── */
+    .gi-help-panel {
+      display: none;
+      background: var(--gi-darker); border-top: 1px solid var(--gi-lt);
+      padding: .7rem 1.1rem; max-height: 240px; overflow-y: auto;
+    }
+    .gi-help-panel.open { display: block; }
+    .gi-help-panel h3 {
+      font-family: 'DM Mono', monospace; font-size: .65rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--gi-gold-lt); margin-bottom: .4rem; margin-top: .55rem;
+    }
+    .gi-help-panel h3:first-child { margin-top: 0; }
+    .gi-help-panel table { width: 100%; border-collapse: collapse; font-family: 'DM Mono', monospace; font-size: .68rem; }
+    .gi-help-panel td { padding: .1rem .5rem; vertical-align: top; color: rgba(176,255,255,.75); }
+    .gi-help-panel td:first-child { color: var(--gi-teal); width: 38%; }
+
+    /* ── footer ── */
+    .gi-footer {
+      padding: .38rem 1.2rem; border-top: 1px solid var(--gi-darker);
+      font-family: 'DM Mono', monospace; font-size: .58rem;
+      letter-spacing: .1em; color: rgba(176,255,255,.25); text-align: right;
+    }
+  </style>
+
+  <!-- ── TEC PAGE STYLES ── -->
+  <style>
+    :root {
+      --tec-bg:      #f0ede8;
+      --tec-ink:     #0d1117;
+      --tec-accent:  #1a4f8a;
+      --tec-gold:    #c8922a;
+      --tec-gold-lt: #e8b84b;
+      --tec-rule:    #d4cfc9;
+      --tec-muted:   #7a7269;
+      --tec-info-bg: #eef3fb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --tec-bg:      #0d1117;
+        --tec-ink:     #e4dfd8;
+        --tec-accent:  #4a9ade;
+        --tec-rule:    #1e2d3d;
+        --tec-muted:   #8a8279;
+        --tec-info-bg: #0f2035;
+      }
+    }
+    html { font-size: 16px; }
+    body {
+      margin: 0;
+      background: var(--tec-bg);
+      color: var(--tec-ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem; line-height: 1.6;
+      min-height: 100vh; padding: 1.5rem 0 2rem;
+    }
+    .tec-page {
+      max-width: 880px; margin: 0 auto; padding: 0 1.25rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+    .tec-header { border-bottom: 2px solid var(--tec-gold); padding-bottom: .75rem; }
+    .tec-eyebrow {
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      letter-spacing: .2em; text-transform: uppercase; color: var(--tec-muted); margin: 0 0 .2rem;
+    }
+    .tec-course-title {
+      font-family: 'DM Serif Display', serif; font-size: 1.5rem;
+      font-weight: 400; margin: 0; line-height: 1.2; color: var(--tec-ink);
+    }
+    .tec-course-link {
+      color: var(--tec-accent); text-decoration: none;
+      border-bottom: 1px solid transparent; transition: border-color .2s;
+    }
+    .tec-course-link:hover { border-bottom-color: var(--tec-accent); }
+    .tec-info {
+      background: var(--tec-info-bg); border: 1px solid var(--tec-rule);
+      border-radius: 6px; overflow: hidden;
+    }
+    .tec-info-toggle {
+      width: 100%; padding: 1rem 1.2rem; background: white; border: none;
+      cursor: pointer; display: flex; align-items: center; gap: .9rem;
+      text-align: left; transition: background .2s; position: relative;
+    }
+    .tec-info-toggle::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 4px; background: var(--tec-gold); border-radius: 4px 0 0 4px;
+    }
+    .tec-info-toggle:hover:not(.open) { background: #f7f3eb; }
+    .tec-info-toggle.open { background: var(--tec-accent); }
+    .tec-info-icon {
+      flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+      display: grid; place-items: center; font-size: 11px; font-weight: 700;
+      background: #ede8dc; color: var(--tec-accent);
+      transition: background .2s, color .2s, transform .32s ease;
+      user-select: none;
+    }
+    .tec-info-toggle.open .tec-info-icon {
+      background: var(--tec-gold); color: white; transform: rotate(180deg);
+    }
+    .tec-info-title {
+      flex: 1; font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; color: var(--tec-accent);
+    }
+    .tec-info-toggle.open .tec-info-title { color: #f7f3eb; }
+    .tec-info-title em { font-style: italic; color: var(--tec-gold); }
+    .tec-info-toggle.open .tec-info-title em { color: var(--tec-gold); filter: brightness(1.3); }
+    .tec-info-badge {
+      font-size: .67rem; font-weight: 600; letter-spacing: .08em;
+      text-transform: uppercase; padding: .2rem .6rem; border-radius: 20px;
+      background: #ede8dc; color: #6b6560;
+      transition: background .2s, color .2s; white-space: nowrap;
+    }
+    .tec-info-toggle.open .tec-info-badge {
+      background: rgba(255,255,255,.12); color: rgba(248,244,237,.55);
+    }
+    .tec-info-body {
+      padding: 1rem 1.1rem 1.2rem; border-top: 1px solid var(--tec-rule);
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem;
+    }
+    @media (max-width: 640px) { .tec-info-body { grid-template-columns: 1fr; } }
+    [hidden] { display: none !important; }
+    .tec-info-body h3 {
+      font-family: 'DM Mono', monospace; font-size: .66rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--tec-gold); margin: 0 0 .45rem;
+    }
+    .tec-info-body p, .tec-info-body li {
+      font-size: .88rem; color: var(--tec-ink); line-height: 1.65;
+    }
+    .tec-info-body ol, .tec-info-body ul { padding-left: 1.1rem; margin: 0; }
+    .tec-info-body li { margin-bottom: .3rem; }
+    .home-footer {
+      border-top: 1px solid var(--tec-rule); padding: .85rem 0;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: .5rem;
+      font-family: 'DM Mono', monospace; font-size: .72rem; letter-spacing: .08em;
+    }
+    .footer-brand { color: var(--tec-muted); text-transform: uppercase; }
+    .footer-link  { color: var(--tec-accent); text-decoration: none; transition: color .2s; }
+    .footer-link:hover { color: var(--tec-gold-lt); }
+    @media (max-width: 720px) {
+      body { padding: 0.75rem 0 1.5rem; }
+      .tec-page { padding: 0 0.75rem; gap: 1rem; }
+      .tec-course-title { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="tec-page" role="main">
+
+  <header class="tec-header" role="banner">
+    <p class="tec-eyebrow">Instituto Tecnológico de Costa Rica</p>
+    <h1 class="tec-course-title">
+      <a class="tec-course-link"
+         href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/"
+         target="_blank">
+        Edición de Textos Científicos La<span style="position:relative;top:-.12em;font-size:.82em">T</span>e<span style="position:relative;top:.1em;font-size:.82em">X</span> (2026)
+      </a>
+    </h1>
+  </header>
+
+  <section class="tec-info" aria-label="Información de la herramienta">
+    <button class="tec-info-toggle" aria-expanded="false" aria-controls="info-grafimplicita">
+      <span class="tec-info-icon">▾</span>
+      <span class="tec-info-title">Instrucciones y <em>ejemplos</em></span>
+      <span class="tec-info-badge">cerrado</span>
+    </button>
+    <div class="tec-info-body" id="info-grafimplicita" hidden>
+      <div>
+        <h3>Propósito</h3>
+        <p>Graficador de curvas definidas implícitamente por <strong>f(x,y) = 0</strong>
+           usando el algoritmo <em>Marching Squares</em>. Permite visualizar cónicas,
+           curvas algebraicas, curvas de nivel y más.</p>
+      </div>
+      <div>
+        <h3>Cómo usar</h3>
+        <ol>
+          <li>Ingrese la expresión f(x,y) (igualada implícitamente a 0).</li>
+          <li>Presione <strong>Graficar</strong> (o Enter).</li>
+          <li>Arrastre el gráfico con el ratón para hacer paneo.</li>
+          <li>Ajuste la escala con los deslizadores.</li>
+          <li>Exporte como PNG, SVG o PDF.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Ejemplos sugeridos</h3>
+        <ul>
+          <li><code>x^2 + y^2 - 9</code> → circunferencia r=3</li>
+          <li><code>x^2/4 + y^2/9 - 1</code> → elipse</li>
+          <li><code>x^2 - y^2 - 1</code> → hipérbola</li>
+          <li><code>y - x^2</code> → parábola</li>
+          <li><code>x^3 - y^2 + x</code> → curva cúbica</li>
+          <li><code>sin(x) - y</code> → y=sin(x)</li>
+          <li><code>x^2 + y^2 - 4*x - 2*y - 4</code> → círculo general</li>
+          <li><code>(x^2+y^2)^2 - 2*(x^2-y^2)</code> → lemniscata</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WIDGET
+  ══════════════════════════════════════ -->
+  <div class="gi-widget" id="gi-widget-1">
+
+    <div class="gi-header">
+      <h2>Graficador de Funciones Implícitas</h2>
+      <span>f(x,y) = 0 · hasta 10 curvas · Marching Squares</span>
+    </div>
+
+    <!-- canvas -->
+    <div class="gi-canvas-wrap" id="gi-wrap-1">
+      <canvas class="gi-canvas" id="gi-cv-1"></canvas>
+      <div class="gi-computing" id="gi-comp-1">calculando…</div>
+      <div class="gi-coords"    id="gi-coords-1"></div>
+    </div>
+
+    <!-- panel de control -->
+    <div class="gi-panel">
+
+      <!-- expresión -->
+      <div class="gi-input-row">
+        <span class="gi-fn-label">f(x,y) =</span>
+        <input class="gi-expr" id="gi-expr-1" type="text"
+               value="x^2 + y^2 - 9" autocomplete="off"
+               placeholder="ej: x^2 + y^2 - 9, x^2/4 + y^2/9 - 1, …">
+      </div>
+
+      <!-- botones principales -->
+      <div class="gi-btn-row">
+        <button class="gi-btn"      id="gi-plot-1">▶ Graficar</button>
+        <button class="gi-btn del"  id="gi-del-1" >✕ Borrar última</button>
+        <button class="gi-btn clr"  id="gi-clr-1" >⊘ Borrar todo</button>
+        <button class="gi-btn help" id="gi-help-1">? Ayuda</button>
+      </div>
+
+      <hr class="gi-sep">
+
+      <!-- grosor + centrar -->
+      <div class="gi-btn-row" style="align-items:center;">
+        <span class="gi-row-label">Grosor:</span>
+        <select class="gi-select" id="gi-lw-1">
+          <option value="1">1 px</option>
+          <option value="2" selected>2 px</option>
+          <option value="3">3 px</option>
+        </select>
+        <button class="gi-btn reset-pan" id="gi-reset-1" title="Restablecer posición">⌖ Centrar</button>
+      </div>
+
+      <hr class="gi-sep">
+
+      <!-- exportar -->
+      <div class="gi-btn-row" style="align-items:center;">
+        <span class="gi-row-label">Exportar:</span>
+        <button class="gi-btn exp-png" id="gi-exp-png-1">⬇ PNG</button>
+        <button class="gi-btn exp-svg" id="gi-exp-svg-1">⬇ SVG</button>
+        <button class="gi-btn exp-pdf" id="gi-exp-pdf-1">⬇ PDF</button>
+      </div>
+
+      <hr class="gi-sep">
+
+      <!-- escalas -->
+      <div class="gi-scale-row">
+        <div class="gi-scale-field">
+          <span class="gi-scale-lbl">Escala X</span>
+          <input class="gi-slider" id="gi-sx-1" type="range" min="8" max="120" value="35" step="1">
+          <span class="gi-scale-val" id="gi-sxv-1">35</span>
+        </div>
+        <div class="gi-scale-field">
+          <span class="gi-scale-lbl">Escala Y</span>
+          <input class="gi-slider" id="gi-sy-1" type="range" min="8" max="120" value="35" step="1">
+          <span class="gi-scale-val" id="gi-syv-1">35</span>
+        </div>
+      </div>
+
+      <hr class="gi-sep">
+
+      <!-- puntos marcados -->
+      <div class="gi-btn-row" style="align-items:center; flex-wrap:wrap;">
+        <span class="gi-row-label">Punto:</span>
+        <input class="gi-expr" id="gi-punto-1" type="text"
+               style="max-width:130px; flex:none;"
+               placeholder="(a,b) o (a;b)"
+               autocomplete="off">
+        <button class="gi-btn addpt" id="gi-addpt-1">● Agregar</button>
+        <button class="gi-btn delpt" id="gi-delpt-1">✕ Quitar</button>
+      </div>
+
+      <!-- lista de curvas -->
+      <div class="gi-fn-list" id="gi-fnlist-1"></div>
+
+      <!-- mensaje -->
+      <div class="gi-msg" id="gi-msg-1"></div>
+
+    </div><!-- /panel -->
+
+    <!-- ayuda -->
+    <div class="gi-help-panel" id="gi-help-panel-1">
+      <h3>Sintaxis de f(x,y)</h3>
+      <table>
+        <tr><td>x, y</td><td>variables del plano</td></tr>
+        <tr><td>+ − * / ^</td><td>aritmética básica; potencia: x^2</td></tr>
+        <tr><td>sin cos tan</td><td>trigonométricas: sin(x*y)</td></tr>
+        <tr><td>asin acos atan</td><td>inversas trigonométricas</td></tr>
+        <tr><td>sinh cosh tanh</td><td>hiperbólicas</td></tr>
+        <tr><td>log(x) / log(x,b)</td><td>logaritmo natural / base b</td></tr>
+        <tr><td>sqrt(x) / abs(x)</td><td>raíz cuadrada / valor absoluto</td></tr>
+        <tr><td>exp(x)</td><td>exponencial e^x</td></tr>
+        <tr><td>floor ceil round</td><td>funciones de redondeo</td></tr>
+        <tr><td>pi, e</td><td>constantes matemáticas</td></tr>
+      </table>
+      <h3>Ejemplos de curvas</h3>
+      <table>
+        <tr><td>x^2 + y^2 - r^2</td><td>circunferencia de radio r</td></tr>
+        <tr><td>x^2/a^2 + y^2/b^2 - 1</td><td>elipse con semiejes a, b</td></tr>
+        <tr><td>x^2/a^2 - y^2/b^2 - 1</td><td>hipérbola</td></tr>
+        <tr><td>(x^2+y^2)^2 - 2*(x^2-y^2)</td><td>lemniscata de Bernoulli</td></tr>
+        <tr><td>x^3 + y^3 - 3*x*y</td><td>folio de Descartes</td></tr>
+        <tr><td>sin(x^2+y^2) - cos(x*y)</td><td>curva trascendente</td></tr>
+      </table>
+      <h3>Notas</h3>
+      <table>
+        <tr><td colspan="2">Arrastre el gráfico con el ratón para hacer paneo. Use ⌖ Centrar para volver al origen.</td></tr>
+        <tr><td colspan="2">Resolución: 100 divisiones al arrastrar, 400 al soltar / graficar.</td></tr>
+        <tr><td colspan="2">Máximo 10 curvas simultáneas.</td></tr>
+      </table>
+    </div>
+
+    <div class="gi-footer">
+      <a href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/"
+         target="_blank" style="color:inherit;text-decoration:none;">
+        Tec · Revista Matemática, Educación e Internet
+      </a>
+    </div>
+
+  </div><!-- /gi-widget -->
+
+  <footer class="home-footer">
+    <span class="footer-brand">Edición La<span style="font-variant:small-caps;position:relative;top:-.08em;font-size:.82em">T</span>e<span style="position:relative;top:.08em;font-size:.82em">X</span> — Tec</span>
+    <a class="footer-link"
+       href="https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/"
+       target="_blank">Revista Matemática, Educación e Internet</a>
+  </footer>
+
+</div><!-- /tec-page -->
+
+<!-- ══════════════════════════════════════════════════
+     LÓGICA DEL GRAFICADOR IMPLÍCITO
+══════════════════════════════════════════════════ -->
+<script>
+(function(){
+  'use strict';
+
+  /* ── paleta cgraf (LaTeX \definecolor{cgrafN}) ── */
+  var COLORS = [
+    'rgb(35,101,224)',   /* cgraf1  azul intenso   */
+    'rgb(165,103,0)',    /* cgraf2  café            */
+    'rgb(255,191,0)',    /* cgraf3  amarillo        */
+    'rgb(235,98,53)',    /* cgraf4  rojo-anaranjado */
+    'rgb(142,124,195)',  /* cgraf5  morado          */
+    'rgb(237,125,49)',   /* cgraf6  naranja         */
+    'rgb(147,178,195)',  /* cgraf7  azul claro      */
+    'rgb(116,179,54)',   /* cgraf8  verde           */
+    'rgb(204,102,194)',  /* cgraf9  magenta         */
+    'rgb(162,166,0)',    /* cgraf10 verde oliva     */
+    'rgb(226,85,54)',    /* cgraf11 rojo            */
+    'rgb(96,126,205)',   /* cgraf12 azul medio      */
+    'rgb(240,150,17)',   /* cgraf13 naranja oscuro  */
+    'rgb(188,91,128)',   /* cgraf14 rosado          */
+    'rgb(71,182,109)'    /* cgraf15 verde claro     */
+  ];
+
+  var MAX_FNS   = 10;
+  var N_PREVIEW = 100;   /* divisiones durante paneo */
+  var N_FINAL   = 400;   /* divisiones en render final */
+
+  /* ══════════════════════════════════════
+     WIDGET
+  ══════════════════════════════════════ */
+  function GrafImplWidget(wid){
+
+    /* ── referencias DOM ── */
+    var elExpr   = document.getElementById('gi-expr-'       + wid);
+    var btnPlot  = document.getElementById('gi-plot-'       + wid);
+    var btnDel   = document.getElementById('gi-del-'        + wid);
+    var btnClr   = document.getElementById('gi-clr-'        + wid);
+    var btnHelp  = document.getElementById('gi-help-'       + wid);
+    var slSx     = document.getElementById('gi-sx-'         + wid);
+    var slSy     = document.getElementById('gi-sy-'         + wid);
+    var slSxV    = document.getElementById('gi-sxv-'        + wid);
+    var slSyV    = document.getElementById('gi-syv-'        + wid);
+    var elFnList = document.getElementById('gi-fnlist-'     + wid);
+    var elMsg    = document.getElementById('gi-msg-'        + wid);
+    var helpPanel= document.getElementById('gi-help-panel-' + wid);
+    var canvas   = document.getElementById('gi-cv-'         + wid);
+    var wrap     = document.getElementById('gi-wrap-'       + wid);
+    var elCoords = document.getElementById('gi-coords-'     + wid);
+    var elComp   = document.getElementById('gi-comp-'       + wid);
+    var ctx      = canvas.getContext('2d');
+
+    /* ── estado ── */
+    var fns  = [];      /* [{expr, color, compiled}] */
+    var escX = 35, escY = 35;
+    var lineW = 2;
+    var puntos = [];    /* [{x,y}] */
+
+    /* pan */
+    var panX = 0, panY = 0;
+    var panning = false, panSX, panSY, panX0, panY0;
+
+    /* token de render diferido post-pan */
+    var renderTimer = null;
+
+    /* ── compilar con math.js, acepta x e y ── */
+    function compile(expr){
+      try {
+        var node = math.compile(expr);
+        node.evaluate({ x: 1, y: 1 });
+        return node;
+      } catch(e){ return null; }
+    }
+
+    function evalFn(compiled, x, y){
+      try {
+        var v = compiled.evaluate({ x: x, y: y });
+        if (typeof v === 'object' && v.im !== undefined)
+          return Math.abs(v.im) < 1e-10 ? v.re : NaN;
+        return typeof v === 'number' ? v : NaN;
+      } catch(e){ return NaN; }
+    }
+
+    /* ── construir grilla para Marching Squares ──
+       Rango visible: exactamente lo que cabe en el canvas.
+
+       x en canvas: cx = x0 + x_real * escX  →  x_real = (cx - x0) / escX
+         xmin_vis = (0  - x0) / escX = -x0/escX
+         xmax_vis = (W  - x0) / escX
+
+       y en canvas: cy = y0 - y_real * escY  →  y_real = (y0 - cy) / escY
+         ymax_vis = (y0 - 0) / escY = y0/escY   (top)
+         ymin_vis = (y0 - H) / escY              (bottom)
+
+       data[r][c] = f(xmin + c*dx, ymax - r*dy)
+       row 0 = top (ymax), row N = bottom (ymin)
+    ── */
+    function buildGrid(compiled, W, H, N){
+      var x0   = W/2 + panX,  y0   = H/2 + panY;
+      var xmin = -x0 / escX,  xmax = (W - x0) / escX;
+      var ymax =  y0 / escY,  ymin = (y0 - H) / escY;
+      var dx   = (xmax - xmin) / N;
+      var dy   = (ymax - ymin) / N;
+
+      /* MarchingSquaresJS requiere Array normal (no TypedArray) */
+      var data = [];
+      for (var r = 0; r <= N; r++){
+        var row = [];
+        var yv  = ymax - r * dy;
+        for (var c = 0; c <= N; c++){
+          var xv = xmin + c * dx;
+          var v  = evalFn(compiled, xv, yv);
+          row.push(isFinite(v) ? v : 1e15);
+        }
+        data.push(row);
+      }
+      return data;
+    }
+
+    /* ─────────────────────────────────────
+       PROPIEDAD CLAVE:
+       Los path points [pc, pr] de isoLines están en [0,N]×[0,N].
+       La conversión a canvas es SIEMPRE:
+         cx = pc * W / N
+         cy = pr * H / N
+       independientemente de escX, escY, panX, panY.
+       (Demostración: la grilla cubre exactamente el viewport.)
+    ───────────────────────────────────── */
+
+    /* ── dibujar ejes y grilla ── */
+    function drawAxes(W, H){
+      var x0 = W/2 + panX, y0 = H/2 + panY;
+
+      /* fondo */
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, W, H);
+
+      /* grilla */
+      ctx.strokeStyle = 'rgba(220,220,220,.8)';
+      ctx.lineWidth = 1;
+      for (var gx = ((x0 % escX) + escX) % escX; gx < W; gx += escX){
+        ctx.beginPath(); ctx.moveTo(gx,0); ctx.lineTo(gx,H); ctx.stroke();
+      }
+      for (var gy = ((y0 % escY) + escY) % escY; gy < H; gy += escY){
+        ctx.beginPath(); ctx.moveTo(0,gy); ctx.lineTo(W,gy); ctx.stroke();
+      }
+
+      /* ejes */
+      ctx.strokeStyle = 'rgba(187,187,187,.9)'; ctx.lineWidth = 1.5;
+      if (x0 >= 0 && x0 <= W){ ctx.beginPath(); ctx.moveTo(x0,4); ctx.lineTo(x0,H-4); ctx.stroke(); }
+      if (y0 >= 0 && y0 <= H){ ctx.beginPath(); ctx.moveTo(4,y0); ctx.lineTo(W-4,y0); ctx.stroke(); }
+
+      /* marcas y números */
+      ctx.strokeStyle = 'rgba(120,120,120,.8)'; ctx.lineWidth = 1;
+      ctx.fillStyle   = 'rgba(80,80,80,.75)';
+      ctx.font        = '9px DM Mono,monospace';
+
+      ctx.textAlign = 'center';
+      for (var i = escX; ; i += escX){
+        var lx = Math.round(i/escX*100)/100;
+        var done = true;
+        if (x0+i >= 0 && x0+i <= W){
+          ctx.beginPath(); ctx.moveTo(x0+i,y0-3); ctx.lineTo(x0+i,y0+3); ctx.stroke();
+          ctx.fillText( lx, x0+i, y0+12); done = false;
+        }
+        if (x0-i >= 0 && x0-i <= W){
+          ctx.beginPath(); ctx.moveTo(x0-i,y0-3); ctx.lineTo(x0-i,y0+3); ctx.stroke();
+          ctx.fillText(-lx, x0-i, y0+12); done = false;
+        }
+        if (done && i > W + escX) break;
+      }
+      ctx.textAlign = 'right';
+      for (var j = escY; ; j += escY){
+        var ly = Math.round(j/escY*100)/100;
+        var done2 = true;
+        if (y0-j >= 0 && y0-j <= H){
+          ctx.beginPath(); ctx.moveTo(x0-3,y0-j); ctx.lineTo(x0+3,y0-j); ctx.stroke();
+          ctx.fillText( ly, x0-5, y0-j+3); done2 = false;
+        }
+        if (y0+j >= 0 && y0+j <= H){
+          ctx.beginPath(); ctx.moveTo(x0-3,y0+j); ctx.lineTo(x0+3,y0+j); ctx.stroke();
+          ctx.fillText(-ly, x0-5, y0+j+3); done2 = false;
+        }
+        if (done2 && j > H + escY) break;
+      }
+    }
+
+    /* ── render completo ── */
+    function draw(N){
+      N = N || N_FINAL;
+
+      var dpr = window.devicePixelRatio || 1;
+      var W   = canvas.offsetWidth  || 640;
+      var H   = canvas.offsetHeight || 360;
+      canvas.width  = W * dpr;
+      canvas.height = H * dpr;
+      ctx.scale(dpr, dpr);
+
+      drawAxes(W, H);
+
+      var x0 = W/2 + panX, y0 = H/2 + panY;
+
+      /* curvas implícitas */
+      fns.forEach(function(fn){
+        if (!fn.compiled) return;
+        try {
+          var grid  = buildGrid(fn.compiled, W, H, N);
+          var paths = MarchingSquaresJS.isoLines(grid, 0, { noFrame: true });
+
+          ctx.strokeStyle = fn.color;
+          ctx.lineWidth   = lineW;
+          ctx.lineJoin    = 'round';
+          ctx.lineCap     = 'round';
+
+          paths.forEach(function(path){
+            if (path.length < 2) return;
+            ctx.beginPath();
+            /* cx = pc*W/N,  cy = pr*H/N */
+            ctx.moveTo(path[0][0] * W / N, path[0][1] * H / N);
+            for (var k = 1; k < path.length; k++){
+              ctx.lineTo(path[k][0] * W / N, path[k][1] * H / N);
+            }
+            ctx.stroke();
+          });
+        } catch(e){ elMsg.textContent = 'Error al graficar: ' + e.message; }
+      });
+
+      /* puntos marcados */
+      var r = lineW + 2;
+      puntos.forEach(function(p){
+        var cx = x0 + p.x * escX;
+        var cy = y0 - p.y * escY;
+        ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2*Math.PI);
+        ctx.fillStyle = '#000'; ctx.fill();
+      });
+    }
+
+    /* ── actualizar lista visual ── */
+    function updateFnList(){
+      elFnList.innerHTML = '';
+      fns.forEach(function(fn, i){
+        var item = document.createElement('div');
+        item.className = 'gi-fn-item';
+        var dot  = document.createElement('span');
+        dot.className = 'gi-fn-dot';
+        dot.style.background = fn.color;
+        var expr = document.createElement('span');
+        expr.className = 'gi-fn-expr';
+        expr.textContent = (i+1) + '.  f(x,y) = ' + fn.expr + '  = 0';
+        item.appendChild(dot); item.appendChild(expr);
+        elFnList.appendChild(item);
+      });
+    }
+
+    /* ── graficar ── */
+    function graficar(){
+      elMsg.textContent = '';
+      elExpr.classList.remove('gi-err');
+
+      var expr = elExpr.value.trim();
+      if (!expr){ elMsg.textContent = 'Ingrese una expresión f(x,y).'; return; }
+
+      var compiled = compile(expr);
+      if (!compiled){
+        elExpr.classList.add('gi-err');
+        elMsg.textContent = 'Expresión no válida (revise sintaxis).'; return;
+      }
+      if (fns.length >= MAX_FNS){
+        elMsg.textContent = 'Máximo ' + MAX_FNS + ' curvas simultáneas.'; return;
+      }
+
+      fns.push({
+        expr: expr,
+        color: COLORS[fns.length % COLORS.length],
+        compiled: compiled
+      });
+
+      updateFnList();
+      elComp.classList.add('show');
+      setTimeout(function(){
+        draw(N_FINAL);
+        elComp.classList.remove('show');
+      }, 20);
+    }
+
+    /* ── borrar ── */
+    function borrarUltima(){ if(fns.length>0){ fns.pop(); updateFnList(); draw(); } }
+    function borrarTodo()  { fns=[]; puntos=[]; updateFnList(); draw(); }
+
+    /* ── puntos ── */
+    function agregarPunto(){
+      var raw = document.getElementById('gi-punto-'+wid).value.trim();
+      raw = raw.replace(/[()]/g,'');
+      var parts = raw.split(/[,;]/);
+      if (parts.length !== 2){ elMsg.textContent='Punto: usar (a,b) o (a;b).'; return; }
+      var px = parseFloat(parts[0].trim().replace(',','.'));
+      var py = parseFloat(parts[1].trim().replace(',','.'));
+      if (isNaN(px)||isNaN(py)){ elMsg.textContent='Coordenadas del punto no válidas.'; return; }
+      puntos.push({x:px,y:py}); elMsg.textContent=''; draw();
+    }
+    function borrarPunto(){ if(puntos.length>0){ puntos.pop(); draw(); } }
+
+    /* ── coordenadas del cursor ── */
+    function getCoords(e){
+      var rect = canvas.getBoundingClientRect();
+      var W = canvas.offsetWidth, H = canvas.offsetHeight;
+      var mx = e.clientX - rect.left, my = e.clientY - rect.top;
+      var x0 = W/2 + panX, y0 = H/2 + panY;
+      return {
+        x: Math.round((mx-x0)/escX*1000)/1000,
+        y: Math.round((y0-my)/escY*1000)/1000
+      };
+    }
+
+    /* ── pan (ratón) ── */
+    wrap.addEventListener('mousedown', function(e){
+      panning=true; panSX=e.clientX; panSY=e.clientY; panX0=panX; panY0=panY;
+      wrap.style.cursor='grabbing';
+    });
+    window.addEventListener('mousemove', function(e){
+      if (panning){
+        panX = panX0 + (e.clientX - panSX);
+        panY = panY0 + (e.clientY - panSY);
+        draw(N_PREVIEW);              /* rápido durante arrastre */
+        clearTimeout(renderTimer);
+        renderTimer = setTimeout(function(){
+          elComp.classList.add('show');
+          setTimeout(function(){ draw(N_FINAL); elComp.classList.remove('show'); }, 20);
+        }, 200);                      /* render fino 200ms después de soltar */
+      } else {
+        if (wrap.matches(':hover')){
+          var c = getCoords(e);
+          elCoords.textContent = '(' + c.x + ' ; ' + c.y + ')';
+        }
+      }
+    });
+    window.addEventListener('mouseup', function(){
+      if (panning){
+        panning=false; wrap.style.cursor='crosshair';
+        clearTimeout(renderTimer);
+        elComp.classList.add('show');
+        setTimeout(function(){ draw(N_FINAL); elComp.classList.remove('show'); }, 20);
+      }
+    });
+
+    /* ── pan (touch) ── */
+    var tpan=false, tSX, tSY, tpX0, tpY0;
+    wrap.addEventListener('touchstart', function(e){
+      if(e.touches.length===1){
+        tpan=true; tSX=e.touches[0].clientX; tSY=e.touches[0].clientY; tpX0=panX; tpY0=panY;
+        e.preventDefault();
+      }
+    },{passive:false});
+    wrap.addEventListener('touchmove', function(e){
+      if(tpan&&e.touches.length===1){
+        panX=tpX0+(e.touches[0].clientX-tSX); panY=tpY0+(e.touches[0].clientY-tSY);
+        draw(N_PREVIEW); e.preventDefault();
+        clearTimeout(renderTimer);
+        renderTimer=setTimeout(function(){ draw(N_FINAL); },200);
+      }
+    },{passive:false});
+    wrap.addEventListener('touchend', function(){ tpan=false; });
+
+    function resetPan(){ panX=0; panY=0; draw(N_FINAL); }
+
+    /* ── escalas ── */
+    slSx.addEventListener('input',function(){
+      escX=parseInt(slSx.value,10); slSxV.textContent=escX; draw(N_PREVIEW);
+      clearTimeout(renderTimer); renderTimer=setTimeout(function(){ draw(N_FINAL); },250);
+    });
+    slSy.addEventListener('input',function(){
+      escY=parseInt(slSy.value,10); slSyV.textContent=escY; draw(N_PREVIEW);
+      clearTimeout(renderTimer); renderTimer=setTimeout(function(){ draw(N_FINAL); },250);
+    });
+
+    /* ── exportar ── */
+    function exportar(fmt){
+      var W = canvas.offsetWidth, H = canvas.offsetHeight;
+
+      if (fmt==='png'){
+        var a=document.createElement('a'); a.download='curva_implicita.png';
+        a.href=canvas.toDataURL('image/png'); a.click();
+
+      } else if (fmt==='pdf'){
+        var url=canvas.toDataURL('image/png');
+        var win=window.open('','_blank');
+        win.document.write(
+          '<html><head><title>Curva implícita</title>'
+          +'<style>@page{margin:1cm}body{margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh}'
+          +'img{max-width:100%;max-height:100%}</style>'
+          +'<script>window.onload=function(){window.print();window.close()}<\/script>'
+          +'</head><body><img src="'+url+'"></body></html>'
+        ); win.document.close();
+
+      } else if (fmt==='svg'){
+        /* Construir SVG vectorial rehaciendo el render con la misma lógica */
+        var N = N_FINAL;
+        var lines = [];
+        lines.push('<svg xmlns="http://www.w3.org/2000/svg" width="'+W+'" height="'+H+'">');
+        lines.push('<rect width="'+W+'" height="'+H+'" fill="white"/>');
+
+        var x0=W/2+panX, y0=H/2+panY;
+
+        /* grilla */
+        var gxs=((x0%escX)+escX)%escX;
+        for(var gx=gxs;gx<W;gx+=escX)
+          lines.push('<line x1="'+gx.toFixed(1)+'" y1="0" x2="'+gx.toFixed(1)+'" y2="'+H+'" stroke="rgba(220,220,220,.8)" stroke-width="1"/>');
+        var gys=((y0%escY)+escY)%escY;
+        for(var gy=gys;gy<H;gy+=escY)
+          lines.push('<line x1="0" y1="'+gy.toFixed(1)+'" x2="'+W+'" y2="'+gy.toFixed(1)+'" stroke="rgba(220,220,220,.8)" stroke-width="1"/>');
+
+        /* ejes */
+        if(x0>=0&&x0<=W) lines.push('<line x1="'+x0.toFixed(1)+'" y1="4" x2="'+x0.toFixed(1)+'" y2="'+(H-4)+'" stroke="rgba(187,187,187,.9)" stroke-width="1.5"/>');
+        if(y0>=0&&y0<=H) lines.push('<line x1="4" y1="'+y0.toFixed(1)+'" x2="'+(W-4)+'" y2="'+y0.toFixed(1)+'" stroke="rgba(187,187,187,.9)" stroke-width="1.5"/>');
+
+        /* curvas */
+        fns.forEach(function(fn){
+          if(!fn.compiled) return;
+          try {
+            var grid=buildGrid(fn.compiled,W,H,N);
+            var paths=MarchingSquaresJS.isoLines(grid,0,{noFrame:true});
+            paths.forEach(function(path){
+              if(path.length<2) return;
+              var d='M'+path.map(function(p){
+                return (p[0]*W/N).toFixed(2)+','+(p[1]*H/N).toFixed(2);
+              }).join('L');
+              lines.push('<path d="'+d+'" stroke="'+fn.color
+                +'" stroke-width="'+lineW+'" fill="none" stroke-linejoin="round" stroke-linecap="round"/>');
+            });
+          } catch(e){}
+        });
+
+        /* puntos */
+        var pr=lineW+2;
+        puntos.forEach(function(p){
+          var cx=(x0+p.x*escX).toFixed(2), cy=(y0-p.y*escY).toFixed(2);
+          lines.push('<circle cx="'+cx+'" cy="'+cy+'" r="'+pr+'" fill="black"/>');
+        });
+
+        lines.push('</svg>');
+        var blob=new Blob([lines.join('\n')],{type:'image/svg+xml'});
+        var a=document.createElement('a'); a.download='curva_implicita.svg';
+        a.href=URL.createObjectURL(blob); a.click();
+      }
+    }
+
+    /* ── ligar eventos ── */
+    btnPlot.addEventListener('click', graficar);
+    btnDel .addEventListener('click', borrarUltima);
+    btnClr .addEventListener('click', borrarTodo);
+    btnHelp.addEventListener('click', function(){ helpPanel.classList.toggle('open'); });
+    elExpr .addEventListener('keydown', function(e){ if(e.key==='Enter') graficar(); });
+
+    document.getElementById('gi-lw-'      +wid).addEventListener('change',function(){ lineW=parseInt(this.value,10); draw(N_FINAL); });
+    document.getElementById('gi-reset-'   +wid).addEventListener('click',  resetPan);
+    document.getElementById('gi-exp-png-' +wid).addEventListener('click',  function(){ exportar('png'); });
+    document.getElementById('gi-exp-svg-' +wid).addEventListener('click',  function(){ exportar('svg'); });
+    document.getElementById('gi-exp-pdf-' +wid).addEventListener('click',  function(){ exportar('pdf'); });
+    document.getElementById('gi-addpt-'   +wid).addEventListener('click',  agregarPunto);
+    document.getElementById('gi-delpt-'   +wid).addEventListener('click',  borrarPunto);
+    document.getElementById('gi-punto-'   +wid).addEventListener('keydown',function(e){ if(e.key==='Enter') agregarPunto(); });
+
+    /* resize */
+    if (window.ResizeObserver){
+      new ResizeObserver(function(){ draw(N_FINAL); }).observe(canvas);
+    }
+
+    /* ── render inicial ── */
+    draw();
+    setTimeout(graficar, 200);  /* esperar math.js + MarchingSquaresJS */
+  }
+
+  /* ── arrancar ── */
+  function initAll(){
+    if (typeof math === 'undefined' || typeof MarchingSquaresJS === 'undefined'){
+      setTimeout(initAll, 80); return;
+    }
+    document.querySelectorAll('[id^="gi-widget-"]').forEach(function(el){
+      new GrafImplWidget(el.id.replace('gi-widget-',''));
+    });
+  }
+
+  window.GI_init = initAll;
+  if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+
+}());
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.tec-info-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var exp = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!exp));
+      btn.classList.toggle('open', !exp);
+      var badge = btn.querySelector('.tec-info-badge');
+      if (badge) badge.textContent = exp ? 'cerrado' : 'abierto';
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      if (body) body.hidden = exp;
+    });
+  });
+}());
+</script>
+<footer style="text-align:center;padding:10px;color:#555555;">
+  <img src="images/logocc.png" alt="Creative Commons" style="vertical-align:middle;margin-right:8px;">
+  Licencia Creative Commons: Atribución-NoComercial-SinDerivadas CC BY-NC-ND, Abril 2026.
+</footer>
+</body>
+</html>

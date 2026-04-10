@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{xintexpr}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\sisetup{
+	round-mode            = places,
+	round-precision       = 8,
+	output-decimal-marker = {.},
+}
+
+\xintDigits := 16 ;
+
+%  \trxn{x}{n}: expresión directa; #2 es un literal cuando se expande 
+%    T_n(x) = (x/n)*[ (1 + exp(-x^2))/2 + sum_{k=1}^{n-1} exp(-(k*x/n)^2) ]
+\newcommand{\trxn}[2]{%
+	\num{%
+		\xintthefloatexpr
+		(#1 / #2) * ( (1 + exp(-(#1)^2)) / 2
+		+ add( exp(-((k * (#1/#2))^2)), k = 1 .. (#2-1) ) )
+		\relax
+	}%
+}
+
+\begin{document}
+	
+	\begin{table}[ht]
+		\centering
+		\caption{Aproximación de $\displaystyle\int_0^x e^{-t^2}\,dt$
+			mediante la regla del trapecio compuesta $T_n(x)$}
+		\smallskip
+		\begin{tabular}{c *{5}{S[table-format=1.8]}}
+			\toprule
+			{$x \setminus n$}
+			& {$n = 8$}  & {$n = 10$} & {$n = 14$}
+			& {$n = 16$} & {$n = 20$} \\
+			\midrule
+			$0.0$ & \trxn{0}{8}   & \trxn{0}{10}   & \trxn{0}{14}
+			& \trxn{0}{16}  & \trxn{0}{20}   \\[2pt]
+			$0.5$ & \trxn{0.5}{8} & \trxn{0.5}{10} & \trxn{0.5}{14}
+			& \trxn{0.5}{16}& \trxn{0.5}{20} \\[2pt]
+			$1.0$ & \trxn{1}{8}   & \trxn{1}{10}   & \trxn{1}{14}
+			& \trxn{1}{16}  & \trxn{1}{20}   \\[2pt]
+			$1.5$ & \trxn{1.5}{8} & \trxn{1.5}{10} & \trxn{1.5}{14}
+			& \trxn{1.5}{16}& \trxn{1.5}{20} \\[2pt]
+			$2.0$ & \trxn{2}{8}   & \trxn{2}{10}   & \trxn{2}{14}
+			& \trxn{2}{16}  & \trxn{2}{20}   \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+\end{document}

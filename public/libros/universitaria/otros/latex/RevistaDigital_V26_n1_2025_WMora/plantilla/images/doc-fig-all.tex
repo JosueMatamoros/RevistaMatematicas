@@ -1,0 +1,1828 @@
+
+
+%%--
+%%-- Compilar en terminal para make4ht
+%%- Opción 1.
+%make4ht -c config.cfg -a debug -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+%
+%%- Opción 2.
+%   Mantener dimensión figuras  por porentaje de la página por ejemplo: width=0.3textwidht
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-percent"
+%
+%%- Opción 3.
+%   Usual: escala bien figura en su tamano original
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+% make4ht  -c configP3.cfg -u -f html5 doc.tex "mathml,mathjax,svg,Gin-dim"
+
+
+
+\PassOptionsToPackage{inactive}{pst-pdf}%
+\AtBeginDocument{%
+\RequirePackage[inactive]{pst-pdf}%
+\RequirePackage[pdftex,active,tightpage]{preview}%
+\renewcommand\PreviewBbAdjust{-60pt -60pt 60pt 60pt}}%
+\documentclass[fleqn,oneside]{article}
+\input{Paquetes/WebPreambuloyEntornos.tex}
+% incluya en este archivo sus comandos. Observe las recomendaciones sobre make4ht
+\input{Paquetes/ComandosdelUsuario.tex}
+
+
+\title{\fhvb{16}{Una Web Interactica desde un documento LaTeX (con Make4ht y Asistida por IA)}}
+\author{\fhv{11}{Walter Mora Flores}\\ \fhv{10}{make4ht,html y ccs}}
+\date{} % Elimina la fecha
+
+% Definición del entorno "tosvg" para extraer y compilar en imagen (dummy en este caso)
+\newenvironment{tosvg}{}{}%{código al comenzar}{código al terminar}
+% Al final del documento, se llama al script de forma inmediata
+% \AtEndDocument{%
+% 	\immediate\write18{ltximg --latex --extrenv 'tosvg' --skipenv 'tikzpicture' --svg --noprew
+% 	--imgdir IMG -o test-out \jobname.tex > BBB.txt}%
+% }
+
+
+
+\pagestyle{empty}
+\begin{document}%-----------------------------------------------------
+\parindent=0mm
+\language=0 % Mantiene el idioma base en español sin afectar espacios
+\def\refname{Bibliografía}
+\thispagestyle{plain} % Usa 'plain' para mantener numeración sin encabezado
+%%------------------------------------------------------------------
+\maketitle
+
+\tableofcontents
+
+
+
+\bigskip
+\begin{resumen}
+	Este artículo de
+	artículo explica cómo añadir contenido interactivo
+	a estas páginas, utilizando TEX4ht y copiando
+	de fuentes web. Eitan Gurari (1947–2009)
+	Esta es una plantilla \tt{LaTeX} usual. Y puede compilar con \tt{PDFLaTeX} para obtener un documento \tt{pdf}. Sin embargo, el propósito  de esta plantilla es generar una página web, usando \tt{Make4ht}, con el contenido de este documento.\\
+\end{resumen}
+
+
+
+
+
+
+\label{sec:introduccion}
+\section{Introducción}  
+Un documento \tt{tex} se puede compilar de varias maneras. En nuestro caso queremos algo bimodal: Queremos como salida un  documento \tt{pdf} y un documento \tt{html} (para agregar contenido interactivo). \\
+
+Para obtener un documento \tt{pdf}, compilamos con PDFLaTeX y para traducir el documento y obtener un sitio web, con su archivo de estilo \tt{css},  compilamos con Make4ht. El archivo \tt{css} se modifica y/o se amplia con un archivo personalizado  \wtt{config.cfg}. En la Figura \ref{fig:fig0} se muestra el proceso de manera simplificada.\\
+
+
+\pdfomk{
+	\begin{figure}[h!!!]
+		\begin{minipage}{1.0\textwidth}
+			\centering
+			\begin{subfigure}{0.47\textwidth}
+				\centering
+				\includegraphics[scale=0.8]{images/fig0a.pdf}
+				\caption{PDFLaTeX}
+				\label{fig:0a}
+			\end{subfigure}%
+			\begin{subfigure}{0.47\textwidth}
+				\centering
+				\includegraphics[scale=0.8]{images/fig0b.pdf}
+				\caption{Make4ht}
+				\label{fig:02b}
+			\end{subfigure}%
+			\caption{Compilar con PDFLaTeX o con Make4ht}
+			\label{fig:fig0}
+		\end{minipage}
+	\end{figure}
+}{
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{1.0\textwidth}
+			\centering
+			\begin{subfigure}{0.4\textwidth}
+				\centering
+				\includegraphics{images/fig0a.svg}
+				\caption{PDFLaTeX}
+				\label{fig:0a}
+			\end{subfigure}%
+			~~~	~~~	~~~ % espacios en blanco para separar
+			\begin{subfigure}{0.4\textwidth}
+				\centering
+				\includegraphics{images/fig0b.svg}
+				\caption{Make4ht}
+				\label{fig:02b}
+			\end{subfigure}%
+			\centering\caption{Compilar con PDFLaTeX o con Make4ht}
+			\label{fig:fig0}
+		\end{minipage}
+	\end{figure}
+}
+
+\bigskip
+Este documento está implementado con código que ejecutan tanto PdfLaTeX como Make4ht. Pero hay partes en que solo nos interesa una salida \tt{html} y otras en las que solo nos interesa la salida \tt{pdf}, para esto usamos comandos que PDFLaTeX ignora y que Make4ht sí compila y viceversa.\\
+
+
+Make4ht se enfoca en la estructura del contenido y, si no hay errores de compilación fatales,  entrega un archivo \tt{html} correcto pero con un dise\~no simple. Este artículo es un ejemplo (y al mismo tiempo es una plantilla) de cómo agregar dise\~no web moderno y \tt{responsivo}, de manera manual, a través de un archivo de configuración y también a través de un framework como Bootstrap, \cite{bootstrap}. \\
+
+Este documento considera las {\it tareas comunes} en la implementación de material didáctico en matemáticas y agrega un archivo de configuración para la salida moderna y correcta en Html. La manera de configurar Make4ht para lograr este objetivo se describe en la sección \ref{sec:configurarmake4ht}.\\
+
+\fvnp{?`Qué nivel necesitamos?} Para usar la plantilla,  requiere ser un usuario normal de LaTeX y  posiblemente conocer cosas básicas de \tt{html} y \tt{css} (podría empezar por \cite{w3html} y \cite{w3css}). La parte interactiva requiere conocer JavaScript, pero pretendemos que el código lo genere la IA.\\
+
+ Si quiere conocer cómo se configuró la plantilla y eventualmente modificarla, entonces se debe leer la sección \ref{sec:configurarmake4ht} y conviene leer \cite{bmake4ht}. \\
+
+
+
+
+
+
+
+
+
+\fvnp{¿Por qué traducir un documento \tt{pdf}  a \tt{html}?} El formato \tt{html} ofrece accesibilidad, interactividad y un mayor alcance en el entorno digital actual. Generar el \tt{html} desde un archivo \tt{latex} permite aplicar revisiones al \tt{pdf} sin necesidad de tener que volver a editar manualmente el \tt{html}.\\
+
+Mientras el \tt{pdf} es ideal para impresión y citación formal, el \tt{html} se adapta a cualquier dispositivo y permite integrar elementos dinámicos como visualizaciones, actividades interactivas y contenido multimedia. Este enfoque promueve la ciencia abierta y la educación digital al hacer el contenido más flexible y accesible.
+
+
+\section{Make4ht para impacientes} Bien, tenemos una plantilla \wtt{doc.zip} con figuras y varios archivos \tt{tex} y un archivo de configración \wtt{config.cdf} (entre otras cosas) que  Make4ht traduce bien a \tt{html}.\\
+
+ Podemos agregar paquetes y comandos personales, en el archivo \tt{ComandosdelUsuario.tex} que está en la carpeta "Paquetes". Pero hay que observar que {\it hay paquetes incompatibles} con Make4ht y posiblemente también comandos. Siempre hay que estar compilando para ir probando como funcionann las cosas.\\
+ 
+ 
+ \tt{make4ht} es altamente configurable, por lo que  el diseño del sitio web  final lo podemos automatizar a través de un archivo de configuración que contiene mayormente código \tt{css}, para aplicar ajustes específicos para el formato de salida \tt{html}.\\
+ 
+\fvnp{Sentido común.} Hay que pensar en "modo pdf" si visualizamos el \tt{pdf} de salida, y en "modo html" si visualizamos la página web de salida. Son mundos parecidos, pero {\it hay cosas en pdf que no tiene equivalente en html} y viceversa. Así que hay que estar valorando qué cosas tienen sentido en uno y en el otro ambiente. La buena noticia es que  tenemos dos comandos para saltar de uno a otro modo en este documento \tt{tex}: Las cosas sofisticadas en \tt{latex},  buenas para \tt{pdf} pero que podrían  no compilar bien con Make4ht, las podemos simplicar  y hacer una versión \tt{latex} más sencilla (pero equivalente) o inyectar código \tt{html} de manera directa.\\
+
+Cosas demasiado complicadas se puede recortar e incluir como una imagen \tt{svg}. La manera automática de hacer esto lo vemos  en la sección \ref{tosvg} Prácticanmente todo el texto en una página web, está en formato vectorial \tt{svg}, porque este formato permite {\it renderizar} el texto en alta  calidad y permite escalar sin pérdidas.\\
+
+ 
+
+ 
+ La estructura de la carpeta de trabajo se muestra en la Figura \ref{fig:fig1}.
+ 
+ 
+\pdfomk{%pdf
+\bc\includegraphics{images/fig1.pdf}\captionof{figure}{Carpeta de trabajo}\label{fig:fig1}\ec
+}{%html
+\bc\includegraphics[width=0.65\textwidth]{images/fig1.svg}\captionof{figure}{Carpeta de trabajo}\label{fig:fig1}\ec
+}
+
+
+ 
+ \be
+ \item La carpeta \tt{images} contiene las figuras \tt{.png}, \tt{.svg} y \tt{.pdf}. Para \tt{html} son preferibles los formatos vectoriales con \tt{svg} (o sino  \tt{png} con buena resolución). Esto se puede personalizar un poco, por ejemplo usando Inkscape.
+
+ Algunas figuras generadas con código \tt{latex} las podemos convertir, de manera automática,  con el paquete \tt{ltximg} \cite{ltximg}. Lo vemos en la  sección \ref{tosvg}
+ \item La carpeta \tt{js} contiene los scripts JavaScript interactivos
+ \item La carpeta \tt{css} contiene \tt{miestilo.css} u otros estilos personalizados
+ \item La carpeta \tt{Paquetes} contiene el archivo \tt{WebPreambuloyEntornos.tex} y el archivo \newline
+        \tt{ComandosdelUsuario.tex}
+ \item La carpeta \tt{SitioWeb} recibe, con la compilación \tt{make4ht}, los archivos \tt{doc.css} y \tt{doc.html} (si la carpeta no está, entonces la crea).        
+\item  El archivo \wtt{config.cfg} es el archivo de configuración para este documento, mayormente habilita, deshabilita o modifica  entornos creados por Make4ht e inserta código \tt{css} para el dise\~no web de la salida \tt{html}. Este archivo ya viene implementado para esta plantilla. Para comprender y/o modificar algo, sería bueno leer la sección \ref{sec:configurarmake4ht}
+\item  El archivo \tt{plantilla.tex} es este mismo documento, pero solo con cosas relevantes, para editar un documento propio. El archivo \tt{ejemplos.tex} viene con código \tt{latex} que amplia los ejemplos del archivo principal.
+ \ee
+% 
+ \subsection{Compilar esta plantilla} Make4ht  ofrece varias opciones de compilación a través de un archivo de configuración y/o con opciones entre comillas. En este documento mayormente compilamos 
+ \wtt{en la terminal}, con el comando\\
+ 
+ 
+
+ %
+ \begin{lstlisting}
+ 	
+ make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+ \end{lstlisting}
+ %
+ 
+ \bigskip
+ \begin{nota}
+ 	En esta plantilla, el archivo  \wtt{config.cfg} puede cargar el script \wtt{MathJax} más personalizado, si se ocupan paquetes y comandos adicionales. Lo podemos ver en la sección \ref{sec:configurarmake4ht} \\
+ 	\end{nota}
+ 
+ \be
+ \item La opción \wtt{-c config.cfg} "inyecta" nuestro código, mayormente código de estilo \tt{css} en el  archivo \tt{doc.css}, de tal manera que prevalezca sobre el código \tt{css} que genera Make4ht.
+ \item La opción \tt{-d SitioWeb} inserta en \tt{SitioWeb}, en la carpeta de trabajo,  los archivos \tt{css} y \tt{html} (si no está la carpeta, la crea).
+ \ee
+ 
+ 
+ 
+  
+ \par\bigskip
+\fvnp{Otras opciones}. Se pueden agregar opciones  de compilación  (máximo 9) en el formato\\
+ 
+ %
+ \begin{lstlisting}
+make4ht filename.tex "op1,op2,..,optn"
+ \end{lstlisting}
+ %
+ 
+ \bigskip
+ En el capítulo $6$ de \cite[Tex4ht (2024)]{bmake4ht} hay una lista de opciones que se pueden aplicar. Incluye: Partir el documento en varias páginas, agregar las "notas de pie de página" en una página final, usar imágenes para el texto, etc.\\
+ 
+ 
+ 
+ \bigskip
+\subsection{Comandos importantes.} Como estamos en un ambiente bimodal, algunas cosas se pueden usar tanto para PDFLatex como para Make4ht, pero hay otras cosas son exclusivas para  PDFLaTex y hay algún equivalente para Make4ht y viceversa.\\
+
+
+\begin{nota}
+Observe que tanto PDFLatex como Make4ht, compilan {\it todo} el archivo \tt{.tex}, solo que algunos \wtt{bloques de código} son exclusivos, por razones especiales, para PDFLatex y otros para Make4ht.
+\end{nota}
+
+\bigskip
+En esta plantilla tenemos tres  comandos personalizados (están en \tt{WebPreambuloyEntornos.tex}):\\
+ 
+ \pdfomk{ % PDFLatex
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}
+% Make4ht
+\insertarhtml{<hr style="height:1px; border:none;
+               background-color:\#ccc; margin:20px 0;">}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{lcl} 
+	\verb+\pdfomk{#1}{#2}+:& & \tt{pdflatex} ignora \#2 y ejecuta \#1 y \tt{make4ht}   ignora \#2 y ejecuta \#1\\
+	\verb+\insertarhtm{#1}+:   &  & Insertar código \tt{html} {\it puro} con  \tt{make4ht}, pero \tt{pdflatex} lo ignora \\
+	\verb+\pdfomk{#1}{}+:   & & Solo \tt{pdflatex} ejecuta \#1 \\
+	\verb+\pdfomk{}{#2}+:   & & Solo \tt{make4ht} ejecuta \#2 \\
+\end{tabular}\par
+ \pdfomk{ % PDFLatex
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}
+% Make4ht
+\insertarhtml{<hr style="height:1px; border:none;
+               background-color:\#ccc; margin:20px 0;">}
+
+
+
+\bigskip\bigskip
+Adicionalmente vamos a usar  programas externos que se ejectan en la terminal o consola (editores como Texstudio, TexMaker, Kile, etc. tienen la "consola" en la parte baja)\\
+
+\pdfomk{ % PDFLatex
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}
+% Make4ht
+\insertarhtml{<hr style="height:1px; border:none;
+               background-color:\#ccc; margin:20px 0;">}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{lcl}
+	\verb+ltximg+:   & & Extrae entornos LaTeX y los convierte en imágenes \tt{svg}. \\
+    \verb+%<*ltximg> %</ltximg>+    & & Identificar entornos que va a ser convertidos en imágenes \tt{svg}\\
+    \verb+rsvg-convert+ & & (Linux) Escalar imágenes \tt{svg} (también tareas de conversión)\\
+    \verb+Inkscape+ & & Varias tareas sobre imágenes (Windows, Linux, Mac)\\
+\end{tabular}\par
+ \pdfomk{ % PDFLatex
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}
+% Make4ht
+\insertarhtml{<hr style="height:1px; border:none;
+               background-color:\#ccc; margin:20px 0;">}
+
+
+
+ 
+ \bigskip 
+ \begin{itemize} 
+ 	\item Ejemplo. Insertar una línea delgada que abarque el ancho de la página: Las líneas \tt{latex} son correctas para el \tt{pdf} pero no se traducen muy bien en \tt{html}. Pero podemos inyectar el código \tt{html} de manera directa.\\
+ 	 
+ %
+ \begin{lstlisting}
+\pdfomk{ % PDFLatex: línea lightgray
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par
+}{} % Make4ht nada
+% Solo Make4ht: línea gris en html. PDFlatex ignora este código
+\insertarhtml{<hr style="height:1px; border:none; 
+               background-color:\#ccc; margin:20px 0;">}  	
+ \end{lstlisting}
+ 
+ \bigskip
+ % Compilan ambos, pdflatex y make4ht
+ \textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par 
+ %  pdflatex ignora este código, Compila make4ht,
+ \insertarhtml{<hr style="height:1px; border:none; 
+ 	background-color:\#ccc; margin:20px 0;">}  	
+ 
+ \bigskip
+ \begin{nota}
+ 	Cuidado! \tt{make4ht} compila el código con el motor \tt{latex} (y luego convierte el \tt{dvi} a \tt{html}), así que debemos poner  \lstinline+\#,\%,...+\; etc. en el código,  porque estos son caracteres reservados en \tt{latex}
+ \end{nota}
+
+ \item Incluir una figura \tt{pdf} con PDFLatex  e incluir la misma figura en formato \tt{svg} en \tt{html}\\
+
+ \begin{lstlisting}
+\pdfomk{% solo PdfLatex
+		\bc\includegraphics[scale=0.35]{images/sumaRiemann.pdf}
+			\captionof{figure}{Figura \tt{.pdf}}
+		\ec
+ }{% solo Mkae4ht
+		\bc\includegraphics[scale=0.35]{images/sumaRiemann.svg}
+		\captionof{figure}{Figura \tt{.svg}}
+		\ec
+ }
+ \end{lstlisting}
+
+ \pdfomk{% solo PdfLatex
+ \bc\includegraphics[scale=0.35]{images/sumaRiemann.pdf}
+ \captionof{figure}{Figura \tt{.pdf}}
+ \ec
+ }{% solo Mkae4ht
+ \bc\includegraphics[scale=0.35]{images/sumaRiemann.svg}
+ \captionof{figure}{Figura \tt{.svg}}
+ \ec
+ }
+
+
+
+ \end{itemize}
+ 
+
+
+ \subsection{Figuras}\label{figuras}
+En \tt{html}, los formatos  mejor soportados son \tt{.png}, \tt{.jpg} y \tt{.svg}.
+
+
+\be
+\item \fvnp{png}. Incluir una figura \tt{png} no requiere hacer cambios, compila igual con PDFLaTeX y Make4ht.\\
+
+\lstinline+\includegraphics[width=0.7\textwidth]{images/fig2.png}+\\
+
+
+Para {\textcolor{wttD2}{escalar}} una figura \tt{png} (o \tt{jpg}) se puede usar la opción, \lstinline+[width=0.x\textwidth]+.  Esta opción, en términos de \lstinline+\textwidth+, es adecuada para \tt{pdf} y \tt{html}.\\
+
+Estas figuras se inyectan en el  \tt{html} con algo como\\
+
+\lstinline+<img alt='PIC' class='includegraphics' src='images/fig2.png' width='310' />+.\\
+
+Es decir, también podemos insertar figras \tt{png} desde \tt{latex }. Por ejemplo,\\
+
+\begin{lstlisting}
+\insertarhtml{% Make4ht
+   <img alt='PIC' class='includegraphics' src='images/fig3.png'
+         width='150' />}
+\end{lstlisting}
+
+
+\item \fvnp{svg}. El formato \tt{svg} (Scalable Vector Graphics) se usa para mostrar gráficos vectoriales escalables y nítidos en la web.\\
+
+Se puede incluir incluir una figura \tt{svg} con  Make4ht, usando el código\\
+
+\begin{lstlisting}
+\pdfomk{% PdfLaTex no soprta este formato
+}{% Make4ht soporta:
+\includegraphics{images/fig1.svg}
+}
+\end{lstlisting}
+
+\bigskip
+PDFLatex puede incluir figuras \tt{svg} con el paquete svg, pero solo funciona para PDFLaTeX.
+
+\bigskip
+Make4ht inyecta la figura \tt{.svg}  en el  \tt{html} con algo como\\
+
+\lstinline|<object class='graphics' data='images/fig1.svg' type='image/svg+xml'></object>|
+
+
+\begin{itemize}
+\item \lstinline+<object>...,/object>+ es un elemento \tt{html} que incrusta contenido externo (\tt{svg, pdf, html}, etc.) como un "documento embebido".\\
+
+ \item Estas figuras \tt{svg} {\it no se pueden escalar} con la opción usual \lstinline+[width=0.x\textwidth]+.\\
+ El navegador web las inserta con un tama\~no absoluto. Esto se debe a que una figura \tt{svg} se puede escalar si accedemos a su atributo \wtt{viewBox} (sistema de coordenadas), pero Make4ht no hace eso, solo inserta la figura.\\
+
+ \item Para escalar estas figuras se necesitan programas externos.\\
+
+ \begin{itemize}
+ \item Podemos escalar las figuras \tt{svg}  visualmente (o con comandos en terminal) por ejemplo con con \wtt{Inkscape}. \\
+
+ \item En \wtt{Linux} se puede hacer en la terminal con \wtt{rsvg-convert}.\\
+
+ Por ejemplo si queremos escalar \wtt{fig1.svg} a un ancho \tt{150pt}, ejecutamos la instrucción\\
+
+
+ \begin{lstlisting}
+  % sudo apt install librsvg2-bin
+  cd images
+  rsvg-convert -f svg -w 150 fig1.svg -o sfig1.svg
+  % Windows
+  % Usar Inkscape o un programa similar
+ \end{lstlisting}
+
+ \bigskip
+ \wtt{sfig1.svg} es la figura escalada. Como el \tt{html} toma las figuras de la carpeta \tt{images}, podemos seguir ajustando al figura y recargando el \tt{html}.\\
+
+ Hay comandos equivalentes para Windows y Mac.
+
+ \pdfomk{}{
+ \begin{tabular}{c|c}\toprule
+ \fvn{Figura sin escalar} & \fvn{Figura escalada con \tt{rsvg-convert}} \\ \hline
+  \includegraphics{images/fig2.svg} & \includegraphics{images/sfig2.svg}\\
+  \bottomrule
+  \end{tabular}
+  \captionof{figure}{rsvg}
+}
+
+ \end{itemize}
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\item \fvnp{pdf}. Los navegadores no {\it renderizan}  los figuras \tt{pdf} como imágenes (excepto con el elemento \wtt{<object>}). A veces  Make4ht puede convertir estas figuras automáticamente (en al compilación) a \tt{png} o \tt{svg}, mediante herramientas externas (como \tt{ghostscript} o \tt{pdf2svg}). Esto depende de si en el sistema están instaladas estas herramientas.\\
+\ee
+
+
+
+ 
+
+
+
+\subsection{Entorno \wtt{minipage}}  La práctica usual de colocar un \wtt{minipage} al lado de otro \wtt{minpage} está configurado en el archivo \wtt{config.cfg} (porque necesitamos manejar de manera correcta las dimensiones de cada \wtt{minipage}).\\
+
+Introducimos ambientes \wtt{minipage} en \tt{hmtl} con el siguiente formato:\\
+
+\bc
+\input{images/minipage.tex}
+\captionof{figure}{Minipage para \tt{html}}
+\ec
+
+%
+\begin{lstlisting}
+% Línea para html
+\insertarhtml{<hr style="height:1px; border:none;
+		background-color:\#ccc; margin:20px 0;">}
+%
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.x\textwidth}
+		% Contenido 1...
+	\end{minipage}\hfill\begin{minipage}{0.y\textwidth}
+		% Contenido 2...
+	\end{minipage}
+\end{minipage}
+%
+% Línea para html
+\insertarhtml{<hr style="height:1px; border:none;
+		background-color:\#ccc; margin:20px 0;">}
+\end{lstlisting}
+
+\bigskip
+\begin{nota}
+	En \tt{html} insertamos una línea \lstinline[ basicstyle=\small\fontseries{b}\ttfamily\color{wtt}]|\insertarhtml{<hr...>| de manera opcional, pero a veces es necesario para salir del modo flotante del \tt{minipage}, por ejemplo en \tt{itemize}.
+\end{nota}
+
+
+\bigskip
+%
+\begin{itemize}
+\item Ejemplo. Introducimos texto a la izquierda y una figura a la derecha,  con  \lstinline+\captionof{figure}+. Agregamos un par de líneas horizontales, una {\it solo} para el \tt{pdf}, con   \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\pdfomk{\rule...}{}+ y otra para el \tt{html}, con   \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\insertarhtml{}+\;\\
+
+%
+\begin{lstlisting}
+\pdfomk{% solo lo compila PDFLatex
+ \textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par
+ }{% Make4ht
+ }
+%
+% Esto solo lo compila Make4ht
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+%
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.6\textwidth}
+	\vspace{-2\baselineskip}
+	El espacio Euclidiano es  $\R^2$, con  la métrica
+	\[
+	ds^2=dx^2+dy^2
+	\]
+	En este modelo, la distancia más corta entre dos puntos
+	es una línea recta
+	\end{minipage}\hfill\begin{minipage}{0.35\textwidth}
+	\centering
+	\includegraphics{images/fig3.png}\captionof{figure}{Camino más corto}
+	\end{minipage}
+\end{minipage}
+\pdfomk{\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par
+}{}
+%
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+\end{lstlisting}
+%
+
+\bigskip
+\pdfomk{
+\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par
+}{}%solo pdf
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.6\textwidth}
+		 \vspace{-2\baselineskip} % solo aplica para pdf
+		El espacio Euclidiano es  $\R^2$, con  la métrica
+		\[
+		ds^2=dx^2+dy^2
+		\]
+		En este modelo, la distancia más corta entre dos puntos es una línea recta
+	\end{minipage}\hfill\begin{minipage}{0.35\textwidth}
+		\centering
+		\includegraphics{images/fig3.png}\captionof{figure}{Camino más corto}
+	\end{minipage}
+\end{minipage}
+\pdfomk{\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}%solo pdf
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+
+\end{itemize}
+
+
+
+
+\subsection{Ambiente \tt{tikzpicture}} Make4ht traduce bien, en general, los ambientes \tt{tikzpicture}. Con cosas muy complicadas todavía tenemos la opción de recoratr la figura, como veremos en la subsección \ref{tosvg}\\
+
+
+\be
+\item[$\bullet$] Ejemplo. Una diagrama generado con \tt{tikz}
+
+\pdfomk{\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}%solo pdf
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+%
+\begin{minipage}{1.0\textwidth}
+	\begin{minipage}{0.6\textwidth}
+%
+\begin{lstlisting}
+\begin{tikzpicture}
+ \matrix (m) [matrix of math nodes, row sep=3.5em, column sep=3.5em, nodes={anchor=center}]
+  {A & A[1] \\
+   A' & A'[1] \\};
+    \path[-stealth]
+    (m-1-1) edge node [above] {$x$} (m-1-2)
+    (m-2-1) edge node [above] {$y$} (m-2-2)
+    (m-1-1) edge node [right] {$z$} (m-2-1)
+    (m-1-2) edge node [right] {$t$} (m-2-2);
+\end{tikzpicture}
+\end{lstlisting}
+%
+\end{minipage}\hfill\begin{minipage}{0.35\textwidth}
+%
+    \begin{nopreview}
+\begin{tikzpicture}
+	\matrix (m) [matrix of math nodes, row sep=3.5em, column sep=3.5em, nodes={anchor=center}]
+	{A & A[1] \\
+		A' & A'[1] \\};
+	\path[-stealth]
+	(m-1-1) edge node [above] {$x$} (m-1-2)
+	(m-2-1) edge node [above] {$y$} (m-2-2)
+	(m-1-1) edge node [right] {$z$} (m-2-1)
+	(m-1-2) edge node [right] {$t$} (m-2-2);
+\end{tikzpicture}
+\end{nopreview}
+
+%
+	\end{minipage}
+\end{minipage}
+%
+\pdfomk{\textcolor{lightgray}{\rule{\linewidth}{0.4pt}}\par\par}{}%solo pdf
+\insertarhtml{<hr style="height:1px; border:none;
+	background-color:\#ccc; margin:20px 0;">}
+
+
+\item[$\bullet$] Ejemplo. Una figura generada con  \tt{tikz}\\
+
+%
+\begin{lstlisting}
+\begin{tikzpicture}[scale=0.7, x=(-15:1.2), y=(90:1.0), z=(-150:1.0),
+	line cap=round, line join=round,
+	axis/.style={black, thick,->},
+	vector/.style={>=stealth,->}]
+
+	...	% El código lo puede ver en el archivo "ejemplos.tex"
+
+\end{tikzpicture}
+\end{lstlisting}
+%
+\bc
+% Electromagnetic wave - colored
+\begin{nopreview}
+\begin{tikzpicture}[scale=0.7,
+x=(-15:1.2), y=(90:1.0), z=(-150:1.0),
+	line cap=round, line join=round,
+	axis/.style={black, thick,->},
+	vector/.style={>=stealth,->}]
+	\large
+	\def\A{1.5}
+	\def\nNodes{5} % use even number
+	\def\nVectorsPerNode{8}
+	\def\N{\nNodes*40}
+	\def\xmax{\nNodes*pi/2*1.01}
+	\pgfmathsetmacro\nVectors{(\nVectorsPerNode+1)*\nNodes}
+
+	\def\vE{{\color{myblue}\mathbf{E}}}
+	\def\vB{{\color{myred}\mathbf{B}}}
+	\def\vk{\mathbf{\hat{k}}}
+
+	\def\drawENode{ % draw E node and vectors with some offset
+		\draw[myblue,very thick,variable=\t,domain=\iOffset*pi/2:(\iOffset+1)*pi/2*1.01,samples=40]
+		plot (\t,{\A*sin(\t*360/pi)},0);
+		\foreach \k [evaluate={\t=\k*pi/2/(\nVectorsPerNode+1);
+			\angle=\k*90/(\nVectorsPerNode+1);}]
+		in {1,...,\nVectorsPerNode}{
+			\draw[vector,myblue!50]  (\iOffset*pi/2+\t,0,0) -- ++(0,{\A*sin(2*\angle+\iOffset*180)},0);
+		}
+	}
+	\def\drawBNode{ % draw B node and vectors with some offset
+		\draw[myred,very thick,variable=\t,domain=\iOffset*pi/2:(\iOffset+1)*pi/2*1.01,samples=40]
+		plot (\t,0,{\A*sin(\t*360/pi)});
+		\foreach \k [evaluate={\t=\k*pi/2/(\nVectorsPerNode+1);
+			\angle=\k*90/(\nVectorsPerNode+1);}]
+		in {1,...,\nVectorsPerNode}{
+			\draw[vector,myred!50]  (\iOffset*pi/2+\t,0,0) -- ++(0,0,{\A*sin(2*\angle+\iOffset*180)});
+		}
+	}
+
+	% main axes
+	\draw[axis] (0,0,0) -- ++(\xmax*1.1,0,0) node[right] {$x$};
+	\draw[axis] (0,-\A*1.4,0) -- (0,\A*1.4,0) node[right] {$y$};
+	\draw[axis] (0,0,-\A*1.4) -- (0,0,\A*1.4) node[above left] {$z$};
+
+	% small axes
+	\def\xOffset{{(\nNodes-2)*pi/2}}
+	\def\yOffset{\A*1.2}
+	\def\zOffset{\A*1.2}
+	\draw[axis,black] (\xOffset,\yOffset,-\zOffset) -- ++(\A*0.6,0,0) node[right,align=center] {$\mathbf{\hat{k}}$}; %\\propagation
+	\draw[axis,myblue]  (\xOffset,\yOffset,-\zOffset) -- ++(0,\A*0.6,0) node[right] {$\mathbf{E}$};
+	\draw[axis,myred]   (\xOffset,\yOffset,-\zOffset) -- ++(0,0,\A*0.6) node[above left] {$\mathbf{B}$};
+
+	% equation
+	\node[above right] at (\xOffset,-0.5*\yOffset,4*\zOffset)
+	{$\begin{aligned}
+			\vE &= {\color{myblue}\mathbf{E_0}}\sin(\vk\cdot\mathbf{x}-c_0t)\\
+			\vB &= {\color{myred} \mathbf{B_0}}\sin(\vk\cdot\mathbf{x}-c_0t)\\
+		\end{aligned}$};
+	\node[below right] at (\xOffset,-0.5*\yOffset,4*\zOffset)
+	{$\vE\cdot\vk = 0,\;\; \vB\cdot\vk = 0,\;\; \vB = \frac{1}{c_0}\vk\times\vE$};
+
+	% draw (anti-)nodes
+	\foreach \iNode [evaluate={\iOffset=\iNode-1;}] in {1,...,\nNodes}{
+		\ifodd\iNode \drawBNode \drawENode % E overlaps B
+		\else        \drawENode \drawBNode % B overlaps E
+		\fi
+	}
+\end{tikzpicture}
+\end{nopreview}
+
+\ec
+\ee%%-------------
+
+
+\subsection{Matrices, ecuaciones y arreglos} Make4ht traduce estos entornos sin problema. Entornos demasiado complejos, posiblemente sea mejor, insertarlos en el \tt{html} como una imagen \tt{svg}, como se indica en la subsección \ref{tosvg}, o generar el equivalente \tt{html} con IA, si se pudiera.\\
+
+
+El código completo de  algunos ejemplos,  se puede ver en el archivo \wtt{ejemplos.tex}\\
+
+\be
+\item \tt{equation}  con \tt{underbrace}\\
+
+%
+\begin{lstlisting}
+\begin{equation*}
+	\norm{f - L}_{\infty} = \overbrace{\abs{\frac{K_2}{2}}}^{\mathclap{\text{worst $f''(x)$ over interval}}}\underbrace{\left(\frac{h}{2}\right)^2}_{\mathclap{\text{worst (b - a)}}}
+\end{equation*}
+\end{lstlisting}
+
+%
+\begin{equation*}
+	\norm{f - L}_{\infty} = \overbrace{\abs{\frac{K_2}{2}}}^{\mathclap{\text{worst $f''(x)$ over interval}}}\underbrace{\left(\frac{h}{2}\right)^2}_{\mathclap{\text{worst (b - a)}}}
+\end{equation*}
+
+
+\item[$\bullet$] \tt{equation} y \tt{cases}\\
+
+%
+\begin{lstlisting}
+\begin{equation}\label{eq:cases}
+S_{i,t}=
+\begin{cases}
+ \begin{cases}
+  [x_{i,t}=X^*, r_{i,t}=1] & \text{if  $\max\{X_{i,t}\}=X^*$} \\
+  [x_{i,t}=\max\{X_{i,t}\}, r_{i,t}=0] & \text{if $\max\{X_{i,t}\} \neq X^*$}
+ \end{cases}
+  &\text{if $\sum_{i=1}^I u_{i,t-1}= \theta^{t-2} X^*$}\\
+ \begin{cases}
+  [x_{i,t}=1, r_{i,t}=1] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\}=1$} \\
+  [x_{i,t}=\min\{X_{i,t}\}, r_{i,t}=0] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\} \neq 1$}
+ \end{cases}
+ &\text{otherwise}
+ \end{cases}
+\end{equation}
+\end{lstlisting}
+%
+
+\bigskip
+\begin{equation}\label{eq:cases}
+	S_{i,t}=
+	\begin{cases}
+		\begin{cases}
+			[x_{i,t}=X^*, r_{i,t}=1] & \text{if  $\max\{X_{i,t}\}=X^*$} \\
+			[x_{i,t}=\max\{X_{i,t}\}, r_{i,t}=0] & \text{if $\max\{X_{i,t}\} \neq X^*$}
+		\end{cases}
+		&\text{if $\sum_{i=1}^I u_{i,t-1}= \theta^{t-2} X^*$}\\
+		\begin{cases}
+			[x_{i,t}=1, r_{i,t}=1] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\}=1$} \\
+			[x_{i,t}=\min\{X_{i,t}\}, r_{i,t}=0] & \hspace{\maxmin} \text{if $\min\{X_{i,t}\} \neq 1$}
+		\end{cases}
+		&\text{otherwise}
+	\end{cases}
+\end{equation}
+
+
+\bigskip
+En la ecuación  \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\ref{eq:cases}+, o el formato   \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\eqref{eq:cases}+, se tiene que ...\\
+En la ecuación \ref{eq:cases}, o el formato  \eqref{eq:cases}, se tiene que ...\\
+
+
+
+\item[$\bullet$] \tt{equation} y \tt{array}\\
+\begin{equation*}
+	{\underbrace{
+			\mspace{3mu}
+			\left(\begin{array}{c} b_1 \\ b_2 \\ b_3 \\ \vdots \\ b_n \end{array}\right)
+			\mspace{3mu}
+		}_{\textstyle\mathstrut\boldsymbol{b}}} =
+	{\underbrace{
+			\left(\begin{array}{*{5}{c}}
+				s_{11} & s_{12} & s_{13} & \dots & s_{1n} \\
+				s_{21} & s_{22} & s_{23} & \dots & s_{2n} \\
+				s_{31} & s_{32} & s_{33} & \dots & s_{3n} \\
+				\vdots & \vdots & \vdots & \ddots& \vdots \\
+				s_{n1} & \dots  & \dots  & \dots & s_{nn}
+			\end{array}\right)
+		}_{\textstyle\mathstrut\boldsymbol {S}}}
+	\mspace{3mu}\cdot
+	{\underbrace{
+			\mspace{3mu}
+			\left(\begin{array}{c} a_1 \\ a_2 \\ a_3 \\ \vdots \\ a_n \end{array}\right)
+			\mspace{3mu}
+		}_{\textstyle\mathstrut\boldsymbol{a}}}
+\end{equation*}
+
+\item[$\bullet$] \tt{pmatrix} con \tt{block}\\
+
+$
+\underbrace{
+	\begin{pmatrix}
+		1 & \smash[b]{\block{k}} \\
+		&& 1 & \smash[b]{\block{k}} \\
+		&&&& \ddots \\
+		&&&&& 1 & \block{k}
+	\end{pmatrix}
+}_{T}
+$
+
+
+
+\ee
+
+
+\subsection{Paquete \tt{subfigure}.}  Usamos este paquete para colocar dos figuras, una al lado de la otra, con diferentes \tt{caption}. El archivo de configuración tiene el código para manejar esta situación en la traducción a \tt{html}. En la Figura \ref{fig:fig0} usamos un  código bimodal, porque usamos  figuras \tt{.pdf} para el \tt{pdf} y el formato \tt{.svg}  para el \tt{html}.\\
+
+%
+\begin{lstlisting}
+\pdfomk{% subfiguras para pdflatex..., con formato .pdf
+%
+}{% subfiguras para que compile make4ht, en formato .svg
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{1.0\textwidth}
+		\centering
+		\begin{subfigure}{0.4\textwidth}
+			\centering
+			\includegraphics{images/fig0a.svg}
+			\caption{PDFLaTeX}
+			\label{fig:fig0a}
+		\end{subfigure}%
+		~
+		\begin{subfigure}{0.4\textwidth}
+			\centering
+			\includegraphics{images/fig0b.svg}
+			\caption{Make4ht}
+			\label{fig:fig0b}
+		\end{subfigure}%
+		% caption general
+		\centering\caption{Compilar con PDFLaTeX o con Make4ht}
+		\label{fig:fig0}
+	\end{minipage}
+\end{figure}
+}
+\end{lstlisting}
+%
+
+
+
+\subsection{Tablas} Make4ht traduce correctamente a \tt{html}, tanto tablas simples como otras más elaboradas, que utilizan paquetes como \tt{multirow}, \tt{color} o \tt{booktabs}. Sin embargo, cuando se trata de estructuras más complejas $-$como celdas combinadas de forma irregular, múltiples líneas horizontales o disposiciones no estándar$-$ es necesario recurrir a soluciones alternativas, como las que se ilustran en la sección \ref{tosvg} Además, una vez generado el archivo \tt{html}, es posible agregar interactividad directamente desde este mismo documento \tt{.tex}. (sección \ref{Webinteractiva})\\
+
+A continuación mostramos algunos ejemplos de tablas que Make4ht traduce bien a \tt{html}.\\
+
+
+
+\be
+\item Tablas con  \lstinline|\multicolumn| (no usar  \lstinline+\arrayrulecolor+)\\
+
+%
+\begin{lstlisting}
+\begin{table}[h!!!]
+  % Make4ht no lo soporta \arrayrulecolor{black}
+  {\centering
+ \begin{tabular}{ | l | c | c | c | c | c | c |}\hline
+  Tipo de Instrucción & opcode &  &  & & & \\\hline
+  \multicolumn{1}{|r|}{\#bits} & 6 & 5 & 5 & 5 & 5 & 6\\\hline\hline
+  Tipo-R & op & rs & rt & rd & shamt & funct\\\hline
+  Tipo-I & op & rs & rt & \multicolumn{3}{c|}{dirección/inmediato}\\\hline
+  Tipo-J & op & \multicolumn{5}{l|}{dirección objetivo}  \\\hline
+ \end{tabular}
+\caption{\label{tab:4.1}Tipos de instrucciones de código máquina MIPS}
+}
+\end{table}
+\end{lstlisting}
+%
+
+
+
+\begin{table}[h!!!]
+%\arrayrulecolor{black} % make4ht no lo soporta fuera de tabular
+{\centering
+\begin{tabular}{ | l | c | c | c | c | c | c |}
+	\hline
+	Tipo de Instrucción & opcode &  &  & & & \\
+	\hline
+	\multicolumn{1}{|r|}{\#bits} & 6 & 5 & 5 & 5 & 5 & 6\\
+	\hline
+	\hline
+	Tipo-R & op & rs & rt & rd & shamt & funct\\
+	\hline
+	Tipo-I & op & rs & rt & \multicolumn{3}{c|}{dirección/inmediato}\\
+	\hline
+	Tipo-J & op & \multicolumn{5}{l|}{dirección objetivo}  \\
+	\hline
+\end{tabular}
+\caption{\label{tab:4.1}\textbf{Tipos de instrucciones de código máquina MIPS}}
+}
+\end{table}
+
+
+\item Tablas con  \lstinline+\multirow+ y  \lstinline+\rowcolor+\\
+
+
+ \begin{lstlisting}
+
+\begin{table}[h!!!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\rowcolor{gray!30}
+\textbf{Categoría} & \textbf{Item} & \textbf{Cantidad}
+	& \textbf{Precio} \\ \hline
+	\multirow{2}{*}{Frutas} & Manzanas & 10 & \$5.00 \\ \cline{2-4}
+	& Naranjas & 20 & \$8.00 \\ \hline
+	\multirow{2}{*}{Vegetales} & Zanahorias & 15 & \$4.00 \\ \cline{2-4}
+	& Papas& 25 & \$6.00 \\ \hline
+\end{tabular}
+	\captionof{table}{Tabla sofisticada}\label{tab:4.2}
+\end{table}
+ \end{lstlisting}
+ %
+ \begin{table}[h!!!]
+ 	\centering
+ 	\begin{tabular}{|l|l|l|l|}
+ 		\hline
+ 		\rowcolor{gray!30}
+ 		\textbf{Categoría} & \textbf{Item} & \textbf{Cantidad} & \textbf{Precio} \\ \hline
+ 		\multirow{2}{*}{Frutas} & Manzanas & 10 & \$5.00 \\ \cline{2-4}
+ 		& Naranjas & 20 & \$8.00 \\ \hline
+ 		\multirow{2}{*}{Vegetales} & Zanahorias & 15 & \$4.00 \\ \cline{2-4}
+ 		& Papas& 25 & \$6.00 \\ \hline
+ 	\end{tabular}
+\captionof{table}{Tabla sofisticada}\label{tab:4.2}
+ \end{table}
+
+
+\item Tablas con color en las filas. Esta tabla se puede traducir como una tabla "fija" o se puede traducir con efecto hover sobre sus filas, como veremos en la sección \ref{Webinteractiva}.\\
+
+
+\begin{lstlisting}
+\setlength{\arrayrulewidth}{0.5pt}
+\arrayrulecolor{headerblue!80}
+\begin{tabular}{cc||ccc||ccc||ccc||ccc}
+\toprule
+\rowcolor{headerblue!90}
+...
+\end{tabular}
+\end{lstlisting}
+
+
+
+% En comandos usuario:
+% \definecolor{headerblue}{RGB}{0, 82, 147}
+% \definecolor{rowgray}{RGB}{242, 242, 242}
+% \definecolor{highlight}{RGB}{255, 215, 0}
+\begin{table}[h!!!]
+\centering
+
+\footnotesize
+\setlength{\arrayrulewidth}{0.5pt}
+\arrayrulecolor{headerblue!80}
+\begin{tabular}{cc||ccc||ccc||ccc||ccc}
+\toprule
+\rowcolor{headerblue!90}
+\multicolumn{2}{>{\bfseries\color{white}}c||}{\fvn{Negación}} &
+\multicolumn{3}{>{\bfseries\color{white}}c||}{\fvn{Conjunción}} &
+\multicolumn{3}{>{\bfseries\color{white}}c||}{\fvn{Disyunción}} &
+\multicolumn{3}{>{\bfseries\color{white}}c||}{\fvn{Implicación}} &
+\multicolumn{3}{>{\bfseries\color{white}}c||}{\fvn{Equivalencia}}  \\
+\midrule
+
+% Fila 1 (destacada)
+\rowcolor{highlight!15}
+\rowcolor{highlight!15}
+$P$ & $\neg P$  & $P$ & $Q$ & $P \land Q$ & $P$ & $Q$ & $P \lor Q$ & $P$ & $Q$ & $P \rightarrow Q$ & $P$ & $Q$ & $P \leftrightarrow Q$ \\
+\midrule
+V & F  & V & V & V & V & V & V & V & V & V & V & V & V \\
+\rowcolor{rowgray}
+V & F  & V & F & F & V & F & V & V & F & F & V & F & F \\
+F & V  & F & V & F & F & V & V & F & V & V & F & V & F \\
+\rowcolor{rowgray}
+F & V  & F & F & F & F & F & F & F & F & V & F & F & V \\
+\bottomrule
+\end{tabular}
+\caption{Tablas de verdad básicas}
+\end{table}
+
+
+\ee%--ejemplos tablas---
+%
+%
+%
+\section{Convertir  entornos "complicados" en imágenes {\color{tttxtD2}svg}}\label{tosvg}
+Make4ht {\it no ofrece} soporte para muchos paquetes que se usan para implementar tablas o arreglos complejos, como las que se implementan con \tt{hhline}, \tt{nicematrix}, \tt{polynom} etc. Podemos  convertir estos entornos en imágnes \tt{svg} o también, si se presta, se podrían  convertir en \tt{html} interactivo (sección \ref{Webinteractiva}) \\
+
+El paquete \tt{ltximg} \cite{ltximg}, se ejecuta con un comando {\it en la terminal}: Busca los entornos marcados con
+\lstinline+%<*ltximg> %</ltximg>+ y los convierte en imágenes \tt{.svg}
+
+\pdfomk{
+\bc
+\includegraphics[width=0.7\textwidth]{images/ltximg.pdf}
+\captionof{figure}{\wtt{ltximg} convierte entornos a \tt{.svg}}
+\ec}{
+\bc
+\includegraphics{images/ltximg.svg}
+\captionof{figure}{\wtt{ltximg} convierte entornos a \tt{.svg}}
+\ec
+}
+
+
+El entorno \lstinline+%<*ltximg> %</ltximg>+ es ingnorado por PDFLatex y por  Make4ht. . Pero \tt{ltximg} si lo interpreta como un {\it identificador}.\\
+
+\begin{lstlisting}
+%<*ltximg>
+  Entorno...
+%</ltximg>
+\end{lstlisting}
+
+\bigskip
+Una vez que tenemos idenficados los entornos que vamos a convertir a imagen \tt{svg}, tenemos que {\it correr en terminal} el comando que recorta y hace las conversiones.\\
+
+
+ \begin{lstlisting}
+ltximg --skipenv 'tikzpicture' --runs 2 --subenv --svg --imgdir images -o doc-out doc.tex
+ \end{lstlisting}
+
+\bigskip
+Funciona así: Este comando recorre el documento \tt{doc.tex} y localiza los entornos que están envueltos en el entorno  \lstinline+%<*ltximg> %</ltximg>+, luego genera y pega en la carpeta  \tt{images}, un archivo \tt{doc.tex} con solamente los entornos y el preámbulo del documento, luego genera la imagen  \tt{.pdf} de cada entorno  y las convierte a \tt{.svg}. Por supuesto: Como \wtt{ltximg} trabja en la carpeta images, debemos pegar temporalmente las carpetas donde tenemos las cosas del preámbulo.\\
+
+Los nombres de las imágenes van numeradas por orden de aparición: \\
+
+\wtt{conv-fig-1.svg}, \; \wtt{conv-fig-2.svg}, \;etc.\\
+
+Para escalar las figuras \tt{svg} usamos \wtt{rsvg-convert} o \wtt{inkscape} o equivalentes, como se indicó en la sección \ref{figuras}.\\
+
+
+\begin{nota}
+También podemos hacer solo un \tt{.tex} aparte,  con solo  los entornos, los paquetes y los comandos necesarios y luego aplicar \wtt{ltximg} a este archivo.
+\end{nota}
+
+
+
+\subsubsection*{Ejemplos}
+Vamos a recortar entornos con los paquetes \tt{nicematrix}, \tt{polynomial} y \tt{hhline}. Recuerde que estos paquetes {\it no son soportados por Make4ht}, pero sí por PDFLatex.\\
+
+El orden de aparición es importante, porque eso define el nombre de la imagen \tt{.svg}\\
+
+
+
+\be
+\item Entorno \tt{polynom} (no requiere entonrno matemático).
+%
+\begin{lstlisting}
+\pdfomk{% PDFLatex
+\bc
+%<*ltximg>
+	\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1} % Genera doc-fig-1.svg
+%</ltximg>
+\ec
+\captionof{figure}{División con el paquete \tt{polynom}}
+}{ % Make4ht recoge la imagen generada, si primero se compiló con "ltximg"
+\bc
+	\includegraphics[width=0.5\textwidth]{images/doc-fig-1.svg}
+	\captionof{figure}{División con el paquete \tt{polynom}}
+\ec
+}
+\end{lstlisting}
+
+
+\bigskip
+\pdfomk{% PDFLatex % Genera doc-fig-1.svg
+\bc
+\begin{preview}
+
+	\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
+
+\end{preview}
+
+\ec
+\captionof{figure}{División con el paquete \tt{polynom}}
+}{ % Make4ht recoge la imagen generada, si primero se compiló con "ltximg"
+\bc
+	\includegraphics{images/doc-fig-1.svg}
+	\captionof{figure}{División con el paquete \tt{polynom}}
+\ec
+}
+
+
+
+\bigskip
+\item \tt{NiceTabular}
+
+\begin{lstlisting}
+\pdfomk{% PDFLatex % Genera doc-fig-2.svg
+   \bc
+   %<*ltximg>
+   \setlength{\extrarowheight}{2pt}
+   \begin{NiceTabular}
+     ...
+   \end{NiceTabular}
+   %</ltximg>
+}{
+  \bc
+  \includegraphics{images/doc-fig-2.svg}
+  \ec
+}
+\end{lstlisting}
+
+
+\pdfomk{% PDFLatex % Genera doc-fig-2.svg
+\bc
+\begin{preview}
+
+\setlength{\extrarowheight}{2pt}
+\begin{NiceTabular}
+   [hvlines-except-borders,rules={width=1.5pt,color=white}]
+   {*{5}{X[c]}}
+\CodeBefore
+    \columncolor{red!20}{1,3,5}
+    \columncolor{blue!20}{2,4}
+    \rowcolor[opacity=0.5]{black}{1}
+\Body
+    \RowStyle[color=white]{\bfseries}
+    Subject & Dry & Ovulation date & Oiliest & Poor barrier \\
+    \bfseries 2007 &  8, 36 & 14 & 22 & 26 \\
+    \cellcolor{nocolor}
+    \RowStyle{\bfseries}
+    & I - DR & II - OP & III - OL & IV - PB \\
+\end{NiceTabular}
+
+\end{preview}
+
+\ec
+}{ % Make4ht
+\bc
+ \includegraphics[width=0.5\textwidth]{images/doc-fig-2.svg}
+\ec
+}
+
+
+
+\bigskip
+\item \tt{NiceMatrix}
+
+
+\begin{lstlisting}
+\pdfomk{% PDFLatex %doc-fig-3.svg
+  %\newcommand{\ff}{\mathtt{f}}
+%<*ltximg>
+   \begin{equation*}
+    \boldsymbol{\mathcal{F}}^{i} =
+    \begin{bNiceMatrix}[margin,nullify-dots]
+     ...
+	\end{bNiceMatrix}
+    \end{equation*}
+%</ltximg>
+}{ % Make4ht
+ \includegraphics[width=0.5\textwidth]{images/doc-fig-3.svg}
+}
+
+\end{lstlisting}
+
+
+\pdfomk{% PDFLatex  %doc-figura-3.svg
+\begin{small}
+\begin{preview}
+
+\begin{equation*}
+\boldsymbol{\mathcal{F}}^{i} =
+\begin{bNiceMatrix}[margin,nullify-dots]
+    \ff_{1\,1} & \Cdots & \ff_{1\,\varpi} & \ff_{1\,(\varpi+1)} & \Cdots & \ff_{1\,\eta} \\
+    \Vdots & \Ddots & \Vdots & \Vdots & & \Vdots \\
+    \ff_{\varpi\,1} & \Cdots & \ff_{\varpi\,\varpi} & \ff_{\varpi\,(\varpi+1)} & \Cdots & \ff_{\varpi\,\eta} \\
+    \noalign{\kern2mm}
+    \ff_{(\varpi+1)\,1} & \Cdots & \ff_{(\varpi+1)\,\varpi} & \ff_{(\varpi+1)\,(\varpi+1)} & \Cdots & \ff_{(\varpi+1)\,\eta} \\
+    \Vdots & & \Vdots & \Vdots & \Ddots & \Vdots \\
+    \ff_{\eta\,1} & \Cdots & \ff_{\eta\,\varpi} & \ff_{\eta\,(\varpi+1)} & \Cdots & \ff_{\eta\,\eta}
+\CodeAfter
+  \SubMatrix[{1-1}{3-3}][slim,extra-height=-1mm,xshift=1mm]
+  \OverBrace{1-1}{3-3}{\scriptstyle\mathcal{F}_N^i}[shorten,yshift=1mm]
+\end{bNiceMatrix}
+\end{equation*}
+
+\end{preview}
+
+\end{small}
+}{ % Make4ht
+ \includegraphics[width=0.5\textwidth]{images/doc-fig-3.svg}
+}
+\ee
+
+\bigskip
+Para generar las imágenes \tt{svg} ejecutamos en terminal\\
+
+\begin{lstlisting}
+ltximg --skipenv 'tikzpicture' --runs 2 --subenv --svg --imgdir images -o doc-out doc.tex
+ \end{lstlisting}
+
+
+
+
+
+
+
+
+% \subsubsection{Arreglos, matrices, ecuaciones} Make4ht traduce bien matrices y arreglos (no muy complejos). Podemos usar \tt{array}, \tt{eaquation}, \tt{subequation}, \tt{bmatrix, pmatrix}, etc.\\
+%
+%  Make4ht no ofrece soporte para  paquetes como \tt{polynom}, \tt{nicematrix}, \tt{hhline}, etc. Si Make4ht {\it logra compilar un entorno} y si la traducción a \tt{html} no es correcta, podemos convertir el entorno a \tt{.svg} o generar el \tt{html} como ya indicamos antes.  Vamos a mostrar algunos ejemplos donde Make4ht traduce correctamente.
+%
+%  \begin{itemize}
+%  	\item Entorno \tt{equation} con \tt{bmatrix}.\\
+%
+%  	%
+%  	\begin{lstlisting}
+%
+%  		\begin{equation}
+%  		\dot{\mathbf{x}}_{\text{p}}(t) = \left[\begin{array}{c|c}
+%  			0 & I\\
+%  			\hline
+%  			0 & 0\\
+%  		\end{array}\right]\, \mathbf{x}_{\text{p}}(t) + \begin{bmatrix}
+%  			0\\I_{m}^{-1}\end{bmatrix}\,\mathbf{q}(t)
+%  		\label{eq:vant_rotacion_lineal}
+%  	\end{equation}
+%  	\end{lstlisting}
+%  	%
+%
+%  	\begin{equation}
+%  		\dot{\mathbf{x}}_{\text{p}}(t) = \left[\begin{array}{c|c}
+%  			0 & I\\
+%  			\hline
+%  			0 & 0\\
+%  		\end{array}\right]\, \mathbf{x}_{\text{p}}(t) + \begin{bmatrix}
+%  			0\\I_{m}^{-1}\end{bmatrix}\,\mathbf{q}(t)
+%  		\label{eq:vant_rotacion_lineal}
+%  	\end{equation}
+%
+%  	\item \tt{equation} con \tt{array}\\
+%
+%  	%
+%  	\begin{lstlisting}
+%
+%  		 	\begin{equation}
+%  			\begin{array}{|r|rrrr|}
+%  				\hline
+%  				& x_1 & x_2 & x_3 & x_4 \\
+%  				\hline
+%  				4 & 0 & -3 & 2 & 0 \\
+%  				\hline
+%  				x_1 = 2 & 1 & -1 & 1 & 0 \\
+%  				\hline
+%  				x_4 = 4 & 0 & 2^{*} & -1 & 1\\
+%  				\hline
+%  			\end{array}
+%  		\end{equation}
+%  	\end{lstlisting}
+%  	%
+%
+%  	\begin{equation}
+%  		\begin{array}{|r|rrrr|}
+%  			\hline
+%  			& x_1 & x_2 & x_3 & x_4 \\
+%  			\hline
+%  			4 & 0 & -3 & 2 & 0 \\
+%  			\hline
+%  			x_1 = 2 & 1 & -1 & 1 & 0 \\
+%  			\hline
+%  			x_4 = 4 & 0 & 2^{*} & -1 & 1\\
+%  			\hline
+%  		\end{array}
+%  	\end{equation}
+%
+%  	\item Referencia en \tt{equation}\\
+%
+%  	%
+%  	\begin{lstlisting}
+%
+% 	\begin{equation}
+% 		e^{\mathrm{i}\pi}+1=0 \label{eq:test equation}
+% 	\end{equation}
+% 	La ecuación \ref{eq:test equation} es conocida como la identidad de Euler.
+%  	\end{lstlisting}
+%  	%
+%
+%  	\begin{equation}
+%  		e^{\mathrm{i}\pi}+1=0 \label{eq:test equation}
+%  	\end{equation}
+%  	La ecuación \ref{eq:test equation} es conocida como la identidad de Euler.
+%
+%  	\item Matrices anidadas y  \lstinline+\raisebox+\\
+%
+%  	%
+%  	\begin{lstlisting}
+%
+% \[
+% \begin{bmatrix}
+% 	x_{11} & \begin{matrix} x_{12} & \dots & x_{1n} \end{matrix} \\
+% 	\begin{matrix} x_{21} \\ \vdots \\ x_{n1} \end{matrix}  &
+% 		\begin{bmatrix}
+% 		\hspace*{-\arraycolsep}
+% 		\phantom{x_{11}} & \phantom{x_{11}} & \phantom{x_{11}}
+% 		\hspace*{-\arraycolsep}\\
+% 			& \raisebox{-0.2\height}[0pt][0pt]{\LARGE$B$} & \\
+%  			& &
+%  		\end{bmatrix}
+% 	\end{bmatrix}
+% \]
+%  	\end{lstlisting}
+%  	%
+%
+%  	\[
+%  	\begin{bmatrix}
+%  		x_{11} & \begin{matrix} x_{12} & \dots & x_{1n} \end{matrix} \\
+%  		\begin{matrix} x_{21} \\ \vdots \\ x_{n1} \end{matrix}  &
+%  		\begin{bmatrix}
+%  			\hspace*{-\arraycolsep}
+%  			\phantom{x_{11}} & \phantom{x_{11}} & \phantom{x_{11}}
+%  			\hspace*{-\arraycolsep}
+%  			\\
+%  			& \raisebox{-0.2\height}[0pt][0pt]{\LARGE$B$} & \\
+%  			& &
+%  		\end{bmatrix}
+%  	\end{bmatrix}
+%  	\]
+%
+% \item  \lstinline+multline+\\
+%
+% %
+% \begin{lstlisting}
+%
+% \begin{multline*}
+%  (6 A t+2 B) e^{it}+i (3At^{2}+2Bt+C) e^{it}+i(3At^{2}+2Bt+C) e^{it}\\
+% 	-(  At^{3}+Bt^{2}+Ct) e^{it}+( At^{3}+Bt^{2}+Ct) e^{it}=t^{2}e^{it}
+% \end{multline*}
+%
+%
+% \end{lstlisting}
+% %
+% \begin{multline*}
+% 	(6 A t+2 B) e^{it}+i (3At^{2}+2Bt+C) e^{it}+i(3At^{2}+2Bt+C) e^{it}\\
+% 	-(  At^{3}+Bt^{2}+Ct) e^{it}+( At^{3}+Bt^{2}+Ct) e^{it}=t^{2}e^{it}
+% \end{multline*}
+%
+%
+%
+% \item Paquete \tt{makecell}\\
+%
+% %
+% \begin{lstlisting}
+%
+% \[\setcellgapes{3pt}
+% \makegapedcells
+% \left(
+% \begin{array}{ccc|c|ccc}
+% 	&           &&          &&              &   \\
+% 	& A_{00}    && a_{01}   &&   A_{20}^T   &   \\
+% 	&           &&          &&              &   \\   \hline
+% 	& a_{01}^T  && 0        &&  f           &   \\   \hline
+% 	&           &&          &&              &   \\
+% 	& A_{20}    && a_{21}   &&  A_{22}^T    &   \\
+% 	&           &&          &&              &   \\
+% \end{array}\right)
+% \]
+% \end{lstlisting}
+% %
+%
+% %\[\setcellgapes{3pt}
+% %\makegapedcells
+% %\left(
+% %\begin{array}{ccc|c|ccc}
+% %	&           &&          &&              &   \\
+% %	& A_{00}    && a_{01}   &&   A_{20}^T   &   \\
+% %	&           &&          &&              &   \\   \hline
+% %	& a_{01}^T  && 0        &&  f           &   \\   \hline
+% %	&           &&          &&              &   \\
+% %	& A_{20}    && a_{21}   &&  A_{22}^T    &   \\
+% %	&           &&          &&              &   \\
+% %\end{array}\right)
+% %\]
+%
+% \item \tt{equation} y \tt{subequations}\\
+%
+% %
+% \begin{lstlisting}
+%
+% \begin{subequations}
+% 	\begin{equation}
+% 	  \operatorname{min}_{a,b,c}
+% 	  \frac{1}{2}\mathbf{w}^{T}\mathbf{w} + C \sum_{i=1}^{l}\xi_{i}
+% 	\end{equation}
+% 	\begin{equation}
+% 		y_{i}\left(\mathbf{w}^{T}\phi(x_{i})+b\right)
+% 	\end{equation}
+% \end{subequations}
+% \end{lstlisting}
+% %
+%
+%
+% \begin{subequations}
+% 	\begin{equation}
+% 		\operatorname{min}_{a,b,c}
+% 		\frac{1}{2}\mathbf{w}^{T}\mathbf{w} + C \sum_{i=1}^{l}\xi_{i}
+% 	\end{equation}
+% 	\begin{equation}
+% 		y_{i}\left(\mathbf{w}^{T}\phi(x_{i})+b\right)
+% 	\end{equation}
+% \end{subequations}
+%
+%
+% \end{itemize}%--
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+% \section{Entornos definición, teorema, ejemplo, etc.}
+%La plantilla tiene varios entornos, el archivo de configuración A o B, solo cambia la {\it paleta de colores.}\\
+%
+% Agregar nuevos entornos posiblemente requiera agregar nuevo código al archivo de configuración. Lo recomendable es usar los modelos que ya están en este archivo. Si usa IA, lo mejor es indicarle primero que quiere el  código siguiendo esos modelos.\\
+% 
+% A continuación una lista de entornos con ejemplos.\\
+% 
+% \be % Entornos
+% \item Definición
+% 
+% %
+% \begin{lstlisting}
+% 	
+% \label{def:defi1}
+% \begin{definicion}[nombre-opcional]	
+%  Contenido...
+% \end{definicion}	
+% 	
+% \end{lstlisting}
+% %
+% 
+% $\bullet$\; Por ejemplo: \\
+%
+% \label{def:defi1}
+% \begin{definicion}[Envoltura Convexa]
+% Sea $S \subset \mathbb{R}^n$  un conjunto de puntos. La {\it envoltura convexa} de $S$, denotada por
+%  $\text{Conv}(S)$, es el conjunto convexo más pequeño que contiene a $S$. Formalmente:
+% 
+% \[
+% \text{Conv}(S) = \left\{ \sum_{i=1}^{k} \lambda_i x_i \;\middle|\; x_i \in S,\; \lambda_i \geq 0,\; \sum_{i=1}^{k} \lambda_i = 1,\; k \in \mathbb{N} \right\}
+% \]
+% 
+% Es decir, \( \text{Conv}(S) \) está formado por todas las combinaciones convexas finitas de puntos de $ S $.
+% \end{definicion}
+%% 
+%Bien, ahora podemos hacer referencia con usual con  \lstinline+\ref+: En la Definición \ref{def:defi1}...\\
+%
+%\bigskip
+%Probando minipage\\
+%
+%\bigskip
+%%-----------------------------------------------------------------------------
+%\pdfomk{ }{
+%	\begin{minipage}[t]{1.0\textwidth}
+%	\begin{minipage}{0.65\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+%		El punto \( P = (3,1) \) está dentro del triángulo pues:
+%		\[
+%		P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+%		\]
+%		Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+%	\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+%	\centering
+%	\includegraphics[scale=0.6]{images/fig2.svg}\captionof{figure}{
+%		$\triangle ABC$}\label{ej:ejemplo20}
+%	\end{minipage}
+%\end{minipage}
+%}
+%\insertarhtml{<hr style="height:1px;border-width:0;color:gray;background-color:gray">}
+%
+%%-----------------------------------------------------------------------------
+%
+%\bigskip
+%Ahora con entorno AQUI \(x+y<1\)\\
+%
+%
+%\bigskip
+%\pdfomk{\begin{definicion}[bla]
+% \begin{minipage}[t]{1.0\textwidth}
+%	\begin{minipage}{0.6\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+%		El punto \( P = (3,1) \) está dentro del triángulo pues:
+%		\[
+%		P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+%		\]
+%		Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+%	\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+%	\centering
+%		\includegraphics[scale=0.6]{images/fig2.pdf}\captionof{figure}{
+%			$\triangle ABC$}\label{ej:ejemplo1}
+%	\end{minipage}
+%\end{minipage}
+%\end{definicion}
+%}{%html
+%\begin{definicion}[bla]
+%	\begin{minipage}[t]{1.0\textwidth}
+%		\begin{minipage}{0.65\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+%			El punto \( P = (3,1) \) está dentro del triángulo pues:
+%			\[
+%			P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+%			\]
+%			Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+%		\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+%		\centering
+%			\includegraphics[width=0.1\textwidth]{images/fig2.svg}\captionof{figure}{
+%				\(\triangle ABC\)}\label{ej:ejemplo1}
+%		\end{minipage}
+%	\end{minipage}
+%\end{definicion}
+%}
+%AQUI2
+%\ee
+% \be
+%\item Teorema (sin demostración)
+% 
+% %
+% \begin{lstlisting}
+% 	
+% 	\label{teo:teo1}
+% 	\begin{teorema}[nombre-opcional]	
+% 		Contenido...
+% 	\end{teorema}	
+% 	
+% \end{lstlisting}
+% %
+% 
+% Por ejemplo: \tt{x+y}\(<1\), \(x+y<1\)\\
+%
+%
+%  \label{teo:teo1}
+% \begin{teorema}[Parametrización de un triángulo]
+% Sean $A,B,C \in \R^2$ no colineales entonces existen $t,s,w$ únicos tales que
+% $$\triangle ABC=
+% \{t A + s B + w C,
+% \quad \text{donde } t,s,w\geq 0, \quad
+% t+s+w = 1\}
+% $$
+% \end{teorema}
+%
+%
+%
+%
+%   \bigskip
+%  \item Teorema con demostración: Ahora el entorno es \tt{teoremap}. La numeración de los teorema se mantiene.\\
+%
+%%  \lstinline+ %teoremap+\;
+%%   \begin{lstlisting}
+%%
+%%   \label{teo:teo2}
+%%  \begin{teoremap}[nombre - opcional]
+%%  {  %Enunciado
+%%  }{ %Prueba
+%%  }
+%% \end{teoremap}
+%%
+%%   \end{lstlisting}
+%
+%
+%    \bigskip
+%   Por ejemplo:  \\ \(x+y<1\)
+%   \bigskip
+%%   \label{teo:teo2}
+%%   \begin{teoremap}[nombre - opcional]
+%%   {  %Enunciado
+%%   	Sean $A,B,C \in \R^2$ entonces
+%%   	$$\triangle ABC=
+%%   	\{t A + s B + w C,
+%%   	\quad \text{donde } t,s,w\geq 0, \quad
+%%  	t+s+w = 1\}
+%%   	$$
+%%   }{%Prueba
+%%   El triángulo $\triangle ABC$ es un conjunto convexo, por lo tanto él mismo es el más peque\~no conjunto convexo que lo contiene, es decir, $\text{Conv}(\triangle ABC)=\triangle ABC$, de ahí la parametrización
+%%   }
+%%   \end{teoremap}
+%
+%
+%  \item Ejemplo ilustrativo y con solución \\
+%
+%
+%   \begin{lstlisting}
+%   	
+%  \label{ej:ejemplo1}
+%  	\begin{ejemplo}[nombre-opcional]
+%  		{ %Enunciado.
+%        }{ %solución opcional
+%        }
+%  	\end{ejemplo}
+%
+% \end{lstlisting}
+%
+%
+%   \bigskip
+%   Ejemplo: Vamos a usar un entorno  \wtt{minipage} para agregar texto y una figura. Entonces debemos manejar undistinto el código \tt{pdf} y el código \tt{html}. Para ajustar las diferencias, usamos nuestro comando
+%    \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\pdfomk{#1}{#2}+.\; Debemos recordar que nuestro "equivalente" del entorno \wtt{minipage} para \tt{html}, ya está definido en el rchivo de configuración y tiene el formato\\
+%   
+%   
+%   \begin{lstlisting}
+%   	\begin{minipage}[t]{1.0\textwidth}
+%   		\begin{minipage}{x\textwidth}
+%   			%Primera columna
+%   		\end{minipage}\hfill\begin{minipage}{y\textwidth}
+%   			%Segunda columna
+%   		\end{minipage}
+%   	\end{minipage}
+%   \end{lstlisting}
+%   
+%   
+%   \bigskip
+%   donde la suma \tt{x+y}\( 1\).  La diferencia \tt{x+y-1} es la separación de las columnas.\\
+%   
+%   
+%   
+%   \bigskip
+%    \pdfomk{ %pdf
+%   	\label{ej:ejemplo1}
+%   	\begin{ejemplo}[Punto dentro del triángulo]
+%   		\begin{minipage}{0.7\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+%   			El punto \( P = (3,1) \) está dentro del triángulo pues:
+%   			\[
+%   			P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+%   			\]
+%   			Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+%   		\end{minipage}\hfill\begin{minipage}{0.2\textwidth}
+%   			\centering\includegraphics[scale=0.7]{images/fig2.pdf}\captionof{figure}{
+%   				\(\triangle ABC\) y \(P\)}\label{fig:ejemplo2}
+%   		\end{minipage}
+%   	\end{ejemplo} poco 
+%  }{  %html---------------------------------
+%  \label{ej:ejemplo1}
+%  \begin{ejemplo}[Punto dentro del triángulo]
+%  	\noindent
+%  \begin{minipage}[t]{1.0\textwidth}
+%  	\begin{minipage}{0.65\textwidth}Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \).
+%  		El punto \( P = (3,1) \) está dentro del triángulo pues:
+%  		\[
+%  		P = \tfrac{1}{4}A + \tfrac{1}{4}B + \tfrac{1}{2}C.
+%  		\]
+%  		Como \( \lambda_1 = \tfrac{1}{4},\, \lambda_2 = \tfrac{1}{4},\, \lambda_3 = \tfrac{1}{2} \), y \( \lambda_i \geq 0 \), entonces se concluye que \( P \in \text{Conv}\{A,B,C\} \).
+%  	\end{minipage}\hfill\begin{minipage}{0.28\textwidth}
+%      \includegraphics[width=0.1\textwidth]{images/fig2.svg}\captionof{figure}{
+%  		$\triangle ABC$}\label{ej:ejemplo1}
+%  	\end{minipage}
+%  \end{minipage}
+%  \end{ejemplo}
+%  } %html---------------------------------
+%
+%
+%    \item Ejemplo con solución
+%
+%
+%%   \begin{lstlisting}
+%%
+%%   	\label{ej:ejemplo2}
+%%   	\begin{ejemplosolucion}[nombre-opcional]
+%%   		{ Enunciado.
+%%   		}{
+%%   		 Solución
+%%       	}
+%%   	\end{ejemplosolucion}
+%%
+%%   \end{lstlisting}
+%
+%
+%   Por ejemplo:\\
+%
+%
+% 
+%%\begin{ejemplosolucion}[Punto fuera del triángulo]%
+%%		Sean \( A = (1,1) \), \( B = (2,4) \), \( C = (4,0) \). Sea \( P = (3,4) \).\\
+%%		Verifique que \( P \) está fuera del triángulo \( \triangle ABC \).
+%%{%solucion
+%%		Resolviendo el sistema \(3\times 3\),
+%%		\[
+%%		P = t A + s B + w C,\quad t + s + w = 1,
+%%		\]
+%%		obtenemos la única solución \( t=-1, \, s=2,\, w=0 \), y como uno de los coeficientes es negativo,
+%%		\( P \notin \text{Conv}\{A,B,C\} \).
+%%	}
+%%\end{ejemplosolucion}
+%
+%
+%   \item Definición: 
+%
+%
+%  \begin{lstlisting}
+%
+%  	\label{def:def1}
+%  	\begin{definicion}[nombre-opcional]
+%  		Contenido...
+%  	\end{definicion}
+%
+%  \end{lstlisting}
+%
+%
+%
+%
+%
+%   \item Definición
+%
+%
+%  \begin{lstlisting}
+%
+%  	\label{def:def1}
+%  	\begin{definicion}[nombre-opcional]
+%  		Contenido...
+%  	\end{definicion}
+%
+%  \end{lstlisting}
+%
+%
+%
+%
+%   \item Definición
+%
+%  %
+%  \begin{lstlisting}
+%
+%  	\label{def:def1}
+%  	\begin{definicion}[nombre-opcional]
+%  		Contenido...
+%  	\end{definicion}
+%
+%  \end{lstlisting}
+%  %
+%
+%
+%
+%   \item Definición
+%
+%  %
+%  \begin{lstlisting}
+%
+%  	\label{def:def1}
+%  	\begin{definicion}[nombre-opcional]
+%  		Contenido...
+%  	\end{definicion}
+%
+%  \end{lstlisting}
+%  %
+%
+%
+%
+%
+%   \item Definición
+%
+%  %
+%  \begin{lstlisting}
+%
+%  	\label{def:def1}
+%  	\begin{definicion}[nombre-opcional]
+%  		Contenido...
+%  	\end{definicion}
+%
+%  \end{lstlisting}
+%  %
+%
+%
+%  \ee % Fin entornos
+%
+%
+%
+%
+%
+%
+%
+ \section{Hacer una Web interactiva desde Latex}\label{Webinteractiva}
+% Tenemos que encargarnos del diseño web de la página. Esta plantilla viene con un archivo de configuración \wtt{config.cfg} que mayormente contiene código \tt{css} (inyectado al código \tt{css} con las herramientas de configuración de \tt{make4ht}) para obtener un diseño web razonable. A veces tambiém se necesita configurar, a través de este archivo \wtt{config.cfg} o manualmente, el script \tt{MathjaX} para incluir otros paquetes y/o otros comandos \tt{Latex}.\\
+%
+%  No es necesario "luchar" con el código \tt{Latex} para obtener un resultado deseable en el documento \tt{html}. Si tenemos conocimientos básicos de \tt{HTML} y \tt{CSS}, podemos agregar código \tt{html} directamente en este documento y darle soporte con el archivo de estilo \tt{miestilo.css} que esta presente en la carpeta \tt{CSS}. Esto se hace a través de un comando   \lstinline[basicstyle=\fontseries{b}\ttfamily\color{wtt}]+\insertarhtml{#1}{#2}+
+%
+%
+ \section{Recomendaciones de edición}
+%  El autor de \tt{make4ht} recomienda ir creando el texto y compilar en elemento, con \tt{pdfLaTeX} y \tt{make4ht}, porque hay comandos o paquetes que interfieren entre si y/o redefinen caracteres que causan problemas de compilación.\\
+%
+%  Para editar este documento, pensando talvés en una web {\it interactiva}, hay algunas recomendaciones simples:
+%
+% \be
+% \item Mantener la edición \tt{LaTeX} simple
+% \item Todas las figuras deben ser  \lstinline+.png+
+% \item No usar mezclas de colores, por ejemplo \lstinline+color=red!54!black+, en vez de eso, definir un color en el documento equivalente (la manera fácil es pedirle a la IA que lo haga)
+% \item Si usa el paquete \tt{listing}, trate de usar solo la configuración que aparece en "WebPreambuloyEntornos" que carga este documento. Hacer cambios podría generar errores al compilar con \tt{make4ht}
+% \item Trate de mantener sus comandos simples. En todo caso todavía queda la opción \tt{MathjaX} para modificar cosas en el \tt{html}
+% \item Puede pedir ayuda a la IA en sus dudas, pero la IA son destilados ya entrenados (al momento actual), entonces a veces tienen información desactualizada. Una buena estrategia es usar formatos del archivo \wtt{config.cfg} para pedir respuestas "en ese formato", porque se sabe que es algo que funciona. También es útil dar información del \tt{html} y de lo que ve en el archivo \tt{css}. Por ejemplo, si va agregar código en el archivo \wtt{config.cfg}, debe pedir ausencia de renglones en blanco, sin comentarios y con caracteres 'escapados', como \lstinline+\#+ en vez de \lstinline+#+
+%
+% \ee
+%
+%
+% Para obtener un documento \tt{html} debe compilar con \\
+%
+% \begin{lstlisting}
+% make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+% \end{lstlisting}
+%
+%\fvn{Explicación}: La opción  \lstinline+-c config.cfg+ le indica a \tt{make4ht} que aplique el archivo de configuración \wtt{config.cfg} (un archivo posiblemente con muchas cosas de diseño .css), \lstinline+-d SitioWeb+ indica que la salida \tt{html} y \tt{css} se pasen al directorio "SitioWeb",
+%  y finalmente las opciones \lstinline+"mathml,mathjax,svg,Gin-dim"+ indican que use es estándar \lstinline+mathml+ para fórmulas matemáticas y mantiene a \lstinline+mathjax+ como  respaldo. La opción  \lstinline+svg+ convierte imágenes a formato vectorial, es decir, mantiene una buena apariencia si el sitio cambia de escala y, \lstinline+Gin-dim+  trata de mantener las dimensiones de las figuras tal y como aparecen en el \tt{pdf}
+% 
+% 
+\section{Configurar Make4ht}\label{sec:configurarmake4ht}
+%
+%\tt{tex4ht} (implementado por Eitan Gurari (1947–2009)) es un conjunto de scripts que, después de la compilación con \tt{htlatex},  "traduce" el archivo
+%\tt{dvi}. Este archivo \tt{dvi} contiene toda la información sobre la disposición del texto, gráficos y fórmulas matemáticas en un formato compacto. Esta información se usa para generar documentos \tt{pdf},  \tt{html}, etc.\\
+%
+%\tt{make4ht} es un sistema de compilación (implementado por Michal Hoftich) para \tt{tex4ht}.  \tt{make4ht} es una herramienta diseñada principalmente para convertir documentos \tt{LaTeX} en \tt{HTML}, enfocándose en la estructura del contenido (texto, tablas, imágenes, fórmulas matemáticas, etc.), pero {\it no se encarga del diseño web avanzado}. Esto significa que, por defecto, \tt{make4ht} no genera estilos \tt{css} complejos {\it ni diseños responsivos} modernos.\\
+
+
+
+%------------------------------------------------------------------------------
+
+
+\begin{thebibliography}{9}
+	
+	\bibitem{bootstrap}
+	BootstrapMade. (2023). \textit{BootstrapMade: Free and premium Bootstrap templates}. BootstrapMade. \url{https://bootstrapmade.com/}
+	
+	\bibitem{bmake4ht}
+	Hoftich, M. (2024). \textit{TeX4ht Documentation by TeX4ht Project}. \url{https://www.kodymirus.cz/tex4ht-doc/tex4ht-doc.html}
+	
+	\bibitem{duckett2011}
+	Duckett, J. (2011). \textit{HTML and CSS: Design and Build Websites}. Wiley.
+	
+	\bibitem{hoftich2020}
+	Hoftich, M. (2020). \textit{TeX4ht: LaTeX to XML/HTML converter}. Recuperado de \url{https://tug.org/applications/tex4ht/}
+	
+	\bibitem{ltximg}
+	González, P. (2021). \textit{ltximg: LaTeX environments to image and standalone files (Version 2.1)}. \\
+	\url{https://ftp.mpi-inf.mpg.de/pub/tex/mirror/ftp.dante.de/pub/tex/support/ltximg/ltximg-doc.pdf}
+	
+	\bibitem{luatexmanual}
+	LuaTeX Developers. (s.f.). \textit{LuaTeX Reference Manual}. Recuperado de \url{http://www.luatex.org/documentation.html}
+	
+	\bibitem{make4ht}
+	Hošťovecký, M. (2023). \textit{make4ht: TeX4ht extension for build process automation}. Comprehensive TeX Archive Network (CTAN). \url{https://ctan.org/pkg/make4ht?lang=en}
+	
+	\bibitem{mathjax}
+	The MathJax Consortium. (2023). \textit{MathJax documentation}. MathJax. \url{https://docs.mathjax.org/en/latest/}
+	
+	\bibitem{mittelbach2004}
+	Mittelbach, F., Goossens, M., Braams, J., Carlisle, D., \& Rowley, C. (2004). \textit{The LaTeX Companion} (2nd ed.). Addison-Wesley.
+	
+	\bibitem{w3css}
+	W3Schools. (s.f.). \textit{CSS Tutorial}. \url{https://www.w3schools.com/css/}
+	
+	\bibitem{w3html} 
+	W3Schools. (s.f.). \textit{HTML Tutorial}. \url{https://www.w3schools.com/html/}
+	
+\end{thebibliography}
+\end{document}

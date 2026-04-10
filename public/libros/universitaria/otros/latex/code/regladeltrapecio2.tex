@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{xintexpr}
+\usepackage{pgffor} % Para los bucles \foreach
+
+% Configuramos siunitx
+\sisetup{
+	round-mode = places,
+	round-precision = 8, % <--- Cambia este número según desees
+	scientific-notation = fixed,
+	fixed-exponent = 0,
+	table-format = 1.8 % Ayuda a alinear las columnas S
+}
+
+% Definición robusta con xintfloatexpr
+% #1 = x, #2 = n
+\newcommand{\trxn}[2]{%
+	\xintthefloatexpr
+	% Definimos las variables para claridad
+	% dx = #1/#2
+	% g(t) = exp(-(t^2))
+	((#1)/(#2)) * (
+	(exp(-(0)^2) + exp(-(#1)^2))/2 + 
+	add(exp(-(i*(#1)/(#2))^2), i=1..#2-1)
+	)
+	\relax
+}
+
+\begin{document}	
+	\begin{table}[h]
+		\centering
+		\caption{Valores aproximados de $f(x) = \int_0^x e^{-t^2} dt$} 
+		\vspace{1em}
+		\begin{tabular}{c *{5}{S}}
+			\toprule
+			& \multicolumn{5}{c}{Iteraciones ($n$)} \\
+			\cmidrule(lr){2-6}
+			$x$ & {8} & {10} & {14} & {16} & {20} \\
+			\midrule
+			0.0 & {\trxn{0}{8}}  & {\trxn{0}{10}}  & {\trxn{0}{14}}  & {\trxn{0}{16}}  & {\trxn{0}{20}} \\
+			0.5 & {\trxn{0.5}{8}}& {\trxn{0.5}{10}}& {\trxn{0.5}{14}}& {\trxn{0.5}{16}}& {\trxn{0.5}{20}} \\
+			1.0 & {\trxn{1.0}{8}}& {\trxn{1.0}{10}}& {\trxn{1.0}{14}}& {\trxn{1.0}{16}}& {\trxn{1.0}{20}} \\
+			1.5 & {\trxn{1.5}{8}}& {\trxn{1.5}{10}}& {\trxn{1.5}{14}}& {\trxn{1.5}{16}}& {\trxn{1.5}{20}} \\
+			2.0 & {\trxn{2.0}{8}}& {\trxn{2.0}{10}}& {\trxn{2.0}{14}}& {\trxn{2.0}{16}}& {\trxn{2.0}{20}} \\
+			\bottomrule
+		\end{tabular}
+	\end{table}	
+	
+	
+	
+\section*{Tabla Automatizada con \texttt{pgffor}}
+	
+	% 1. Definimos una macro para ir guardando las filas
+	\newcommand{\cuerpotabla}{}
+	
+	% 2. Construimos las filas con un bucle anidado
+	\foreach \i in {0, 0.5, 1.0, 1.5, 2.0} {
+		% Guardamos el valor de x en la primera columna
+		\xdef\filatemp{\i} 
+		
+		% Bucle para las columnas (n = 8, 10, 14, 16, 20)
+		\foreach \n in {8, 10, 14, 16, 20} {
+			% Calculamos el valor y lo añadimos a la fila con un &
+			\xdef\valor{\trxn{\i}{\n}}
+			\xdef\filatemp{\filatemp & \valor}
+		}
+		
+		% Añadimos la fila completa al cuerpo de la tabla y cerramos con \\
+		\xdef\cuerpotabla{\cuerpotabla \filatemp \\}
+	}
+	
+	\begin{table}[h]
+		\centering
+		\caption{Resultados automatizados para $n=\{8, 10, 14, 16, 20\}$}
+		\vspace{1em}
+		\begin{tabular}{c *{5}{S}}
+			\toprule
+			$x$ & {$n=8$} & {$n=10$} & {$n=14$} & {$n=16$} & {$n=20$} \\
+			\midrule
+			\cuerpotabla
+			\bottomrule
+		\end{tabular}
+	\end{table}
+\end{document}

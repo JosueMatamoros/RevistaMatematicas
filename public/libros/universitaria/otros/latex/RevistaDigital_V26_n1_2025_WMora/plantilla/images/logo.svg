@@ -1,0 +1,87 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+\begin{document}
+\definecolor{c666666}{RGB}{102,102,102}
+
+
+\def \globalscale {1.000000}
+\begin{tikzpicture}[y=1cm, x=1cm, yscale=\globalscale,xscale=\globalscale, every node/.append style={scale=\globalscale}, inner sep=0pt, outer sep=0pt]
+  \path[draw=red,line width=1.0cm,cm={ 0.9,0.5,-0.5,0.9,(17.6, 3.5)}] (-6.4, 
+  7.0) ellipse (9.2cm and 6.4cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (31.6, 9.1) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (21.5, 33.9) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (1.6, 3.1) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (16.3, 5.3) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (8.6, 14.3) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (17.4, 12.4) circle (1.0cm);
+
+
+
+  \path[draw=c666666,fill=c666666,line width=0.4cm] (12.4, 9.9) circle (1.0cm);
+
+
+
+  \path[draw=c666666,line width=0.4cm] (1.6, 3.6).. controls (1.6, 3.6) and 
+  (1.6, 3.6) .. (21.5, 34.0).. controls (31.6, 9.2) and (31.6, 9.2) .. (31.6, 
+  9.2);
+
+
+
+  \path[draw=c666666,fill=magenta,line width=0.4cm] (21.5, 34.1).. controls 
+  (11.0, 4.7) and (11.0, 4.7) .. (11.0, 4.7);
+
+
+
+  \path[draw=c666666,fill=magenta,line width=0.4cm] (1.6, 3.1).. controls (17.4,
+   12.6) and (17.4, 12.6) .. (17.4, 12.6);
+
+
+
+  \path[draw=c666666,line width=0.4cm] (8.4, 14.9).. controls (31.7, 9.0) and 
+  (31.7, 9.0) .. (31.7, 9.0);
+
+
+
+  \path[draw=c666666,line width=0.4cm] (21.3, 34.1).. controls (16.4, 5.6) and 
+  (16.4, 5.6) .. (16.4, 5.6);
+
+
+
+  \path[draw=c666666,line width=0.4cm] (9.0, 14.8).. controls (16.4, 5.4) and 
+  (16.4, 5.4) .. (16.4, 5.4);
+
+
+
+  \path[draw=c666666,fill=magenta,line width=0.4cm] (5.8, 10.2) -- (31.7, 8.9);
+
+
+
+  \path[draw=c666666,line width=0.4cm] (1.6, 2.8).. controls (31.6, 8.8) and 
+  (31.6, 8.8) .. (31.6, 8.8);
+
+
+
+
+\end{tikzpicture}
+\end{document}

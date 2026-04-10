@@ -1,0 +1,42 @@
+
+
+%%--
+%%-- Compilar en terminal para make4ht
+%%- Opción 1.
+%make4ht -c config.cfg -a debug -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+%
+%%- Opción 2.
+%   Mantener dimensión figuras  por porentaje de la página por ejemplo: width=0.3textwidht
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-percent"
+%
+%%- Opción 3.
+%   Usual: escala bien figura en su tamano original
+%   make4ht -c config.cfg -d SitioWeb doc.tex "mathml,mathjax,svg,Gin-dim"
+% make4ht  -c configP3.cfg -u -f html5 doc.tex "mathml,mathjax,svg,Gin-dim"
+
+
+
+\documentclass[fleqn,oneside]{article}
+\input{Paquetes/WebPreambuloyEntornos.tex}
+% incluya en este archivo sus comandos. Observe las recomendaciones sobre make4ht
+\input{Paquetes/ComandosdelUsuario.tex}
+
+
+\title{\fhvb{16}{Una Web Interactica desde un documento LaTeX (con Make4ht y Asistida por IA)}}
+\author{\fhv{11}{Walter Mora Flores}\\ \fhv{10}{make4ht,html y ccs}}
+\date{} % Elimina la fecha
+
+% Definición del entorno "tosvg" para extraer y compilar en imagen (dummy en este caso)
+\newenvironment{tosvg}{}{}%{código al comenzar}{código al terminar}
+% Al final del documento, se llama al script de forma inmediata
+% \AtEndDocument{%
+% 	\immediate\write18{ltximg --latex --extrenv 'tosvg' --skipenv 'tikzpicture' --svg --noprew
+% 	--imgdir IMG -o test-out \jobname.tex > BBB.txt}%
+% }
+
+
+
+\pagestyle{empty}
+\begin{document}
+\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
+\end{document}

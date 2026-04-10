@@ -1,0 +1,20 @@
+\documentclass{article}
+\begin{document}
+	
+	<<echo=FALSE>>=
+	# Cálculo simple
+	x <- seq(-4, 2, by = 1)
+	f <- (x+3)*(x^2-1)
+	df <- data.frame(x = x, f_x = f)
+	@
+	
+	Tabla de valores:
+	
+	<<echo=FALSE, results='asis'>>=
+	library(knitr)
+	kable(df, format = "latex", booktabs = TRUE,
+	caption = "Valores de $f(x)=(x+3)(x^2-1)$",
+	col.names = c("$x$", "$f(x)$"))
+	@
+	
+\end{document}

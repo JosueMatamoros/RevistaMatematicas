@@ -162,8 +162,8 @@
     "keywords_pt": ["Fundamentos de Matemática"],
     "citation": "Acuña Chacón, R., Astorga Morales, A., Chavarría Molina, J., Gutiérrez Montenegro, M., Quesada Solano, E., Ramírez Arce, G., Ramírez Obando, B., Rodríguez Granados, N., & Sanabria Brenes, G. (s.f.). Fundamentos de Matemática I. <i>Revista Digital: Matemática, Educación e Internet, 26</i>(1). Recuperado de https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/fundamentos-de-matematica-2025/"
   },
-  "latex-2021": {
-    "coverImage": "/libros/universitaria/otros/latex-2021/portada.webp",
+  "latex": {
+    "coverImage": "/libros/universitaria/otros/latex/portada.webp",
     "title": "Edición de textos científicos con LaTeX. Composición, gráficos, diseño editorial y presentaciones beamer",
     "title_en": "Scientific Text Editing with LaTeX: Composition, Graphics, Editorial Design and Beamer Presentations",
     "authors": [
@@ -184,7 +184,7 @@
     ],
     "lastRevision": "Enero 2021",
     "category": "universitaria ",
-    "pdf": "/libros/universitaria/otros/latex-2021/libro.pdf",
+    "pdf": "/libros/universitaria/otros/latex/libro.pdf",
     "abstract_es": "Este texto aborda aspectos fundamentales e intermedios de la composición tipográfica con LaTeX, el diseño editorial y la creación de presentaciones con Beamer. Incluye también la edición de gráficos mediante Inkscape y TikZ, así como el uso de entornos avanzados con los paquetes xparse y tcolorbox. Se presentan ejemplos prácticos, plantillas y explicaciones que facilitan la comprensión y aplicación de los conceptos en la elaboración de documentos técnicos y académicos. El libro reúne los temas más comunes en la edición de textos científicos, especialmente en matemáticas, educación y programación, e incorpora actualizaciones sobre nuevos paquetes y técnicas de diseño editorial.",
     "keywords_es": ["LaTeX", "diseño editorial", "Beamer", "TikZ", "tcolorbox"],
 
@@ -194,7 +194,7 @@
     "abstract_pt": "Este texto aborda aspectos fundamentais e intermediários da composição tipográfica com LaTeX, do design editorial e da criação de apresentações com Beamer. Também inclui a edição de gráficos com Inkscape e TikZ, além do uso de ambientes avançados com os pacotes xparse e tcolorbox. São apresentados exemplos práticos, modelos e explicações que facilitam a compreensão e a aplicação dos conceitos na elaboração de documentos técnicos e acadêmicos. O livro reúne os temas mais comuns na edição de textos científicos, especialmente em matemática, educação e programação, e incorpora atualizações sobre novos pacotes e técnicas de design editorial.",
     "keywords_pt": ["LaTeX", "design editorial", "Beamer", "TikZ", "tcolorbox"],
 
-    "citation": "Mora Flores, W.A., & Borbón A., A. (2021). LaTeX. <i>Revista digital Matemática, Educación e Internet, 23(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/latex-2021/"
+    "citation": "Mora Flores, W.A., & Borbón A., A. (2021). LaTeX. <i>Revista digital Matemática, Educación e Internet, 23(2)</i>. Recuperado de: https://tecdigital.tec.ac.cr/servicios/revistamatematica/libros/latex/"
   },
   "matematica-discreta-2018": {
     "coverImage": "/libros/universitaria/algebra/matematica-discreta-2018/portada.webp",

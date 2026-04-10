@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{xintexpr}
+\usepackage{pgffor} % Para los bucles \foreach
+
+\sisetup{
+	round-mode = places,
+	round-precision = 4,
+}
+
+% Definición de la función (mantenemos la versión float para n=20)
+\newcommand{\trxn}[2]{%
+	\xintthefloatexpr
+	((#1)/(#2)) * (
+	(exp(0) + exp(-(#1)^2))/2 + 
+	add(exp(-(i*(#1)/(#2))^2), i=1..#2-1)
+	)
+	\relax
+}
+
+\begin{document}
+	
+	\section*{Tabla Automatizada con \texttt{pgffor}}
+	
+	% 1. Definimos una macro para ir guardando las filas
+	\newcommand{\cuerpotabla}{}
+	
+	% 2. Construimos las filas con un bucle anidado
+	\foreach \i in {0, 0.5, 1.0, 1.5, 2.0} {
+		% Guardamos el valor de x en la primera columna
+		\xdef\filatemp{\i} 
+		
+		% Bucle para las columnas (n = 8, 10, 14, 16, 20)
+		\foreach \n in {8, 10, 14, 16, 20} {
+			% Calculamos el valor y lo añadimos a la fila con un &
+			\xdef\valor{\trxn{\i}{\n}}
+			\xdef\filatemp{\filatemp & \valor}
+		}
+		
+		% Añadimos la fila completa al cuerpo de la tabla y cerramos con \\
+		\xdef\cuerpotabla{\cuerpotabla \filatemp \\}
+	}
+	
+	\begin{table}[h]
+		\centering
+		\caption{Resultados automatizados para $n=\{8, 10, 14, 16, 20\}$}
+		\vspace{1em}
+		\begin{tabular}{c *{5}{S}}
+			\toprule
+			$x$ & {$n=8$} & {$n=10$} & {$n=14$} & {$n=16$} & {$n=20$} \\
+			\midrule
+			\cuerpotabla
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+\end{document}

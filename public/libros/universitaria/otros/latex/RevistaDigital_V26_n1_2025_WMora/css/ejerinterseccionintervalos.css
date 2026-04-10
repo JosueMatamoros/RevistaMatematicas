@@ -1,0 +1,98 @@
+/* --------------------Contenedor dos columnas------------------------------------ */
+.caja-principal {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+/* ----------------- para script rrastrar puntos -------------------- */
+canvas {
+    border: 1px solid #ccc;
+    background: white;
+    display: block;
+}
+
+.micaja {
+    border: 1px solid lightgray;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin: 10px;
+    width: 590px;
+}
+
+
+
+.micaja .titulo {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Helvetica', sans-serif;                                           
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+.controls input {
+    width: 120px;
+    text-align: center;
+}
+
+.controls span {
+    font-size: 24px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#canvasIntersect {
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+}
+
+.interseccion-caja {
+  border: 1px solid lightgray;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin: 20px auto; /* Centrado horizontal */
+  max-width: 600px; /* Mejor que width fijo para responsividad */
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Controles centrados sin flexbox */
+.interseccion-caja .controls {
+  text-align: center;
+  margin: 15px 0;
+  white-space: nowrap; /* Evita saltos de línea */
+}
+
+/* Elementos inline-block para el centrado */
+.interseccion-caja .controls > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+/* Campos reducidos 40% */
+.interseccion-caja .controls input {
+  width: 72px;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px;
+}

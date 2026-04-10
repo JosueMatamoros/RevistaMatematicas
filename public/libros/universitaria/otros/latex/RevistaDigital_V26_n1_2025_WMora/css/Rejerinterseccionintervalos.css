@@ -1,0 +1,37 @@
+.interseccion-caja {
+  border: 1px solid lightgray;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin: 10px auto;
+  width: 590px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.interseccion-caja .titulo {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.interseccion-caja .controls {
+  margin-bottom: 10px;
+}
+
+.interseccion-caja .controls input {
+  width: 120px;
+  text-align: center;
+}
+
+.interseccion-caja .controls span {
+  font-size: 24px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.interseccion-caja canvas {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+}
