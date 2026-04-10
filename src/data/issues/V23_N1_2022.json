@@ -1,0 +1,269 @@
+{
+  "issueTitle": "Volumen 23, Número 1, Agosto 2022 − Febrero 2023",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Números primos gemelos y primos gemelos de Germain",
+      "title_en": "Germain’s Twin Prime and Twin Prime Numbers",
+      "volume": 23,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        },
+        {
+          "name": "Diego Miramontes de León",
+          "email": "dmiram@uaz.edu.mx",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0002-9565-4108"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N1_2022/Miramontes",
+      "pdf": "/Articulos/V23/N1_2022/Miramontes/V23_n1_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i1.6177",
+      "received": "16 setiembre 2021",
+      "accepted": "5 Marzo 2022",
+      "abstract_es": "La cardinalidad de los números primos de Germain, es decir, aquellos primos p tales que 2p + 1 también es primo, siempre ha sido un tema de gran interés, ya que tenemos la conjetura sobre la infinitud de esos números primos. Se presentan varios resultados interesantes, primero se revisa la relación entre la cardinalidad de los números primos y los primos de Germain. Más adelante, se presentan las cadenas de Cunningham y los números primos gemelos. Dentro de los primos gemelos, en este trabajo, se definen los primos gemelos de Germain. Se respalda numéricamente la conjetura de que la cardinalidad de los primos de Germain es aproximadamente la mitad de la cardinalidad de los primos gemelos. Al final, se calcula su cardinalidad por medio de una modificación a la estimación propuesta por Hardy y Littlewood.",
+      "abstract_en": "The cardinality of Germain’s prime numbers, i.e., those primes p for which 2p + 1 is also prime, has always been a topic of great interest, since we have the conjecture about the infinity of those prime numbers. Several interesting results are presented, first the relationship between the cardinality of prime numbers and Germain’s primes is reviewed. Later, Cunningham chains and twin prime numbers are presented. Within the twin primes, in this work, Germain’s twin primes are defined. The conjecture that the cardinality of Germain’s primes is about half the cardinality of twin primes is supported numerically. In the end, its cardinality is calculated by modifying the estimate proposed by Hardy and Littlewood.",
+      "abstract_pt": "A cardinalidade dos números primos de Germain, ou seja, aqueles primos p tais que 2p + 1 também é primo, sempre foi um tema de grande interesse, já que existe a conjectura sobre a infinitude desses números primos. São apresentados vários resultados interessantes: primeiro, revisa-se a relação entre a cardinalidade dos números primos e os primos de Germain. Em seguida, são apresentadas as cadeias de Cunningham e os números primos gêmeos. Dentro dos primos gêmeos, neste trabalho, definem-se os primos gêmeos de Germain. A conjectura de que a cardinalidade dos primos de Germain é aproximadamente a metade da cardinalidade dos primos gêmeos é sustentada numericamente. Por fim, calcula-se sua cardinalidade por meio de uma modificação da estimativa proposta por Hardy e Littlewood.",
+      "keywords_es": [
+        "números primos",
+        "primos gemelos",
+        "primos de Germain"
+      ],
+      "keywords_en": [
+        "prime numbers",
+        "twin primes",
+        "Germain’s primes"
+      ],
+      "keywords_pt": [
+        "números primos",
+        "primos gêmeos",
+        "primos de Germain"
+      ],
+      "citation": "Miramontes de León, G., & Miramontes de León, D. (2022). Números primos gemelos y primos gemelos de Germain. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(1). https://doi.org/10.18845/rdmei.v23i1.6177"
+    },
+    {
+      "id": 2,
+      "title": "Regularización por variación total, para reconstruir imágenes con dominios perdidos",
+      "title_en": "Total variation regularization, for reconstruct images inpainting",
+      "volume": 23,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Silvia Reyes Mora",
+          "email": "sreyes@mixteco.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0003-3296-013X"
+        },
+        {
+          "name": "Yessenia Hernández Pérez",
+          "email": "yess7_feb14@hotmail.com",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0002-0013-4143"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N1_2022/Reyes",
+      "pdf": "/Articulos/V23/N1_2022/Reyes/V23_n1_Reyes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i1.6178",
+      "received": "14 febrero 2022",
+      "accepted": "31 Marzo 2022",
+      "abstract_es": "En el procesamiento digital de imágenes se aplican técnicas numéricas cuyo objetivo es mejorar la calidad de la imagen, eliminar objetos en ella o extraer algún tipo de información; entre las técnicas más utilizadas se encuentra la reconstrucción de partes perdidas que consiste en modificar una imagen para reconstruir zonas deterioradas o eliminadas de la misma. En la actualidad, los algoritmos de reconstrucción de imágenes ocupan un amplio campo de investigación y desarrollo; en este artículo se analiza, describe, plantea y resuelve el problema de reconstrucción de imágenes con regiones faltantes, desde un punto de vista teórico y práctico; se obtiene un modelo matemático que representa al problema, el cual se demuestra que es un problema inverso mal planteado en sentido de Hadamard. Para resolver el problema, se usa el método de variación total que se deduce a partir de la representación variacional del método de regularización de Tikhonov; se muestra que la solución del problema también resuelve el problema de Neumann para la ecuación de Euler-Lagrange, el cual se resuelve numéricamente. Finalmente, se valida la propuesta de solución en algunas imágenes con dominios perdidos. Lo novedoso del trabajo, es que el método empleado permite implementarse numéricamente y mostrar la influencia del parámetro de regularización.",
+      "abstract_en": "Digital image processing uses numerical techniques aimed at improving image quality, deleting objects in the image or extracting information; among the most used techniques is the reconstruction of lost parts that consists of modifying an image to rebuild deteriorated or deleted areas of it. Currently, image reconstruction algorithms occupy a wide field of research and development; this article analyzes, describes, poses and solves the problem of image reconstruction with missing regions, from a theoretical and practical point of view; you get a mathematical model that represents the problem, which is shown to be a poorly posed inverse problem in the sense of Hadamard. To solve the problem, the total variation method that is deduced from the variational representation of the Tikhonov regularization method is used; it is shown that the solution of the problem also solves the Neumann problem for the Euler-Lagrange equation, which is solved numerically. Finally, the solution proposal is validated in some images with lost domains. The novelty of the work is that the method used allows the implementation numerically and show the influence of the regularization parameter.",
+      "abstract_pt": "No processamento digital de imagens aplicam-se técnicas numéricas cujo objetivo é melhorar a qualidade da imagem, eliminar objetos nela ou extrair algum tipo de informação; entre as técnicas mais utilizadas encontra-se a reconstrução de partes perdidas, que consiste em modificar uma imagem para reconstruir zonas deterioradas ou eliminadas da mesma. Atualmente, os algoritmos de reconstrução de imagens ocupam um amplo campo de pesquisa e desenvolvimento; neste artigo analisa-se, descreve-se, formula-se e resolve-se o problema de reconstrução de imagens com regiões faltantes, de um ponto de vista teórico e prático; obtém-se um modelo matemático que representa o problema, o qual se demonstra ser um problema inverso mal posto no sentido de Hadamard. Para resolver o problema, utiliza-se o método de variação total, que se deduz a partir da representação variacional do método de regularização de Tikhonov; mostra-se que a solução do problema também resolve o problema de Neumann para a equação de Euler-Lagrange, o qual é resolvido numericamente. Finalmente, valida-se a proposta de solução em algumas imagens com domínios perdidos. O aspecto novo do trabalho é que o método empregado permite ser implementado numericamente e mostrar a influência do parâmetro de regularização.",
+      "keywords_es": [
+        "Problema inverso mal planteado",
+        "inpainting",
+        "regularización"
+      ],
+      "keywords_en": [
+        "ill-posed inverse problem",
+        "inpainting",
+        "regularization"
+      ],
+      "keywords_pt": [
+        "problema inverso mal posto",
+        "inpainting",
+        "regularização"
+      ],
+      "citation": "Reyes Mora, S., & Hernández Pérez, Y. (2022). Regularización por variación total, para reconstruir imágenes con dominios perdidos. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(1). https://doi.org/10.18845/rdmei.v23i1.6178"
+    },
+    {
+      "id": 3,
+      "title": "De la investigación al aula: orientaciones didácticas para diseñar e implementar tareas probabilísticas en Educación Primaria",
+      "title_en": "From research to the classroom: educational guidelines to design and implement probabilistic tasks in Primary Education",
+      "volume": 23,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Ángel Alsina",
+          "email": "angel.alsina@udg.edu",
+          "university": "Universidad de Girona",
+          "department": "",
+          "location": "Catalunya, España",
+          "orcid": "https://orcid.org/0000-0001-8506-1838"
+        },
+        {
+          "name": "Claudia Vásquez",
+          "email": "cavasque@uc.cl",
+          "university": "Pontificia Universidad Católica de Chile",
+          "department": "",
+          "location": "Santiago, Chile",
+          "orcid": "https://orcid.org/0000-0002-5056-5208"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V23/N1_2022/Alsina",
+      "pdf": "/Articulos/V23/N1_2022/Alsina/V23_n1_Alsina.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i1.6290",
+      "received": "9 febrero 2022",
+      "accepted": "30 mayo 2022",
+      "abstract_es": "A partir de los resultados de una investigación previa en la que se han analizado las tareas probabilísticas que propone el profesorado de Educación Primaria para promover la alfabetización probabilística, en este artículo se ofrecen diversas orientaciones didácticas con el propósito de enlazar los resultados de esta investigación con la práctica escolar. En concreto, se abordan los cinco componentes de la dimensión “tareas probabilísticas” del “Instrumento de Observación de Clases de Probabilidad” (IOC-PROB): uso de recursos; contextos probabilísticos; reto cognitivo; procedimientos y estrategias; y significados de la probabilidad. Para cada componente, primero se presenta una breve descripción y una síntesis de los principales resultados obtenidos en el estudio preliminar; y, seguidamente, se ofrecen diversas orientaciones didácticas fundamentadas teórico-metodológicamente, a partir de una actividad en particular, para que el profesorado de Educación Primaria pueda llevar a cabo una planificación y gestión de las tareas probabilísticas más eficaz y ajustada a los resultados de la investigación. Se concluye que la implementación de tareas probabilísticas en el aula alineadas con la investigación sobre este tópico puede contribuir a mejorar el desarrollo de la alfabetización probabilística del alumnado de Educación Primaria.",
+      "abstract_en": "Based on the results of a previous research that analyses the probabilistic tasks proposed by Primary School teachers to promote probabilistic literacy, this article offers several educational guidelines with the aim of linking the results of this research with school practice. Specifically, we have considered the five components of the “probabilistic tasks” dimension of the “Instrument for Observation of Probability Classes” (IOC-PROB): use of resources; probabilistic contexts; cognitive challenge; procedures and strategies; and meanings of probability. For each component, we first present a brief description and a synthesis of the main results obtained in the preliminary study; and then we offer various theoretically and methodologically based teaching guidelines, based on a particular activity, so that Primary Education teachers can carry out a more effective planning and management of probabilistic tasks, adjusted to the results of the research. We conclude that the implementation of probabilistic tasks in the classroom aligned with the research on this topic can contribute to improving the development of probabilistic literacy in Primary School students.",
+      "abstract_pt": "Com base nos resultados de uma pesquisa prévia na qual foram analisadas as tarefas probabilísticas propostas pelo professorado da Educação Primária para promover a alfabetização probabilística, neste artigo são oferecidas diversas orientações didáticas com o propósito de vincular os resultados dessa pesquisa à prática escolar. Em particular, abordam-se os cinco componentes da dimensão “tarefas probabilísticas” do “Instrumento de Observação de Aulas de Probabilidade” (IOC-PROB): uso de recursos; contextos probabilísticos; desafio cognitivo; procedimentos e estratégias; e significados da probabilidade. Para cada componente, apresenta-se primeiro uma breve descrição e uma síntese dos principais resultados obtidos no estudo preliminar; e, em seguida, oferecem-se diversas orientações didáticas fundamentadas teórico-metodologicamente, a partir de uma atividade em particular, para que o professorado da Educação Primária possa realizar um planejamento e uma gestão das tarefas probabilísticas mais eficaz e ajustada aos resultados da pesquisa. Conclui-se que a implementação de tarefas probabilísticas em sala de aula alinhadas com a pesquisa sobre este tema pode contribuir para melhorar o desenvolvimento da alfabetização probabilística dos estudantes da Educação Primária.",
+      "keywords_es": [
+        "enseñanza de la probabilidad",
+        "tareas probabilísticas",
+        "alfabetización probabilística",
+        "orientaciones didácticas",
+        "desarrollo profesional docente",
+        "Educación Primaria"
+      ],
+      "keywords_en": [
+        "probability teaching",
+        "probabilistic tasks",
+        "probabilistic literacy",
+        "educational guidelines",
+        "teacher professional development",
+        "Primary Education"
+      ],
+      "keywords_pt": [
+        "ensino da probabilidade",
+        "tarefas probabilísticas",
+        "alfabetização probabilística",
+        "orientações didáticas",
+        "desenvolvimento profissional docente",
+        "Educação Primária"
+      ],
+      "citation": "Alsina, Á., & Vásquez, C. (2022). De la investigación al aula: orientaciones didácticas para diseñar e implementar tareas probabilísticas en Educación Primaria. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(1). https://doi.org/10.18845/rdmei.v23i1.6290"
+    },
+    {
+      "id": 4,
+      "title": "Análisis computacional a “Una fórmula que genera números primos”",
+      "title_en": "Computational analysis to “A formula that generates prime numbers”",
+      "volume": 23,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        }
+      ],
+      "category": "Matemáticas y algoritmos",
+      "slug": "Articulos/V23/N1_2022/MiramontesDeLeon",
+      "pdf": "/Articulos/V23/N1_2022/MiramontesDeLeon/V23_n1_MiramontesDeLeon.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i1.6176",
+      "received": "27 setiembre 2021",
+      "accepted": "1 abril 2022",
+      "abstract_es": "Se analiza el código computacional de “Una fórmula que genera números primos”, la cual fue publicada en el Vol. 22, No. 1 de la Revista digital Matemática, Educación e Internet y que fue presentada como una función a(n) dada por: a(n) = n [ 2 / (n − Σ_{i=1}^{n} {n/i}) ]. Aquí se muestra que, para cada valor de n, esa fórmula se reduce a un bucle de la prueba de primalidad más simple, es decir, a la prueba de primalidad por división. Paso a paso se muestra que a(n) incluye operaciones que se pueden evitar, como la extracción de la parte fraccionaria, y dos operaciones de redondeo. Se concluye que esa “fórmula que genera números primos” es en realidad una prueba de primalidad por división no optimizada, pues, por ejemplo, no evita probar valores pares de n.",
+      "abstract_en": "The computational code of “A formula that generates prime numbers” is analyzed, which was published in Vol. 22, No. 1 of Revista digital Matemática, Educación e Internet and which was presented as a function a(n) given by: a(n) = n [ 2 / (n − Σ_{i=1}^{n} {n/i}) ]. Here it is shown that, for each value of n, that formula reduces to a loop of the simplest primality test, that is, by trial division. It is shown, step by step, that a(n) includes operations that can be avoided, such as extracting the fractional part, and two rounding operations. It is concluded that this “formula that generates prime numbers” is actually a non-optimized proof of primality by trial division, since, for example, it does not avoid testing even values of n.",
+      "abstract_pt": "Analisa-se o código computacional de “Uma fórmula que gera números primos”, a qual foi publicada no Vol. 22, No. 1 da Revista digital Matemática, Educação e Internet e que foi apresentada como uma função a(n) dada por: a(n) = n [ 2 / (n − Σ_{i=1}^{n} {n/i}) ]. Aqui se mostra que, para cada valor de n, essa fórmula se reduz a um ciclo do teste de primalidade mais simples, isto é, o teste de primalidade por divisão. Passo a passo, mostra-se que a(n) inclui operações que podem ser evitadas, como a extração da parte fracionária e duas operações de arredondamento. Conclui-se que essa “fórmula que gera números primos” é, na realidade, um teste de primalidade por divisão não otimizado, pois, por exemplo, não evita testar valores pares de n.",
+      "keywords_es": [
+        "función generadora de primos",
+        "prueba de primalidad",
+        "secuencia de primos"
+      ],
+      "keywords_en": [
+        "prime generating function",
+        "primality test",
+        "prime sequence"
+      ],
+      "keywords_pt": [
+        "função geradora de primos",
+        "teste de primalidade",
+        "sequência de primos"
+      ],
+      "citation": "Miramontes de León, G. (2022). Análisis computacional a “Una fórmula que genera números primos”. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(1). https://doi.org/10.18845/rdmei.v23i1.6176"
+    },
+    {
+      "id": 5,
+      "title": "Estrategias de Enseñanza Inclusiva de las Matemáticas en Educación Básica: Revisión Sistemática",
+      "title_en": "Strategies for Inclusive Teaching of Mathematics in Basic Education: Systematic Review",
+      "volume": 23,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Alejandra Elizabeth Uribe Dorantes",
+          "email": "elliud_64@hotmail.com",
+          "department": "",
+          "university": "Universidad Autónoma de Yucatán",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0002-1270-342X"
+        },
+        {
+          "name": "José Israel Méndez Ojeda",
+          "email": "isra6996@gmail.com",
+          "university": "Universidad Autónoma de Yucatán",
+          "department": "",
+          "location": "México",
+          "orcid": "https://orcid.org/0000-0002-0335-0423"
+        }
+      ],
+      "category": "Enseñanza Inclusiva en Matemática",
+      "slug": "Articulos/V23/N1_2022/Uribe",
+      "pdf": "/Articulos/V23/N1_2022/Uribe/V23_n1_Uribe.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v23i1.6179",
+      "received": "13 diciembre 2021",
+      "accepted": "10 marzo 2022",
+      "abstract_es": "Desde hace algunos años la educación inclusiva comenzó a formar parte de los objetivos de diversos gobiernos en el mundo. En contraposición, las matemáticas se han posicionado como una de las ciencias más complejas para los estudiantes a causa de su enseñanza tradicional y alejada de las características de aprendizaje del alumnado; esto ha generado el interés de indagar sobre las estrategias de enseñanza inclusiva de las matemáticas que favorecen su comprensión. Ante ello, la presente investigación tuvo como objetivo realizar una revisión sistemática que reuniera y analizara aquellos estudios que indaguen sobre las estrategias de enseñanza inclusiva eficaces para la enseñanza de las matemáticas en el nivel básico. Para su búsqueda, se estableció un periodo de 11 años (2010-2021), se determinaron criterios de inclusión y exclusión y se consultaron bases de datos haciendo uso de diversas cadenas de búsqueda. Se concluyó, que la publicación de artículos ha tenido una fluctuación a lo largo de los años, siendo España el país con el mayor número de producciones. Del mismo modo se hallaron tres formas distintas de abordar la temática y 26 estrategias de enseñanza inclusiva de las matemáticas.",
+      "abstract_en": "In recent years, inclusive education began to be part of the objectives of various governments around the world. In contrast, mathematics has been positioned as one of the most complex sciences for students because of its traditional teaching and far removed from the learning characteristics of students; this has generated the interest to inquire about the inclusive mathematics teaching strategies that favor its understanding. In view of this, the present research aimed to carry out a systematic review that gathered and analyzed those studies that inquired about effective inclusive teaching strategies for teaching mathematics at the basic level. For its search, a period of 11 years (2010-2011) was established, inclusion and exclusion criteria were determined and databases were consulted using various search strings. It was concluded that the publication of articles has fluctuated over the years, with Spain being the country with the highest number of productions. In the same way, three different ways of approaching the subject and 26 Strategies for inclusive teaching were found.",
+      "abstract_pt": "Há alguns anos, a educação inclusiva começou a fazer parte dos objetivos de diversos governos no mundo. Em contrapartida, a matemática tem se posicionado como uma das ciências mais complexas para os estudantes, devido ao seu ensino tradicional e distante das características de aprendizagem do alunado; isso gerou o interesse em investigar as estratégias de ensino inclusivo da matemática que favorecem sua compreensão. Diante disso, a presente pesquisa teve como objetivo realizar uma revisão sistemática que reunisse e analisasse aqueles estudos que investigam estratégias de ensino inclusivo eficazes para o ensino da matemática no nível básico. Para sua busca, estabeleceu-se um período de 11 anos (2010-2021), determinaram-se critérios de inclusão e exclusão e consultaram-se bases de dados fazendo uso de diversas cadeias de busca. Concluiu-se que a publicação de artigos apresentou uma flutuação ao longo dos anos, sendo a Espanha o país com o maior número de produções. Do mesmo modo, encontraram-se três formas distintas de abordar a temática e 26 estratégias de ensino inclusivo da matemática.",
+      "keywords_es": [
+        "Educación inclusiva",
+        "Enseñanza de la matemática",
+        "Educación secundaria",
+        "Estrategia de enseñanza"
+      ],
+      "keywords_en": [
+        "Inclusive education",
+        "Mathematics teaching",
+        "Teaching strategy",
+        "Secondary education"
+      ],
+      "keywords_pt": [
+        "Educação inclusiva",
+        "Ensino da matemática",
+        "Educação secundária",
+        "Estratégia de ensino"
+      ],
+      "citation": "Uribe Dorantes, A. E., & Méndez Ojeda, J. I. (2022). Estrategias de Enseñanza Inclusiva de las Matemáticas en Educación Básica: Revisión Sistemática. <i>Revista Digital: Matemática, Educación e Internet, 23</i>(1). https://doi.org/10.18845/rdmei.v23i1.6179"
+    }
+  ]
+}
