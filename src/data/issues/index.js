@@ -7,6 +7,7 @@ import V24_N2_2024 from "./V24_N2_2024.json";
 import V24_N1_2023 from "./V24_N1_2023.json";
 import V23_N2_2023 from "./V23_N2_2023.json";
 import V23_N1_2022 from "./V23_N1_2022.json";
+import V22_N2_2022 from "./V22_N2_2022.json";
 
 
 export const issues = [
@@ -65,5 +66,12 @@ export const issues = [
     number: 1,
     date: "Agosto 2022 - Febrero 2023",
     data: V23_N1_2022,
+  },
+  {
+    id: "V22_N2_2022",
+    volume: 22,
+    number: 2,
+    date: "Marzo 2022 - Agosto 2022",
+    data: V22_N2_2022,
   },
 ];

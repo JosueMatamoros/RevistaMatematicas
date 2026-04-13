@@ -1,0 +1,336 @@
+{
+  "issueTitle": "Volumen 22, Número 2, Marzo - Agosto, 2022",
+  "articles": [
+    {
+      "id": 1,
+      "title": "El contexto PISA de los gráficos estadísticos en los libros de texto de matemáticas de Educación Básica en Costa Rica",
+      "title_en": "The PISA context of statistical graphics in basic education mathematics textbooks in Costa Rica",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Maynor Jiménez-Castro",
+          "email": "[mynor.jimenez@ucr.ac.cr]",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "Guápiles, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-7984-6866"
+        },
+        {
+          "name": "José A. Garzón-Guerrero",
+          "email": "[jgarzon@ugr.es]",
+          "university": "Universidad de Granada",
+          "department": "",
+          "location": "Granada, España",
+          "orcid": "https://orcid.org/0000-0002-9397-3439"
+        },
+        {
+          "name": "Carmen Batanero",
+          "email": "[batanero@ugr.es]",
+          "university": "Universidad de Granada",
+          "department": "",
+          "location": "Granada, España",
+          "orcid": "https://orcid.org/0000-0002-4189-7139"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N2_2022/Jimenez",
+      "pdf": "/Articulos/V22/N2_2022/Jimenez/V22_n2_Jimenez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6127",
+      "received": "5 mayo 2021",
+      "accepted": "5 setiembre 2021",
+      "abstract_es": "El objetivo de este trabajo fue analizar los tipos de gráficos estadísticos y contextos descritos en las pruebas PISA asociados a los mismos en una muestra de libros de texto de matemáticas muy utilizados en la Educación General Básica en Costa Rica. El estudio contempla tres editoriales diferentes completas (un libro de texto para cada uno de los niveles de la educación primaria, niños de 7 a 11 años) y otras tres editoriales de educación secundaria (jóvenes de 13 a 15 años). En total, se analiza la distribución de 408 gráficos en los diferentes niveles de enseñanza y se comparan con resultados destacados en otras investigaciones. Igualmente se analizan los contextos en que se presentan los textos, utilizando la clasificación de los estudios PISA. Se constata un buen ajuste del tipo de gráfico respecto a las orientaciones curriculares y la presencia de los diferentes contextos, aumentando la presencia de las situaciones científicas en la educación secundaria.",
+      "abstract_en": "This work aims to analyze the types of statistical graph and associated PISA contexts in mathematics textbooks directed to basic education in Costa Rica. The study includes three complete editorials with a book for each primary education level (7- 11 year old students) and another three editorials for secondary education levels (13-15 year-olds). In total, the distribution of 408 graphs at different levels of education is analyzed and compared with results of previous research. Likewise, the contexts in which the texts are presented are analyzed, using the classification of the PISA studies. There is a good fit of the type of graph, with respect to the curricular orientations and the different contexts are present, with an increasing presence of scientific contexts in secondary education.",
+      "abstract_pt": "O objetivo deste trabalho foi analisar os tipos de gráficos estatísticos e contextos descritos nas provas PISA associados aos mesmos em uma amostra de livros de texto de matemática amplamente utilizados na Educação Geral Básica na Costa Rica. O estudo contempla três editoras diferentes completas (um livro de texto para cada um dos níveis da educação primária, crianças de 7 a 11 anos) e outras três editoras de educação secundária (jovens de 13 a 15 anos). No total, analisa-se a distribuição de 408 gráficos nos diferentes níveis de ensino e comparam-se com resultados destacados em outras investigações. Da mesma forma, analisam-se os contextos em que se apresentam os textos, utilizando a classificação dos estudos PISA. Constata-se um bom ajuste do tipo de gráfico em relação às orientações curriculares e à presença dos diferentes contextos, aumentando a presença das situações científicas no ensino secundário.",
+      "keywords_es": [
+        "educación básica",
+        "gráficos estadísticos",
+        "contexto",
+        "libros de texto"
+      ],
+      "keywords_en": [
+        "basic education",
+        "statistical graphs",
+        "context",
+        "textbooks"
+      ],
+      "keywords_pt": [
+        "educação básica",
+        "gráficos estatísticos",
+        "contexto",
+        "livros didáticos"
+      ],
+      "citation": "Jiménez-Castro, M., Garzón-Guerrero, J. A., & Batanero, C. (2022). El contexto PISA de los gráficos estadísticos en los libros de texto de matemáticas de Educación Básica en Costa Rica. <i>Revista Digital: Matemática, Educación e Internet, 22</i>(2). [https://doi.org/10.18845/rdmei.v22i2.6127]"
+    },
+
+    {
+      "id": 2,
+      "title": "Alfabetización Estadística del profesorado. Una revisión sistemática de 2010 a 2020",
+      "title_en": "Faculty Statistical Literacy of teachers. A systematic review from 2010 to 2020",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Adriana Jaqueline Avilez Poot",
+          "email": "[A07001469@alumnos.uady.mx]",
+          "university": "Universidad Autónoma de Yucatán",
+          "department": "",
+          "location": "Yucatán - México",
+          "orcid": "https://orcid.org/0000-0001-8053-5555"
+        },
+        {
+          "name": "Alfredo Zapata González",
+          "email": "[zgonza@correo.uady.mx]",
+          "university": "Universidad Autónoma de Yucatán",
+          "department": "",
+          "location": "Yucatán - México",
+          "orcid": "https://orcid.org/0000-0001-5087-6244"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N2_2022/Avilez",
+      "pdf": "/Articulos/V22/N2_2022/Avilez/V22_n2_Avilez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6128",
+      "received": "3 junio 2021",
+      "accepted": "15 setiembre 2021",
+      "abstract_es": "Este análisis consiste en una revisión sistemática para conocer el estado de las investigaciones relacionadas con la alfabetización estadística enfocado en el profesorado en los últimos diez años. Para el estudio se revisaron 606 artículos de nueve bases de datos académicas, asimismo, se utilizaron criterios de inclusión y exclusión y se obtuvieron 16 fuentes para el análisis. Entre los resultados, se destaca que ha habido un incremento en las investigaciones enfocadas hacia una evaluación del conocimiento estadístico de los profesores y un desarrollo de la alfabetización estadística. Es importante seguir fomentando investigaciones bajo esta temática pues es deseable que todo docente cuente con una alfabetización estadística para desenvolverse en un mundo globalizado en datos.",
+      "abstract_en": "This analysis consists of a systematic review to know the state of research related to statistical literacy focused on teachers in the last ten years. For the study, 606 articles from nine academic databases were reviewed, likewise, inclusion and exclusion criteria were used and 16 sources were obtained for analysis. Among the results, it stands out that there has been an increase in research focused on an evaluation of the statistical knowledge of teachers and a development of statistical literacy. It is important to continue promoting research under this theme as it is desirable that all teachers have statistical literacy to function in a world globalized in data.",
+      "abstract_pt": "Esta análise consiste em uma revisão sistemática para conhecer o estado das investigações relacionadas com o letramento estatístico focado no professorado nos últimos dez anos. Para o estudo, foram revisados 606 artigos de nove bases de dados acadêmicas; além disso, utilizaram-se critérios de inclusão e exclusão e obtiveram-se 16 fontes para a análise. Entre os resultados, destaca-se que tem havido um incremento nas pesquisas focadas em uma avaliação do conhecimento estatístico dos professores e no desenvolvimento do letramento estatístico. É importante seguir fomentando investigações sob esta temática, pois é desejável que todo docente conte com um letramento estatístico para se desenvolver em um mundo globalizado em dados.",
+      "keywords_es": [
+        "Alfabetización Estadística",
+        "Profesores",
+        "Educación Estadística",
+        "Revisión sistemática"
+      ],
+      "keywords_en": [
+        "Statistical Literacy",
+        "Teachers",
+        "Statistical Education",
+        "Systematic review"
+      ],
+      "keywords_pt": [
+        "Letramento Estatístico",
+        "Professores",
+        "Educação Estatística",
+        "Revisão sistemática"
+      ],
+      "citation": "Avilez Poot, A. J., & Zapata González, A. (2022). Alfabetización Estadística del profesorado. Una revisión sistemática de 2010 a 2020.  <i>Revista digital: Matemática, Educación e Internet, 22</i>(2).[https://doi.org/10.18845/rdmei.v22i2.6128]"
+    },
+
+    {
+      "id": 3,
+      "title": "Gráficos poligonales para el estudio de la correlación de unidades estadísticas",
+      "title_en": "Polygonal graphics for the study of the correlation of statistical units",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "David A. Alfaro Alfaro",
+          "email": "[david.alfaro.alfaro@mep.go.cr]",
+          "university": "Ministerio de Educación Pública",
+          "department": "",
+          "location": "Grecia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-4764-4340"
+        },
+        {
+          "name": "Luis G. Alfaro Alpízar",
+          "email": "[luis.alfaro.alpizar@mep.go.cr]",
+          "university": "Ministerio de Educación Pública",
+          "department": "",
+          "location": "Grecia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-3319-430X"
+        },
+        {
+          "name": "Ana M. Vásquez Monge",
+          "email": "[ana.vasquez.monge@mep.go.cr]",
+          "university": "Ministerio de Educación Pública",
+          "department": "",
+          "location": "Grecia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-6706-9895"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N2_2022/Alfaro",
+      "pdf": "/Articulos/V22/N2_2022/Alfaro/V22_n2_Alfaro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6129",
+      "received": "22 febrero 2021",
+      "accepted": "23 agosto 2021",
+      "abstract_es": "Este artículo contiene un análisis de las correlaciones entre múltiples unidades estadísticas de un estudio, mediante el uso de Gráficos Poligonales, los cuales están hechos mediante un complemento creado en Excel en cuya programación se utilizan comandos que filtran la información y crean el gráfico deseado. Este enfoque se basa en un nuevo procedimiento de representación mediante polígonos donde se evidencia el número de unidades estadísticas que coinciden con las mismas características en las variables analizadas. Los resultados obtenidos facilitan el análisis de metadatos en estudios estadísticos utilizando una hoja de cálculo.",
+      "abstract_en": "This article contains an analysis of correlations between multiple statistical units of a study, through the use of Polygonal Graphs, which are generated from an add-in created in Excel, where programming commands are used to filter the information creating the desired graph according needs. This approach is based on a new procedure, showing data analysis represented in polygon graphs, where the number of statistical units that coincide with the same characteristics of the analyzed variables. These results obtained facilitate the analysis of metadata in statistical studies using a spreadsheet.",
+      "abstract_pt": "Este artigo contém uma análise das correlações entre múltiplas unidades estatísticas de um estudo, mediante o uso de Gráficos Poligonais, os quais são feitos através de um suplemento criado no Excel em cuja programação são utilizados comandos que filtram a informação e criam o gráfico desejado. Este enfoque baseia-se em um novo procedimento de representação mediante polígonos onde se evidencia o número de unidades estatísticas que coincidem com as mesmas características nas variáveis analisadas. Os resultados obtidos facilitam a análise de metadados em estudos estatísticos utilizando uma planilha de cálculo.",
+      "keywords_es": [
+        "correlación de unidades estadísticas",
+        "estadística",
+        "metadatos",
+        "multivariable"
+      ],
+      "keywords_en": [
+        "units statistical correlation",
+        "statistics",
+        "big data",
+        "multivariable"
+      ],
+      "keywords_pt": [
+        "correlação de unidades estatísticas",
+        "estatística",
+        "metadados",
+        "multivariada"
+      ],
+      "citation": "Alfaro Alfaro, D. A., Alfaro Alpízar, L. G., & Vásquez Monge, A. M. (2022). Gráficos poligonales para el estudio de la correlación de unidades estadísticas. <i>Revista digital: Matemática, Educación e Internet, 22</i>(2). [https://doi.org/10.18845/rdmei.v22i2.6129]"
+    },
+
+    {
+      "id": 4,
+      "title": "Compacto transitividad y su relación con tipos de sensitividad",
+      "title_en": "Dynamical compactness and its relationship among several types of sensitivity",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Irma León-Torres",
+          "email": "[yooirma@gmail.com]",
+          "university": "Universidad Autónoma de San Luis Potosí",
+          "department": "",
+          "location": "San Luis Potosí, México",
+          "orcid": "https://orcid.org/0000-0001-8890-8731"
+        },
+        {
+          "name": "Alicia Santiago-Santos",
+          "email": "[alicia@mixteco.utm.mx]",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0002-1888-7135"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N2_2022/LeonTorres",
+      "pdf": "/Articulos/V22/N2_2022/Torres/V22_n2_Torres.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6130",
+      "received": "17 agosto 2021",
+      "accepted": "6 diciembre 2021",
+      "abstract_es": "El objetivo de este artículo es proporcionar al lector una introducción a ciertas clases de sistemas dinámicos, tales como sistemas sensitivos, multi-sensitivos, cofinitamente sensitivos, thick sensitivos, sindéticamente sensitivos y thickly sindéticamente sensitivos. Además, se presenta un estudio y análisis de la relación entre estos tipos de sistemas y los sistemas dinámicos compacto transitivos.",
+      "abstract_en": "The objective of this article is to provide the reader an introduction to some kinds of dynamical systems, such as sensitive systems, multi-sensitive, cofinite sensitive, thickly sensitive, syndetically sensitive, and thickly syndetically sensitive. It also presents a study and analysis of the relationship between these systems and compact transitive dynamical systems.",
+      "abstract_pt": "O objetivo deste artigo é proporcionar ao leitor uma introdução a certas classes de sistemas dinâmicos, tais como sistemas sensitivos, multi-sensitivos, cofinitamente sensitivos, thick sensitivos, sindeticamente sensitivos e thickly sindeticamente sensitivos. Além disso, apresenta-se um estudo e análise da relação entre estes tipos de sistemas e os sistemas dinâmicos compacto transitivos.",
+      "keywords_es": [
+        "sensibilidad",
+        "sistema dinámico",
+        "caos",
+        "cofinitamente sensitivo",
+        "multisensitividad"
+      ],
+      "keywords_en": [
+        "sensitivity",
+        "dynamic system",
+        "chaos",
+        "cofinitely sensitive",
+        "multi-sensitivity"
+      ],
+      "keywords_pt": [
+        "sensibilidade",
+        "sistema dinâmico",
+        "caos",
+        "cofinitamente sensitivo",
+        "multissensitividade"
+      ],
+      "citation": "León-Torres, I., & Santiago-Santos, A. (2022). Compacto transitividad y su relación con tipos de sensitividad. <i>Revista digital: Matemática, Educación e Internet, 22</i>(2). [https://doi.org/10.18845/rdmei.v22i2.6130]"
+    },
+
+    {
+      "id": 5,
+      "title": "Producción y evaluación de tareas matemáticas en las herramientas CalcMe y GeoGebra con los futuros docentes de Educación Primaria",
+      "title_en": "Production and evaluation of mathematical tasks in the tools CalcMe and GeoGebra with future teachers of Primary Education",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Mónica Arnal-Palacián",
+          "email": "[marnalp@unizar.es]",
+          "university": "Universidad de Zaragoza",
+          "department": "",
+          "location": "Zaragoza, España",
+          "orcid": "https://orcid.org/0000-0002-7725-3917"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V22/N2_2022/Arnal",
+      "pdf": "/Articulos/V22/N2_2022/Arnal/V22_n2_Arnal.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6131",
+      "received": "20 enero 2021",
+      "accepted": "1 agosto 2021",
+      "abstract_es": "Este documento describe la experiencia realizada con las aplicaciones educativas y tecnológicas CalcMe y GeoGebra con futuros profesores asistentes al Grado de Educación Primaria, en las asignaturas Matemáticas y su Didáctica II y Matemáticas y su Didáctica III, durante los cursos lectivos 2018-2019 y 2019-2020. La demanda de este alumnado acerca de las soluciones de los ejercicios matemáticos que se les plantean y la necesidad de crear tantos ejercicios como requieran, propicia el uso de nuevas herramientas, en el trabajo autónomo del alumno tanto en el aula como fuera de ella. Cada alumno, tras la formación recibida en el aula, fue capaz de autocorregirse las tareas propuestas por la docente, así como elaborar tantos ejercicios nuevos como necesitase y adaptarlos a su propio aprendizaje. Todo ello potenció las habilidades didácticas del futuro docente.",
+      "abstract_en": "This document describes the experience carried out with the educational and technological applications CalcMe and GeoGebra, with future teachers attending the Degree in Primary Education, in the subjects Mathematics and its Didactics II and Mathematics and its Didactics III, during the academic years 2018-2019 and 2019-2020. The demand of these students about the solutions of the mathematical exercises that are presented to them and the need to create as many exercises as they need encourages the use of new tools, in the student's autonomous work both in and out of the classroom. Each student, after the training received in the classroom, was able to self-correct the tasks proposed by the teacher, as well as develop as many new exercises as needed and adapt them to their own learning. All this enhanced the teaching skills of the future teachers.",
+      "abstract_pt": "Este documento descreve a experiência realizada com as aplicações educativas e tecnológicas CalcMe e GeoGebra com futuros professores do curso de Graduação em Educação Primária, nas disciplinas Matemática e sua Didática II e Matemática e sua Didática III, durante os anos letivos 2018-2019 e 2019-2020. A demanda destes alunos em relação às soluções dos exercícios matemáticos propostos e a necessidade de criar tantos exercícios quantos fossem necessários, propicia o uso de novas ferramentas no trabalho autônomo do aluno, tanto na sala de aula quanto fora dela. Cada aluno, após a formação recebida em sala de aula, foi capaz de autocorrigir as tarefas propostas pela docente, bem como elaborar tantos exercícios novos quantos precisasse e adaptá-los à sua própria aprendizagem. Tudo isso potencializou as habilidades didáticas do futuro docente.",
+      "keywords_es": [
+        "GeoGebra",
+        "CalcMe",
+        "Didáctica de las Matemáticas",
+        "Aplicaciones educativas y tecnológicas"
+      ],
+      "keywords_en": [
+        "GeoGebra",
+        "CalcMe",
+        "Didactics of Mathematics",
+        "Educational and technological applications"
+      ],
+      "keywords_pt": [
+        "GeoGebra",
+        "CalcMe",
+        "Didática da Matemática",
+        "Aplicações educativas e tecnológicas"
+      ],
+      "citation": "Arnal-Palacián, M. (2022). Producción y evaluación de tareas matemáticas en las herramientas CalcMe y GeoGebra con los futuros docentes de Educación Primaria. <i>Revista digital: Matemática, Educación e Internet, 22</i>(2). [https://doi.org/10.18845/rdmei.v22i2.6131]"
+    },
+
+    {
+      "id": 6,
+      "title": "De una carrera de números primos a una carrera de series divergentes",
+      "title_en": "From a prime number race to a divergent series race",
+      "volume": 22,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0001-5015-9982"
+        },
+        {
+          "name": "Diego Miramontes de León",
+          "email": "dmiram@uaz.edu.mx",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0002-9565-4108"
+        }
+      ],
+      "category": "Matemáticas y algoritmos",
+      "slug": "Articulos/V22/N2_2022/Miramontes",
+      "pdf": "/Articulos/V22/N2_2022/Miramontes/V22_n2_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i2.6133",
+      "received": "19 febrero 2021",
+      "accepted": "10 agosto 2021",
+      "abstract_es": "En la distribución de números primos clases 4n + 3 y 4n + 1, se observa una competencia o “carrera” por cuál contiene más números primos. Chébyshev observó que la primera contiene más que la segunda. Aquí se conjetura que hay un infinito número de veces que esta competencia, ∆π = π(4n + 3) − π(4n + 1), no tiene un líder y que esto ocurre menos veces que la observación de Chébyshev, y más veces que la distribución de Littlewood, es decir, #{Infinitas_veces ∆π > 0} > #{Infinitas_veces ∆π = 0} > #{Infinitas_veces ∆π < 0}. Con base en esta idea se presenta una carrera de números subarmónicos divergentes, en la cual la diferencia entre un número subarmónico y otro es un valor finito que se puede calcular y su valor asintótico es válido para las series infinitas.",
+      "abstract_en": "In the distribution of prime numbers classes 4n+3 and 4n+1, a competition or “race” is observed for which one contains more primes. Chébyshev observed that the former contains more than the latter. Here, it is conjectured that there is an infinite number of times that this competition, ∆π = π(4n+3)−π(4n+1), does not have a leader and that this occurs fewer times than Chébyshev’s observation, and more times than Littlewood’s distribution, that is, #{Infinite_times ∆π > 0} > #{Infinite_times ∆π = 0} > #{Infinite_times ∆π < 0}. Based on this idea, a race of divergent subharmonic numbers is presented, in which the difference between one subharmonic number and another is a finite value that can be calculated and its asymptotic value is valid for infinite series.",
+      "abstract_pt": "Na distribuição de números primos das classes $4n + 3$ e $4n + 1$, observa-se uma competição ou 'corrida' para ver qual contém mais números primos. Chebyshev observou que a primeira contém mais do que a segunda. Aqui, conjetura-se que há um número infinito de vezes em que esta competição, ∆π = π(4n + 3) − π(4n + 1), não tem um líder e que isso ocorre menos vezes do que a observação de Chebyshev, e mais vezes do que a distribuição de Littlewood, ou seja, #{Infinitas_vezes ∆π > 0} > #{Infinitas_vezes ∆π = 0} > #{Infinitas_vezes ∆π < 0}$. Com base nesta ideia, apresenta-se uma corrida de números subarmônicos divergentes, na qual a diferença entre um número subarmônico e outro é um valor finito que pode ser calculado e seu valor assintótico é válido para as séries infinitas.",
+      "keywords_es": ["series divergentes", "números primos", "infinito"],
+      "keywords_en": ["infinite series", "prime numbers", "infinity"],
+      "keywords_pt": ["séries divergentes", "números primos", "infinito"],
+      "citation": "Miramontes de León, G., & Miramontes de León, D. (2022). De una carrera de números primos a una carrera de series divergentes. <i>Revista digital: Matemática, Educación e Internet, 22</i>(2). [https://doi.org/10.18845/rdmei.v22i2.6133]"
+    }
+  ]
+}
