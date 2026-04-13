@@ -1,0 +1,442 @@
+{
+  "issueTitle": "Vol 22, No 1. Agosto - Marzo, 2021",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Efectos de los recursos tecnológicos en el aprendizaje de las matemáticas",
+      "title_en": "Effects of technological resources on mathematics learning",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Luis Manuel Barrios Soto",
+          "email": "lmbs19@hotmail.com",
+          "university": "IED Calixto Álvarez",
+          "department": "",
+          "location": "Barranquilla, Colombia",
+          "orcid": "https://orcid.org/0000-0002-5148-2017"
+        },
+        {
+          "name": "Mercedes Delgado González",
+          "email": "merdelgon@gmail.com",
+          "university": "Universidad de Zulia",
+          "department": "",
+          "location": "Maracaibo, Venezuela",
+          "orcid": "https://orcid.org/0000-0002-4292-8339"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N1_2021/Barrios",
+      "pdf": "/Articulos/V22/N1_2021/Barrios/V22_n1_Barrios.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5731",
+      "received": "11 octubre 2020",
+      "accepted": "22 abril 2021",
+      "abstract_es": "Las funciones de las Tecnologías de Información y Comunicación (TICs) actualmente en educación, giran en torno a un mejor aprendizaje. El presente artículo tuvo como objetivo estimar los efectos que producen los recursos tecnológicos en el aprendizaje de las matemáticas en estudiantes de 7° grado de Educación Básica, específicamente en el tema de los polígonos en el plano cartesiano. La investigación siguió una metodología descriptiva–correlacional, con diseño cuasi-experimental de dos grupos y aplicación de pre-prueba y post-prueba. Entre los resultados se destaca que el incremento de la calificación entre la pre y post-prueba, para el grupo control fue 4.99 %, mientras que para el experimental fue de 10.36 %. Con lo anterior, se logró observar que las tecnologías ayudan a mejorar los procesos de aprendizaje de las matemáticas y tienen un efecto satisfactorio si se usan de forma adecuada.",
+      "abstract_en": "The functions of Information and Communication Technologies (ICTs) in education currently revolve around better learning. The purpose of this article was to estimate the effects of technological resources on the learning of mathematics in 7th grade elementary school students, specifically on the topic of polygons in the Cartesian plane. The research followed a descriptive-correlational methodology, with a quasi-experimental design of two groups and application of pre-test and post-test. Among the results, it is highlighted that the increase in the score between the pre- and post-test for the control group was 4.99 %, while for the experimental group it was 10.36 %. With the above, it was possible to observe that technologies help to improve the mathematics learning processes and have a satisfactory effect if they are used appropriately.",
+      "abstract_pt": "As funções das Tecnologias de Informação e Comunicação (TICs) atualmente na educação giram em torno de um melhor aprendizado. O presente artigo teve como objetivo estimar os efeitos que os recursos tecnológicos produzem no aprendizado das matemáticas em estudantes do 7° ano da Educação Básica, especificamente no tema dos polígonos no plano cartesiano. A investigação seguiu uma metodologia descritiva–correlacional, com delineamento quase-experimental de dois grupos e aplicação de pré-teste e pós-teste. Entre os resultados, destaca-se que o incremento da nota entre o pré e o pós-teste para o grupo de controle foi de 4.99 %, enquanto para o experimental foi de 10.36 %. Com isso, foi possível observar que as tecnologias ajudam a melhorar os processos de aprendizagem das matemáticas e têm um efeito satisfatório se forem utilizadas de forma adequada.",
+      "keywords_es": [
+        "Recursos tecnológicos",
+        "Tecnologías de Información y Comunicación",
+        "aprendizaje",
+        "aprendizaje de matemáticas",
+        "educación matemática"
+      ],
+      "keywords_en": [
+        "Technological resources",
+        "Information and Communication Technologies",
+        "learning",
+        "mathematics learning",
+        "mathematics education"
+      ],
+      "keywords_pt": [
+        "Recursos tecnológicos",
+        "Tecnologias de Informação e Comunicação",
+        "aprendizagem",
+        "aprendizagem de matemática",
+        "educação matemática"
+      ],
+      "citation": "Barrios Soto, L. M., & Delgado González, M. (2021). Efectos de los recursos tecnológicos en el aprendizaje de las matemáticas. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5731]"
+    },
+
+    {
+      "id": 2,
+      "title": "Jornada de articulación entre docentes de Matemática de Colegios Secundarios y de Universidad: una experiencia en la Facultad de Ingeniería de la Universidad Nacional de La Plata, Argentina",
+      "title_en": "Meeting of articulation between teachers of Mathematics of High Schools and University: an experience in the Faculty of Engineering of the National University of La Plata, Argentina",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Rossana Di Domenicantonio",
+          "email": "rossanadido@ing.unlp.edu.ar",
+          "university": "Facultad de Ingeniería, UNLP",
+          "department": "",
+          "location": "La Plata, Argentina",
+          "orcid": "https://orcid.org/0000-0001-7187-1071"
+        },
+        {
+          "name": "Mabel García",
+          "email": "mabel.garcia@ing.unlp.edu.ar",
+          "university": "Facultad de Ingeniería, UNLP",
+          "department": "",
+          "location": "La Plata, Argentina",
+          "orcid": "https://orcid.org/0000-0002-9795-3099"
+        },
+        {
+          "name": "Laura Langoni",
+          "email": "laura.langoni@ing.unlp.edu.ar",
+          "university": "Facultad de Ingeniería, UNLP",
+          "department": "",
+          "location": "La Plata, Argentina",
+          "orcid": "https://orcid.org/0000-0003-3129-4294"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N1_2021/Domenicantonio",
+      "pdf": "/Articulos/V22/N1_2021/Domenicantonio/V22_n1_Domenicantonio.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5733",
+      "received": "28 setiembre 2020",
+      "accepted": "15 marzo 2021",
+      "abstract_es": "En este trabajo se relata una experiencia de articulación entre docentes de Matemática de colegios secundarios y de la universidad, con la finalidad de colaborar con la adaptación de los alumnos que pasan de un nivel al otro. La misma se desarrolló en tres jornadas en la Facultad de Ingeniería de la Universidad Nacional de La Plata (UNLP), Argentina. En los encuentros se difundió la forma de trabajo en las aulas de Matemática de la FI. Los docentes participantes intercambiaron opiniones acerca de las fortalezas y debilidades que presentan los alumnos en el tránsito del secundario a la universidad. Se generó un debate enriquecedor para el proceso de enseñanza-aprendizaje en ambos niveles. Además, se realizó una encuesta a los docentes participantes, cuyos resultados y conclusiones se presentan en el trabajo.",
+      "abstract_en": "In this work, an articulation experience between secondary school and university mathematics teachers is reported, in order to collaborate with the adaptation of students who pass from one level to the other. It was developed in three days at the Faculty of Engineering of the National University of La Plata (UNLP), Argentina. In the meetings, the way of working in Mathematics classrooms was disseminated. Teachers exchanged opinions about strengths and weaknesses of students transitioning from high school to university. An enriching debate was generated for the teaching-learning process at both levels. In addition, a survey was conducted among participating teachers, and its results and conclusions are presented.",
+      "abstract_pt": "Neste trabalho relata-se uma experiência de articulação entre docentes de Matemática de escolas secundárias e da universidade, com a finalidade de colaborar com a adaptação dos alunos que passam de um nível ao outro. A mesma desenvolveu-se em três jornadas na Faculdade de Engenharia da Universidade Nacional de La Plata (UNLP), Argentina. Nos encontros, divulgou-se a forma de trabalho nas salas de aula de Matemática da FI. Os docentes participantes trocaram opiniões sobre as fortalezas e fragilidades que os alunos apresentam na transição do ensino secundário para a universidade. Gerou-se um debate enriquecedor para o processo de ensino-aprendizagem em ambos os níveis. Além disso, foi realizada uma pesquisa com os docentes participantes, cujos resultados e conclusões são apresentados no trabalho.",
+      "keywords_es": [
+        "articulación",
+        "matemática",
+        "docentes",
+        "colegio secundario",
+        "universidad"
+      ],
+      "keywords_en": [
+        "articulation",
+        "mathematics",
+        "teachers",
+        "high school",
+        "university"
+      ],
+      "keywords_pt": [
+        "articulação",
+        "matemática",
+        "docentes",
+        "escola secundária",
+        "universidade"
+      ],
+      "citation": "Di Domenicantonio, R., García, M., & Langoni, L. (2021). Jornada de articulación entre docentes de Matemática de Colegios Secundarios y de Universidad: una experiencia en la Facultad de Ingeniería de la Universidad Nacional de La Plata, Argentina. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5733]"
+    },
+
+    {
+      "id": 3,
+      "title": "Continuidad de funciones basadas en reordenamientos de β-expansiones de un número",
+      "title_en": "Continuity of functions based on rearrangements of a β-expansion of a number",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Andrés Merino",
+          "email": "aemerinot@puce.edu.ec",
+          "university": "Pontificia Universidad Católica del Ecuador",
+          "department": "Escuela de Ciencias Físicas y Matemática, Facultad de Ciencias Exactas y Naturales",
+          "location": "Quito, Ecuador",
+          "orcid": "https://orcid.org/0000-0002-5404-918X"
+        },
+        {
+          "name": "Jonathan Ortiz-Castro",
+          "email": "jonathan.ortizc@epn.edu.ec",
+          "university": "Escuela Politécnica Nacional",
+          "department": "Facultad de Ciencias",
+          "location": "Quito, Ecuador",
+          "orcid": "https://orcid.org/0000-0002-1673-4346"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N1_2021/Merino",
+      "pdf": "/Articulos/V22/N1_2021/Merino/V22_n1_Merino.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5758",
+      "received": "18 agosto 2020",
+      "accepted": "15 junio 2021",
+      "abstract_es": "Las funciones dadas por reordenaciones de β-expansiones de un número suelen ser presentadas como ejemplos de variables aleatorias en la teoría de la probabilidad, sin embargo, no se realiza un estudio a profundidad de este tipo de funciones ni se suele presentar una demostración rigurosa de que, en efecto, son variables aleatorias. En el presente trabajo, se da una demostración del resultado original de que este tipo de funciones son continuas en casi todas partes, de lo cual se deduce que son variables aleatorias. Además, se presentan demostraciones originales y directas de algunas propiedades conocidas de las β-expansiones de los números entre 0 y 1; entre estas, se establecen condiciones para que un número tenga β-expansión única y también se prueba que si dos números tienen β-expansión única y son suficientemente cercanos, entonces sus β-expansiones coinciden hasta cierto índice. Finalmente, se presenta una caracterización original sobre los puntos de continuidad de funciones dadas por reordenaciones estrictamente crecientes.",
+      "abstract_en": "The functions given by rearrangements of β-expansions of a number are usually presented as examples of random variables in probability theory, however, an in-depth study of this type of functions is not carried out nor is a rigorous demonstration that they are indeed random variables. In this work it is proved that these types of functions are continuous almost everywhere, and so they are random variables. In addition, original and direct proofs of known properties of β-expansions of numbers in [0,1] are presented; among these, conditions for a number to have a unique β-expansion are established, and it is shown that if two numbers have unique β-expansions and are sufficiently close, then their β-expansions coincide up to a certain index. Finally, an original characterization of continuity points of functions defined by strictly increasing rearrangements is presented.",
+      "abstract_pt": "As funções dadas por reordenações de β-expansões de um número costumam ser apresentadas como exemplos de variáveis aleatórias na teoria da probabilidade; no entanto, não se realiza um estudo aprofundado deste tipo de funções nem se costuma apresentar uma demonstração rigorosa de que, de fato, são variáveis aleatórias. No presente trabalho, fornece-se uma demonstração do resultado original de que este tipo de funções são contínuas em quase toda parte, do qual se deduz que são variáveis aleatórias. Além disso, apresentam-se demonstrações originais e diretas de algumas propriedades conhecidas das β-expansões dos números entre 0 e 1; entre estas, estabelecem-se condições para que um número tenha β-expansão única e também se prova que, se dois números têm β-expansão única e são suficientemente próximos, então suas β-expansões coincidem até certo índice. Finalmente, apresenta-se uma caracterização original sobre os pontos de continuidade de funções dadas por reordenações estritamente crescentes.",
+      "keywords_es": [
+        "variables aleatorias",
+        "β-expansiones",
+        "continuidad",
+        "teoría de la medida"
+      ],
+      "keywords_en": [
+        "random variables",
+        "β-expansions",
+        "continuity",
+        "measure theory"
+      ],
+      "keywords_pt": [
+        "variáveis aleatórias",
+        "β-expansões",
+        "continuidade",
+        "teoria da medida"
+      ],
+      "citation": "Merino, A., & Ortiz-Castro, J. (2021). Continuidad de funciones basadas en reordenamientos de β-expansiones de un número. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5758]"
+    },
+
+    {
+      "id": 4,
+      "title": "Deducción de un nuevo algoritmo para la resolución de problemas de optimización con restricciones",
+      "title_en": "Deduction of a new algorithm for solving constrained optimization problems",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Manuel Vázquez Mourazos",
+          "email": "manuelvazquezmourazos@gmail.com",
+          "university": "Universidad de Santiago de Compostela",
+          "department": "",
+          "location": "España (Melide, A Coruña)",
+          "orcid": "https://orcid.org/0000-0003-1166-9562"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N1_2021/Vazquez",
+      "pdf": "/Articulos/V22/N1_2021/Vazquez/V22_n1_Vazquez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5730",
+      "received": "13 setiembre 2020",
+      "accepted": "10 mayo 2021",
+      "abstract_es": "Con el objetivo de aportar una nueva visión en la resolución de algunos problemas de optimización, este artículo versará acerca de la deducción de un nuevo método numérico en optimización. Para ello, se planteará una modelización genérica de los problemas que se plantean resolver. De este modo, se introducirán los preliminares necesarios para poder proceder con la deducción que posteriormente se hará. En este sentido, el método planteado se enmarcará dentro de los métodos de direcciones factibles, por lo que se introducirán conceptos topológicos sencillos (relacionados con el conjunto admisible) y definiciones relacionadas con las direcciones factibles y de descenso que se podrán considerar. Posteriormente se procederá con la deducción del algoritmo que presenta este artículo, procurando que el lector pueda observar el procedimiento de construcción del mismo. Además, se introducirán los aspectos computacionales del método y se propondrán una serie de códigos que permitirán implementar el algoritmo en un lenguaje de programación, en el caso de este artículo se utilizará MatLab. Finalmente se mostrarán los resultados obtenidos al ejecutar el método junto con otros métodos ya conocidos para poder comparar los resultados obtenidos. De esta forma, se finalizará aportando las conclusiones más relevantes y las futuras líneas de investigación para mejorar el método presentado.",
+      "abstract_en": "With the aim of providing a new vision in solving some optimization problems, this article will deal with the deduction of a new numerical method in optimization. To do this, a generic modeling of the problems to be solved will be proposed. In this way, the necessary preliminaries will be introduced to be able to proceed with the deduction that will be made later. In this sense, the proposed method will be framed within the feasible directions methods, for which simple topological concepts (related to the admissible set) and definitions related to the feasible and descent directions that may be considered will be introduced. Subsequently, we will proceed with the deduction of the algorithm presented in this article, ensuring that the reader can observe the procedure for its construction. In addition, the computational aspects of the method will be introduced and a series of codes will be proposed that will allow the algorithm to be implemented in a programming language. In the case of this article, MatLab will be used. Finally, the results obtained when executing the method will be shown together with other methods already known in order to compare the results obtained, concluding with the most relevant conclusions and future lines of research.",
+      "abstract_pt": "Com o objetivo de aportar uma nova visão na resolução de alguns problemas de otimização, este artigo versará sobre a dedução de um novo método numérico em otimização. Para isso, será proposta uma modelagem genérica dos problemas que se pretende resolver. Deste modo, serão introduzidos os preliminares necessários para poder proceder com a dedução que será feita posteriormente. Neste sentido, o método proposto se enquadrará dentro dos métodos de direções factíveis, pelo que serão introduzidos conceitos topológicos simples (relacionados com o conjunto admissível) e definições relacionadas com as direções factíveis e de descida que poderão ser consideradas. Posteriormente, proceder-se-á com a dedução do algoritmo apresentado neste artigo, procurando que o leitor possa observar o procedimento de construção do mesmo. Além disso, serão introduzidos os aspectos computacionais do método e será proposta uma série de códigos que permitirão implementar o algoritmo em uma linguagem de programação; no caso deste artigo, utilizar-se-á o MatLab. Finalmente, serão mostrados os resultados obtidos ao executar o método junto com outros métodos já conhecidos para poder comparar os resultados obtidos. Desta forma, finalizar-se-á aportando as conclusões mais relevantes e as futuras linhas de pesquisa para melhorar o método apresentado.",
+      "keywords_es": [
+        "optimización con restricciones",
+        "programación matemática",
+        "dirección de descenso",
+        "dirección factible",
+        "discretización",
+        "método de Gram-Schmidt",
+        "método de direcciones factibles"
+      ],
+      "keywords_en": [
+        "constrained optimization",
+        "mathematical programming",
+        "descent direction",
+        "feasible direction",
+        "discretization",
+        "Gram-Schmidt method",
+        "feasible direction methods"
+      ],
+      "keywords_pt": [
+        "otimização com restrições",
+        "programação matemática",
+        "direção de descida",
+        "direção factível",
+        "discretização",
+        "método de Gram-Schmidt",
+        "método de direções factíveis"
+      ],
+      "citation": "Vázquez Mourazos, M. (2021). Deducción de un nuevo algoritmo para la resolución de problemas de optimización con restricciones.  <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5730]"
+    },
+
+    {
+      "id": 5,
+      "title": "Análisis de aprendizaje conceptual empleando CDFs: documentos con un formato computable",
+      "title_en": "Conceptual learning analysis using CDFs: documents in a computable format",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Enrique Vílchez Quesada",
+          "email": "enrique.vilchez.quesada@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica (Heredia)",
+          "orcid": "https://orcid.org/0000-0002-2571-5729"
+        },
+        {
+          "name": "Juan Félix Ávila Herrera",
+          "email": "delagarita@gmail.com",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica (Heredia)",
+          "orcid": "https://orcid.org/0000-0001-8864-9581"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V22/N1_2021/Vilchez",
+      "pdf": "/Articulos/V22/N1_2021/Vilchez/V22_n1_Vilchez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5732",
+      "received": "14 noviembre 2020",
+      "accepted": "1 abril 2021",
+      "abstract_es": "Este artículo comparte los principales hallazgos de una investigación realizada en el contexto del curso MAT030 Matemática para Informática de la carrera Ingeniería en Sistemas de Información de la Universidad Nacional de Costa Rica, que tuvo como objetivo general analizar el impacto de la integración pedagógica del uso de un tipo especial de documento denominado CDF (computable document format). La investigación se sustentó en utilizar ciento treinta aplicaciones CDFs diseñadas por los autores, junto a un libro de texto, como recursos didácticos para apoyar la docencia y el autoaprendizaje de los contenidos de esta asignatura. Se empleó una metodología cuantitativa mediante grupos experimentales y de control, aplicando pruebas de hipótesis para analizar diferencias en la comprensión conceptual de diversos ejes temáticos. Los resultados evidencian una mejoría en la comprensión conceptual y en el rendimiento académico de los grupos experimentales, destacando el papel de los CDFs en el desarrollo del razonamiento, el análisis, la autoevaluación y la visualización de conceptos. Se concluye que el uso adecuado de la tecnología educativa potencia el aprendizaje y ofrece una alternativa viable para innovar en la enseñanza de la matemática.",
+      "abstract_en": "This article shares the main findings of research carried out in the context of MAT030 Math for Informatics, a course of the Information Systems Engineering program at the National University of Costa Rica. The main goal was to analyze the impact of the pedagogical integration of a special type of document called CDF (computable document format). The research used one hundred and thirty CDF applications designed by the authors, along with a textbook, as didactic resources to support teaching and self-learning. A quantitative methodology with experimental and control groups was applied, including hypothesis testing to analyze differences in conceptual understanding across several thematic areas. Results show improvements in conceptual understanding and academic performance in experimental groups, highlighting the role of CDFs in reasoning, analysis, self-evaluation, and visualization of concepts. The study concludes that the appropriate use of educational technology enhances learning and provides a viable alternative for innovation in mathematics education.",
+      "abstract_pt": "Este artigo compartilha as principais descobertas de uma investigação realizada no contexto do curso MAT030 Matemática para Informática do curso de Engenharia em Sistemas de Informação da Universidade Nacional da Costa Rica, que teve como objetivo geral analisar o impacto da integração pedagógica do uso de um tipo especial de documento denominado CDF (computable document format). A investigação sustentou-se na utilização de cento e trinta aplicações CDFs desenvolvidas pelos autores, junto a um livro de texto, como recursos didáticos para apoiar a docência e a autoaprendizagem dos conteúdos desta disciplina. Empregou-se uma metodologia quantitativa mediante grupos experimentais e de controle, aplicando testes de hipóteses para analisar diferenças na compreensão conceitual de diversos eixos temáticos. Os resultados evidenciam uma melhoria na compreensão conceitual e no rendimento acadêmico dos grupos experimentais, destacando o papel dos CDFs no desenvolvimento do raciocínio, da análise, da autoavaliação e da visualização de conceitos. Conclui-se que o uso adequado da tecnologia educativa potencializa a aprendizagem e oferece uma alternativa viável para inovar no ensino da matemática.",
+      "keywords_es": [
+        "CDFs",
+        "matemática para informática",
+        "enseñanza",
+        "aprendizaje",
+        "análisis"
+      ],
+      "keywords_en": [
+        "CDFs",
+        "computer mathematics",
+        "teaching",
+        "learning",
+        "analysis"
+      ],
+      "keywords_pt": [
+        "CDFs",
+        "matemática para informática",
+        "ensino",
+        "aprendizagem",
+        "análise"
+      ],
+      "citation": "Vílchez Quesada, E., & Ávila Herrera, J. F. (2021). Análisis de aprendizaje conceptual empleando CDFs: documentos con un formato computable. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5732]"
+    },
+
+    {
+      "id": 6,
+      "title": "Sólidos de revolución con GeoGebra",
+      "title_en": "Revolution solids with GeoGebra",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José Luis Vergara Ibarra",
+          "email": "ingjosevergaraibarra@gmail.com",
+          "university": "Colegio 23 de Octubre",
+          "department": "",
+          "location": "Montecristi - Ecuador",
+          "orcid": "https://orcid.org/0000-0002-2735-9246"
+        }
+      ],
+      "category": "Didáctica y Software",
+      "slug": "Articulos/V22/N1_2021/Vergara",
+      "pdf": "/Articulos/V22/N1_2021/Vergara/V22_n1_Vergara.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5735",
+      "received": "24 octubre 2020",
+      "accepted": "10 marzo 2021",
+      "abstract_es": "Este artículo muestra cómo diseñar sólidos de revolución con el software GeoGebra. Primero en cada sección se presentan las definiciones necesarias, luego se desarrolla la parametrización de curvas en ℝ3 y de las superficies acotadas por estas curvas, y finalmente mediante comandos y deslizadores se construye el sólido de revolución. Los sólidos obtenidos son dinámicos y pueden visualizarse desde diferentes perspectivas, lo cual favorece la comprensión geométrica.",
+      "abstract_en": "This paper shows how to design revolution solids with GeoGebra software. First, relevant definitions are presented, then the parameterization of curves in ℝ3 and the surfaces bounded by these curves is developed, and finally, through commands and sliders, the solid of revolution is constructed. The resulting solids are dynamic and can be visualized from different perspectives, enhancing geometric understanding.",
+      "abstract_pt": "Este artigo mostra como projetar sólidos de revolução com o software GeoGebra. Primeiro, em cada seção, apresentam-se as definições necessárias; em seguida, desenvolve-se a parametrização de curvas em ℝ3 e das superfícies limitadas por estas curvas e, finalmente, mediante comandos e seletores (sliders), constrói-se o sólido de revolução. Os sólidos obtidos são dinâmicos e podem ser visualizados de diferentes perspectivas, o que favorece a compreensão geométrica.",
+      "keywords_es": [
+        "sólido de revolución",
+        "parametrización",
+        "curva",
+        "superficie",
+        "GeoGebra"
+      ],
+      "keywords_en": [
+        "solid of revolution",
+        "parameterization",
+        "curve",
+        "surface",
+        "GeoGebra"
+      ],
+      "keywords_pt": [
+        "sólido de revolução",
+        "parametrização",
+        "curva",
+        "superfície",
+        "GeoGebra"
+      ],
+      "citation": "Vergara Ibarra, J. L. (2021). Sólidos de revolución con GeoGebra. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5735]"
+    },
+
+    {
+      "id": 7,
+      "title": "Una fórmula que genera números primos",
+      "title_en": "A formula that generates prime numbers",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José de Jesús Camacho Medina",
+          "email": "pepe9mx@yahoo.com.mx",
+          "university": "Sociedad Científica Fresnillense A.C.",
+          "department": "",
+          "location": "Fresnillo, Zacatecas, México",
+          "orcid": "https://orcid.org/0000-0002-1172-0797"
+        }
+      ],
+      "category": "Matemáticas y algoritmos",
+      "slug": "Articulos/V22/N1_2021/Camacho",
+      "pdf": "/Articulos/V22/N1_2021/Camacho/V22_n1_Camacho.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5736",
+      "received": "2 Febrero 2021",
+      "accepted": "16 marzo 2021",
+      "abstract_es": "Existen diversas clases de funciones que generan números primos, algunas de ellas son capaces de producir al enésimo número primo; como es el caso de la fórmula de Willans (1964) y Ruiz y Sondow (2014). En el presente trabajo se ofrece como propuesta una función a(n) basada en la función divisor d(n), la cual genera números primos. Para la secuencia definida como: a(n) = n · ⌊2/(n − d(n))⌋ con n > 1, se demuestra que a(n) produce solo ceros y números primos de tal manera que: a(n) = 0 si n es compuesto, y a(n) = n si n es primo.",
+      "abstract_en": "There are various classes of functions that generate prime numbers, some of them are even capable of producing the nth prime number as is the case of the formula by Willans (1964) and Ruiz and Sondow (2014). In this work a function a(n) based on the divisor function d(n) is offered as a proposal, which generates prime numbers. For the sequence defined as: a(n) = n · ⌊2/(n − d(n))⌋, it is proved that a(n) produces only zeros and primes: a(n) = 0 if n is composite, and a(n) = n if n is prime.",
+      "abstract_pt": "Existem diversas classes de funções que geram números primos, algumas das quais são capazes de produzir o enésimo número primo, como é o caso da fórmula de Willans (1964) e Ruiz e Sondow (2014). No presente trabalho, oferece-se como proposta uma função a(n) baseada na função divisor d(n), a qual gera números primos. Para a sequência definida como: a(n) = n · ⌊2/(n − d(n))⌋ com n > 1, demonstra-se que a(n) produz apenas zeros e números primos, de tal maneira que: a(n) = 0 se n for composto, e a(n) = n se n for primo.",
+      "keywords_es": ["fórmula que genera números primos", "función divisor"],
+      "keywords_en": [
+        "formula that generates prime numbers",
+        "divisor function"
+      ],
+      "keywords_pt": ["fórmula que gera números primos", "função divisor"],
+      "citation": "Camacho Medina, J. de J. (2021). Una fórmula que genera números primos. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5736]"
+    },
+
+    {
+      "id": 8,
+      "title": "Formulación e implementación de un modelo de programación entera para la creación de horarios de clases: un caso de estudio en Ecuador",
+      "title_en": "Formulation and implementation of an integer programming model for the course timetabling problem: a case study in Ecuador",
+      "volume": 22,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Ramiro Saltos Atiencia",
+          "email": "ramiro.saltos@upacifico.edu.ec",
+          "university": "Universidad del Pacífico",
+          "department": "Facultad de Innovación y Tecnología",
+          "location": "Guayaquil, Ecuador",
+          "orcid": "https://orcid.org/0000-0001-6051-4028"
+        },
+        {
+          "name": "Luis Benavides Castillo",
+          "email": "lebenavides@uees.edu.ec",
+          "university": "Universidad Espíritu Santo",
+          "department": "Facultad de Ingeniería",
+          "location": "Guayaquil, Ecuador",
+          "orcid": "https://orcid.org/0000-0002-2514-6394"
+        }
+      ],
+      "category": "Matemáticas y algoritmos",
+      "slug": "Articulos/V22/N1_2021/Saltos",
+      "pdf": "/Articulos/V22/N1_2021/Saltos/V22_n1_Saltos.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v22i1.5734",
+      "received": "27 octubre 2020",
+      "accepted": "15 marzo 2021",
+      "abstract_es": "Con base en el modelo de optimización propuesto por Saltos y Benavides en 2019, en este artículo de investigación se propone un nuevo modelo de programación lineal entera mixta para resolver el problema de calendarización de cursos universitarios para el caso particular de la Escuela de Computación y Telecomunicaciones de una universidad privada del Ecuador. El modelo es novedoso debido a que incorpora de manera simultánea la asignación de las aulas de clase y la calendarización de las materias que se dictarán durante el semestre. Usando el modelizador AIMMS, se obtuvo una solución factible en menos de 20 segundos a la vez que se optimizaron varios indicadores de calidad establecidos por la coordinación académica. Los resultados obtenidos resaltan la importancia del uso de la Investigación de Operaciones como herramienta de apoyo en la toma de decisiones, en especial, en problemas combinatorios que toman semanas de resolver manualmente.",
+      "abstract_en": "Based on the optimization model proposed by Saltos and Benavides in 2019, in this research article we propose a new mixed-integer linear programming model to solve the university course timetabling problem. We approach the case of the Computing and Telecommunications School of a private university in Ecuador. The model is novel because it simultaneously incorporates the assignment of classrooms and the scheduling of the subjects that will be taught during the semester. Using the AIMMS modeler, we got a feasible solution in less than 20 seconds, while optimizing several quality indicators set by the academic coordination. The results highlight the importance of using Operations Research as a support tool in decision-making, especially in combinatorial problems that take weeks to solve manually.",
+      "abstract_pt": "Com base no modelo de otimização proposto por Saltos e Benavides em 2019, neste artigo de pesquisa propõe-se um novo modelo de programação linear inteira mista para resolver o problema de cronogramas (scheduling) de cursos universitários para o caso particular da Escola de Computação e Telecomunicações de uma universidade privada do Equador. O modelo é inovador porque incorpora simultaneamente a atribuição das salas de aula e o agendamento das disciplinas que serão ministradas durante o semestre. Utilizando o modelador AIMMS, obteve-se uma solução viável em menos de 20 segundos, ao mesmo tempo em que se otimizaram diversos indicadores de qualidade estabelecidos pela coordenação acadêmica. Os resultados obtidos ressaltam a importância do uso da Pesquisa Operacional como ferramenta de apoio na tomada de decisões, especialmente em problemas combinatórios que levam semanas para serem resolvidos manualmente.",
+      "keywords_es": [
+        "horarios de clases universitarios",
+        "programación entera",
+        "investigación de operaciones"
+      ],
+      "keywords_en": [
+        "university timetabling",
+        "integer programming",
+        "operations research"
+      ],
+      "keywords_pt": [
+        "horários de aulas universitários",
+        "programação inteira",
+        "pesquisa operacional"
+      ],
+      "citation": "Saltos Atiencia, R., & Benavides Castillo, L. (2021). Formulación e implementación de un modelo de programación entera para la creación de horarios de clases: un caso de estudio en Ecuador. <i>Revista digital: Matemática, Educación e Internet, 22</i>(1). [https://doi.org/10.18845/rdmei.v22i1.5734]"
+    }
+  ]
+}
