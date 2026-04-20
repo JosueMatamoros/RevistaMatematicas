@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { FaPencil, FaArrowDown19 } from "react-icons/fa6";
 import SearchBar from "@/components/common/SearchBar";
+import { categoryNav } from "@/data/categories";
 
 export default function NavsComponent({ isSidebarOpen }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -87,60 +88,36 @@ export default function NavsComponent({ isSidebarOpen }) {
                 <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
               </div>
               <ul className="absolute left-0 mt-2 z-10 min-w-[230px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                {[
-                  {
-                    text: "Temas de matemática",
-                    href: "/",
-                  },
-                  {
-                    text: "Temas de geometría",
-                    href: "/",
-                  },
-                  {
-                    text: "Matemática inclusiva",
-                    href: "/",
-                  },
-                  {
-                    text: "Matemática y algoritmos",
-                    href: "/",
-                  },
-                  {
-                    text: "Curiosidades matemáticas",
-                    href: "/",
-                  },
-                  {
-                    text: "Didáctica y software",
-                    href: "/",
-                  },
-                  {
-                    text: "Historia",
-                    href: "/",
-                  },
-                  {
-                    text: "Olimpiadas",
-                    href: "/",
-                  },
-                  {
-                    text: "Materiales revisados",
-                    href: "/materialdidactico/revisado",
-                  },
-                  {
-                    text: "Materiales sin revisión",
-                    href: "/materialdidactico/sinrevision",
-                  },
-                ].map((item, i, arr) => (
-                  <li key={i}>
-                    {i === arr.length - 2 && (
-                      <hr className="my-1 border-gray-300" />
-                    )}
+                {categoryNav.map((cat) => (
+                  <li key={cat.slug}>
                     <Link
-                      href={item.href}
-                      className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                      href={`/secciones/${cat.slug}`}
+                      className="flex items-center justify-between w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white group/item"
                     >
-                      {item.text}
+                      <span>{cat.label}</span>
+                      <span className="text-xs text-gray-400 group-hover/item:text-blue-100 ml-2">
+                        {cat.count}
+                      </span>
                     </Link>
                   </li>
                 ))}
+                <hr className="my-1 border-gray-300" />
+                <li>
+                  <Link
+                    href="/materialdidactico/revisado"
+                    className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                  >
+                    Materiales revisados
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/materialdidactico/sinrevision"
+                    className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                  >
+                    Materiales sin revisión
+                  </Link>
+                </li>
               </ul>
             </li>
 
@@ -298,44 +275,37 @@ export default function NavsComponent({ isSidebarOpen }) {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  {[
-                    "Temas de matemática",
-                    "Temas de geometría",
-                    "Matemática inclusiva",
-                    "Matemática y algoritmos",
-                    "Curiosidades matemáticas",
-                    "Didáctica y software",
-                    "Historia",
-                    "Olimpiadas",
-                    {
-                      text: "Materiales revisados",
-                      href: "/materialdidactico/revisado",
-                    },
-                    {
-                      text: "Materiales sin revisión",
-                      href: "/materialdidactico/sinrevision",
-                    },
-                  ].map((sub, i) => (
-                    <li key={i}>
-                      {typeof sub === "string" ? (
-                        <Link
-                          href="/"
-                          onClick={() => setMenuOpen(false)}
-                          className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
-                        >
-                          {sub}
-                        </Link>
-                      ) : (
-                        <Link
-                          href={sub.href}
-                          onClick={() => setMenuOpen(false)}
-                          className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
-                        >
-                          {sub.text}
-                        </Link>
-                      )}
+                  {categoryNav.map((cat) => (
+                    <li key={cat.slug}>
+                      <Link
+                        href={`/secciones/${cat.slug}`}
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center justify-between text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                      >
+                        <span>{cat.label}</span>
+                        <span className="text-xs text-gray-400 ml-2">{cat.count}</span>
+                      </Link>
                     </li>
                   ))}
+                  <hr className="my-1 border-gray-300" />
+                  <li>
+                    <Link
+                      href="/materialdidactico/revisado"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                    >
+                      Materiales revisados
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/materialdidactico/sinrevision"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                    >
+                      Materiales sin revisión
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
