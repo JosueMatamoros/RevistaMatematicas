@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "find . -name '.DS_Store' -delete",
+    "build": "next build && find out -name '.DS_Store' -delete",
     "start": "next start",
     "lint": "next lint",
     "diff": "node scripts/build-diff.js"

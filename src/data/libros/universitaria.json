@@ -182,7 +182,7 @@
         "location": "Costa Rica"
       }
     ],
-    "lastRevision": "Enero 2021",
+    "lastRevision": "Abril 2026",
     "category": "universitaria ",
     "pdf": "/libros/universitaria/otros/latex/libro.pdf",
     "abstract_es": "Este texto aborda aspectos fundamentales e intermedios de la composición tipográfica con LaTeX, el diseño editorial y la creación de presentaciones con Beamer. Incluye también la edición de gráficos mediante Inkscape y TikZ, así como el uso de entornos avanzados con los paquetes xparse y tcolorbox. Se presentan ejemplos prácticos, plantillas y explicaciones que facilitan la comprensión y aplicación de los conceptos en la elaboración de documentos técnicos y académicos. El libro reúne los temas más comunes en la edición de textos científicos, especialmente en matemáticas, educación y programación, e incorpora actualizaciones sobre nuevos paquetes y técnicas de diseño editorial.",
