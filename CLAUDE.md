@@ -29,6 +29,10 @@ Verificar que:
 2. El archivo JSON `src/data/issues/V{vol}_N{num}_{ano}.json` use el ano correcto.
 3. Todos los `slug` dentro del JSON usen la ruta `Articulos/V{vol}/N{num}_{ano}/{Autor}` sin tildes.
 4. El `id` en `src/data/issues/index.js` coincida con el nombre del JSON.
+5. El campo `issueTitle` siga el formato largo: `"Volumen {vol}, Número {num}, {Mes_inicio} {ano_inicio} - {Mes_fin} {ano_fin}"`
+   - Correcto: `"Volumen 22, Número 1, Agosto 2021 - Febrero 2022"`
+   - Incorrecto: `"Vol 22, No 1. Agosto - Marzo, 2021"` (abreviado, sin años en cada mes)
+   - Incorrecto: usar guión largo `−` en vez de guión simple `-`
 
 Si algo no cumple, reportar el error y ofrecer corregirlo.
 
