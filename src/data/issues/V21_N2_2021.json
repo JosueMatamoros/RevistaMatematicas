@@ -1,0 +1,412 @@
+{
+  "issueTitle": "Volumen 21, Número 2, Marzo 2021 − Agosto 2021",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Diseño y análisis de la convergencia y estabilidad de métodos iterativos para la resolución de ecuaciones no lineales",
+      "title_en": "Design and analysis of convergence and stability of iterative methods for solving nonlinear equations",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Armando Gabriel Solís Zúñiga",
+          "email": "armalis98@gmail.com",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-0532-0789"
+        },
+        {
+          "name": "Alicia Cordero Barbero",
+          "email": "acordero@mat.upv.es",
+          "university": "Universitat Politècnica de València",
+          "department": "",
+          "location": "España",
+          "orcid": "https://orcid.org/0000-0002-7462-9173"
+        },
+        {
+          "name": "Juan Ramón Torregrosa Sánchez",
+          "email": "jrtorre@mat.upv.es",
+          "university": "Universitat Politècnica de València",
+          "department": "",
+          "location": "España",
+          "orcid": "https://orcid.org/0000-0002-9893-0761"
+        },
+        {
+          "name": "Juan Pablo Soto Quirós",
+          "email": "jusoto@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-2903-3116"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N2_2021/Solis",
+      "pdf": "/Articulos/V21/N2_2021/Solis/V21_n2_Solis.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5602",
+      "received": "25 noviembre 2019",
+      "accepted": "30 agosto 2020",
+      "abstract_es": "Una corriente en métodos numéricos es la elaboración de nuevos métodos iterativos para la resolución de ecuaciones no lineales; se busca que estos métodos sean óptimos en contraste con su orden de convergencia y el número de evaluaciones funcionales en comparación con métodos usualmente conocidos. El presente trabajo muestra el diseño de una nueva familia paramétrica de métodos iterativos basada en la familia de métodos de Chun que contiene el esquema de Ostrowski como caso particular. Se realiza además un análisis por medio de dinámica compleja para visualizar planos de parámetros y dinámicos para seleccionar los parámetros que presentan un comportamiento más estable para el esquema en estudio y así formar un método iterativo más eficiente.",
+      "abstract_en": "One stream in numerical analysis is the creation of new iterative methods for the resolution of non-linear equations; optimal processes are sought in contrast with their order of convergence and the number of functional evaluations compared to usual known methods. This article shows a design of a new parametric family of iterative methods based on the Chun’s family of methods which contains the particular case of the Ostrowski’s scheme. Through an analysis with complex dynamic it is intended to visualize dynamic planes and parameters’ planes to choose the best parameter who brings more stable behavior for the scheme under study and make it more efficient.",
+      "abstract_pt": "Uma vertente nos métodos numéricos é a elaboração de novos métodos iterativos para a resolução de equações não lineares; busca-se que esses métodos sejam ótimos em relação à sua ordem de convergência e ao número de avaliações funcionais em comparação com métodos usualmente conhecidos. O presente trabalho apresenta o desenho de uma nova família paramétrica de métodos iterativos baseada na família de métodos de Chun, que contém o esquema de Ostrowski como caso particular. Além disso, realiza-se uma análise por meio da dinâmica complexa para visualizar planos de parâmetros e dinâmicos, a fim de selecionar os parâmetros que apresentam um comportamento mais estável para o esquema em estudo e assim formar um método iterativo mais eficiente.",
+      "keywords_es": [
+        "métodos iterativos",
+        "ecuaciones no lineales",
+        "métodos óptimos",
+        "dinámica compleja",
+        "análisis de convergencia"
+      ],
+      "keywords_en": [
+        "iterative methods",
+        "non-linear equations",
+        "optimal methods",
+        "complex dynamic",
+        "analysis of convergence"
+      ],
+      "keywords_pt": [
+        "métodos iterativos",
+        "equações não lineares",
+        "métodos ótimos",
+        "dinâmica complexa",
+        "análise de convergência"
+      ],
+      "citation": "Solís Zúñiga, A. G., Cordero Barbero, A., Torregrosa Sánchez, J. R., & Soto Quirós, J. P. (2021). Diseño y análisis de la convergencia y estabilidad de métodos iterativos para la resolución de ecuaciones no lineales. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5602"
+    },
+    {
+      "id": 2,
+      "title": "Modelado probabilístico de los sismos que afectan a la ciudad de Cumaná, Venezuela",
+      "title_en": "Probabilistic modeling of the earthquakes that affect the city of Cumaná, Venezuela",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Andrés A. Velásquez Gutiérrez",
+          "email": "anve6894@gmail.com",
+          "university": "Liceo Humberto Fernández M.",
+          "department": "Ministerio de Educación",
+          "location": "Venezuela",
+          "orcid": "https://orcid.org/0000-0002-5074-3350"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N2_2021/Velasquez",
+      "pdf": "/Articulos/V21/N2_2021/Velasquez/V21_n2_Velasquez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5603",
+      "received": "21 abril 2020",
+      "accepted": "10 octubre 2020",
+      "abstract_es": "En esta investigación, partiendo de un conjunto de datos sobre sismos que han impactado la ciudad de Cumaná, Venezuela, se realiza un modelaje probabilístico para determinar las zonas sismogénicas que afectan a esta urbe. Se utiliza la estadística de valores extremos para estudiar series de datos que exceden cierto umbral. Estas series están contenidas en un catálogo tomado de una investigación previa derivado de los registros instrumentales del Centro de Sismología de la Universidad de Oriente, de la Fundación Venezolana de Investigaciones Científicas (FUNVISIS), del National Earthquake Information Center (NEIC) y del United States Geological Survey (USGS). Se dividieron los datos según su profundidad focal; luego utilizando la densidad sísmica, la geología y la ocurrencia de sismos históricos se identificaron las zonas sismogénicas y utilizando la ley de recurrencia de Gutenberg-Ritcher se estiman los parámetros necesarios para obtener las funciones de densidad y de distribución de probabilidad asociadas.",
+      "abstract_en": "In this research, based on a set of data on earthquakes that have impacted the city of Cumaná, Venezuela, a probabilistic modeling is carried out to determine the seismogenic zones that affect this city. Extreme value statistics are used to study data series that exceed a certain threshold. These series are contained in a catalog taken from a previous research derived from the instrumental records of the Seismology Center of the University of Oriente, the Venezuelan Foundation for Scientific Research (FUNVISIS), the National Earthquake Information Center (NEIC) and the United States Geological Survey (USGS). The data were divided according to their focal depth; then, using the seismic density, the geology and the occurrence of historical earthquakes, the seismogenic zones were identified and using the Gutenberg-Ritcher recurrence law, the parameters necessary to obtain the associated density and probability distribution functions were estimated.",
+      "abstract_pt": "Nesta pesquisa, a partir de um conjunto de dados sobre sismos que impactaram a cidade de Cumaná, Venezuela, realiza-se uma modelagem probabilística para determinar as zonas sismogênicas que afetam esta cidade. Utiliza-se a estatística de valores extremos para estudar séries de dados que excedem um determinado limiar. Essas séries estão contidas em um catálogo proveniente de uma pesquisa prévia, derivado dos registros instrumentais do Centro de Sismologia da Universidade de Oriente, da Fundação Venezuelana de Investigações Científicas (FUNVISIS), do National Earthquake Information Center (NEIC) e do United States Geological Survey (USGS). Os dados foram divididos segundo sua profundidade focal; posteriormente, utilizando a densidade sísmica, a geologia e a ocorrência de sismos históricos, identificaram-se as zonas sismogênicas e, utilizando a lei de recorrência de Gutenberg-Ritcher, estimaram-se os parâmetros necessários para obter as funções de densidade e de distribuição de probabilidade associadas.",
+      "keywords_es": [
+        "sismos",
+        "probabilidad",
+        "umbral",
+        "excedencia",
+        "zonas sismogénicas"
+      ],
+      "keywords_en": [
+        "earthquakes",
+        "probability",
+        "threshold",
+        "exceedance",
+        "seismogenic zones"
+      ],
+      "keywords_pt": [
+        "sismos",
+        "probabilidade",
+        "limiar",
+        "excedência",
+        "zonas sismogênicas"
+      ],
+      "citation": "Velásquez Gutiérrez, A. A. (2021). Modelado probabilístico de los sismos que afectan a la ciudad de Cumaná, Venezuela. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5603"
+    },
+    {
+      "id": 3,
+      "title": "¿Por qué en ocasiones los resultados de las encuestas de opinión se alejan de la realidad? Un análisis con escenarios en Python",
+      "title_en": "Why are opinion polls sometimes far from reality? An analysis with scenarios in Python",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Francisco Benavides Murillo",
+          "email": "francisco.benavides.murillo@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-1991-3670"
+        },
+        {
+          "name": "Byron Jiménez Oviedo",
+          "email": "byron.jimenez.oviedo@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5585-8739"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N2_2021/Benavides",
+      "pdf": "/Articulos/V21/N2_2021/Benavides/V21_n2_Benavides.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5604",
+      "received": "4 Abril 2020",
+      "accepted": "20 noviembre 2020",
+      "abstract_es": "Antes de la segunda ronda de las elecciones presidenciales costarricenses del año 2018 en Costa Rica, se realizaron varias encuestas de opinión con el fin de evaluar las preferencias del electorado. Las encuestadoras en Costa Rica indicaban, en algunos casos, un empate técnico entre el candidato de Restauración Nacional y el del Partido Acción Ciudadana, y en otros casos una clara preferencia por el primero. El resultado final de las elecciones fue muy diferente al de estos estudios, y el triunfo del candidato del partido Acción Ciudadana fue claro y totalmente alejado de los márgenes de error asociados con la mayoría de los resultados obtenidos por las empresas encuestadoras. A raíz de esto, una pregunta natural surge: ¿por qué fallan las encuestas electorales? Uno de los argumentos utilizados es que las encuestas fueron realizadas con al menos una semana de antelación a las votaciones, y la opinión del electorado cambió en ese tiempo. En el presente trabajo se plantean situaciones hipotéticas de posibles escenarios en los que el sesgo de las encuestas se puede presentar, así como una metodología para su detección. Se analiza, en particular, la tasa de respuesta de los encuestados y su influencia en las estimaciones de la encuesta. El hecho es que si los que apoyan a un determinado partido tienen una tendencia generalizada de no responder una encuesta, entonces los resultados de ésta serán sesgados, sin importar el momento en que se hagan las entrevistas. En este trabajo, los escenarios sintéticos son simulados computacionalmente utilizando Python por su interés didáctico. También se simulan métodos de ponderación para compensar estas deficiencias. Este artículo pretende abrir un espacio didáctico de discusión de los aspectos técnicos, matemáticos y computacionales de las encuestas de opinión nacionales, así como producir un escenario sintético computacional que pueda derribar algunos mitos populares frecuentes, como el mito de que sólo mil personas encuestadas no son suficientes para obtener una representación significativa de la opinión del electorado.",
+      "abstract_en": "Before the runoff election that took place in Costa Rica in 2018, several opinion public polls were executed in order to survey the electorate tendencies. The poll companies that made these surveys showed a technical draw between both candidates or, in other cases, a clear advantage for the “Restauración Nacional” candidate over the “Acción Ciudadana” candidate. Opposed to this, the final election result gave the “Acción Ciudadana” candidate a clear win, with an advantage that was considerably larger than the error percentage that all polls estimated. Considering this, a natural question can be asked: why do polls fail? One of the answers provided by the poll’s companies was that they were not allowed to make surveys until one week before the election, and the electorate opinion changes with time. In the present work we give a series of hypothetical scenarios in which polls may fails, and a methodology to detect these biased results. Particularly, we analyze the electorate’s polls answer rate and its influence in the polls estimates. In fact, if the supporters of a given candidate don’t want to answer a poll survey, the poll’s results will be biased, independently of the time in which it was made. In this work, we create these scenarios using Python and we also propose alternate weighing methods to compensate these biases. We pretend to open a discussion in poll’s results that take into account technical, mathematical and computer simulation aspects that are not generally taken into account in Costa Rican’s public opinion surveys and avoid myths such as the sample size is unable to predict the entire population preferences.",
+      "abstract_pt": "Antes do segundo turno das eleições presidenciais costarriquenhas de 2018 na Costa Rica, foram realizadas várias pesquisas de opinião com o objetivo de avaliar as preferências do eleitorado. As empresas de pesquisa indicavam, em alguns casos, um empate técnico entre o candidato do Restauración Nacional e o do Partido Acción Ciudadana, e em outros casos uma clara preferência pelo primeiro. O resultado final das eleições foi muito diferente desses estudos, e a vitória do candidato do Partido Acción Ciudadana foi clara e totalmente afastada das margens de erro associadas à maioria dos resultados obtidos pelas empresas de pesquisa. Diante disso, surge uma pergunta natural: por que as pesquisas eleitorais falham? Um dos argumentos utilizados é que as pesquisas foram realizadas com pelo menos uma semana de antecedência das votações, e a opinião do eleitorado mudou nesse intervalo. Neste trabalho, são apresentados cenários hipotéticos nos quais o viés das pesquisas pode ocorrer, bem como uma metodologia para sua detecção. Analisa-se, em particular, a taxa de resposta dos entrevistados e sua influência nas estimativas da pesquisa. O fato é que, se os apoiadores de um determinado partido têm uma tendência generalizada a não responder a uma pesquisa, então seus resultados serão enviesados, independentemente do momento em que as entrevistas sejam realizadas. Neste trabalho, os cenários sintéticos são simulados computacionalmente utilizando Python por seu interesse didático. Também são simulados métodos de ponderação para compensar essas deficiências. Este artigo pretende abrir um espaço didático de discussão dos aspectos técnicos, matemáticos e computacionais das pesquisas de opinião nacionais, bem como produzir um cenário sintético computacional que possa derrubar alguns mitos populares frequentes, como o de que apenas mil pessoas entrevistadas não são suficientes para obter uma representação significativa da opinião do eleitorado.",
+      "keywords_es": [
+        "Voto",
+        "escenarios",
+        "elecciones",
+        "encuestas",
+        "estadística",
+        "correlación"
+      ],
+      "keywords_en": [
+        "Vote",
+        "scenarios",
+        "elections",
+        "polls",
+        "statistics",
+        "correlation"
+      ],
+      "keywords_pt": [
+        "Voto",
+        "cenários",
+        "eleições",
+        "pesquisas",
+        "estatística",
+        "correlação"
+      ],
+      "citation": "Benavides Murillo, F., & Jiménez Oviedo, B. (2021). ¿Por qué en ocasiones los resultados de las encuestas de opinión se alejan de la realidad? Un análisis con escenarios en Python. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5604"
+    },
+    {
+      "id": 4,
+      "title": "Resolución de los problemas de optimización con restricciones mediante los métodos de penalización y del Lagrangiano aumentado",
+      "title_en": "Solving constraint optimization problems using the penalty and augmented Lagrangian methods",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Manuel Vázquez Mourazos",
+          "email": "manuelvazquezmourazos@gmail.com",
+          "university": "Universidad de Santiago de Compostela",
+          "department": "",
+          "location": "España (Melide, A Coruña)",
+          "orcid": "https://orcid.org/0000-0003-1166-9562"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N2_2021/Vazquez",
+      "pdf": "/Articulos/V21/N2_2021/Vazquez/V21_n2_Vazquez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5605",
+      "received": "24 abril 2020",
+      "accepted": "15 septiembre 2020",
+      "abstract_es": "En la resolución de los problemas de optimización con restricciones (también conocida con el nombre de programación matemática) se pueden establecer diversidad de algoritmos. Como la investigación en este campo es muy amplia, continuamente se están desarrollando nuevos métodos, cada vez más sofisticados, que permiten resolver este tipo de problemas. En este artículo se presentarán los métodos de penalización. Estos son los más intuitivos y permiten mostrar una introducción dentro de la resolución de este tipo de problemas. Se estudiarán sus propiedades y, luego, se procederá a su deducción, interpretación y demostración de su convergencia. Finalmente, se presentará el método del Lagrangiano aumentado. Este es un método que mejora a los anteriores y con una mayor velocidad de convergencia. Así mismo, este artículo supone una introducción a los algoritmos de resolución de problemas de optimización con restricciones, mostrando una iniciación a los métodos numéricos empleados en la programación matemática.",
+      "abstract_en": "In solving constrained optimization problems (also by the name of mathematical programming), a variety of algorithms can be established. As the research in this field is very extensive, new and increasingly sophisticated methods are continually being developed to solve this type of problem. In this article the methods of penalization will be presented. These are the most intuitive and allow to show an introduction within the resolution of this type of problem. Their properties will be studied, and then their deduction, interpretation and demonstration of their convergence will proceed. Finally, the augmented Lagrangian method will be presented. This is a method that improves on the previous ones and allows for greater and better convergence. Likewise, this article supposes an introduction to the optimization algorithms of constraint optimization, showing an introduction to the numerical methods used in mathematical programming.",
+      "abstract_pt": "Na resolução dos problemas de otimização com restrições (também conhecida como programação matemática), podem-se estabelecer diversos algoritmos. Como a pesquisa neste campo é muito ampla, novos métodos estão sendo continuamente desenvolvidos, cada vez mais sofisticados, que permitem resolver esse tipo de problema. Neste artigo serão apresentados os métodos de penalização. Estes são os mais intuitivos e permitem fornecer uma introdução à resolução desse tipo de problemas. Serão estudadas suas propriedades e, em seguida, proceder-se-á à sua dedução, interpretação e demonstração de sua convergência. Por fim, será apresentado o método do Lagrangiano aumentado. Este é um método que melhora os anteriores e apresenta maior velocidade de convergência. Da mesma forma, este artigo constitui uma introdução aos algoritmos de resolução de problemas de otimização com restrições, apresentando uma iniciação aos métodos numéricos utilizados na programação matemática.",
+      "keywords_es": [
+        "optimización con restricciones",
+        "penalización",
+        "penalización exterior",
+        "penalización interior",
+        "Lagrangiano aumentado",
+        "condiciones KKT"
+      ],
+      "keywords_en": [
+        "constraint optimization",
+        "penalty methods",
+        "simple penalty",
+        "interior point penalty",
+        "Augmented Lagrangian",
+        "KKT conditions"
+      ],
+      "keywords_pt": [
+        "otimização com restrições",
+        "penalização",
+        "penalização exterior",
+        "penalização interior",
+        "Lagrangiano aumentado",
+        "condições KKT"
+      ],
+      "citation": "Vázquez Mourazos, M. (2021). Resolución de los problemas de optimización con restricciones mediante los métodos de penalización y del Lagrangiano aumentado. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5605"
+    },
+    {
+      "id": 5,
+      "title": "Educación costarricense: relación entre los programas de Matemáticas y la política curricular",
+      "title_en": "Costa Rican Education: Relationship between Mathematics Programs and Curricular Policy",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Marianela Zumbado-Castro",
+          "email": "mazumbado@uned.ac.cr",
+          "university": "Universidad Estatal a Distancia",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5774-1884"
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N2_2021/Zumbado",
+      "pdf": "/Articulos/V21/N2_2021/Zumbado/V21_n2_Zumbado.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5606",
+      "received": "18 Marzo 2020",
+      "accepted": "30 Agosto 2020",
+      "abstract_es": "El artículo tiene como objetivo evidenciar la relación existente entre la metodología propuesta en los programas de Matemáticas y las dimensiones de la política curricular que están vigentes en Costa Rica. Para lograr este objetivo se plantean tres secciones. La primera consiste en un acercamiento a la estrategia metodológica planteada en los programas de matemáticas aprobados por el Consejo Superior de Educación (CSE) en el año 2012, incluyendo un ejemplo práctico de la primera etapa denominada “El aprendizaje del conocimiento”. En segundo lugar, se presenta una descripción de las dimensiones de la política curricular aprobada por el CSE en el año 2016 y, finalmente, la tercera sección muestra como se relacionan los programas de Matemáticas con tales dimensiones. Como parte de las consideraciones finales, se sugiere la importancia de que el docente comprenda cómo se relacionan la propuesta metodológica vigente para la enseñanza y el aprendizaje de las Matemáticas con las dimensiones de la política curricular, para potenciar, a través de los momentos de la clase, el logro de las expectativas del sistema educativo.",
+      "abstract_en": "The objective of the article is to show the relationship between the methodology proposed in the Mathematics programs and the dimensions of the curricular policy that are in force in Costa Rica. To achieve this objective, three sections are proposed. The first consists of an approach to the methodological strategy proposed in the mathematics programs approved by the Higher Council for Education (CSE) in 2012, including a practical example of the first stage called “Learning knowledge”. Secondly, a description of the dimensions of the curricular policy approved by the CSE in 2016 is presented and, finally, the third section shows how the Mathematics programs are related to these dimensions. As part of the final considerations, it is suggested that the teacher understand how the current methodological proposal for teaching and learning Mathematics is related to the dimensions of curricular policy, to enhance, through the moments of class, achieving the expectations of the educational system.",
+      "abstract_pt": "O artigo tem como objetivo evidenciar a relação existente entre a metodologia proposta nos programas de Matemática e as dimensões da política curricular vigentes na Costa Rica. Para alcançar esse objetivo, são apresentadas três seções. A primeira consiste em uma aproximação à estratégia metodológica proposta nos programas de matemática aprovados pelo Conselho Superior de Educação (CSE) em 2012, incluindo um exemplo prático da primeira etapa denominada “Aprendizagem do conhecimento”. Em segundo lugar, apresenta-se uma descrição das dimensões da política curricular aprovada pelo CSE em 2016 e, por fim, a terceira seção mostra como os programas de Matemática se relacionam com tais dimensões. Como parte das considerações finais, sugere-se a importância de que o docente compreenda como a proposta metodológica vigente para o ensino e a aprendizagem da Matemática se relaciona com as dimensões da política curricular, a fim de potencializar, por meio dos momentos da aula, o alcance das expectativas do sistema educacional.",
+      "keywords_es": [
+        "Enseñanza de las matemáticas",
+        "educación secundaria",
+        "política curricular",
+        "estrategia de enseñanza",
+        "resolución de problemas",
+        "educación costarricense"
+      ],
+      "keywords_en": [
+        "Mathematics education",
+        "secondary education",
+        "curricular policy",
+        "teaching strategies",
+        "problem solving",
+        "Costa Rican education"
+      ],
+      "keywords_pt": [
+        "ensino da matemática",
+        "educação secundária",
+        "política curricular",
+        "estratégia de ensino",
+        "resolução de problemas",
+        "educação costarriquenha"
+      ],
+      "citation": "Zumbado-Castro, M. (2021). Educación costarricense: relación entre los programas de Matemáticas y la política curricular. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5606"
+    },
+    {
+      "id": 6,
+      "title": "Desarrollo histórico-epistemológico del álgebra: evolución hacia distintos significados",
+      "title_en": "Historical-epistemological development of algebra: its evolution toward different meanings",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Cristian Mejías",
+          "email": "cristian.mejias@upla.cl",
+          "university": "Universidad de Playa Ancha",
+          "department": "",
+          "location": "San Felipe. Chile",
+          "orcid": "https://orcid.org/0000-0002-4306-2864"
+        },
+        {
+          "name": "Ángel Alsina",
+          "email": "angel.alsina@udg.edu",
+          "university": "Universidad de Girona",
+          "department": "",
+          "location": "Girona. España",
+          "orcid": "https://orcid.org/0000-0001-8506-1838"
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V21/N2_2021/Mejias",
+      "pdf": "/Articulos/V21/N2_2021/Mejias/V21_n2_Mejias.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5607",
+      "received": "11 octubre 2019",
+      "accepted": "15 Setiembre 2020",
+      "abstract_es": "En este artículo se realiza una revisión del desarrollo histórico-epistemológico del álgebra. Indagamos acerca de su surgimiento desde la prehistoria hasta tiempos actuales; examinamos los aportes de la cultura egipcia, babilónica y china, entre otras, junto con un análisis del impacto que realizaron los árabes y los griegos en esta materia; y se muestra el tránsito hacia la consolidación del álgebra elemental, lineal, multilineal, homológica, conmutativa, no conmutativa y Booleana. Considerando estos antecedentes, presentamos una primera aproximación hacia una teoría del álgebra que considera distintas representaciones de ella, como es el significado intuitivo, clásico y matemático-axiomático.",
+      "abstract_en": "The following article offers an in -depth look into the historical-epistemological development of algebra. Is also presents a study which encompasses its emergence, dated from pre-history to its evolution in current times. The contribution of the Egyptian, Babylonian and Chinese cultures, among others will be examined, along with an analysis of the impact that Arabs and Greeks have had, in the matter. From this point on, the transition towards the consolidation of elementary, lineal, multilinear, homological, commutative, noncommutative and Boolean algebra is also shown. Considering our previous ideas, a new approach that reshapes the algebraic theory and considers different meanings such as the intuitive, classical and mathematics-axiomatic ones, will be presented.",
+      "abstract_pt": "Neste artigo realiza-se uma revisão do desenvolvimento histórico-epistemológico da álgebra. Investiga-se seu surgimento desde a pré-história até os tempos atuais; examinam-se as contribuições das culturas egípcia, babilônica e chinesa, entre outras, juntamente com uma análise do impacto que árabes e gregos tiveram nesse campo; e apresenta-se a transição para a consolidação da álgebra elementar, linear, multilinear, homológica, comutativa, não comutativa e Booleana. Considerando esses antecedentes, apresenta-se uma primeira aproximação a uma teoria da álgebra que contempla diferentes representações, como os significados intuitivo, clássico e matemático-axiomático.",
+      "keywords_es": [
+        "Álgebra",
+        "tipos de álgebra",
+        "significados del álgebra",
+        "conexiones matemáticas",
+        "historia de la matemática"
+      ],
+      "keywords_en": [
+        "Algebra",
+        "types of algebra",
+        "algebraic meanings",
+        "mathematical connections",
+        "history of mathematics"
+      ],
+      "keywords_pt": [
+        "Álgebra",
+        "tipos de álgebra",
+        "significados da álgebra",
+        "conexões matemáticas",
+        "história da matemática"
+      ],
+      "citation": "Mejías, C., & Alsina, Ángel. (2021). Desarrollo histórico-epistemológico del álgebra: evolución hacia distintos significados. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5607"
+    },
+    {
+      "id": 7,
+      "title": "Enseñanza y aprendizaje de la matemática para informática empleando documentos con un formato computable (CDFs): una percepción docente en la Universidad Nacional de Costa Rica",
+      "title_en": "Teaching and learning of mathematics for computer science using documents with a computable format (CDFs): a teaching perception at the National University of Costa Rica",
+      "volume": 21,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Enrique Vílchez Quesada",
+          "email": "enrique.vilchez.quesada@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-2571-5729"
+        },
+        {
+          "name": "Juan Félix Ávila Herrera",
+          "email": "delagarita@gmail.com",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-8864-9581"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V21/N2_2021/Vilchez",
+      "pdf": "/Articulos/V21/N2_2021/Vilchez/V21_n2_Vilchez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i2.5608",
+      "received": "25 mayo 2020",
+      "accepted": "5 octubre 2020",
+      "abstract_es": "La matemática básica entendida como un compendio de contenidos desarrollados en la educación secundaria, constituye un área de relevancia en la formación de cualquier futuro ingeniero. Esto es debido a que provee un andamiaje cognitivo necesario como un medio instrumental en materias vinculadas con carreras de ingeniería y particularmente, las de informática y ciencias de la computación. En el contexto de la carrera de Ingeniería en Sistemas de Información de la Universidad Nacional de Costa Rica (UNA), el rendimiento académico mostrado por la población estudiantil a este nivel devela importantes carencias conceptuales y algorítmicas. Ante este panorama, los autores del presente trabajo diseñaron ciento treinta aplicaciones para el estudio de: la lógica formal, la teoría de conjuntos, la teoría de funciones, los tópicos de inducción y progresiones, y la teoría de números. Se ha partido de la premisa de considerar la visualización matemática como un medio que facilita el tránsito de una percepción intuitiva al análisis, además de propiciar la comprensión conceptual y la construcción de conjeturas. El objetivo principal de este estudio residió en medir sobre un grupo de docentes de la Escuela de Matemática de la UNA, sus reacciones de significado y rescatar sus opiniones abiertas en cuanto a las ventajas, desventajas y oportunidades reales de uso sobre las aplicaciones CDFs diseñadas, como un recurso didáctico específicamente en la cátedra MAT030 Matemática para Informática que forma parte del currículo de la carrera Ingeniería en Sistemas de Información de esta institución de enseñanza superior. Las aplicaciones se programaron en el año 2019 en lenguaje Wolfram siendo publicadas en un formato de uso libre denominado CDF (Computable Document Format). Los resultados obtenidos con un enfoque cualitativo y cuantitativo se han centrado en rescatar las fortalezas, debilidades y recomendaciones sobre los CDFs creados para la cátedra MAT030.",
+      "abstract_en": "Basic mathematics understood as a compendium of contents developed in secondary education, constitutes an area of relevance in the training of any future engineer. This is since it provides a necessary cognitive scaffolding as an instrumental means in subjects related to engineering and particularly, informatics and computer science. In the context of the Information Systems Engineering degree at the National University of Costa Rica (UNA), the academic performance shown by the student population at this level reveals important conceptual and algorithmic deficiencies. Against this background, the authors of this work designed one hundred and thirty applications for the study of: formal logic, set theory, function theory, induction and progression topics, and number theory. It has been started from the premise of considering mathematical visualization as a means that facilitates the transition from an intuitive perception to analysis, in addition to promoting conceptual understanding and the construction of conjectures. The main objective of this study was to measure on a group of teachers of the School of Mathematics of the UNA, their reactions of meaning and rescue their open opinions regarding the advantages, disadvantages and real opportunities of use on the designed CDF applications, as a didactic resource specifically in the MAT030 Mathematics for Informatics chair that is part of the curriculum of the Information Systems Engineering career of this institution of higher education. The applications are programmed in the year 2019 in the Wolfram language and are published in a free-use format called CDF (Computable Document Format). The results obtained with a qualitative and quantitative approach have focused on rescuing the strengths, weaknesses and recommendations on the CDFs created for the MAT030 chair.",
+      "abstract_pt": "A matemática básica entendida como um compêndio de conteúdos desenvolvidos na educação secundária constitui uma área de relevância na formação de qualquer futuro engenheiro. Isso ocorre porque fornece um arcabouço cognitivo necessário como meio instrumental em disciplinas vinculadas às engenharias e, particularmente, à informática e às ciências da computação. No contexto do curso de Engenharia em Sistemas de Informação da Universidade Nacional da Costa Rica (UNA), o desempenho acadêmico apresentado pela população estudantil nesse nível revela importantes carências conceituais e algorítmicas. Diante desse panorama, os autores deste trabalho desenvolveram cento e trinta aplicações para o estudo de: lógica formal, teoria dos conjuntos, teoria das funções, tópicos de indução e progressões, e teoria dos números. Parte-se da premissa de considerar a visualização matemática como um meio que facilita a transição de uma percepção intuitiva para a análise, além de favorecer a compreensão conceitual e a construção de conjecturas. O objetivo principal deste estudo foi medir, em um grupo de docentes da Escola de Matemática da UNA, suas reações de significado e recolher suas opiniões abertas quanto às vantagens, desvantagens e oportunidades reais de uso das aplicações CDFs projetadas, como um recurso didático especificamente na disciplina MAT030 Matemática para Informática, que faz parte do currículo do curso de Engenharia em Sistemas de Informação dessa instituição de ensino superior. As aplicações foram programadas no ano de 2019 na linguagem Wolfram e publicadas em um formato de uso livre denominado CDF (Computable Document Format). Os resultados obtidos, com uma abordagem qualitativa e quantitativa, concentraram-se em identificar as fortalezas, debilidades e recomendações sobre os CDFs criados para a disciplina MAT030.",
+      "keywords_es": [
+        "CDFs",
+        "enseñanza",
+        "aprendizaje",
+        "visualización",
+        "matemática básica"
+      ],
+      "keywords_en": [
+        "CDFs",
+        "teaching",
+        "learning",
+        "visualization",
+        "basic mathematics"
+      ],
+      "keywords_pt": [
+        "CDFs",
+        "ensino",
+        "aprendizagem",
+        "visualização",
+        "matemática básica"
+      ],
+      "citation": "Vílchez Quesada, E., & Ávila Herrera, J. F. (2021). Enseñanza y aprendizaje de la matemática para informática empleando documentos con un formato computable (CDFs): una percepción docente en la Universidad Nacional de Costa Rica. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(2). https://doi.org/10.18845/rdmei.v21i2.5608"
+    }
+  ]
+}
