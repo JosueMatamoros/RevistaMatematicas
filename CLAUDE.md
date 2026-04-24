@@ -27,7 +27,7 @@ La convencion de anos para las carpetas en `public/Articulos/` y los archivos JS
 Verificar que:
 1. La carpeta en `public/Articulos/V{vol}/N{num}_{ano}/` exista y el ano sea correcto segun la regla.
 2. El archivo JSON `src/data/issues/V{vol}_N{num}_{ano}.json` use el ano correcto.
-3. Todos los `slug` dentro del JSON usen la ruta `Articulos/V{vol}/N{num}_{ano}/{Autor}`.
+3. Todos los `slug` dentro del JSON usen la ruta `Articulos/V{vol}/N{num}_{ano}/{Autor}` sin tildes.
 4. El `id` en `src/data/issues/index.js` coincida con el nombre del JSON.
 
 Si algo no cumple, reportar el error y ofrecer corregirlo.
@@ -36,9 +36,12 @@ Si algo no cumple, reportar el error y ofrecer corregirlo.
 Para cada articulo en el JSON del issue:
 1. El campo `pdf` debe tener el formato: `/Articulos/V{vol}/N{num}_{ano}/{Autor}/V{vol}_n{num}_{Autor}.pdf`
    - Ejemplo correcto: `/Articulos/V22/N2_2022/Jimenez/V22_n2_Jimenez.pdf`
+   - `{Autor}` es el **primer apellido del primer autor**, sin tildes ni caracteres especiales.
+   - Las carpetas y nombres de PDF **no deben tener tildes ni acentos** (ej: `Jimenez` no `Jiménez`, `Ramirez` no `Ramírez`).
 2. Verificar que el archivo PDF **existe fisicamente** en `public/` + la ruta del campo `pdf`.
 3. Si el nombre del PDF no sigue el formato `V{vol}_n{num}_{Autor}.pdf`, reportar y ofrecer renombrarlo.
 4. Si la ruta en el JSON no coincide con el archivo en disco, reportar y ofrecer corregirla.
+5. Si el nombre del autor en la carpeta o PDF tiene tildes, reportar y ofrecer renombrarlo sin tildes.
 
 **Paso 4 - Validar index.js:**
 Verificar que `src/data/issues/index.js`:

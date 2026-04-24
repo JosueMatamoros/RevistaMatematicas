@@ -1,0 +1,394 @@
+{
+  "issueTitle": "Volumen 21, Número 1, Setiembre 2020 - Febrero 2021",
+  "articles": [
+    {
+      "id": 1,
+      "title": "GeoGebra en 2D y 3D como recurso didáctico en un curso de integración múltiple: una experiencia de enseñanza-aprendizaje",
+      "title_en": "GeoGebra in 2D and 3D as a learning resource in a multi-integration course: a teaching-learning experience",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Bolívar A. Ramírez Santamaría",
+          "email": "bolivar.ramirez@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "Sección de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N1_2020/Ramirez",
+      "pdf": "/Articulos/V21/N1_2020/Ramirez/V21_n1_Ramirez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5341",
+      "received": "16 junio 2019",
+      "accepted": "10 marzo 2020",
+      "abstract_es": "El presente artículo tiene como finalidad exponer una experiencia de enseñanza-aprendizaje sobre el uso de GeoGebra, en dos y tres dimensiones, como un recurso didáctico para estudiar temas relacionados con integración múltiple. Para ello, se usó este software educativo en las clases y actividades de evaluación en un grupo del curso Principios de Análisis II, de la carrera de Bachillerato y Licenciatura de la Enseñanza de la Matemática, de la Sede Occidente de la Universidad de Costa Rica. Se utilizaron diferentes técnicas de recolección de información como exámenes parciales, cuestionarios y guías de observación. Se llega a la conclusión principal de que el uso de GeoGebra realmente promueve la motivación y la comprensión de los educandos en el estudio de temas sobre integración en varias variables.",
+      "abstract_en": "The purpose of this research paper is to present a teaching and learning experience on the use of GeoGebra, in two and three dimensions, as a didactic resource used to study topics related to multiple integration. This educational software was used in classes and evaluation activities in a group of the course Principles of Analysis II, for the Bachillerato and Licenciatura in Mathematics Teaching of the University of Costa Rica, Sede de Occidente. Different information collection techniques were used such as partial exams, questionnaires and observation guides. The main conclusion is that GeoGebra promotes the motivation and understanding of the learners in the study of topics about to integration in several variables.",
+      "abstract_pt": "O presente artigo tem como finalidade expor uma experiência de ensino-aprendizagem sobre o uso do GeoGebra, em duas e três dimensões, como um recurso didático para estudar temas relacionados com integração múltipla. Para isso, usou-se este software educativo nas aulas e atividades de avaliação em um grupo do curso Princípios de Análise II, da carreira de Bacharelado e Licenciatura em Ensino da Matemática, da Sede Ocidente da Universidade da Costa Rica. Utilizaram-se diferentes técnicas de coleta de informações, como exames parciais, questionários e guias de observação. Chega-se à conclusão principal de que o uso do GeoGebra realmente promove a motivação e a compreensão dos educandos no estudo de temas sobre integração em várias variáveis.",
+      "keywords_es": [
+        "GeoGebra",
+        "enseñanza",
+        "aprendizaje",
+        "recurso didáctico",
+        "integración múltiple"
+      ],
+      "keywords_en": [
+        "GeoGebra",
+        "teaching",
+        "learning",
+        "didactic resource",
+        "multiple integration"
+      ],
+      "keywords_pt": ["GeoGebra",
+"ensino",
+"aprendizagem",
+"recurso didático",
+"integração múltipla"],
+      "citation": "Ramírez Santamaría, B. A. (2021). GeoGebra en 2D y 3D como recurso didáctico en un curso de integración múltiple: una experiencia de enseñanza-aprendizaje. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5341]"
+    },
+
+    {
+      "id": 2,
+      "title": "Construcción de una escala sobre creencias de docentes de educación media acerca de la reforma de la educación matemática en Costa Rica",
+      "title_en": "Construction of a scale on beliefs of high school teachers about the reform of mathematics education in Costa Rica",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Carlos A. Monge Madriz",
+          "email": "camonge@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Natalie Reyes Riotte",
+          "email": "natyreyes.88@gmail.com",
+          "university": "Colegio San Antonio de Padua",
+          "department": "",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Luis G. Meza-Cascante",
+          "email": "gemeza@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N1_2020/Monge",
+      "pdf": "/Articulos/V21/N1_2020/Monge/V21_n1_Monge.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5342",
+      "received": "12 mayo 2019",
+      "accepted": "10 marzo 2020",
+      "abstract_es": "Se presentan los resultados de elaborar y validar una escala tipo Likert para la medición de las creencias de los docentes de la educación media sobre los programas de estudio de matemática aprobados por el Consejo Superior de Educación de Costa Rica en el año 2012, como un componente del proyecto de investigación “Reforma de la educación matemática en Costa Rica. Evaluación de avance a tres años de aplicación y sistemas de creencias de los profesores sobre la reforma” (REMEYC). La versión preliminar de la escala se sometió a un proceso de validación de contenido mediante la técnica de juicio de expertos, con la participación de especialistas en matemática educativa de la Escuela de Matemática del Instituto Tecnológico de Costa Rica. Posteriormente se realizó una prueba piloto con la participación de 51 docentes de matemática de colegios públicos. Con los datos recabados se realizó un estudio de las propiedades psicométricas de la escala, mediante el cálculo del índice de discriminación de los ítems, el análisis de la unidimensionalidad empleando técnicas del análisis factorial y el establecimiento de la confiabilidad aplicando la técnica del alfa de Cronbach. Con base en los resultados del estudio psicométrico se conformó la versión definitiva de la escala integrada por 20 ítems.",
+      "abstract_en": "The results of preparing and validating a Likert-type scale for measuring the beliefs of secondary school teachers on the math study programs approved by the Higher Education Council of Costa Rica in 2012 are presented as a component of the research project “Mathematical education reform in Costa Rica. Evaluation of progress after three years of its application and belief systems of teachers on the reform” (REMEYC). The preliminary version of the scale was subjected to a content validation process through the technique of expert judgment, with the participation of specialists in educational mathematics from the School of Mathematics of the Technological Institute of Costa Rica. Subsequently, a pilot test was carried out with the participation of 51 mathematics teachers from public schools. With the data collected, a study of the psychometric properties of the scale was carried out, by calculating the index of discrimination of the items, the analysis of the unidimensionality using techniques of factor analysis and the establishment of reliability by applying the Cronbach’s alpha technique. Based on the results of the psychometric study, the final version of the scale consisting of 20 items was formed.",
+      "abstract_pt": "Apresentam-se os resultados da elaboração e validação de uma escala tipo Likert para a medição das crenças dos docentes do ensino médio sobre os programas de estudo de matemática aprovados pelo Conselho Superior de Educação da Costa Rica no ano de 2012, como um componente do projeto de pesquisa 'Reforma da educação matemática na Costa Rica. Avaliação de avanço a três anos de aplicação e sistemas de crenças dos professores sobre a reforma' (REMEYC). A versão preliminar da escala submeteu-se a um processo de validação de conteúdo mediante a técnica de julgamento de especialistas, com a participação de especialistas em matemática educativa da Escola de Matemática do Instituto Tecnológico da Costa Rica. Posteriormente, realizou-se um teste piloto com a participação de 51 docentes de matemática de escolas públicas. Com os dados coletados, realizou-se um estudo das propriedades psicométricas da escala, mediante o cálculo do índice de discriminação dos itens, a análise da unidimensionalidade empregando técnicas de análise fatorial e o estabelecimento da confiabilidade aplicando a técnica do alfa de Cronbach. Com base nos resultados do estudo psicométrico, conformou-se a versão definitiva da escala, integrada por 20 itens.",
+      "keywords_es": [
+        "instrumento de medición",
+        "creencias de los docentes",
+        "reforma educativa",
+        "educación matemática"
+      ],
+      "keywords_en": [
+        "measuring instrument",
+        "teachers’ beliefs",
+        "educational reform",
+        "mathematical education"
+      ],
+      "keywords_pt": ["instrumento de medição",
+"crenças dos docentes",
+"reforma educativa",
+"educação matemática"],
+      "citation": "Monge Madriz, C. A., Reyes Riotte, N., & Meza-Cascante, L. G. (2021). Construcción de una escala sobre creencias de docentes de educación media acerca de la reforma de la educación matemática en Costa Rica. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5342]"
+    },
+
+     {
+      "id": 3,
+      "title": "Uso de la Continuidad en la resolución de inecuaciones",
+      "title_en": "Use of Continuity in solving inequalities",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Giovanni Sanabria Brenes",
+          "email": "gsanabria@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica-Universidad de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N1_2020/Sanabria",
+      "pdf": "/Articulos/V21/N1_2020/Sanabria/V21_n1_Sanabria.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5343",
+      "received": "21 mayo 2019",
+      "accepted": "28 mayo 2020",
+      "abstract_es": "Por lo general, en un curso usual de Cálculo Diferencial se requiere resolver una serie de inecuaciones, principalmente en aplicaciones de la derivada, para determinar la monotonía o concavidad de una función. Sin embargo, si bien previamente a derivación se estudia continuidad, pocas veces se suele hacer uso de la continuidad para resolver las inecuaciones. El presente trabajo esboza una forma de hacer uso de la continuidad en la resolución de inecuaciones: el método analítico.",
+      "abstract_en": "In general, in a usual Differential Calculus course, it is required to solve a series of inequalities, mainly in applications of the derivative, to determine the monotony or concavity of a function. However, although continuity is studied prior to referral, continuity is rarely used to resolve inequalities. The present work outlines a way to make use of continuity in solving inequalities: the analytical method.",
+      "abstract_pt": "Em geral, em um curso comum de Cálculo Diferencial, é necessário resolver uma série de inequações, principalmente em aplicações da derivada, para determinar a monotonia ou concavidade de uma função. No entanto, embora a continuidade seja estudada antes da derivação, raramente se costuma fazer uso da continuidade para resolver as inequações. O presente trabalho esboça uma forma de fazer uso da continuidade na resolução de inequações: o método analítico.",
+      "keywords_es": [
+        "continuidad",
+        "inecuaciones",
+        "método analítico vs el método algebraico"
+      ],
+      "keywords_en": [
+        "continuity",
+        "inequalities",
+        "analytical method vs. algebraic method"
+      ],
+      "keywords_pt": ["continuidade",
+"inequações",
+"método analítico vs. método algébrico"],
+      "citation": "Sanabria Brenes, G. (2021). Uso de la Continuidad en la resolución de inecuaciones. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5343]"
+    },
+
+     {
+      "id": 4,
+      "title": "Clasificaciones y construcción del concepto de discontinuidad puntual.",
+      "title_en": "Classifications and construction of the concept of punctual discontinuity",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Otilio B. Mederos",
+          "email": "omederosa@gmail.com",
+          "university": "Universidad Autónoma de Coahuila",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Carlos Negrón",
+          "email": "carlos.negron@desoft.cu",
+          "university": "Universidad de Holguín",
+          "department": "",
+          "location": "Cuba",
+          "orcid": ""
+        },
+        {
+          "name": "José L. Sánchez",
+          "email": "jlsanchezsantiesteban@gmail.com",
+          "university": "Universidad Autónoma de Guerrero",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "José M. Sigarreta",
+          "email": "jlsanchezsantiesteban@gmail.com",
+          "university": "Universidad Autónoma de Guerrero",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N1_2020/Mederos",
+      "pdf": "/Articulos/V21/N1_2020/Mederos/V21_n1_Mederos.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5344",
+      "received": "5 noviembre 2019",
+      "accepted": "5 abril 2020",
+      "abstract_es": "En este trabajo se construye una organización del conocimiento escolar para la formación de los conceptos de continuidad y discontinuidad puntual, y de conceptos subordinados al concepto de discontinuidad puntual. Se utilizan con este objetivo, como herramienta, la operación clasificación de conceptos, sus reglas y tareas didácticas. Se realizan seis clasificaciones del concepto de discontinuidad puntual. La organización construida asociada a los contenidos escolares de continuidad y discontinuidad puntual puede utilizarse total o parcialmente según los requerimientos del programa en donde se aplique.",
+      "abstract_en": "An organization of school knowledge for the formation of concepts of continuity and discontinuity at a point, and of concepts subordinate to the concept of discontinuity at a point is constructed in this paper. It is used for this purpose, as a tool, the operation classification of concepts, it rules and didactic tasks. Six classifications related to concepts in study were performed. The organization built can be used whole or in part according to the requirements of the program where applicable.",
+      "abstract_pt": "Neste trabalho, constrói-se uma organização do conhecimento escolar para a formação dos conceitos de continuidade e descontinuidade pontual, e de conceitos subordinados ao conceito de descontinuidade pontual. Utilizam-se com este objetivo, como ferramenta, a operação de classificação de conceitos, suas regras e tarefas didáticas. Realizam-se seis classificações do conceito de descontinuidade pontual. A organização construída, associada aos conteúdos escolares de continuidade e descontinuidade pontual, pode ser utilizada total ou parcialmente conforme os requisitos do programa onde for aplicada.",
+      "keywords_es": [
+        "Conocimiento escolar",
+        "clasificación de conceptos",
+        "tareas didácticas",
+        "continuidad y discontinuidad"
+      ],
+      "keywords_en": [
+        "School knowledge",
+        "classification of concepts",
+        "learning tasks",
+        "continuity and discontinuity"
+      ],
+      "keywords_pt": ["Conhecimento escolar",
+"classificação de conceitos",
+"tarefas didáticas",
+"continuidade e descontinuidade"],
+      "citation": "Mederos, O. B., Negrón, C., Sánchez, J. L., & Sigarreta, J. M. (2021). Clasificaciones y construcción del concepto de discontinuidad puntual. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5344]"
+    },
+
+    {
+      "id": 5,
+      "title": "Uso de recursos digitales por profesores de matemáticas en secundaria: un estudio exploratorio",
+      "title_en": "Use of digital resources by secondary mathematics teachers: an exploratory study",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José Padilla",
+          "email": "jlpadilla@uas.edu.mx",
+          "university": "Universidad Autónoma de Sinaloa",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Silvia Ward Bringas",
+          "email": "sevelynward@gmail.com",
+          "university": "Universidad Pedagógica Estadodel Estado de Sinaloa",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Santiago Inzunza Cazares",
+          "email": "sinzunza@uas.edu.mx",
+          "university": "Universidad Autónoma de Sinaloa",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V21/N1_2020/Padilla",
+      "pdf": "/Articulos/V21/N1_2020/Padilla/V21_n1_Padilla.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5345",
+      "received": "",
+      "accepted": "",
+      "abstract_es": "El presente estudio analiza el uso de recursos digitales por parte de profesores de matemáticas en educación secundaria. Se identificó que, aunque existe una amplia disponibilidad de herramientas tecnológicas, su uso en el aula es limitado y se orienta principalmente a actividades de tipo expositivo. Además, se evidencia una escasa formación docente en el uso pedagógico de la tecnología y una baja integración de estos recursos en la planificación didáctica. Los resultados muestran que los recursos digitales no sustituyen a los tradicionales, sino que se utilizan de manera complementaria, lo que limita su potencial para transformar el aprendizaje matemático.",
+      "abstract_en": "This study analyzes the use of digital resources by secondary mathematics teachers. It was found that, although there is a wide availability of technological tools, their use in the classroom is limited and mainly focused on expository activities. In addition, there is little teacher training in the pedagogical use of technology and low integration of these resources in lesson planning. The results show that digital resources do not replace traditional ones, but are used in a complementary way, limiting their potential to transform mathematics learning.",
+      "abstract_pt": "O presente estudo analisa o uso de recursos digitais por parte de professores de matemática no ensino médio. Identificou-se que, embora exista uma ampla disponibilidade de ferramentas tecnológicas, seu uso em sala de aula é limitado e orientado principalmente a atividades de tipo expositivo. Além disso, evidencia-se uma escassa formação docente no uso pedagógico da tecnologia e uma baixa integração desses recursos no planejamento didático. Os resultados mostram que os recursos digitais não substituem os tradicionais, mas são utilizados de maneira complementar, o que limita seu potencial para transformar a aprendizagem matemática.",
+      "keywords_es": [
+        "recursos digitales",
+        "educación matemática",
+        "docentes",
+        "tecnología educativa"
+      ],
+      "keywords_en": [
+        "digital resources",
+        "mathematics education",
+        "teachers",
+        "educational technology"
+      ],
+      "keywords_pt": ["recursos digitais",
+"educação matemática",
+"docentes",
+"tecnologia educativa"],
+      "citation": "Padilla, J. L., Ward, S. E., & Inzunza, S. (2021). Uso de recursos digitales por profesores de matemáticas en secundaria: un estudio exploratorio. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5345]"
+    },
+
+    {
+      "id": 6,
+      "title": "Ejemplos básicos de álgebra lineal con python",
+      "title_en": "Basic examples of linear algebra with python",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Byron Jiménez Oviedo",
+          "email": "byron.jimenez.oviedo@una.ac.cr",
+          "university": "Universidad Nacional",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Katalina Oviedo Rodríguez",
+          "email": "koviedo@utn.ac.cr",
+          "university": "Universidad Técnica Nacional",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V21/N1_2020/Jimenez",
+      "pdf": "/Articulos/V21/N1_2020/Jimenez/V21_n1_Jimenez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5340",
+      "received": "30 setiembre 2019",
+      "accepted": "15 marzo 2020",
+      "abstract_es": "En muchas ocasiones, durante el desarrollo de un curso, es realmente difícil (por la premura de abarcar los contenidos) dar ejemplos concretos y aplicaciones de la teoría que se ha desarrollado. Este material ofrece una presentación de algunas aplicaciones o visualizaciones que se pueden desarrollar con los contenidos vistos en curso de álgebra lineal básica, pasando por operaciones matriciales, transformaciones y vectores propios. Para el desarrollo de estos temas se utilizará el lenguaje de programación python. Por lo cual se recomienda un conocimiento básico en programación o en python.",
+      "abstract_en": "Many times during the development of a course it is really difficult (due to the rush to cover the contents) to give specific examples and applications of the theory that has been developed. This material offers a presentation of some applications or visualizations that can be developed with the contents in the basic course of linear algebra, going through matrix operations, transformations and eigenvalues and eigenvectors. The python programming language will be used to develop these topics. Therefore, basic knowledge in programming or python is recommended.",
+      "abstract_pt": "Em muitas ocasiões, durante o desenvolvimento de um curso, é realmente difícil (pela pressa em abordar os conteúdos) dar exemplos concretos e aplicações da teoria que foi desenvolvida. Este material oferece uma apresentação de algumas aplicações ou visualizações que podem ser desenvolvidas com os conteúdos vistos em um curso de álgebra linear básica, passando por operações matriciais, transformações e autovetores. Para o desenvolvimento destes temas, utilizar-se-á a linguagem de programação Python. Por isso, recomenda-se um conhecimento básico em programação ou em Python.",
+      "keywords_es": [
+        "Álgebra lineal",
+        "aplicaciones",
+        "transformaciones en imágenes",
+        "descomposición en valores singulares"
+      ],
+      "keywords_en": [
+        "Linear algebra",
+        "applications",
+        "transformations in images",
+        "singular values decomposition"
+      ],
+      "keywords_pt": ["Álgebra linear",
+"aplicações",
+"transformações em imagens",
+"decomposição em valores singulares"],
+      "citation": "Jiménez Oviedo, B., & Oviedo Rodríguez, K. (2021). Ejemplos básicos de álgebra lineal con python. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5340]"
+    },
+
+     {
+      "id": 7,
+      "title": "Frank Ramsey, una estrella fugaz en el universo matemático",
+      "title_en": "Frank Ramsey, a shooting star in the mathematical universe",
+      "volume": 21,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Vernor Arguedas T.",
+          "email": "vernor.arguedas@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V21/N1_2020/Arguedas",
+      "pdf": "/Articulos/V21/N1_2020/Arguedas/V21_n1_Arguedas.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v21i1.5356",
+      "received": "18 agosto 2020",
+      "accepted": "28 agosto 2020",
+      "abstract_es": "Se presentan diversos aspectos de la corta pero brillante vida de Frank Ramsey, cuyos logros siguen marcando pautas.",
+      "abstract_en": "Various aspects of the short but brilliant life of Frank Ramsey are presented, whose achievements continue to set the path.",
+      "abstract_pt": "Apresentam-se diversos aspectos da curta, porém brilhante, vida de Frank Ramsey, cujos feitos continuam a estabelecer padrões.",
+      "keywords_es": [
+        "Ramsey",
+        "Keynes",
+        "Wittgenstein",
+        "verdad",
+        "lógica de tipos"
+      ],
+      "keywords_en": [
+        "Ramsey",
+        "Keynes",
+        "Wittgenstein",
+        "true",
+        "type logic"
+      ],
+      "keywords_pt": ["Ramsey",
+"Keynes",
+"Wittgenstein",
+"verdade",
+"lógica de tipos"],
+      "citation": "Arguedas T., V. (2021). Frank Ramsey, una estrella fugaz en el universo matemático. <i>Revista Digital: Matemática, Educación e Internet, 21</i>(1). [https://doi.org/10.18845/rdmei.v21i1.5356]"
+    }
+
+  ]
+}
