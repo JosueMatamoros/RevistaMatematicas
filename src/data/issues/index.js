@@ -11,6 +11,7 @@ import V22_N2_2022 from "./V22_N2_2022.json";
 import V22_N1_2021 from "./V22_N1_2021.json";
 import V21_N2_2021 from "./V21_N2_2021.json";
 import V21_N1_2020 from "./V21_N1_2020.json";
+import V20_N2_2020 from "./V20_N2_2020.json";
 
 
 
@@ -98,5 +99,12 @@ export const issues = [
     number: 1,
     date: "Setiembre 2020 - Febrero 2021",
     data: V21_N1_2020,
+  },
+  {
+    id: "V20_N2_2020",
+    volume: 20,
+    number: 2,
+    date: "Marzo 2020 - Agosto 2020",
+    data: V20_N2_2020,
   }
 ];

@@ -1,0 +1,663 @@
+{
+  "issueTitle": "Volumen 20, Número 2, Marzo 2020 - Agosto 2020",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Análisis de la actividad algebraica implicada en el trabajo con las tablas estadísticas",
+      "title_en": "Analysis of the algebraic activity involved in working with statistical tables",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jocelyn D. Pallauta",
+          "email": "jocelyndiaz@correo.ugr.es",
+          "university": "Universidad de Granada",
+          "department": "Facultad de Educación",
+          "location": "España",
+          "orcid": ""
+        },
+        {
+          "name": "María M. Gea",
+          "email": "mmgea@ugr.es",
+          "university": "Universidad de Granada",
+          "department": "Facultad de Educación",
+          "location": "España",
+          "orcid": ""
+        },
+        {
+          "name": "Carmen Batanero",
+          "email": "batanero@ugr.es",
+          "university": "Universidad de Granada",
+          "department": "Facultad de Educación",
+          "location": "España",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Pallauta",
+      "pdf": "/Articulos/V20/N2_2020/Pallauta/V20_n2_Pallauta.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5036",
+      "received": "23 setiembre 2019",
+      "accepted": "10 diciembre 2019",
+      "abstract_es": "En este trabajo se analiza la actividad algebraica requerida en el manejo de las tablas estadísticas que se tienen en cuenta en los cursos 5º a 8º de la Educación Básica y en la educación Media en Chile (10 a 13 años). Para ello se utilizan los niveles de razonamiento algebraico descritos por Godino y sus colaboradores, y la clasificación de los tipos de tablas estadísticas sugerida por Lahanier-Reuter. La información obtenida es útil al profesor de Educación Básica o Secundaria para tener en cuenta el nivel de razonamiento algebraico requerido en el trabajo con los diferentes tipos de tablas y las actividades propuestas respecto a ellas.",
+      "abstract_en": "In this paper we analyse the algebraic activity required in the work with the statistical tables, which are taken into account in Basic Education in Chile grades 5th to 8th (10 to 13-year-olds). To achieve this goal, the levels of algebraic reasoning described by Godino and his collaborators, and the classification of the types of statistical tables suggested by Lahanier-Reuter are used. The information obtained is useful for teachers of these or upper levels who should take into account the level of algebraic reasoning required in the work with the different types of tables and the proposed activities related to them.",
+      "abstract_pt": "Neste trabalho, analisa-se a atividade algébrica requerida no manejo das tabelas estatísticas levadas em conta nos cursos de 5º a 8º ano do Ensino Fundamental e no Ensino Médio no Chile (10 a 13 anos). Para isso, utilizam-se os níveis de raciocínio algébrico descritos por Godino e seus colaboradores, e a classificação dos tipos de tipos de tabelas estatísticas sugerida por Lahanier-Reuter. A informação obtida é útil ao professor do Ensino Fundamental ou Médio para levar em conta o nível de raciocínio algébrico exigido no trabalho com os diferentes tipos de tabelas e as atividades propostas em relação a elas.",
+      "keywords_es": [
+        "Educación Básica",
+        "tablas estadísticas",
+        "niveles de razonamiento algebraico"
+      ],
+      "keywords_en": [
+        "Basic Education",
+        "statistical tables",
+        "levels of algebraic reasoning"
+      ],
+      "keywords_pt": ["Educação Básica",
+"tabelas estatísticas",
+"níveis de raciocínio algébrico"],
+      "citation": "Pallauta, J. D., Gea, M. M., & Batanero, C. (2020). Análisis de la actividad algebraica implicada en el trabajo con las tablas estadísticas. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5036]"
+    },
+
+     {
+      "id": 2,
+      "title": "Los infinitos de algunas series divergentes",
+      "title_en": "The infinites of some divergent series",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Diego Miramontes de León",
+          "email": "diego.miramontes@gmail.com",
+          "university": "Universidad Autónoma de Zacatecas",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Gerardo Miramontes de León",
+          "email": "gmiram@ieee.org",
+          "university": "Instituto Tecnológico Sanmiguelense de Estudios Superiores",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Miramontes",
+      "pdf": "/Articulos/V20/N2_2020/Miramontes/V20_n2_Miramontes.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5039",
+      "received": "17 Febrero 2019",
+      "accepted": "23 Agosto 2019",
+      "abstract_es": "En este trabajo interesa mostrar que dos series divergentes, aunque ambas tienen un número infinito de términos, al tener términos diferentes, su valor al infinito también difiere. En el documento se muestra que la serie armónica, dada por la suma del inverso de los números naturales, puede descomponerse en dos series. Una de ellas dada por la suma del inverso de los naturales de la forma 1/n^p con p > 1 y la otra, que será llamada subarmónica, formada por el resto de los términos que completan la serie armónica original. Se muestra que cada una de estas series es, una convergente y la otra divergente, obteniendo así la serie original divergente. Se incluye la demostración de la divergencia de las nuevas series, y como extensión de esta descomposición de la serie armónica, se hace una comparación de dos series subarmónicas las cuales, a pesar de ser ambas divergentes, difieren en su valor al infinito.",
+      "abstract_en": "This work aims to show that two divergent series, although both have an infinite number of terms, if they have different terms, their value to infinity also differs. In this document, it is shown that the harmonic series, given by the sum of the inverse of natural numbers, can be decomposed into two series; one of them is given by the sum of the inverse of the naturals in the form 1/n^p where p > 1 and the other, which will be called subharmonic, formed by the rest of the terms that complete the original harmonic series. It is shown that each of these series is one convergent and the other divergent, thus obtaining the original divergent series. It is included the demonstration of the divergence of the new series, and as an extension of this decomposition of the harmonic series, a comparison is made of two subharmonic series which, despite being both divergent, differ in their value to infinity.",
+      "abstract_pt": "Neste trabalho, busca-se mostrar que duas séries divergentes, embora ambas possuam um número infinito de termos, ao apresentarem termos diferentes, seu valor no infinito também difere. O documento mostra que a série harmônica, dada pela soma do inverso dos números naturais, pode ser decomposta em duas séries. Uma delas dada pela soma do inverso dos naturais da forma 1/n^p com p > 1 e a outra, que será chamada de sub-harmônica, formada pelo restante dos termos que completam a série harmônica original. Mostra-se que cada uma dessas séries é, uma convergente e a outra divergente, obtendo assim a série original divergente. Inclui-se a demonstração da divergência das novas séries e, como extensão desta decomposição da série harmônica, faz-se uma comparação de duas séries sub-harmônicas as quais, apesar de serem ambas divergentes, diferem em seu valor no infinito.",
+      "keywords_es": [
+        "Series infinitas",
+        "Divergencia",
+        "Infinito"
+      ],
+      "keywords_en": [
+        "Infinite series",
+        "Divergence",
+        "Infinity"
+      ],
+      "keywords_pt": ["Séries infinitas",
+"Divergência",
+"Infinito"],
+      "citation": "Miramontes de León, D., & Miramontes de León, G. (2020). Los infinitos de algunas series divergentes. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5039]"
+    },
+
+    {
+      "id": 3,
+      "title": "CDI m-learning. Cálculo diferencial e integral asistido por tecnología móvil: patrones de interacción y comunicación en el aula",
+      "title_en": "CDI m-learning. Differential and integral calculus assisted by mobile technology: interaction and communication patterns in the classroom",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Nuria Vanessa Figueroa-Flores",
+          "email": "nfigueroa@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Ivonne Sánchez-Fernández",
+          "email": "ivsanchez@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Luis Gerardo Meza-Cascante",
+          "email": "gemeza@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Figueroa",
+      "pdf": "/Articulos/V20/N2_2020/Figueroa/V20_n2_Figueroa.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5040",
+      "received": "27 junio 2019",
+      "accepted": "5 octubre 2019",
+      "abstract_es": "En este artículo se reportan los resultados de un proyecto de investigación que indaga sobre lo que ocurre en la dinámica del aula, en relación con los procesos de comunicación y de interacción, cuando se emplean metodologías que consideran el uso de tecnología móvil. Como objetivo general se pretendió evidenciar el papel que las y los estudiantes desempeñan en los procesos de aprendizaje, y el que perciben que les corresponde desarrollar, cuando se emplean metodologías que consideran el uso de ese tipo de tecnologías. Además, se estudió el papel que la docente desarrolla, y el que percibe que le corresponde desempeñar, en este tipo de contextos educativos.",
+      "abstract_en": "This paper reports the results of a research project about what happens in classroom dynamics related to communication and interaction processes using mobile technology methodologies. The first objective was to show the student’s role in the learning processes when using mobile technology methodologies and the one that they perceive to be developed. In addition, we studied the teacher’s role and the one that she perceives has to play in this educational context.",
+      "abstract_pt": "Neste artigo, relatam-se os resultados de um projeto de pesquisa que investiga o que ocorre na dinâmica da sala de aula, em relação aos processos de comunicação e de interação, quando se utilizam metodologias que consideram o uso de tecnologia móvel. Como objetivo geral, pretendeu-se evidenciar o papel que os estudantes desempenham nos processos de aprendizagem, e o que percebem que lhes cabe desenvolver, quando se utilizam metodologias que consideram o uso desse tipo de tecnologia. Além disso, estudou-se o papel que a docente desenvolve, e o que percebe que lhe cabe desempenhar, nesse tipo de contextos educativos.",
+      "keywords_es": [
+        "enseñanza asistida por iPad",
+        "enseñanza superior",
+        "m-learning",
+        "tecnología móvil"
+      ],
+      "keywords_en": [
+        "iPad assisted instruction",
+        "higher education",
+        "m-learning",
+        "mobile technology"
+      ],
+      "keywords_pt": ["ensino assistido por iPad",
+"ensino superior",
+"m-learning",
+"tecnologia móvel"],
+      "citation": "Figueroa-Flores, N. V., Sánchez-Fernández, I., & Meza-Cascante, L. G. (2020). CDI m-learning. Cálculo diferencial e integral asistido por tecnología móvil: patrones de interacción y comunicación en el aula. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5040]"
+    },
+
+    {
+      "id": 4,
+      "title": "Preferencias y habilidades vocacionales de las Ingenierías Ambiental, Forestal y Seguridad Laboral e Higiene Ambiental",
+      "title_en": "Vocational preferences and skills in Environmental Engineering, Forestry and Occupational Safety and Environmental Hygiene",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Alejandra Alfaro-Barquero",
+          "email": "alealfaro@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Departamento de Orientación y Psicología",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Sonia Chinchilla-Brenes",
+          "email": "schinchilla@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Departamento de Orientación y Psicología",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Alfaro",
+      "pdf": "/Articulos/V20/N2_2020/Alfaro/V20_n2_Alfaro.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5041",
+      "received": "23 enero 2019",
+      "accepted": "13 setiembre 2019",
+      "abstract_es": "Este estudio buscó definir el perfil vocacional de las Ingenierías en Seguridad Laboral e Higiene Ambiental, Forestal y Ambiental, para construir y aplicar un instrumento de preferencias vocacionales e identificar diferencias según carrera, sexo, rendimiento académico y satisfacción vocacional. Participaron 10 docentes y 373 estudiantes (media de edad 21.27 años, 67.51% mujeres). Se implementó una metodología mixta. En la fase cualitativa se elaboró el perfil vocacional. Para ello se aplicó el Instrumento de recolección de información sobre tareas, intereses y habilidades según carrera (Alfaro-Barquero y Chinchilla-Brenes, 2017) y se validó la información con grupos focales. En la fase cuantitativa, se aplicaron la escala de Evaluación de la Satisfacción Vocacional y la escala de habilidades del Instrumento de Tareas, intereses y habilidades (Alfaro-Barquero y Chinchilla-Brenes, 2016, 2017), dos escalas del SDS de Holland (1994) y se construyeron y aplicaron las escalas de tareas e intereses para Seguridad Laboral, Forestal y Ambiental. Se evaluaron las cualidades psicométricas de los instrumentos con estadísticas descriptivas y análisis factoriales, obteniéndose adecuados indicadores psicométricos en la mayoría de los casos. El análisis de varianza evidenció que los estudiantes con mayor satisfacción vocacional obtienen mejores puntuaciones en intereses, tareas y habilidades. Asimismo, se hallaron diferencias significativas según sexo, carrera y promedio ponderado.",
+      "abstract_en": "This study was developed with the aim to define the vocational profile of Occupational Safety and Environmental Hygiene Engineering, Forestry Engineering and Environmental Engineering, to build and apply a vocational preferences test, and also, identify differences according to career, sex and vocational satisfaction. In the sample participated 10 teachers and 373 students (average age 21.27 years, 67.51% women). A mixed methodology was implemented. In the qualitative phase, the vocational profile was elaborated. For this purpose the \"Instrumento de recolección de información sobre tareas, intereses y habilidades según carrera\" (Alfaro-Barquero and Chinchilla-Brenes, 2017) was applied. Then the information about vocational profile was validated with focus groups. In the quantitative phase, the \"Evaluación de la Satisfacción Vocacional\" scale and the skills scale taken of the \"Instrumento de Tareas, intereses y habilidades\" (Alfaro-Barquero and Chinchilla-Brenes, 2016, 2017), two scales of SDS (Holland, 1994) were applied, and also new scales for these professions were built and applied. The psychometric qualities of all instruments were evaluated with descriptive statistics and factor analysis, obtaining adequate psychometric indicators in the majority of cases. The analysis of variance showed that students with higher vocational satisfaction obtain better scores in interests, tasks and abilities. Likewise, significant differences were found according to sex, career and weighted average.",
+      "abstract_pt": "Este estudo buscou definir o perfil vocacional das Engenharias em Segurança do Trabalho e Higiene Ambiental, Florestal e Ambiental, para construir e aplicar um instrumento de preferências vocacionais e identificar diferenças conforme o curso, sexo, rendimento acadêmico e satisfação vocacional. Participaram 10 docentes e 373 estudantes (média de idade 21,27 anos, 67,51% mulheres). Implementou-se uma metodologia mista. Na fase qualitativa, elaborou-se o perfil vocacional. Para isso, aplicou-se o Instrumento de coleta de informações sobre tarefas, interesses e habilidades conforme o curso (Alfaro-Barquero e Chinchilla-Brenes, 2017) e validou-se a informação com grupos focais. Na fase quantitativa, aplicaram-se a escala de Avaliação da Satisfação Vocacional e a escala de habilidades do Instrumento de Tarefas, interesses e habilidades (Alfaro-Barquero e Chinchilla-Brenes, 2016, 2017), duas escalas do SDS de Holland (1994) e construíram-se e aplicaram-se as escalas de tarefas e interesses para Segurança do Trabalho, Florestal e Ambiental. Avaliaram-se as qualidades psicométricas dos instrumentos com estatísticas descritivas e análises fatoriais, obtendo-se indicadores psicométricos adequados na maioria dos casos. A análise de variância evidenciou que os estudantes com maior satisfação vocacional obtêm melhores pontuações em interesses, tarefas e habilidades. Além disso, encontraram-se diferenças significativas segundo sexo, curso e média ponderada.",
+      "keywords_es": [
+        "psicometría",
+        "satisfacción vocacional",
+        "tareas e intereses vocacionales",
+        "ingeniería"
+      ],
+      "keywords_en": [
+        "vocational preferences",
+        "vocational interests",
+        "vocational tasks",
+        "engineering"
+      ],
+      "keywords_pt": ["psicometria",
+"satisfação vocacional",
+"tarefas e interesses vocacionais",
+"engenharia"],
+      "citation": "Alfaro-Barquero, A., & Chinchilla-Brenes, S. (2020). Preferencias y habilidades vocacionales de las Ingenierías Ambiental, Forestal y Seguridad Laboral e Higiene Ambiental. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5041]"
+    },
+
+    {
+      "id": 5,
+      "title": "Actividades de Tablas Estadísticas en Textos Escolares de Matemáticas",
+      "title_en": "Statistical Table Activities in School Texts of Mathematics",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Audy Salcedo",
+          "email": "audy.salcedo@ucv.ve",
+          "university": "Universidad Central de Venezuela",
+          "department": "",
+          "location": "Venezuela",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Salcedo",
+      "pdf": "/Articulos/V20/N2_2020/Salcedo/V20_n2_Salcedo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5044",
+      "received": "17 abril 2019",
+      "accepted": "17 octubre 2019",
+      "abstract_es": "En este trabajo se analizan las actividades de tablas estadísticas de una colección textos escolares de Matemáticas. El texto escolar de Matemáticas es uno de los recursos que usan los docentes como una guía para la enseñanza y fuente de actividades para el estudiante, de allí la importancia de investigar sobre los libros. Se realizó un análisis de contenido para clasificar las actividades según el tipo de tabla, el rol que asume el estudiante cuando trabaja con la tabla y el nivel de lectura que se le exige en cada actividad de interpretación de tabla. Los resultados evidenciaron que todas las actividades de tablas en la primaria son de una entrada, mientras que en secundaria son de dos entradas. En cuanto al rol que asume el estudiante, las actividades son fundamentalmente para interpretar tablas, aunque solo se encuentran en dos grados. En primaria, las actividades exigen la lectura integral de la tabla, mientras que en secundaria, deben hacer lecturas parcial e integral de la tabla. En conjunto, no parece que las actividades de tablas estadísticas, de la colección analizada, puedan ayudar a los estudiantes a lograr una compresión adecuada de ese recurso de la estadística y con ello apoyar su formación estadística como ciudadano.",
+      "abstract_en": "In this paper we analyze the activities of statistical tables of a collection of textbooks of mathematics. The textbook of mathematics is one of the resources used by teachers as a guide for teaching and source of activities for the student, hence the importance of researching books. A content analysis was carried out to classify the activities according to the type of table, the role that the student assumes when working with the table and the level of reading required in each table interpretation activity. The results showed that all the activities of tables in primary are of one entry, while in secondary they are of two entries. As for the role of the student, it is fundamentally to interpret tables, although they are only in two grades. In primary, the activities demand the integral reading of the table, while in secondary, they must make partial and integral readings of the table. Overall, it does not seem that the activities of statistical tables of the analyzed collection can help students to achieve an adequate understanding of this statistical resource and thereby support their statistical training as citizens.",
+      "abstract_pt": "Neste trabalho, analisam-se as atividades de tabelas estatísticas de uma coleção de livros didáticos de Matemática. O livro didático de Matemática é um dos recursos que os docentes utilizam como guia para o ensino e fonte de atividades para o estudante, daí a importância de pesquisar sobre os livros. Realizou-se uma análise de conteúdo para classificar as atividades segundo o tipo de tabela, o papel que o estudante assume ao trabalhar com a tabela e o nível de leitura que lhe é exigido em cada atividade de interpretação de tabela. Os resultados evidenciaram que todas as atividades de tabelas no ensino fundamental (primária) são de entrada única, enquanto no ensino médio (secundária) são de dupla entrada. Quanto ao papel assumido pelo estudante, as atividades são fundamentalmente para interpretar tabelas, embora só sejam encontradas em dois anos escolares. No fundamental, as atividades exigem a leitura integral da tabela, enquanto no médio, devem realizar leituras parcial e integral da tabela. Em conjunto, não parece que as atividades de tabelas estatísticas da coleção analisada possam ajudar os estudantes a alcançar uma compreensão adequada desse recurso da estatística e, com isso, apoiar sua formação estatística como cidadão.",
+      "keywords_es": [
+        "Tabla estadística",
+        "libro de texto de matemáticas",
+        "actividades para el estudiante",
+        "formación estadística del ciudadano"
+      ],
+      "keywords_en": [
+        "Statistical table",
+        "Mathematics textbook",
+        "activities for the student",
+        "citizen’s statistical training"
+      ],
+      "keywords_pt": ["Tabela estatística",
+"livro didático de matemática",
+"atividades para o estudante",
+"formação estatística do cidadão"],
+      "citation": "Salcedo, A. (2020). Actividades de Tablas Estadísticas en Textos Escolares de Matemáticas. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5044]"
+    },
+
+    {
+      "id": 6,
+      "title": "Implementación de la reforma matemática en Costa Rica: una experiencia de capacitación docente en el uso de tecnología",
+      "title_en": "Implementation of the mathematical reform in Costa Rica: a teacher training experience in the use of technology",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Evelyn Agüero Calvo",
+          "email": "evaguero@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Adriana Solís Arguedas",
+          "email": "asolis@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N2_2020/Aguero",
+      "pdf": "/Articulos/V20/N2_2020/Aguero/V20_n2_Aguero.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5052",
+      "received": "5 de agosto 2019",
+      "accepted": "10 de agosto 2019",
+      "abstract_es": "Los nuevos programas de matemática para la educación primaria y secundaria de Costa Rica, aprobados en mayo de 2012 por el Consejo Superior de Educación, le dan un papel importante al uso de las tecnologías en el aula, ya que uno de sus ejes disciplinares es el uso inteligente y visionario de las tecnologías digitales. La Escuela de Matemática del Instituto Tecnológico de Costa Rica desarrolló en el 2018 un proyecto de extensión para colaborar con el Ministerio de Educación Pública en la implementación de la reforma educativa en matemática. En el proyecto participaron 72 docentes de primaria provenientes de 40 escuelas públicas de las regiones educativas de Cartago y Turrialba, quienes asistieron a sesiones de capacitación sobre el uso de tecnología para la enseñanza de la matemática. En este artículo se reportan los resultados de la experiencia, así como aspectos positivos y negativos del proceso de implementación de la reforma educativa manifestados por los docentes.",
+      "abstract_en": "The new Costa Rican math programs for elementary and high school levels approved in May 2012 by the Council of Higher Education emphasize the use of technology in the classroom as one of their disciplinary axes. The Math School of the Costa Rica Institute of Technology developed in 2018 an outreach project to support the Ministry of Public Education in implementing the math educational reform. The project involved 72 primary teachers from 40 public schools in Cartago and Turrialba, who attended training sessions on the use of technology in math teaching. This article reports the results of the experience, including positive and negative aspects of the reform implementation process as perceived by the teachers.",
+      "abstract_pt": "Os novos programas de matemática para o ensino fundamental e médio da Costa Rica, aprovados em maio de 2012 pelo Conselho Superior de Educação, conferem um papel importante ao uso das tecnologias em sala de aula, visto que um de seus eixos disciplinares é o uso inteligente e visionário das tecnologias digitais. A Escola de Matemática do Instituto Tecnológico da Costa Rica desenvolveu, em 2018, um projeto de extensão para colaborar com o Ministério da Educação Pública na implementação da reforma educativa em matemática. No projeto, participaram 72 professores do ensino fundamental provenientes de 40 escolas públicas das regiões educativas de Cartago e Turrialba, que frequentaram sessões de capacitação sobre o uso de tecnologia para o ensino da matemática. Neste artigo, relatam-se os resultados da experiência, bem como aspectos positivos e negativos do processo de implementação da reforma educativa manifestados pelos docentes.",
+      "keywords_es": [
+        "Enseñanza de la matemática",
+        "capacitación docente",
+        "educación primaria",
+        "tecnología"
+      ],
+      "keywords_en": [
+        "Math teaching",
+        "teacher training",
+        "elementary education",
+        "technology"
+      ],
+      "keywords_pt": ["Ensino de matemática",
+"capacitação docente",
+"ensino fundamental",
+"tecnologia"],
+      "citation": "Agüero Calvo, E., & Solís Arguedas, A. (2020). Implementación de la reforma matemática en Costa Rica: una experiencia de capacitación docente en el uso de tecnología. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5052]"
+    },
+
+     {
+      "id": 7,
+      "title": "Fórmulas de “Trigonometría Áurea” para las funciones Seno y Coseno",
+      "title_en": "Golden Trigonometry formulas for Sine and Cosine functions",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "George Braddock Stradtmann",
+          "email": "georgebraddock@gmail.com",
+          "university": "Colegio Universitario de Cartago",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Matemáticas",
+      "slug": "Articulos/V20/N2_2020/Braddock",
+      "pdf": "/Articulos/V20/N2_2020/Braddock/V20_n2_Braddock.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5046",
+      "received": "15 Febrero 2019",
+      "accepted": "15 Agosto 2019",
+      "abstract_es": "En este artículo, se define una nueva constante matemática (que llamamos β), cuyas propiedades junto con las del número áureo φ, permiten obtener expresiones algebraicas muy sencillas para las funciones trigonométricas seno y coseno evaluadas en diferentes ángulos. Se obtuvo una sencilla expresión para el área de un pentágono regular inscrito en un círculo de radio 1. Los cálculos de las fórmulas que nos dan el valor de las funciones trigonométricas, expresadas en función de las constantes φ y β, se resumen en dos cuadros al final del artículo. Los cuadros se crearon siguiendo un procedimiento análogo al utilizado por el astrónomo Ptolomeo, para hallar los valores numéricos de su famosa tabla de cuerdas, que fue documentado en el primer libro de su gran obra El Almagesto.",
+      "abstract_en": "In this paper, a new mathematical constant is defined (we called it β), whose properties along with the golden number’s properties, allow us to obtain very simple algebraic expressions for the trigonometric functions sine and cosine evaluated in different angles. We obtained a simple expression for the area of a regular pentagon inscribed within a circle with radio 1. The calculations of the formulas giving us the value of the trigonometric functions, expressed as a function of the constants φ and β, are summarized in two tables at the end of this paper. The tables were created following an analogous procedure as the one used by the astronomer Ptolemy, to find the numerical values of his famous table of chords, documented in the first book of his great work The Almagest.",
+      "abstract_pt": "Neste artigo, define-se uma nova constante matemática (que chamamos de β), cujas propriedades, junto com as do número áureo φ, permitem obter expressões algébricas muito simples para as funções trigonométricas seno e cosseno avaliadas em diferentes ângulos. Obteve-se uma expressão simples para a área de um pentágono regular inscrito em um círculo de raio 1. Os cálculos das fórmulas que nos dão o valor das funções trigonométricas, expressas em função das constantes φ e β, são resumidos em dois quadros ao final do artigo. Os quadros foram criados seguindo um procedimento análogo ao utilizado pelo astrônomo Ptolomeu para encontrar os valores numéricos de sua famosa tabela de cordas, que foi documentado no primeiro livro de sua grande obra, O Almagesto.",
+      "keywords_es": [
+        "trigonometría áurea",
+        "funciones trigonométricas",
+        "número áureo",
+        "sección áurea",
+        "pentágono",
+        "pentagrama",
+        "tabla de cuerdas de Ptolomeo"
+      ],
+      "keywords_en": [
+        "golden trigonometry",
+        "trigonometric functions",
+        "golden number",
+        "golden section",
+        "pentagon",
+        "pentagram",
+        "Ptolemy’s table of chords"
+      ],
+      "keywords_pt": ["trigonometria áurea",
+"funções trigonométricas",
+"número áureo",
+"secção áurea",
+"pentágono",
+"pentagrama",
+"tabela de cordas de Ptolomeu"],
+      "citation": "Stradtmann, G. B. (2020). Fórmulas de “Trigonometría Áurea” para las funciones Seno y Coseno. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5046]"
+    },
+
+    {
+      "id": 8,
+      "title": "Estadística computacional con Julia. Ventajas de su enseñanza en la universidad",
+      "title_en": "Computer statistics with Julia. Advantages of your teaching at the university",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Humberto Cuevas",
+          "email": "jesus.ca@chihuahua2.tecnm.mx",
+          "university": "Instituto Tecnológico de Chihuahua II / TecNM",
+          "department": "Profesor en Ciencias Básicas",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Gabriela Camacho-Ríos",
+          "email": "gabycamachorios@hotmail.com",
+          "university": "Instituto Tecnológico de Chihuahua II / TecNM",
+          "department": "Profesora en Informática",
+          "location": "México",
+          "orcid": ""
+        },
+        {
+          "name": "Cristina Solís",
+          "email": "csolismoreira@gmail.com",
+          "university": "Consultora-Productora Educativa",
+          "department": "",
+          "location": "Costa Rica-México",
+          "orcid": "https://doi.org/10.18845/rdmei.v20i2.5051"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V20/N2_2020/Cuevas",
+      "pdf": "/Articulos/V20/N2_2020/Cuevas/V20_n2_Cuevas.pdf",
+      "doi": "",
+      "received": "18 mayo 2019",
+      "accepted": "1 octubre 2019",
+      "abstract_es": "En este artículo se describen las características más representativas del lenguaje de programación Julia. Se hace énfasis en presentar algunos de los paquetes más importantes para cómputo estadístico y se examina su pertinencia de incorporar el uso del lenguaje en cursos de estadística en instituciones universitarias. Se revisa la importancia de utilizar pruebas estadísticas paramétricas, no paramétricas y robustas; posteriormente, se esboza un método para incorporar su empleo en la enseñanza.",
+      "abstract_en": "This article describes the most representative features of the Julia programming language. The emphasis is placed on presenting some of the most important packages for statistical computation and their relevance to incorporate the use of language in statistical courses in university institutions is reviewed. The calculation of parametric, no parametric and robust statistics test are reviewed; subsequently, one method is outlined to incorporate its use in the classroom.",
+      "abstract_pt": "Neste artigo, descrevem-se as características mais representativas da linguagem de programação Julia. Ênfase é dada à apresentação de alguns dos pacotes mais importantes para computação estatística e examina-se a pertinência de incorporar o uso da linguagem em cursos de estatística em instituições universitárias. Revisa-se a importância de utilizar testes estatísticos paramétricos, não paramétricos e robustos; posteriormente, esboça-se um método para incorporar seu emprego no ensino.",
+      "keywords_es": [
+        "estadística computacional",
+        "estadística robusta",
+        "educación estadística",
+        "lenguaje Julia"
+      ],
+      "keywords_en": [
+        "computational statistics",
+        "robust statistical",
+        "statistical education",
+        "Julia language"
+      ],
+      "keywords_pt": ["estatística computacional",
+"estatística robusta",
+"educação estatística",
+"linguagem Julia"],
+      "citation": "Cuevas, H., Camacho-Ríos, G., & Solís, C. (2020). Estadística computacional con Julia. Ventajas de su enseñanza en la universidad. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5051]"
+    },
+
+    {
+      "id": 9,
+      "title": "Sofía Korvin (Sofía Kovalevsky) (1850-1891) una heroína de las matemáticas.",
+      "title_en": "Sophia Korvin (Sophia Kovalevsky) (1850-1891) a heroine of mathematics",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Vernor Arguedas-Troyo",
+          "email": "vernor.arguedas@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V20/N2_2020/Arguedas",
+      "pdf": "/Articulos/V20/N2_2020/Arguedas/V20_n2_Arguedas.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5042",
+      "received": "1 de febrero 2019",
+      "accepted": "1 de marzo 2019",
+      "abstract_es": "Se analizan algunos aspectos de la vida de Sofía Korvin (Sofía Kovalevsky) en sus facetas como escritora, matemática, activista social y luchadora incansable por los derechos de las mujeres.",
+      "abstract_en": "Some aspects of the life of Sofía Korvin (Sofía Kovalevsky) in her facets as a writer, mathematician, social activist and tireless fighter for women’s rights are analyzed.",
+      "abstract_pt": "Analisam-se alguns aspectos da vida de Sofia Korvin (Sofia Kovalevskaya) em suas facetas como escritora, matemática, ativista social e lutadora incansável pelos direitos das mulheres",
+      "keywords_es": [
+        "Teorema de Cauchy-Kovalevskaya",
+        "péndulo de Kovalevskya",
+        "Comuna de Paris",
+        "Weierstrass",
+        "Mittag-Leffler"
+      ],
+      "keywords_en": [
+        "Cauchy-Kovalevskaya theorem",
+        "Kovalevskya pendulum",
+        "Paris Commune",
+        "Weierstrass",
+        "Mittag-Leffler"
+      ],
+      "keywords_pt": ["Teorema de Cauchy-Kovalevskaya",
+"pêndulo de Kovalevskaya",
+"Comuna de Paris",
+"Weierstrass",
+"Mittag-Leffler"],
+      "citation": "Arguedas-Troyo, V. (2020). Sofía Korvin (Sofía Kovalevsky) (1850-1891) una heroína de las matemáticas. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5042]"
+    },
+
+    {
+      "id": 10,
+      "title": "Una Introducción a la Geometría Riemanniana",
+      "title_en": "An Introduction to Riemannian Geometry",
+      "volume": 20,
+      "number": 2,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "José Manuel Sánchez Muñoz",
+          "email": "jmanuel.sanchez@educarex.es",
+          "university": "Universidad Politécnica de Madrid",
+          "department": "G.I.E. Pensamiento Matemático",
+          "location": "España",
+          "orcid": ""
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V20/N2_2020/Sanchez",
+      "pdf": "/Articulos/V20/N2_2020/Sanchez/V20_n2_Sanchez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i2.5050",
+      "received": "4 abril 2019",
+      "accepted": "30 Agosto 2019",
+      "abstract_es": "El principal propósito de este artículo es hacer una introducción histórica a la Geometría Riemanniana, poniendo de manifiesto la renovada vigencia de esta área matemática de investigación. Se trata de una rama llena de interesantes ejemplos de aplicación en la realidad que nos rodea, que pueden ir desde la utilización de la geometría esférica en la geolocalización de nuestros gps, a la aplicación de la teoría de la relatividad general y la interpretación de cómo se expande nuestro universo.",
+      "abstract_en": "The main purpose of this article is to make a historical introduction to Riemannian Geometry, highlighting the renewed validity of this mathematical area of research. It is a branch full of interesting examples of application in the reality that surrounds us, which can range from the use of spherical geometry in the geolocation of our GPS, to the application of the theory of general relativity and the interpretation of how our universe expands.",
+      "abstract_pt": "O principal propósito deste artigo é fazer uma introdução histórica à Geometria Riemanniana, evidenciando a atualidade e a relevância renovada dessa área de pesquisa matemática. Trata-se de um ramo repleto de exemplos interessantes de aplicação na realidade que nos cerca, que podem ir desde a utilização da geometria esférica na geolocalização dos nossos GPS, até a aplicação da teoria da relatividade geral e a interpretação de como nosso universo se expande.",
+      "keywords_es": [
+        "Geometrías no euclídeas",
+        "Geometría Riemanniana",
+        "Geometría Diferencial"
+      ],
+      "keywords_en": [
+        "Non Euclidian Geometries",
+        "Riemannian Geometry",
+        "Differential Geometry"
+      ],
+      "keywords_pt": ["Geometrias não euclidianas",
+"Geometria Riemanniana",
+"Geometria Diferencial"],
+      "citation": "Sánchez Muñoz, J. M. (2020). Una Introducción a la Geometría Riemanniana. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5050]"
+    },
+
+{
+  "id": 11,
+  "title": "Problemas de exámenes y soluciones, XXX Olimpiada Costarricense de Matemáticas. Edición del 2018",
+  "title_en": "Exam Problems and Solutions, XXX Costa Rican Mathematical Olympiad. 2018 Edition",
+  "volume": 20,
+  "number": 2,
+  "language": "es",
+  "published": "",
+  "authors": [
+    {
+      "name": "Christian Páez",
+      "email": "cpaez@itcr.ac.cr",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Marvin Abarca",
+      "email": "mabarca@itcr.ac.cr",
+      "university": "Instituto Tecnológico de Costa Rica",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Leonel Chaves",
+      "email": "leonel.chaves.salas@una.cr",
+      "university": "Universidad Nacional",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Alexander Hernández",
+      "email": "alexander.hernandez.quiros@una.cr",
+      "university": "Universidad Nacional",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Gabriela Calderón",
+      "email": "maria.calderon.torres@una.cr",
+      "university": "Universidad Nacional",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Federico Mora",
+      "email": "federico.mora.mora@una.cr",
+      "university": "Universidad Nacional",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Jeremías Ramírez",
+      "email": "jeremias.ramirez.jimenez@una.cr",
+      "university": "Universidad de Costa Rica",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "David Jiménez",
+      "email": "david.jimenezlopez@ucr.ac.cr",
+      "university": "Universidad de Costa Rica",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "German Mora",
+      "email": "germorasaenz@gmail.com",
+      "university": "Universidad de Costa Rica",
+      "department": "Escuela de Matemática",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Emmanuel Chaves",
+      "email": "echavesv@uned.ac.cr",
+      "university": "Universidad Estatal a Distancia",
+      "department": "Escuela de Ciencias Exactas y Naturales",
+      "location": "Costa Rica",
+      "orcid": ""
+    },
+    {
+      "name": "Salomón Hernández",
+      "email": "shernandezch@hotmail.com",
+      "university": "Universidad Estatal a Distancia",
+      "department": "Escuela de Ciencias Exactas y Naturales",
+      "location": "Costa Rica",
+      "orcid": ""
+    }
+  ],
+  "category": "Olimpiadas de matemáticas",
+  "slug": "Articulos/V20/N2_2020/Paez",
+  "pdf": "/Articulos/V20/N2_2020/Paez/V20_n2_Paez.pdf",
+  "doi": "https://doi.org/10.18845/rdmei.v20i2.5047",
+  "received": "",
+  "accepted": "",
+  "abstract_es": "OLCOMA es la Comisión Costarricense de Olimpiadas de Matemáticas. Esta comisión está integrada por académicos del área de Matemáticas de la Universidad Nacional, el Instituto Tecnológico de Costa Rica, la Universidad de Costa Rica, la Universidad Estatal a Distancia y la Universidad Autónoma de Costa Rica y por representantes del Ministerio de Educación Pública y del Ministerio de Ciencia, Tecnología, Cultura y Telecomunicaciones. Dentro de la estructura de las Olimpiadas Matemáticas de Costa Rica, existen tres niveles de competencia. En el Nivel I participan estudiantes de séptimo grado, de entre 10 y 13 años aproximadamente (los estudiantes de primaria que cursan este nivel también pueden optar por participar en sexto grado). En el Nivel II participan estudiantes de octavo y noveno grado, de entre 14 y 15 años aproximadamente. En el Nivel III participan estudiantes de décimo, undécimo y duodécimo grado. Durante el año 2018, se trabajó con tres etapas: una primera eliminatoria con una prueba de selección única de 25 ítems, una segunda eliminatoria con 12 preguntas de opción múltiple y tres problemas de desarrollo, y una etapa final con dos pruebas en días consecutivos, cada una con tres problemas de desarrollo. El objetivo de este libro es que los futuros participantes cuenten con material de referencia. Los problemas representan un desafío y cada uno incluye su solución, permitiendo comparar procedimientos. Se incorporan problemas de todas las fases y niveles.",
+  "abstract_en": "OLCOMA is the Costa Rican Mathematics Olympiad Commission. This commission is made up of academics from the mathematics departments of the National University, the Costa Rica Institute of Technology, the University of Costa Rica, the State Distance University, and the Autonomous University of Costa Rica, as well as representatives from the Ministry of Public Education and the Ministry of Science, Innovation, Technology, and Telecommunications. Within the structure of the Costa Rica Mathematics Olympiads, there are three levels of competition. Level I involves seventh-grade students, approximately 10 to 13 years old (primary school students taking this level may also choose to participate in the sixth grade). Level II involves eighth and ninth-grade students, approximately 14 to 15 years old. Level III involves tenth, eleventh, and twelfth-grade students. During 2018, the competition was divided into three stages: a first qualifying round with a 25-item multiple-choice test, a second qualifying round with 12 multiple-choice questions and three open-ended problems, and a final stage consisting of two exams on consecutive days, each with three open-ended problems. The objective of this book is to provide future participants with reference material. The problems represent a challenge and each includes its solution, allowing students to compare procedures. Problems from all phases and levels are included.",
+  "abstract_pt": "OLCOMA é a Comissão Costarricense de Olimpiadas de Matemáticas (Comissão Costarriquenha de Olimpíadas de Matemática). Esta comissão é integrada por acadêmicos da área de Matemática da Universidade Nacional, do Instituto Tecnológico da Costa Rica, da Universidade da Costa Rica, da Universidade Estatal a Distância e da Universidade Autónoma de Costa Rica, além de representantes do Ministério da Educação Pública e do Ministério da Ciência, Tecnologia, Inovação e Telecomunicações. Dentro da estrutura das Olimpíadas de Matemática da Costa Rica, existem três níveis de competição. No Nível I, participam estudantes do sétimo ano, com aproximadamente 10 a 13 anos (os estudantes do ensino fundamental que cursam este nível também podem optar por participar no sexto ano). No Nível II, participam estudantes do oitavo e nono ano, com aproximadamente 14 a 15 anos. No Nível III, participam estudantes do décimo, undécimo e duodécimo ano (ensino médio). Durante o ano de 2018, trabalhou-se com três etapas: uma primeira eliminatória com uma prova de seleção única de 25 itens, uma segunda eliminatória com 12 perguntas de múltipla escolha e três problemas de desenvolvimento, e uma etapa final com duas provas em dias consecutivos, cada uma com três problemas de desenvolvimento. O objetivo deste livro é que os futuros participantes contem com material de referência. Os problemas representam um desafio e cada um inclui sua solução, permitindo comparar procedimentos. Incorporam-se problemas de todas as fases e níveis.",
+  "keywords_es": [
+    "Olimpiadas Matemáticas",
+    "OLCOMA",
+    "Resolución de problemas",
+    "Educación matemática"
+  ],
+  "keywords_en": ["Mathematical Olympiads",
+"OLCOMA",
+"Problem solving",
+"Mathematics education"],
+  "keywords_pt": ["Olimpíadas de Matemática",
+"OLCOMA",
+"Resolução de problemas",
+"Educação matemática"],
+  "citation": "Páez, C., et al. (2020). Problemas de exámenes y soluciones, XXX Olimpiada Costarricense de Matemáticas. Edición del 2018. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(2). [https://doi.org/10.18845/rdmei.v20i2.5047]"
+}
+  ]
+}
