@@ -82,10 +82,12 @@ export default function NavsComponent({ isSidebarOpen }) {
 
             {/* Secciones */}
             <li className="relative group">
-              <div className="flex items-center space-x-2 cursor-pointer hover:text-tec-blue-primary hover:underline underline-offset-4">
-                <FaBook />
-                <span>Secciones</span>
-                <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180" />
+              <div className="flex items-center space-x-2 hover:text-tec-blue-primary hover:underline underline-offset-4">
+                <Link href="/secciones" className="flex items-center space-x-2">
+                  <FaBook />
+                  <span>Secciones</span>
+                </Link>
+                <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180 cursor-pointer" />
               </div>
               <ul className="absolute left-0 mt-2 z-10 min-w-[230px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {categoryNav.map((cat) => (
@@ -255,19 +257,25 @@ export default function NavsComponent({ isSidebarOpen }) {
 
               {/* Secciones */}
               <li>
-                <button
-                  onClick={() => toggleSubmenu("secciones")}
-                  className="flex items-center justify-between w-full hover:text-tec-blue-primary"
-                >
-                  <span className="flex items-center gap-2">
+                <div className="flex items-center justify-between w-full">
+                  <Link
+                    href="/secciones"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-tec-blue-primary"
+                  >
                     <FaBook /> Secciones
-                  </span>
-                  <FaChevronDown
-                    className={`text-gray-500 text-xs transition-transform duration-200 ${
-                      openSubmenu === "secciones" ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                  </Link>
+                  <button
+                    onClick={() => toggleSubmenu("secciones")}
+                    className="hover:text-tec-blue-primary p-1"
+                  >
+                    <FaChevronDown
+                      className={`text-gray-500 text-xs transition-transform duration-200 ${
+                        openSubmenu === "secciones" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
                 <ul
                   className={`overflow-hidden transition-all duration-300 ${
                     openSubmenu === "secciones"

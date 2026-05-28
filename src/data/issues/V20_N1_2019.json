@@ -1,0 +1,450 @@
+{
+  "issueTitle": "Volumen 20, Número 1, Agosto 2019 - Febrero 2020",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Algoritmo para calcular o aproximar la Raíz Cuadrada de un número real positivo",
+      "title_en": "Algorithm to calculate or approximate the Square Root of a positive real number",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jesús R. Guillén R.",
+          "email": "jesus.guillen@isfodosu.edu.do",
+          "university": "Instituto Superior de formación Docente Salomé Ureña (ISFODOSU)",
+          "department": "Recinto Emilio Prud’Homme, Santiago",
+          "location": "República Dominicana",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N1_2019/Guillen",
+      "pdf": "/Articulos/V20/N1_2019/Guillen/V20_n1_Guillen.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4588",
+      "received": "28 febrero 2019",
+      "accepted": "20 julio 2019",
+      "abstract_es": "En este artículo se desarrolla una variante del algoritmo tradicional para el cálculo de la raíz cuadrada, que al igual que el algoritmo tradicional se basa en la descomposición decimal del número, pero en su ejecución se usan los elementos de la demostración formal de dicho algoritmo, dando una alternativa que mejora el proceso de comprensión del mismo. En esta investigación se presenta un estudio detallado a través de varios resultados de naturaleza algorítmica que permiten ahondar en la comprensión del proceso de calcular o aproximar la raíz cuadrada de un número real positivo, lo cual hace que el artículo tenga un público meta universitario.",
+      "abstract_en": "In this article a variant of the traditional algorithm for the calculation of the square root is developed, that like the traditional algorithm is based on the decimal decomposition of the number, but in its execution the elements of the formal demonstration of this algorithm are used, giving an alternative that improves the process of understanding it. In this research a detailed study is presented through several algorithmic-based results that allow us to delve into the compression of the process of calculating or approximate the square root of a positive real number, which makes the article have a university target audience.",
+      "abstract_pt": "Neste artigo desenvolve-se uma variante do algoritmo tradicional para o cálculo da raiz quadrada, que, assim como o algoritmo tradicional, baseia-se na decomposição decimal do número, mas em sua execução utiliza os elementos da demonstração formal desse algoritmo, oferecendo uma alternativa que melhora o processo de compreensão do mesmo. Nesta pesquisa apresenta-se um estudo detalhado por meio de vários resultados de natureza algorítmica que permitem aprofundar a compreensão do processo de calcular ou aproximar a raiz quadrada de um número real positivo, o que faz com que o artigo tenha como público-alvo o nível universitário.",
+      "keywords_es": [
+        "Algoritmos",
+        "Aproximación",
+        "Expansión Decimal",
+        "Raíz Cuadrada"
+      ],
+      "keywords_en": [
+        "Algorithms",
+        "Approximation",
+        "Decimal Expansion",
+        "square root"
+      ],
+      "keywords_pt": [
+        "Algoritmos",
+        "Aproximação",
+        "Expansão Decimal",
+        "Raiz Quadrada"
+      ],
+      "citation": "Guillén R., J. R. (2019). Algoritmo para calcular o aproximar la Raíz Cuadrada de un número real positivo. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4588"
+    },
+    {
+      "id": 2,
+      "title": "Desarrollo de la Investigación en Razonamiento Inferencial Informal",
+      "title_en": "Research Development in Informal Inferential Reasoning",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Jesús G. Lugo A.",
+          "email": "lupitalugo_@hotmail.com",
+          "university": "Universidad de Los Lagos",
+          "department": "",
+          "location": "Chile",
+          "orcid": ""
+        },
+        {
+          "name": "Jaime I. García G.",
+          "email": "jaime.garcia@ulagos.cl",
+          "university": "Universidad de Los Lagos",
+          "department": "",
+          "location": "Chile",
+          "orcid": ""
+        },
+        {
+          "name": "Blanca R. Ruíz H.",
+          "email": "bruiz@itesm.mx",
+          "university": "Tecnológico de Monterrey",
+          "department": "",
+          "location": "México",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N1_2019/Lugo",
+      "pdf": "/Articulos/V20/N1_2019/Lugo/V20_n1_Lugo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4589",
+      "received": "10 octubre 2018",
+      "accepted": "20 abril 2019",
+      "abstract_es": "En este trabajo se informa sobre una Revisión Sistemática de la Literatura (SLR) basada en la búsqueda automatizada en WoS, Scopus, MathEduc y, adicionalmente, en el SERJ de forma manual. El objetivo es proporcionar un panorama general del desarrollo de la investigación en el Razonamiento Inferencial Informal (RII) para investigadores en Educación Estadística. De los resultados de la búsqueda, se seleccionaron 57 estudios primarios, identificando el énfasis, el contexto y la metodología de las investigaciones; así como los autores y artículos más citados. Se encontró que en los últimos años, el desarrollo de la investigación en RII se ha enfocado en la modelación y el uso de software dinámico; los resultados están dirigidos a investigadores y profesores. Cabe destacar que los artículos con mayor impacto, en cuestión del número de citas o promedio de citas por año, son aquellos estudios previos que se consideran íconos dentro de la Educación Estadística, ya que proponen un marco de trabajo enfocado en la integración de conceptos o ideas estadísticas como un sistema para el desarrollo del RII.",
+      "abstract_en": "This paper reports on a Systematic Literature Review (SLR) based on the automated search in WoS, Scopus, MathEduc and, additionally, manually in SERJ. The aim is to provide an overview of the development of research in Informal Inferential Reasoning (IIR) for researchers in Statistical Education. From the search results, 57 primary studies were selected, identifying the emphasis, context and methodology; as well as the most cited authors and articles. It was found that in recent years, the development of research in the IIR has focused on the modeling and use of dynamic software; the results are aimed at researchers and professors. It should be noted that the articles with the greatest impact, in terms of the number of citations or average citations per year, are those previous studies that are considered essential within Statistical Education, since they propose a framework focused on integration of concepts or statistical ideas as a system for the development of the RII.",
+      "abstract_pt": "Neste trabalho apresenta-se uma Revisão Sistemática da Literatura (SLR) baseada na busca automatizada em WoS, Scopus, MathEduc e, adicionalmente, no SERJ de forma manual. O objetivo é fornecer uma visão geral do desenvolvimento da pesquisa em Raciocínio Inferencial Informal (RII) para pesquisadores em Educação Estatística. A partir dos resultados da busca, foram selecionados 57 estudos primários, identificando a ênfase, o contexto e a metodologia das investigações, assim como os autores e artigos mais citados. Verificou-se que, nos últimos anos, o desenvolvimento da pesquisa em RII tem se concentrado na modelagem e no uso de software dinâmico; os resultados estão direcionados a pesquisadores e professores. Cabe destacar que os artigos com maior impacto, em termos do número de citações ou média de citações por ano, são aqueles estudos prévios considerados ícones dentro da Educação Estatística, pois propõem um marco de trabalho focado na integração de conceitos ou ideias estatísticas como um sistema para o desenvolvimento do RII.",
+      "keywords_es": [
+        "Razonamiento Inferencial Informal",
+        "Inferencia Estadística",
+        "Educación Estadística",
+        "Revisión Sistemática de Literatura"
+      ],
+      "keywords_en": [
+        "Informal inferential reasoning",
+        "Statistical Inference",
+        "Statistical Education",
+        "Systematic literature review"
+      ],
+      "keywords_pt": [
+        "Raciocínio Inferencial Informal",
+        "Inferência Estatística",
+        "Educação Estatística",
+        "Revisão Sistemática da Literatura"
+      ],
+      "citation": "Lugo A., J. G., García G., J. I., & Ruíz H., B. R. (2019). Desarrollo de la Investigación en Razonamiento Inferencial Informal. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4589"
+    },
+     {
+      "id": 3,
+      "title": "La Enseñanza determinista de la probabilidad",
+      "title_en": "The deterministic Teaching of probability",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Geovanni Sanabria Brenes",
+          "email": "gsanabria@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N1_2019/Sanabria",
+      "pdf": "/Articulos/V20/N1_2019/Sanabria/V20_n1_Sanabria.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4590",
+      "received": "10 octubre 2018",
+      "accepted": "20 abril 2019",
+      "abstract_es": "El presente trabajo analiza las respuestas de docentes en formación, que ya cursaron un curso sobre probabilidad y son estudiantes del Instituto Tecnológico de Costa Rica, en un test de situaciones problema de probabilidad con el fin de valorar el manejo que hacen de la aleatoriedad. En las respuestas se evidencia que algunos: no saben hacer explícito el espacio muestral ni la experiencia aleatoria, descuidan las hipótesis que se necesitan para utilizar la probabilidad como un modelo y dan respuestas deterministas a situaciones aleatorias, es decir piensan que hay una única respuesta correcta. ¿Será que se enseña la probabilidad de forma determinista?",
+      "abstract_en": "This paper analyzes the responses of teachers in training, who have already taken a course on probability and are students of the Technological Institute of Costa Rica, in a test of probability problem situations in order to assess the handling they make of randomness. The answers show that some do not know how to make explicit the sample space or the random experience, neglect the hypotheses that are needed to use probability as a model and give deterministic answers to random situations. Could it be that probability is taught in a deterministic way?",
+      "abstract_pt": "O presente trabalho analisa as respostas de docentes em formação, que já cursaram uma disciplina sobre probabilidade e são estudantes do Instituto Tecnológico da Costa Rica, em um teste de situações-problema de probabilidade com o objetivo de avaliar o manejo que fazem da aleatoriedade. Nas respostas evidencia-se que alguns: não sabem explicitar o espaço amostral nem a experiência aleatória, descuidam das hipóteses necessárias para utilizar a probabilidade como um modelo e dão respostas deterministas a situações aleatórias, ou seja, pensam que existe uma única resposta correta. Será que a probabilidade é ensinada de forma determinista?",
+      "keywords_es": [
+        "formación de profesores",
+        "probabilidad",
+        "determinismo",
+        "aleatoriedad"
+      ],
+      "keywords_en": [
+        "teacher training",
+        "probability",
+        "determinism",
+        "randomness"
+      ],
+      "keywords_pt": [
+        "formação de professores",
+        "probabilidade",
+        "determinismo",
+        "aleatoriedade"
+      ],
+      "citation": "Sanabria Brenes, G. (2019). La Enseñanza determinista de la probabilidad. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4590"
+    },
+    {
+      "id": 4,
+      "title": "Aprendizaje de la Aleatoriedad y Conceptos Asociados: un Estudio en Secundaria con Apoyo de Geogebra",
+      "title_en": "Randomness Learning and Associated Concepts: a Secondary Study with Geogebra Support",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Guillermo Ramírez Montes",
+          "email": "grm1905@gmail.com",
+          "university": "Universidad de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Ana Claúdia Batalha Henriques",
+          "email": "achenriques@ie.ulisboa.pt",
+          "university": "Universidad de Lisboa",
+          "department": "Instituto de Educação",
+          "location": "Portugal",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N1_2019/Ramirez",
+      "pdf": "/Articulos/V20/N1_2019/Ramirez/V20_n1_Ramirez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4591",
+      "received": "10 octubre 2018",
+      "accepted": "20 abril 2019",
+      "abstract_es": "En este trabajo presentamos los resultados de un estudio realizado durante el 1º semestre del año lectivo 2017, en el contexto de una experiencia de enseñanza apoyada con TIC, específicamente con Geogebra, dirigida al aprendizaje de la probabilidad en décimo año de escolaridad en el contexto costarricense. Se presenta, en particular, una de las cinco tareas de la secuencia de aprendizaje que conforma la experiencia de enseñanza, con el objetivo de comprender cómo los alumnos aprenden conceptos básicos asociados a experimentos aleatorios (aleatoriedad, casos favorables, casos totales y evento aleatorio) al realizar tareas exploratorias apoyadas con Geogebra, y cuál es el papel de este software como recurso didáctico para el aprendizaje de estos conceptos. La metodología utilizada fue de tipo cualitativa e interpretativa, siendo empleados, como instrumentos de recolección de datos, la observación participante y la recolección documental de las resoluciones de los alumnos. Los resultados evidencian que la mayor parte de los alumnos tienen noción de la aleatoriedad, asociando el concepto con experiencias de su día a día. Sin embargo, presentan dificultades para utilizar dicho concepto en la toma de decisiones que involucran probabilidades. Por su lado, los conceptos de casos favorables, casos totales y eventos aleatorios son desconocidos por la mayor parte de los alumnos. En cuanto a las contribuciones de la tecnología, el trabajo con Geogebra permitió que algunos alumnos fueran capaces de inferir correctamente relaciones asociadas a los conceptos de casos favorables, casos totales y eventos, a medida que simulan varias veces la experiencia del lanzamiento de dos dados. Además, las simulaciones para pequeñas repeticiones de la experiencia permitieron evidenciar que gran parte de los alumnos tienen creencias equivocadas sobre la aleatoriedad, producto de un uso inadecuado de la probabilidad clásica. De esta forma, los resultados obtenidos permiten hacer una evaluación positiva del uso de tareas exploratorias con recurso a Geogebra para la enseñanza y aprendizaje de conceptos de Probabilidad en secundaria. Durante la ponencia del trabajo se busca presentar estos resultados y mostrar la simulación de Geogebra utilizada en la tarea.",
+      "abstract_en": "In this paper we present the results of a study conducted during the 1st semester of the school year of 2017 in the context of a teaching experiment supported by ICTs, particularly Geogebra, aimed at the learning of Probability in the 10th grade of the Costa Rican context. We present, in particular, one of the five tasks of the learning sequence that supports the teaching experiment, aiming to understand how 10th grade students of Costa Rica learn the basic concepts associated with random experiments (randomness, favorable cases, total cases and random event) when working on exploratory tasks supported by Geogebra, and what is the role of this software as a didactic resource for learning these concepts. The methodology used was qualitative and interpretative and data collection included: participant observation and the students’ answers to the tasks. The results show that the majority of students have a notion of randomness, associating the concept with their real life experiences. However, they have difficulties in using this concept to make decisions involving probabilities. The concepts of favorable cases, total cases and events are unknown to most students. Regarding the contributions of technology, working with Geogebra allowed some students to be able to correctly infer relations associated with the concepts of favorable cases, total cases and events as they simulate the experience of throwing two dice several times. In addition, when they do a small number of simulations for an experience, it was possible to observe that a large part of the students have wrong beliefs about randomness, due to an inadequate use of classical probability. In this way, the results obtained allow us to make a positive evaluation of the use of exploratory tasks with Geogebra for the teaching and learning of Probability concepts in secondary school. During the presentation of the work, we seek to present these results and show the simulation of Geogebra used in the task.",
+      "abstract_pt": "Neste trabalho apresentamos os resultados de um estudo realizado durante o 1º semestre do ano letivo de 2017, no contexto de uma experiência de ensino apoiada por TIC, especificamente com Geogebra, voltada para a aprendizagem da probabilidade no décimo ano de escolaridade no contexto costarriquenho. Apresenta-se, em particular, uma das cinco tarefas da sequência de aprendizagem que compõe a experiência de ensino, com o objetivo de compreender como os alunos aprendem conceitos básicos associados a experimentos aleatórios (aleatoriedade, casos favoráveis, casos totais e evento aleatório) ao realizar tarefas exploratórias apoiadas com Geogebra, e qual é o papel deste software como recurso didático para a aprendizagem desses conceitos. A metodologia utilizada foi de natureza qualitativa e interpretativa, sendo utilizados, como instrumentos de coleta de dados, a observação participante e a coleta documental das resoluções dos alunos. Os resultados evidenciam que a maior parte dos alunos possui noção da aleatoriedade, associando o conceito a experiências do seu cotidiano. No entanto, apresentam dificuldades para utilizar esse conceito na tomada de decisões que envolvem probabilidades. Por outro lado, os conceitos de casos favoráveis, casos totais e eventos aleatórios são desconhecidos pela maior parte dos alunos. Quanto às contribuições da tecnologia, o trabalho com Geogebra permitiu que alguns alunos fossem capazes de inferir corretamente relações associadas aos conceitos de casos favoráveis, casos totais e eventos, à medida que simulavam várias vezes a experiência do lançamento de dois dados. Além disso, as simulações para pequenas repetições da experiência permitiram evidenciar que grande parte dos alunos possui crenças equivocadas sobre a aleatoriedade, produto de um uso inadequado da probabilidade clássica. Dessa forma, os resultados obtidos permitem fazer uma avaliação positiva do uso de tarefas exploratórias com recurso ao Geogebra para o ensino e aprendizagem de conceitos de Probabilidade no ensino secundário. Durante a apresentação do trabalho busca-se apresentar esses resultados e mostrar a simulação do Geogebra utilizada na tarefa.",
+      "keywords_es": [
+        "Aleatoriedad",
+        "casos favorables y totales",
+        "tarea exploratoria",
+        "Geogebra",
+        "simulación"
+      ],
+      "keywords_en": [
+        "Randomness",
+        "favorable and total cases",
+        "exploratory task",
+        "Geogebra",
+        "simulation"
+      ],
+      "keywords_pt": [
+        "Aleatoriedade",
+        "casos favoráveis e totais",
+        "tarefa exploratória",
+        "Geogebra",
+        "simulação"
+      ],
+      "citation": "Ramírez Montes, G., & Batalha Henriques, A. C. (2019). Aprendizaje de la Aleatoriedad y Conceptos Asociados: un Estudio en Secundaria con Apoyo de Geogebra. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4591"
+    },
+    {
+      "id": 5,
+      "title": "Estudio de la actitud hacia la utilidad de la matemática en estudiantes de carreras de administración de una universidad privada costarricense",
+      "title_en": "Attitude study towards the mathematics utility in business careers of a private Costa Rica university",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Eduardo Emiliano Muñoz Ortiz",
+          "email": "matedios@yahoo.com",
+          "university": "",
+          "department": "Ministerio Educación Pública",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Luis Gerardo Meza Cascante",
+          "email": "gemeza@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "",
+      "slug": "Articulos/V20/N1_2019/Munoz",
+      "pdf": "/Articulos/V20/N1_2019/Munoz/V20_n1_Munoz.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4592",
+      "received": "16 noviembre 2018",
+      "accepted": "11 Abril 2019",
+      "abstract_es": "En este artículo se exponen los resultados de un estudio de la actitud hacia la utilidad de la matemática en estudiantes de las carreras del área de administración de una universidad privada costarricense, cuyo nombre se mantiene en reserva por acuerdo de confidencialidad. La investigación fue realizada en el tercer cuatrimestre de 2016, con una muestra de 847 estudiantes tomada de una población activa de 1806 estudiantes y desarrollada como tesis de graduación del programa de licenciatura en la “Enseñanza de la matemática con entornos tecnológicos” que imparte la Escuela de Matemática del Instituto Tecnológico de Costa Rica. El objetivo general del estudio fue conocer el nivel de actitud hacia la utilidad de la matemática que tienen los estudiantes de las carreras del área de administración, analizando la existencia de diferencias según el sexo, la edad y el estatus laboral de las y los estudiantes. Como instrumento de medición se utilizó la “Escala de actitud hacia la utilidad de la matemática” de Fennema-Sherman (1976). Los resultados indican que aproximadamente el 94,7% de los estudiantes manifiesta niveles de actitud hacia la utilidad de la matemática entre medio, alto y muy alto; y aproximadamente el 64,5% en niveles entre alto y muy alto; por lo que se desprende la existencia de una muy buena actitud hacia la utilidad de la matemática. También se encontró evidencia estadística de la existencia de diferencias en la variable “Actitud hacia la utilidad de la matemática” según el sexo de las y los estudiantes participantes en el estudio, siendo los hombres quienes muestran, en promedio, niveles mayores. Con respecto a la relación entre la actitud hacia la utilidad de la matemática y la edad, se definieron cinco rangos de edad que corresponden a: 20 años o menos, de 21 a 25 años, de 26 a 30 años, de 31 a 35 años, y 36 años o más; y se encontraron diferencias significativas en al menos dos de esos rangos de edad. Finalmente, en el estudio se evidencian diferencias en la actitud hacia la utilidad de la matemática entre los estudiantes que laboran de manera remunerada y los que no, siendo los estudiantes del primer grupo los que muestran niveles mayores de actitud hacia la utilidad de la matemática.",
+      "abstract_en": "This article presents the results of a study about the attitude towards the usefulness of mathematics in students of the careers of the Management area from a private Costa Rican university; whose name remains unrevealed because of a confidentiality agreement. The investigation was conducted in the third quarter of 2016, and was applied to a sample of 847 individuals from a population of 1806 active management students at the time. This study is a product of graduation thesis for the Mathematics Teaching on Technological Environments Program for the Mathematics School of Instituto Tecnológico de Costa Rica. The study objective was to know the level of attitude toward the usefulness of mathematics that students of the administration area from a private Costa Rican university have, as well as the respective relation to the individual’s sex, age and work status. The measurement instrument “Scale of Attitude towards the Usefulness of Mathematics” by Fennema-Sherman (1976) was used for the study. According to the data obtained, approximately 94.7% of the students showed levels of ”attitude toward the usefulness of mathematic” between medium, high and very high. And from this group, approximately 64.5% indicated levels between high and very high. It can therefore be concluded that, within the sampled students, there is a very good attitude towards the usefulness of mathematics. Statistical evidence was also found of the existence of differences in the variable “attitude towards the usefulness of mathematics” according to the sex of the students participating in the study. On average, men showed higher levels of “attitude towards the usefulness of mathematics” than women. Regarding the relationship between the “attitude towards the usefulness of mathematics” and age, five age ranges were defined. These corresponded to: 20 years or less, 21 to 25 years, 26 to 30 years, 31 to 35 years , and 36 years or older. Significant differences were found between at least two of those age ranges. Finally, the study shows evidence of differences in the “attitude towards the usefulness of mathematics” between students with paid employment and those without it. The group corresponding to the students whose jobs are remunerated show higher levels of “attitude toward the usefulness of mathematics than those who do not”.",
+      "abstract_pt": "Neste artigo são presentados os resultados de um estudo sobre a atitude em relação à utilidade da matemática em estudantes das carreiras da área de administração de uma universidade privada costarriquenha, cujo nome permanece em sigilo por acordo de confidencialidade. A pesquisa foi realizada no terceiro quadrimestre de 2016, com uma amostra de 847 estudantes extraída de uma população ativa de 1806 estudantes e desenvolvida como tese de graduação do programa de licenciatura em “Ensino da Matemática com ambientes tecnológicos” oferecido pela Escola de Matemática do Instituto Tecnológico da Costa Rica. O objetivo geral do estudo foi conhecer o nível de atitude em relação à utilidade da matemática que possuem os estudantes das carreiras da área de administração, analisando a existência de diferenças segundo o sexo, a idade e a situação laboral dos estudantes. Como instrumento de medição utilizou-se a “Escala de atitude em relação à utilidade da matemática” de Fennema-Sherman (1976). Os resultados indicam que aproximadamente 94,7% dos estudantes manifestam níveis de atitude em relação à utilidade da matemática entre médio, alto e muito alto; e aproximadamente 64,5% apresentam níveis entre alto e muito alto, o que evidencia a existência de uma atitude muito positiva em relação à utilidade da matemática. Também foi encontrada evidência estatística da existência de diferenças na variável “Atitude em relação à utilidade da matemática” segundo o sexo dos estudantes participantes do estudo, sendo os homens aqueles que apresentam, em média, níveis mais elevados. Em relação à relação entre a atitude em relação à utilidade da matemática e a idade, definiram-se cinco faixas etárias correspondentes a: 20 anos ou menos, de 21 a 25 anos, de 26 a 30 anos, de 31 a 35 anos e 36 anos ou mais; e foram encontradas diferenças significativas em pelo menos duas dessas faixas etárias. Finalmente, o estudo evidencia diferenças na atitude em relação à utilidade da matemática entre os estudantes que trabalham de forma remunerada e os que não trabalham, sendo os estudantes do primeiro grupo os que apresentam níveis mais elevados de atitude em relação à utilidade da matemática.",
+      "keywords_es": [
+        "actitud",
+        "utilidad",
+        "matemática",
+        "universidad",
+        "estudiantes",
+        "escala Fennema-Sherman"
+      ],
+      "keywords_en": [
+        "attitude",
+        "utility",
+        "mathematics",
+        "university",
+        "students",
+        "Fennema-Sherman scale"
+      ],
+      "keywords_pt": [
+        "atitude",
+        "utilidade",
+        "matemática",
+        "universidade",
+        "estudantes",
+        "escala Fennema-Sherman"
+      ],
+      "citation": "Muñoz Ortiz, E. E., & Meza Cascante, L. G. (2019). Estudio de la actitud hacia la utilidad de la matemática en estudiantes de carreras de administración de una universidad privada costarricense. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4592"
+    },
+    {
+      "id": 6,
+      "title": "Desarrollo de Documentos con un Formato Computable Utilizando el Software Wolfram Mathematica",
+      "title_en": "Document Development with a Computable Format Using the Wolfram Mathematica Software",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Enrique Vílchez Quesada",
+          "email": "evq1529@una.ac.cr",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "Escuela de Informática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Juan Félix Avila Herrera",
+          "email": "delagarita@gmail.com",
+          "university": "Universidad Nacional de Costa Rica",
+          "department": "Escuela de Informática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Secciones",
+      "slug": "Articulos/V20/N1_2019/Vilchez",
+      "pdf": "/Articulos/V20/N1_2019/Vilchez/V20_n1_Vilchez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4593",
+      "received": "10 julio 2018",
+      "accepted": "9 mayo 2019",
+      "abstract_es": "Este es un tutorial sobre la construcción de CDF‘s (Computable Document Format). Se explica en detalle cómo elaborar este tipo de archivos mostrando, entre otras cosas, definiciones, ejemplos ilustrativos, y ejercicios, la descripción de los componentes visuales (o controladores) más importantes y sus opciones. Se supone que el lector tiene un conocimiento medio en el lenguaje Wolfram.",
+      "abstract_en": "This is a tutorial on the construction of CDF‘s (Computable Document Format). It is explained in detail how to elaborate this type of files showing, among other things, definitions, examples and exercises, the description of the most important visual components (or controllers) and their options. It is assumed that the reader has a medium knowledge in the Wolfram language.",
+      "abstract_pt": "Este é um tutorial sobre a construção de CDF‘s (Computable Document Format). Explica-se em detalhe como elaborar este tipo de arquivos, apresentando, entre outras coisas, definições, exemplos ilustrativos e exercícios, além da descrição dos componentes visuais (ou controladores) mais importantes e suas opções. Supõe-se que o leitor possua um conhecimento intermediário da linguagem Wolfram.",
+      "keywords_es": [
+        "CDF",
+        "Wolfram",
+        "Mathematica",
+        "comando Manipulate",
+        "botones",
+        "cajas de texto",
+        "cajas de chequeo",
+        "radio botones",
+        "popmenus",
+        "deslizadores"
+      ],
+      "keywords_en": [
+        "CDF",
+        "Wolfram",
+        "Mathematica",
+        "Manipulate command",
+        "buttons",
+        "text boxes",
+        "check boxes",
+        "radio buttons",
+        "popmenus",
+        "sliders"
+      ],
+      "keywords_pt": [
+        "CDF",
+        "Wolfram",
+        "Mathematica",
+        "comando Manipulate",
+        "botões",
+        "caixas de texto",
+        "caixas de seleção",
+        "botões de rádio",
+        "popmenus",
+        "deslizadores"
+      ],
+      "citation": "Vílchez Quesada, E., & Avila Herrera, J. F. (2019). Desarrollo de Documentos con un Formato Computable Utilizando el Software Wolfram Mathematica. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4593"
+    },
+    {
+      "id": 7,
+      "title": "Construcciones geométricas con el paquete tkz-euclide",
+      "title_en": "Geometric constructions with tkz-euclide software",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Reiman Y. Acuña Chacón",
+          "email": "reiacuna@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        },
+        {
+          "name": "Estibaliz O. Rojas Quesada",
+          "email": "erojasq@uned.ac.cr",
+          "university": "Universidad Estatal a Distancia",
+          "department": "Encargada de Cátedra Matemáticas Básicas",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Secciones",
+      "slug": "Articulos/V20/N1_2019/Acuna",
+      "pdf": "/Articulos/V20/N1_2019/Acuna/V20_n1_Acuna.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4594",
+      "received": "3 octubre 2018",
+      "accepted": "26 junio 2019",
+      "abstract_es": "El paquete tkz-euclide.sty es un conjunto de macros especializadas en LATEX para realizar construcciones geométricas en dos dimensiones. Está construido sobre PGF (Portable Graphics Format) y su interfaz TikZ. En este documento se explica el uso básico de este paquete así como la realización de algunas construcciones complejas con el fin de que docentes universitarios y de secundaria puedan elaborar material de alta calidad para sus trabajos personales y académicos.",
+      "abstract_en": "The tkz-euclide.sty package is a set of specialized macros in LaTeX to make geometrical constructions in two dimensions. It is built on PGF (Portable Graphics Format) and its TikZ interface. This document explains the basic use of this package as well as the realization of some complex constructions with the purpose of university and secondary teachers for high quality material for their personal and academic works.",
+      "abstract_pt": "O pacote tkz-euclide.sty é um conjunto de macros especializadas em LATEX para realizar construções geométricas em duas dimensões. Está construído sobre o PGF (Portable Graphics Format) e sua interface TikZ. Neste documento explica-se o uso básico deste pacote, assim como a realização de algumas construções complexas, com o objetivo de que docentes universitários e do ensino secundário possam elaborar material de alta qualidade para seus trabalhos pessoais e acadêmicos.",
+      "keywords_es": [
+        "tkz-euclide",
+        "construcciones geométricas",
+        "LATEX"
+      ],
+      "keywords_en": [
+        "tkz-euclide",
+        "geometric constructions",
+        "LATEX"
+      ],
+      "keywords_pt": [
+        "tkz-euclide",
+        "construções geométricas",
+        "LATEX"
+      ],
+      "citation": "Acuña Chacón, R. Y., & Rojas Quesada, E. O. (2019). Construcciones geométricas con el paquete tkz-euclide. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4594"
+    },
+    {
+      "id": 8,
+      "title": "Leopoldo Kronecker y su gran aporte matemático",
+      "title_en": "Leopoldo Kronecker and his great mathematical contribution",
+      "volume": 20,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Vernor Arguedas T.",
+          "email": "vernor.arguedas@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "Escuela de Matemática",
+          "location": "Costa Rica",
+          "orcid": ""
+        }
+      ],
+      "category": "Secciones",
+      "slug": "Articulos/V20/N1_2019/Arguedas",
+      "pdf": "/Articulos/V20/N1_2019/Arguedas/V20_n1_Arguedas.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v20i1.4602",
+      "received": "28 agosto 2019",
+      "accepted": "9 setiembre 2019",
+      "abstract_es": "Se presenta una biografía breve de Leopoldo Kronecker. Se muestran cuatro ejemplos de su enorme quehacer matemático y se concluye con algunos de sus aportes a los fundamentos de la matemática.",
+      "abstract_en": "A brief biography of Leopoldo Kronecker is presented. Four examples of his enormous mathematical work are shown and we conclude with his contributions to some of the foundations of mathematics.",
+      "abstract_pt": "Apresenta-se uma breve biografia de Leopoldo Kronecker. São mostrados quatro exemplos de sua enorme atividade matemática e conclui-se com algumas de suas contribuições aos fundamentos da matemática.",
+      "keywords_es": [
+        "Kronecker",
+        "teoremas de Kronecker",
+        "fundamentos de las matemáticas"
+      ],
+      "keywords_en": [
+        "Kronecker",
+        "theorems of Kronecker",
+        "foundations of mathematics"
+      ],
+      "keywords_pt": [
+        "Kronecker",
+        "teoremas de Kronecker",
+        "fundamentos da matemática"
+      ],
+      "citation": "Arguedas T., V. (2019). Leopoldo Kronecker y su gran aporte matemático. <i>Revista Digital: Matemática, Educación e Internet, 20</i>(1). https://doi.org/10.18845/rdmei.v20i1.4602"
+    }
+  ]
+}
