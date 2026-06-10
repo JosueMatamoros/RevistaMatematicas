@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaBook, FaFlask, FaChalkboardTeacher, FaArrowRight } from "react-icons/fa";
+import { FaBook, FaFlask, FaChalkboardTeacher, FaTrophy, FaArrowRight } from "react-icons/fa";
 import NavsComponent from "@/components/home/NavsComponent";
 import { categoryNav } from "@/data/categories";
 
@@ -39,7 +39,7 @@ export default function SeccionesPage() {
               Secciones de la revista
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {categoryNav.map((cat) => (
+              {categoryNav.filter((cat) => cat.slug !== "olimpiadas-de-matematicas").map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/secciones/${cat.slug}`}
@@ -99,6 +99,22 @@ export default function SeccionesPage() {
                     Materiales sin revisión
                   </p>
                   <p className="text-xs text-gray-500">Recursos de aporte libre</p>
+                </div>
+                <FaArrowRight className="text-gray-300 group-hover:text-tec-blue-primary transition-colors flex-shrink-0 text-xs" />
+              </Link>
+
+              <Link
+                href="/olimpiadas"
+                className="flex items-center gap-3 px-4 py-3 rounded-lg border border-gray-200 bg-white hover:border-tec-blue-primary hover:bg-tec-blue-primary/5 transition-all duration-300 group"
+              >
+                <div className="w-8 h-8 rounded-lg bg-tec-blue-primary/10 flex items-center justify-center group-hover:bg-tec-blue-primary transition-colors flex-shrink-0">
+                  <FaTrophy className="text-tec-blue-primary group-hover:text-white text-sm transition-colors" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold text-slate-800 group-hover:text-tec-blue-primary transition-colors">
+                    Olimpiadas de Matemáticas
+                  </p>
+                  <p className="text-xs text-gray-500">Olimpiadas Costarricenses de Matemáticas</p>
                 </div>
                 <FaArrowRight className="text-gray-300 group-hover:text-tec-blue-primary transition-colors flex-shrink-0 text-xs" />
               </Link>
