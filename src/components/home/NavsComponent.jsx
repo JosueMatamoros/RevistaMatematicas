@@ -90,7 +90,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                 <FaChevronDown className="text-gray-500 text-xs transition-transform duration-200 group-hover:rotate-180 cursor-pointer" />
               </div>
               <ul className="absolute left-0 mt-2 z-10 min-w-[230px] rounded-md bg-white shadow-lg p-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                {categoryNav.map((cat) => (
+                {categoryNav.filter(cat => cat.slug !== 'olimpiadas-de-matematicas').map((cat) => (
                   <li key={cat.slug}>
                     <Link
                       href={`/secciones/${cat.slug}`}
@@ -118,6 +118,14 @@ export default function NavsComponent({ isSidebarOpen }) {
                     className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                   >
                     Materiales sin revisión
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/olimpiadas"
+                    className="block w-full text-slate-800 text-base rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                  >
+                    Olimpiadas de Matemáticas
                   </Link>
                 </li>
               </ul>
@@ -283,7 +291,7 @@ export default function NavsComponent({ isSidebarOpen }) {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  {categoryNav.map((cat) => (
+                  {categoryNav.filter(cat => cat.slug !== 'olimpiadas-de-matematicas').map((cat) => (
                     <li key={cat.slug}>
                       <Link
                         href={`/secciones/${cat.slug}`}
@@ -312,6 +320,15 @@ export default function NavsComponent({ isSidebarOpen }) {
                       className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
                     >
                       Materiales sin revisión
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/olimpiadas"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-slate-800 text-sm rounded-md p-2 hover:bg-tec-blue-primary hover:text-white"
+                    >
+                      Olimpiadas de Matemáticas
                     </Link>
                   </li>
                 </ul>
