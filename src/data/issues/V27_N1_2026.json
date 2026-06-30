@@ -372,85 +372,50 @@
   ],
   "books": [
     {
-      "id": "teoria-de-grupos-2025",
-      "coverImage": "/libros/universitaria/algebra/teoria-de-grupos-2025/portada.webp",
-    "title": "Una introducción a la Teoría de Grupos",
-    "title_en": "An Introduction to Group Theory",
-    "title_pt": "Uma Introdução à Teoria dos Grupos",
+      "id": "Viltex-2026",
+      "coverImage": "/libros/universitaria/otros/Viltex/portada.webp",
+    "title": "VilTEX: paquete integral para la generación automatizada de documentos LATEX y exportación TikZ enWolframMathematica",
+    "title_en": "VilTEX: Comprehensive package for the automated generation of LaTeX documents and TikZ export in Wolfram Mathematica",
+    "title_pt": "VilTEX: pacote integral para a geração automatizada de documentos LaTeX e exportação TikZ no Wolfram Mathematica",
     "authors": [
       {
-        "name": "Reiman Acuña Chacón",
-        "email": "reiacuna@itcr.ac.cr",
-        "orcid": "https://orcid.org/0000-0002-0094-3282",
-        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
-        "location": "Cartago, Costa Rica"
-      },
-      {
-        "name": "Héctor Barrantes González",
-        "email": "hector.barrantes@ucr.ac.cr",
-        "orcid": "https://orcid.org/0000-0001-7941-5759",
-        "university": "Universidad de Costa Rica",
-        "location": "San Ramón"
-      },
-      {
-        "name": "Bolívar Ramírez Santamaría",
-        "email": "bolivar.ramirez@ucr.ac.cr ",
-        "orcid": "https://orcid.org/0009-0006-6087-8386",
-        "university": "Universidad de Costa Rica",
-        "location": "San Ramón"
+        "name": "Enrique Vílchez Quesada",
+        "email": "enrique.vilchez.quesada@una.cr",
+        "orcid": "https://orcid.org/0000-0002-2571-5729",
+        "university": "Universidad Nacional",
+        "location": "Heredia, Costa Rica"
       }
     ],
     "lastRevision": "",
     "category": "universitaria",
-    "pdf": "/libros/universitaria/algebra/teoria-de-grupos-2025/libro.pdf",
+    "pdf": "/libros/universitaria/otros/Viltex/libro.pdf",
     "received": "",
     "accepted": "",
-    "abstract_es": "Este libro presenta una introducción sistemática a la Teoría de Grupos, construyendo el tema desde herramientas de teoría de números necesarias para el trabajo algebraico (propiedades de los enteros y aritmética modular) y avanzando hacia los conceptos centrales de grupos y sus estructuras asociadas. Se desarrollan definiciones y ejemplos fundamentales, resultados clásicos, grupos abelianos, el orden de un grupo y de un elemento, subgrupos, clases laterales y el teorema de Lagrange, grupos cíclicos, subgrupos normales y grupos cociente. Además, se estudian homomorfismos, núcleo e imagen, y teoremas de isomorfía, culminando con aplicaciones en áreas como música, teoría de grafos, simetría en física, computación y criptografía. El texto incluye ejercicios a lo largo de los capítulos y una sección extensa de soluciones, con el objetivo de reforzar la comprensión conceptual y la habilidad de argumentación y cálculo dentro del álgebra abstracta.",
+    "abstract_es": "El presente trabajo documenta el desarrollo del paquete VilTEX, una herramienta diseñada para automatizar la creación de documentos LaTeX en Wolfram Mathematica. A diferencia de otras soluciones parciales disponibles, VilTEX busca integrar de manera completa los procesos de cálculo matemático con la generación de documentación profesional. El paquete surgió de la necesidad recurrente en el ámbito académico de convertir resultados computacionales en documentos de alta calidad tipográfica. VilTEX está organizado en catorce módulos que cubren desde el renderizado básico hasta funcionalidades especializadas como la exportación de diagramas complejos. Las funciones de renderizado permiten convertir expresiones matemáticas en imágenes de alta resolución mediante diferentes configuraciones: matemática básica, física con notación vectorial, química con fórmulas estructurales y diagramas conmutativos. Esta flexibilidad resulta especialmente útil cuando se requieren documentos con notación especializada. Además, VilTEX incluye herramientas para generar documentos completos de forma automática. Los usuarios pueden crear artículos científicos, reportes técnicos, libros y presentaciones Beamer con configuraciones predefinidas que manejan aspectos como bibliografía, diferentes entornos —definiciones, teoremas, ejemplos, entre otros— y estilos de código. El sistema exporta automáticamente los gráficos de Mathematica y organiza los archivos en estructuras de carpetas coherentes. Un componente destacado es el sistema de compilación integrado. VilTEX detecta automáticamente los editores LaTeX instalados en el sistema operativo y permite compilar documentos directamente desde Mathematica. Esta característica elimina la fragmentación típica del flujo de trabajo entre cálculo y documentación. El módulo de plotting con estilo LaTeX representa un avance significativo en la visualización matemática. Incorpora fuentes tipográficas especializadas y permite generar gráficos con la apariencia visual característica de publicaciones académicas. Las capacidades de exportación a TikZ constituyen la funcionalidad más innovadora del paquete. VilTEX puede convertir gráficos 2D y 3D de Mathematica en código TikZ/PGFPlots, preservando la calidad vectorial y permitiendo edición posterior. Los exportadores especializados en VilTEX manejan casos específicos: grafos, autómatas de estado finito, secciones cónicas y diagramas de teoría de conjuntos. Una extensión revolucionaria de estas capacidades es la función CreateTikZAnimation, que permite generar animaciones LaTeX interactivas utilizando el paquete animate. Esta herramienta convierte funciones puras de Mathematica en animaciones paramétricas que pueden compilarse en documentos PDF con controles de reproducción integrados. La función soporta parámetros continuos y discretos, personalización visual completa, y es compatible con todos los tipos de gráficos de Mathematica, desde funciones trigonométricas hasta visualizaciones de datos complejas. También son particularmente útiles las herramientas para diagramas matemáticos puntuales, que pueden generar automáticamente representaciones de máquinas de estado, problemas de programación lineal con regiones factibles y diversos tipos de diagramas de Venn. Estas funcionalidades abordan necesidades frecuentes en la enseñanza de las matemáticas y las ciencias de la computación. El paquete mantiene compatibilidad con las capacidades nativas de Wolfram Mathematica mientras simplifica significativamente la interfaz para usuarios de LaTeX.",
     "keywords_es": [
-      "teoría de grupos",
-      "aritmética modular",
-      "subgrupos",
-      "clases laterales",
-      "teorema de Lagrange",
-      "grupos cíclicos",
-      "subgrupos normales",
-      "grupo cociente",
-      "homomorfismos",
-      "teoremas de isomorfía",
-      "criptografía",
-      "simetría"
+      "Automatización",
+      "LaTeX",
+      "TikZ",
+      "visualización matemática", 
+      "Wolfram Mathematica"
     ],
-    "abstract_en": "This book offers a systematic introduction to Group Theory, building the subject from number-theoretic tools that support algebraic work (properties of the integers and modular arithmetic) and progressing to the core concepts and structures of groups. It develops fundamental definitions and examples, classical results, abelian groups, the order of a group and of an element, subgroups, cosets and Lagrange’s theorem, cyclic groups, normal subgroups and quotient groups. It also studies group homomorphisms, kernel and image, and the isomorphism theorems, and concludes with applications in areas such as music, graph theory, symmetry in physics, computing, and cryptography. Exercises are included throughout, together with an extensive solutions section, to strengthen conceptual understanding and problem-solving skills in abstract algebra.",
+    "abstract_en": "This paper documents the development of the VilTEX package, a tool designed to automate the creation of LaTeX documents in Wolfram Mathematica. Unlike other available partial solutions, VilTEX seeks to fully integrate mathematical computation processes with the generation of professional documentation. The package emerged from a recurring need in academia to convert computational results into documents with high typographic quality. VilTEX is organized into fourteen modules that range from basic rendering to specialized functionalities such as the export of complex diagrams. The rendering functions make it possible to convert mathematical expressions into high-resolution images through different configurations: basic mathematics, physics with vector notation, chemistry with structural formulas, and commutative diagrams. This flexibility is especially useful when documents require specialized notation. In addition, VilTEX includes tools for generating complete documents automatically. Users can create scientific articles, technical reports, books, and Beamer presentations with predefined configurations that manage aspects such as bibliography, different environments —definitions, theorems, examples, among others— and code styles. The system automatically exports Mathematica graphics and organizes files into coherent folder structures. A notable component is the integrated compilation system. VilTEX automatically detects the LaTeX editors installed in the operating system and allows documents to be compiled directly from Mathematica. This feature eliminates the typical fragmentation of the workflow between computation and documentation. The LaTeX-style plotting module represents a significant advance in mathematical visualization. It incorporates specialized typographic fonts and allows users to generate graphics with the visual appearance characteristic of academic publications. The TikZ export capabilities constitute the most innovative functionality of the package. VilTEX can convert 2D and 3D Mathematica graphics into TikZ/PGFPlots code, preserving vector quality and allowing subsequent editing. The specialized exporters in VilTEX handle specific cases: graphs, finite-state automata, conic sections, and set theory diagrams. A revolutionary extension of these capabilities is the CreateTikZAnimation function, which makes it possible to generate interactive LaTeX animations using the animate package. This tool converts pure Mathematica functions into parametric animations that can be compiled into PDF documents with integrated playback controls. The function supports continuous and discrete parameters, full visual customization, and is compatible with all types of Mathematica graphics, from trigonometric functions to complex data visualizations. Also particularly useful are the tools for specific mathematical diagrams, which can automatically generate representations of state machines, linear programming problems with feasible regions, and various types of Venn diagrams. These functionalities address frequent needs in the teaching of mathematics and computer science. The package maintains compatibility with the native capabilities of Wolfram Mathematica while significantly simplifying the interface for LaTeX users.",
     "keywords_en": [
-      "group theory",
-      "modular arithmetic",
-      "subgroups",
-      "cosets",
-      "Lagrange's theorem",
-      "cyclic groups",
-      "normal subgroups",
-      "quotient groups",
-      "homomorphisms",
-      "isomorphism theorems",
-      "cryptography",
-      "symmetry"
+      "Automation",
+      "LaTeX",
+      "TikZ", 
+      "mathematical visualization",
+      "Wolfram Mathematica"
     ],
-    "abstract_pt": "Este livro apresenta uma introdução sistemática à Teoria dos Grupos, construindo o tema a partir de ferramentas de teoria dos números necessárias ao trabalho algébrico (propriedades dos inteiros e aritmética modular) e avançando para os conceitos centrais e estruturas associadas aos grupos. São desenvolvidas definições e exemplos fundamentais, resultados clássicos, grupos abelianos, a ordem de um grupo e de um elemento, subgrupos, classes laterais e o teorema de Lagrange, grupos cíclicos, subgrupos normais e grupos quociente. Além disso, estudam-se homomorfismos de grupos, núcleo e imagem, e teoremas de isomorfismo, concluindo com aplicações em áreas como música, teoria dos grafos, simetria na física, computação e criptografia. O texto inclui exercícios ao longo dos capítulos e uma seção ampla de soluções, visando fortalecer a compreensão conceitual e as habilidades de resolução de problemas em álgebra abstrata.",
+    "abstract_pt": "O presente trabalho documenta o desenvolvimento do pacote VilTEX, uma ferramenta projetada para automatizar a criação de documentos LaTeX no Wolfram Mathematica. Diferentemente de outras soluções parciais disponíveis, o VilTEX busca integrar de forma completa os processos de cálculo matemático com a geração de documentação profissional. O pacote surgiu de uma necessidade recorrente no âmbito acadêmico de converter resultados computacionais em documentos com alta qualidade tipográfica. O VilTEX está organizado em catorze módulos que abrangem desde a renderização básica até funcionalidades especializadas, como a exportação de diagramas complexos. As funções de renderização permitem converter expressões matemáticas em imagens de alta resolução por meio de diferentes configurações: matemática básica, física com notação vetorial, química com fórmulas estruturais e diagramas comutativos. Essa flexibilidade é especialmente útil quando são necessários documentos com notação especializada. Além disso, o VilTEX inclui ferramentas para gerar documentos completos de forma automática. Os usuários podem criar artigos científicos, relatórios técnicos, livros e apresentações Beamer com configurações predefinidas que gerenciam aspectos como bibliografia, diferentes ambientes —definições, teoremas, exemplos, entre outros— e estilos de código. O sistema exporta automaticamente os gráficos do Mathematica e organiza os arquivos em estruturas de pastas coerentes. Um componente de destaque é o sistema de compilação integrado. O VilTEX detecta automaticamente os editores LaTeX instalados no sistema operacional e permite compilar documentos diretamente a partir do Mathematica. Essa característica elimina a fragmentação típica do fluxo de trabalho entre cálculo e documentação. O módulo de plotting com estilo LaTeX representa um avanço significativo na visualização matemática. Ele incorpora fontes tipográficas especializadas e permite gerar gráficos com a aparência visual característica de publicações acadêmicas. As capacidades de exportação para TikZ constituem a funcionalidade mais inovadora do pacote. O VilTEX pode converter gráficos 2D e 3D do Mathematica em código TikZ/PGFPlots, preservando a qualidade vetorial e permitindo edição posterior. Os exportadores especializados do VilTEX lidam com casos específicos: grafos, autômatos de estado finito, seções cônicas e diagramas de teoria dos conjuntos. Uma extensão revolucionária dessas capacidades é a função CreateTikZAnimation, que permite gerar animações LaTeX interativas utilizando o pacote animate. Essa ferramenta converte funções puras do Mathematica em animações paramétricas que podem ser compiladas em documentos PDF com controles de reprodução integrados. A função suporta parâmetros contínuos e discretos, personalização visual completa, e é compatível com todos os tipos de gráficos do Mathematica, desde funções trigonométricas até visualizações de dados complexas. Também são particularmente úteis as ferramentas para diagramas matemáticos específicos, que podem gerar automaticamente representações de máquinas de estado, problemas de programação linear com regiões factíveis e diversos tipos de diagramas de Venn. Essas funcionalidades atendem a necessidades frequentes no ensino da matemática e das ciências da computação. O pacote mantém compatibilidade com as capacidades nativas do Wolfram Mathematica, ao mesmo tempo que simplifica significativamente a interface para usuários de LaTeX.",
     "keywords_pt": [
-      "teoria dos grupos",
-      "aritmética modular",
-      "subgrupos",
-      "classes laterais",
-      "teorema de Lagrange",
-      "grupos cíclicos",
-      "subgrupos normais",
-      "grupo quociente",
-      "homomorfismos",
-      "teoremas de isomorfismo",
-      "criptografia",
-      "simetria"
+      "Automatização",
+      "LaTeX",
+      "TikZ",
+      "visualização matemática",
+      "Wolfram Mathematica"
     ],
-    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet, 26</i>(2). Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
+    "citation": "Vílchez Quesada, E. (2026). <i>VilTEX: paquete integral para la generación automatizada de documentos LaTeX y exportación TikZ en Wolfram Mathematica</i> (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet</i>. Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-656-06-8"
     }
   ]
 }

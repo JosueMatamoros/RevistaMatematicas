@@ -1,8 +1,9 @@
 // src/data/issues/index.js
+import V27_N1_2026 from "./V27_N1_2026.json";
+import V26_N2_2026 from "./V26_N2_2026.json";
 import V26_N1_2025 from "./V26_N1_2025.json";
 import V25_N2_2025 from "./V25_N2_2025.json";
 import V25_N1_2024 from "./V25_N1_2024.json";
-import V26_N2_2026 from "./V26_N2_2026.json";
 import V24_N2_2024 from "./V24_N2_2024.json";
 import V24_N1_2023 from "./V24_N1_2023.json";
 import V23_N2_2023 from "./V23_N2_2023.json";
@@ -17,6 +18,13 @@ import V20_N1_2019 from "./V20_N1_2019.json";
 
 
 export const issues = [
+  {
+    id: "V27_N1_2026",
+    volume: 27,
+    number: 1,
+    date: "Agosto 2026 - Febrero 2027",
+    data: V27_N1_2026,
+  },
   {
     id: "V26_N2_2026",
     volume: 26,
