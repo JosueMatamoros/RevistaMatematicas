@@ -1,0 +1,456 @@
+{
+  "issueTitle": "Volumen 27, Número 1, Agosto 2026 - Febrero 2027",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Otra prueba de la fórmula cuadrática: comparación con la prueba tradicional y la de Po-Shen Loh, y su uso como método de solución",
+      "title_en": "Another proof of the quadratic formula: comparison with the traditional proof and Po-Shen Loh's approach, and its use as a solution method",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Guido José Fernández Quirós",
+          "email": "gjfernandez@uned.ac.cr",
+          "university": "Universidad Estatal a Distancia",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0009-0003-4373-1751"
+        }
+      ],
+      "category": "Temas de matemática",
+      "slug": "Articulos/V27/N1_2026/Fernandez",
+      "pdf": "/Articulos/V27/N1_2026/Fernandez/V27_n1_Fernandez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8610",
+      "received": "28 de octubre del 2025",
+      "accepted": "1 de abril del 2026",
+      "abstract_es": "Este artículo propone otra prueba de la fórmula general para solucionar en los números complejos las ecuaciones polinómicas de segundo grado en una incógnita con coeficientes reales, popularmente conocida como fórmula cuadrática. Además, analiza las semejanzas y diferencias con la prueba tradicional que implementa la técnica de completar cuadrados y con la prueba propuesta en años recientes por el matemático Po-Shen Loh. Finalmente, muestra un ejemplo para ilustrar el uso del algoritmo de la demostración como método de solución para esta clase de ecuaciones.",
+      "abstract_en": "This article proposes another proof of the general formula for solving in the complex numbers second-degree polynomial equations in one unknown with real coefficients, popularly known as quadratic formula. In addition, it analyzes the similarities and differences with the traditional proof that implements the technique of completing the square and with the proof proposed in recent years by mathematician Po-Shen Loh. Finally, it shows an example to illustrate the use of the algorithm from the demonstration as a solution method for this class of equations.",
+      "abstract_pt": "Este artigo propõe outra demonstração da fórmula geral para resolver, nos números complexos, as equações polinomiais do segundo grau em uma incógnita com coeficientes reais, popularmente conhecida como fórmula quadrática. Além disso, analisa as semelhanças e diferenças em relação à demonstração tradicional que utiliza a técnica de completar quadrados e à demonstração proposta nos últimos anos pelo matemático Po-Shen Loh. Por fim, apresenta um exemplo para ilustrar o uso do algoritmo da demonstração como método de resolução para essa classe de equações.",
+      "keywords_es": ["Ecuaciones cuadráticas", "fórmula cuadrática", "algoritmos algebraicos", "números complejos"],
+      "keywords_en": ["Quadratic equations", "quadratic formula", "algebraic algorithms", "complex numbers"],
+      "keywords_pt": ["Equações quadráticas", "fórmula quadrática", "algoritmos algébricos", "números complexos"],
+      "citation": "Fernández Quirós, G. J. (2026). Otra prueba de la fórmula cuadrática: comparación con la prueba tradicional y la de Po-Shen Loh, y su uso como método de solución. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8610"
+    },
+    {
+      "id": 2,
+      "title": "El variograma como herramienta de caracterización",
+      "title_en": "The Variogram as a Tool for Characterization",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Katalina Oviedo Rodríguez",
+          "email": "katalina.oviedo.rodriguez@una.cr",
+          "university": "Universidad Nacional",
+          "department": "",
+          "location": "Heredia, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-8869-4067"
+        },
+        {
+          "name": "Alda Carvalho",
+          "email": "alda.carvalho@uab.pt",
+          "university": "DCeT, Universidade Aberta Lisboa",
+          "department": "",
+          "location": "Lisboa, Portugal",
+          "orcid": "https://orcid.org/0000-0003-2642-4947"
+        }
+      ],
+      "category": "Temas de matemática",
+      "slug": "Articulos/V27/N1_2026/Oviedo",
+      "pdf": "/Articulos/V27/N1_2026/Oviedo/V27_n1_Oviedo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8658",
+      "received": "14 de julio del 2025",
+      "accepted": "30 de abril del 2026",
+      "abstract_es": "En este artículo se explora el uso del variograma experimental como descriptor para la extracción de características en imágenes. Esta caracterización se evalúa mediante dos modelos de clasificación: una red neuronal completamente conectada (FCNN) y máquinas de vectores soporte (SVM). Para la validación experimental se emplea la base de datos MNIST, ampliamente utilizada como referencia en problemas de clasificación de imágenes. El estudio considera variogramas experimentales direccionales calculados en las orientaciones de 0°, 45° y 90°, así como el variograma omnidireccional como línea base de comparación. Con el fin de explotar la información direccional, se analizan dos estrategias de combinación: una fusión tardía basada en un esquema de votación ponderada de las probabilidades generadas por modelos independientes, y una fusión temprana mediante la concatenación de las características direccionales. Los resultados permiten evaluar la capacidad del variograma para reducir la dimensionalidad del problema y, al mismo tiempo, preservar información espacial relevante para la clasificación.",
+      "abstract_en": "This paper explores the use of the experimental variogram as a descriptor for feature extraction in images. This characterization is evaluated using two classification models: a fully connected neural network (FCNN) and support vector machines (SVM). The MNIST dataset, which is widely used as a benchmark in image classification tasks, is employed for experimental validation. The study considers directional experimental variograms computed at orientations of 0°, 45°, and 90°, as well as the omnidirectional variogram as a baseline for comparison. In order to exploit directional information, two combination strategies are analyzed: a late fusion approach based on a weighted voting scheme applied to the class probability outputs of independent models, and an early fusion approach based on the concatenation of directional feature vectors. The results allow assessing the ability of the variogram to reduce the dimensionality of the problem while preserving spatial information that is relevant for classification.",
+      "abstract_pt": "Neste artigo investiga-se o uso do variograma experimental como descritor para extração de características em imagens. Essa forma de caracterização é analisada por meio de dois modelos de classificação: uma rede neural totalmente conectada (FCNN) e máquinas de vetores de suporte (SVM). Para a validação experimental, utiliza-se a base de dados MNIST, amplamente reconhecida como referência em tarefas de classificação de imagens. O estudo contempla variogramas experimentais direcionais calculados nas orientações de 0°, 45° e 90°, além do variograma omnidirecional, adotado como linha de base para comparação. Com o objetivo de explorar de maneira mais abrangente a informação direcional, são examinadas duas estratégias de combinação: uma fusão tardia, baseada em um esquema de votação ponderada das probabilidades produzidas por modelos independentes, e uma fusão precoce, realizada por meio da concatenação das características direcionais. Os resultados obtidos permitem avaliar em que medida o variograma contribui para a redução da dimensionalidade do problema, ao mesmo tempo em que preserva informações espaciais relevantes para a tarefa de classificação.",
+      "keywords_es": ["Variograma expirimental", "MNIST", "redes neuronales", "votación ponderada"],
+      "keywords_en": ["Experimental variogram", "MNIST", "neuronal network", "weighted voting"],
+      "keywords_pt": ["Variograma experimental", "MNIST", "redes neurais", "votação ponderada"],
+      "citation": "Oviedo Rodríguez, K., & Carvalho, A. (2026). El variograma como herramienta de caracterización. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8658"
+    },
+    {
+      "id": 3,
+      "title": "Validación psicométrica de la \"Escala General de Actitudes hacia la Inteligencia Artificial (GAAIS)\" en estudiantes costarricenses de ingeniería",
+      "title_en": "Psychometric Validation of the \"General Attitudes toward Artificial Intelligence Scale (GAAIS)\" in Costa Rican Engineering Students: Evidence of Reliability and Validity",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Luis Gerardo Meza-Cascante",
+          "email": "gemeza@tec.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-5413-0172"
+        },
+        {
+          "name": "Melvin Ramírez-Bogantes",
+          "email": "meramirez@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0001-5516-0085"
+        },
+        {
+          "name": "Luis Ángel Meza Chavarría",
+          "email": "luisangelmeza05@gmail.com",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-6481-8747"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V27/N1_2026/Meza",
+      "pdf": "/Articulos/V27/N1_2026/Meza/V27_n1_Meza.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8626",
+      "received": "1 de octubre del 2025",
+      "accepted": "5 de marzo del 2026",
+      "abstract_es": "Este estudio examina la fiabilidad y validez de constructo de la Escala General de Actitudes hacia la Inteligencia Artificial (GAAIS) en una muestra de estudiantes costarricenses de ingeniería con diferentes niveles de avance en carrera. Se evaluaron dos versiones del instrumento: la original de 32 ítems y una versión abreviada de 20 ítems, cada vez más utilizada en la literatura reciente. Los análisis incluyeron los coeficientes α de Cronbach y ω de McDonald, la adecuación muestral (KMO y prueba de esfericidad de Bartlett), así como un análisis factorial exploratorio complementado con análisis paralelo de Horn. Los resultados mostraron una consistencia interna satisfactoria en ambas versiones y una estructura factorial coherente con la organización bidimensional positiva–negativa. El análisis paralelo sugirió la existencia de subdimensiones adicionales, si bien el modelo bidimensional resultó más parsimonioso y congruente con la teoría. En conjunto, los hallazgos respaldan la utilización tanto de la escala completa como de la abreviada, destacando que la primera ofrece mayor cobertura conceptual, mientras que la segunda constituye una alternativa eficiente y parsimoniosa para contextos de aplicación específicos.",
+      "abstract_en": "This study examines the reliability and structural validity of the General Attitudes toward Artificial Intelligence Scale (GAAIS) in a sample of engineering students from Costa Rica. Two versions of the instrument were evaluated: the original 32-item version and a shortened 20-item version, increasingly used in recent literature. Analyses included Cronbach's α and McDonald's ω coefficients, sampling adequacy (KMO and Bartlett's test of sphericity), and an exploratory factor analysis complemented by Horn's parallel analysis. Results showed satisfactory internal consistency in both versions and a factorial structure consistent with the positive–negative bidimensional organization. The parallel analysis suggested the possible existence of additional subdimensions; however, the bidimensional model proved more parsimonious and theoretically coherent. Overall, the findings support the use of both the complete and the abbreviated scale, highlighting that the former provides broader conceptual coverage, while the latter constitutes an efficient and parsimonious alternative for specific research contexts.",
+      "abstract_pt": "Este estudo examina a confiabilidade e a validade de construto da Escala Geral de Atitudes em relação à Inteligência Artificial (GAAIS) em uma amostra de estudantes costarriquenhos de engenharia com diferentes níveis de progressão no curso. Foram avaliadas duas versões do instrumento: a original, com 32 itens, e uma versão abreviada, com 20 itens, cada vez mais utilizada na literatura recente. As análises incluíram os coeficientes α de Cronbach e ω de McDonald, a adequação amostral (KMO e teste de esfericidade de Bartlett), bem como uma análise fatorial exploratória complementada pela análise paralela de Horn. Os resultados mostraram consistência interna satisfatória em ambas as versões e uma estrutura fatorial coerente com a organização bidimensional positiva–negativa. A análise paralela sugeriu a existência de subdimensões adicionais, embora o modelo bidimensional tenha se mostrado mais parcimonioso e congruente com a teoria. Em conjunto, os achados respaldam a utilização tanto da escala completa quanto da versão abreviada, destacando que a primeira oferece maior cobertura conceitual, enquanto a segunda constitui uma alternativa eficiente e parcimoniosa para contextos específicos de aplicação.",
+      "keywords_es": ["Actitudes hacia la inteligencia artificial", "validación psicométrica", "fiabilidad", "educación superior", "estudiantes universitarios"],
+      "keywords_en": ["Attitudes towards artificial intelligence", "psychometric validation", "reliability", "higher education", "university students"],
+      "keywords_pt": ["Atitudes em relação à inteligência artificial", "validação psicométrica", "confiabilidade", "ensino superior", "estudantes universitários"],
+      "citation": "Meza-Cascante, L. G., Ramírez-Bogantes, M., & Meza Chavarría, L. A. (2026). Validación psicométrica de la \"Escala General de Actitudes hacia la Inteligencia Artificial (GAAIS)\" en estudiantes costarricenses de ingeniería. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8626"
+    },
+    {
+      "id": 4,
+      "title": "Diseño y validación de un instrumento para evaluar el conocimiento didáctico-matemático en álgebra escolar",
+      "title_en": "Design and Validation of an Instrument to Assess Didactic-Mathematical Knowledge in School Algebra",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Cristian Mejías",
+          "email": "cristian.mejias@upla.cl",
+          "university": "Universidad de Playa Ancha",
+          "department": "",
+          "location": "Valparaíso, Chile",
+          "orcid": "https://orcid.org/0000-0002-4306-2864"
+        }
+      ],
+      "category": "Didáctica y software",
+      "slug": "Articulos/V27/N1_2026/Mejias",
+      "pdf": "/Articulos/V27/N1_2026/Mejias/V27_n1_Mejias.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8704",
+      "received": "30 de junio del 2025",
+      "accepted": "10 de enero del 2026",
+      "abstract_es": "El presente estudio describe el proceso de diseño, construcción y validación de un instrumento para evaluar el conocimiento del profesorado de educación primaria sobre álgebra escolar, esto desde la perspectiva del Modelo del Conocimiento y Competencias Didáctico Matemáticas (CCMD). Para la concreción de este instrumento, hemos diseñado una versión preliminar que fue validada por diez expertos internacionales en matemáticas, didáctica de la matemática y didáctica del álgebra; sus aportes y comentarios detallados nos permitieron hacer los ajustes necesarios y refinar el instrumento. Posteriormente, la versión revisada fue testeada por ocho profesores de educación primaria en Chile; este proceso permitió perfeccionar el instrumento inicial y asegurar que estuviera alineado con el modelo CCMD para evaluar el conocimiento didáctico-matemático de los docentes respecto del álgebra escolar. Las etapas anteriores posibilitaron construir el cuestionario en su versión final que permitirá evaluar el conocimiento didáctico-matemático en profesores de educación primaria en ejercicio. El pilotaje reveló que el conocimiento didáctico-matemático de los profesores es insuficiente, sin embargo, se requiere aplicar el instrumento a un mayor número de docentes para obtener una visión más amplia y conclusiva sobre el conocimiento didáctico-matemático del profesorado de educación primaria, específicamente en el contexto del álgebra escolar. Estos resultados adicionales proporcionarán una comprensión más completa de las competencias docentes en esta área y ayudarán a identificar áreas clave para la mejora.",
+      "abstract_en": "This study outlines the design, development, and validation process of an instrument aimed at assessing primary school teachers' knowledge of school algebra, based on the Didactic-Mathematical Knowledge and Competencies (DMKC) model. We developed a preliminary version of the instrument, which was validated by ten international experts in mathematics, mathematics education, and algebra education. Their detailed feedback enabled us to make necessary adjustments and refine the instrument. The revised version was then tested with eight primary school teachers in Chile, allowing us to enhance the initial tool and ensure its alignment with the DMKC model for evaluating teachers' mathematical teaching knowledge in the context of school algebra. These steps led to the creation of the final version of the questionnaire, which will assess primary school teachers' mathematical teaching knowledge in practice. The pilot testing revealed that teachers' mathematical teaching knowledge is insufficient. However, further application of the instrument to a larger number of educators is necessary to gain a more comprehensive and conclusive understanding of primary school teachers' mathematical teaching knowledge, particularly in the area of school algebra. Additional results will provide a more complete view of teachers' competencies and help identify key areas for improvement.",
+      "abstract_pt": "O presente estudo descreve o processo de desenho, construção e validação de um instrumento para avaliar o conhecimento do professorado da educação primária sobre álgebra escolar, a partir da perspectiva do Modelo do Conhecimento e Competências Didático-Matemáticas (CCMD). Para a concretização deste instrumento, desenhamos uma versão preliminar que foi validada por dez especialistas internacionais em matemática, didática da matemática e didática da álgebra; os seus contributos e comentários detalhados permitiram-nos realizar os ajustes necessários e aperfeiçoar o instrumento. Posteriormente, a versão revista foi testada por oito professores da educação primária no Chile; este processo permitiu aperfeiçoar o instrumento inicial e assegurar que estivesse alinhado com o modelo CCMD para avaliar o conhecimento didático-matemático dos docentes relativamente à álgebra escolar. As etapas anteriores possibilitaram a construção do questionário na sua versão final, que permitirá avaliar o conhecimento didático-matemático de professores da educação primária em exercício. O estudo piloto revelou que o conhecimento didático-matemático dos professores é insuficiente; no entanto, é necessário aplicar o instrumento a um maior número de docentes para obter uma visão mais ampla e conclusiva sobre o conhecimento didático-matemático do professorado da educação primária, especificamente no contexto da álgebra escolar. Esses resultados adicionais proporcionarão uma compreensão mais completa das competências docentes nesta área e ajudarão a identificar áreas-chave para melhoria.",
+      "keywords_es": ["Conocimiento didáctico-matemático", "competencia didáctica-matemática", "álgebra escolar", "instrumento de evaluación", "profesores de educación primaria"],
+      "keywords_en": ["Mathematical teaching knowledge", "mathematical teaching competence", "school algebra", "assessment instrument", "primary school teachers"],
+      "keywords_pt": ["Conhecimento didático-matemático", "competência didático-matemática", "álgebra escolar", "instrumento de avaliação", "professores da educação primária"],
+      "citation": "Mejías, C. (2026). Diseño y validación de un instrumento para evaluar el conocimiento didáctico-matemático en álgebra escolar. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8704"
+    },
+    {
+      "id": 5,
+      "title": "Símbolo y Sombra: Un análisis histórico y didáctico de la raíz cuadrada de dos",
+      "title_en": "Symbol and Shadow: A Historical and Didactical Analysis of the Square Root of Two",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Reiman Yitsak Acuña Chacón",
+          "email": "reiacuna@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0000-0002-0094-3282"
+        },
+        {
+          "name": "Jorge Luis Chinchilla Valverde",
+          "email": "jochinchilla@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0009-0000-7512-6511"
+        }
+      ],
+      "category": "Historia",
+      "slug": "Articulos/V27/N1_2026/Acuna",
+      "pdf": "/Articulos/V27/N1_2026/Acuna/V27_n1_Acuna.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8538",
+      "received": "3 de setiembre del 2025",
+      "accepted": "28 de febrero del 2026",
+      "abstract_es": "Este artículo examina la evolución del lenguaje matemático en torno a la expresión de raíces irracionales, con especial énfasis en √2. Se rastrea su notación desde la antigüedad hasta la formalización moderna, analiza los métodos de aproximación decimal y discute los conflictos cognitivos que surgen al conciliar la exactitud simbólica con las representaciones finitas. Finalmente, se reflexiona sobre las implicaciones filosóficas y didácticas de esta tensión para la comprensión y enseñanza de los números irracionales. La novedad del trabajo reside en articular estas dimensiones históricas, filosóficas y pedagógicas en un modelo didáctico replicable, que orienta el diseño de actividades con herramientas digitales.",
+      "abstract_en": "This article examines the evolution of mathematical language concerning the expression of irrational roots, with special emphasis on √2. It traces its notation from antiquity to modern formalization, analyzes decimal-approximation methods, and discusses the cognitive conflicts that arise when reconciling symbolic exactness with finite representations. Finally, it reflects on the philosophical and pedagogical implications of this tension for understanding and teaching irrational numbers. The novelty of this study lies in integrating these historical, philosophical, and didactical perspectives into a replicable instructional model that supports the design of digital-based learning activities.",
+      "abstract_pt": "Este artigo analisa a evolução da linguagem matemática relacionada à representação de raízes irracionais, com foco especial em √2. Apresenta-se um percurso histórico de sua notação, desde a Antiguidade até sua formalização moderna, examinam-se os métodos de aproximação decimal e discutem-se os conflitos cognitivos que emergem ao tentar conciliar a exatidão simbólica com representações numéricas finitas. Por fim, são exploradas as implicações filosóficas e didáticas dessa tensão para a compreensão e o ensino dos números irracionais. A originalidade do trabalho está na articulação dessas dimensões históricas, filosóficas e pedagógicas em um modelo didático passível de replicação, que orienta o planejamento de atividades com o uso de ferramentas digitais.",
+      "keywords_es": ["Raíces irracionales", "√2", "aproximación decimal", "redondeo", "truncamiento", "lenguaje matemático", "conflicto cognitivo", "pedagogía"],
+      "keywords_en": ["Irrational roots", "√2", "decimal approximation", "rounding", "truncation", "mathematical language", "cognitive conflict", "pedagogy"],
+      "keywords_pt": ["Raízes irracionais", "√2", "aproximação decimal", "arredondamento", "truncamento", "linguagem matemática", "conflito cognitivo", "pedagogia"],
+      "citation": "Acuña Chacón, R. Y., & Chinchilla Valverde, J. L. (2026). Símbolo y Sombra: Un análisis histórico y didáctico de la raíz cuadrada de dos. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8538"
+    },
+    {
+      "id": 6,
+      "title": "Ordinales de números primos pareados como sumandos (un algoritmo)",
+      "title_en": "Ordinals of paired prime numbers as addends (an algorithm)",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Mario Peral Manzo",
+          "email": "peralmario@yahoo.com.mx",
+          "university": "Universidad Pedagógica Nacional, Unidad 152 Atizapán; Seminario Permanente sobre Docencia: su formación y sus prácticas",
+          "department": "",
+          "location": "Estado de México, México",
+          "orcid": "https://orcid.org/0000-0002-0455-1315"
+        }
+      ],
+      "category": "Matemática y algoritmos",
+      "slug": "Articulos/V27/N1_2026/Peral",
+      "pdf": "/Articulos/V27/N1_2026/Peral/V27_n1_Peral.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8754",
+      "received": "14 de setiembre del 2025",
+      "accepted": "30 de abril del 2026",
+      "abstract_es": "Este ensayo se sitúa en el ámbito de la teoría aditiva de números, con especial atención a los problemas de representación de los enteros como suma de números primos. El alcance de este artículo es divulgativo y educativo y no presenta resultados nuevos demostrados, sino un marco de exploración/registro para motivar al lector sobre las conjeturas que se enuncian. Mediante un sencillo algoritmo de “pareamiento” de sumas que dan por resultado números pares de algunos de los elementos del conjunto “de origen” que comienza en 8 y que progresa en razón k + 4 “ad infinitum”; desde A = {8 + 4k : k ∈ N0} = {8, 12, 16, 20, 24, …}, donde N0 = {0, 1, 2, …}, se intenta ilustrar para el gran público en general la forma como se relacionan entre sí la “Conjetura Fuerte (binaria) de Goldbach” y la “Conjetura de la Infinitud del Conjunto de los Números Primos Gemelos”. Con el algoritmo que se propone se define también un “Espacio de Registro” que es una “zona” en constante “crecimiento” en el que se anotan los ordinales con los que aparecen las “primeras parejas” de sumandos primos (gemelos o no) por cada elemento del conjunto A = {8 + 4k : k ∈ N0}, definido líneas arriba. Se asume que el ordinal para los números primos gemelos es la expresión “1”. Finalmente, se conjetura que la relación entre números primos gemelos y los números conocidos como “primos pitagóricos” de Fermat de la forma 4k + 1 (Teorema de Fermat sobre la Suma de dos Cuadrados) ilustra, a su vez, la relación entre la “Conjetura Fuerte (binaria) de Goldbach” y la “Conjetura de la Infinitud del Conjunto de los Números Primos Gemelos”.",
+      "abstract_en": "This essay is situated within the field of additive number theory, with particular emphasis on problems concerning the representation of integers as sums of prime numbers. The scope of this article is dissemination/education and it does not present new proven results, but rather a framework for exploration/recording to engage the reader with the conjectures that are stated. Through a simple “pairing” algorithm of sums that result in even numbers from some of the elements of the “source” set, which begins at 8 and progresses according to k + 4 ad infinitum: A = {8 + 4k : k ∈ N0} = {8, 12, 16, 20, 24, …}, it aims to illustrate to the general public how the “Strong (binary) Goldbach Conjecture” and the “Conjecture on the Infinitude of Twin Primes” relate to each other. With the proposed algorithm, a “Recording Space” is also defined, which is an ever-growing “zone” where the ordinals of the “first pairs” of prime summands (twin or not) are recorded for each element of the set A = {8 + 4k : k ∈ N0}, as defined above. It is assumed that the ordinal for twin primes is the expression “1”. Finally, it is conjectured that the relationship between twin primes and the numbers known as Fermat's “Pythagorean primes” of the form 4k + 1 (Fermat's Theorem on the Sum of Two Squares) illustrates, in turn, the relationship between the “Strong (binary) Goldbach Conjecture” and the “Conjecture on the Infinitude of the Set of Twin Primes”.",
+      "abstract_pt": "Este ensaio situa-se no âmbito da teoria aditiva dos números, com especial atenção aos problemas de representação dos inteiros como soma de números primos. O alcance deste artigo é o de divulgação/educação e não apresenta novos resultados demonstrados, mas sim um marco de exploração/registro para motivar o leitor acerca das conjecturas que se enunciam. Mediante um simples algoritmo de “emparelhamento” de somas que dão como resultado números pares de alguns dos elementos do conjunto “de origem” que começa em 8 e que progride em razão k + 4 “ad infinitum”; desde A = {8 + 4k : k ∈ N0} = {8, 12, 16, 20, 24, …}; procura-se ilustrar para o grande público em geral a forma como se relacionam entre si a “Conjectura Forte (binária) de Goldbach” e a “Conjectura da Infinitude do Conjunto dos Números Primos Gêmeos”. Com o algoritmo que se propõe define-se também um “Espaço de Registro” que é uma “zona” em constante “crescimento” na qual se anotam os ordinais com os quais aparecem os “primeiros pares” de parcelas primas (gêmeas ou não) para cada elemento do conjunto A = {8+4k : k ∈ N0}, definido linhas acima. Assume-se que o ordinal para os números primos gêmeos é a expressão “1”. Finalmente, conjectura-se que a relação entre números primos gêmeos e os números conhecidos como “primos pitagóricos” de Fermat da forma 4k+1 (Teorema de Fermat sobre a Soma de Dois Quadrados) ilustra, por sua vez, a relação entre a “Conjectura Forte (binária) de Goldbach” e a “Conjectura da Infinitude do Conjunto dos Números Primos Gêmeos”.",
+      "keywords_es": ["Números primos", "Conjetura Fuerte de Goldbach", "Conjetura de la Infinitud del Conjunto de los Números Primos Gemelos", "Teorema de Fermat sobre la Suma de dos Cuadrados"],
+      "keywords_en": ["Prime numbers", "Strong Goldbach Conjecture", "Conjecture of the Infinitude of the Set of Twin Prime Numbers", "Fermat's Theorem on the Sum of Two Squares"],
+      "keywords_pt": ["Números primos", "Conjectura Forte de Goldbach", "Conjectura da Infinitude do Conjunto dos Números Primos Gêmeos", "Teorema de Fermat sobre a Soma de Dois Quadrados"],
+      "citation": "Peral Manzo, M. (2026). Ordinales de números primos pareados como sumandos (un algoritmo). <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8754"
+    },
+    {
+      "id": 7,
+      "title": "Construcción de Diseños de Bloques Incompletos Balanceados",
+      "title_en": "Construction of Balanced Incomplete Block Designs",
+      "volume": 27,
+      "number": 1,
+      "language": "en",
+      "published": "",
+      "authors": [
+        {
+          "name": "Eduardo Piza Volio",
+          "email": "eduardo.piza@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0009-0003-1391-3992"
+        },
+        {
+          "name": "Esteban Segura Ugalde",
+          "email": "esteban.seguraugalde@ucr.ac.cr",
+          "university": "Universidad de Costa Rica",
+          "department": "",
+          "location": "San José, Costa Rica",
+          "orcid": "https://orcid.org/0000-0003-4743-954X"
+        }
+      ],
+      "category": "Matemática y algoritmos",
+      "slug": "Articulos/V27/N1_2026/Piza",
+      "pdf": "/Articulos/V27/N1_2026/Piza/V27_n1_Piza.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8771",
+      "received": "29 de enero del 2025",
+      "accepted": "30 de mayo del 2026",
+      "abstract_es": "En este artículo estudiamos los diseños de bloques balanceados incompletos (BIBDs) y ponemos a prueba un algoritmo heurístico para generar estos diseños. Realizamos primero una breve exposición teórica de los BIBDs, cuyas propiedades matemáticas son de extrema importancia por sus profundas aplicaciones teóricas en el campo de la geometría no euclideana (construcción de planos proyectivos finitos y planos afines finitos) y en el campo de la combinatoria. Utilizamos heurísticas de recocido simulado para hallar BIBDs de un tamaño moderado. En particular hallamos una nueva solución inédita para el BIBD(16,56,21,6,7), para el cual solamente se conocía otra solución, aunque se sabía con certeza de la existencia teórica de más soluciones. Nuestros algoritmos fueron comparados contra otros métodos heurísticos empleados en anteriores investigaciones, superando ampliamente a todos los otros métodos heurísticos.",
+      "abstract_en": "In this review article, we study balanced incomplete block designs (BIBDs) and test a heuristic algorithm for generating these designs. We first provide a brief theoretical exposition of BIBDs, the mathematical properties of which are of extreme importance due to their deep theoretical applications in non-Euclidean geometry (construction of finite projective and finite affine planes) and in combinatorics. We use a simulated annealing algorithm to find BIBDs of moderate size. In particular, we discover a new, unpublished solution for the BIBD(16,56,21,6,7), for which only one other solution was known, even though the theoretical existence of more solutions was certain. Our algorithms were compared with other heuristic methods used in previous research and consistently outperformed all other heuristic methods.",
+      "abstract_pt": "Neste artigo de revisão, estudamos os desenhos de blocos incompletos balanceados (BIBDs) e testamos um algoritmo heurístico para gerar esses desenhos. Inicialmente, apresentamos uma breve exposição teórica sobre os BIBDs, cujas propriedades matemáticas são de extrema importância devido às suas profundas aplicações teóricas na geometria não euclidiana, especialmente na construção de planos projetivos finitos e planos afins finitos, bem como na combinatória. Utilizamos um algoritmo de recozimento simulado para encontrar BIBDs de tamanho moderado. Em particular, descobrimos uma nova solução, ainda não publicada, para o BIBD(16,56,21,6,7), para o qual apenas uma outra solução era conhecida, embora a existência teórica de mais soluções fosse certa. Nossos algoritmos foram comparados com outros métodos heurísticos utilizados em pesquisas anteriores e superaram consistentemente todos esses métodos.",
+      "keywords_es": ["diseños de bloques incompletos balanceados", "combinatoria", "recocido simulado"],
+      "keywords_en": ["balanced incomplete blocks designs", "combinatorics", "simulated annealing"],
+      "keywords_pt": ["desenhos de blocos incompletos balanceados", "combinatória", "recozimento simulado"],
+      "citation": "Piza Volio, E., & Segura Ugalde, E. (2026). Construcción de Diseños de Bloques Incompletos Balanceados. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8771"
+    },
+    {
+      "id": 8,
+      "title": "El Teorema de Markov y su relación con el espectro de Lagrange",
+      "title_en": "Markov's Theorem and its relationship to the Lagrange spectrum",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Christopher Salvador Martínez Martínez",
+          "email": "mamc010620@gs.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Estudiante de la Maestría en Modelación Matemática",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0009-0007-5255-3925"
+        },
+        {
+          "name": "Alicia Santiago-Santos",
+          "email": "alicia@mixteco.utm.mx",
+          "university": "Universidad Tecnológica de la Mixteca",
+          "department": "Instituto de Física y matemáticas",
+          "location": "Huajuapan de León, Oaxaca, México",
+          "orcid": "https://orcid.org/0000-0002-1888-7135"
+        }
+      ],
+      "category": "Temas de geometría",
+      "slug": "Articulos/V27/N1_2026/Martinez",
+      "pdf": "/Articulos/V27/N1_2026/Martinez/V27_n1_Martinez.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8714",
+      "received": "1 de octubre del 2025",
+      "accepted": "30 de mayo del 2026",
+      "abstract_es": "Los números, la ecuación y el Teorema de Markov son temas importantes en la teoría de números y el área de probabilidad. El objetivo de este trabajo es buscar una comprensión más profunda de los números de Markov, la ecuación de Markov y el Teorema de Markov. Además, explicar la relación que existe entre el Teorema de Markov y el espectro de Lagrange (conjunto de números reales con cierta característica). Por tal razón, se explican a detalle varios conceptos, que ayudarán a la comprensión de estos temas; a saber: fracciones continuas finitas, fracciones continuas infinitas simples, la ecuación diofántica y el espectro de Lagrange con la finalidad de que los interesados en estos temas tengan un escrito lo más auto contenido posible y se adentren a ciertos temas importantes en el área de Álgebra.",
+      "abstract_en": "Markov numbers, the equation, and Markov's Theorem are important topics in number theory and probability. The objective of this work is to seek a deeper understanding of Markov numbers, the Markov equation, and Markov's Theorem. Furthermore, it explains the relationship between Markov's Theorem and the Lagrange spectrum (a set of real numbers with a certain characteristic). For this reason, several concepts are explained in detail to aid in understanding these topics; namely: finite continued fractions, simple infinite continued fractions, the Diophantine equation, and the Lagrange spectrum. The aim is to provide those interested in these topics with a self-contained text and to introduce them to certain important topics in the area of algebra.",
+      "abstract_pt": "Os números de Markov, a equação de Markov e o Teorema de Markov são tópicos importantes em teoria dos números e probabilidade. O objetivo deste artigo é buscar uma compreensão mais profunda dos números de Markov, da equação de Markov e do Teorema de Markov. Além disso, explica a relação entre o Teorema de Markov e o espectro de Lagrange (um conjunto de números reais com uma determinada característica). Para isso, diversos conceitos são explicados em detalhes para auxiliar na compreensão desses tópicos; a saber: frações contínuas finitas, frações contínuas infinitas simples, a equação diofantina e o espectro de Lagrange. O objetivo é fornecer aos interessados nesses tópicos um texto completo e introduzi-los a certos tópicos importantes na área da álgebra.",
+      "keywords_es": ["ecuación de Markov", "números de Markov", "teorema de Markov", "el espectro de Lagrange"],
+      "keywords_en": ["Markov equation", "Markov numbers", "Markov theorem", "Lagrange spectrum"],
+      "keywords_pt": ["Equação de Markov", "números de Markov", "teorema de Markov", "espectro de Lagrange"],
+      "citation": "Martínez Martínez, C. S., & Santiago-Santos, A. (2026). El Teorema de Markov y su relación con el espectro de Lagrange. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8714"
+    },
+    {
+      "id": 9,
+      "title": "Cálculo adaptado para estudiantes neurodivergentes: Un estudio comparativo",
+      "title_en": "Calculus Adapted for Neurodivergent Students: A Comparative Study",
+      "volume": 27,
+      "number": 1,
+      "language": "en",
+      "published": "",
+      "authors": [
+        {
+          "name": "Celia Gallardo Herrerías",
+          "email": "cgh188@inlumine.ual.es",
+          "university": "Universidad de Almería",
+          "department": "",
+          "location": "Almería, España",
+          "orcid": "https://orcid.org/0000-0001-5515-1269"
+        }
+      ],
+      "category": "Enseñanza Inclusiva en Matemática",
+      "slug": "Articulos/V27/N1_2026/Gallardo",
+      "pdf": "/Articulos/V27/N1_2026/Gallardo/V27_n1_Gallardo.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8536",
+      "received": "21 de julio del 2025",
+      "accepted": "15 de diciembre del 2025",
+      "abstract_es": "El estudio investiga la posibilidad de rediseñar el cálculo universitario estándar para adaptarlo a estudiantes neurodivergentes, como TDAH, autismo, dislexia y estudiantes con patrones cognitivos similares. La enseñanza tradicional del cálculo se basa en la abstracción, el pensamiento rápido y la memorización, mecanismos que invisibilizan a los estudiantes con diferentes patrones de aprendizaje. Este estudio comparativo cualitativo, basado en diseño de investigación, compara los hallazgos de cinco universidades de Estados Unidos, Canadá, Alemania y los Países Bajos. La investigación, basada en entrevistas, observación de aulas y análisis de documentos, identifica barreras en los modelos pedagógicos actuales. La investigación identifica que las adaptaciones en el entorno formal (p. ej., tiempo adicional) brindan apoyo procedimental, pero rara vez abordan las desalineaciones instruccionales subyacentes.",
+      "abstract_en": "The study investigates the possibility of redesigning standard university-level Calculus to suit neurodivergent students, including ADHD, autism, dyslexic, and cognitively similar patterns. Traditional Calculus instruction relies on abstraction, quick thinking, and memorization—mechanisms that render students with different learning patterns invisible. This comparative qualitative research design-based study compares findings from five USA, Canadian, German, and Dutch universities. The research, based on interviews, observation of classrooms, and document analysis, identifies pockets of barriers in current pedagogical models. The research identifies that accommodations in the formal environment (e.g., extra time) provide procedural support, yet rarely address underlying instructional misalignments.",
+      "abstract_pt": "O estudo investiga a possibilidade de redesenhar o cálculo universitário padrão para adaptá-lo a estudantes neurodivergentes, como aqueles com TDAH, autismo, dislexia e com padrões cognitivos semelhantes. O ensino tradicional de cálculo baseia-se na abstração, no pensamento rápido e na memorização, mecanismos que tendem a invisibilizar estudantes com diferentes formas de aprendizagem. Este estudo comparativo qualitativo, fundamentado em pesquisa baseada em design, compara os achados de cinco universidades dos Estados Unidos, Canadá, Alemanha e Países Baixos. A investigação, baseada em entrevistas, observação em sala de aula e análise documental, identifica barreiras nos modelos pedagógicos atuais. Os resultados indicam que as adaptações no ambiente formal (por exemplo, tempo adicional) oferecem apoio procedimental, mas raramente abordam os desalinhamentos instrucionais subjacentes.",
+      "keywords_es": ["Neurodiversidad", "Pedagogía Inclusiva", "Educación en Cálculo", "Diseño Universal para el Aprendizaje"],
+      "keywords_en": ["Neurodiversity", "Inclusive Pedagogy", "Calculus Education", "Universal Design for Learning"],
+      "keywords_pt": ["Neurodiversidade", "Pedagogia Inclusiva", "Educação em Cálculo", "Desenho Universal para a Aprendizagem"],
+      "citation": "Gallardo Herrerías, C. (2026). Cálculo adaptado para estudiantes neurodivergentes: Un estudio comparativo. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8536"
+    },
+    {
+      "id": 10,
+      "title": "Revisión bibliográfica sobre materiales didácticos y estrategias pedagógicas para la enseñanza de las matemáticas a personas estudiantes con algún grado de discapacidad visual",
+      "title_en": "Bibliographic review about teaching materials and pedagogical strategies for students with visual impairments",
+      "volume": 27,
+      "number": 1,
+      "language": "es",
+      "published": "",
+      "authors": [
+        {
+          "name": "Alexander Borbón Alpízar",
+          "email": "aborbon@itcr.ac.cr",
+          "university": "Instituto Tecnológico de Costa Rica",
+          "department": "",
+          "location": "Cartago, Costa Rica",
+          "orcid": "https://orcid.org/0009-0006-4455-9414"
+        }
+      ],
+      "category": "Enseñanza Inclusiva en Matemática",
+      "slug": "Articulos/V27/N1_2026/Borbon",
+      "pdf": "/Articulos/V27/N1_2026/Borbon/V27_n1_Borbon.pdf",
+      "doi": "https://doi.org/10.18845/rdmei.v27i1.8536",
+      "received": "9 de junio del 2025",
+      "accepted": "20 de diciembre del 2025",
+      "abstract_es": "La enseñanza de las matemáticas a personas con discapacidad visual plantea desafíos únicos que requieren estrategias pedagógicas inclusivas, materiales didácticos accesibles y el uso de tecnologías adaptativas. Este artículo presenta una revisión comprensiva de los fundamentos teóricos de la educación inclusiva, teorías de aprendizaje aplicadas al contexto visual, investigaciones previas sobre el tema, y una recopilación detallada de materiales táctiles, digitales y en braille utilizados en el aula. También se analizan instrumentos de evaluación adaptados, estrategias pedagógicas eficaces y casos de implementación exitosa en diferentes países. A través de testimonios y buenas prácticas, se evidencia el impacto positivo de estas adaptaciones en la comprensión matemática, la autonomía y la participación estudiantil. Las conclusiones destacan la necesidad de una formación docente especializada y de un enfoque interdisciplinario para garantizar el derecho a una educación matemática equitativa y de calidad para todas las personas estudiantes, sin importar su condición visual.",
+      "abstract_en": "Teaching mathematics to students with visual impairments presents unique challenges that require inclusive pedagogical strategies, accessible teaching materials, and adaptive technologies. This article offers a comprehensive review of the theoretical foundations of inclusive education, learning theories adapted to visual disability, previous research findings, and a detailed inventory of tactile, digital, and braille-based instructional tools used in math education. It also examines adapted assessment instruments, effective teaching practices, and successful implementation cases from various countries. Through personal testimonies and examples of best practices, the article highlights the positive impact of these approaches on mathematical understanding, student autonomy, and participation. The conclusions emphasize the need for specialized teacher training and an interdisciplinary perspective to ensure the right to equitable and high-quality mathematics education for all students, regardless of visual ability.",
+      "abstract_pt": "O ensino da matemática para pessoas com deficiência visual apresenta desafios únicos que exigem estratégias pedagógicas inclusivas, materiais didáticos acessíveis e o uso de tecnologias adaptativas. Este artigo apresenta uma revisão abrangente dos fundamentos teóricos da educação inclusiva, teorias de aprendizagem aplicadas ao contexto visual, pesquisas anteriores sobre o tema e uma compilação detalhada de materiais táteis, digitais e em braile utilizados em sala de aula. Também são analisados instrumentos de avaliação adaptados, estratégias pedagógicas eficazes e casos de implementação bem-sucedida em diferentes países. Por meio de depoimentos e boas práticas, evidencia-se o impacto positivo dessas adaptações na compreensão matemática, na autonomia e na participação estudantil. As conclusões destacam a necessidade de uma formação docente especializada e de uma abordagem interdisciplinar para garantir o direito a uma educação matemática equitativa e de qualidade para todos os estudantes, independentemente de sua condição visual.",
+      "keywords_es": ["Educación inclusiva", "discapacidad visual", "enseñanza de las matemáticas", "materiales táctiles", "tecnología asistiva", "evaluación adaptada", "accesibilidad educativa"],
+      "keywords_en": ["Inclusive education", "visual impairment", "mathematics education", "tactile materials", "assistive technology", "adapted assessment", "educational accessibility"],
+      "keywords_pt": ["Educação inclusiva", "deficiência visual", "ensino de matemática", "materiais táteis", "tecnologia assistiva", "avaliação adaptada", "acessibilidade educacional"],
+      "citation": "Borbón Alpízar, A. (2026). Revisión bibliográfica sobre materiales didácticos y estrategias pedagógicas para la enseñanza de las matemáticas a personas estudiantes con algún grado de discapacidad visual. <i>Revista Digital: Matemática, Educación E Internet, 27</i>(1). https://doi.org/10.18845/rdmei.v27i1.8536"
+    }
+  ],
+  "books": [
+    {
+      "id": "teoria-de-grupos-2025",
+      "coverImage": "/libros/universitaria/algebra/teoria-de-grupos-2025/portada.webp",
+    "title": "Una introducción a la Teoría de Grupos",
+    "title_en": "An Introduction to Group Theory",
+    "title_pt": "Uma Introdução à Teoria dos Grupos",
+    "authors": [
+      {
+        "name": "Reiman Acuña Chacón",
+        "email": "reiacuna@itcr.ac.cr",
+        "orcid": "https://orcid.org/0000-0002-0094-3282",
+        "university": "Instituto Tecnológico de Costa Rica, Escuela de Matemática",
+        "location": "Cartago, Costa Rica"
+      },
+      {
+        "name": "Héctor Barrantes González",
+        "email": "hector.barrantes@ucr.ac.cr",
+        "orcid": "https://orcid.org/0000-0001-7941-5759",
+        "university": "Universidad de Costa Rica",
+        "location": "San Ramón"
+      },
+      {
+        "name": "Bolívar Ramírez Santamaría",
+        "email": "bolivar.ramirez@ucr.ac.cr ",
+        "orcid": "https://orcid.org/0009-0006-6087-8386",
+        "university": "Universidad de Costa Rica",
+        "location": "San Ramón"
+      }
+    ],
+    "lastRevision": "",
+    "category": "universitaria",
+    "pdf": "/libros/universitaria/algebra/teoria-de-grupos-2025/libro.pdf",
+    "received": "",
+    "accepted": "",
+    "abstract_es": "Este libro presenta una introducción sistemática a la Teoría de Grupos, construyendo el tema desde herramientas de teoría de números necesarias para el trabajo algebraico (propiedades de los enteros y aritmética modular) y avanzando hacia los conceptos centrales de grupos y sus estructuras asociadas. Se desarrollan definiciones y ejemplos fundamentales, resultados clásicos, grupos abelianos, el orden de un grupo y de un elemento, subgrupos, clases laterales y el teorema de Lagrange, grupos cíclicos, subgrupos normales y grupos cociente. Además, se estudian homomorfismos, núcleo e imagen, y teoremas de isomorfía, culminando con aplicaciones en áreas como música, teoría de grafos, simetría en física, computación y criptografía. El texto incluye ejercicios a lo largo de los capítulos y una sección extensa de soluciones, con el objetivo de reforzar la comprensión conceptual y la habilidad de argumentación y cálculo dentro del álgebra abstracta.",
+    "keywords_es": [
+      "teoría de grupos",
+      "aritmética modular",
+      "subgrupos",
+      "clases laterales",
+      "teorema de Lagrange",
+      "grupos cíclicos",
+      "subgrupos normales",
+      "grupo cociente",
+      "homomorfismos",
+      "teoremas de isomorfía",
+      "criptografía",
+      "simetría"
+    ],
+    "abstract_en": "This book offers a systematic introduction to Group Theory, building the subject from number-theoretic tools that support algebraic work (properties of the integers and modular arithmetic) and progressing to the core concepts and structures of groups. It develops fundamental definitions and examples, classical results, abelian groups, the order of a group and of an element, subgroups, cosets and Lagrange’s theorem, cyclic groups, normal subgroups and quotient groups. It also studies group homomorphisms, kernel and image, and the isomorphism theorems, and concludes with applications in areas such as music, graph theory, symmetry in physics, computing, and cryptography. Exercises are included throughout, together with an extensive solutions section, to strengthen conceptual understanding and problem-solving skills in abstract algebra.",
+    "keywords_en": [
+      "group theory",
+      "modular arithmetic",
+      "subgroups",
+      "cosets",
+      "Lagrange's theorem",
+      "cyclic groups",
+      "normal subgroups",
+      "quotient groups",
+      "homomorphisms",
+      "isomorphism theorems",
+      "cryptography",
+      "symmetry"
+    ],
+    "abstract_pt": "Este livro apresenta uma introdução sistemática à Teoria dos Grupos, construindo o tema a partir de ferramentas de teoria dos números necessárias ao trabalho algébrico (propriedades dos inteiros e aritmética modular) e avançando para os conceitos centrais e estruturas associadas aos grupos. São desenvolvidas definições e exemplos fundamentais, resultados clássicos, grupos abelianos, a ordem de um grupo e de um elemento, subgrupos, classes laterais e o teorema de Lagrange, grupos cíclicos, subgrupos normais e grupos quociente. Além disso, estudam-se homomorfismos de grupos, núcleo e imagem, e teoremas de isomorfismo, concluindo com aplicações em áreas como música, teoria dos grafos, simetria na física, computação e criptografia. O texto inclui exercícios ao longo dos capítulos e uma seção ampla de soluções, visando fortalecer a compreensão conceitual e as habilidades de resolução de problemas em álgebra abstrata.",
+    "keywords_pt": [
+      "teoria dos grupos",
+      "aritmética modular",
+      "subgrupos",
+      "classes laterais",
+      "teorema de Lagrange",
+      "grupos cíclicos",
+      "subgrupos normais",
+      "grupo quociente",
+      "homomorfismos",
+      "teoremas de isomorfismo",
+      "criptografia",
+      "simetria"
+    ],
+    "citation": "Barrantes, H., Acuña, R., & Ramírez, B. (2025). Introducción a la teoría de grupos (1.a ed.) [E-book]. <i>Revista Digital Matemática, Educación e Internet, 26</i>(2). Disponible en https://tecdigital.tec.ac.cr/servicios/revistamatematica/material_didactico/libros/. ISBN 978-9930-617-90-8"
+    }
+  ]
+}
