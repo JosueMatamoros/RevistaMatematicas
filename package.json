@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "find . -name '.DS_Store' -delete",
-    "build": "next build && find out -name '.DS_Store' -delete",
+    "_prebuild_PENDIENTE_REVISAR": "find . -name '.DS_Store' -delete",
+    "build": "next build",
+    "_build_PENDIENTE_REVISAR": "find out -name '.DS_Store' -delete (agregar de vuelta cuando se resuelva multiplataforma)",
     "start": "next start",
     "lint": "next lint",
     "diff": "node scripts/build-diff.js"
