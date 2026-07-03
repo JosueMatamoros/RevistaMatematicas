@@ -41,6 +41,7 @@ export default function IssuePage({ params }) {
         title={`Volumen ${current.volume}, Número ${current.number}, ${current.date}`}
         articles={current.data.articles}
         books={books}
+        useBasePath={true}
       />
     </div>
   );
